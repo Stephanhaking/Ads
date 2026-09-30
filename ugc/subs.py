@@ -20,7 +20,8 @@ def chunk_words(text: str, per: int = 3):
     return [" ".join(words[i:i + per]) for i in range(0, len(words), per)]
 
 
-def build_ass(lines, total: float, style_idx: int = 0, lead: float = 0.15, cta_text: str = "TOQUE NO LINK"):
+def build_ass(lines, total: float, style_idx: int = 0, lead: float = 0.15, cta_text: str = "TOQUE NO LINK",
+              captions: bool = True):
     color, outline = STYLES[style_idx % len(STYLES)]
     per_line = [chunk_words(ln) for ln in lines]
     weights = [[max(len(c), 3) for c in cs] for cs in per_line]
@@ -41,7 +42,8 @@ def build_ass(lines, total: float, style_idx: int = 0, lead: float = 0.15, cta_t
         for c, w in zip(cs, ws):
             d = w * unit
             pop = r"{\fad(30,30)\fscx72\fscy72\t(0,140,\fscx106\fscy106)\t(140,240,\fscx100\fscy100)}"
-            events.append(f"Dialogue: 1,{_t(t)},{_t(t + d)},Default,,0,0,0,,{pop}{c.upper()}")
+            if captions:
+                events.append(f"Dialogue: 1,{_t(t)},{_t(t + d)},Default,,0,0,0,,{pop}{c.upper()}")
             t += d
     # botão de CTA pulsando durante a última frase
     s0, e0 = starts[-1], total

@@ -117,7 +117,7 @@ def _image_size(path: Path):
 
 
 def render_one(root: Path, copy_path: Path, image: Path, out_dir: Path, music: Path | None = None,
-               force: bool = False):
+               force: bool = False, captions: bool = True):
     copy = json.loads(copy_path.read_text(encoding="utf-8"))
     vid = copy["id"]
     out = out_dir / f"{vid}.mp4"
@@ -150,7 +150,8 @@ def render_one(root: Path, copy_path: Path, image: Path, out_dir: Path, music: P
                      f"atempo={ratio:.3f}", str(fast)])
                 voice_file = fast
         total = (duration(voice_file) + 0.7) if voice_file else max(len(" ".join(lines)) / 17.0, 8.0)
-        ass, starts = subs.build_ass(lines, total, style_idx, cta_text=copy.get("cta_button", "TOQUE NO LINK"))
+        ass, starts = subs.build_ass(lines, total, style_idx, cta_text=copy.get("cta_button", "TOQUE NO LINK"),
+                                     captions=captions and copy.get("captions", True))
         (td / "subs.ass").write_text(ass, encoding="utf-8")
 
         bounds = [0.0] + starts[1:] + [total]
