@@ -688,6 +688,30 @@ def snore_sound(scale=1.0, rng=None):
 
 
 
+def synth_snore(path):
+    """Faixa própria do ronco: só na cena 1 (0 s até ao corte para a cena da tira)."""
+    n = int(DUR * SR)
+    out = np.zeros(n)
+    rng = np.random.default_rng(5)
+    end = T[1] - 0.05
+    for at, sc in ((0.15, 1.0), (2.85, 0.9)):
+        full = snore_sound(sc, rng)
+        s = int(at * SR)
+        e = min(int(end * SR), s + len(full))
+        seg = full[: e - s].copy()
+        fl = min(len(seg), int(0.12 * SR))
+        seg[-fl:] *= np.linspace(1, 0, fl)
+        out[s:e] += seg
+    out = np.tanh(out * 2.4) * 0.85
+    out[int(end * SR):] = 0.0
+    pcm = (out * 32767).astype("<i2")
+    with wave.open(path, "wb") as w:
+        w.setnchannels(1)
+        w.setsampwidth(2)
+        w.setframerate(SR)
+        w.writeframes(pcm.tobytes())
+
+
 def synth_audio(path):
     n = int(DUR * SR)
     t = np.arange(n) / SR
@@ -760,24 +784,6 @@ def synth_audio(path):
             tt = np.arange(l) / SR
             out[s:s + l] += vol * np.sign(np.sin(2 * np.pi * f * tt)) * np.minimum(1, tt * 80) * np.exp(-tt * 6)
 
-    def snore(at, scale=1.0, vol=0.7):
-        full = snore_sound(scale, rng)
-        s = int(at * SR)
-        e = min(n, s + len(full))
-        out[s:e] += vol * full[: e - s]
-
-    def sigh(at, d=1.5, vol=0.22):
-        s = int(at * SR)
-        l = int(d * SR)
-        tt = np.arange(l) / SR
-        env = np.minimum(1, tt / 0.25) * np.exp(-tt * 2.4)
-        nz = np.convolve(rng.standard_normal(l), np.ones(9) / 9, mode="same") * 2.2
-        out[s:s + l] += vol * env * nz
-
-    snore(0.2)
-    snore(3.5)
-    snore(6.6, 0.8)
-    sigh(T[1] + 3.0)
     for c in CUTS:
         whoosh(c - 0.25)
     whoosh(0.0, 0.3, 0.25)
@@ -824,6 +830,8 @@ def main():
     ff = imageio_ffmpeg.get_ffmpeg_exe()
     wav = os.path.join(HERE, "_musica.wav")
     synth_audio(wav)
+    snr = os.path.join(HERE, "_ronco.wav")
+    synth_snore(snr)
     silent = os.path.join(HERE, "_video.mp4")
     p = subprocess.Popen([ff, "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
                           "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p", silent],
@@ -835,16 +843,19 @@ def main():
             print(f"{i}/{total}", flush=True)
     p.stdin.close()
     p.wait()
-    cmd = [ff, "-y", "-i", silent, "-i", wav]
+    cmd = [ff, "-y", "-i", silent, "-i", wav, "-i", snr]
     if a.voice:
         cmd += ["-i", a.voice, "-filter_complex",
-                "[1:a]volume=0.55[m];[2:a]apad,volume=1.6[v];[m][v]amix=inputs=2:duration=first:normalize=0[a]", "-map", "0:v", "-map", "[a]"]
+                "[1:a]volume=0.5[m];[2:a]volume=2.0[s];[3:a]volume=1.7,apad[v];"
+                "[m][s][v]amix=inputs=3:duration=first:normalize=0,alimiter=limit=0.95[a]", "-map", "0:v", "-map", "[a]"]
     else:
-        cmd += ["-map", "0:v", "-map", "1:a"]
+        cmd += ["-filter_complex", "[1:a]volume=0.5[m];[2:a]volume=2.0[s];[m][s]amix=inputs=2:duration=first:normalize=0[a]",
+                "-map", "0:v", "-map", "[a]"]
     cmd += ["-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-t", str(DUR), "-movflags", "+faststart", a.out]
     subprocess.run(cmd, check=True, stderr=subprocess.DEVNULL)
     os.remove(silent)
     os.remove(wav)
+    os.remove(snr)
     print("ok", a.out)
 
 
