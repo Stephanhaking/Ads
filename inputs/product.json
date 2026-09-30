@@ -1,7 +1,7 @@
 {
   "name": "Tiras Nasais",
   "category": "dilatador nasal adesivo",
-  "main_benefit": "levanta as laterais do nariz e facilita a entrada de ar",
+  "main_benefit": "abre as laterais do nariz e pode ajudar no ronco causado por nariz entupido",
   "proof": [
     "material fino e respirável",
     "aplicação fácil, sem complicação"
@@ -12,12 +12,14 @@
   "forbidden_claims": [
     "cura o ronco",
     "elimina o ronco",
+    "acaba com o ronco",
+    "para de roncar",
+    "garantido",
     "trata apneia",
     "trata sinusite ou rinite",
     "substitui tratamento médico",
-    "resultado garantido",
-    "você ronca / você tem problema respiratório"
+    "você ronca (não diagnosticar o espectador)"
   ],
-  "notes": "Produto de saúde: falar em primeira pessoa, sem diagnosticar o espectador (política Meta de atributos pessoais).",
+  "notes": "Dor central: RONCO. Falar do ronco em 1ª pessoa ou de terceiros ('meu marido ronca'), nunca afirmar que o espectador ronca. Só 'pode ajudar' em ronco causado por nariz entupido; conferir o registro/alegações permitidas do produto (ANVISA) e as políticas de saúde do Meta/TikTok.",
   "language": "pt-BR"
 }

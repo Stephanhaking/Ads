@@ -1,0 +1,18 @@
+{
+  "id": "parceiro_h1",
+  "audience": "parceiro",
+  "hook_type": "curiosidade",
+  "voice": "pt-BR-FranciscaNeural",
+  "gemini_voice": "Kore",
+  "status": "approved",
+  "lines": [
+    "Esse adesivo pequeno vai no nariz. Vou te mostrar por quê.",
+    "Eu acordava toda hora com o ronco ao lado.",
+    "A tira nasal abre as laterais do nariz.",
+    "Pode ajudar no ronco causado por nariz entupido.",
+    "É fina e fácil de colocar.",
+    "Toque no link e durma melhor."
+  ],
+  "caption": "Tiras Nasais — abre as laterais do nariz e pode ajudar no ronco causado por nariz entupido. confira a oferta no link. Não substitui orientação médica.",
+  "cta_button": "TOQUE NO LINK"
+}

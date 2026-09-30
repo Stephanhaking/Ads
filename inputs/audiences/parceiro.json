@@ -1,0 +1,18 @@
+{
+  "id": "parceiro",
+  "name": "Quem perde o sono com o ronco de quem dorme ao lado",
+  "pains": [
+    "acordar várias vezes por causa do ronco ao lado",
+    "ir dormir no sofá"
+  ],
+  "desires": [
+    "uma noite inteira de sono",
+    "voltar pra cama"
+  ],
+  "objections": [
+    "é desconfortável pra quem ronca"
+  ],
+  "tone": "conversa natural, com leve humor",
+  "voice": "pt-BR-FranciscaNeural",
+  "gemini_voice": "Kore"
+}

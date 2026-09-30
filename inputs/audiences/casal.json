@@ -1,0 +1,17 @@
+{
+  "id": "casal",
+  "name": "Casais que dividem a cama",
+  "pains": [
+    "o ronco virar briga de casal",
+    "dormir em quartos separados"
+  ],
+  "desires": [
+    "dividir a cama em paz"
+  ],
+  "objections": [
+    "será que funciona?"
+  ],
+  "tone": "conversa natural, com leve humor",
+  "voice": "pt-BR-ThalitaMultilingualNeural",
+  "gemini_voice": "Aoede"
+}

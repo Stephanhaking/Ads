@@ -1,0 +1,18 @@
+{
+  "id": "roncador_h2",
+  "audience": "roncador",
+  "hook_type": "dor_ronco",
+  "voice": "pt-BR-AntonioNeural",
+  "gemini_voice": "Puck",
+  "status": "approved",
+  "lines": [
+    "Ronco tirando o sono aqui em casa? Olha isso.",
+    "Meu ronco já acordava a casa toda.",
+    "A tira nasal abre as laterais do nariz.",
+    "Pode ajudar no ronco causado por nariz entupido.",
+    "É fina e fácil de colocar.",
+    "Toque no link e confira."
+  ],
+  "caption": "Tiras Nasais — abre as laterais do nariz e pode ajudar no ronco causado por nariz entupido. confira a oferta no link. Não substitui orientação médica.",
+  "cta_button": "TOQUE NO LINK"
+}

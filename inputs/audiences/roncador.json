@@ -1,0 +1,18 @@
+{
+  "id": "roncador",
+  "name": "Quem ronca e quer dormir melhor",
+  "pains": [
+    "o ronco acordar a casa toda",
+    "ouvir piada sobre o ronco"
+  ],
+  "desires": [
+    "dormir sem incomodar ninguém",
+    "acordar disposto"
+  ],
+  "objections": [
+    "já tentei de tudo"
+  ],
+  "tone": "conversa natural, com leve humor",
+  "voice": "pt-BR-AntonioNeural",
+  "gemini_voice": "Puck"
+}

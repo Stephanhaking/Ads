@@ -4,7 +4,8 @@ Objetivo: 1 imagem de produto + briefings de público + hooks -> biblioteca de v
 
 ## Regras fixas
 - Formato 1080x1920, 15s (máx. 20s). Hook nos primeiros 3s. Uma ideia por vídeo.
-- Estrutura do roteiro (5 linhas em `lines`): hook -> problema -> benefício -> prova -> CTA.
+- Dor central do produto (tiras nasais): o RONCO. Nunca afirmar que o espectador ronca; falar em 1ª pessoa ou de terceiros. Só "pode ajudar" em ronco causado por nariz entupido; nunca "cura/elimina/acaba com o ronco".
+- Estrutura do roteiro (`lines`, 5 a 6 frases): hook -> problema -> benefício -> benefício 2 -> como usar -> CTA. Cada frase vira UMA cena animada (recortes: rosto, clima noturno, tiras, rosto de perto, aplicação, imagem completa + botão CTA).
 - Tom de conversa, frases curtas (<= 12 palavras), sem jargão. Fale como pessoa, não como marca.
 - Nunca usar `forbidden_claims` de `inputs/product.json`. Não inventar números, avaliações ou garantias que não estejam no product.json.
 - Cada variante muda UMA variável principal (hook, público ou ângulo) para o teste A/B ser interpretável.

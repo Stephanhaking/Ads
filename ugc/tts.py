@@ -34,7 +34,7 @@ def _gemini(text: str, voice: str, out: Path, style: str):
         },
     }).encode()
     req = urllib.request.Request(url, body, {"Content-Type": "application/json", "x-goog-api-key": key})
-    for attempt in range(4):  # cota gratuita: 429 é comum, tenta de novo com espera
+    for attempt in range(6):  # cota gratuita: 429 é comum, tenta de novo com espera
         try:
             with urllib.request.urlopen(req, timeout=120) as r:
                 data = json.load(r)
@@ -47,8 +47,8 @@ def _gemini(text: str, voice: str, out: Path, style: str):
                 w.writeframes(pcm)
             return out
         except urllib.error.HTTPError as e:
-            if e.code in (429, 500, 503) and attempt < 3:
-                time.sleep(8 * (attempt + 1))
+            if e.code in (429, 500, 503) and attempt < 5:
+                time.sleep(15 * (attempt + 1))
                 continue
             print(f"  [tts] gemini HTTP {e.code}: {e.read()[:200]!r}")
             return None

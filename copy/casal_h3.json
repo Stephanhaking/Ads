@@ -1,0 +1,18 @@
+{
+  "id": "casal_h3",
+  "audience": "casal",
+  "hook_type": "rotina",
+  "voice": "pt-BR-ThalitaMultilingualNeural",
+  "gemini_voice": "Aoede",
+  "status": "approved",
+  "lines": [
+    "Minha rotina antes de dormir agora tem uma tirinha no nariz.",
+    "Aqui em casa o ronco virou problema de casal.",
+    "A tira nasal abre as laterais do nariz.",
+    "Pode ajudar no ronco causado por nariz entupido.",
+    "É fina e fácil de colocar.",
+    "Toque no link e confira."
+  ],
+  "caption": "Tiras Nasais — abre as laterais do nariz e pode ajudar no ronco causado por nariz entupido. confira a oferta no link. Não substitui orientação médica.",
+  "cta_button": "TOQUE NO LINK"
+}
