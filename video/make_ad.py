@@ -10,7 +10,7 @@ import imageio_ffmpeg
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 W, H, FPS = 1080, 1920, 30
-DUR = 35.0
+DUR = 38.0
 NAVY, NAVY2, ORANGE, WHITE, YELLOW = (11, 31, 107), (5, 14, 52), (255, 106, 0), (255, 255, 255), (255, 214, 0)
 BOLD = "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"
 _fonts = {}
@@ -232,269 +232,346 @@ def icon_bubble(base, cx, cy, s=1.0, col=WHITE):
 
 
 # ---------------------------------------------------------------- cenas
+import people as pp
+from functools import lru_cache
+
 STARS = [(random.Random(i).random() * W, random.Random(i + 99).random() * H * 0.6, random.Random(i + 7).random()) for i in range(70)]
+STRIP_ROT = STRIP.rotate(90, expand=True, resample=Image.BICUBIC)
+SHIRT_O, SHIRT_B, SHIRT_W = ORANGE, (40, 90, 200), (235, 240, 250)
 
 
-def scene1(t):  # 0–3.2
+@lru_cache(maxsize=None)
+def bust(skin, shirt, mood, strip, mo, blink=False, logo=None, cap=None):
+    return pp.person_bust(skin, shirt, mood, STRIP if strip else None, mo, blink, logo, cap)
+
+
+@lru_cache(maxsize=None)
+def bed(skin, mood, strip, mo):
+    return pp.bed_scene(900, 620, skin, mood, STRIP if strip else None, mo)
+
+
+@lru_cache(maxsize=None)
+def runner_f(k, strip):
+    return pp.runner(k * math.tau / 24, "a", ORANGE, strip=STRIP if strip else None)
+
+
+@lru_cache(maxsize=None)
+def lifter_f(k):
+    return pp.lifter(k * math.tau / 20)
+
+
+BALL_B, BALL_F = pp.basketball(250), pp.football(230)
+
+
+def q(x, n=5):
+    return round(x * n) / n
+
+
+def sparkle(im, cx, cy, r, alpha=1.0, col=(255, 255, 255)):
+    lay = Image.new("RGBA", (int(r * 2 + 4), int(r * 2 + 4)), (0, 0, 0, 0))
+    d = ImageDraw.Draw(lay)
+    c = r + 2
+    d.polygon([(c, 2), (c + r * .22, c - r * .22), (c + r, c), (c + r * .22, c + r * .22), (c, c + 2 * r - 2),
+               (c - r * .22, c + r * .22), (c - r, c), (c - r * .22, c - r * .22)], fill=col + (255,))
+    blit(im, lay, cx, cy, alpha=alpha)
+
+
+def zzz(im, t, x0, y0, t0=0.0):
+    for i, (ch, sz) in enumerate([("z", 70), ("Z", 100), ("Z", 140)]):
+        p = ((t - t0 - i * 0.45) % 1.8) / 1.8
+        if t - t0 - i * 0.45 < 0:
+            continue
+        text(im, ch, x0 + i * 90 + 18 * math.sin(p * 6), y0 - p * 200 - i * 30, sz, (190, 210, 255), alpha=math.sin(p * math.pi))
+
+
+def scene1(t, dur):  # abertura: pessoa a roncar / acordar com o nariz entupido
     im = BG_NAVY.copy()
     d = ImageDraw.Draw(im)
     for x, y, p in STARS:
         r = 2 + 2 * (0.5 + 0.5 * math.sin(t * 4 + p * 9))
         d.ellipse((x - r, y - r, x + r, y + r), fill=(200, 215, 255))
-    icon_moon(im, 830, 330, 0.75 + 0.02 * math.sin(t * 2))
-    for i, (ch, sz) in enumerate([("z", 70), ("Z", 100), ("Z", 140)]):
-        p = prog(t, 0.2 + i * 0.35, 1.2)
-        text(im, ch, 330 + i * 110 + 20 * math.sin(p * 6), 560 - p * 160 - i * 40, sz, (190, 210, 255), alpha=math.sin(p * math.pi) if p < 1 else 0)
-    sh = 10 * math.sin(t * 60) * (1 - clamp(t / 0.5))
-    text(im, "RONCA?", 540 + sh, 820, 235, WHITE, 0, scale=back(prog(t, 0.05, 0.35)), shadow=True)
-    # faixa laranja + 2ª mensagem
-    p = ease_out(prog(t, 1.25, 0.35))
+    icon_moon(im, 900, 760, 0.55 + 0.02 * math.sin(t * 2))
+    # frase de abertura
+    sh = 8 * math.sin(t * 60) * (1 - clamp(t / 0.4))
+    text(im, "VOCÊ RONCA\nOU ACORDA COM O\nNARIZ ENTUPIDO?", 540 + sh, 420, 104, WHITE, scale=back(prog(t, 0.0, 0.35)), maxw=980)
+    # pessoa na cama
+    awake = t > 2.3
+    mo = q(0.5 + 0.5 * math.sin(t * 5)) if not awake else q(0.7 + 0.2 * math.sin(t * 6))
+    lay = bed("a", "stuffy" if awake else "sleep", False, mo)
+    by = 1040 + (0 if awake else 6 * math.sin(t * 3))
+    blit(im, lay, 540, by, 1.12)
+    if not awake:
+        zzz(im, t, 380, 930, 0.3)
+    else:
+        for i in range(2):  # gotas de suor / desconforto
+            p = ((t - 2.3 + i * 0.4) % 1.2) / 1.2
+            d2 = Image.new("RGBA", (40, 60), (0, 0, 0, 0))
+            ImageDraw.Draw(d2).polygon([(20, 0), (38, 38), (20, 58), (2, 38)], fill=(130, 200, 255, 255))
+            blit(im, d2, 330 + i * 420, 780 + p * 70, alpha=1 - p)
+    # PARE DE IGNORAR ISSO!
+    p = back(prog(t, 3.25, 0.35), 2.4)
     if p > 0:
-        bar = rrect(960, 330, (255, 106, 0, 255), 40)
-        blit(im, bar, 540, 1260 + (1 - p) * 500, 1.0, alpha=p)
-        text(im, "OU SENTE O NARIZ\nENTUPIDO À NOITE?", 540, 1260 + (1 - p) * 500, 84, WHITE, alpha=p)
-    # tira entra com zoom
-    p = prog(t, 2.35, 0.75)
-    if p > 0:
-        blit(im, strip_layer(520), 540, 960, scale=0.2 + 1.3 * ease_in_cubic(p), rot=-20 + 40 * p, alpha=1)
-    return fadeflash(im, t, 3.2, out=0.15)
+        bar = rrect(980, 190, ORANGE + (255,), 50)
+        shk = 10 * math.sin(t * 55) * (1 - clamp((t - 3.25) / 0.45))
+        blit(im, shadow_of(bar, 18, 120, 14), 540 + shk, 1500 + 14, p)
+        blit(im, bar, 540 + shk, 1500, p)
+        text(im, "PARE DE IGNORAR ISSO!", 540 + shk, 1500, 76, WHITE, scale=p)
+    return fadeflash(im, t, dur, out=0.15)
 
 
-def ease_in_cubic(x):
-    return clamp(x) ** 3
-
-
-def scene2(t):  # 3.2–7.2 (4.0)
+def scene2(t, dur):  # tira aplicada no nariz
     im = BG_LIGHT.copy()
-    # legenda topo
     p = ease_out(prog(t, 0.05, 0.4))
     cap = rrect(980, 250, NAVY + (255,), 40)
     blit(im, cap, 540, 240 - (1 - p) * 300, alpha=p)
     text(im, "Veja o que esta\npequena tira pode fazer", 540, 240 - (1 - p) * 300, 76, WHITE, alpha=p)
-    # ilustração do nariz
-    zoom = 1.0 + 0.10 * ease_inout(t / 4.0)
-    nw = int(880 * zoom)
-    nose = NOSE.resize((nw, int(NOSE.height * nw / NOSE.width)), Image.LANCZOS)
-    cx, cy = 540, 1000
-    x0, y0 = cx - nose.width // 2, cy - nose.height // 2
-    reg = im.crop((x0, y0, x0 + nose.width, y0 + nose.height))
-    im.paste(ImageChops.multiply(reg, nose), (x0, y0))
-    # anel de destaque na ponte do nariz
-    ax, ay = x0 + nose.width * 0.47, y0 + nose.height * 0.34
-    p = prog(t, 0.9, 0.4)
-    if p > 0:
-        ring = Image.new("RGBA", (360, 360), (0, 0, 0, 0))
-        r = 130 + 14 * math.sin(t * 7)
-        ImageDraw.Draw(ring).ellipse((180 - r, 180 - r, 180 + r, 180 + r), outline=ORANGE + (255,), width=12)
-        blit(im, ring, ax, ay, back(p))
-    # tira voa até ao anel
-    p = ease_out(prog(t, 1.3, 0.7))
-    if p > 0:
-        blit(im, strip_layer(170), 1150 - (1150 - ax - 200) * p, 1500 - (1500 - ay + 60) * p, rot=-55 + 10 * p)
-        if p >= 1:
-            text(im, "TIRA NASAL", ax + 330, ay - 175, 54, NAVY, alpha=ease_out(prog(t, 2.0, 0.3)), shadow=False)
-    # legenda inferior
-    p = ease_out(prog(t, 2.4, 0.4))
+    cx, cy, s = 540, 1000, 1.22
+    landed = t > 2.4
+    if not landed:
+        lay = bust("b", SHIRT_B, "stuffy", False, q(0.6 + 0.3 * math.sin(t * 5)))
+    else:
+        mood = "happy" if t > 3.2 else "neutral"
+        lay = bust("b", SHIRT_B, mood, True, 0.0)
+    blit(im, lay, cx, cy, s)
+    nx, ny = cx, cy + (354 - 415) * s
+    # tira a voar até ao nariz
+    p = prog(t, 1.2, 1.2)
+    if 0 < p < 1 or (p <= 0 and False):
+        e = ease_inout(p)
+        sx0, sy0 = 930, 1620
+        w = 112 * s * (1.9 - 0.9 * e)
+        lay2 = STRIP_ROT.resize((int(w), int(STRIP_ROT.height * w / STRIP_ROT.width)), Image.LANCZOS)
+        blit(im, lay2, sx0 + (nx - sx0) * e, sy0 + (ny - sy0) * e - 120 * math.sin(e * math.pi), rot=-50 * (1 - e))
+    # anel + brilhos
+    if landed:
+        pr = prog(t, 2.4, 0.3)
+        ring = Image.new("RGBA", (400, 400), (0, 0, 0, 0))
+        r = 120 + 14 * math.sin(t * 7)
+        ImageDraw.Draw(ring).ellipse((200 - r, 200 - r, 200 + r, 200 + r), outline=ORANGE + (255,), width=12)
+        blit(im, ring, nx, ny + 10, back(pr))
+        for i, (dx, dy) in enumerate([(-230, -120), (240, -60), (-190, 140), (220, 170)]):
+            sp = (math.sin(t * 5 + i * 1.7) * 0.5 + 0.5)
+            sparkle(im, nx + dx, ny + dy, 26 + 20 * sp, alpha=0.4 + 0.6 * sp, col=(255, 190, 60))
+    p = ease_out(prog(t, 3.3, 0.4))
     if p > 0:
         pill = rrect(980, 160, ORANGE + (255,), 80)
-        blit(im, pill, 540, 1560 + (1 - p) * 300, alpha=p)
-        text(im, "Ajuda a abrir as passagens nasais", 540, 1560 + (1 - p) * 300, 58, WHITE, alpha=p)
-    return fadeflash(punch(im, t), t, 4.0, out=0.12)
+        blit(im, pill, 540, 1600 + (1 - p) * 300, alpha=p)
+        text(im, "Ajuda a abrir as passagens nasais", 540, 1600 + (1 - p) * 300, 54, WHITE, alpha=p)
+    return fadeflash(punch(im, t), t, dur, out=0.12)
 
 
-def scene3(t):  # 7.2–12.4 (5.2)
+def scene3(t, dur):  # uso simples: antes de dormir
     im = BG_NAVY.copy()
-    bob = 18 * math.sin(t * 3)
-    sh = strip_layer(520)
-    blit(im, shadow_of(sh), 560, 560 + bob + 16)
-    blit(im, sh, 540, 560 + bob, rot=8 * math.sin(t * 1.6) - 12)
+    d = ImageDraw.Draw(im)
+    for x, y, p in STARS:
+        r = 2 + 2 * (0.5 + 0.5 * math.sin(t * 3 + p * 9))
+        d.ellipse((x - r, y - r, x + r, y + r), fill=(200, 215, 255))
+    lay = bed("b", "sleep", True, 0.0)
+    blit(im, lay, 540, 560 + 5 * math.sin(t * 2.2), 1.1)
+    icon_moon(im, 140, 330, 0.4)
+    zzz(im, t, 620, 470, 0.4)
+    text(im, "É SIMPLES", 540, 235, 92, WHITE, scale=back(prog(t, 0.1, 0.4)), alpha=1.0)
     labels = ["FÁCIL DE USAR", "CONFORTÁVEL", "DISCRETA"]
     for i, lb in enumerate(labels):
-        p = ease_out(prog(t, 0.3 + i * 1.5, 0.45))
+        p = ease_out(prog(t, 0.9 + i * 1.6, 0.45))
         if p <= 0:
             continue
-        y = 1130 + i * 215
-        chip = Image.new("RGBA", (960, 170), (0, 0, 0, 0))
-        ImageDraw.Draw(chip).rounded_rectangle((0, 0, 959, 169), 85, fill=WHITE)
-        icon_check(ImageDraw.Draw(chip), 95, 85, 52)
-        ImageDraw.Draw(chip).text((180, 85), lb, font=font(76), fill=NAVY, anchor="lm")
+        y = 1110 + i * 190
+        chip = Image.new("RGBA", (960, 150), (0, 0, 0, 0))
+        ImageDraw.Draw(chip).rounded_rectangle((0, 0, 959, 149), 75, fill=WHITE)
+        icon_check(ImageDraw.Draw(chip), 85, 75, 46)
+        ImageDraw.Draw(chip).text((165, 75), lb, font=font(72), fill=NAVY, anchor="lm")
         blit(im, shadow_of(chip), 540 - (1 - p) * 900, y + 12)
         blit(im, chip, 540 - (1 - p) * 900, y)
-    return fadeflash(punch(im, t), t, 5.2, out=0.12)
+    return fadeflash(punch(im, t), t, dur, out=0.12)
 
 
-def scene4(t):  # 12.4–17.4 (5.0) — 3 painéis
-    seg = 5.0 / 3
-    k = min(2, int(t / seg))
-    lt = t - k * seg
-    bgs = [BG_NAVY, BG_ORANGE, BG_BLUE2]
-    im = bgs[k].copy()
-    cy = 800
+def scene4(t, dur):  # dormir / correr / treinar e desporto
+    segs = [(0.0, 2.0), (2.0, 3.8), (3.8, dur)]
+    k = 0 if t < 2.0 else (1 if t < 3.8 else 2)
+    a, b = segs[k]
+    lt = t - a
     if k == 0:
-        icon_moon(im, 540, cy, 1.1 + 0.03 * math.sin(lt * 3))
+        im = BG_NAVY.copy()
+        d = ImageDraw.Draw(im)
+        for x, y, p in STARS:
+            d.ellipse((x - 3, y - 3, x + 3, y + 3), fill=(200, 215, 255))
+        blit(im, bed("a", "sleep", True, 0.0), 540, 850, 1.08)
+        icon_moon(im, 860, 330, 0.5)
+        zzz(im, t, 600, 690, 0.1)
         lab = "Para dormir"
     elif k == 1:
-        icon_dumbbell(im, 540, cy, 1.25)
-        lab = "Para treinar"
+        im = grad((255, 170, 70), (255, 90, 20)).copy()
+        d = ImageDraw.Draw(im)
+        d.ellipse((540 - 330, 560 - 330, 540 + 330, 560 + 330), fill=(255, 214, 120))
+        d.rectangle((0, 1250, W, H), fill=(170, 52, 28))
+        d.rectangle((0, 1250, W, 1270), fill=WHITE)
+        off = (t * 900) % 240
+        for xx in range(-240, W + 240, 240):
+            d.rectangle((xx - off, 1560, xx - off + 130, 1574), fill=WHITE)
+        k2 = int((t * 2.0 % 1) * 24)
+        blit(im, runner_f(k2, True), 540, 850 + 14 * abs(math.sin(t * 2.0 * math.pi)), 1.15)
+        for i in range(6):  # linhas de velocidade
+            xx = (W - ((t * 1400 + i * 260) % (W + 400))) + 100
+            d.rounded_rectangle((xx, 420 + i * 130, xx + 220, 430 + i * 130), 5, fill=(255, 255, 255))
+        lab = "Para correr"
     else:
-        nose = NOSE.resize((560, int(NOSE.height * 560 / NOSE.width)), Image.LANCZOS)
-        card = Image.new("RGBA", (nose.width + 60, nose.height + 60), (0, 0, 0, 0))
-        ImageDraw.Draw(card).rounded_rectangle((0, 0, card.width - 1, card.height - 1), 60, fill=WHITE)
-        card.paste(nose, (30, 30))
-        blit(im, card, 540, cy + 10, 0.95 + 0.03 * math.sin(lt * 4))
-        lab = "Para respirar melhor\npelo nariz"
-    blit(im, icon_small_strip(), 930, 200, 1.0, rot=25)
-    text(im, lab, 540, 1330 if k < 2 else 1400, 120 if k < 2 else 100, WHITE, scale=back(prog(lt, 0.05, 0.4)))
-    # pontos de progresso
-    d = ImageDraw.Draw(im)
+        im = BG_BLUE2.copy()
+        d = ImageDraw.Draw(im)
+        d.rectangle((0, 1400, W, H), fill=(10, 24, 80))
+        blit(im, lifter_f(int((t * 1.6 % 1) * 20)), 540, 880, 1.0)
+        bb = abs(math.sin(t * 5))
+        blit(im, BALL_B, 170, 1250 - 330 * bb, 0.85, rot=t * 200)
+        blit(im, BALL_F, 910, 1250 - 330 * (1 - bb), 0.85, rot=-t * 200)
+        lab = "Para treinar e\npraticar desporto"
+    if k > 0:
+        pill = rrect(900, 100, WHITE + (255,), 50)
+        ImageDraw.Draw(pill).text((450, 50), "TAMBÉM PARA CORRIDA E DESPORTO", font=font(44), fill=NAVY, anchor="mm")
+        blit(im, pill, 540, 215, back(prog(lt, 0.0, 0.3)))
+    text(im, lab, 540, 1415 if k < 2 else 1490, 118 if k < 2 else 100, WHITE, scale=back(prog(lt, 0.05, 0.4)), stroke=4, stroke_fill=NAVY2)
+    dd = ImageDraw.Draw(im)
     for i in range(3):
-        d.ellipse((460 + i * 70 - 14, 1600 - 14, 460 + i * 70 + 14, 1600 + 14), fill=WHITE if i == k else (255, 255, 255, 90) and (150, 160, 200))
-    return fadeflash(punch(im, lt, 0.18, 0.06), lt, seg, out=0.08)
+        dd.ellipse((480 + i * 60 - 12, 1730 - 12, 480 + i * 60 + 12, 1730 + 12), fill=WHITE if i == k else (150, 160, 200))
+    return fadeflash(punch(im, lt, 0.18, 0.06), lt, b - a, out=0.08)
 
 
-def icon_small_strip():
-    return strip_layer(120)
-
-
-def scene5(t):  # 17.4–23.4 (6.0)
+def scene5(t, dur):  # oferta
     im = BG_LIGHT.copy()
     d = ImageDraw.Draw(im)
-    # raios de luz
     for i in range(12):
         a = t * 0.15 + i * math.pi / 6
         d.polygon([(540, 900), (540 + 1400 * math.cos(a), 900 + 1400 * math.sin(a)),
                    (540 + 1400 * math.cos(a + 0.12), 900 + 1400 * math.sin(a + 0.12))], fill=(236, 242, 255))
-    # tiras a voar
     rng = random.Random(4)
     for i in range(9):
-        p = ease_out(prog(t, 0.4 + i * 0.08, 0.7))
+        p = ease_out(prog(t, 0.4 + i * 0.12, 0.7))
         ang = rng.random() * math.tau
         tx = 540 + (360 + rng.random() * 120) * math.cos(ang)
-        ty = 900 + (420 + rng.random() * 120) * math.sin(ang) * 0.9
+        ty = 910 + (420 + rng.random() * 120) * math.sin(ang) * 0.9
         sx, sy = (-200, ty) if tx < 540 else (W + 200, ty)
         blit(im, strip_layer(120 + (i % 3) * 25), sx + (tx - sx) * p, sy + (ty - sy) * p + 10 * math.sin(t * 2 + i), rot=rng.random() * 360 + t * 20)
-    # título
-    text(im, "50", 540, 215, 290 + 0, ORANGE, stroke=0, scale=back(prog(t, 0.25, 0.45)))
-    text(im, "TIRAS NASAIS", 540, 440, 118, NAVY, scale=back(prog(t, 0.45, 0.45)), shadow=False)
-    # caixa a girar devagar (oscilação de largura simula rotação)
+    text(im, "UMA CAIXA VEM COM", 540, 120, 62, NAVY, alpha=ease_out(prog(t, 0.5, 0.4)), shadow=False)
+    text(im, "50", 540, 280, 290, ORANGE, scale=back(prog(t, 1.4, 0.45)))
+    text(im, "TIRAS NASAIS", 540, 490, 118, NAVY, scale=back(prog(t, 1.6, 0.45)), shadow=False)
     sx = 0.93 + 0.07 * math.cos(t * 1.4)
-    product_on_light(im, 540 + 10 * math.sin(t * 1.4), 910, 780, scale_x=sx)
-    sticker_50(im, 540 - 261 * sx * 0.97 + 120 * 0.95 * sx + 10 * math.sin(t * 1.4) - 10, 910 - 390 + 545 * 780 / 705, 0.72 * back(prog(t, 0.9, 0.4)))
-    # preço
-    p = back(prog(t, 1.7, 0.45), 2.6)
-    shake = 12 * math.sin(t * 55) * (1 - clamp((t - 1.7) / 0.5)) if t > 1.7 else 0
+    pe = ease_out(prog(t, 0.1, 0.6))
+    product_on_light(im, 540 + 10 * math.sin(t * 1.4), 990 + (1 - pe) * 500, 720, scale_x=sx)
+    sticker_50(im, 540 - 261 * sx * 0.97 * 0.92 + 120 * 0.95 * sx * 0.92 + 10 * math.sin(t * 1.4) - 10, 990 - 360 + 545 * 720 / 705 + (1 - pe) * 500, 0.68 * back(prog(t, 1.9, 0.4)))
+    t0 = 3.85
+    p = back(prog(t, t0, 0.45), 2.6)
+    shake = 12 * math.sin(t * 55) * (1 - clamp((t - t0) / 0.5)) if t > t0 else 0
     if p > 0:
         badge = rrect(900, 330, ORANGE + (255,), 60)
         bd = ImageDraw.Draw(badge)
         bd.text((450, 75), "APENAS", font=font(70), fill=WHITE, anchor="mm")
         bd.text((450, 215), "499 MT", font=font(185), fill=WHITE, anchor="mm")
-        blit(im, shadow_of(badge, 22, 110, 18), 540 + shake, 1520 + 18, p)
-        blit(im, badge, 540 + shake, 1520, p, rot=-2 * (1 - clamp((t - 1.7) / 0.5)))
-        # brilho a passar
-        s = prog(t, 2.3, 0.7)
-        if 0 < s < 1:
+        blit(im, shadow_of(badge, 22, 110, 18), 540 + shake, 1530 + 18, p)
+        blit(im, badge, 540 + shake, 1530, p, rot=-2 * (1 - clamp((t - t0) / 0.5)))
+        s2 = prog(t, t0 + 0.6, 0.7)
+        if 0 < s2 < 1:
             sh2 = Image.new("RGBA", (900, 330), (0, 0, 0, 0))
             m = Image.new("L", (900, 330), 0)
-            xx = -150 + s * 1200
+            xx = -150 + s2 * 1200
             ImageDraw.Draw(m).polygon([(xx, 0), (xx + 90, 0), (xx - 40, 330), (xx - 130, 330)], fill=110)
-            base_mask = badge.getchannel("A")
-            m = ImageChops.multiply(m, base_mask)
+            m = ImageChops.multiply(m, badge.getchannel("A"))
             sh2.paste((255, 255, 255, 255), (0, 0), m)
-            blit(im, sh2, 540, 1520)
-    return fadeflash(punch(im, t), t, 6.0, out=0.12)
+            blit(im, sh2, 540, 1530)
+    return fadeflash(punch(im, t), t, dur, out=0.12)
 
 
-def scene6(t):  # 23.4–27.4 (4.0)
+def scene6(t, dur):  # entrega com personagens
     im = BG_SUNSET.copy()
     d = ImageDraw.Draw(im)
     rng = random.Random(11)
     x = -40
     while x < W + 40:
-        bw, bh = rng.randint(90, 170), rng.randint(260, 640)
-        d.rectangle((x, 1330 - bh, x + bw, 1330), fill=(10, 20, 70))
-        for wy in range(1330 - bh + 30, 1310, 55):
+        bw, bh = rng.randint(90, 170), rng.randint(260, 560)
+        d.rectangle((x, 1100 - bh, x + bw, 1100), fill=(10, 20, 70))
+        for wy in range(1100 - bh + 30, 1080, 55):
             for wx in range(x + 18, x + bw - 18, 40):
                 if rng.random() > 0.55:
                     d.rectangle((wx, wy, wx + 16, wy + 26), fill=(255, 214, 120))
         x += bw + 6
-    d.rectangle((0, 1330, W, H), fill=(25, 28, 45))
-    off = (t * 420) % 160
-    for xx in range(-160, W + 160, 160):
-        d.rectangle((xx - off + 160, 1440, xx - off + 260, 1454), fill=(240, 240, 240))
-    # camioneta chega e para
-    p = ease_out(prog(t, 0.1, 1.3))
-    bounce = 4 * math.sin(t * 40) * (1 - p)
-    icon_truck(im, -300 + 840 * p, 1300 + bounce, 1.0)
-    # pacote
-    pp = back(prog(t, 1.6, 0.4))
-    if pp > 0:
-        pk = Image.new("RGBA", (200, 200), (0, 0, 0, 0))
-        pd = ImageDraw.Draw(pk)
-        pd.rounded_rectangle((10, 40, 190, 190), 14, fill=(214, 160, 100))
-        pd.rectangle((85, 40, 115, 190), fill=(240, 220, 170))
-        icon_check(pd, 165, 50, 34, (40, 190, 90))
-        blit(im, pk, 780, 1040 - 20 * math.sin(t * 5), pp)
-    # texto
-    p1 = back(prog(t, 0.15, 0.4))
-    text(im, "ENTREGA GRÁTIS", 540, 330, 135, WHITE, scale=p1, stroke=0)
+    d.rectangle((0, 1100, W, H), fill=(25, 28, 45))
+    # entregador e cliente
+    dl = bust("c", SHIRT_O, "happy", False, 0.0, False, "ENTREGA", (11, 31, 107))
+    cl = bust("b", SHIRT_B, "happy", False, 0.0)
+    pin_p = ease_out(prog(t, 0.0, 0.5))
+    blit(im, dl, 300 - (1 - pin_p) * 500, 1260, 0.62)
+    blit(im, cl, 790 + (1 - pin_p) * 500, 1260, 0.62)
+    # pacote a passar de mão em mão
+    pk = Image.new("RGBA", (220, 200), (0, 0, 0, 0))
+    pd = ImageDraw.Draw(pk)
+    pd.rounded_rectangle((10, 40, 210, 190), 14, fill=(214, 160, 100))
+    pd.rectangle((95, 40, 125, 190), fill=(240, 220, 170))
+    pd.rounded_rectangle((60, 10, 160, 50), 10, fill=(250, 250, 250))
+    pd.text((110, 30), "50", font=font(34), fill=ORANGE, anchor="mm")
+    pp_ = ease_inout(prog(t, 0.9, 1.1))
+    blit(im, pk, 430 + (660 - 430) * pp_, 1290 - 90 * math.sin(pp_ * math.pi), 0.95 + 0.0)
+    if t > 2.0:
+        icon_check(ImageDraw.Draw(im), 830, 1010, 44 * back(prog(t, 2.0, 0.3)), (40, 190, 90))
+    p1 = back(prog(t, 0.6, 0.4))
+    text(im, "ENTREGA GRÁTIS", 540, 330, 135, WHITE, scale=p1)
     bar = rrect(980, 150, ORANGE + (255,), 75)
-    p2 = ease_out(prog(t, 0.6, 0.4))
+    p2 = ease_out(prog(t, 1.5, 0.4))
     blit(im, bar, 540 + (1 - p2) * 1000, 560)
     text(im, "DENTRO DA CIDADE DE MAPUTO", 540 + (1 - p2) * 1000, 560, 55, WHITE)
-    # pin
     pin = Image.new("RGBA", (160, 220), (0, 0, 0, 0))
     pd = ImageDraw.Draw(pin)
     pd.ellipse((10, 10, 150, 150), fill=(235, 50, 60))
     pd.polygon([(25, 110), (135, 110), (80, 215)], fill=(235, 50, 60))
     pd.ellipse((50, 50, 110, 110), fill=WHITE)
-    blit(im, pin, 540, 800 + 18 * abs(math.sin(t * 5)), back(prog(t, 0.9, 0.4)))
-    return fadeflash(punch(im, t), t, 4.0, out=0.1)
+    blit(im, pin, 540, 790 + 18 * abs(math.sin(t * 5)), back(prog(t, 1.8, 0.4)))
+    return fadeflash(punch(im, t), t, dur, out=0.1)
 
 
-def scene7(t):  # 27.4–35 (7.6)
+def scene7(t, dur):  # CTA
     im = BG_NAVY.copy()
-    text(im, "QUER EXPERIMENTAR?", 540, 225, 96, WHITE, scale=back(prog(t, 0.1, 0.45)))
+    text(im, "QUER EXPERIMENTAR?", 540, 225, 96, WHITE, scale=back(prog(t, 0.05, 0.45)))
     card = rrect(600, 600, WHITE + (255,), 50)
     pim = BOX.resize((int(520 * BOX.width / BOX.height), 520), Image.LANCZOS)
     card.paste(pim, ((600 - pim.width) // 2, 40))
     pulse = 1 + 0.025 * math.sin(t * 4)
-    p = back(prog(t, 0.35, 0.5))
-    blit(im, shadow_of(card, 24, 130, 16), 540, 650 + 16, p * pulse)
-    blit(im, card, 540, 650, p * pulse)
-    sticker_50(im, 240 + 219, 350 + 442, 0.62 * back(prog(t, 0.8, 0.4)) * pulse)
-    # preço
-    p = back(prog(t, 1.2, 0.45), 2.6)
-    shake = 10 * math.sin(t * 55) * (1 - clamp((t - 1.2) / 0.5)) if t > 1.2 else 0
-    text(im, "499 MT", 540 + shake, 1110, 270, ORANGE, scale=p, stroke=0)
+    p = back(prog(t, 0.15, 0.5))
+    ccx = 390
+    blit(im, shadow_of(card, 24, 130, 16), ccx, 660 + 16, p * pulse)
+    blit(im, card, ccx, 660, p * pulse)
+    sticker_50(im, ccx - 300 + 219, 360 + 442, 0.62 * back(prog(t, 0.6, 0.4)) * pulse)
+    # pessoa feliz com a tira
+    hp = back(prog(t, 0.3, 0.5))
+    blit(im, bust("a", SHIRT_O, "happy", True, 0.0), 860, 690, 0.5 * hp)
+    p = back(prog(t, 0.5, 0.45), 2.6)
+    shake = 10 * math.sin(t * 55) * (1 - clamp((t - 0.5) / 0.5)) if t > 0.5 else 0
+    text(im, "499 MT", 540 + shake, 1110, 270, ORANGE, scale=p)
     for i, (lb, col, tc, sz) in enumerate([("50 TIRAS", WHITE, NAVY, 70), ("ENTREGA GRÁTIS EM MAPUTO", YELLOW, NAVY, 54)]):
-        pp = ease_out(prog(t, 1.9 + i * 0.55, 0.35))
-        if pp <= 0:
+        pp2 = ease_out(prog(t, 0.9 + i * 0.4, 0.35))
+        if pp2 <= 0:
             continue
         w = 420 if i == 0 else 960
         chip = rrect(w, 100, col + (255,), 50)
         ImageDraw.Draw(chip).text((w / 2, 50), lb, font=font(sz), fill=tc, anchor="mm")
-        blit(im, chip, 540, 1290 + i * 125 + (1 - pp) * 200, alpha=pp)
-    # CTA
-    pp = back(prog(t, 3.6, 0.5))
-    if pp > 0:
-        pulse = 1 + 0.045 * math.sin((t - 3.6) * 7)
+        blit(im, chip, 540, 1290 + i * 125 + (1 - pp2) * 200, alpha=pp2)
+    pp2 = back(prog(t, 1.8, 0.5))
+    if pp2 > 0:
+        pulse = 1 + 0.045 * math.sin((t - 1.8) * 7)
         btn = rrect(980, 170, ORANGE + (255,), 85, outline=WHITE + (255,), ow=8)
         ImageDraw.Draw(btn).text((610, 85), "ENVIE MENSAGEM\nAGORA", font=font(58), fill=WHITE, anchor="mm", align="center", spacing=6)
-        blit(im, shadow_of(btn, 20, 130, 14), 540, 1605 + 14, pp * pulse)
-        blit(im, btn, 540, 1605, pp * pulse)
-        icon_bubble(im, 210, 1605, 0.85 * pp * pulse)
+        blit(im, shadow_of(btn, 20, 130, 14), 540, 1605 + 14, pp2 * pulse)
+        blit(im, btn, 540, 1605, pp2 * pulse)
+        icon_bubble(im, 210, 1605, 0.85 * pp2 * pulse)
     return punch(im, t, 0.2, 0.05)
 
 
-SCENES = [(0.0, 3.2, scene1), (3.2, 7.2, scene2), (7.2, 12.4, scene3), (12.4, 17.4, scene4),
-          (17.4, 23.4, scene5), (23.4, 27.4, scene6), (27.4, 35.0, scene7)]
+T = [0.0, 5.3, 11.7, 17.5, 22.9, 29.4, 33.0, 38.0]
+SCENES = [(T[i], T[i + 1], fn) for i, fn in enumerate([scene1, scene2, scene3, scene4, scene5, scene6, scene7])]
 
 
 def frame(t):
     for a, b, fn in SCENES:
         if a <= t < b:
-            return fn(t - a)
-    return SCENES[-1][2](SCENES[-1][1] - SCENES[-1][0])
+            return fn(t - a, b - a)
+    a, b, fn = SCENES[-1]
+    return fn(b - a - 0.01, b - a)
 
 
 # ---------------------------------------------------------------- áudio
@@ -577,18 +654,20 @@ def synth_audio(path):
     for c in CUTS:
         whoosh(c - 0.25)
     whoosh(0.0, 0.3, 0.25)
-    for a, _, _ in [(12.4, 0, 0)]:
-        for i in (1, 2):
-            whoosh(12.4 + i * 5.0 / 3 - 0.2, 0.3, 0.3)
-    pop(17.4 + 0.25)  # "50"
-    pop(17.4 + 0.45, 0.3)
-    ding(17.4 + 1.7, 1318, 0.45)  # 499 MT
-    ding(17.4 + 1.72, 1976, 0.25)
-    horn(23.4 + 0.15)
-    pop(23.4 + 0.15)
-    pop(27.4 + 1.2)
-    ding(27.4 + 1.2, 1568, 0.4)
-    pop(27.4 + 3.6, 0.35)
+    whoosh(T[3] + 2.0 - 0.2, 0.3, 0.3)
+    whoosh(T[3] + 3.8 - 0.2, 0.3, 0.3)
+    pop(T[0] + 3.25, 0.45)  # PARE DE IGNORAR ISSO
+    pop(T[1] + 2.4, 0.3)
+    ding(T[1] + 2.4, 1568, 0.25)
+    pop(T[4] + 1.4)  # 50
+    pop(T[4] + 1.9, 0.3)
+    ding(T[4] + 3.85, 1318, 0.45)  # 499 MT
+    ding(T[4] + 3.87, 1976, 0.25)
+    horn(T[5] + 0.6)  # entrega grátis
+    pop(T[5] + 0.6)
+    pop(T[6] + 0.5)
+    ding(T[6] + 0.5, 1568, 0.4)
+    pop(T[6] + 1.8, 0.35)
     # ganho geral + fades
     out *= 0.85
     out[: int(0.05 * SR)] *= np.linspace(0, 1, int(0.05 * SR))
@@ -613,7 +692,7 @@ def main():
         os.makedirs(os.path.join(HERE, "preview"), exist_ok=True)
         for i, (s, e, fn) in enumerate(SCENES):
             for j, frac in enumerate((0.3, 0.75)):
-                fn((e - s) * frac).save(os.path.join(HERE, "preview", f"cena{i+1}_{j}.png"))
+                fn((e - s) * frac, e - s).save(os.path.join(HERE, "preview", f"cena{i+1}_{j}.png"))
         return
     ff = imageio_ffmpeg.get_ffmpeg_exe()
     wav = os.path.join(HERE, "_musica.wav")
