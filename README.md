@@ -2,24 +2,27 @@
 
 Composição `GoogleVideo`: primeiros 2 minutos de "The Company That Predicts Your Death".
 
-## Fluxo
+## Fluxo (áudio primeiro, depois visuais)
 
-1. **Fotos → halftone** (já gerado em `public/google/ht/`): `python3 tools/make_halftone.py`
-   (precisa de `pip install pillow numpy scipy`).
-2. **Locução**: gerar um WAV por parágrafo do script e guardar em `public/audio/voice/` como
-   `cold.wav` (Cold Open), `act1.wav` (Ato I), `act2.wav` (Ato II).
-3. **Música (opcional)**: `public/audio/music.mp3` — entra a 12% do volume, com fade.
-4. **Medir**: `npm run measure` lê os WAVs, atualiza `src/google/timing.json` e imprime os capítulos
-   para a descrição do YouTube. As cenas re-mapeiam-se proporcionalmente à duração real de cada parágrafo.
-5. **Rever**: `npm run dev` (Remotion Studio).
-6. **Render**: `npm run render:google` → `out/google.mp4` (H.264, 1080p, 30 fps, AAC).
-   Só a parte dos 2 minutos: `npm run render:google:2min`.
+1. **Roteiro → `tools/narration.json`**: texto por parágrafo + estilo de leitura.
+2. **Locução**: `npm run tts` gera um WAV por parágrafo em `public/audio/voice/` (Gemini TTS, voz Iapetus).
+   Chaves só por variável de ambiente, várias em rotação: `GEMINI_API_KEYS=chave1,chave2,...`
+   (ou `GEMINI_API_KEY_1`, `GEMINI_API_KEY_2`, ...). Nunca no código nem no git.
+3. **Medir**: `npm run measure` lê os WAVs, atualiza `src/google/timing.json` e imprime os capítulos
+   para a descrição do YouTube.
+4. **Storyboard com tempos reais**: dividir cada parágrafo em cenas usando as durações medidas.
+5. **Imagens → halftone**: `python3 tools/make_halftone.py` (precisa de `pip install pillow numpy scipy rembg onnxruntime`).
+6. **Cenas**: `src/google/scenes.tsx`; timecodes em `GG_BEATS` (`src/GoogleVideo.tsx`).
+7. **Música (opcional)**: `public/audio/music.mp3`, a 12% do volume, com fade.
+8. **Rever**: `npm run dev` (Remotion Studio).
+9. **Render**: `npm run render:google` → `out/google.mp4` (H.264, 1080p, 30 fps, AAC).
+   Só os 2 minutos: `npm run render:google:2min`.
 
 ## Ajustes rápidos
 
 - Velocidade das animações: `SPEED_MULTIPLIER` em `src/google/motion.ts`.
 - Conteúdo das cenas: `src/google/scenes.tsx`. Ordem e timecodes: `GG_BEATS` em `src/GoogleVideo.tsx`.
-- Cores e fontes: `src/styles.ts`.
+- Cores e fontes: `src/styles.ts`. Temas de fundo (`dark` / `paper` / `red`): `src/google/theme.tsx`.
 
 ## Limitações conhecidas
 
