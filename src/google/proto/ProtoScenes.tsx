@@ -36,7 +36,7 @@ const P1: React.FC = () => {
 };
 
 // P2 — 95% (IA) contra 85% (score clínico tradicional).
-const P2: React.FC = () => {
+export const P2: React.FC = () => {
   const th = useTheme();
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();

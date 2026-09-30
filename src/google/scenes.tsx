@@ -1,56 +1,75 @@
 import React from 'react';
 import {interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
-import {colors, fonts} from '../styles';
-import {LayeredScene} from './Layers';
+import {fonts} from '../styles';
 import {HalftoneImage} from './HalftoneImage';
-import {Bar, Tag} from './Vox';
-import {EASE_OUT, EASE_IN_OUT, SPEED_MULTIPLIER} from './motion';
+import {LayeredScene} from './Layers';
+import {EASE_OUT} from './motion';
+import {Connector, Flash, Grain, KineticText, RedDisc, useShake} from './proto/Fx';
+import {P2} from './proto/ProtoScenes';
+import {ThemeName, ThemeProvider, useTheme} from './theme';
+import {Tag} from './Vox';
+import {spring} from 'remotion';
 
-// Cenas dos primeiros 2 minutos (ver docs/storyboard_google_0-2min.md). Estilo Vox.
-// Tempos dentro de cada cena em segundos (multiplicados por fps).
+// Cenas dos primeiros 2 minutos (ver docs/storyboard_google_0-2min.md) no estilo Vox v2:
+// fundo creme (papel) com vermelho plano nos momentos de impacto. Tempos locais em segundos.
+
+const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
 const useT = () => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
-  return {frame, fps, sec: frame / fps};
+  return {frame, fps};
 };
+const reveal = (frame: number, at = 4, len = 34) => interpolate(frame, [at, at + len], [0, 1], {...clamp, easing: EASE_OUT});
 
-const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: EASE_OUT} as const;
-const reveal = (frame: number, fps: number, secs = 1.2) =>
-  interpolate(frame, [0, (secs * fps) / SPEED_MULTIPLIER], [0, 1], {...clamp, easing: EASE_IN_OUT});
-
-const source: React.CSSProperties = {
-  position: 'absolute',
-  left: 140,
-  bottom: 60,
-  fontFamily: fonts.mono,
-  fontSize: 24,
-  letterSpacing: 3,
-  color: colors.grayLight,
-  textTransform: 'uppercase',
-};
-
-const Big: React.FC<{children: React.ReactNode; x: number; y: number; size?: number; opacity?: number}> = ({children, x, y, size = 200, opacity = 1}) => (
-  <div style={{position: 'absolute', left: x, top: y, fontFamily: fonts.heading, fontWeight: 900, fontSize: size, color: colors.white, lineHeight: 1, opacity, textShadow: `10px 10px 0 ${colors.red}`}}>
+// Cada cena escolhe o seu tema e leva o grão por cima.
+const Shell: React.FC<{theme: ThemeName; children: React.ReactNode}> = ({theme, children}) => (
+  <ThemeProvider name={theme}>
     {children}
-  </div>
+    <Grain />
+  </ThemeProvider>
 );
+
+const Mono: React.FC<{x: number; y: number; size?: number; children: React.ReactNode}> = ({x, y, size = 36, children}) => {
+  const th = useTheme();
+  return <div style={{position: 'absolute', left: x, top: y, fontFamily: fonts.mono, fontSize: size, letterSpacing: 6, color: th.mono}}>{children}</div>;
+};
+
+const Big: React.FC<{x: number; y: number; size: number; children: React.ReactNode; opacity?: number}> = ({x, y, size, children, opacity = 1}) => {
+  const th = useTheme();
+  return (
+    <div style={{position: 'absolute', left: x, top: y, fontFamily: fonts.heading, fontWeight: 900, fontSize: size, lineHeight: 1, color: th.text, opacity, textShadow: `${size * 0.05}px ${size * 0.05}px 0 ${th.textShadow}`}}>
+      {children}
+    </div>
+  );
+};
 
 // 1 (0:00–0:16) — o momento em que o doente começa a morrer.
 export const SceneHospital: React.FC = () => {
   const {frame, fps} = useT();
+  const th = useTheme();
+  const slide = spring({frame: frame - 4, fps, config: {damping: 18, stiffness: 90}});
+  const colon = Math.floor(frame / 15) % 2 === 0 ? ':' : ' ';
   return (
-    <LayeredScene
-      mid={<HalftoneImage name="hospital" x={600} y={220} width={1250} reveal={reveal(frame, fps, 1.6)} />}
-      fore={
-        <>
-          <Tag text="The moment a patient begins to die" appearAt={1.5 * fps} x={110} y={90} size={38} />
-          <Tag text="03:12 AM" appearAt={4 * fps} x={130} y={330} />
-          <Tag text="100 small readings" appearAt={8 * fps} x={130} y={510} />
-          <Tag text="Easy to miss" appearAt={11.5 * fps} x={130} y={690} fill />
-        </>
-      }
-    />
+    <Shell theme="paper">
+      <LayeredScene
+        mid={
+          <div style={{position: 'absolute', inset: 0, transform: `translateX(${(1 - slide) * 500}px)`, opacity: slide}}>
+            <HalftoneImage name="hospital" x={700} y={290} width={1150} reveal={reveal(frame, 4, 40)} />
+          </div>
+        }
+        fore={
+          <>
+            <KineticText lines={[['The', 'moment', 'a'], ['patient'], ['quietly', 'begins'], ['to', 'die']]} x={110} y={100} size={108} startAt={8} stagger={8} hot={['die']} />
+            <div style={{position: 'absolute', right: 140, top: 80, fontFamily: fonts.mono, fontSize: 60, color: th.text, letterSpacing: 6}}>
+              03{colon}12 <span style={{color: th.hotBg}}>AM</span>
+            </div>
+            <Tag text="100 small readings" appearAt={8 * fps} x={110} y={700} />
+            <Tag text="Easy to miss" appearAt={11.5 * fps} x={110} y={840} fill />
+          </>
+        }
+      />
+    </Shell>
   );
 };
 
@@ -58,133 +77,152 @@ export const SceneHospital: React.FC = () => {
 export const SceneYear: React.FC = () => {
   const {fps} = useT();
   return (
-    <LayeredScene
-      mid={<HalftoneImage name="hospital" x={600} y={220} width={1250} opacity={0.22} />}
-      fore={
-        <>
-          <Big x={330} y={250} size={440}>
-            2018
-          </Big>
-          <Tag text="A machine learned to catch it first" appearAt={1.2 * fps} x={330} y={760} fill size={50} />
-        </>
-      }
-    />
+    <Shell theme="paper">
+      <LayeredScene
+        back={<RedDisc x={960} y={470} r={400} appearAt={2} />}
+        mid={<HalftoneImage name="hospital" x={700} y={290} width={1150} opacity={0.12} />}
+        fore={
+          <>
+            <KineticText lines={[['2018']]} x={360} y={250} size={430} startAt={3} hot={[]} />
+            <Tag text="A machine learned to catch it first" appearAt={1.4 * fps} x={330} y={780} fill size={50} />
+          </>
+        }
+      />
+    </Shell>
   );
 };
 
-// 3 (0:20–0:35) — 114 mil registos entram no modelo; "quem vai morrer?".
+// 3 (0:20–0:35) — 114 mil registos; "quem, neste edifício, vai morrer?"
 export const SceneRecords: React.FC = () => {
   const {frame, fps} = useT();
-  const count = Math.round(interpolate(frame, [2 * fps, 7 * fps], [0, 114000], clamp));
+  const count = Math.round(interpolate(frame, [2 * fps, 7 * fps], [0, 114000], {...clamp, easing: EASE_OUT}));
   return (
-    <LayeredScene
-      mid={<HalftoneImage name="records" x={110} y={250} width={1000} reveal={reveal(frame, fps)} />}
-      fore={
-        <>
-          <Tag text="Medical records" appearAt={0.8 * fps} x={130} y={110} />
-          <Big x={1230} y={250} size={150}>
-            {count.toLocaleString('en-US')}
-          </Big>
-          <div style={{position: 'absolute', left: 1230, top: 420, fontFamily: fonts.mono, fontSize: 38, letterSpacing: 8, color: colors.platinum}}>PATIENTS</div>
-          <Tag text="Artificial intelligence" appearAt={7.5 * fps} x={1230} y={560} size={40} />
-          <Tag text="Who, in this building," appearAt={10 * fps} x={1230} y={700} fill size={44} />
-          <Tag text="is going to die?" appearAt={10.6 * fps} x={1230} y={800} fill size={44} />
-        </>
-      }
-    />
+    <Shell theme="paper">
+      <LayeredScene
+        back={<RedDisc x={560} y={540} r={360} appearAt={2} />}
+        mid={<HalftoneImage name="records" x={110} y={230} width={1000} reveal={reveal(frame)} />}
+        fore={
+          <>
+            <Tag text="Medical records" appearAt={0.8 * fps} x={130} y={90} />
+            <Big x={1150} y={230} size={150}>{count.toLocaleString('en-US')}</Big>
+            <Mono x={1150} y={400}>PATIENTS</Mono>
+            <Tag text="Artificial intelligence" appearAt={7.5 * fps} x={1150} y={520} size={40} />
+            <Tag text="Who, in this building," appearAt={10 * fps} x={1150} y={700} fill size={44} />
+            <Tag text="is going to die?" appearAt={10.6 * fps} x={1150} y={800} fill size={44} />
+          </>
+        }
+      />
+    </Shell>
   );
 };
 
-// 4 (0:35–0:46) — 95% vs. score clínico tradicional.
-export const SceneClimax: React.FC = () => {
-  const {frame, fps} = useT();
-  return (
-    <LayeredScene
-      mid={<HalftoneImage name="doctor" x={150} y={240} width={470} reveal={reveal(frame, fps)} />}
-      fore={
-        <>
-          <Tag text="Who will die?" appearAt={0.8 * fps} x={150} y={110} fill />
-          <Bar label="Early Warning Score" value={85} appearAt={2.5 * fps} x={930} color={colors.grayLight} />
-          <Bar label="Google AI" value={95} appearAt={4 * fps} x={1330} color={colors.red} />
-          <Tag text="Earlier than the nurses" appearAt={7 * fps} x={930} y={110} size={38} />
-          <div style={source}>Source: Nature · 2018</div>
-        </>
-      }
-    />
-  );
-};
+// 4 (0:35–0:46) — PICO (vermelho): 95% contra o score clínico.
+export const SceneClimax: React.FC = () => (
+  <Shell theme="red">
+    <P2 />
+  </Shell>
+);
 
 // 5 (0:46–0:54) — publicado numa revista médica.
 export const ScenePaper: React.FC = () => {
   const {frame, fps} = useT();
   return (
-    <LayeredScene
-      mid={<HalftoneImage name="paper" x={120} y={260} width={1100} reveal={reveal(frame, fps)} />}
-      fore={
-        <>
-          <Tag text="Published in a medical journal" appearAt={0.8 * fps} x={120} y={110} size={40} />
-          <Tag text="Nature" appearAt={2.5 * fps} x={1330} y={400} size={56} />
-          <Tag text="May 2018" appearAt={4 * fps} x={1330} y={540} fill size={56} />
-        </>
-      }
-    />
+    <Shell theme="paper">
+      <LayeredScene
+        back={<RedDisc x={1290} y={620} r={340} appearAt={2} />}
+        mid={<HalftoneImage name="paper" x={760} y={320} width={1100} reveal={reveal(frame)} />}
+        fore={
+          <>
+            <KineticText lines={[['Published', 'in', 'a'], ['medical'], ['journal']]} x={110} y={110} size={112} startAt={6} stagger={8} hot={[]} />
+            <Tag text="Nature" appearAt={3.4 * fps} x={110} y={640} size={56} />
+            <Tag text="May 2018" appearAt={4.6 * fps} x={110} y={790} fill size={56} />
+          </>
+        }
+      />
+    </Shell>
   );
 };
 
-// 6 (0:54–1:00) — "porque é que uma empresa de anúncios sabe quando vais morrer?"
+// 6 (0:54–1:00) — PICO (vermelho): a pergunta.
 export const SceneQuestion: React.FC = () => {
-  const {frame, fps} = useT();
+  const {frame} = useT();
   return (
-    <LayeredScene
-      mid={<HalftoneImage name="screen" x={800} y={250} width={1100} reveal={reveal(frame, fps, 1)} />}
-      fore={
-        <>
-          <Tag text="An advertising company" appearAt={0.5 * fps} x={110} y={300} size={48} />
-          <Tag text="Knowing when you will die?" appearAt={3 * fps} x={110} y={480} fill size={48} />
-        </>
-      }
-    />
+    <Shell theme="red">
+      <LayeredScene
+        back={<RedDisc x={1450} y={640} r={320} appearAt={2} />}
+        mid={<HalftoneImage name="screen" x={1000} y={330} width={900} reveal={reveal(frame, 4, 30)} />}
+        fore={<KineticText lines={[['An', 'advertising'], ['company'], ['knowing', 'when'], ['you', 'will', 'die?']]} x={110} y={90} size={122} startAt={4} stagger={9} hot={['die?']} />}
+      />
+    </Shell>
   );
 };
 
 // 7 (1:00–1:10) — o hospital é secundário.
 export const SceneBuilding: React.FC = () => {
   const {frame, fps} = useT();
-  const fade = interpolate(frame, [6 * fps, 8 * fps], [1, 0.22], clamp);
+  const fade = interpolate(frame, [6 * fps, 8 * fps], [1, 0.18], clamp);
   return (
-    <LayeredScene
-      mid={<HalftoneImage name="exterior" x={330} y={220} width={1250} reveal={reveal(frame, fps)} opacity={fade} />}
-      fore={
-        <>
-          <Tag text="Looks like a healthcare story" appearAt={1 * fps} x={130} y={100} size={42} />
-          <Tag text="Beside the point" appearAt={7 * fps} x={560} y={800} fill size={64} />
-        </>
-      }
-    />
+    <Shell theme="paper">
+      <LayeredScene
+        mid={<HalftoneImage name="exterior" x={560} y={310} width={1250} reveal={reveal(frame)} opacity={fade} />}
+        fore={
+          <>
+            <KineticText lines={[['Looks', 'like', 'a'], ['healthcare', 'story']]} x={110} y={100} size={112} startAt={6} stagger={9} hot={[]} />
+            <Tag text="Beside the point" appearAt={7 * fps} x={200} y={800} fill size={70} />
+          </>
+        }
+      />
+    </Shell>
   );
 };
 
-// 8–10 (1:10–1:43) — o mesmo motor: tudo o que se sabe de uma pessoa → o que acontece a seguir.
+const Years: React.FC<{n: number}> = ({n}) => {
+  const th = useTheme();
+  return (
+    <div style={{position: 'absolute', right: 140, top: 130, fontFamily: fonts.heading, fontWeight: 900, fontSize: 72, color: th.hotBg, opacity: n > 0 ? 1 : 0}}>
+      {n} <span style={{fontSize: 34, fontFamily: fonts.mono}}>YEARS</span>
+    </div>
+  );
+};
+
+// 8–10 (1:10–1:43) — o motor; no "LAST BREATH" o fundo vira vermelho (pico).
 export const SceneEngine: React.FC = () => {
   const {frame, fps} = useT();
-  const years = Math.round(interpolate(frame, [18 * fps, 24 * fps], [0, 20], clamp));
+  const slamAt = 26 * fps;
+  const sh = useShake(slamAt);
+  const theme: ThemeName = frame >= slamAt ? 'red' : 'paper';
+  const years = Math.round(interpolate(frame, [18 * fps, 24 * fps], [0, 20], {...clamp, easing: EASE_OUT}));
+  const head: [number, number] = [960, 430];
+  const items: {t: string; x: number; y: number; at: number; end: [number, number]}[] = [
+    {t: 'Next click', x: 170, y: 250, at: 8 * fps, end: [570, 290]},
+    {t: 'Next word', x: 150, y: 520, at: 12 * fps, end: [560, 560]},
+    {t: 'Next route', x: 1380, y: 230, at: 10 * fps, end: [1370, 270]},
+    {t: 'Next buy', x: 1440, y: 500, at: 14 * fps, end: [1430, 540]},
+  ];
   return (
-    <LayeredScene
-      mid={<HalftoneImage name="person" x={680} y={190} width={560} reveal={reveal(frame, fps, 1.5)} />}
-      fore={
-        <>
-          <Tag text="Everything known about a person" appearAt={1.5 * fps} x={110} y={90} size={36} />
-          <Tag text="Next click" appearAt={8 * fps} x={150} y={300} />
-          <Tag text="Next route" appearAt={10 * fps} x={1330} y={260} />
-          <Tag text="Next word" appearAt={12 * fps} x={130} y={520} />
-          <Tag text="Next buy" appearAt={14 * fps} x={1380} y={480} />
-          <div style={{position: 'absolute', right: 140, top: 90, fontFamily: fonts.heading, fontWeight: 900, fontSize: 72, color: colors.white, opacity: years > 0 ? 1 : 0}}>
-            {years} <span style={{fontSize: 34, color: colors.grayLight, fontFamily: fonts.mono}}>YEARS</span>
-          </div>
-          <Tag text="Last breath" appearAt={26 * fps} x={1290} y={770} fill size={64} />
-        </>
-      }
-    />
+    <Shell theme={theme}>
+      <div style={{position: 'absolute', inset: 0, transform: `translate(${sh.x}px, ${sh.y}px)`}}>
+        <LayeredScene
+          back={<RedDisc x={960} y={520} r={360} appearAt={2} />}
+          mid={<HalftoneImage name="person" x={690} y={210} width={540} reveal={reveal(frame)} />}
+          fore={
+            <>
+              <Tag text="Everything known about a person" appearAt={1.5 * fps} x={110} y={80} size={38} />
+              {items.map((it) => (
+                <React.Fragment key={it.t}>
+                  <Connector from={head} to={it.end} appearAt={it.at - 6} />
+                  <Tag text={it.t} appearAt={it.at} x={it.x} y={it.y} />
+                </React.Fragment>
+              ))}
+              <Years n={years} />
+              <Connector from={[960, 700]} to={[1290, 830]} appearAt={slamAt - 4} width={8} />
+              <Tag text="Last breath" appearAt={slamAt} x={1290} y={790} fill size={78} />
+            </>
+          }
+        />
+        <Flash at={slamAt} />
+      </div>
+    </Shell>
   );
 };
 
@@ -192,16 +230,19 @@ export const SceneEngine: React.FC = () => {
 export const SceneReadAll: React.FC = () => {
   const {frame, fps} = useT();
   return (
-    <LayeredScene
-      mid={<HalftoneImage name="records" x={100} y={300} width={900} reveal={reveal(frame, fps)} />}
-      fore={
-        <>
-          <Tag text="What it took to see" appearAt={0.4 * fps} x={110} y={110} size={38} />
-          <Tag text="Forecasting a death" appearAt={1.2 * fps} x={1080} y={360} size={48} />
-          <Tag text="By reading all of it" appearAt={4.5 * fps} x={1080} y={540} fill size={56} />
-        </>
-      }
-    />
+    <Shell theme="paper">
+      <LayeredScene
+        back={<RedDisc x={540} y={600} r={330} appearAt={2} />}
+        mid={<HalftoneImage name="records" x={90} y={280} width={900} reveal={reveal(frame)} />}
+        fore={
+          <>
+            <Tag text="What it took to see" appearAt={0.4 * fps} x={110} y={90} size={38} />
+            <KineticText lines={[['By', 'reading'], ['all', 'of', 'it']]} x={1000} y={240} size={118} startAt={1.2 * fps} stagger={9} hot={['it']} />
+            <Tag text="Forecasting a death" appearAt={5 * fps} x={1040} y={720} size={48} />
+          </>
+        }
+      />
+    </Shell>
   );
 };
 
@@ -209,16 +250,19 @@ export const SceneReadAll: React.FC = () => {
 export const SceneNotes: React.FC = () => {
   const {frame, fps} = useT();
   return (
-    <LayeredScene
-      mid={<HalftoneImage name="notes" x={640} y={230} width={1200} reveal={reveal(frame, fps)} />}
-      fore={
-        <>
-          <Tag text="The numbers" appearAt={0.6 * fps} x={110} y={230} />
-          <Tag text="The scans" appearAt={2.8 * fps} x={110} y={410} />
-          <Tag text="Free-text notes" appearAt={5 * fps} x={110} y={590} fill />
-          <Tag text="03:12 AM" appearAt={7.5 * fps} x={110} y={780} size={40} />
-        </>
-      }
-    />
+    <Shell theme="paper">
+      <LayeredScene
+        back={<RedDisc x={1300} y={600} r={330} appearAt={2} />}
+        mid={<HalftoneImage name="notes" x={640} y={230} width={1200} reveal={reveal(frame)} />}
+        fore={
+          <>
+            <Tag text="The numbers" appearAt={0.6 * fps} x={110} y={230} />
+            <Tag text="The scans" appearAt={2.8 * fps} x={110} y={410} />
+            <Tag text="Free-text notes" appearAt={5 * fps} x={110} y={590} fill />
+            <Tag text="03:12 AM" appearAt={7.5 * fps} x={110} y={780} size={40} />
+          </>
+        }
+      />
+    </Shell>
   );
 };

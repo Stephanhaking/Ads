@@ -13,7 +13,7 @@ import {
 } from './google/scenes';
 import {colors} from './styles';
 import {MUSIC_FILE, PARAGRAPHS, mapTime, paragraphStart} from './google/timing';
-import {EASE_OUT, TRANSITION_FRAMES as T, TRANSITION_SLIDE_PX} from './google/motion';
+import {RedWipe} from './google/proto/Fx';
 
 // Timecodes em segundos na timeline estimada; `s()` converte-os para o tempo real da locução
 // (src/google/timing.json, atualizado por `npm run measure`).
@@ -35,17 +35,6 @@ export const GG_BEATS = [
 ] as const;
 
 export const GG_TOTAL = s(GG_BEATS[GG_BEATS.length - 1].to); // fim da última cena, já re-mapeado para a locução
-
-// Entrada: fade + deslize lateral (exceto a 1.ª cena). Saída: só desliza, opaca, enquanto a seguinte entra por cima (crossfade sem mergulho).
-const Transition: React.FC<{first: boolean; last: boolean; duration: number; children: React.ReactNode}> = ({first, last, duration, children}) => {
-  const frame = useCurrentFrame();
-  const opts = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: EASE_OUT} as const;
-  const enter = first ? 1 : interpolate(frame, [0, T], [0, 1], opts);
-  const dx =
-    (first ? 0 : interpolate(frame, [0, T], [TRANSITION_SLIDE_PX, 0], opts)) +
-    (last ? 0 : interpolate(frame, [duration - T, duration], [0, -TRANSITION_SLIDE_PX], opts));
-  return <AbsoluteFill style={{opacity: enter, transform: `translateX(${dx}px)`}}>{children}</AbsoluteFill>;
-};
 
 // Música de fundo: volume baixo, com fade de entrada e saída.
 const Music: React.FC = () => {
@@ -73,18 +62,16 @@ export const GoogleVideo: React.FC = () => (
   <AbsoluteFill style={{backgroundColor: colors.black}}>
     <Voice />
     <Music />
-    {GG_BEATS.map(({id, from, to, Component}, i) => {
-      const first = i === 0;
-      const last = i === GG_BEATS.length - 1;
-      // Começa exatamente no timecode; prolonga-se T frames por baixo da cena seguinte (que entra por cima).
-      const duration = s(to) - s(from) + (last ? 0 : T);
-      return (
-        <Sequence key={id} name={id} from={s(from)} durationInFrames={duration}>
-          <Transition first={first} last={last} duration={duration}>
-            <Component />
-          </Transition>
-        </Sequence>
-      );
-    })}
+    {GG_BEATS.map(({id, from, to, Component}) => (
+      <Sequence key={id} name={id} from={s(from)} durationInFrames={s(to) - s(from)}>
+        <Component />
+      </Sequence>
+    ))}
+    {/* wipe vermelho a cobrir cada corte (dura 18 frames; o corte acontece a meio) */}
+    {GG_BEATS.slice(1).map(({id, from}) => (
+      <Sequence key={`wipe-${id}`} name={`wipe-${id}`} from={s(from) - 9} durationInFrames={18}>
+        <RedWipe />
+      </Sequence>
+    ))}
   </AbsoluteFill>
 );
