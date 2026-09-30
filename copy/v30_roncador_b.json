@@ -1,0 +1,36 @@
+{
+  "id": "v30_roncador_b",
+  "audience": "roncador",
+  "hook_type": "humor_virada",
+  "voice": "pt-BR-FranciscaNeural",
+  "gemini_voice": "Charon",
+  "tts_style": "Fale em português do Brasil, como uma pessoa real contando uma história pessoal para uma amiga, com emoção natural e ritmo normal de conversa, sem pausas longas: ",
+  "status": "approved",
+  "lines": [
+    "Eu ria do meu ronco. Minha esposa, não.",
+    "Eu acordava com vergonha. Ela, sem conseguir dormir.",
+    "Um dia, ela me mostrou essa tirinha nasal.",
+    "Achei estranho. Mas topei testar.",
+    "Ela abre as laterais do nariz e facilita a passagem de ar.",
+    "Pode ajudar no ronco causado por nariz entupido.",
+    "Eu colo antes de deitar. É rápida e discreta.",
+    "Nossas noites estão bem mais tranquilas.",
+    "Se o ronco também rouba o sono aí em casa, vale testar.",
+    "Toque no link e confira."
+  ],
+  "scenes": [
+    "r01_esposa_sofa.jpg",
+    "r02_marido_vergonha.jpg",
+    "r03_esposa_mostrando.jpg",
+    "r04_marido_duvida.jpg",
+    "strips",
+    "p07_tira_nariz.jpg",
+    "peel",
+    "p09_manha_casal.jpg",
+    "r05_casal_juntos.jpg",
+    "full"
+  ],
+  "caption": "Tiras Nasais — abre as laterais do nariz e pode ajudar no ronco causado por nariz entupido. Não substitui orientação médica.",
+  "cta_button": "TOQUE NO LINK",
+  "target_seconds": 30
+}

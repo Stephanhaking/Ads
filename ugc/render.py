@@ -56,6 +56,19 @@ DEFAULT_PAN = {
 AI_ROLES = ("face", "mood", "face_close")  # cenas que aceitam imagem gerada em inputs/scenes/
 
 
+REAL_ROLES = ("face", "face_close", "strips", "peel", "full", "mood")  # recortes da foto real do produto
+
+
+def parse_scene_spec(root: Path, spec: str):
+    """'strips' -> recorte da foto real | 'p01_noite.jpg@0.3-0.7' -> imagem gerada com pan (centro início-fim)."""
+    if spec in REAL_ROLES:
+        return spec, None, None
+    name, _, pan = spec.partition("@")
+    f = root / "inputs/scenes" / name
+    pan_t = tuple(float(x) for x in pan.split("-")) if pan else None
+    return (None, f, pan_t) if f.exists() else ("MISSING:" + name, None, None)
+
+
 def find_scene_image(root: Path, role: str, audience: str):
     """inputs/scenes/<papel>_<publico>.(png|jpg|webp) tem prioridade sobre inputs/scenes/<papel>.*"""
     for stem in (f"{role}_{audience}", role):
@@ -72,7 +85,7 @@ def scene_clip(td, img, size, role, dur, motion, crops, out, custom=False, pan=N
     if custom and iw / ih > 0.6:  # imagem horizontal: escala p/ altura e desliza uma janela 9:16 por cima
         hs = 2100
         sw = int(iw * hs / ih) // 2 * 2
-        a, b = pan or (0.5, 0.5)
+        a, b = pan or (0.38, 0.62)
         x = f"max(0,min({sw - W},({a}+({b}-{a})*t/{dur:.3f})*{sw}-{W // 2}))"
         vf = f"scale={sw}:{hs}:flags=lanczos,crop={W}:{H}:x='{x}':y={(hs - H) // 2},setsar=1,format=yuv420p"
     elif custom:  # imagem vertical: preenche o quadro com zoom suave
@@ -117,12 +130,25 @@ def render_one(root: Path, copy_path: Path, image: Path, out_dir: Path, music: P
     lines = copy["lines"]
     n = len(lines)
     roles = (ROLES[:n - 1] + ["full"]) if n <= len(ROLES) else (ROLES[:-1] * n)[:n - 1] + ["full"]
+    specs = copy.get("scenes")
+    if specs and len(specs) != n:
+        raise ValueError(f"{vid}: {len(specs)} cenas para {n} frases (precisam ser iguais)")
+    missing = []
 
     with tempfile.TemporaryDirectory() as td:
         td = Path(td)
         img_name = "img" + image.suffix
         shutil.copy(image, td / img_name)
         voice_file = tts.synthesize(" ".join(lines), copy, td)
+        if voice_file and copy.get("target_seconds"):
+            # ajusta a velocidade da voz (máx. 1.3x / 0.9x) para o vídeo fechar perto do alvo
+            ratio = duration(voice_file) / max(copy["target_seconds"] - 0.7, 1.0)
+            ratio = min(max(ratio, 0.9), 1.3)
+            if abs(ratio - 1) > 0.03:
+                fast = td / "voice_fast.wav"
+                run([ffmpeg_bin(), "-y", "-loglevel", "error", "-i", str(voice_file), "-filter:a",
+                     f"atempo={ratio:.3f}", str(fast)])
+                voice_file = fast
         total = (duration(voice_file) + 0.7) if voice_file else max(len(" ".join(lines)) / 17.0, 8.0)
         ass, starts = subs.build_ass(lines, total, style_idx, cta_text=copy.get("cta_button", "TOQUE NO LINK"))
         (td / "subs.ass").write_text(ass, encoding="utf-8")
@@ -134,14 +160,24 @@ def render_one(root: Path, copy_path: Path, image: Path, out_dir: Path, music: P
         for i, (role, d) in enumerate(zip(roles, durs)):
             name = f"s{i}.mp4"
             src, sz, custom, pan = img_name, size, False, None
-            ai = find_scene_image(root, role, copy.get("audience", "")) if role in AI_ROLES else None
+            ai = None
+            if specs:
+                r, ai, spc_pan = parse_scene_spec(root, specs[i])
+                if r and r.startswith("MISSING:"):
+                    missing.append(r[8:])
+                    r = "face"  # reserva: recorte da foto real
+                role = r or role
+                if ai and spc_pan:
+                    pan = spc_pan
+            elif role in AI_ROLES:
+                ai = find_scene_image(root, role, copy.get("audience", ""))
             if ai:
                 src = f"scene{i}{ai.suffix}"
                 shutil.copy(ai, td / src)
                 sz, custom = _image_size(td / src), True
                 used.append(ai.name)
                 key = ai.stem
-                pan = (product.get("scene_pan", {}).get(key)) or DEFAULT_PAN.get(key)
+                pan = pan or (product.get("scene_pan", {}).get(key)) or DEFAULT_PAN.get(key)
             scene_clip(td, src, sz, role, d + (XF if i < n - 1 else 0), MOTIONS[(i + rng.randrange(4)) % 4],
                        crops, name, custom, pan)
             clips.append(name)
@@ -180,5 +216,5 @@ def render_one(root: Path, copy_path: Path, image: Path, out_dir: Path, music: P
         out_dir.mkdir(parents=True, exist_ok=True)
         shutil.move(td / "out.mp4", out)
     return {"id": vid, "file": str(out), "duration": round(total, 1), "voice": bool(voice_file),
-            "scenes": n, "scene_images": used, "caption": copy.get("caption", ""), "hook_type": copy.get("hook_type", ""),
+            "scenes": n, "scene_images": used, "missing_images": missing, "caption": copy.get("caption", ""), "hook_type": copy.get("hook_type", ""),
             "audience": copy.get("audience", "")}

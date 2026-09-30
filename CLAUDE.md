@@ -10,6 +10,12 @@ Objetivo: 1 imagem de produto + briefings de público + hooks -> biblioteca de v
 - Nunca usar `forbidden_claims` de `inputs/product.json`. Não inventar números, avaliações ou garantias que não estejam no product.json.
 - Cada variante muda UMA variável principal (hook, público ou ângulo) para o teste A/B ser interpretável.
 
+## Versão 30 s (`copy/v30_*.json`)
+- 9 a 10 frases, ~80-90 palavras, arco: hook -> dor/vergonha -> virada (alguém mostra a tira) -> dúvida -> benefício -> como usar -> resultado suave -> CTA.
+- Cada vídeo define `scenes` (1 por frase): `strips`/`peel`/`full` = recortes da foto real; `arquivo.jpg[@a-b]` = imagem gerada em `inputs/scenes/` (pan opcional, fração da largura). Mesmo nº de cenas e frases.
+- `target_seconds: 30` ajusta a velocidade da voz (0.9x a 1.3x). Personagens: casal negro brasileiro (ver `prompts/meta_ai_prompts_v2_30s.md`).
+- Depoimentos são encenados: nunca apresentar como relato real sem cliente real.
+
 ## Fluxo que você (Claude Code) deve executar
 1. Ler `inputs/product.json`, `inputs/audiences/*.json`, `inputs/hooks.csv`.
 2. (Opcional) Propor 5-10 hooks novos por público e acrescentar ao `hooks.csv`.

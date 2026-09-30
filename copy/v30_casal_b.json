@@ -1,0 +1,36 @@
+{
+  "id": "v30_casal_b",
+  "audience": "casal",
+  "hook_type": "conflito",
+  "voice": "pt-BR-FranciscaNeural",
+  "gemini_voice": "Aoede",
+  "tts_style": "Fale em português do Brasil, como uma pessoa real contando uma história pessoal para uma amiga, com emoção natural e ritmo normal de conversa, sem pausas longas: ",
+  "status": "approved",
+  "lines": [
+    "Dormir em quartos separados não deveria ser normal.",
+    "Aqui em casa o ronco virou piada. Mas já cansou.",
+    "Cotovelada de madrugada. Ninguém dormia direito.",
+    "Até a gente decidir testar uma coisa simples.",
+    "Tirinha nasal. Parece bobagem, eu sei.",
+    "Ela abre as laterais do nariz e facilita a passagem de ar.",
+    "Pode ajudar no ronco causado por nariz entupido.",
+    "Ele cola antes de deitar. É fina e discreta.",
+    "E a cama voltou a ser de casal.",
+    "Se o ronco rouba o sono aí em casa, vale testar. Toque no link e confira."
+  ],
+  "scenes": [
+    "c01_travesseiro_noite.jpg",
+    "c02_cotovelada.jpg",
+    "c03_casal_cansado_cafe.jpg",
+    "c04_casal_pacote.jpg",
+    "r04_marido_duvida.jpg",
+    "strips",
+    "p07_tira_nariz.jpg",
+    "peel",
+    "p09_manha_casal.jpg",
+    "full"
+  ],
+  "caption": "Tiras Nasais — abre as laterais do nariz e pode ajudar no ronco causado por nariz entupido. Não substitui orientação médica.",
+  "cta_button": "TOQUE NO LINK",
+  "target_seconds": 30
+}
