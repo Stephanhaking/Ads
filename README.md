@@ -18,6 +18,13 @@ Composição `GoogleVideo`: primeiros 2 minutos de "The Company That Predicts Yo
 9. **Render**: `npm run render:google` → `out/google.mp4` (H.264, 1080p, 30 fps, AAC).
    Só os 2 minutos: `npm run render:google:2min`.
 
+## Regra crítica: sincronização áudio/cena
+
+Nunca confiar nas durações que o script TTS reporta: **medir o WAV diretamente**. `npm run measure`
+compara o `timecodes_google.json` com a duração real do master e recusa sincronizar se não batem
+(bug da sessão 3 do projeto anterior: o TTS reportava 28 s e o ficheiro tinha 19 s).
+Limite do Gemini TTS gratuito: ~10 pedidos/dia por chave, por isso `tts_google.py` roda várias chaves.
+
 ## Ajustes rápidos
 
 - Velocidade das animações: `SPEED_MULTIPLIER` em `src/google/motion.ts`.

@@ -34,7 +34,20 @@ IDS = {'cold': 'cold', 'a1': 'act1', 'a2': 'act2'}
 
 def from_timecodes(tc_path, master_path):
     data = json.load(open(TIMING))
-    chunks = {c['id']: c for c in json.load(open(tc_path))['chunks']}
+    tc = json.load(open(tc_path))
+    chunks = {c['id']: c for c in tc['chunks']}
+
+    # REGRA CRÍTICA: nunca confiar só nas durações reportadas pelo TTS — medir o master diretamente.
+    real = duration(master_path)
+    last_end = max(c['t'] + c['dur'] for c in chunks.values())
+    reported = tc.get('total_seconds')
+    print(f"master real: {real:.2f}s · fim do último chunk no JSON: {last_end:.2f}s"
+          + (f" · total reportado: {reported:.2f}s" if reported else ''))
+    if last_end > real + 0.5:
+        raise SystemExit(f'ERRO: o JSON diz que os chunks acabam em {last_end:.1f}s mas o master só tem {real:.1f}s. '
+                         'O JSON não corresponde a este WAV — não vou sincronizar com tempos falsos.')
+    if reported and abs(reported - real) > 0.5:
+        print(f'AVISO: total reportado ({reported:.1f}s) difere do master ({real:.1f}s) em mais de 0,5 s.')
     os.makedirs(os.path.join(ROOT, 'public/audio'), exist_ok=True)
     shutil.copy(master_path, os.path.join(ROOT, 'public/audio/voiceover_google.wav'))
     data['master'] = 'audio/voiceover_google.wav'
