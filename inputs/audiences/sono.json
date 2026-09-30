@@ -11,5 +11,6 @@
     "já tenho um spray"
   ],
   "tone": "calmo, próximo",
-  "voice": "pt-BR-FranciscaNeural"
+  "voice": "pt-BR-FranciscaNeural",
+  "gemini_voice": "Kore"
 }

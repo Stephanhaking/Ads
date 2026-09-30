@@ -11,5 +11,6 @@
     "vai sair do lugar com o suor"
   ],
   "tone": "direto, energético",
-  "voice": "pt-BR-AntonioNeural"
+  "voice": "pt-BR-AntonioNeural",
+  "gemini_voice": "Puck"
 }

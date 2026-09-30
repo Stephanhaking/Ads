@@ -33,7 +33,7 @@ def render_one(root: Path, copy_path: Path, image: Path, out_dir: Path, music: P
         td = Path(td)
         shutil.copy(image, td / "img.png" if image.suffix == ".png" else td / f"img{image.suffix}")
         img_name = next(td.glob("img.*")).name
-        voice_file = tts.synthesize(text, copy.get("voice", "pt-BR-FranciscaNeural"), td / "voice.mp3")
+        voice_file = tts.synthesize(text, copy, td)
         if voice_file:
             total = duration(voice_file) + 0.7
         else:
@@ -52,8 +52,9 @@ def render_one(root: Path, copy_path: Path, image: Path, out_dir: Path, music: P
         idx = 1
         inputs_a = []
         if voice_file:
-            shutil.copy(voice_file, td / "voice.mp3")
-            cmd += ["-i", "voice.mp3"]
+            vname = "voice" + voice_file.suffix
+            shutil.copy(voice_file, td / vname)
+            cmd += ["-i", vname]
             inputs_a.append(f"[{idx}:a]apad[va]")
             idx += 1
         if music and music.exists():

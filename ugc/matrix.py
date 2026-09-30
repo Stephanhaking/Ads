@@ -42,7 +42,8 @@ def build(root: Path, limit: int | None = None, overwrite: bool = False):
             "id": vid,
             "audience": a["id"],
             "hook_type": h["type"],
-            "voice": a.get("voice", "pt-BR-FranciscaNeural"),
+            "voice": a.get("voice", "pt-BR-FranciscaNeural"),  # edge-tts (reserva)
+            "gemini_voice": a.get("gemini_voice", "Kore"),
             "status": "draft",  # mude para "approved" depois de revisar
             "lines": draft_lines(product, a, h),
             "caption": f"{product['name']} — {product['main_benefit']}. {product['offer']}. {product.get('disclaimer', '')}".strip(),

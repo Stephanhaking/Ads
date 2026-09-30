@@ -11,5 +11,6 @@
     "é desconfortável de usar"
   ],
   "tone": "leve, prático",
-  "voice": "pt-BR-ThalitaMultilingualNeural"
+  "voice": "pt-BR-ThalitaMultilingualNeural",
+  "gemini_voice": "Aoede"
 }
