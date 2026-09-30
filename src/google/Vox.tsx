@@ -2,6 +2,7 @@ import React from 'react';
 import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {colors, fonts} from '../styles';
 import {BAR, motionFrame, POP, EASE_OUT} from './motion';
+import {useTheme} from './theme';
 
 // Elementos de foreground estilo Vox: caixas de texto flutuantes e barras de dados.
 
@@ -15,6 +16,7 @@ export const Tag: React.FC<{
 }> = ({text, appearAt, x, y, fill, size = 44}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
+  const th = useTheme();
   const p = spring({frame: motionFrame(frame, appearAt), fps, config: POP});
   return (
     <div
@@ -26,14 +28,14 @@ export const Tag: React.FC<{
         transform: `scale(${0.6 + 0.4 * p}) rotate(${(1 - p) * -4}deg)`,
         transformOrigin: 'left center',
         padding: '10px 22px',
-        background: fill ? colors.red : colors.white,
-        color: fill ? colors.white : colors.black,
+        background: fill ? th.hotBg : th.tagBg,
+        color: fill ? th.hotText : th.tagText,
         fontFamily: fonts.heading,
         fontWeight: 900,
         fontSize: size,
         letterSpacing: 2,
         textTransform: 'uppercase',
-        boxShadow: `8px 8px 0 ${fill ? colors.white : colors.red}`,
+        boxShadow: `8px 8px 0 ${fill ? th.hotShadow : th.tagShadow}`,
         whiteSpace: 'nowrap',
       }}
     >

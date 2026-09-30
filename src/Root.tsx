@@ -9,6 +9,7 @@ export const RemotionRoot: React.FC = () => (
   <Composition
     id="GoogleProto"
     component={GoogleProto}
+    defaultProps={{theme: 'paper' as const}}
     durationInFrames={PROTO_TOTAL}
     fps={video.fps}
     width={video.width}

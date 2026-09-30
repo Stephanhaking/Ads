@@ -4,12 +4,14 @@ import {colors, fonts} from '../../styles';
 import {HalftoneImage} from '../HalftoneImage';
 import {LayeredScene} from '../Layers';
 import {Tag} from '../Vox';
+import {ThemeName, ThemeProvider, useTheme} from '../theme';
 import {Connector, Flash, Grain, KineticText, RedDisc, RedWipe, useShake} from './Fx';
 
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
 // P1 — gancho: "When does a patient begin to die?"
 const P1: React.FC = () => {
+  const th = useTheme();
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const slide = spring({frame: frame - 4, fps, config: {damping: 18, stiffness: 90}});
@@ -24,8 +26,8 @@ const P1: React.FC = () => {
       fore={
         <>
           <KineticText lines={[['When', 'does', 'a'], ['patient'], ['begin', 'to'], ['die?']]} x={110} y={120} size={128} startAt={8} stagger={7} hot={['die?']} />
-          <div style={{position: 'absolute', right: 140, top: 90, fontFamily: fonts.mono, fontSize: 60, color: colors.white, letterSpacing: 6}}>
-            03{colon}12 <span style={{color: colors.red}}>AM</span>
+          <div style={{position: 'absolute', right: 140, top: 90, fontFamily: fonts.mono, fontSize: 60, color: th.text, letterSpacing: 6}}>
+            03{colon}12 <span style={{color: th.hotBg}}>AM</span>
           </div>
         </>
       }
@@ -35,6 +37,7 @@ const P1: React.FC = () => {
 
 // P2 — 95% (IA) contra 85% (score clínico tradicional).
 const P2: React.FC = () => {
+  const th = useTheme();
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const n = Math.round(interpolate(frame, [20, 60], [0, 95], {...clamp, easing: (t) => 1 - Math.pow(1 - t, 3)}));
@@ -46,15 +49,15 @@ const P2: React.FC = () => {
       mid={<HalftoneImage name="doctor" x={130} y={250} width={560} reveal={interpolate(frame, [4, 34], [0, 1], clamp)} />}
       fore={
         <>
-          <div style={{position: 'absolute', left: 820, top: 70, fontFamily: fonts.heading, fontWeight: 900, fontSize: 380, lineHeight: 1, color: colors.white, transform: `scale(${0.6 + 0.4 * pop})`, transformOrigin: 'left center', opacity: Math.min(1, pop * 2), textShadow: `14px 14px 0 ${colors.red}`}}>
+          <div style={{position: 'absolute', left: 820, top: 70, fontFamily: fonts.heading, fontWeight: 900, fontSize: 380, lineHeight: 1, color: th.text, transform: `scale(${0.6 + 0.4 * pop})`, transformOrigin: 'left center', opacity: Math.min(1, pop * 2), textShadow: `14px 14px 0 ${th.textShadow}`}}>
             {n}%
           </div>
-          <div style={{position: 'absolute', left: 830, top: 520, fontFamily: fonts.mono, fontSize: 26, letterSpacing: 4, color: colors.grayLight}}>GOOGLE AI</div>
-          <div style={{position: 'absolute', left: 830, top: 560, height: 54, width: 900 * 0.95 * bar(50), background: colors.red, boxShadow: `8px 8px 0 ${colors.white}`}} />
-          <div style={{position: 'absolute', left: 830, top: 680, fontFamily: fonts.mono, fontSize: 26, letterSpacing: 4, color: colors.grayLight}}>EARLY WARNING SCORE · 85%</div>
-          <div style={{position: 'absolute', left: 830, top: 720, height: 54, width: 900 * 0.85 * bar(62), background: colors.grayLight, boxShadow: `8px 8px 0 ${colors.red}`}} />
+          <div style={{position: 'absolute', left: 830, top: 520, fontFamily: fonts.mono, fontSize: 26, letterSpacing: 4, color: th.mono}}>GOOGLE AI</div>
+          <div style={{position: 'absolute', left: 830, top: 560, height: 54, width: 900 * 0.95 * bar(50), background: th.hotBg, boxShadow: `8px 8px 0 ${th.text}`}} />
+          <div style={{position: 'absolute', left: 830, top: 680, fontFamily: fonts.mono, fontSize: 26, letterSpacing: 4, color: th.mono}}>EARLY WARNING SCORE · 85%</div>
+          <div style={{position: 'absolute', left: 830, top: 720, height: 54, width: 900 * 0.85 * bar(62), background: th.barGray, boxShadow: `8px 8px 0 ${th.hotBg}`}} />
           <Tag text="Earlier than the nurses" appearAt={86} x={830} y={860} size={46} fill />
-          <div style={{position: 'absolute', left: 830, bottom: 50, fontFamily: fonts.mono, fontSize: 22, letterSpacing: 3, color: colors.grayLight}}>SOURCE: NATURE · 2018</div>
+          <div style={{position: 'absolute', left: 830, bottom: 50, fontFamily: fonts.mono, fontSize: 22, letterSpacing: 3, color: th.mono}}>SOURCE: NATURE · 2018</div>
         </>
       }
     />
@@ -99,8 +102,9 @@ const P3: React.FC = () => {
 
 const SCENE = 210;
 
-export const GoogleProto: React.FC = () => (
-  <AbsoluteFill style={{backgroundColor: colors.black}}>
+export const GoogleProto: React.FC<{theme?: ThemeName}> = ({theme = 'dark'}) => (
+  <ThemeProvider name={theme}>
+  <AbsoluteFill>
     <Sequence name="p1-hook" from={0} durationInFrames={SCENE}><P1 /></Sequence>
     <Sequence name="p2-95" from={SCENE} durationInFrames={SCENE}><P2 /></Sequence>
     <Sequence name="p3-engine" from={SCENE * 2} durationInFrames={SCENE}><P3 /></Sequence>
@@ -108,6 +112,7 @@ export const GoogleProto: React.FC = () => (
     <Sequence name="wipe-2" from={SCENE * 2 - 9} durationInFrames={18}><RedWipe /></Sequence>
     <Grain />
   </AbsoluteFill>
+  </ThemeProvider>
 );
 
 export const PROTO_TOTAL = SCENE * 3;

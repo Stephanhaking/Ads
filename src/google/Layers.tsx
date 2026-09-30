@@ -1,16 +1,18 @@
 import React from 'react';
 import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
-import {colors} from '../styles';
+import {useTheme} from './theme';
 import {PUSH_IN_FRAMES, PUSH_IN_MAX} from './motion';
 
 // Estrutura de profundidade: Background (estático) → Midground (elemento central) → Foreground (texto/dados).
 
-export const Background: React.FC = () => (
-  <AbsoluteFill style={{backgroundColor: colors.black}}>
+export const Background: React.FC = () => {
+  const t = useTheme();
+  return (
+  <AbsoluteFill style={{backgroundColor: t.bg}}>
     <svg width="100%" height="100%" style={{position: 'absolute'}}>
       <defs>
         <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
-          <path d="M 80 0 L 0 0 0 80" fill="none" stroke={colors.gray} strokeWidth={1} />
+          <path d="M 80 0 L 0 0 0 80" fill="none" stroke={t.grid} strokeWidth={1} />
         </pattern>
         <radialGradient id="vignette" cx="50%" cy="50%" r="75%">
           <stop offset="55%" stopColor="#000" stopOpacity={0} />
@@ -21,7 +23,8 @@ export const Background: React.FC = () => (
       <rect width="100%" height="100%" fill="url(#vignette)" />
     </svg>
   </AbsoluteFill>
-);
+  );
+};
 
 // Push-in lento: dá profundidade ao midground sem mexer no foreground.
 export const Midground: React.FC<{children: React.ReactNode}> = ({children}) => {
