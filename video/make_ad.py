@@ -321,45 +321,86 @@ def scene1(t, dur):  # abertura: clipe realista de pessoa a dormir mal
     return fadeflash(im, t, dur, out=0.15)
 
 
-def scene2(t, dur):  # tira aplicada no nariz
-    im = BG_LIGHT.copy()
-    p = ease_out(prog(t, 0.05, 0.4))
-    cap = rrect(980, 250, NAVY + (255,), 40)
-    blit(im, cap, 540, 240 - (1 - p) * 300, alpha=p)
-    text(im, "Veja o que esta\npequena tira pode fazer", 540, 240 - (1 - p) * 300, 76, WHITE, alpha=p)
-    cx, cy, s = 540, 1000, 1.22
-    landed = t > 2.4
-    if not landed:
-        lay = bust("b", SHIRT_B, "stuffy", False, q(0.6 + 0.3 * math.sin(t * 5)))
-    else:
-        mood = "happy" if t > 3.2 else "neutral"
-        lay = bust("b", SHIRT_B, mood, True, 0.0)
-    blit(im, lay, cx, cy, s)
-    nx, ny = cx, cy + (354 - 415) * s
-    # tira a voar até ao nariz
-    p = prog(t, 1.2, 1.2)
-    if 0 < p < 1 or (p <= 0 and False):
+FACE_PATH = os.path.join(HERE, "face_nariz.png")
+FACE = Image.open(FACE_PATH).convert("RGB") if os.path.exists(FACE_PATH) else None
+NC = (710, 1110)       # centro da ponte do nariz no frame 1080x1920
+NOSE_ROT = -35         # inclinação da cabeça
+NOSE_LEN = 190         # comprimento da tira sobre o nariz (px)
+
+
+def _strip_on_face(w=NOSE_LEN):
+    """tira real (recorte da foto) ajustada à luz nocturna, com sombra."""
+    st = STRIP.rotate(90, expand=True, resample=Image.BICUBIC)
+    st = st.resize((w, int(st.height * w / st.width)), Image.LANCZOS)
+    rgb = Image.merge("RGB", st.split()[:3])
+    rgb = ImageChops.multiply(rgb, Image.new("RGB", rgb.size, (236, 226, 232)))  # luz quente/azulada de noite
+    out = rgb.convert("RGBA")
+    out.putalpha(st.getchannel("A"))
+    return out
+
+
+STRIP_FACE = _strip_on_face() if FACE is not None else None
+
+
+def _with_strip(base, cx, cy, rot, scale=1.0, alpha=1.0, shadow=True):
+    lay = STRIP_FACE
+    if scale != 1.0:
+        lay = lay.resize((int(lay.width * scale), int(lay.height * scale)), Image.LANCZOS)
+    lay = lay.rotate(rot, expand=True, resample=Image.BICUBIC)
+    if shadow:
+        sh = shadow_of(lay, 7, 150, 8)
+        base.paste(sh, (int(cx - sh.width / 2 + 4), int(cy - sh.height / 2 + 7)), sh)
+    if alpha < 1.0:
+        lay = lay.copy()
+        lay.putalpha(lay.getchannel("A").point(lambda v: int(v * alpha)))
+    base.paste(lay, (int(cx - lay.width / 2), int(cy - lay.height / 2)), lay)
+
+
+def _zoom_window(z):
+    ox = clamp(NC[0] * z - 540, 0, W * z - W)
+    oy = clamp(NC[1] * z - 1000, 0, H * z - H)
+    return ox, oy
+
+
+def scene2(t, dur):  # tira aplicada no nariz (pessoa realista + tira real do produto)
+    z = 1.05 + 0.40 * ease_inout(t / dur)
+    base = FACE.copy()
+    land = 1.0 + 0.0
+    p = prog(t, 1.2, 1.1)
+    if p >= 1:
+        _with_strip(base, NC[0], NC[1], NOSE_ROT)
+    elif p > 0:
         e = ease_inout(p)
-        sx0, sy0 = 930, 1620
-        w = 112 * s * (1.9 - 0.9 * e)
-        lay2 = STRIP_ROT.resize((int(w), int(STRIP_ROT.height * w / STRIP_ROT.width)), Image.LANCZOS)
-        blit(im, lay2, sx0 + (nx - sx0) * e, sy0 + (ny - sy0) * e - 120 * math.sin(e * math.pi), rot=-50 * (1 - e))
-    # anel + brilhos
-    if landed:
-        pr = prog(t, 2.4, 0.3)
-        ring = Image.new("RGBA", (400, 400), (0, 0, 0, 0))
-        r = 120 + 14 * math.sin(t * 7)
-        ImageDraw.Draw(ring).ellipse((200 - r, 200 - r, 200 + r, 200 + r), outline=ORANGE + (255,), width=12)
-        blit(im, ring, nx, ny + 10, back(pr))
-        for i, (dx, dy) in enumerate([(-230, -120), (240, -60), (-190, 140), (220, 170)]):
-            sp = (math.sin(t * 5 + i * 1.7) * 0.5 + 0.5)
-            sparkle(im, nx + dx, ny + dy, 26 + 20 * sp, alpha=0.4 + 0.6 * sp, col=(255, 190, 60))
-    p = ease_out(prog(t, 3.3, 0.4))
-    if p > 0:
+        sx, sy = NC[0] + 420, NC[1] + 560
+        _with_strip(base, sx + (NC[0] - sx) * e, sy + (NC[1] - sy) * e - 90 * math.sin(e * math.pi),
+                    NOSE_ROT + 55 * (1 - e), scale=1.0 + 0.9 * (1 - e) * 0.6, alpha=min(1.0, p * 4))
+    w, h = int(W * z), int(H * z)
+    big = base.resize((w, h), Image.BICUBIC)
+    ox, oy = _zoom_window(z)
+    im = big.crop((int(ox), int(oy), int(ox) + W, int(oy) + H))
+    nx, ny = NC[0] * z - ox, NC[1] * z - oy
+    im.paste(SHADE, (0, 0), SHADE)
+    # pulso ao aterrar + brilhos discretos
+    if t > 2.3:
+        pr = prog(t, 2.3, 0.9)
+        ring = Image.new("RGBA", (700, 700), (0, 0, 0, 0))
+        r = 80 + 230 * ease_out(pr)
+        ImageDraw.Draw(ring).ellipse((350 - r, 350 - r, 350 + r, 350 + r), outline=(255, 255, 255, int(255 * (1 - pr))), width=8)
+        blit(im, ring, nx, ny)
+        for i, (dx, dy) in enumerate([(-260, -150), (250, -110), (-210, 170), (230, 190)]):
+            sp = math.sin(t * 5 + i * 1.7) * 0.5 + 0.5
+            sparkle(im, nx + dx, ny + dy, 24 + 18 * sp, alpha=(0.35 + 0.65 * sp) * clamp((t - 2.5) / 0.4), col=(255, 226, 170))
+    # legendas
+    pc = ease_out(prog(t, 0.05, 0.4))
+    cap = rrect(980, 250, NAVY + (255,), 40)
+    blit(im, cap, 540, 240 - (1 - pc) * 300, alpha=pc)
+    text(im, "Veja o que esta\npequena tira pode fazer", 540, 240 - (1 - pc) * 300, 76, WHITE, alpha=pc)
+    pc = ease_out(prog(t, 3.3, 0.4))
+    if pc > 0:
         pill = rrect(980, 160, ORANGE + (255,), 80)
-        blit(im, pill, 540, 1600 + (1 - p) * 300, alpha=p)
-        text(im, "Ajuda a abrir as passagens nasais", 540, 1600 + (1 - p) * 300, 54, WHITE, alpha=p)
-    return fadeflash(punch(im, t), t, dur, out=0.12)
+        blit(im, pill, 540, 1600 + (1 - pc) * 300, alpha=pc)
+        text(im, "Ajuda a abrir as passagens nasais", 540, 1600 + (1 - pc) * 300, 54, WHITE, alpha=pc)
+    return fadeflash(im, t, dur, out=0.12)
 
 
 def scene3(t, dur):  # uso simples: antes de dormir
