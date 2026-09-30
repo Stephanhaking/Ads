@@ -3,6 +3,8 @@ export const colors = {
   black: '#0A0A0A',
   white: '#FFFFFF',
   red: '#E5232B',
+  alert: '#FF3333', // único acento do vídeo Google (pico de mortalidade)
+  platinum: '#C9CDD2',
   gray: '#2A2A2A',
   grayLight: '#8A8A8A',
 } as const;
