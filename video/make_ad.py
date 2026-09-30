@@ -308,6 +308,7 @@ def scene1(t, dur):  # abertura: clipe realista de pessoa a dormir mal
         w, h = int(W * zoom), int(H * zoom)
         im = im.resize((w, h), Image.BILINEAR).crop(((w - W) // 2, (h - H) // 2, (w - W) // 2 + W, (h - H) // 2 + H))
     im.paste(SHADE, (0, 0), SHADE)
+    zzz(im, t, 380, 1010, 0.2)
     sh = 8 * math.sin(t * 60) * (1 - clamp(t / 0.4))
     text(im, "VOCÊ RONCA\nOU ACORDA COM O\nNARIZ ENTUPIDO?", 540 + sh, 420, 104, WHITE, stroke=4,
          scale=back(prog(t, 0.0, 0.35)), maxw=980)
@@ -369,6 +370,8 @@ def _strip_on_face(w=NOSE_LEN):
     return out
 
 
+FACE_RELAX_PATH = os.path.join(HERE, "face_aliviado.png")
+FACE_RELAX = Image.open(FACE_RELAX_PATH).convert("RGB") if os.path.exists(FACE_RELAX_PATH) else FACE
 STRIP_FACE = _strip_on_face() if FACE is not None else None
 
 
@@ -394,7 +397,7 @@ def _zoom_window(z):
 
 def scene2(t, dur):  # tira aplicada no nariz (pessoa realista + tira real do produto)
     z = 1.05 + 0.40 * ease_inout(t / dur)
-    base = FACE.copy()
+    base = Image.blend(FACE, FACE_RELAX, ease_inout(prog(t, 2.6, 1.0))) if t > 2.6 else FACE.copy()
     land = 1.0 + 0.0
     p = prog(t, 1.2, 1.1)
     if p >= 1:
@@ -724,6 +727,29 @@ def synth_audio(path):
             tt = np.arange(l) / SR
             out[s:s + l] += vol * np.sign(np.sin(2 * np.pi * f * tt)) * np.minimum(1, tt * 80) * np.exp(-tt * 6)
 
+    def snore(at, d=1.9, vol=0.5):
+        s = int(at * SR)
+        l = int(d * SR)
+        if s + l > n:
+            return
+        tt = np.arange(l) / SR
+        env = np.sin(np.pi * tt / d) ** 1.4
+        flut = 0.5 + 0.5 * np.sin(2 * np.pi * (26 + 6 * tt / d) * tt + 2.5 * np.sin(2 * np.pi * 3.1 * tt))
+        tone = np.sin(2 * np.pi * 82 * tt) + 0.55 * np.sin(2 * np.pi * 164 * tt) + 0.25 * np.sin(2 * np.pi * 246 * tt)
+        nz = np.convolve(rng.standard_normal(l), np.ones(18) / 18, mode="same") * 3
+        out[s:s + l] += vol * env * flut * (0.35 * tone + 0.9 * nz)
+
+    def sigh(at, d=1.5, vol=0.22):
+        s = int(at * SR)
+        l = int(d * SR)
+        tt = np.arange(l) / SR
+        env = np.minimum(1, tt / 0.25) * np.exp(-tt * 2.4)
+        nz = np.convolve(rng.standard_normal(l), np.ones(9) / 9, mode="same") * 2.2
+        out[s:s + l] += vol * env * nz
+
+    for k in range(4):
+        snore(0.25 + k * 2.0)
+    sigh(T[1] + 3.0)
     for c in CUTS:
         whoosh(c - 0.25)
     whoosh(0.0, 0.3, 0.25)
