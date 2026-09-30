@@ -1,4 +1,4 @@
-import {AbsoluteFill, interpolate, Sequence, useCurrentFrame} from 'remotion';
+import {Audio, AbsoluteFill, interpolate, Sequence, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {
   SceneBuilding,
   SceneClimax,
@@ -12,12 +12,14 @@ import {
   SceneYear,
 } from './google/scenes';
 import {colors} from './styles';
+import {MUSIC_FILE, PARAGRAPHS, mapTime, paragraphStart} from './google/timing';
 import {EASE_OUT, TRANSITION_FRAMES as T, TRANSITION_SLIDE_PX} from './google/motion';
 
-// Timecodes em segundos — provisórios até medir os WAVs (ver docs/storyboard_google_0-2min.md).
+// Timecodes em segundos na timeline estimada; `s()` converte-os para o tempo real da locução
+// (src/google/timing.json, atualizado por `npm run measure`).
 // Cada cena começa onde a anterior acaba.
 export const FPS = 30;
-export const s = (sec: number) => Math.round(sec * FPS);
+export const s = (sec: number) => Math.round(mapTime(sec) * FPS);
 
 export const GG_BEATS = [
   {id: 'hospital', from: 0, to: 16, Component: SceneHospital},
@@ -32,7 +34,7 @@ export const GG_BEATS = [
   {id: 'notes', from: 111, to: 121.2, Component: SceneNotes},
 ] as const;
 
-export const GG_TOTAL = s(GG_BEATS[GG_BEATS.length - 1].to);
+export const GG_TOTAL = s(GG_BEATS[GG_BEATS.length - 1].to); // fim da última cena, já re-mapeado para a locução
 
 // Entrada: fade + deslize lateral (exceto a 1.ª cena). Saída: só desliza, opaca, enquanto a seguinte entra por cima (crossfade sem mergulho).
 const Transition: React.FC<{first: boolean; last: boolean; duration: number; children: React.ReactNode}> = ({first, last, duration, children}) => {
@@ -45,8 +47,32 @@ const Transition: React.FC<{first: boolean; last: boolean; duration: number; chi
   return <AbsoluteFill style={{opacity: enter, transform: `translateX(${dx}px)`}}>{children}</AbsoluteFill>;
 };
 
+// Música de fundo: volume baixo, com fade de entrada e saída.
+const Music: React.FC = () => {
+  const {durationInFrames, fps} = useVideoConfig();
+  if (!MUSIC_FILE) return null;
+  const vol = (f: number) =>
+    0.12 * interpolate(f, [0, 2 * fps, durationInFrames - 3 * fps, durationInFrames], [0, 1, 1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return <Audio src={staticFile(MUSIC_FILE)} volume={vol} />;
+};
+
+// Uma faixa de locução por parágrafo, colocada no início medido de cada um.
+const Voice: React.FC = () => (
+  <>
+    {PARAGRAPHS.map((p, i) =>
+      p.file ? (
+        <Sequence key={p.id} name={`voice-${p.id}`} from={Math.round(paragraphStart(i) * FPS)}>
+          <Audio src={staticFile(p.file)} />
+        </Sequence>
+      ) : null,
+    )}
+  </>
+);
+
 export const GoogleVideo: React.FC = () => (
   <AbsoluteFill style={{backgroundColor: colors.black}}>
+    <Voice />
+    <Music />
     {GG_BEATS.map(({id, from, to, Component}, i) => {
       const first = i === 0;
       const last = i === GG_BEATS.length - 1;

@@ -1,0 +1,31 @@
+{
+  "measured": true,
+  "gapSec": 0.6,
+  "music": null,
+  "paragraphs": [
+    {
+      "id": "cold",
+      "label": "The machine that knows first",
+      "file": "audio/voice/cold.wav",
+      "estStart": 0,
+      "estSec": 60,
+      "sec": 64.0
+    },
+    {
+      "id": "act1",
+      "label": "The question",
+      "file": "audio/voice/act1.wav",
+      "estStart": 60,
+      "estSec": 42.6,
+      "sec": 45.0
+    },
+    {
+      "id": "act2",
+      "label": "What it took to see",
+      "file": "audio/voice/act2.wav",
+      "estStart": 102.6,
+      "estSec": 58.6,
+      "sec": 70.0
+    }
+  ]
+}
