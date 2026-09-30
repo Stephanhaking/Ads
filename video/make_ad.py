@@ -323,9 +323,9 @@ def scene1(t, dur):  # abertura: clipe realista de pessoa a dormir mal
 
 FACE_PATH = os.path.join(HERE, "face_nariz.png")
 FACE = Image.open(FACE_PATH).convert("RGB") if os.path.exists(FACE_PATH) else None
-NC = (710, 1110)       # centro da ponte do nariz no frame 1080x1920
-NOSE_ROT = -35         # inclinação da cabeça
-NOSE_LEN = 190         # comprimento da tira sobre o nariz (px)
+NC = (716, 1112)       # centro da ponte do nariz no frame 1080x1920
+NOSE_ROT = -22         # inclinação da cabeça
+NOSE_LEN = 158         # comprimento da tira sobre o nariz (px)
 
 
 def _strip_on_face(w=NOSE_LEN):
@@ -333,9 +333,16 @@ def _strip_on_face(w=NOSE_LEN):
     st = STRIP.rotate(90, expand=True, resample=Image.BICUBIC)
     st = st.resize((w, int(st.height * w / st.width)), Image.LANCZOS)
     rgb = Image.merge("RGB", st.split()[:3])
-    rgb = ImageChops.multiply(rgb, Image.new("RGB", rgb.size, (236, 226, 232)))  # luz quente/azulada de noite
+    rgb = ImageChops.multiply(rgb, Image.new("RGB", rgb.size, (232, 222, 230)))  # luz nocturna
+    # sombreado cilíndrico: pontas mais escuras (a tira "dobra" à volta do nariz) e leve gradiente vertical
+    wpx, hpx = rgb.size
+    xs = np.linspace(-1, 1, wpx)[None, :]
+    ys = np.linspace(-1, 1, hpx)[:, None]
+    shade = (0.66 + 0.34 * np.cos(xs * np.pi / 2) ** 0.8) * (1.0 - 0.10 * ys)
+    arr = np.clip(np.array(rgb).astype("float32") * shade[..., None], 0, 255).astype("uint8")
+    rgb = Image.fromarray(arr, "RGB").filter(ImageFilter.GaussianBlur(0.7))
     out = rgb.convert("RGBA")
-    out.putalpha(st.getchannel("A"))
+    out.putalpha(st.getchannel("A").filter(ImageFilter.GaussianBlur(0.6)))
     return out
 
 
