@@ -284,31 +284,33 @@ def zzz(im, t, x0, y0, t0=0.0):
         text(im, ch, x0 + i * 90 + 18 * math.sin(p * 6), y0 - p * 200 - i * 30, sz, (190, 210, 255), alpha=math.sin(p * math.pi))
 
 
-def scene1(t, dur):  # abertura: pessoa a roncar / acordar com o nariz entupido
-    im = BG_NAVY.copy()
-    d = ImageDraw.Draw(im)
-    for x, y, p in STARS:
-        r = 2 + 2 * (0.5 + 0.5 * math.sin(t * 4 + p * 9))
-        d.ellipse((x - r, y - r, x + r, y + r), fill=(200, 215, 255))
-    icon_moon(im, 900, 760, 0.55 + 0.02 * math.sin(t * 2))
-    # frase de abertura
+BED_FRAMES = sorted(f for f in os.listdir(os.path.join(HERE, "_bed")) if f.endswith(".jpg")) if os.path.isdir(os.path.join(HERE, "_bed")) else []
+
+
+def _shade():
+    a = np.zeros((H, 1), dtype="float32")
+    y = np.linspace(0, 1, H)
+    a[:, 0] = np.clip(1 - y / 0.42, 0, 1) * 175 + np.clip((y - 0.68) / 0.32, 0, 1) * 150
+    arr = np.repeat(a, W, axis=1).astype("uint8")
+    lay = Image.new("RGBA", (W, H), (4, 10, 44, 255))
+    lay.putalpha(Image.fromarray(arr, "L"))
+    return lay
+
+
+SHADE = _shade()
+
+
+def scene1(t, dur):  # abertura: clipe realista de pessoa a dormir mal
+    idx = min(int(t * FPS), len(BED_FRAMES) - 1)
+    im = Image.open(os.path.join(HERE, "_bed", BED_FRAMES[idx])).convert("RGB")
+    zoom = 1.0 + 0.04 * (t / dur)
+    if zoom > 1.0:
+        w, h = int(W * zoom), int(H * zoom)
+        im = im.resize((w, h), Image.BILINEAR).crop(((w - W) // 2, (h - H) // 2, (w - W) // 2 + W, (h - H) // 2 + H))
+    im.paste(SHADE, (0, 0), SHADE)
     sh = 8 * math.sin(t * 60) * (1 - clamp(t / 0.4))
-    text(im, "VOCÊ RONCA\nOU ACORDA COM O\nNARIZ ENTUPIDO?", 540 + sh, 420, 104, WHITE, scale=back(prog(t, 0.0, 0.35)), maxw=980)
-    # pessoa na cama
-    awake = t > 2.3
-    mo = q(0.5 + 0.5 * math.sin(t * 5)) if not awake else q(0.7 + 0.2 * math.sin(t * 6))
-    lay = bed("a", "stuffy" if awake else "sleep", False, mo)
-    by = 1040 + (0 if awake else 6 * math.sin(t * 3))
-    blit(im, lay, 540, by, 1.12)
-    if not awake:
-        zzz(im, t, 380, 930, 0.3)
-    else:
-        for i in range(2):  # gotas de suor / desconforto
-            p = ((t - 2.3 + i * 0.4) % 1.2) / 1.2
-            d2 = Image.new("RGBA", (40, 60), (0, 0, 0, 0))
-            ImageDraw.Draw(d2).polygon([(20, 0), (38, 38), (20, 58), (2, 38)], fill=(130, 200, 255, 255))
-            blit(im, d2, 330 + i * 420, 780 + p * 70, alpha=1 - p)
-    # PARE DE IGNORAR ISSO!
+    text(im, "VOCÊ RONCA\nOU ACORDA COM O\nNARIZ ENTUPIDO?", 540 + sh, 420, 104, WHITE, stroke=4,
+         scale=back(prog(t, 0.0, 0.35)), maxw=980)
     p = back(prog(t, 3.25, 0.35), 2.4)
     if p > 0:
         bar = rrect(980, 190, ORANGE + (255,), 50)
