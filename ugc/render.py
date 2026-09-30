@@ -44,6 +44,15 @@ def _motion(kind, frames):
     return f"z='1.14':x='(iw-iw/zoom)*(1-on/{n})':y='{cy}'"
 
 
+# Imagens horizontais: a câmera desliza de um ponto a outro (centro em fração da largura, início -> fim).
+# Ajuste em product.json -> "scene_pan": {"mood_parceiro": [0.30, 0.70]}. Chave: papel_publico ou papel.
+DEFAULT_PAN = {
+    "face": (0.50, 0.56),
+    "mood_parceiro": (0.32, 0.70),
+    "mood_roncador": (0.22, 0.62),
+    "mood_casal": (0.32, 0.76),
+    "face_close": (0.30, 0.62),
+}
 AI_ROLES = ("face", "mood", "face_close")  # cenas que aceitam imagem gerada em inputs/scenes/
 
 
@@ -57,10 +66,16 @@ def find_scene_image(root: Path, role: str, audience: str):
     return None
 
 
-def scene_clip(td, img, size, role, dur, motion, crops, out, custom=False):
+def scene_clip(td, img, size, role, dur, motion, crops, out, custom=False, pan=None):
     iw, ih = size
     frames = int(dur * FPS) + 1
-    if custom:  # imagem gerada (idealmente 9:16): preenche o quadro, sem recorte fixo
+    if custom and iw / ih > 0.6:  # imagem horizontal: escala p/ altura e desliza uma janela 9:16 por cima
+        hs = 2100
+        sw = int(iw * hs / ih) // 2 * 2
+        a, b = pan or (0.5, 0.5)
+        x = f"max(0,min({sw - W},({a}+({b}-{a})*t/{dur:.3f})*{sw}-{W // 2}))"
+        vf = f"scale={sw}:{hs}:flags=lanczos,crop={W}:{H}:x='{x}':y={(hs - H) // 2},setsar=1,format=yuv420p"
+    elif custom:  # imagem vertical: preenche o quadro com zoom suave
         zoom = f"zoompan={_motion(motion, frames)}:d=1:s={W}x{H}:fps={FPS}"
         vf = (f"scale={int(W * 1.5)}:{int(H * 1.5)}:force_original_aspect_ratio=increase:flags=lanczos,"
               f"crop={int(W * 1.5)}:{int(H * 1.5)},{zoom},setsar=1,format=yuv420p")
@@ -118,15 +133,17 @@ def render_one(root: Path, copy_path: Path, image: Path, out_dir: Path, music: P
         clips, used = [], []
         for i, (role, d) in enumerate(zip(roles, durs)):
             name = f"s{i}.mp4"
-            src, sz, custom = img_name, size, False
+            src, sz, custom, pan = img_name, size, False, None
             ai = find_scene_image(root, role, copy.get("audience", "")) if role in AI_ROLES else None
             if ai:
                 src = f"scene{i}{ai.suffix}"
                 shutil.copy(ai, td / src)
                 sz, custom = _image_size(td / src), True
                 used.append(ai.name)
+                key = ai.stem
+                pan = (product.get("scene_pan", {}).get(key)) or DEFAULT_PAN.get(key)
             scene_clip(td, src, sz, role, d + (XF if i < n - 1 else 0), MOTIONS[(i + rng.randrange(4)) % 4],
-                       crops, name, custom)
+                       crops, name, custom, pan)
             clips.append(name)
 
         cmd = [ffmpeg_bin(), "-y", "-loglevel", "error"]
