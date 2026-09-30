@@ -9,7 +9,8 @@
     "typecheck": "tsc --noEmit",
     "measure": "python3 tools/measure_wavs.py",
     "render:google": "remotion render GoogleVideo out/google.mp4 --codec=h264 --crf=18 --pixel-format=yuv420p --audio-codec=aac",
-    "render:google:2min": "remotion render GoogleVideo out/google-2min.mp4 --codec=h264 --crf=18 --pixel-format=yuv420p --audio-codec=aac --frames=0-3635"
+    "render:google:2min": "remotion render GoogleVideo out/google-2min.mp4 --codec=h264 --crf=18 --pixel-format=yuv420p --audio-codec=aac --frames=0-3635",
+    "tts": "python3 tools/tts_google.py"
   },
   "dependencies": {
     "@remotion/cli": "4.0.250",
