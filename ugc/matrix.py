@@ -45,7 +45,7 @@ def build(root: Path, limit: int | None = None, overwrite: bool = False):
             "voice": a.get("voice", "pt-BR-FranciscaNeural"),
             "status": "draft",  # mude para "approved" depois de revisar
             "lines": draft_lines(product, a, h),
-            "caption": f"{product['name']} — {product['main_benefit']}. {product['offer']}.",
+            "caption": f"{product['name']} — {product['main_benefit']}. {product['offer']}. {product.get('disclaimer', '')}".strip(),
         }, ensure_ascii=False, indent=2), encoding="utf-8")
         created.append(vid)
     return created

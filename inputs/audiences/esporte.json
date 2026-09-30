@@ -1,0 +1,15 @@
+{
+  "id": "esporte",
+  "name": "Quem corre e treina",
+  "pains": [
+    "respirar pelo nariz durante o treino"
+  ],
+  "desires": [
+    "rendimento e conforto no exercício"
+  ],
+  "objections": [
+    "vai sair do lugar com o suor"
+  ],
+  "tone": "direto, energético",
+  "voice": "pt-BR-AntonioNeural"
+}

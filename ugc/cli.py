@@ -16,7 +16,7 @@ def cmd_matrix(a):
 
 
 def cmd_render(a):
-    image = Path(a.image) if a.image else ROOT / "inputs/product.png"
+    image = Path(a.image) if a.image else next(iter(sorted((ROOT / "inputs").glob("product.[pj]*[gn]*"))), ROOT / "inputs/product.png")
     if not image.exists():
         raise SystemExit(f"imagem não encontrada: {image}")
     music = ROOT / "inputs/music.mp3"

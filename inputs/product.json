@@ -1,10 +1,23 @@
 {
-  "name": "Garrafa Térmica AuraFlow",
-  "category": "garrafa térmica 1L",
-  "main_benefit": "mantém a água gelada por 24 horas",
-  "proof": ["aço inox duplo", "não deixa a mochila molhada", "mais de 12 mil avaliações 5 estrelas"],
-  "offer": "frete grátis hoje",
-  "cta": "Toque no link e garanta a sua",
-  "forbidden_claims": ["cura", "garantia de resultado médico", "o melhor do mundo"],
+  "name": "Tiras Nasais",
+  "category": "dilatador nasal adesivo",
+  "main_benefit": "levanta as laterais do nariz e facilita a entrada de ar",
+  "proof": [
+    "material fino e respirável",
+    "aplicação fácil, sem complicação"
+  ],
+  "offer": "confira a oferta no link",
+  "cta": "Toque no link e confira",
+  "disclaimer": "Não substitui orientação médica.",
+  "forbidden_claims": [
+    "cura o ronco",
+    "elimina o ronco",
+    "trata apneia",
+    "trata sinusite ou rinite",
+    "substitui tratamento médico",
+    "resultado garantido",
+    "você ronca / você tem problema respiratório"
+  ],
+  "notes": "Produto de saúde: falar em primeira pessoa, sem diagnosticar o espectador (política Meta de atributos pessoais).",
   "language": "pt-BR"
 }

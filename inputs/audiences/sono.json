@@ -1,0 +1,15 @@
+{
+  "id": "sono",
+  "name": "Quem quer dormir mais confortável",
+  "pains": [
+    "nariz meio fechado na hora de deitar"
+  ],
+  "desires": [
+    "respirar com mais conforto à noite"
+  ],
+  "objections": [
+    "já tenho um spray"
+  ],
+  "tone": "calmo, próximo",
+  "voice": "pt-BR-FranciscaNeural"
+}

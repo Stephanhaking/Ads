@@ -3,5 +3,5 @@ logs/
 __pycache__/
 *.pyc
 .cache/
-inputs/product.png
+inputs/product.*
 inputs/music.mp3
