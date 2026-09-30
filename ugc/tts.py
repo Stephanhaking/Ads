@@ -48,7 +48,7 @@ def _gemini(text: str, voice: str, out: Path, style: str):
             return out
         except urllib.error.HTTPError as e:
             body_txt = e.read()
-            daily = e.code == 429 and (b"PerDay" in body_txt or b"billing" in body_txt)  # cota diária: esperar não adianta
+            daily = e.code == 429 and b"PerDay" in body_txt  # cota diária: esperar não adianta
             if e.code in (429, 500, 503) and attempt < 5 and not daily:
                 time.sleep(15 * (attempt + 1))
                 continue
