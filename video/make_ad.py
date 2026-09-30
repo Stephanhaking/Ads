@@ -323,14 +323,37 @@ def scene1(t, dur):  # abertura: clipe realista de pessoa a dormir mal
 
 FACE_PATH = os.path.join(HERE, "face_nariz.png")
 FACE = Image.open(FACE_PATH).convert("RGB") if os.path.exists(FACE_PATH) else None
-NC = (716, 1112)       # centro da ponte do nariz no frame 1080x1920
-NOSE_ROT = -22         # inclinação da cabeça
-NOSE_LEN = 158         # comprimento da tira sobre o nariz (px)
+FACE_ANGLE = 44        # graus: endireita a cabeça deitada (rotação anti-horária em torno do nariz)
+PIV = (716, 1112)      # pivô da rotação do rosto
+NC = (700, 1090)       # centro da ponte do nariz (tira) no frame 1080x1920
+NOSE_ROT = 0         # inclinação da cabeça
+NOSE_LEN = 200         # comprimento da tira sobre o nariz (px)
+
+
+def _upright(face, ang, pad=800):
+    a = np.pad(np.array(face), ((pad, pad), (pad, pad), (0, 0)), mode="reflect")
+    big = Image.fromarray(a).rotate(ang, center=(PIV[0] + pad, PIV[1] + pad), resample=Image.BICUBIC)
+    return big.crop((pad, pad, pad + W, pad + H))
+
+
+if FACE is not None and FACE_ANGLE:
+    FACE = _upright(FACE, FACE_ANGLE)
 
 
 def _strip_on_face(w=NOSE_LEN):
     """tira real (recorte da foto) ajustada à luz nocturna, com sombra."""
-    st = STRIP.rotate(90, expand=True, resample=Image.BICUBIC)
+    # endireitar a tira: a foto do produto tem-na inclinada; usar o eixo principal da máscara
+    ys_, xs_ = np.nonzero(np.array(STRIP.getchannel("A")) > 128)
+    cov = np.cov(np.stack([xs_ - xs_.mean(), ys_ - ys_.mean()]))
+    ev, evec = np.linalg.eigh(cov)
+    vx, vy = evec[:, 1]
+    if vy < 0:
+        vx, vy = -vx, -vy
+    tilt = math.degrees(math.atan2(vx, vy))
+    straight = STRIP.rotate(-tilt, expand=True, resample=Image.BICUBIC)
+    bb = straight.getchannel("A").getbbox()
+    straight = straight.crop(bb)
+    st = straight.rotate(90, expand=True, resample=Image.BICUBIC)
     st = st.resize((w, int(st.height * w / st.width)), Image.LANCZOS)
     rgb = Image.merge("RGB", st.split()[:3])
     rgb = ImageChops.multiply(rgb, Image.new("RGB", rgb.size, (232, 222, 230)))  # luz nocturna
