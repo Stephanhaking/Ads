@@ -12,7 +12,7 @@ import {
   SceneYear,
 } from './google/scenes';
 import {colors} from './styles';
-import {MUSIC_FILE, PARAGRAPHS, mapTime, paragraphStart} from './google/timing';
+import {MASTER_FILE, MUSIC_FILE, PARAGRAPHS, mapTime, paragraphStart} from './google/timing';
 import {RedWipe} from './google/proto/Fx';
 
 // Timecodes em segundos na timeline estimada; `s()` converte-os para o tempo real da locução
@@ -46,7 +46,10 @@ const Music: React.FC = () => {
 };
 
 // Uma faixa de locução por parágrafo, colocada no início medido de cada um.
-const Voice: React.FC = () => (
+const Voice: React.FC = () => {
+  // Master único começa no frame 0; os tempos dos parágrafos vêm do timecodes_google.json.
+  if (MASTER_FILE) return <Audio src={staticFile(MASTER_FILE)} />;
+  return (
   <>
     {PARAGRAPHS.map((p, i) =>
       p.file ? (
@@ -56,7 +59,8 @@ const Voice: React.FC = () => (
       ) : null,
     )}
   </>
-);
+  );
+};
 
 export const GoogleVideo: React.FC = () => (
   <AbsoluteFill style={{backgroundColor: colors.black}}>

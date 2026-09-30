@@ -12,6 +12,8 @@ export const PARAGRAPHS = timing.paragraphs as Paragraph[];
 export const GAP_SEC = timing.gapSec;
 export const MUSIC_FILE = timing.music as string | null;
 export const MEASURED = timing.measured;
+// Master único (voiceover_google.wav do tts_google.py); se existir, substitui as faixas por parágrafo.
+export const MASTER_FILE = (timing as {master?: string | null}).master ?? null;
 
 // Início medido (em segundos) de cada parágrafo: soma das durações anteriores + pausas.
 export const paragraphStart = (index: number) =>

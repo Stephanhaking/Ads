@@ -1,7 +1,8 @@
 {
   "measured": false,
-  "gapSec": 0.6,
+  "gapSec": 0.45,
   "music": null,
+  "master": null,
   "paragraphs": [
     {"id": "cold", "label": "The machine that knows first", "file": null, "estStart": 0, "estSec": 60, "sec": 60},
     {"id": "act1", "label": "The question", "file": null, "estStart": 60, "estSec": 42.6, "sec": 42.6},
