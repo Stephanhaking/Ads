@@ -1,0 +1,3 @@
+edge-tts>=6.1        # TTS gratuito (opcional; sem ele o vídeo sai só com legendas)
+imageio-ffmpeg>=0.5  # ffmpeg embutido, caso você não tenha ffmpeg instalado
+pillow>=10           # só usado para gerar a imagem de exemplo

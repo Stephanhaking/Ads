@@ -1,0 +1,7 @@
+outputs/
+logs/
+__pycache__/
+*.pyc
+.cache/
+inputs/product.png
+inputs/music.mp3
