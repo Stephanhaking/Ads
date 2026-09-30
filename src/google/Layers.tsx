@@ -37,12 +37,18 @@ export const Foreground: React.FC<{children: React.ReactNode}> = ({children}) =>
 );
 
 export const LayeredScene: React.FC<{
+  back?: React.ReactNode; // blocos de cor / formas atrás do recorte
   mid: React.ReactNode;
   fore?: React.ReactNode;
-}> = ({mid, fore}) => (
-  <AbsoluteFill>
-    <Background />
-    <Midground>{mid}</Midground>
-    {fore ? <Foreground>{fore}</Foreground> : null}
-  </AbsoluteFill>
-);
+}> = ({back, mid, fore}) => {
+  const frame = useCurrentFrame();
+  return (
+    <AbsoluteFill>
+      <Background />
+      {back ? <AbsoluteFill style={{transform: `translateX(${frame * 0.05}px)`}}>{back}</AbsoluteFill> : null}
+      <Midground>{mid}</Midground>
+      {/* parallax: o foreground desliza mais depressa que o midground */}
+      {fore ? <Foreground><AbsoluteFill style={{transform: `translateX(${-frame * 0.12}px)`}}>{fore}</AbsoluteFill></Foreground> : null}
+    </AbsoluteFill>
+  );
+};

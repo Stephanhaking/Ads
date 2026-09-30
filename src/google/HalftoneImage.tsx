@@ -3,7 +3,7 @@ import {Img, staticFile} from 'remotion';
 import {colors} from '../styles';
 
 // Foto halftone (gerada por tools/make_halftone.py) com traço vermelho deslocado atrás.
-// Três camadas: silhueta vermelha (deslocada) → silhueta preta → pontos brancos.
+// Quatro camadas: sombra vermelha deslocada → contorno branco → base preta → pontos brancos.
 
 export type PicName = 'hospital' | 'records' | 'doctor' | 'paper' | 'screen' | 'exterior' | 'person' | 'notes';
 
@@ -33,13 +33,14 @@ export const HalftoneImage: React.FC<Props> = ({name, x, y, width, reveal = 1, o
   const height = (ih / iw) * width;
   const dots = staticFile(`google/ht/${name}.png`);
   const mask = staticFile(`google/ht/${name}-mask.png`);
-  const masked = (bg: string, dx = 0, dy = 0): React.CSSProperties => ({
+  const outline = staticFile(`google/ht/${name}-outline.png`);
+  const masked = (bg: string, dx = 0, dy = 0, m = mask): React.CSSProperties => ({
     position: 'absolute',
     inset: 0,
     transform: `translate(${dx}px, ${dy}px)`,
     background: bg,
-    WebkitMaskImage: `url(${mask})`,
-    maskImage: `url(${mask})`,
+    WebkitMaskImage: `url(${m})`,
+    maskImage: `url(${m})`,
     WebkitMaskSize: '100% 100%',
     maskSize: '100% 100%',
   });
@@ -56,9 +57,12 @@ export const HalftoneImage: React.FC<Props> = ({name, x, y, width, reveal = 1, o
         clipPath: `inset(-40px -40px ${(1 - reveal) * 100}% -40px)`,
       }}
     >
-      <div style={masked(colors.red, outlineOffset[0], outlineOffset[1])} />
+      {/* sombra vermelha deslocada → contorno branco (sticker) → base preta → pontos */}
+      <div style={masked(colors.red, outlineOffset[0], outlineOffset[1], outline)} />
+      <div style={masked(colors.white, 0, 0, outline)} />
       <div style={masked(colors.black)} />
       <Img src={mask} style={{position: 'absolute', width: 1, height: 1, opacity: 0}} />
+      <Img src={outline} style={{position: 'absolute', width: 1, height: 1, opacity: 0}} />
       <Img src={dots} style={{position: 'absolute', inset: 0, width, height}} />
     </div>
   );
