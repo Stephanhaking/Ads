@@ -47,10 +47,12 @@ def _gemini(text: str, voice: str, out: Path, style: str):
                 w.writeframes(pcm)
             return out
         except urllib.error.HTTPError as e:
-            if e.code in (429, 500, 503) and attempt < 5:
+            body_txt = e.read()
+            daily = e.code == 429 and (b"PerDay" in body_txt or b"billing" in body_txt)  # cota diária: esperar não adianta
+            if e.code in (429, 500, 503) and attempt < 5 and not daily:
                 time.sleep(15 * (attempt + 1))
                 continue
-            print(f"  [tts] gemini HTTP {e.code}: {e.read()[:200]!r}")
+            print(f"  [tts] gemini HTTP {e.code}{' (cota diária esgotada)' if daily else ''}: {body_txt[:160]!r}")
             return None
         except Exception as e:
             print(f"  [tts] gemini falhou ({type(e).__name__}: {e})")

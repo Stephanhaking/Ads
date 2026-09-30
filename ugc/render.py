@@ -165,7 +165,7 @@ def render_one(root: Path, copy_path: Path, image: Path, out_dir: Path, music: P
                 r, ai, spc_pan = parse_scene_spec(root, specs[i])
                 if r and r.startswith("MISSING:"):
                     missing.append(r[8:])
-                    r = "face"  # reserva: recorte da foto real
+                    r = "strips"  # reserva: produto real (evita mostrar outra pessoa)
                 role = r or role
                 if ai and spc_pan:
                     pan = spc_pan
