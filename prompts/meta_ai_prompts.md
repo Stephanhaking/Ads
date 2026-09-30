@@ -1,69 +1,67 @@
-# Prompts para gerar as cenas no Meta AI (vídeo)
+# Prompts de IMAGEM para o Meta AI (o Meta gera só imagem)
 
-Use em inglês (costuma render melhor) e gere **um clipe por cena** (5–6 s, vertical 9:16). Depois junte os clipes na ordem e
-coloque voz e legenda com o pipeline (ou no CapCut/Edits). **Não peça texto dentro do vídeo**: IA erra letras; a legenda entra depois.
+O pipeline **anima** as imagens (movimento de câmera, cortes, legenda, voz, botão de CTA). Você só precisa de **5 imagens**.
+As cenas do produto (tiras e aplicação) continuam usando recortes da **sua foto real** em `inputs/product.jpg`,
+então o produto nunca sai deformado pela IA.
+
+## Formato e nomes dos arquivos (salve em `inputs/scenes/`)
+Gere em **vertical 9:16** (peça "vertical 9:16"; se vier quadrado, tudo bem, o vídeo preenche o quadro).
+
+| Arquivo | Usada em | Público |
+|---|---|---|
+| `face.png` | Cena 1, o hook | todos |
+| `mood_parceiro.png` | Cena 2, o problema | parceiro |
+| `mood_roncador.png` | Cena 2, o problema | roncador |
+| `mood_casal.png` | Cena 2, o problema | casal |
+| `face_close.png` | Cena 4, benefício 2 (manhã tranquila) | todos |
+
+(`.jpg` e `.webp` também servem. Um arquivo `mood.png` sem sufixo vale para qualquer público sem versão própria.)
 
 ## Bloco de estilo (cole no FINAL de todo prompt)
 ```
-Vertical 9:16, handheld smartphone footage, natural indoor light, shallow depth of field, realistic skin texture,
-authentic UGC style, casual and unpolished, no text, no captions, no logos, no watermark, no brand names.
+vertical 9:16, candid smartphone photo, natural light, realistic skin texture, shallow depth of field, authentic UGC
+style, casual and unpolished, no text, no captions, no logos, no watermark
 ```
 
-## Cena 1 — Hook (0–3 s): close do rosto com a tira
+## 1) `face.png`: hook
 ```
-Close-up side profile of a woman in her 30s in a bright bedroom, a small beige nasal strip applied across the bridge of her
-nose, she turns her head slightly toward the camera and gives a relaxed half-smile. Slow subtle camera push-in.
+Close-up side profile of a woman in her 30s in a bright bedroom, a small beige adhesive nasal strip across the bridge of
+her nose, relaxed half-smile, looking slightly toward the camera, soft window light.
 ```
-Com a sua imagem (image-to-video): *"Animate this photo: the woman slowly breathes in through her nose, slight head movement, slow push-in on the nasal strip. Keep the product exactly as in the image."*
+Dica: se quiser usar a sua foto como base, envie-a ao Meta AI e peça: *"Recreate this in a real bedroom with natural light, keep the beige nasal strip the same."*
 
-## Cena 2 — Problema (o ronco): clima noturno, sem mostrar sofrimento exagerado
-Versão PARCEIRO(A):
+## 2) `mood_parceiro.png`: problema (parceira acordada)
 ```
-Dim bedroom at night, a woman lying awake in bed staring at the ceiling, annoyed and tired, pillow over one ear; next to her
-a man sleeps on his back with his mouth slightly open. Soft blue night light, slow handheld camera drift.
-```
-Versão RONCADOR:
-```
-Bedroom at night, a man in his 30s lying on his back asleep, his partner beside him sits up and looks at him with a tired
-but amused expression. Soft blue night light, slow camera drift.
-```
-Versão CASAL:
-```
-Couple in bed at night, she holds a pillow and gestures playfully toward him while he sleeps, both visible in warm
-bedside lamp light. Light, humorous mood, handheld framing.
-```
-> Dica: peça "no audio" e não descreva som de ronco; a voz e o áudio entram depois.
-
-## Cena 3 — Benefício: as tiras (produto)
-```
-Top-down shot of a hand on a white bedside table holding a small pack and showing four beige adhesive nasal strips fanned
-out, soft window light, slow pan to the right, clean and realistic.
-```
-Com a sua imagem: *"Animate this product photo: slow parallax zoom over the row of beige nasal strips, subtle light shift, background stays blue and white."*
-
-## Cena 4 — Benefício 2: a tira no nariz (aplicação)
-```
-Medium close-up of a man in a bathroom mirror peeling the backing off a beige nasal strip and pressing it across the bridge
-of his nose with two fingers, then smoothing it down. Natural light, realistic hands, steady handheld.
+Dim bedroom at night, a woman lying awake in bed looking tired and annoyed, pillow pressed over one ear; beside her a man
+sleeps on his back with his mouth slightly open. Cool blue night light, candid.
 ```
 
-## Cena 5 — Como usar / manhã seguinte
+## 2) `mood_roncador.png`: problema (quem ronca)
 ```
-Morning in a bedroom, sunlight through curtains, a couple sits up in bed stretching and smiling, looking rested; the man has
-a nasal strip on his nose. Warm natural light, slow camera push-in.
+Bedroom at night, a man in his 30s asleep on his back, his partner sitting up beside him looking tired but amused.
+Cool blue night light, candid.
 ```
-> Mostra "manhã tranquila" sem prometer resultado. Não escreva "cured / no more snoring".
 
-## Cena 6 — CTA
+## 2) `mood_casal.png`: problema (casal)
 ```
-Person holding a smartphone toward the camera with a friendly look, then pointing downward at the screen, bright room,
-casual selfie framing.
+Couple in bed at night, she holds a pillow and gestures playfully toward him while he sleeps, warm bedside lamp light,
+humorous light-hearted mood, candid.
 ```
-(O botão "TOQUE NO LINK" é animado pelo pipeline por cima.)
 
-## Regras para o resultado ficar aceitável no Meta Ads
-- Gere 3–4 versões de cada cena e escolha a mais natural; mãos e rostos de IA costumam falhar, descarte os estranhos.
-- Não mostre antes/depois de saúde nem sintomas exagerados; nada de médico, jaleco ou "aprovado por".
-- Evite "snoring stops / cure / eliminate". Fale de "conforto para dormir" e "pode ajudar" (veja `inputs/product.json`).
-- Rotule como conteúdo gerado/alterado por IA onde a plataforma exigir.
-- Se usar pessoa gerada por IA fazendo "depoimento", deixe claro que é encenação; para prova social, use clientes reais.
+## 4) `face_close.png`: manhã tranquila
+```
+Morning bedroom with sunlight through curtains, a couple sits up in bed stretching and smiling, looking rested; the man has
+a small beige nasal strip on his nose. Warm natural light, candid.
+```
+
+## Boas práticas
+- Gere 4 versões de cada e escolha a mais natural. Descarte mãos e rostos estranhos.
+- Mantenha o **mesmo casal** nas imagens: repita a descrição física (ex.: "woman in her 30s with brown wavy hair", "man in his 30s with short dark beard") em todos os prompts.
+- Nada de médico, jaleco, antes/depois de saúde, selo de aprovação ou qualquer texto dentro da imagem.
+- Não escreva "cured / no more snoring". A imagem da manhã mostra só descanso; a promessa fica no roteiro, que já é cuidadoso.
+- Rotule como conteúdo gerado por IA onde a plataforma exigir.
+
+## Depois de salvar as imagens
+```bash
+python -m ugc.cli render --force --workers 2
+```

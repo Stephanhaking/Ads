@@ -44,10 +44,27 @@ def _motion(kind, frames):
     return f"z='1.14':x='(iw-iw/zoom)*(1-on/{n})':y='{cy}'"
 
 
-def scene_clip(td, img, size, role, dur, motion, crops, out):
+AI_ROLES = ("face", "mood", "face_close")  # cenas que aceitam imagem gerada em inputs/scenes/
+
+
+def find_scene_image(root: Path, role: str, audience: str):
+    """inputs/scenes/<papel>_<publico>.(png|jpg|webp) tem prioridade sobre inputs/scenes/<papel>.*"""
+    for stem in (f"{role}_{audience}", role):
+        for ext in (".png", ".jpg", ".jpeg", ".webp"):
+            f = root / "inputs/scenes" / f"{stem}{ext}"
+            if f.exists():
+                return f
+    return None
+
+
+def scene_clip(td, img, size, role, dur, motion, crops, out, custom=False):
     iw, ih = size
     frames = int(dur * FPS) + 1
-    if role == "full":
+    if custom:  # imagem gerada (idealmente 9:16): preenche o quadro, sem recorte fixo
+        zoom = f"zoompan={_motion(motion, frames)}:d=1:s={W}x{H}:fps={FPS}"
+        vf = (f"scale={int(W * 1.5)}:{int(H * 1.5)}:force_original_aspect_ratio=increase:flags=lanczos,"
+              f"crop={int(W * 1.5)}:{int(H * 1.5)},{zoom},setsar=1,format=yuv420p")
+    elif role == "full":
         base = (f"split[a][b];[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
                 f"boxblur=40:5,eq=brightness=-0.15[bg];[b]scale={W - 80}:-2[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2")
         zoom = f"zoompan={_motion('in', frames)}:d=1:s={W}x{H}:fps={FPS}"
@@ -98,11 +115,18 @@ def render_one(root: Path, copy_path: Path, image: Path, out_dir: Path, music: P
         bounds = [0.0] + starts[1:] + [total]
         durs = [bounds[i + 1] - bounds[i] for i in range(n)]
         size = _image_size(td / img_name)
-        clips = []
+        clips, used = [], []
         for i, (role, d) in enumerate(zip(roles, durs)):
             name = f"s{i}.mp4"
-            scene_clip(td, img_name, size, role, d + (XF if i < n - 1 else 0), MOTIONS[(i + rng.randrange(4)) % 4],
-                       crops, name)
+            src, sz, custom = img_name, size, False
+            ai = find_scene_image(root, role, copy.get("audience", "")) if role in AI_ROLES else None
+            if ai:
+                src = f"scene{i}{ai.suffix}"
+                shutil.copy(ai, td / src)
+                sz, custom = _image_size(td / src), True
+                used.append(ai.name)
+            scene_clip(td, src, sz, role, d + (XF if i < n - 1 else 0), MOTIONS[(i + rng.randrange(4)) % 4],
+                       crops, name, custom)
             clips.append(name)
 
         cmd = [ffmpeg_bin(), "-y", "-loglevel", "error"]
@@ -139,5 +163,5 @@ def render_one(root: Path, copy_path: Path, image: Path, out_dir: Path, music: P
         out_dir.mkdir(parents=True, exist_ok=True)
         shutil.move(td / "out.mp4", out)
     return {"id": vid, "file": str(out), "duration": round(total, 1), "voice": bool(voice_file),
-            "scenes": n, "caption": copy.get("caption", ""), "hook_type": copy.get("hook_type", ""),
+            "scenes": n, "scene_images": used, "caption": copy.get("caption", ""), "hook_type": copy.get("hook_type", ""),
             "audience": copy.get("audience", "")}
