@@ -655,6 +655,39 @@ SR = 44100
 CUTS = [a for a, _, _ in SCENES[1:]]
 
 
+def snore_sound(scale=1.0, rng=None):
+    """Um ciclo de ronco: inspiração rouca (pulsos graves a vibrar) + pausa + expiração mais suave."""
+    from scipy import signal as sg
+    rng = rng if rng is not None else np.random.default_rng(1)
+    segs = [(1.35 * scale, 1.0, 34, 62), (0.95 * scale, 0.42, 30, 45)]  # (duração, ganho, f0 inicial, f0 final)
+    pieces, gaps = [], [0.32 * scale, 0.0]
+    for (d, gain, f0a, f0b), gap in zip(segs, gaps):
+        l = int(d * SR)
+        tt = np.arange(l) / SR
+        u = tt / d
+        env = (np.sin(np.pi * np.clip(u ** 0.8, 0, 1)) ** 1.3) * gain
+        f0 = f0a + (f0b - f0a) * u + 4 * np.sin(2 * np.pi * 2.3 * tt)
+        ph = np.cumsum(f0 / SR + rng.normal(0, 0.004, l))
+        imp = (np.diff(np.floor(ph), prepend=0) > 0).astype(float)
+        imp *= rng.uniform(0.55, 1.0, l)  # cada "pancada" do palato com força ligeiramente diferente
+        # pulso com cauda rápida (vibração do palato mole)
+        k = np.exp(-np.arange(int(0.012 * SR)) / (0.0035 * SR))
+        src = np.convolve(imp, k)[:l]
+        body = np.zeros(l)
+        for fc, q, g in ((260, 3.0, 1.0), (820, 4.0, 0.7), (1900, 4.0, 0.3)):  # ressonâncias da garganta/nariz
+            b_, a_ = sg.iirpeak(fc, q, fs=SR)
+            body += g * sg.lfilter(b_, a_, src)
+        nz = sg.lfilter(*sg.butter(2, [180, 2600], "bandpass", fs=SR), rng.standard_normal(l)) * (0.10 if gain > 0.6 else 0.22)
+        sig = (body * 14 + nz) * env
+        sig += 0.25 * env * sg.lfilter(*sg.butter(2, 110, "lowpass", fs=SR), rng.standard_normal(l)) * 3
+        pieces.append(sig)
+        pieces.append(np.zeros(int(gap * SR)))
+    full = np.concatenate(pieces)
+    full = full / (np.max(np.abs(full)) + 1e-9)
+    return full
+
+
+
 def synth_audio(path):
     n = int(DUR * SR)
     t = np.arange(n) / SR
@@ -727,17 +760,11 @@ def synth_audio(path):
             tt = np.arange(l) / SR
             out[s:s + l] += vol * np.sign(np.sin(2 * np.pi * f * tt)) * np.minimum(1, tt * 80) * np.exp(-tt * 6)
 
-    def snore(at, d=1.9, vol=0.5):
+    def snore(at, scale=1.0, vol=0.7):
+        full = snore_sound(scale, rng)
         s = int(at * SR)
-        l = int(d * SR)
-        if s + l > n:
-            return
-        tt = np.arange(l) / SR
-        env = np.sin(np.pi * tt / d) ** 1.4
-        flut = 0.5 + 0.5 * np.sin(2 * np.pi * (26 + 6 * tt / d) * tt + 2.5 * np.sin(2 * np.pi * 3.1 * tt))
-        tone = np.sin(2 * np.pi * 82 * tt) + 0.55 * np.sin(2 * np.pi * 164 * tt) + 0.25 * np.sin(2 * np.pi * 246 * tt)
-        nz = np.convolve(rng.standard_normal(l), np.ones(18) / 18, mode="same") * 3
-        out[s:s + l] += vol * env * flut * (0.35 * tone + 0.9 * nz)
+        e = min(n, s + len(full))
+        out[s:e] += vol * full[: e - s]
 
     def sigh(at, d=1.5, vol=0.22):
         s = int(at * SR)
@@ -747,8 +774,9 @@ def synth_audio(path):
         nz = np.convolve(rng.standard_normal(l), np.ones(9) / 9, mode="same") * 2.2
         out[s:s + l] += vol * env * nz
 
-    for k in range(4):
-        snore(0.25 + k * 2.0)
+    snore(0.2)
+    snore(3.5)
+    snore(6.6, 0.8)
     sigh(T[1] + 3.0)
     for c in CUTS:
         whoosh(c - 0.25)
