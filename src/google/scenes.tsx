@@ -4,6 +4,7 @@ import {colors, fonts} from '../styles';
 import {LayeredScene} from './Layers';
 import {HalftoneImage} from './HalftoneImage';
 import {Bar, Tag} from './Vox';
+import {EASE_OUT, EASE_IN_OUT, SPEED_MULTIPLIER} from './motion';
 
 // Cenas dos primeiros 2 minutos (ver docs/storyboard_google_0-2min.md). Estilo Vox.
 // Tempos dentro de cada cena em segundos (multiplicados por fps).
@@ -14,8 +15,9 @@ const useT = () => {
   return {frame, fps, sec: frame / fps};
 };
 
-const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
-const reveal = (frame: number, fps: number, secs = 1.2) => interpolate(frame, [0, secs * fps], [0, 1], clamp);
+const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: EASE_OUT} as const;
+const reveal = (frame: number, fps: number, secs = 1.2) =>
+  interpolate(frame, [0, (secs * fps) / SPEED_MULTIPLIER], [0, 1], {...clamp, easing: EASE_IN_OUT});
 
 const source: React.CSSProperties = {
   position: 'absolute',

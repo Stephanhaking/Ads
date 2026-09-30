@@ -1,19 +1,21 @@
-import {AbsoluteFill, Sequence} from 'remotion';
+import {AbsoluteFill, interpolate, Sequence, useCurrentFrame} from 'remotion';
 import {
   SceneBuilding,
   SceneClimax,
   SceneEngine,
   SceneHospital,
+  SceneNotes,
   ScenePaper,
   SceneQuestion,
   SceneReadAll,
   SceneRecords,
-  SceneNotes,
   SceneYear,
 } from './google/scenes';
+import {colors} from './styles';
+import {EASE_OUT, TRANSITION_FRAMES as T, TRANSITION_SLIDE_PX} from './google/motion';
 
 // Timecodes em segundos — provisórios até medir os WAVs (ver docs/storyboard_google_0-2min.md).
-// As cenas são contíguas: cada uma começa onde a anterior acaba.
+// Cada cena começa onde a anterior acaba.
 export const FPS = 30;
 export const s = (sec: number) => Math.round(sec * FPS);
 
@@ -32,12 +34,31 @@ export const GG_BEATS = [
 
 export const GG_TOTAL = s(GG_BEATS[GG_BEATS.length - 1].to);
 
+// Entrada: fade + deslize lateral (exceto a 1.ª cena). Saída: só desliza, opaca, enquanto a seguinte entra por cima (crossfade sem mergulho).
+const Transition: React.FC<{first: boolean; last: boolean; duration: number; children: React.ReactNode}> = ({first, last, duration, children}) => {
+  const frame = useCurrentFrame();
+  const opts = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: EASE_OUT} as const;
+  const enter = first ? 1 : interpolate(frame, [0, T], [0, 1], opts);
+  const dx =
+    (first ? 0 : interpolate(frame, [0, T], [TRANSITION_SLIDE_PX, 0], opts)) +
+    (last ? 0 : interpolate(frame, [duration - T, duration], [0, -TRANSITION_SLIDE_PX], opts));
+  return <AbsoluteFill style={{opacity: enter, transform: `translateX(${dx}px)`}}>{children}</AbsoluteFill>;
+};
+
 export const GoogleVideo: React.FC = () => (
-  <AbsoluteFill>
-    {GG_BEATS.map(({id, from, to, Component}) => (
-      <Sequence key={id} name={id} from={s(from)} durationInFrames={s(to) - s(from)}>
-        <Component />
-      </Sequence>
-    ))}
+  <AbsoluteFill style={{backgroundColor: colors.black}}>
+    {GG_BEATS.map(({id, from, to, Component}, i) => {
+      const first = i === 0;
+      const last = i === GG_BEATS.length - 1;
+      // Começa exatamente no timecode; prolonga-se T frames por baixo da cena seguinte (que entra por cima).
+      const duration = s(to) - s(from) + (last ? 0 : T);
+      return (
+        <Sequence key={id} name={id} from={s(from)} durationInFrames={duration}>
+          <Transition first={first} last={last} duration={duration}>
+            <Component />
+          </Transition>
+        </Sequence>
+      );
+    })}
   </AbsoluteFill>
 );

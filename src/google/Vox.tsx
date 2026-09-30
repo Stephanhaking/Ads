@@ -1,6 +1,7 @@
 import React from 'react';
 import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {colors, fonts} from '../styles';
+import {BAR, motionFrame, POP, EASE_OUT} from './motion';
 
 // Elementos de foreground estilo Vox: caixas de texto flutuantes e barras de dados.
 
@@ -14,7 +15,7 @@ export const Tag: React.FC<{
 }> = ({text, appearAt, x, y, fill, size = 44}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
-  const p = spring({frame: frame - appearAt, fps, config: {damping: 10, stiffness: 170}});
+  const p = spring({frame: motionFrame(frame, appearAt), fps, config: POP});
   return (
     <div
       style={{
@@ -51,9 +52,9 @@ export const Bar: React.FC<{
 }> = ({label, value, appearAt, x, color, maxHeight = 560}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
-  const p = spring({frame: frame - appearAt, fps, config: {damping: 14, stiffness: 90}});
+  const p = spring({frame: motionFrame(frame, appearAt), fps, config: BAR});
   const h = (value / 100) * maxHeight * p;
-  const shown = Math.round(value * interpolate(p, [0, 1], [0, 1], {extrapolateRight: 'clamp'}));
+  const shown = Math.round(value * interpolate(p, [0, 1], [0, 1], {extrapolateRight: 'clamp', easing: EASE_OUT}));
   return (
     <div style={{position: 'absolute', left: x, bottom: 140, width: 230}}>
       <div style={{fontFamily: fonts.heading, fontWeight: 900, fontSize: 92, color: colors.white, marginBottom: 10, opacity: Math.min(1, p * 2)}}>

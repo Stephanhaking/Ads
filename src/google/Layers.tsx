@@ -1,6 +1,7 @@
 import React from 'react';
-import {AbsoluteFill} from 'remotion';
+import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
 import {colors} from '../styles';
+import {PUSH_IN_FRAMES, PUSH_IN_MAX} from './motion';
 
 // Estrutura de profundidade: Background (estático) → Midground (elemento central) → Foreground (texto/dados).
 
@@ -22,9 +23,14 @@ export const Background: React.FC = () => (
   </AbsoluteFill>
 );
 
-export const Midground: React.FC<{children: React.ReactNode}> = ({children}) => (
-  <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center'}}>{children}</AbsoluteFill>
-);
+// Push-in lento: dá profundidade ao midground sem mexer no foreground.
+export const Midground: React.FC<{children: React.ReactNode}> = ({children}) => {
+  const frame = useCurrentFrame();
+  const scale = 1 + interpolate(frame, [0, PUSH_IN_FRAMES], [0, PUSH_IN_MAX], {extrapolateRight: 'clamp'});
+  return (
+    <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center', transform: `scale(${scale})`}}>{children}</AbsoluteFill>
+  );
+};
 
 export const Foreground: React.FC<{children: React.ReactNode}> = ({children}) => (
   <AbsoluteFill style={{pointerEvents: 'none'}}>{children}</AbsoluteFill>
