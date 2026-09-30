@@ -5,9 +5,9 @@ Fase 2 do workflow. Fonte: `SCRIPT_GOOGLE.md` (Cold Open + Ato I + início do At
 **Timestamps estimados** a ~130 palavras/min (ritmo do script: ~1.750 palavras ≈ 13,5 min), com 0,6 s de respiro entre parágrafos.
 ⚠️ Provisórios: depois de gerar os WAVs da Iapetus, medir e substituir por timecodes reais (`constants.ts`).
 
-**Regras visuais do script:** paleta preto/cinza/platina; vermelho `#FF3333` só num ponto (o pico de mortalidade, mais tarde o carimbo "MONOPOLIST"). Sem fotos obrigatórias.
+**Estilo visual (decisão da Stephany): VOX**, não o minimalismo descrito no script. Halftone P&B com traço vermelho deslocado atrás, caixas de texto flutuantes (branco com sombra vermelha; vermelho cheio para o destaque) e gráficos de dados animados. Paleta preto/branco/vermelho `#E5232B`. As primitivas `Prognosis` e `PredictEngine` do script foram descartadas.
 
-**Primitivas novas:** `Prognosis` (linha de previsão de mortalidade, abre e fecha o vídeo) e `PredictEngine` (caixa de previsão com várias saídas).
+> As colunas "Visual principal" abaixo ainda descrevem a versão do script; só as cenas 4 e 8–10 foram refeitas em Vox (`src/google/scenes.tsx`). As restantes serão adaptadas ao construí-las.
 
 ---
 
