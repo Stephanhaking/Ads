@@ -9,7 +9,9 @@ import {Connector, Flash, Grain, KineticText, RedDisc, useShake} from './Fx';
 import {ClimaxChart} from './ClimaxChart';
 import {scaleFor} from './timing';
 import {ThemeName, ThemeProvider, useTheme} from './theme';
-import {ConsentForm, DotField, FourDots, RecordTable, RedactionDoc, SearchBar, Wordmark} from './brand/Brand';
+import {DotField, SearchBar, Wordmark} from './brand/Brand';
+import {ArticlePage, BrowserWindow, Cursor, HandCircle, ScribbleUnderline} from './doc/Doc';
+import {ConsentWindow, EhrWindow, PdfViewer, Terminal} from './doc/Screens';
 import {MapsApp} from './brand/Maps';
 import {SfxAt} from './Sfx';
 import {Tag} from './Vox';
@@ -83,6 +85,7 @@ export const SceneHospital: React.FC = () => {
             <div style={{position: 'absolute', right: 140, top: 80, fontFamily: fonts.mono, fontSize: 60, color: th.text, letterSpacing: 6}}>
               03{colon}12 <span style={{color: th.hotBg}}>AM</span>
             </div>
+            <HandCircle cx={1385} cy={628} rx={165} ry={125} at={7.4 * fps} />
             <Tag text="100 small readings" appearAt={8 * fps} x={110} y={700} size={36} />
             <Tag text="Easy to miss" appearAt={11.5 * fps} x={110} y={840} fill />
           </>
@@ -98,12 +101,13 @@ export const SceneYear: React.FC = () => {
   return (
     <Shell theme="paper">
       <LayeredScene
-        mid={<FourDots cx={1560} cy={720} size={48} />}
+        back={<RedDisc x={470} y={470} r={330} appearAt={2} shape="ring" />}
+        mid={<Terminal x={1010} y={250} w={860} h={560} at={0.3 * fps} />}
         fore={
           <>
             <SfxAt name="hit" at={3} />
-            <KineticText lines={[['2018']]} x={150} y={230} size={400} startAt={3} hot={[]} />
-            <Tag text="A machine learned to catch it first" appearAt={1.4 * fps} x={150} y={720} fill size={46} />
+            <KineticText lines={[['2018']]} x={110} y={250} size={250} startAt={3} hot={[]} />
+            <Tag text="A machine learned to catch it first" appearAt={1.4 * fps} x={110} y={640} fill size={30} />
           </>
         }
       />
@@ -124,6 +128,7 @@ export const SceneRecords: React.FC = () => {
           <>
             <Tag text="Medical records" appearAt={0.8 * fps} x={130} y={90} />
             <Big x={1150} y={240} size={116}>{count.toLocaleString('en-US')}</Big>
+            <ScribbleUnderline x={1150} y={372} w={640} at={7.6 * fps} />
             <Mono x={1150} y={400}>PATIENTS</Mono>
             <Tag text="Artificial intelligence" appearAt={7.5 * fps} x={1150} y={520} size={40} />
             <Tag text="Who, in this building," appearAt={10 * fps} x={1150} y={700} fill size={44} />
@@ -144,17 +149,25 @@ export const SceneClimax: React.FC = () => (
 
 // 5 (0:46–0:54) — publicado numa revista médica.
 export const ScenePaper: React.FC = () => {
-  const {frame, fps} = useT('cold');
+  const {fps} = useT('cold');
   return (
-    <Shell theme="paper">
+    <Shell theme="paper" grain={0.3}>
       <LayeredScene
-        back={<RedDisc x={1290} y={620} r={340} appearAt={2} shape="block" />}
-        mid={<HalftoneImage name="paper" x={760} y={320} width={1100} reveal={reveal(frame)} />}
+        back={<RedDisc x={1300} y={600} r={330} appearAt={2} shape="block" />}
+        mid={
+          <>
+            <BrowserWindow x={720} y={150} w={1140} h={800} url="nature.com › npj Digital Medicine" tab="Scalable and accurate deep learning for electronic health records" at={0.4 * fps}>
+              <ArticlePage hlAt={3.2 * fps} />
+            </BrowserWindow>
+            <HandCircle cx={1010} cy={382} rx={330} ry={56} at={4.6 * fps} />
+            <Cursor path={[[1560, 760, 1.6 * fps], [1250, 400, 3.2 * fps], [1236, 392, 3.5 * fps]]} />
+          </>
+        }
         fore={
           <>
-            <KineticText lines={[['Published', 'in', 'a'], ['medical'], ['journal']]} x={110} y={110} size={94} startAt={6} stagger={8} hot={[]} />
-            <Tag text="Nature" appearAt={3.4 * fps} x={110} y={640} size={56} />
-            <Tag text="May 2018" appearAt={4.6 * fps} x={110} y={790} fill size={56} />
+            <KineticText lines={[['Published'], ['in a medical'], ['journal']]} x={110} y={120} size={68} startAt={6} stagger={9} hot={[]} />
+            <Tag text="Nature" appearAt={3.4 * fps} x={110} y={640} size={52} />
+            <Tag text="May 2018" appearAt={4.6 * fps} x={110} y={790} fill size={52} />
           </>
         }
       />
@@ -256,14 +269,19 @@ export const SceneEngine: React.FC = () => {
 export const SceneReadAll: React.FC = () => {
   const {fps} = useT('act2');
   return (
-    <Shell theme="paper">
+    <Shell theme="paper" grain={0.3}>
       <LayeredScene
-        mid={<RecordTable x={110} y={190} w={900} h={780} />}
+        mid={
+          <>
+            <EhrWindow x={90} y={150} w={1000} h={800} tabAt={[0, 1.7 * fps, 3.4 * fps]} hlAt={4.3 * fps} />
+            <HandCircle cx={655} cy={422} rx={205} ry={40} at={5.1 * fps} />
+          </>
+        }
         fore={
           <>
-            <Tag text="What it took to see" appearAt={0.4 * fps} x={110} y={80} size={38} />
-            <KineticText lines={[['By', 'reading'], ['all', 'of', 'it']]} x={1090} y={240} size={92} startAt={1.2 * fps} stagger={9} hot={['it']} />
-            <Tag text="Forecasting a death" appearAt={5 * fps} x={1090} y={700} size={44} />
+            <Tag text="What it took to see" appearAt={0.4 * fps} x={110} y={70} size={36} />
+            <KineticText lines={[['By', 'reading'], ['all', 'of', 'it']]} x={1150} y={250} size={78} startAt={1.2 * fps} stagger={9} hot={['it']} />
+            <Tag text="Forecasting a death" appearAt={5 * fps} x={1150} y={700} size={40} />
           </>
         }
       />
@@ -322,20 +340,25 @@ export const SceneAnon: React.FC = () => {
   const th = useTheme();
   const stamp = spring({frame: frame - 6 * fps, fps: 30, config: {damping: 9, stiffness: 200}});
   return (
-    <Shell theme="paper">
+    <Shell theme="paper" grain={0.3}>
       <LayeredScene
         back={<RedDisc x={520} y={560} r={320} appearAt={2} shape="block" />}
-        mid={<RedactionDoc x={110} y={150} w={820} h={820} sweepAt={7 * fps} hotAt={10 * fps} />}
+        mid={
+          <>
+            <PdfViewer x={90} y={130} w={900} h={840} redactAt={7 * fps} hlAt={10 * fps} />
+            <HandCircle cx={520} cy={712} rx={410} ry={118} at={11.4 * fps} />
+          </>
+        }
         fore={
           <>
-            <Tag text="A hospital handed over the records" appearAt={1 * fps} x={1010} y={230} size={34} />
-            <Tag text="Every patient · 2009–2016" appearAt={4 * fps} x={1010} y={350} fill size={40} />
+            <Tag text="A hospital handed over the records" appearAt={1 * fps} x={1030} y={230} size={32} />
+            <Tag text="Every patient · 2009–2016" appearAt={4 * fps} x={1030} y={350} fill size={38} />
             <SfxAt name="stamp" at={6 * fps} />
-            <div style={{position: 'absolute', left: 150, top: 540, transform: `rotate(-9deg) scale(${0.5 + 0.5 * stamp})`, opacity: Math.min(1, stamp * 2), border: `10px solid ${th.hotBg}`, color: th.hotBg, padding: '8px 28px', fontFamily: fonts.heading, fontWeight: 400, fontSize: 84, letterSpacing: 6, background: 'rgba(233,226,210,0.9)'}}>
+            <div style={{position: 'absolute', left: 130, top: 330, transform: `rotate(-9deg) scale(${0.5 + 0.5 * stamp})`, opacity: Math.min(1, stamp * 2), border: `10px solid ${th.hotBg}`, color: th.hotBg, padding: '8px 28px', fontFamily: fonts.heading, fontWeight: 400, fontSize: 78, letterSpacing: 6, background: 'rgba(255,255,255,0.88)'}}>
               DE-IDENTIFIED
             </div>
-            <Tag text="The dates · still attached" appearAt={10 * fps} x={1010} y={600} size={36} />
-            <Tag text="The doctors' notes · still attached" appearAt={12 * fps} x={1010} y={730} size={30} />
+            <Tag text="The dates · still attached" appearAt={10 * fps} x={1030} y={600} size={34} />
+            <Tag text="The doctors' notes · still attached" appearAt={12 * fps} x={1030} y={730} size={28} />
           </>
         }
       />
@@ -365,9 +388,14 @@ export const SceneFile: React.FC = () => {
 
 // 16 — PICO (vermelho): "The patients were never asked."
 export const SceneNever: React.FC = () => (
-  <Shell theme="red">
+  <Shell theme="red" grain={0.3}>
     <LayeredScene
-      mid={<ConsentForm x={1080} y={130} w={700} h={800} />}
+      mid={
+        <>
+          <ConsentWindow x={1060} y={130} w={760} h={800} />
+          <Cursor path={[[1640, 260, 14], [1190, 500, 44], [1215, 520, 56], [1500, 640, 84], [1640, 430, 110]]} />
+        </>
+      }
       fore={
         <>
           <KineticText lines={[['The', 'patients'], ['were', 'never'], ['asked.']]} x={110} y={170} size={118} startAt={4} stagger={9} hot={['asked.']} />

@@ -6,6 +6,7 @@ import {LayeredScene} from './Layers';
 import {RedDisc} from './Fx';
 import {useTheme} from './theme';
 import {SfxAt} from './Sfx';
+import {HandCircle} from './doc/Doc';
 import {Tag} from './Vox';
 import {useCurrentFrame, useVideoConfig} from '../timeline';
 
@@ -26,7 +27,8 @@ export const ClimaxChart: React.FC = () => {
       fore={
         <>
           <SfxAt name="hit" at={18} />
-          <div style={{position: 'absolute', left: 820, top: 70, fontFamily: fonts.heading, fontWeight: 400, fontSize: 380, lineHeight: 1, color: th.text, transform: `scale(${0.6 + 0.4 * pop})`, transformOrigin: 'left center', opacity: Math.min(1, pop * 2), textShadow: `14px 14px 0 ${th.textShadow}`}}>
+          <HandCircle cx={1130} cy={235} rx={450} ry={150} at={70} color={th.text} />
+          <div style={{position: 'absolute', left: 820, top: 70, fontFamily: fonts.heading, fontWeight: 400, fontSize: 320, lineHeight: 1, color: th.text, transform: `scale(${0.6 + 0.4 * pop})`, transformOrigin: 'left center', opacity: Math.min(1, pop * 2), textShadow: `14px 14px 0 ${th.textShadow}`}}>
             {n}%
           </div>
           <div style={{position: 'absolute', left: 830, top: 520, fontFamily: fonts.mono, fontSize: 26, letterSpacing: 4, color: th.mono}}>GOOGLE AI</div>
