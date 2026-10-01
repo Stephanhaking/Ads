@@ -1,0 +1,230 @@
+{
+ "a3": {
+  "total": 48.6,
+  "bounds": [
+   5.0,
+   8.5,
+   14.6,
+   16.7,
+   16.7,
+   17.9,
+   19.2,
+   20.6,
+   24.4,
+   34.1,
+   38.5,
+   42.2,
+   45.9
+  ],
+  "sents": [
+   "A prediction engine this powerful is expensive, and it has to earn its keep.",
+   "So look at what Google spent those twenty years building.",
+   "A system that turns human behaviour into something you can measure, store and sell.",
+   "Every search is a measurement.",
+   "Every route.",
+   "Every video.",
+   "Every pause.",
+   "On their own, they're just readings.",
+   "But point them at a market, and each reading becomes a bet.",
+   "A bet on what a person will do next, sold in a fraction of a second to whoever wants that person's next decision.",
+   "Last year, Alphabet took in four hundred and three billion dollars.",
+   "Roughly three of every four came from that one market.",
+   "The death algorithm shows how good the engine has become.",
+   "Advertising is where the engine gets paid."
+  ]
+ },
+ "a4": {
+  "total": 47.8,
+  "bounds": [
+   4.6,
+   6.9,
+   15.2,
+   17.0,
+   18.9,
+   18.9,
+   22.9,
+   25.2,
+   26.6,
+   33.6,
+   39.4,
+   39.4,
+   39.4,
+   41.2,
+   44.5,
+   46.2
+  ],
+  "sents": [
+   "And here the story turns, because a prediction has a dangerous property.",
+   "It doesn't have to stay a prediction.",
+   "If you know what someone will probably do, you can start adjusting the world around them.",
+   "Until probably quietly becomes certainly.",
+   "A default set here.",
+   "A feed arranged there.",
+   "A nudge so small no one feels it.",
+   "Accuracy is worth pennies.",
+   "Certainty is worth a fortune.",
+   "And the cheapest way to buy certainty is to shape the behaviour you've already sold.",
+   "So the machine drifts, without anyone deciding it should, from watching to steering.",
+   "Predict.",
+   "Nudge.",
+   "Confirm the nudge worked.",
+   "Predict again, a little more sure each time.",
+   "Nobody chose this.",
+   "The incentive chose it."
+  ]
+ },
+ "a5a": {
+  "total": 58.8,
+  "bounds": [
+   2.7,
+   7.2,
+   13.0,
+   15.7,
+   18.8,
+   21.4,
+   21.4,
+   22.6,
+   32.5,
+   32.5,
+   37.4,
+   41.9,
+   49.7,
+   51.4
+  ],
+  "sents": [
+   "You don't have to imagine what steering looks like.",
+   "It's already happened, in the open, on a product you use every day.",
+   "Around twenty sixteen, YouTube quietly changed the question its algorithm was trying to answer.",
+   "Not, what does this person want to watch.",
+   "But, what will keep this person watching the longest.",
+   "It tuned itself to chase one number.",
+   "Watch time.",
+   "And it worked.",
+   "By the company's own account, seventy per cent of everything watched on YouTube now comes from what the machine plays next, not from anything anyone searched for.",
+   "A billion hours a day.",
+   "The average session on a phone runs past an hour.",
+   "And most of it was chosen for you, by a system that learned one simple lesson.",
+   "The surest way to keep someone watching is to hand them the next video before they decide to leave.",
+   "Nobody's forcing you to stay.",
+   "You're simply being pointed, gently, precisely, a thousand times a day, by a machine optimising for a number, on a screen you opened yourself."
+  ]
+ },
+ "a5b": {
+  "total": 49.6,
+  "bounds": [
+   6.0,
+   10.0,
+   16.2,
+   19.7,
+   22.9,
+   27.7,
+   32.6,
+   32.6,
+   34.0,
+   39.6,
+   39.6,
+   40.6,
+   41.6
+  ],
+  "sents": [
+   "And if that still sounds like reading too much into a recommendation, consider this.",
+   "Google's own designers reached the same conclusion, years ago, and wrote it down.",
+   "In twenty sixteen, a team inside the company made an internal film.",
+   "It described your accumulated data as a ledger.",
+   "A record that could be passed on, and outlive you.",
+   "And it imagined using that ledger to nudge people toward chosen goals.",
+   "Goals that, in its own words, reflect Google's values as an organisation.",
+   "Not one user.",
+   "Whole populations.",
+   "When the film leaked to the press, Google called it a thought experiment.",
+   "A provocation.",
+   "Nothing more.",
+   "And perhaps it was.",
+   "But you don't sit down to imagine steering human behaviour at scale unless you're already holding the machine that could."
+  ]
+ },
+ "a6": {
+  "total": 44.1,
+  "bounds": [
+   5.7,
+   8.4,
+   13.1,
+   17.3,
+   19.3,
+   22.9,
+   26.0,
+   31.6,
+   38.9,
+   39.9,
+   39.9
+  ],
+  "sents": [
+   "And the machine has a great many hands on the wheel, because you fitted most of them yourself.",
+   "The search box hears what you want.",
+   "The browser, on roughly seven in ten screens, sees where you go.",
+   "The phone, on seven in ten handsets on Earth, knows where you are.",
+   "The map keeps the history.",
+   "You downloaded all of it, signed in, and said thank you.",
+   "Where Google doesn't own the window, it rents it.",
+   "It pays Apple around twenty billion dollars a year to stay the default on a phone it never made.",
+   "In twenty twenty-four, after years of this, a court reached for the plainest word it had, and used it.",
+   "Monopoly.",
+   "Illegal.",
+   "A company that had already won, spending its days defending the win."
+  ]
+ },
+ "a7": {
+  "total": 39.9,
+  "bounds": [
+   5.7,
+   8.8,
+   14.5,
+   18.0,
+   25.7,
+   37.1
+  ],
+  "sents": [
+   "So why does a study from twenty eighteen matter more now than it did then?",
+   "Because the machine just grew a new mouth.",
+   "The largest record of human behaviour ever gathered is exactly what you need to build an artificial intelligence.",
+   "And exactly what you need to make it answer you.",
+   "The company that learned to predict your death is now the one you turn to when you have a question.",
+   "When a machine built to predict your next click can predict your last breath, and then becomes the thing you ask about everything in between, it has stopped watching the window from outside.",
+   "It has quietly become the glass you look through."
+  ]
+ },
+ "a8": {
+  "total": 51.0,
+  "bounds": [
+   1.9,
+   7.6,
+   13.3,
+   17.0,
+   25.7,
+   27.8,
+   32.8,
+   35.4,
+   40.1,
+   41.5,
+   42.8,
+   44.7,
+   49.3
+  ],
+  "sents": [
+   "So here's the company, without the friendly colours.",
+   "It gave you tools worth paying for and charged you nothing, because the fee was never money.",
+   "It listens from windows you installed and thanked it for.",
+   "It sells the future version of you to people you'll never meet.",
+   "And it's grown so good at forecasting human beings that it can tell a hospital you have a day left to live before the doctor at your bedside knows.",
+   "None of this needed a villain.",
+   "It needed an incentive, pointed patiently in one direction for twenty years.",
+   "You didn't lose your privacy in a breach.",
+   "You handed it over, one free click at a time, for a better map.",
+   "The map was real.",
+   "The price was real.",
+   "You just never saw the meter.",
+   "The most valuable thing this company ever learned was never what you'd buy.",
+   "It was what you'd do next."
+  ]
+ }
+}

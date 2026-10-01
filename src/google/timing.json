@@ -27,6 +27,80 @@
       "estStart": 102.6,
       "estSec": 58.6,
       "sec": 44.771
+    },
+    {
+      "id": "a3",
+      "label": "The machine needs a market",
+      "file": "audio/voice/a3.wav",
+      "estStart": 161.2,
+      "estSec": 48.651,
+      "sec": 48.651
+    },
+    {
+      "id": "a4",
+      "label": "The problem with a good prediction",
+      "file": "audio/voice/a4.wav",
+      "estStart": 209.851,
+      "estSec": 47.82,
+      "sec": 47.82
+    },
+    {
+      "id": "a5a",
+      "label": "The proof, in the open",
+      "file": "audio/voice/a5a.wav",
+      "estStart": 257.671,
+      "estSec": 58.82,
+      "sec": 58.82
+    },
+    {
+      "id": "a5b",
+      "label": "The internal film",
+      "file": "audio/voice/a5b.wav",
+      "estStart": 316.491,
+      "estSec": 49.591,
+      "sec": 49.591
+    },
+    {
+      "id": "a6",
+      "label": "The apparatus (and the court)",
+      "file": "audio/voice/a6.wav",
+      "estStart": 366.082,
+      "estSec": 44.08,
+      "sec": 44.08
+    },
+    {
+      "id": "a7",
+      "label": "It becomes the glass",
+      "file": "audio/voice/a7.wav",
+      "estStart": 410.162,
+      "estSec": 39.94,
+      "sec": 39.94
+    },
+    {
+      "id": "a8",
+      "label": "The meter you never saw",
+      "file": "audio/voice/a8.wav",
+      "estStart": 450.102,
+      "estSec": 51.02,
+      "sec": 51.02
+    },
+    {
+      "id": "last",
+      "label": "Including the last thing",
+      "file": "audio/voice/last.wav",
+      "estStart": 501.122,
+      "estSec": 1.6,
+      "sec": 1.6,
+      "gapBefore": 1.5
+    },
+    {
+      "id": "sign",
+      "label": "Distinguish",
+      "file": "audio/voice/sign.wav",
+      "estStart": 502.722,
+      "estSec": 1.62,
+      "sec": 1.62,
+      "gapBefore": 0.7
     }
   ]
 }

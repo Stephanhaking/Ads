@@ -6,7 +6,7 @@ import timing from './timing.json';
 // Cada parágrafo tem um início/duração estimados (na timeline das cenas) e uma duração medida.
 // Os timecodes das cenas são re-mapeados proporcionalmente dentro de cada parágrafo.
 
-export type Paragraph = {id: string; label: string; file: string | null; estStart: number; estSec: number; sec: number};
+export type Paragraph = {id: string; label: string; file: string | null; estStart: number; estSec: number; sec: number; gapBefore?: number};
 
 export const PARAGRAPHS = timing.paragraphs as Paragraph[];
 export const GAP_SEC = timing.gapSec;
@@ -17,7 +17,10 @@ export const MASTER_FILE = (timing as {master?: string | null}).master ?? null;
 
 // Início medido (em segundos) de cada parágrafo: soma das durações anteriores + pausas.
 export const paragraphStart = (index: number) =>
-  PARAGRAPHS.slice(0, index).reduce((acc, p) => acc + p.sec + GAP_SEC, 0);
+  PARAGRAPHS.slice(0, index).reduce((acc, p, j) => acc + p.sec + (PARAGRAPHS[j + 1].gapBefore ?? GAP_SEC), 0);
+
+// Duração total da locução (fim do último parágrafo).
+export const VOICE_END = PARAGRAPHS.length ? paragraphStart(PARAGRAPHS.length - 1) + PARAGRAPHS[PARAGRAPHS.length - 1].sec : 0;
 
 // Converte um tempo da timeline estimada para o tempo real da locução.
 export const mapTime = (t: number) => {
@@ -32,4 +35,11 @@ export const mapTime = (t: number) => {
 export const scaleFor = (id: string) => {
   const p = PARAGRAPHS.find((x) => x.id === id);
   return p ? p.sec / p.estSec : 1;
+};
+
+// Tempo (em segundos da timeline estimada) de um instante local de um parágrafo — para posicionar cenas.
+export const est = (id: string, sec: number) => {
+  const p = PARAGRAPHS.find((x) => x.id === id);
+  if (!p) throw new Error(`parágrafo desconhecido: ${id}`);
+  return p.estStart + sec;
 };

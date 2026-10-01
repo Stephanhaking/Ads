@@ -23,7 +23,7 @@ const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
 // `fps` aqui é o fps "de tempo": segundos × fps = frame. Multiplicado pelo fator do parágrafo,
 // para que as tags (escritas em segundos estimados) sigam a duração real da locução.
-const useT = (paragraph: string) => {
+export const useT = (paragraph: string) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   return {frame, fps: fps * scaleFor(paragraph)};
@@ -43,7 +43,7 @@ const Hud: React.FC = () => {
 };
 
 // `grain` (0–1) escala o grão de película: as cenas com interfaces realistas (pesquisa, mapa) pedem-no mais fraco.
-const Shell: React.FC<{theme: ThemeName; grain?: number; children: React.ReactNode}> = ({theme, grain = 1, children}) => (
+export const Shell: React.FC<{theme: ThemeName; grain?: number; children: React.ReactNode}> = ({theme, grain = 1, children}) => (
   <ThemeProvider name={theme}>
     {children}
     <Hud />

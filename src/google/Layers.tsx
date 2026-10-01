@@ -54,7 +54,7 @@ export const Foreground: React.FC<{children: React.ReactNode}> = ({children}) =>
 
 export const LayeredScene: React.FC<{
   back?: React.ReactNode; // blocos de cor / formas atrás do recorte
-  mid: React.ReactNode;
+  mid?: React.ReactNode;
   fore?: React.ReactNode;
 }> = ({back, mid, fore}) => {
   const frame = useCurrentFrame();
@@ -62,7 +62,7 @@ export const LayeredScene: React.FC<{
     <AbsoluteFill>
       <Background />
       {back ? <AbsoluteFill style={{transform: `translateX(${frame * 0.05}px)`}}>{back}</AbsoluteFill> : null}
-      <Midground>{mid}</Midground>
+      {mid ? <Midground>{mid}</Midground> : null}
       {/* parallax: o foreground desliza mais depressa que o midground */}
       {fore ? <Foreground><AbsoluteFill style={{transform: `translateX(${-frame * 0.12}px)`}}>{fore}</AbsoluteFill></Foreground> : null}
     </AbsoluteFill>
