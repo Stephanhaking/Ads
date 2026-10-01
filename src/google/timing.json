@@ -10,7 +10,7 @@
       "file": "audio/voice/cold.wav",
       "estStart": 0,
       "estSec": 60,
-      "sec": 55.52
+      "sec": 46.18
     },
     {
       "id": "act1",
@@ -18,7 +18,7 @@
       "file": "audio/voice/act1.wav",
       "estStart": 60,
       "estSec": 42.6,
-      "sec": 36.12
+      "sec": 31.78
     },
     {
       "id": "act2",
@@ -26,7 +26,7 @@
       "file": "audio/voice/act2.wav",
       "estStart": 102.6,
       "estSec": 58.6,
-      "sec": 49.12
+      "sec": 44.771
     }
   ]
 }
