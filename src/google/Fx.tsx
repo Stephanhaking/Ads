@@ -7,12 +7,12 @@ import {SfxAt} from './Sfx';
 import {useTheme} from './theme';
 
 // Grão de película por cima de tudo (muda a cada 2 frames).
-export const Grain: React.FC = () => {
+export const Grain: React.FC<{strength?: number}> = ({strength = 1}) => {
   const frame = useCurrentFrame();
   const seed = Math.floor(frame / 2) % 50;
   const th = useTheme();
   return (
-    <AbsoluteFill style={{pointerEvents: 'none', mixBlendMode: th.grainBlend, opacity: th.grain}}>
+    <AbsoluteFill style={{pointerEvents: 'none', mixBlendMode: th.grainBlend, opacity: th.grain * strength}}>
       <svg width="100%" height="100%">
         <filter id="grain">
           <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves={2} seed={seed} />

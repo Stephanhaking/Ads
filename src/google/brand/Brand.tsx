@@ -127,43 +127,6 @@ export const DotField: React.FC<{x: number; y: number; w: number; h: number; pro
   );
 };
 
-// ── Mapa estilo Google Maps: ruas, rota azul, pin vermelho ──
-export const MapsRoute: React.FC<{x: number; y: number; w?: number; h?: number; drawAt?: number}> = ({x, y, w = 980, h = 640, drawAt = 0}) => {
-  const frame = useCurrentFrame();
-  const draw = interpolate(frame - drawAt, [0, 70], [0, 1], {...clampOpts, easing: Easing.inOut(Easing.cubic)});
-  const pinT = interpolate(frame - drawAt - 60, [0, 14], [0, 1], {...clampOpts, easing: Easing.out(Easing.back(2))});
-  const enter = interpolate(frame - drawAt + 12, [0, 14], [0, 1], {...clampOpts, easing: easeOut});
-  const route = 'M110 520 C 200 470, 240 380, 330 360 S 470 420, 520 300 S 640 170, 760 210 S 860 150, 880 110';
-  const streets = [
-    'M0 150 H980', 'M0 330 H980', 'M0 500 H980', 'M180 0 V640', 'M420 0 V640', 'M690 0 V640', 'M0 60 L980 260', 'M300 640 L640 0',
-  ];
-  return (
-    <div style={{position: 'absolute', left: x, top: y, width: w, height: h, borderRadius: 28, overflow: 'hidden', background: '#E8EAED', boxShadow: '0 20px 50px rgba(0,0,0,0.30)', opacity: enter, transform: `rotate(-2.5deg) scale(${0.96 + 0.04 * enter})`}}>
-      <svg width={w} height={h} viewBox="0 0 980 640" preserveAspectRatio="xMidYMid slice">
-        <rect x="560" y="360" width="330" height="200" rx="18" fill="#CEEAD6" />
-        <rect x="40" y="70" width="120" height="240" rx="14" fill="#AECBFA" />
-        <rect x="450" y="40" width="180" height="90" rx="12" fill="#F1F3F4" />
-        <rect x="200" y="360" width="190" height="120" rx="12" fill="#F1F3F4" />
-        {streets.map((d, i) => (
-          <g key={i}>
-            <path d={d} stroke="#DADCE0" strokeWidth={22} fill="none" />
-            <path d={d} stroke="#fff" strokeWidth={16} fill="none" />
-          </g>
-        ))}
-        <path d={route} stroke="#fff" strokeWidth={22} fill="none" strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - draw} />
-        <path d={route} stroke={GOOGLE.blue} strokeWidth={13} fill="none" strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - draw} />
-        <circle cx="110" cy="520" r="20" fill="#fff" />
-        <circle cx="110" cy="520" r="12" fill={GOOGLE.blue} />
-        {/* pin vermelho */}
-        <g transform={`translate(880 110) scale(${pinT}) translate(-880 -110)`}>
-          <path d="M880 60 C 852 60, 836 82, 836 104 C 836 132, 880 178, 880 178 C 880 178, 924 132, 924 104 C 924 82, 908 60, 880 60 Z" fill={GOOGLE.red} />
-          <circle cx="880" cy="104" r="15" fill="#fff" />
-        </g>
-      </svg>
-    </div>
-  );
-};
-
 // ── Registo clínico a rolar (tabela de leituras) ──
 export const RecordTable: React.FC<{x: number; y: number; w?: number; h?: number; speed?: number; hotRow?: number}> = ({x, y, w = 900, h = 760, speed = 1.7, hotRow = 9}) => {
   const frame = useCurrentFrame();

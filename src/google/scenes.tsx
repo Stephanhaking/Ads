@@ -9,7 +9,8 @@ import {Connector, Flash, Grain, KineticText, RedDisc, useShake} from './Fx';
 import {ClimaxChart} from './ClimaxChart';
 import {scaleFor} from './timing';
 import {ThemeName, ThemeProvider, useTheme} from './theme';
-import {ConsentForm, DotField, FourDots, MapsRoute, RecordTable, RedactionDoc, SearchBar, Wordmark} from './brand/Brand';
+import {ConsentForm, DotField, FourDots, RecordTable, RedactionDoc, SearchBar, Wordmark} from './brand/Brand';
+import {MapsApp} from './brand/Maps';
 import {SfxAt} from './Sfx';
 import {Tag} from './Vox';
 
@@ -39,11 +40,12 @@ const Hud: React.FC = () => {
   );
 };
 
-const Shell: React.FC<{theme: ThemeName; children: React.ReactNode}> = ({theme, children}) => (
+// `grain` (0–1) escala o grão de película: as cenas com interfaces realistas (pesquisa, mapa) pedem-no mais fraco.
+const Shell: React.FC<{theme: ThemeName; grain?: number; children: React.ReactNode}> = ({theme, grain = 1, children}) => (
   <ThemeProvider name={theme}>
     {children}
     <Hud />
-    <Grain />
+    <Grain strength={grain} />
   </ThemeProvider>
 );
 
@@ -164,7 +166,7 @@ export const ScenePaper: React.FC = () => {
 export const SceneQuestion: React.FC = () => {
   const {fps} = useT('cold');
   return (
-    <Shell theme="red">
+    <Shell theme="red" grain={0.3}>
       <LayeredScene
         mid={
           <>
@@ -345,15 +347,15 @@ export const SceneAnon: React.FC = () => {
 export const SceneFile: React.FC = () => {
   const {fps} = useT('act2');
   return (
-    <Shell theme="paper">
+    <Shell theme="paper" grain={0.3}>
       <LayeredScene
-        back={<RedDisc x={1340} y={560} r={330} appearAt={2} shape="ring" />}
-        mid={<MapsRoute x={960} y={200} w={880} h={600} drawAt={2.4 * fps} />}
+        back={<RedDisc x={1500} y={880} r={300} appearAt={2} shape="ring" />}
+        mid={<MapsApp x={680} y={150} w={1200} h={800} startAt={2.2 * fps} />}
         fore={
           <>
             <Tag text="Already knows where you were" appearAt={0.8 * fps} x={110} y={90} size={38} />
-            <KineticText lines={[['A', 'dated,'], ['annotated'], ['file']]} x={110} y={230} size={92} startAt={2.2 * fps} stagger={9} hot={[]} />
-            <Tag text="Not anonymous for long" appearAt={7.5 * fps} x={110} y={780} fill size={38} />
+            <KineticText lines={[['A', 'dated,'], ['annotated'], ['file']]} x={110} y={230} size={74} startAt={2.2 * fps} stagger={9} hot={[]} />
+            <Tag text="Not anonymous for long" appearAt={7.5 * fps} x={110} y={780} fill size={32} />
           </>
         }
       />
