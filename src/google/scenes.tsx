@@ -282,8 +282,8 @@ export const SceneReadAll: React.FC = () => {
       <LayeredScene
         mid={
           <>
-            <EhrWindow x={90} y={150} w={1000} h={800} tabAt={[0, 1.7 * fps, 3.4 * fps]} hlAt={4.3 * fps} />
-            <HandCircle cx={655} cy={422} rx={205} ry={40} at={5.1 * fps} />
+            <EhrWindow x={80} y={140} w={1020} h={820} tabAt={[0, 1.7 * fps, 3.4 * fps]} hlAt={4.3 * fps} />
+            <HandCircle cx={258} cy={510} rx={182} ry={30} at={5.1 * fps} />
           </>
         }
         fore={
@@ -355,7 +355,7 @@ export const SceneAnon: React.FC = () => {
         mid={
           <>
             <PdfViewer x={90} y={130} w={900} h={840} redactAt={7 * fps} hlAt={10 * fps} />
-            <HandCircle cx={520} cy={712} rx={410} ry={118} at={11.4 * fps} />
+            <HandCircle cx={455} cy={502} rx={345} ry={38} at={11.4 * fps} />
           </>
         }
         fore={
@@ -363,7 +363,7 @@ export const SceneAnon: React.FC = () => {
             <Tag text="A hospital handed over the records" appearAt={1 * fps} x={1030} y={230} size={32} />
             <Tag text="Every patient · 2009–2016" appearAt={4 * fps} x={1030} y={350} fill size={38} />
             <SfxAt name="stamp" at={6 * fps} />
-            <div style={{position: 'absolute', left: 130, top: 330, transform: `rotate(-9deg) scale(${0.5 + 0.5 * stamp})`, opacity: Math.min(1, stamp * 2), border: `10px solid ${th.hotBg}`, color: th.hotBg, padding: '8px 28px', fontFamily: fonts.heading, fontWeight: 400, fontSize: 78, letterSpacing: 6, background: 'rgba(255,255,255,0.88)'}}>
+            <div style={{position: 'absolute', left: 120, top: 700, transform: `rotate(-9deg) scale(${0.5 + 0.5 * stamp})`, opacity: Math.min(1, stamp * 2), border: `10px solid ${th.hotBg}`, color: th.hotBg, padding: '8px 28px', fontFamily: fonts.heading, fontWeight: 400, fontSize: 78, letterSpacing: 6, background: 'rgba(255,255,255,0.88)'}}>
               DE-IDENTIFIED
             </div>
             <Tag text="The dates · still attached" appearAt={10 * fps} x={1030} y={600} size={34} />
