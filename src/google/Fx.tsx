@@ -40,7 +40,8 @@ export const RedDisc: React.FC<{x: number; y: number; r: number; appearAt?: numb
   return <div style={{...common, borderRadius: '50%', background: th.disc, transform: `scale(${p})`}} />;
 };
 
-// Tipografia cinética: cada palavra "bate" no ecrã (escala grande → 1, com pequeno abanão).
+// Tipografia cinética editorial: cada palavra sobe de uma máscara de linha (ease-out), uma a uma.
+// A palavra de destaque ("hot") ganha uma caixa de cor que abre em largura antes do texto subir.
 export const KineticText: React.FC<{
   lines: string[][];
   x: number;
@@ -48,39 +49,39 @@ export const KineticText: React.FC<{
   size?: number;
   startAt?: number;
   stagger?: number;
-  hot?: string[]; // palavras a destacar em caixa vermelha
+  hot?: string[];
 }> = ({lines, x, y, size = 130, startAt = 0, stagger = 6, hot = []}) => {
   const frame = useCurrentFrame();
-  const {fps} = useVideoConfig();
   const th = useTheme();
+  const ease = Easing.out(Easing.exp);
+  const clampOpts = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
   let n = 0;
   return (
-    <div style={{position: 'absolute', left: x, top: y, fontFamily: fonts.heading, fontWeight: 400, fontSize: size, lineHeight: 1.02, textTransform: 'uppercase'}}>
+    <div style={{position: 'absolute', left: x, top: y, fontFamily: fonts.heading, fontWeight: 400, fontSize: size, lineHeight: 1.0, textTransform: 'uppercase', letterSpacing: size * -0.005}}>
       {lines.map((line, li) => (
-        <div key={li} style={{display: 'flex', gap: size * 0.22}}>
+        <div key={li} style={{display: 'flex', gap: size * 0.22, overflow: 'hidden', paddingBottom: size * 0.14, marginBottom: -size * 0.08, paddingRight: size * 0.12}}>
           {line.map((w) => {
             const at = startAt + n++ * stagger;
-            const p = spring({frame: frame - at, fps, config: {damping: 11, stiffness: 220}});
-            const f = frame - at;
-            const shake = f > 0 && f < 14 ? Math.sin(f * 2.6) * (14 - f) * 0.6 : 0;
+            const rise = interpolate(frame - at, [0, 14], [0, 1], {...clampOpts, easing: ease});
             const isHot = hot.includes(w);
+            const box = interpolate(frame - at, [-4, 8], [0, 1], {...clampOpts, easing: ease});
             return (
               <React.Fragment key={w + li}>
-              <SfxAt name="tick" at={at} />
-              <span
-                style={{
-                  display: 'inline-block',
-                  opacity: Math.min(1, p * 3),
-                  transform: `translate(${shake}px, ${(1 - p) * 40}px) scale(${1 + (1 - p) * 0.7})`,
-                  transformOrigin: 'left bottom',
-                  color: isHot ? th.hotText : th.text,
-                  background: isHot ? th.hotBg : 'transparent',
-                  padding: isHot ? '0 18px' : 0,
-                  textShadow: isHot ? 'none' : `7px 7px 0 ${th.textShadow}`,
-                }}
-              >
-                {w}
-              </span>
+                <SfxAt name="tick" at={at} />
+                <span style={{position: 'relative', display: 'inline-block', padding: isHot ? `0 ${size * 0.14}px` : 0}}>
+                  {isHot ? <span style={{position: 'absolute', inset: 0, background: th.hotBg, transform: `scaleX(${box})`, transformOrigin: 'left'}} /> : null}
+                  <span
+                    style={{
+                      position: 'relative',
+                      display: 'inline-block',
+                      transform: `translateY(${(1 - rise) * 105}%)`,
+                      color: isHot ? th.hotText : th.text,
+                      textShadow: isHot ? 'none' : `${size * 0.05}px ${size * 0.05}px 0 ${th.textShadow}`,
+                    }}
+                  >
+                    {w}
+                  </span>
+                </span>
               </React.Fragment>
             );
           })}
