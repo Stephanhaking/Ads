@@ -1,9 +1,13 @@
 import {Audio, AbsoluteFill, interpolate, Sequence, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {
+  SceneAnon,
   SceneBuilding,
   SceneClimax,
+  SceneData,
   SceneEngine,
+  SceneFile,
   SceneHospital,
+  SceneNever,
   SceneNotes,
   ScenePaper,
   SceneQuestion,
@@ -32,6 +36,10 @@ export const GG_BEATS = [
   {id: 'engine', from: 69.8, to: 102.6, Component: SceneEngine},
   {id: 'readAll', from: 102.6, to: 111, Component: SceneReadAll},
   {id: 'notes', from: 111, to: 121.2, Component: SceneNotes},
+  {id: 'data', from: 121.2, to: 130.4, Component: SceneData},
+  {id: 'anon', from: 130.4, to: 144.8, Component: SceneAnon},
+  {id: 'file', from: 144.8, to: 156.1, Component: SceneFile},
+  {id: 'never', from: 156.1, to: 161.2, Component: SceneNever},
 ] as const;
 
 export const GG_TOTAL = s(GG_BEATS[GG_BEATS.length - 1].to); // fim da última cena, já re-mapeado para a locução

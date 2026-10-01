@@ -17,7 +17,9 @@ Depois: npm run measure
 import argparse
 import base64
 import json
+import math
 import os
+import struct
 import sys
 import time
 import urllib.error
@@ -63,6 +65,21 @@ def synth(text, style, voice, key):
     return base64.b64decode(part['data'])  # PCM 16-bit mono 24 kHz
 
 
+def edge_trim(pcm, rate=24000, pad=0.12, thr=200, wms=20):
+    """Apara só o silêncio das BORDAS (mantém as pausas internas, que dão vida à voz)."""
+    n = int(rate * wms / 1000)
+    bw = n * 2
+    loud = []
+    for k in range(0, len(pcm) - bw + 1, bw):
+        sm = struct.unpack(f'<{n}h', pcm[k:k + bw])
+        if math.sqrt(sum(x * x for x in sm) / n) > thr:
+            loud.append(k // bw)
+    if not loud:
+        return pcm
+    keep = int(round(pad / (wms / 1000)))
+    return pcm[max(0, loud[0] - keep) * bw: min(len(pcm), (loud[-1] + 1 + keep) * bw)]
+
+
 def write_wav(path, pcm, rate=24000):
     with wave.open(path, 'wb') as w:
         w.setnchannels(1)
@@ -100,6 +117,7 @@ def main():
             idx = (i + attempt) % len(keys)
             try:
                 pcm = synth(text, cfg['style'], cfg['voice'], keys[idx])
+                pcm = edge_trim(pcm)
                 write_wav(path, pcm)
                 print(f'{name}: ok com a chave #{idx + 1} ({len(pcm) / 48000:.1f}s)')
                 done = True

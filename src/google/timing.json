@@ -1,11 +1,32 @@
 {
-  "measured": false,
+  "measured": true,
   "gapSec": 0.45,
   "music": null,
   "master": null,
   "paragraphs": [
-    {"id": "cold", "label": "The machine that knows first", "file": null, "estStart": 0, "estSec": 60, "sec": 60},
-    {"id": "act1", "label": "The question", "file": null, "estStart": 60, "estSec": 42.6, "sec": 42.6},
-    {"id": "act2", "label": "What it took to see", "file": null, "estStart": 102.6, "estSec": 58.6, "sec": 58.6}
+    {
+      "id": "cold",
+      "label": "The machine that knows first",
+      "file": "audio/voice/cold.wav",
+      "estStart": 0,
+      "estSec": 60,
+      "sec": 55.52
+    },
+    {
+      "id": "act1",
+      "label": "The question",
+      "file": "audio/voice/act1.wav",
+      "estStart": 60,
+      "estSec": 42.6,
+      "sec": 36.12
+    },
+    {
+      "id": "act2",
+      "label": "What it took to see",
+      "file": "audio/voice/act2.wav",
+      "estStart": 102.6,
+      "estSec": 58.6,
+      "sec": 49.12
+    }
   ]
 }

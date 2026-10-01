@@ -26,3 +26,10 @@ export const mapTime = (t: number) => {
   const p = PARAGRAPHS[i];
   return paragraphStart(i) + (t - p.estStart) * (p.sec / p.estSec);
 };
+
+// Fator de escala de um parágrafo (duração medida / estimada). Usado para esticar/encolher
+// o timing das tags DENTRO de cada cena à locução real.
+export const scaleFor = (id: string) => {
+  const p = PARAGRAPHS.find((x) => x.id === id);
+  return p ? p.sec / p.estSec : 1;
+};
