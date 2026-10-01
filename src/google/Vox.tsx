@@ -1,5 +1,6 @@
 import React from 'react';
-import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {interpolate, spring} from 'remotion';
+import {useCurrentFrame, useVideoConfig} from '../timeline';
 import {colors, fonts} from '../styles';
 import {BAR, motionFrame, POP, EASE_OUT} from './motion';
 import {useTheme} from './theme';

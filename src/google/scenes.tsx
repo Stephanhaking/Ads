@@ -1,11 +1,12 @@
 import React from 'react';
-import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {interpolate, spring} from 'remotion';
+import {useCurrentFrame, useVideoConfig} from '../timeline';
 import {fonts} from '../styles';
 import {HalftoneImage} from './HalftoneImage';
 import {LayeredScene} from './Layers';
 import {EASE_OUT} from './motion';
-import {Connector, Flash, Grain, KineticText, RedDisc, useShake} from './proto/Fx';
-import {P2} from './proto/ProtoScenes';
+import {Connector, Flash, Grain, KineticText, RedDisc, useShake} from './Fx';
+import {ClimaxChart} from './ClimaxChart';
 import {scaleFor} from './timing';
 import {ThemeName, ThemeProvider, useTheme} from './theme';
 import {Tag} from './Vox';
@@ -121,7 +122,7 @@ export const SceneRecords: React.FC = () => {
 // 4 (0:35–0:46) — PICO (vermelho): 95% contra o score clínico.
 export const SceneClimax: React.FC = () => (
   <Shell theme="red">
-    <P2 />
+    <ClimaxChart />
   </Shell>
 );
 

@@ -17,12 +17,12 @@ import {
 } from './google/scenes';
 import {colors} from './styles';
 import {MASTER_FILE, MUSIC_FILE, PARAGRAPHS, mapTime, paragraphStart} from './google/timing';
-import {RedWipe} from './google/proto/Fx';
+import {RedWipe} from './google/Fx';
 
 // Timecodes em segundos na timeline estimada; `s()` converte-os para o tempo real da locução
 // (src/google/timing.json, atualizado por `npm run measure`).
 // Cada cena começa onde a anterior acaba.
-export const FPS = 30;
+export const FPS = 60; // fps real do render (as animações correm numa escala de 30 fps — ver src/timeline.ts)
 export const s = (sec: number) => Math.round(mapTime(sec) * FPS);
 
 export const GG_BEATS = [
@@ -81,7 +81,7 @@ export const GoogleVideo: React.FC = () => (
     ))}
     {/* wipe vermelho a cobrir cada corte (dura 18 frames; o corte acontece a meio) */}
     {GG_BEATS.slice(1).map(({id, from}) => (
-      <Sequence key={`wipe-${id}`} name={`wipe-${id}`} from={s(from) - 9} durationInFrames={18}>
+      <Sequence key={`wipe-${id}`} name={`wipe-${id}`} from={s(from) - FPS * 0.3} durationInFrames={FPS * 0.6}>
         <RedWipe />
       </Sequence>
     ))}

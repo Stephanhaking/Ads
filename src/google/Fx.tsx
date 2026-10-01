@@ -1,8 +1,9 @@
 import React from 'react';
-import {AbsoluteFill, Easing, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {colors, fonts} from '../../styles';
-import {POP} from '../motion';
-import {useTheme} from '../theme';
+import {AbsoluteFill, Easing, interpolate, spring} from 'remotion';
+import {useCurrentFrame, useVideoConfig} from '../timeline';
+import {colors, fonts} from '../styles';
+import {POP} from './motion';
+import {useTheme} from './theme';
 
 // Grão de película por cima de tudo (muda a cada 2 frames).
 export const Grain: React.FC = () => {

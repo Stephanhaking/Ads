@@ -1,5 +1,6 @@
 import React from 'react';
-import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, interpolate} from 'remotion';
+import {useCurrentFrame} from '../timeline';
 import {useTheme} from './theme';
 import {PUSH_IN_FRAMES, PUSH_IN_MAX} from './motion';
 
