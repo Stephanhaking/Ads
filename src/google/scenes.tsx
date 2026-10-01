@@ -27,9 +27,21 @@ const useT = (paragraph: string) => {
 const reveal = (frame: number, at = 4, len = 34) => interpolate(frame, [at, at + len], [0, 1], {...clamp, easing: EASE_OUT});
 
 // Cada cena escolhe o seu tema e leva o grão por cima.
+const Hud: React.FC = () => {
+  const th = useTheme();
+  const style: React.CSSProperties = {position: 'absolute', bottom: 28, fontFamily: fonts.mono, fontSize: 17, letterSpacing: 5, color: th.mono, opacity: 0.75};
+  return (
+    <>
+      <div style={{...style, right: 56}}>DISTINGUISH · GOOGLE</div>
+      <div style={{position: 'absolute', right: 56, bottom: 58, width: 70, height: 4, background: th.disc}} />
+    </>
+  );
+};
+
 const Shell: React.FC<{theme: ThemeName; children: React.ReactNode}> = ({theme, children}) => (
   <ThemeProvider name={theme}>
     {children}
+    <Hud />
     <Grain />
   </ThemeProvider>
 );
@@ -134,7 +146,7 @@ export const ScenePaper: React.FC = () => {
   return (
     <Shell theme="paper">
       <LayeredScene
-        back={<RedDisc x={1290} y={620} r={340} appearAt={2} />}
+        back={<RedDisc x={1290} y={620} r={340} appearAt={2} shape="block" />}
         mid={<HalftoneImage name="paper" x={760} y={320} width={1100} reveal={reveal(frame)} />}
         fore={
           <>
@@ -238,7 +250,7 @@ export const SceneReadAll: React.FC = () => {
   return (
     <Shell theme="paper">
       <LayeredScene
-        back={<RedDisc x={540} y={600} r={330} appearAt={2} />}
+        back={<RedDisc x={540} y={600} r={330} appearAt={2} shape="ring" />}
         mid={<HalftoneImage name="records" x={90} y={280} width={900} reveal={reveal(frame)} />}
         fore={
           <>
@@ -258,7 +270,7 @@ export const SceneNotes: React.FC = () => {
   return (
     <Shell theme="paper">
       <LayeredScene
-        back={<RedDisc x={1300} y={600} r={330} appearAt={2} />}
+        back={<RedDisc x={1300} y={600} r={330} appearAt={2} shape="block" />}
         mid={<HalftoneImage name="notes" x={640} y={230} width={1200} reveal={reveal(frame)} />}
         fore={
           <>
@@ -282,7 +294,7 @@ export const SceneData: React.FC = () => {
   return (
     <Shell theme="paper">
       <LayeredScene
-        back={<RedDisc x={1380} y={600} r={340} appearAt={2} />}
+        back={<RedDisc x={1380} y={600} r={340} appearAt={2} shape="ring" />}
         mid={<HalftoneImage name="records" x={960} y={300} width={860} reveal={reveal(frame)} />}
         fore={
           <>
@@ -305,7 +317,7 @@ export const SceneAnon: React.FC = () => {
   return (
     <Shell theme="paper">
       <LayeredScene
-        back={<RedDisc x={560} y={560} r={330} appearAt={2} />}
+        back={<RedDisc x={560} y={560} r={330} appearAt={2} shape="block" />}
         mid={<HalftoneImage name="paper" x={70} y={250} width={900} reveal={reveal(frame)} />}
         fore={
           <>
@@ -316,7 +328,7 @@ export const SceneAnon: React.FC = () => {
             </div>
             <SfxAt name="stamp" at={6 * fps} />
             <Tag text="The dates · still attached" appearAt={10 * fps} x={1010} y={600} size={36} />
-            <Tag text="The doctors' notes · still attached" appearAt={12 * fps} x={1010} y={730} size={36} />
+            <Tag text="The doctors' notes · still attached" appearAt={12 * fps} x={1010} y={730} size={30} />
           </>
         }
       />
@@ -330,7 +342,7 @@ export const SceneFile: React.FC = () => {
   return (
     <Shell theme="paper">
       <LayeredScene
-        back={<RedDisc x={1300} y={600} r={330} appearAt={2} />}
+        back={<RedDisc x={1300} y={600} r={330} appearAt={2} shape="block" />}
         mid={<HalftoneImage name="notes" x={700} y={230} width={1150} reveal={reveal(frame)} />}
         fore={
           <>

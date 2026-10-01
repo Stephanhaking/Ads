@@ -17,10 +17,22 @@ export const Background: React.FC = () => {
         </pattern>
         <radialGradient id="vignette" cx="50%" cy="50%" r="75%">
           <stop offset="55%" stopColor="#000" stopOpacity={0} />
-          <stop offset="100%" stopColor="#000" stopOpacity={0.75} />
+          <stop offset="100%" stopColor="#000" stopOpacity={t.vignette} />
         </radialGradient>
       </defs>
       <rect width="100%" height="100%" fill="url(#grid)" opacity={0.6} />
+      {/* campo de pontos halftone a esvanecer a partir do canto inferior direito */}
+      <defs>
+        <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+          <circle cx="9" cy="9" r="2.6" fill={t.text} />
+        </pattern>
+        <radialGradient id="dotfade" cx="100%" cy="100%" r="55%">
+          <stop offset="0%" stopColor="#fff" stopOpacity={1} />
+          <stop offset="100%" stopColor="#fff" stopOpacity={0} />
+        </radialGradient>
+        <mask id="dotmask"><rect width="100%" height="100%" fill="url(#dotfade)" /></mask>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#dots)" mask="url(#dotmask)" opacity={0.16} />
       <rect width="100%" height="100%" fill="url(#vignette)" />
     </svg>
   </AbsoluteFill>

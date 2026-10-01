@@ -65,8 +65,13 @@ export const HalftoneImage: React.FC<Props> = ({name, x, y, width, reveal = 1, o
       }}
     >
       {/* sombra vermelha deslocada → contorno branco (sticker) → base preta → pontos */}
-      <div style={masked(colors.red, outlineOffset[0], outlineOffset[1], outline)} />
-      <div style={masked(colors.white, 0, 0, outline)} />
+      {/* as camadas deslocadas ficam recortadas aos limites da imagem: sem barras soltas nas bordas */}
+      <div style={{position: 'absolute', inset: 0, overflow: 'hidden'}}>
+        <div style={masked(colors.red, outlineOffset[0], outlineOffset[1], outline)} />
+      </div>
+      <div style={{position: 'absolute', inset: 0, overflow: 'hidden'}}>
+        <div style={masked(colors.white, 0, 0, outline)} />
+      </div>
       <div style={masked(colors.black)} />
       <Img src={mask} style={{position: 'absolute', width: 1, height: 1, opacity: 0}} />
       <Img src={outline} style={{position: 'absolute', width: 1, height: 1, opacity: 0}} />

@@ -24,13 +24,20 @@ export const Grain: React.FC = () => {
   );
 };
 
-// Círculo vermelho plano atrás do recorte (entra com spring).
-export const RedDisc: React.FC<{x: number; y: number; r: number; appearAt?: number}> = ({x, y, r, appearAt = 0}) => {
+// Forma de cor plana atrás do recorte (entra com spring). Variar a forma evita a repetição entre cenas.
+export const RedDisc: React.FC<{x: number; y: number; r: number; appearAt?: number; shape?: 'disc' | 'ring' | 'block'}> = ({x, y, r, appearAt = 0, shape = 'disc'}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const th = useTheme();
   const p = spring({frame: frame - appearAt, fps, config: {damping: 16, stiffness: 120}});
-  return <div style={{position: 'absolute', left: x - r, top: y - r, width: r * 2, height: r * 2, borderRadius: '50%', background: th.disc, transform: `scale(${p})`}} />;
+  const common: React.CSSProperties = {position: 'absolute', left: x - r, top: y - r, width: r * 2, height: r * 2};
+  if (shape === 'ring') {
+    return <div style={{...common, borderRadius: '50%', border: `${r * 0.16}px solid ${th.disc}`, transform: `scale(${p}) rotate(${(1 - p) * -40}deg)`}} />;
+  }
+  if (shape === 'block') {
+    return <div style={{...common, top: y - r * 0.8, height: r * 1.6, background: th.disc, transform: `scale(${p}) rotate(${-7 + (1 - p) * 20}deg)`}} />;
+  }
+  return <div style={{...common, borderRadius: '50%', background: th.disc, transform: `scale(${p})`}} />;
 };
 
 // Tipografia cinética: cada palavra "bate" no ecrã (escala grande → 1, com pequeno abanão).
@@ -100,11 +107,19 @@ export const Connector: React.FC<{from: [number, number]; to: [number, number]; 
   );
 };
 
-// Wipe vermelho diagonal que cobre o corte entre cenas (dura 18 frames; corte a meio).
+// Wipe em dois painéis (escuro à frente, vermelho atrás) a cobrir o corte (18 frames base; corte a meio).
 export const RedWipe: React.FC = () => {
   const frame = useCurrentFrame();
-  const x = interpolate(frame, [0, 9, 18], [-2300, -200, 2300], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.cubic)});
-  return <div style={{position: 'absolute', top: -100, left: x, width: 2400, height: 1300, background: colors.red, transform: 'skewX(-10deg)'}} />;
+  const ease = Easing.inOut(Easing.cubic);
+  const slab = (delay: number) =>
+    interpolate(frame - delay, [0, 9, 18], [-2300, -200, 2300], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: ease});
+  const panel = (left: number, bg: string): React.CSSProperties => ({position: 'absolute', top: -100, left, width: 2400, height: 1300, background: bg, transform: 'skewX(-10deg)'});
+  return (
+    <>
+      <div style={panel(slab(0), colors.red)} />
+      <div style={panel(slab(2.5), colors.black)} />
+    </>
+  );
 };
 
 // Flash branco curto (impacto).
