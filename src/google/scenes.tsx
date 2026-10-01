@@ -9,6 +9,7 @@ import {Connector, Flash, Grain, KineticText, RedDisc, useShake} from './Fx';
 import {ClimaxChart} from './ClimaxChart';
 import {scaleFor} from './timing';
 import {ThemeName, ThemeProvider, useTheme} from './theme';
+import {SfxAt} from './Sfx';
 import {Tag} from './Vox';
 
 // Cenas dos primeiros 2 minutos (ver docs/storyboard_google_0-2min.md) no estilo Vox v2:
@@ -67,7 +68,7 @@ export const SceneHospital: React.FC = () => {
             <div style={{position: 'absolute', right: 140, top: 80, fontFamily: fonts.mono, fontSize: 60, color: th.text, letterSpacing: 6}}>
               03{colon}12 <span style={{color: th.hotBg}}>AM</span>
             </div>
-            <Tag text="100 small readings" appearAt={8 * fps} x={110} y={700} />
+            <Tag text="100 small readings" appearAt={8 * fps} x={110} y={700} size={36} />
             <Tag text="Easy to miss" appearAt={11.5 * fps} x={110} y={840} fill />
           </>
         }
@@ -86,6 +87,7 @@ export const SceneYear: React.FC = () => {
         mid={<HalftoneImage name="hospital" x={700} y={290} width={1150} opacity={0.12} />}
         fore={
           <>
+            <SfxAt name="hit" at={3} />
             <KineticText lines={[['2018']]} x={330} y={260} size={380} startAt={3} hot={[]} />
             <Tag text="A machine learned to catch it first" appearAt={1.4 * fps} x={330} y={780} fill size={50} />
           </>
@@ -218,6 +220,7 @@ export const SceneEngine: React.FC = () => {
                 </React.Fragment>
               ))}
               <Years n={years} />
+              <SfxAt name="hit" at={slamAt} />
               <Connector from={[960, 700]} to={[1290, 830]} appearAt={slamAt - 4} width={8} />
               <Tag text="Last breath" appearAt={slamAt} x={1290} y={790} fill size={78} />
             </>
@@ -311,6 +314,7 @@ export const SceneAnon: React.FC = () => {
             <div style={{position: 'absolute', left: 150, top: 470, transform: `rotate(-9deg) scale(${0.5 + 0.5 * stamp})`, opacity: Math.min(1, stamp * 2), border: `10px solid ${th.hotBg}`, color: th.hotBg, padding: '8px 28px', fontFamily: fonts.heading, fontWeight: 400, fontSize: 84, letterSpacing: 6, background: 'rgba(233,226,210,0.85)'}}>
               DE-IDENTIFIED
             </div>
+            <SfxAt name="stamp" at={6 * fps} />
             <Tag text="The dates · still attached" appearAt={10 * fps} x={1010} y={600} size={36} />
             <Tag text="The doctors' notes · still attached" appearAt={12 * fps} x={1010} y={730} size={36} />
           </>
@@ -348,7 +352,12 @@ export const SceneNever: React.FC = () => {
       <LayeredScene
         back={<RedDisc x={1500} y={640} r={330} appearAt={2} />}
         mid={<HalftoneImage name="person" x={1230} y={230} width={540} reveal={reveal(frame, 4, 30)} />}
-        fore={<KineticText lines={[['The', 'patients'], ['were', 'never'], ['asked.']]} x={110} y={170} size={130} startAt={4} stagger={9} hot={['asked.']} />}
+        fore={
+          <>
+            <KineticText lines={[['The', 'patients'], ['were', 'never'], ['asked.']]} x={110} y={170} size={130} startAt={4} stagger={9} hot={['asked.']} />
+            <SfxAt name="hit" at={4 + 4 * 9} />
+          </>
+        }
       />
     </Shell>
   );

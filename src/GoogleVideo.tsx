@@ -18,6 +18,7 @@ import {
 import {colors} from './styles';
 import {MASTER_FILE, MUSIC_FILE, PARAGRAPHS, mapTime, paragraphStart} from './google/timing';
 import {RedWipe} from './google/Fx';
+import {SFX_ENABLED, SFX_VOLUME} from './google/motion';
 
 // Timecodes em segundos na timeline estimada; `s()` converte-os para o tempo real da locução
 // (src/google/timing.json, atualizado por `npm run measure`).
@@ -83,6 +84,7 @@ export const GoogleVideo: React.FC = () => (
     {GG_BEATS.slice(1).map(({id, from}) => (
       <Sequence key={`wipe-${id}`} name={`wipe-${id}`} from={s(from) - FPS * 0.3} durationInFrames={FPS * 0.6}>
         <RedWipe />
+        {SFX_ENABLED ? <Audio src={staticFile('audio/sfx/whoosh.wav')} volume={SFX_VOLUME.whoosh} /> : null}
       </Sequence>
     ))}
   </AbsoluteFill>

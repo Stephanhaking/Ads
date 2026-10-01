@@ -23,3 +23,7 @@ export const PUSH_IN_FRAMES = 600;
 
 // Frame "efetivo" de uma animação que começa em `appearAt`, com a velocidade aplicada.
 export const motionFrame = (frame: number, appearAt = 0) => (frame - appearAt) * SPEED_MULTIPLIER;
+
+// Efeitos sonoros (sintetizados por tools/gen_sfx.py). Desligar tudo: SFX_ENABLED = false.
+export const SFX_ENABLED = true;
+export const SFX_VOLUME = {whoosh: 0.35, pop: 0.22, tick: 0.18, hit: 0.55, stamp: 0.5} as const;

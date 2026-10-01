@@ -3,6 +3,7 @@ import {interpolate, spring} from 'remotion';
 import {useCurrentFrame, useVideoConfig} from '../timeline';
 import {colors, fonts} from '../styles';
 import {BAR, motionFrame, POP, EASE_OUT} from './motion';
+import {SfxAt} from './Sfx';
 import {useTheme} from './theme';
 
 // Elementos de foreground estilo Vox: caixas de texto flutuantes e barras de dados.
@@ -20,6 +21,8 @@ export const Tag: React.FC<{
   const th = useTheme();
   const p = spring({frame: motionFrame(frame, appearAt), fps, config: POP});
   return (
+    <>
+    <SfxAt name="pop" at={appearAt} />
     <div
       style={{
         position: 'absolute',
@@ -42,6 +45,7 @@ export const Tag: React.FC<{
     >
       {text}
     </div>
+    </>
   );
 };
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import {Img, staticFile} from 'remotion';
 import {colors} from '../styles';
+import {useCurrentFrame} from '../timeline';
 
 // Foto halftone (gerada por tools/make_halftone.py) com traço vermelho deslocado atrás.
 // Quatro camadas: sombra vermelha deslocada → contorno branco → base preta → pontos brancos.
@@ -29,7 +30,11 @@ type Props = {
 };
 
 export const HalftoneImage: React.FC<Props> = ({name, x, y, width, reveal = 1, opacity = 1, outlineOffset = [-18, 16]}) => {
+  const frame = useCurrentFrame();
   const [iw, ih] = SIZE[name];
+  // flutuação lenta (profundidade) — o recorte "respira" ao de leve
+  const floatY = Math.sin(frame / 55) * 6;
+  const tilt = Math.sin(frame / 90) * 0.35;
   const height = (ih / iw) * width;
   const dots = staticFile(`google/ht/${name}.png`);
   const mask = staticFile(`google/ht/${name}-mask.png`);
@@ -54,6 +59,8 @@ export const HalftoneImage: React.FC<Props> = ({name, x, y, width, reveal = 1, o
         width,
         height,
         opacity,
+        transform: `translateY(${floatY}px) rotate(${tilt}deg)`,
+        filter: 'drop-shadow(0px 20px 24px rgba(0,0,0,0.30))',
         clipPath: `inset(-40px -40px ${(1 - reveal) * 100}% -40px)`,
       }}
     >

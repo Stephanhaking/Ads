@@ -3,6 +3,7 @@ import {AbsoluteFill, Easing, interpolate, spring} from 'remotion';
 import {useCurrentFrame, useVideoConfig} from '../timeline';
 import {colors, fonts} from '../styles';
 import {POP} from './motion';
+import {SfxAt} from './Sfx';
 import {useTheme} from './theme';
 
 // Grão de película por cima de tudo (muda a cada 2 frames).
@@ -57,8 +58,9 @@ export const KineticText: React.FC<{
             const shake = f > 0 && f < 14 ? Math.sin(f * 2.6) * (14 - f) * 0.6 : 0;
             const isHot = hot.includes(w);
             return (
+              <React.Fragment key={w + li}>
+              <SfxAt name="tick" at={at} />
               <span
-                key={w + li}
                 style={{
                   display: 'inline-block',
                   opacity: Math.min(1, p * 3),
@@ -72,6 +74,7 @@ export const KineticText: React.FC<{
               >
                 {w}
               </span>
+              </React.Fragment>
             );
           })}
         </div>
