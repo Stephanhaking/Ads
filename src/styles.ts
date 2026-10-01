@@ -10,7 +10,7 @@ export const colors = {
 } as const;
 
 export const fonts = {
-  heading: '"Inter", "Helvetica Neue", Arial, sans-serif',
+  heading: '"Archivo Black", "Helvetica Neue", Arial, sans-serif',
   body: '"Inter", "Helvetica Neue", Arial, sans-serif',
   mono: '"JetBrains Mono", "SFMono-Regular", Consolas, monospace',
 } as const;

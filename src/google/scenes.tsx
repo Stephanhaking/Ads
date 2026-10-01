@@ -40,7 +40,7 @@ const Mono: React.FC<{x: number; y: number; size?: number; children: React.React
 const Big: React.FC<{x: number; y: number; size: number; children: React.ReactNode; opacity?: number}> = ({x, y, size, children, opacity = 1}) => {
   const th = useTheme();
   return (
-    <div style={{position: 'absolute', left: x, top: y, fontFamily: fonts.heading, fontWeight: 900, fontSize: size, lineHeight: 1, color: th.text, opacity, textShadow: `${size * 0.05}px ${size * 0.05}px 0 ${th.textShadow}`}}>
+    <div style={{position: 'absolute', left: x, top: y, fontFamily: fonts.heading, fontWeight: 400, fontSize: size, lineHeight: 1, color: th.text, opacity, textShadow: `${size * 0.05}px ${size * 0.05}px 0 ${th.textShadow}`}}>
       {children}
     </div>
   );
@@ -62,7 +62,7 @@ export const SceneHospital: React.FC = () => {
         }
         fore={
           <>
-            <KineticText lines={[['The', 'moment', 'a'], ['patient'], ['quietly', 'begins'], ['to', 'die']]} x={110} y={100} size={108} startAt={8} stagger={8} hot={['die']} />
+            <KineticText lines={[['The', 'moment', 'a'], ['patient'], ['quietly', 'begins'], ['to', 'die']]} x={110} y={100} size={88} startAt={8} stagger={8} hot={['die']} />
             <div style={{position: 'absolute', right: 140, top: 80, fontFamily: fonts.mono, fontSize: 60, color: th.text, letterSpacing: 6}}>
               03{colon}12 <span style={{color: th.hotBg}}>AM</span>
             </div>
@@ -85,7 +85,7 @@ export const SceneYear: React.FC = () => {
         mid={<HalftoneImage name="hospital" x={700} y={290} width={1150} opacity={0.12} />}
         fore={
           <>
-            <KineticText lines={[['2018']]} x={360} y={250} size={430} startAt={3} hot={[]} />
+            <KineticText lines={[['2018']]} x={330} y={260} size={380} startAt={3} hot={[]} />
             <Tag text="A machine learned to catch it first" appearAt={1.4 * fps} x={330} y={780} fill size={50} />
           </>
         }
@@ -106,7 +106,7 @@ export const SceneRecords: React.FC = () => {
         fore={
           <>
             <Tag text="Medical records" appearAt={0.8 * fps} x={130} y={90} />
-            <Big x={1150} y={230} size={150}>{count.toLocaleString('en-US')}</Big>
+            <Big x={1150} y={240} size={116}>{count.toLocaleString('en-US')}</Big>
             <Mono x={1150} y={400}>PATIENTS</Mono>
             <Tag text="Artificial intelligence" appearAt={7.5 * fps} x={1150} y={520} size={40} />
             <Tag text="Who, in this building," appearAt={10 * fps} x={1150} y={700} fill size={44} />
@@ -135,7 +135,7 @@ export const ScenePaper: React.FC = () => {
         mid={<HalftoneImage name="paper" x={760} y={320} width={1100} reveal={reveal(frame)} />}
         fore={
           <>
-            <KineticText lines={[['Published', 'in', 'a'], ['medical'], ['journal']]} x={110} y={110} size={112} startAt={6} stagger={8} hot={[]} />
+            <KineticText lines={[['Published', 'in', 'a'], ['medical'], ['journal']]} x={110} y={110} size={94} startAt={6} stagger={8} hot={[]} />
             <Tag text="Nature" appearAt={3.4 * fps} x={110} y={640} size={56} />
             <Tag text="May 2018" appearAt={4.6 * fps} x={110} y={790} fill size={56} />
           </>
@@ -153,7 +153,7 @@ export const SceneQuestion: React.FC = () => {
       <LayeredScene
         back={<RedDisc x={1450} y={640} r={320} appearAt={2} />}
         mid={<HalftoneImage name="screen" x={1000} y={330} width={900} reveal={reveal(frame, 4, 30)} />}
-        fore={<KineticText lines={[['An', 'advertising'], ['company'], ['knowing', 'when'], ['you', 'will', 'die?']]} x={110} y={90} size={122} startAt={4} stagger={9} hot={['die?']} />}
+        fore={<KineticText lines={[['An', 'advertising'], ['company'], ['knowing', 'when'], ['you', 'will', 'die?']]} x={110} y={90} size={98} startAt={4} stagger={9} hot={['die?']} />}
       />
     </Shell>
   );
@@ -169,7 +169,7 @@ export const SceneBuilding: React.FC = () => {
         mid={<HalftoneImage name="exterior" x={560} y={310} width={1250} reveal={reveal(frame)} opacity={fade} />}
         fore={
           <>
-            <KineticText lines={[['Looks', 'like', 'a'], ['healthcare', 'story']]} x={110} y={100} size={112} startAt={6} stagger={9} hot={[]} />
+            <KineticText lines={[['Looks', 'like', 'a'], ['healthcare', 'story']]} x={110} y={100} size={92} startAt={6} stagger={9} hot={[]} />
             <Tag text="Beside the point" appearAt={7 * fps} x={200} y={800} fill size={70} />
           </>
         }
@@ -181,7 +181,7 @@ export const SceneBuilding: React.FC = () => {
 const Years: React.FC<{n: number}> = ({n}) => {
   const th = useTheme();
   return (
-    <div style={{position: 'absolute', right: 140, top: 130, fontFamily: fonts.heading, fontWeight: 900, fontSize: 72, color: th.hotBg, opacity: n > 0 ? 1 : 0}}>
+    <div style={{position: 'absolute', right: 140, top: 130, fontFamily: fonts.heading, fontWeight: 400, fontSize: 72, color: th.hotBg, opacity: n > 0 ? 1 : 0}}>
       {n} <span style={{fontSize: 34, fontFamily: fonts.mono}}>YEARS</span>
     </div>
   );
@@ -239,7 +239,7 @@ export const SceneReadAll: React.FC = () => {
         fore={
           <>
             <Tag text="What it took to see" appearAt={0.4 * fps} x={110} y={90} size={38} />
-            <KineticText lines={[['By', 'reading'], ['all', 'of', 'it']]} x={1000} y={240} size={118} startAt={1.2 * fps} stagger={9} hot={['it']} />
+            <KineticText lines={[['By', 'reading'], ['all', 'of', 'it']]} x={1000} y={240} size={96} startAt={1.2 * fps} stagger={9} hot={['it']} />
             <Tag text="Forecasting a death" appearAt={5 * fps} x={1040} y={720} size={48} />
           </>
         }
@@ -283,7 +283,7 @@ export const SceneData: React.FC = () => {
         fore={
           <>
             <Big x={110} y={190} size={300}>{n}</Big>
-            <KineticText lines={[['Billion']]} x={110} y={510} size={150} startAt={0.9 * fps} hot={['Billion']} />
+            <KineticText lines={[['Billion']]} x={110} y={520} size={120} startAt={0.9 * fps} hot={['Billion']} />
             <Mono x={110} y={740}>DATA POINTS</Mono>
             <Tag text="The raw material arrived" appearAt={5 * fps} x={110} y={830} size={44} />
           </>
@@ -307,7 +307,7 @@ export const SceneAnon: React.FC = () => {
           <>
             <Tag text="A hospital handed over the records" appearAt={1 * fps} x={1010} y={230} size={34} />
             <Tag text="Every patient · 2009–2016" appearAt={4 * fps} x={1010} y={350} fill size={40} />
-            <div style={{position: 'absolute', left: 150, top: 470, transform: `rotate(-9deg) scale(${0.5 + 0.5 * stamp})`, opacity: Math.min(1, stamp * 2), border: `10px solid ${th.hotBg}`, color: th.hotBg, padding: '8px 28px', fontFamily: fonts.heading, fontWeight: 900, fontSize: 84, letterSpacing: 6, background: 'rgba(233,226,210,0.85)'}}>
+            <div style={{position: 'absolute', left: 150, top: 470, transform: `rotate(-9deg) scale(${0.5 + 0.5 * stamp})`, opacity: Math.min(1, stamp * 2), border: `10px solid ${th.hotBg}`, color: th.hotBg, padding: '8px 28px', fontFamily: fonts.heading, fontWeight: 400, fontSize: 84, letterSpacing: 6, background: 'rgba(233,226,210,0.85)'}}>
               DE-IDENTIFIED
             </div>
             <Tag text="The dates · still attached" appearAt={10 * fps} x={1010} y={600} size={36} />
@@ -330,7 +330,7 @@ export const SceneFile: React.FC = () => {
         fore={
           <>
             <Tag text="Already knows where you were" appearAt={0.8 * fps} x={110} y={90} size={38} />
-            <KineticText lines={[['A', 'dated,'], ['annotated'], ['file']]} x={110} y={230} size={120} startAt={2.2 * fps} stagger={9} hot={[]} />
+            <KineticText lines={[['A', 'dated,'], ['annotated'], ['file']]} x={110} y={230} size={96} startAt={2.2 * fps} stagger={9} hot={[]} />
             <Tag text="Not anonymous for long" appearAt={7.5 * fps} x={110} y={760} fill size={52} />
           </>
         }
@@ -347,7 +347,7 @@ export const SceneNever: React.FC = () => {
       <LayeredScene
         back={<RedDisc x={1500} y={640} r={330} appearAt={2} />}
         mid={<HalftoneImage name="person" x={1230} y={230} width={540} reveal={reveal(frame, 4, 30)} />}
-        fore={<KineticText lines={[['The', 'patients'], ['were', 'never'], ['asked.']]} x={110} y={170} size={165} startAt={4} stagger={9} hot={['asked.']} />}
+        fore={<KineticText lines={[['The', 'patients'], ['were', 'never'], ['asked.']]} x={110} y={170} size={130} startAt={4} stagger={9} hot={['asked.']} />}
       />
     </Shell>
   );

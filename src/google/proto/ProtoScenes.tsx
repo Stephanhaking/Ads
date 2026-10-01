@@ -49,7 +49,7 @@ export const P2: React.FC = () => {
       mid={<HalftoneImage name="doctor" x={130} y={250} width={560} reveal={interpolate(frame, [4, 34], [0, 1], clamp)} />}
       fore={
         <>
-          <div style={{position: 'absolute', left: 820, top: 70, fontFamily: fonts.heading, fontWeight: 900, fontSize: 380, lineHeight: 1, color: th.text, transform: `scale(${0.6 + 0.4 * pop})`, transformOrigin: 'left center', opacity: Math.min(1, pop * 2), textShadow: `14px 14px 0 ${th.textShadow}`}}>
+          <div style={{position: 'absolute', left: 820, top: 70, fontFamily: fonts.heading, fontWeight: 400, fontSize: 380, lineHeight: 1, color: th.text, transform: `scale(${0.6 + 0.4 * pop})`, transformOrigin: 'left center', opacity: Math.min(1, pop * 2), textShadow: `14px 14px 0 ${th.textShadow}`}}>
             {n}%
           </div>
           <div style={{position: 'absolute', left: 830, top: 520, fontFamily: fonts.mono, fontSize: 26, letterSpacing: 4, color: th.mono}}>GOOGLE AI</div>

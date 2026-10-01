@@ -46,7 +46,7 @@ export const KineticText: React.FC<{
   const th = useTheme();
   let n = 0;
   return (
-    <div style={{position: 'absolute', left: x, top: y, fontFamily: fonts.heading, fontWeight: 900, fontSize: size, lineHeight: 1.02, textTransform: 'uppercase'}}>
+    <div style={{position: 'absolute', left: x, top: y, fontFamily: fonts.heading, fontWeight: 400, fontSize: size, lineHeight: 1.02, textTransform: 'uppercase'}}>
       {lines.map((line, li) => (
         <div key={li} style={{display: 'flex', gap: size * 0.22}}>
           {line.map((w) => {

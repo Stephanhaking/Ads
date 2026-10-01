@@ -31,7 +31,7 @@ export const Tag: React.FC<{
         background: fill ? th.hotBg : th.tagBg,
         color: fill ? th.hotText : th.tagText,
         fontFamily: fonts.heading,
-        fontWeight: 900,
+        fontWeight: 400,
         fontSize: size,
         letterSpacing: 2,
         textTransform: 'uppercase',
@@ -59,7 +59,7 @@ export const Bar: React.FC<{
   const shown = Math.round(value * interpolate(p, [0, 1], [0, 1], {extrapolateRight: 'clamp', easing: EASE_OUT}));
   return (
     <div style={{position: 'absolute', left: x, bottom: 140, width: 230}}>
-      <div style={{fontFamily: fonts.heading, fontWeight: 900, fontSize: 92, color: colors.white, marginBottom: 10, opacity: Math.min(1, p * 2)}}>
+      <div style={{fontFamily: fonts.heading, fontWeight: 400, fontSize: 92, color: colors.white, marginBottom: 10, opacity: Math.min(1, p * 2)}}>
         {shown}%
       </div>
       <div style={{height: h, background: color, boxShadow: `10px 10px 0 ${color === colors.red ? colors.white : colors.red}`}} />
