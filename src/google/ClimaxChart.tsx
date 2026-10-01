@@ -1,5 +1,5 @@
 import React from 'react';
-import {interpolate, spring} from 'remotion';
+import {Easing, interpolate, spring} from 'remotion';
 import {colors, fonts} from '../styles';
 import {HalftoneImage} from './HalftoneImage';
 import {LayeredScene} from './Layers';
@@ -35,10 +35,41 @@ export const ClimaxChart: React.FC = () => {
           <div style={{position: 'absolute', left: 830, top: 560, height: 54, width: 900 * 0.95 * bar(50), background: th.hotBg, boxShadow: `8px 8px 0 ${th.text}`}} />
           <div style={{position: 'absolute', left: 830, top: 680, fontFamily: fonts.mono, fontSize: 26, letterSpacing: 4, color: th.mono}}>EARLY WARNING SCORE · 85%</div>
           <div style={{position: 'absolute', left: 830, top: 720, height: 54, width: 900 * 0.85 * bar(62), background: th.barGray, boxShadow: `8px 8px 0 ${th.hotBg}`}} />
-          <Tag text="Earlier than the nurses" appearAt={86} x={830} y={860} size={46} fill />
+          <AlertTimeline />
           <div style={{position: 'absolute', left: 830, bottom: 50, fontFamily: fonts.mono, fontSize: 22, letterSpacing: 3, color: th.mono}}>SOURCE: NATURE · 2018</div>
         </>
       }
     />
+  );
+};
+
+// Linha do tempo: quem "vê" a deterioração primeiro. A IA aparece antes dos gráficos, das enfermeiras e do médico.
+const AlertTimeline: React.FC = () => {
+  const frame = useCurrentFrame();
+  const th = useTheme();
+  const ease = Easing.out(Easing.exp);
+  const items = [
+    {label: 'AI', at: 84, x: 0.06, big: true},
+    {label: 'CHARTS', at: 112, x: 0.36},
+    {label: 'NURSES', at: 138, x: 0.64},
+    {label: 'DOCTOR', at: 164, x: 0.92},
+  ];
+  const X0 = 830, W = 880, Y = 905;
+  const line = interpolate(frame, [80, 170], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return (
+    <>
+      <div style={{position: 'absolute', left: X0, top: Y - 70, fontFamily: fonts.mono, fontSize: 20, letterSpacing: 5, color: th.mono}}>WHO NOTICES FIRST →</div>
+      <div style={{position: 'absolute', left: X0, top: Y, width: W * line, height: 6, background: th.text, borderRadius: 3}} />
+      {items.map((it) => {
+        const t = interpolate(frame - it.at, [0, 12], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: ease});
+        const size = it.big ? 46 : 30;
+        return (
+          <div key={it.label} style={{position: 'absolute', left: X0 + W * it.x - size / 2, top: Y + 3 - size / 2, opacity: t, transform: `scale(${t})`}}>
+            <div style={{width: size, height: size, borderRadius: '50%', background: it.big ? th.text : th.hotBg, border: `5px solid ${it.big ? th.hotBg : th.text}`}} />
+            <div style={{position: 'absolute', top: size + 12, left: '50%', transform: 'translateX(-50%)', fontFamily: fonts.mono, fontSize: 22, letterSpacing: 4, color: th.text, whiteSpace: 'nowrap'}}>{it.label}</div>
+          </div>
+        );
+      })}
+    </>
   );
 };

@@ -196,3 +196,28 @@ export const MapsApp: React.FC<{x: number; y: number; w?: number; h?: number; st
     </div>
   );
 };
+
+// ── mini-cartão de mapa com uma rota a desenhar-se (usado como "next route") ──
+export const MiniRoute: React.FC<{x: number; y: number; w?: number; h?: number; at: number}> = ({x, y, w = 400, h = 240, at}) => {
+  const frame = useCurrentFrame();
+  const enter = interpolate(frame - at, [0, 12], [0, 1], {...clampOpts, easing: easeOut});
+  const draw = interpolate(frame - at, [8, 50], [0, 1], {...clampOpts, easing: Easing.inOut(Easing.cubic)});
+  const pin = interpolate(frame - at, [46, 60], [0, 1], {...clampOpts, easing: Easing.out(Easing.back(2))});
+  const d = 'M40 190 L40 120 L170 120 L170 60 L330 60';
+  return (
+    <div style={{position: 'absolute', left: x, top: y, width: w, height: h, borderRadius: 18, overflow: 'hidden', background: '#F2F1EC', boxShadow: '0 16px 36px rgba(0,0,0,0.28)', opacity: enter, transform: `translateY(${(1 - enter) * 24}px)`}}>
+      <svg width={w} height={h} viewBox="0 0 400 240">
+        <rect x="230" y="130" width="120" height="70" rx="10" fill="#CFE8C8" />
+        {[40, 120, 170, 250, 330].map((vx) => <path key={vx} d={`M${vx} -10 V250`} stroke="#fff" strokeWidth={10} />)}
+        {[60, 120, 190].map((hy) => <path key={hy} d={`M-10 ${hy} H410`} stroke="#fff" strokeWidth={10} />)}
+        <path d={d} stroke="#fff" strokeWidth={15} fill="none" strokeLinecap="round" strokeLinejoin="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - draw} />
+        <path d={d} stroke={GOOGLE.blue} strokeWidth={8} fill="none" strokeLinecap="round" strokeLinejoin="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - draw} />
+        <circle cx="40" cy="190" r="9" fill="#fff" /><circle cx="40" cy="190" r="5.5" fill={GOOGLE.blue} />
+        <g transform={`translate(330 60) scale(${pin}) translate(-330 -60)`}>
+          <path d="M330 22 C 314 22, 305 35, 305 48 C 305 64, 330 90, 330 90 C 330 90, 355 64, 355 48 C 355 35, 346 22, 330 22 Z" fill={GOOGLE.red} />
+          <circle cx="330" cy="48" r="8" fill="#fff" />
+        </g>
+      </svg>
+    </div>
+  );
+};

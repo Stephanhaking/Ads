@@ -10,9 +10,9 @@ import {ClimaxChart} from './ClimaxChart';
 import {scaleFor} from './timing';
 import {ThemeName, ThemeProvider, useTheme} from './theme';
 import {DotField, SearchBar, Wordmark} from './brand/Brand';
-import {ArticlePage, BrowserWindow, Cursor, HandCircle, ScribbleUnderline} from './doc/Doc';
-import {ConsentWindow, EhrWindow, PdfViewer, Terminal} from './doc/Screens';
-import {MapsApp} from './brand/Maps';
+import {ArticlePage, BrowserWindow, Cursor, DocFlow, HandCircle, ReadingsGrid, ScribbleUnderline} from './doc/Doc';
+import {ConsentWindow, EhrWindow, PdfViewer, TrainingDashboard} from './doc/Screens';
+import {MapsApp, MiniRoute} from './brand/Maps';
 import {SfxAt} from './Sfx';
 import {Tag} from './Vox';
 
@@ -86,8 +86,10 @@ export const SceneHospital: React.FC = () => {
               03{colon}12 <span style={{color: th.hotBg}}>AM</span>
             </div>
             <HandCircle cx={1385} cy={628} rx={165} ry={125} at={7.4 * fps} />
-            <Tag text="100 small readings" appearAt={8 * fps} x={110} y={700} size={36} />
-            <Tag text="Easy to miss" appearAt={11.5 * fps} x={110} y={840} fill />
+            <Tag text="100 small readings" appearAt={8 * fps} x={110} y={520} size={32} />
+            <ReadingsGrid x={110} y={600} cell={26} at={8.2 * fps} oddAt={10.2 * fps} />
+            <HandCircle cx={302} cy={757} rx={34} ry={34} at={11 * fps} width={6} />
+            <Tag text="Easy to miss" appearAt={11.6 * fps} x={410} y={735} fill size={38} />
           </>
         }
       />
@@ -102,7 +104,7 @@ export const SceneYear: React.FC = () => {
     <Shell theme="paper">
       <LayeredScene
         back={<RedDisc x={470} y={470} r={330} appearAt={2} shape="ring" />}
-        mid={<Terminal x={1010} y={250} w={860} h={560} at={0.3 * fps} />}
+        mid={<TrainingDashboard x={1010} y={250} w={860} h={560} at={0.3 * fps} />}
         fore={
           <>
             <SfxAt name="hit" at={3} />
@@ -119,20 +121,25 @@ export const SceneYear: React.FC = () => {
 export const SceneRecords: React.FC = () => {
   const {frame, fps} = useT('cold');
   const count = Math.round(interpolate(frame, [2 * fps, 7 * fps], [0, 114000], {...clamp, easing: EASE_OUT}));
+  const th = useTheme();
+  const nodeIn = interpolate(frame, [3 * fps, 3.8 * fps], [0, 1], {...clamp, easing: EASE_OUT});
+  const pulse = 1 + 0.05 * Math.sin(frame / 5);
   return (
     <Shell theme="paper">
       <LayeredScene
-        back={<RedDisc x={560} y={540} r={360} appearAt={2} />}
-        mid={<HalftoneImage name="records" x={110} y={230} width={1000} reveal={reveal(frame)} />}
+        back={<RedDisc x={470} y={580} r={330} appearAt={2} />}
+        mid={<HalftoneImage name="records" x={50} y={310} width={840} reveal={reveal(frame)} />}
         fore={
           <>
-            <Tag text="Medical records" appearAt={0.8 * fps} x={130} y={90} />
-            <Big x={1150} y={240} size={116}>{count.toLocaleString('en-US')}</Big>
-            <ScribbleUnderline x={1150} y={372} w={640} at={7.6 * fps} />
-            <Mono x={1150} y={400}>PATIENTS</Mono>
-            <Tag text="Artificial intelligence" appearAt={7.5 * fps} x={1150} y={520} size={40} />
-            <Tag text="Who, in this building," appearAt={10 * fps} x={1150} y={700} fill size={44} />
-            <Tag text="is going to die?" appearAt={10.6 * fps} x={1150} y={800} fill size={44} />
+            <Tag text="Medical records" appearAt={0.8 * fps} x={110} y={90} />
+            <Big x={980} y={110} size={108}>{count.toLocaleString('en-US')}</Big>
+            <ScribbleUnderline x={980} y={228} w={560} at={7.6 * fps} />
+            <Mono x={980} y={250}>PATIENTS</Mono>
+            <DocFlow from={[800, 580]} to={[1040, 500]} at={3 * fps} n={9} />
+            <div style={{position: 'absolute', left: 1030, top: 390, width: 230, height: 230, borderRadius: 38, background: th.tagBg, color: th.tagText, boxShadow: `10px 10px 0 ${th.disc}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: fonts.heading, fontSize: 112, opacity: nodeIn, transform: `scale(${(0.7 + 0.3 * nodeIn) * pulse})`}}>AI</div>
+            <Tag text="Artificial intelligence" appearAt={7.5 * fps} x={1300} y={470} size={34} />
+            <Tag text="Who, in this building," appearAt={10 * fps} x={980} y={720} fill size={40} />
+            <Tag text="is going to die?" appearAt={10.6 * fps} x={980} y={820} fill size={40} />
           </>
         }
       />
@@ -184,9 +191,9 @@ export const SceneQuestion: React.FC = () => {
         mid={
           <>
             {/* cartão branco = página inicial da Google; o wordmark vermelho não desaparece no fundo vermelho */}
-            <div style={{position: 'absolute', left: 190, top: 150, width: 1540, height: 600, borderRadius: 44, background: '#fff', boxShadow: '0 24px 60px rgba(0,0,0,0.35)'}} />
+            <div style={{position: 'absolute', left: 190, top: 150, width: 1540, height: 700, borderRadius: 44, background: '#fff', boxShadow: '0 24px 60px rgba(0,0,0,0.35)'}} />
             <Wordmark x={706} y={226} size={176} startAt={0.2 * fps} />
-            <SearchBar x={260} y={500} width={1400} text="why is an advertising company so good at knowing when you'll die" startAt={0.9 * fps} cps={19} />
+            <SearchBar x={260} y={500} width={1400} text="why is an advertising company so good at knowing when you'll die" startAt={0.8 * fps} cps={27} ads={[{title: 'Compare prices on everything', url: 'shop.example.com'}, {title: 'Your next purchase, delivered fast', url: 'store.example.com'}]} adsAt={3.3 * fps} />
           </>
         }
         fore={<Tag text="An advertising company" appearAt={0.4 * fps} x={110} y={52} size={36} />}
@@ -233,9 +240,9 @@ export const SceneEngine: React.FC = () => {
   const head: [number, number] = [960, 430];
   const items: {t: string; x: number; y: number; at: number; end: [number, number]}[] = [
     {t: 'Next click', x: 170, y: 250, at: 8 * fps, end: [570, 290]},
-    {t: 'Next word', x: 150, y: 520, at: 12 * fps, end: [560, 560]},
-    {t: 'Next route', x: 1380, y: 230, at: 10 * fps, end: [1370, 270]},
-    {t: 'Next buy', x: 1440, y: 500, at: 14 * fps, end: [1430, 540]},
+    {t: 'Next word', x: 130, y: 405, at: 12 * fps, end: [560, 560]},
+    {t: 'Next route', x: 1380, y: 235, at: 10 * fps, end: [1370, 400]},
+    {t: 'Next buy', x: 1440, y: 585, at: 14 * fps, end: [1430, 625]},
   ];
   return (
     <Shell theme={theme}>
@@ -249,9 +256,11 @@ export const SceneEngine: React.FC = () => {
               {items.map((it) => (
                 <React.Fragment key={it.t}>
                   <Connector from={head} to={it.end} appearAt={it.at - 6} />
-                  <Tag text={it.t} appearAt={it.at} x={it.x} y={it.y} />
+                  {it.t === 'Next word' || it.t === 'Next route' ? <Tag text={it.t} appearAt={it.at} x={it.x} y={it.y} size={30} /> : <Tag text={it.t} appearAt={it.at} x={it.x} y={it.y} />}
                 </React.Fragment>
               ))}
+              <SearchBar x={130} y={465} width={760} scale={0.7} text="weather" startAt={12.3 * fps} cps={9} suggestions={['weather tomorrow', 'weather this week', 'weather radar']} suggestAt={13.6 * fps} />
+              <MiniRoute x={1380} y={285} w={370} h={215} at={10.4 * fps} />
               <Years n={years} />
               <SfxAt name="hit" at={slamAt} />
               <Connector from={[960, 700]} to={[1290, 830]} appearAt={slamAt - 4} width={8} />

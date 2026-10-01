@@ -11,40 +11,46 @@ const sans = 'Arial, "Helvetica Neue", sans-serif';
 
 const enterAnim = (frame: number, at = 0) => interpolate(frame - at, [0, 14], [0, 1], {...clampOpts, easing: easeOut});
 
-// ── Terminal: o modelo a treinar nos registos (cena 2018) ──
-export const Terminal: React.FC<{x: number; y: number; w?: number; h?: number; at?: number}> = ({x, y, w = 980, h = 560, at = 0}) => {
+// ── Painel de treino "Medical Brain" (estilo Material/Google): a curva de erro desce até convergir ──
+export const TrainingDashboard: React.FC<{x: number; y: number; w?: number; h?: number; at?: number}> = ({x, y, w = 860, h = 560, at = 0}) => {
   const frame = useCurrentFrame();
   const e = enterAnim(frame, at);
-  const lines = [
-    {t: 8, s: '$ train --model hospital-mortality --records 114,000'},
-    {t: 26, s: 'reading records ........................ ok'},
-    {t: 40, s: 'epoch 01   loss 0.842'},
-    {t: 54, s: 'epoch 02   loss 0.611'},
-    {t: 68, s: 'epoch 03   loss 0.394'},
-    {t: 82, s: 'epoch 04   loss 0.226'},
-    {t: 96, s: 'epoch 05   loss 0.158   converged'},
-  ];
-  const prog = interpolate(frame - at, [30, 110], [0, 1], {...clampOpts, easing: Easing.inOut(Easing.cubic)});
-  const caret = Math.floor(frame / 15) % 2 === 0;
+  const t = interpolate(frame - at, [18, 96], [0, 1], {...clampOpts, easing: Easing.inOut(Easing.cubic)});
+  const CW = w - 120, CH = 250;
+  const pts = Array.from({length: 70}, (_, i) => {
+    const u = i / 69;
+    const loss = 0.9 * Math.exp(-3.4 * u) + 0.1 + 0.018 * Math.sin(u * 46) * (1 - u);
+    return [u * CW, CH - ((loss - 0.08) / 0.95) * CH] as const;
+  });
+  const d = pts.map(([px, py], i) => `${i ? 'L' : 'M'}${px.toFixed(1)} ${py.toFixed(1)}`).join(' ');
+  const idx = Math.max(0, Math.min(69, Math.round(t * 69)));
+  const done = t > 0.97;
+  const dots = [GOOGLE.blue, GOOGLE.red, GOOGLE.yellow, GOOGLE.green];
   return (
-    <div style={{position: 'absolute', left: x, top: y, width: w, height: h, borderRadius: 16, overflow: 'hidden', background: '#16181D', boxShadow: '0 26px 60px rgba(0,0,0,0.38)', opacity: e, transform: `translateY(${(1 - e) * 36}px) rotate(-1.2deg)`}}>
-      <div style={{height: 46, background: '#2A2D34', display: 'flex', alignItems: 'center', padding: '0 18px', gap: 9}}>
-        {['#FF5F57', '#FEBC2E', '#28C840'].map((c) => <div key={c} style={{width: 14, height: 14, borderRadius: 7, background: c}} />)}
-        <div style={{flex: 1, textAlign: 'center', fontFamily: sans, fontSize: 16, color: '#9AA0A6'}}>terminal — training</div>
+    <div style={{position: 'absolute', left: x, top: y, width: w, height: h, borderRadius: 18, overflow: 'hidden', background: '#fff', boxShadow: '0 26px 60px rgba(0,0,0,0.34)', opacity: e, transform: `translateY(${(1 - e) * 36}px) rotate(-1.2deg)`, fontFamily: sans}}>
+      <div style={{height: 76, display: 'flex', alignItems: 'center', gap: 16, padding: '0 28px', borderBottom: '1px solid #E8EAED'}}>
+        <div style={{display: 'flex', gap: 6}}>{dots.map((c) => <div key={c} style={{width: 14, height: 14, borderRadius: 7, background: c}} />)}</div>
+        <div style={{fontSize: 27, fontWeight: 700, color: '#202124'}}>Medical Brain</div>
+        <div style={{marginLeft: 'auto', padding: '8px 18px', borderRadius: 18, fontSize: 18, fontWeight: 700, background: done ? '#E6F4EA' : '#E8F0FE', color: done ? '#137333' : '#1967D2'}}>{done ? '✓ Converged' : '● Training'}</div>
       </div>
-      <div style={{padding: '26px 34px', fontFamily: fonts.mono, fontSize: 25, lineHeight: 1.7, color: '#C5E1A5'}}>
-        {lines.map((l, i) => {
-          const chars = Math.max(0, Math.min(l.s.length, Math.floor((frame - at - l.t) * 2.2)));
-          return (
-            <div key={i} style={{color: i === 0 ? '#E8EAED' : l.s.includes('converged') ? '#81C995' : '#C5E1A5', whiteSpace: 'pre'}}>
-              {l.s.slice(0, chars)}
-            </div>
-          );
-        })}
-        <div style={{marginTop: 18, height: 22, borderRadius: 11, background: '#2A2D34', overflow: 'hidden'}}>
-          <div style={{width: `${prog * 100}%`, height: '100%', background: `linear-gradient(90deg, ${GOOGLE.blue}, ${GOOGLE.green})`}} />
+      <div style={{display: 'flex', gap: 18, padding: '22px 28px 4px'}}>
+        {[['Patients', '114,000'], ['Records', '216,000'], ['Epoch', `${Math.min(5, 1 + Math.floor(t * 5))} / 5`]].map(([k, v]) => (
+          <div key={k} style={{flex: 1, padding: '12px 18px', borderRadius: 12, background: '#F8F9FA', border: '1px solid #E8EAED'}}>
+            <div style={{fontSize: 15, color: '#5F6368', letterSpacing: 2}}>{k.toUpperCase()}</div>
+            <div style={{fontSize: 30, fontWeight: 700, color: '#202124', marginTop: 4}}>{v}</div>
+          </div>
+        ))}
+      </div>
+      <div style={{position: 'relative', margin: '14px 28px 0 62px', height: CH}}>
+        {[0, 1, 2, 3].map((i) => <div key={i} style={{position: 'absolute', left: 0, right: -4, top: (i * CH) / 3, height: 1, background: '#E8EAED'}} />)}
+        <div style={{position: 'absolute', left: -52, top: -10, fontFamily: fonts.mono, fontSize: 14, color: '#80868B'}}>loss</div>
+        <svg width={CW} height={CH} style={{overflow: 'visible', position: 'absolute', left: 0, top: 0}}>
+          <path d={d} stroke={GOOGLE.blue} strokeWidth={5} fill="none" strokeLinecap="round" strokeLinejoin="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - t} />
+          <circle cx={pts[idx][0]} cy={pts[idx][1]} r={9} fill="#fff" stroke={GOOGLE.blue} strokeWidth={4} opacity={t > 0 ? 1 : 0} />
+        </svg>
+        <div style={{position: 'absolute', left: 0, right: 0, bottom: -30, display: 'flex', justifyContent: 'space-between', fontFamily: fonts.mono, fontSize: 14, color: '#80868B'}}>
+          {[1, 2, 3, 4, 5].map((n) => <span key={n}>epoch {n}</span>)}
         </div>
-        <div style={{marginTop: 14, color: '#9AA0A6', fontSize: 22}}>{Math.round(prog * 100)}% · {Math.round(prog * 216000).toLocaleString('en-US')} / 216,000 records{caret ? ' ▌' : ''}</div>
       </div>
     </div>
   );

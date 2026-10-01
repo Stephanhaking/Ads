@@ -57,13 +57,16 @@ export const SearchBar: React.FC<{
   cps?: number; // caracteres por segundo
   suggestions?: string[];
   suggestAt?: number;
-}> = ({x, y, width = 1100, text, startAt = 0, cps = 22, suggestions = [], suggestAt = 0}) => {
+  scale?: number;
+  ads?: {title: string; url: string}[];
+  adsAt?: number;
+}> = ({x, y, width = 1100, text, startAt = 0, cps = 22, suggestions = [], suggestAt = 0, scale = 1, ads = [], adsAt = 0}) => {
   const frame = useCurrentFrame();
   const enter = interpolate(frame - (startAt - 10), [0, 12], [0, 1], {...clampOpts, easing: easeOut});
   const chars = Math.max(0, Math.min(text.length, Math.floor(((frame - startAt) / 30) * cps)));
   const caret = Math.floor(frame / 15) % 2 === 0;
   return (
-    <div style={{position: 'absolute', left: x, top: y, width, opacity: enter, transform: `translateY(${(1 - enter) * 30}px)`}}>
+    <div style={{position: 'absolute', left: x, top: y, width, opacity: enter, transform: `translateY(${(1 - enter) * 30}px) scale(${scale})`, transformOrigin: 'top left'}}>
       <div style={{display: 'flex', alignItems: 'center', gap: 22, height: 96, padding: '0 34px', borderRadius: 48, background: '#fff', boxShadow: '0 2px 6px rgba(32,33,36,0.28), 0 14px 34px rgba(0,0,0,0.20)'}}>
         <Magnifier size={38} />
         <div style={{flex: 1, fontFamily: 'Arial, "Helvetica Neue", sans-serif', fontSize: 36, color: '#202124', whiteSpace: 'nowrap', overflow: 'hidden'}}>
@@ -80,6 +83,21 @@ export const SearchBar: React.FC<{
               <div key={sg} style={{display: 'flex', alignItems: 'center', gap: 22, height: 64, padding: '0 34px', opacity: t, transform: `translateY(${(1 - t) * -10}px)`, fontFamily: 'Arial, sans-serif', fontSize: 30, color: '#202124'}}>
                 <Magnifier size={28} />
                 <span>{sg}</span>
+              </div>
+            );
+          })}
+        </div>
+      )}
+      {ads.length > 0 && (
+        <div style={{marginTop: 22, padding: '0 10px'}}>
+          {ads.map((ad, i) => {
+            const t = interpolate(frame - adsAt - i * 8, [0, 12], [0, 1], {...clampOpts, easing: easeOut});
+            return (
+              <div key={ad.title} style={{opacity: t, transform: `translateY(${(1 - t) * 16}px)`, marginBottom: 14, fontFamily: 'Arial, sans-serif'}}>
+                <div style={{display: 'flex', alignItems: 'center', gap: 12, fontSize: 21, color: '#202124'}}>
+                  <span style={{fontWeight: 700}}>Ad</span><span style={{color: '#5F6368'}}>· {ad.url}</span>
+                </div>
+                <div style={{fontSize: 30, color: '#1A0DAB', marginTop: 4}}>{ad.title}</div>
               </div>
             );
           })}

@@ -146,3 +146,44 @@ export const ScribbleUnderline: React.FC<{x: number; y: number; w: number; at: n
     </svg>
   );
 };
+
+// ── 100 leituras pequenas: uma é ligeiramente diferente ("escondido, fácil de falhar") ──
+export const ReadingsGrid: React.FC<{x: number; y: number; cell?: number; at: number; oddAt: number}> = ({x, y, cell = 26, at, oddAt}) => {
+  const frame = useCurrentFrame();
+  const odd = 6 * 10 + 7; // índice da leitura anómala
+  const oddT = interpolate(frame - oddAt, [0, 16], [0, 1], {...clampOpts, easing: easeOut});
+  return (
+    <div style={{position: 'absolute', left: x, top: y, width: cell * 10, height: cell * 10}}>
+      {Array.from({length: 100}, (_, i) => {
+        const t = interpolate(frame - at - i * 0.35, [0, 8], [0, 1], {...clampOpts, easing: easeOut});
+        const isOdd = i === odd;
+        const shade = 0.16 + ((i * 37) % 11) / 100;
+        const bg = isOdd ? `rgba(229,35,43,${0.18 + oddT * 0.82})` : `rgba(10,10,10,${shade})`;
+        return <div key={i} style={{position: 'absolute', left: (i % 10) * cell, top: Math.floor(i / 10) * cell, width: cell - 5, height: cell - 5, borderRadius: 5, background: bg, opacity: t, transform: `scale(${0.4 + 0.6 * t})`}} />;
+      })}
+    </div>
+  );
+};
+
+// ── papéis a voar de A para B (registos a entrar no modelo) ──
+export const DocFlow: React.FC<{from: [number, number]; to: [number, number]; at: number; n?: number}> = ({from, to, at, n = 9}) => {
+  const frame = useCurrentFrame();
+  return (
+    <>
+      {Array.from({length: n}, (_, i) => {
+        const k = ((frame - at - i * 7) % 70) / 70;
+        if (frame - at - i * 7 < 0) return null;
+        const t = Math.max(0, k);
+        const ease = Easing.inOut(Easing.cubic)(t);
+        const px = from[0] + (to[0] - from[0]) * ease;
+        const py = from[1] + (to[1] - from[1]) * ease - Math.sin(t * Math.PI) * 90 + (i % 3 - 1) * 14;
+        const sc = 1 - t * 0.55;
+        return (
+          <div key={i} style={{position: 'absolute', left: px, top: py, width: 46 * sc, height: 60 * sc, background: '#fff', borderRadius: 4, boxShadow: '0 4px 10px rgba(0,0,0,0.3)', transform: `rotate(${(1 - t) * (i % 2 ? 14 : -12)}deg)`, opacity: t > 0.92 ? (1 - t) * 12 : 1}}>
+            {[0, 1, 2, 3].map((r) => <div key={r} style={{position: 'absolute', left: 7 * sc, right: 7 * sc, top: (10 + r * 11) * sc, height: 4 * sc, borderRadius: 2, background: '#BDC1C6'}} />)}
+          </div>
+        );
+      })}
+    </>
+  );
+};
