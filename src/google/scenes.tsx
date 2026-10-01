@@ -9,6 +9,7 @@ import {Connector, Flash, Grain, KineticText, RedDisc, useShake} from './Fx';
 import {ClimaxChart} from './ClimaxChart';
 import {scaleFor} from './timing';
 import {ThemeName, ThemeProvider, useTheme} from './theme';
+import {ConsentForm, DotField, FourDots, MapsRoute, RecordTable, RedactionDoc, SearchBar, Wordmark} from './brand/Brand';
 import {SfxAt} from './Sfx';
 import {Tag} from './Vox';
 
@@ -95,13 +96,12 @@ export const SceneYear: React.FC = () => {
   return (
     <Shell theme="paper">
       <LayeredScene
-        back={<RedDisc x={960} y={470} r={400} appearAt={2} />}
-        mid={<HalftoneImage name="hospital" x={700} y={290} width={1150} opacity={0.12} />}
+        mid={<FourDots cx={1560} cy={720} size={48} />}
         fore={
           <>
             <SfxAt name="hit" at={3} />
-            <KineticText lines={[['2018']]} x={330} y={260} size={380} startAt={3} hot={[]} />
-            <Tag text="A machine learned to catch it first" appearAt={1.4 * fps} x={330} y={780} fill size={50} />
+            <KineticText lines={[['2018']]} x={150} y={230} size={400} startAt={3} hot={[]} />
+            <Tag text="A machine learned to catch it first" appearAt={1.4 * fps} x={150} y={720} fill size={46} />
           </>
         }
       />
@@ -162,13 +162,19 @@ export const ScenePaper: React.FC = () => {
 
 // 6 (0:54–1:00) — PICO (vermelho): a pergunta.
 export const SceneQuestion: React.FC = () => {
-  const {frame} = useT('cold');
+  const {fps} = useT('cold');
   return (
     <Shell theme="red">
       <LayeredScene
-        back={<RedDisc x={1450} y={640} r={320} appearAt={2} />}
-        mid={<HalftoneImage name="screen" x={1000} y={330} width={900} reveal={reveal(frame, 4, 30)} />}
-        fore={<KineticText lines={[['An', 'advertising'], ['company'], ['knowing', 'when'], ['you', 'will', 'die?']]} x={110} y={90} size={98} startAt={4} stagger={9} hot={['die?']} />}
+        mid={
+          <>
+            {/* cartão branco = página inicial da Google; o wordmark vermelho não desaparece no fundo vermelho */}
+            <div style={{position: 'absolute', left: 190, top: 150, width: 1540, height: 600, borderRadius: 44, background: '#fff', boxShadow: '0 24px 60px rgba(0,0,0,0.35)'}} />
+            <Wordmark x={706} y={226} size={176} startAt={0.2 * fps} />
+            <SearchBar x={260} y={500} width={1400} text="why is an advertising company so good at knowing when you'll die" startAt={0.9 * fps} cps={19} />
+          </>
+        }
+        fore={<Tag text="An advertising company" appearAt={0.4 * fps} x={110} y={52} size={36} />}
       />
     </Shell>
   );
@@ -246,17 +252,16 @@ export const SceneEngine: React.FC = () => {
 
 // 11 (1:43–1:51) — "reading all of it".
 export const SceneReadAll: React.FC = () => {
-  const {frame, fps} = useT('act2');
+  const {fps} = useT('act2');
   return (
     <Shell theme="paper">
       <LayeredScene
-        back={<RedDisc x={540} y={600} r={330} appearAt={2} shape="ring" />}
-        mid={<HalftoneImage name="records" x={90} y={280} width={900} reveal={reveal(frame)} />}
+        mid={<RecordTable x={110} y={190} w={900} h={780} />}
         fore={
           <>
-            <Tag text="What it took to see" appearAt={0.4 * fps} x={110} y={90} size={38} />
-            <KineticText lines={[['By', 'reading'], ['all', 'of', 'it']]} x={1000} y={240} size={96} startAt={1.2 * fps} stagger={9} hot={['it']} />
-            <Tag text="Forecasting a death" appearAt={5 * fps} x={1040} y={720} size={48} />
+            <Tag text="What it took to see" appearAt={0.4 * fps} x={110} y={80} size={38} />
+            <KineticText lines={[['By', 'reading'], ['all', 'of', 'it']]} x={1090} y={240} size={92} startAt={1.2 * fps} stagger={9} hot={['it']} />
+            <Tag text="Forecasting a death" appearAt={5 * fps} x={1090} y={700} size={44} />
           </>
         }
       />
@@ -291,17 +296,17 @@ export const SceneNotes: React.FC = () => {
 export const SceneData: React.FC = () => {
   const {frame, fps} = useT('act2');
   const n = Math.round(interpolate(frame, [0.4 * fps, 4 * fps], [0, 46], {...clamp, easing: EASE_OUT}));
+  const progress = interpolate(frame, [0.2 * fps, 5 * fps], [0, 1], {...clamp, easing: EASE_OUT});
   return (
     <Shell theme="paper">
       <LayeredScene
-        back={<RedDisc x={1380} y={600} r={340} appearAt={2} shape="ring" />}
-        mid={<HalftoneImage name="records" x={960} y={300} width={860} reveal={reveal(frame)} />}
+        mid={<DotField x={90} y={170} w={1000} h={730} progress={progress} />}
         fore={
           <>
-            <Big x={110} y={190} size={300}>{n}</Big>
-            <KineticText lines={[['Billion']]} x={110} y={520} size={120} startAt={0.9 * fps} hot={['Billion']} />
-            <Mono x={110} y={740}>DATA POINTS</Mono>
-            <Tag text="The raw material arrived" appearAt={5 * fps} x={110} y={830} size={44} />
+            <Big x={1170} y={190} size={280}>{n}</Big>
+            <KineticText lines={[['Billion']]} x={1170} y={500} size={104} startAt={0.9 * fps} hot={['Billion']} />
+            <Mono x={1170} y={700}>DATA POINTS</Mono>
+            <Tag text="The raw material arrived" appearAt={5 * fps} x={1130} y={810} size={34} />
           </>
         }
       />
@@ -317,16 +322,16 @@ export const SceneAnon: React.FC = () => {
   return (
     <Shell theme="paper">
       <LayeredScene
-        back={<RedDisc x={560} y={560} r={330} appearAt={2} shape="block" />}
-        mid={<HalftoneImage name="paper" x={70} y={250} width={900} reveal={reveal(frame)} />}
+        back={<RedDisc x={520} y={560} r={320} appearAt={2} shape="block" />}
+        mid={<RedactionDoc x={110} y={150} w={820} h={820} sweepAt={7 * fps} hotAt={10 * fps} />}
         fore={
           <>
             <Tag text="A hospital handed over the records" appearAt={1 * fps} x={1010} y={230} size={34} />
             <Tag text="Every patient · 2009–2016" appearAt={4 * fps} x={1010} y={350} fill size={40} />
-            <div style={{position: 'absolute', left: 150, top: 470, transform: `rotate(-9deg) scale(${0.5 + 0.5 * stamp})`, opacity: Math.min(1, stamp * 2), border: `10px solid ${th.hotBg}`, color: th.hotBg, padding: '8px 28px', fontFamily: fonts.heading, fontWeight: 400, fontSize: 84, letterSpacing: 6, background: 'rgba(233,226,210,0.85)'}}>
+            <SfxAt name="stamp" at={6 * fps} />
+            <div style={{position: 'absolute', left: 150, top: 540, transform: `rotate(-9deg) scale(${0.5 + 0.5 * stamp})`, opacity: Math.min(1, stamp * 2), border: `10px solid ${th.hotBg}`, color: th.hotBg, padding: '8px 28px', fontFamily: fonts.heading, fontWeight: 400, fontSize: 84, letterSpacing: 6, background: 'rgba(233,226,210,0.9)'}}>
               DE-IDENTIFIED
             </div>
-            <SfxAt name="stamp" at={6 * fps} />
             <Tag text="The dates · still attached" appearAt={10 * fps} x={1010} y={600} size={36} />
             <Tag text="The doctors' notes · still attached" appearAt={12 * fps} x={1010} y={730} size={30} />
           </>
@@ -338,17 +343,17 @@ export const SceneAnon: React.FC = () => {
 
 // 15 — "…a dated, annotated medical file does not stay anonymous for long."
 export const SceneFile: React.FC = () => {
-  const {frame, fps} = useT('act2');
+  const {fps} = useT('act2');
   return (
     <Shell theme="paper">
       <LayeredScene
-        back={<RedDisc x={1300} y={600} r={330} appearAt={2} shape="block" />}
-        mid={<HalftoneImage name="notes" x={700} y={230} width={1150} reveal={reveal(frame)} />}
+        back={<RedDisc x={1340} y={560} r={330} appearAt={2} shape="ring" />}
+        mid={<MapsRoute x={960} y={200} w={880} h={600} drawAt={2.4 * fps} />}
         fore={
           <>
             <Tag text="Already knows where you were" appearAt={0.8 * fps} x={110} y={90} size={38} />
-            <KineticText lines={[['A', 'dated,'], ['annotated'], ['file']]} x={110} y={230} size={96} startAt={2.2 * fps} stagger={9} hot={[]} />
-            <Tag text="Not anonymous for long" appearAt={7.5 * fps} x={110} y={760} fill size={52} />
+            <KineticText lines={[['A', 'dated,'], ['annotated'], ['file']]} x={110} y={230} size={92} startAt={2.2 * fps} stagger={9} hot={[]} />
+            <Tag text="Not anonymous for long" appearAt={7.5 * fps} x={110} y={780} fill size={38} />
           </>
         }
       />
@@ -357,20 +362,16 @@ export const SceneFile: React.FC = () => {
 };
 
 // 16 — PICO (vermelho): "The patients were never asked."
-export const SceneNever: React.FC = () => {
-  const {frame} = useT('act2');
-  return (
-    <Shell theme="red">
-      <LayeredScene
-        back={<RedDisc x={1500} y={640} r={330} appearAt={2} />}
-        mid={<HalftoneImage name="person" x={1230} y={230} width={540} reveal={reveal(frame, 4, 30)} />}
-        fore={
-          <>
-            <KineticText lines={[['The', 'patients'], ['were', 'never'], ['asked.']]} x={110} y={170} size={130} startAt={4} stagger={9} hot={['asked.']} />
-            <SfxAt name="hit" at={4 + 4 * 9} />
-          </>
-        }
-      />
-    </Shell>
-  );
-};
+export const SceneNever: React.FC = () => (
+  <Shell theme="red">
+    <LayeredScene
+      mid={<ConsentForm x={1080} y={130} w={700} h={800} />}
+      fore={
+        <>
+          <KineticText lines={[['The', 'patients'], ['were', 'never'], ['asked.']]} x={110} y={170} size={118} startAt={4} stagger={9} hot={['asked.']} />
+          <SfxAt name="hit" at={4 + 4 * 9} />
+        </>
+      }
+    />
+  </Shell>
+);

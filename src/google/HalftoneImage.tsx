@@ -35,8 +35,15 @@ export const HalftoneImage: React.FC<Props> = ({name, x, y, width, reveal = 1, o
   // flutuação lenta (profundidade) — o recorte "respira" ao de leve
   const floatY = Math.sin(frame / 55) * 6;
   const tilt = Math.sin(frame / 90) * 0.35;
+  // pulsação do halftone (pontos engordam e emagrecem) e reflexo que varre o recorte
+  const pulse = 0.5 + 0.5 * Math.sin(frame / 26 + name.length);
+  const sweep = ((frame + name.length * 40) % 210) / 210; // 0–1 a cada 7 s
+  const sweepX = -60 + sweep * 220;
+  // paralaxe: sombra vermelha e contorno deslizam ao contrário do recorte
+  const par = Math.sin(frame / 55) * 5;
   const height = (ih / iw) * width;
   const dots = staticFile(`google/ht/${name}.png`);
+  const bold = staticFile(`google/ht/${name}-bold.png`);
   const mask = staticFile(`google/ht/${name}-mask.png`);
   const outline = staticFile(`google/ht/${name}-outline.png`);
   const masked = (bg: string, dx = 0, dy = 0, m = mask): React.CSSProperties => ({
@@ -67,7 +74,7 @@ export const HalftoneImage: React.FC<Props> = ({name, x, y, width, reveal = 1, o
       {/* sombra vermelha deslocada → contorno branco (sticker) → base preta → pontos */}
       {/* as camadas deslocadas ficam recortadas aos limites da imagem: sem barras soltas nas bordas */}
       <div style={{position: 'absolute', inset: 0, overflow: 'hidden'}}>
-        <div style={masked(colors.red, outlineOffset[0], outlineOffset[1], outline)} />
+        <div style={masked(colors.red, outlineOffset[0] - par, outlineOffset[1] + par * 0.6, outline)} />
       </div>
       <div style={{position: 'absolute', inset: 0, overflow: 'hidden'}}>
         <div style={masked(colors.white, 0, 0, outline)} />
@@ -76,6 +83,9 @@ export const HalftoneImage: React.FC<Props> = ({name, x, y, width, reveal = 1, o
       <Img src={mask} style={{position: 'absolute', width: 1, height: 1, opacity: 0}} />
       <Img src={outline} style={{position: 'absolute', width: 1, height: 1, opacity: 0}} />
       <Img src={dots} style={{position: 'absolute', inset: 0, width, height}} />
+      <Img src={bold} style={{position: 'absolute', inset: 0, width, height, opacity: pulse * 0.55}} />
+      {/* reflexo diagonal a varrer a silhueta */}
+      <div style={{...masked('transparent'), background: `linear-gradient(105deg, transparent ${sweepX - 14}%, rgba(255,255,255,0.55) ${sweepX}%, transparent ${sweepX + 14}%)`, mixBlendMode: 'soft-light'}} />
     </div>
   );
 };

@@ -102,26 +102,32 @@ def build(name, fname, width, cell, model, matting):
     lo, hi = np.percentile(vals, 2), np.percentile(vals, 98)
     norm = np.clip((lum - lo) / max(hi - lo, 1e-3), 0, 1)
 
-    canvas = Image.new('L', (width * S, h * S), 0)
-    d = ImageDraw.Draw(canvas)
     cos, sin = np.cos(ANGLE), np.sin(ANGLE)
     diag = int(np.hypot(width, h)) + cell * 2
-    for gy in range(-diag, diag, cell):
-        for gx in range(-diag, diag, cell):
-            cx = width / 2 + gx * cos - gy * sin
-            cy = h / 2 + gx * sin + gy * cos
-            ix, iy = int(cx), int(cy)
-            if ix < 0 or iy < 0 or ix >= width or iy >= h or not inner[iy, ix]:
-                continue
-            l = float(norm[max(iy - 2, 0):iy + 3, max(ix - 2, 0):ix + 3].mean())
-            r = cell / 2 * 1.12 * np.sqrt(0.10 + 0.90 * l ** 1.4)
-            if r < 0.5:
-                continue
-            d.ellipse([(cx - r) * S, (cy - r) * S, (cx + r) * S, (cy + r) * S], fill=255)
-    a = np.asarray(canvas.resize((width, h), Image.LANCZOS), dtype=np.float32) / 255.0
-    out = Image.new('RGBA', (width, h), (255, 255, 255, 255))
-    out.putalpha(Image.fromarray((a * 255).astype(np.uint8)))
-    out.save(f'{OUT}/{name}.png', optimize=True)
+
+    def dots(scale, path):
+        canvas = Image.new('L', (width * S, h * S), 0)
+        d = ImageDraw.Draw(canvas)
+        for gy in range(-diag, diag, cell):
+            for gx in range(-diag, diag, cell):
+                cx = width / 2 + gx * cos - gy * sin
+                cy = h / 2 + gx * sin + gy * cos
+                ix, iy = int(cx), int(cy)
+                if ix < 0 or iy < 0 or ix >= width or iy >= h or not inner[iy, ix]:
+                    continue
+                l = float(norm[max(iy - 2, 0):iy + 3, max(ix - 2, 0):ix + 3].mean())
+                r = cell / 2 * 1.12 * scale * np.sqrt(0.10 + 0.90 * l ** 1.4)
+                r = min(r, cell * 0.62)
+                if r < 0.5:
+                    continue
+                d.ellipse([(cx - r) * S, (cy - r) * S, (cx + r) * S, (cy + r) * S], fill=255)
+        a = np.asarray(canvas.resize((width, h), Image.LANCZOS), dtype=np.float32) / 255.0
+        out = Image.new('RGBA', (width, h), (255, 255, 255, 255))
+        out.putalpha(Image.fromarray((a * 255).astype(np.uint8)))
+        out.save(path, optimize=True)
+
+    dots(1.0, f'{OUT}/{name}.png')
+    dots(1.28, f'{OUT}/{name}-bold.png')
     print(name, f'{width}x{h}', f'cobertura {hard.mean():.0%}', model, 'matting' if matting else '')
 
 
