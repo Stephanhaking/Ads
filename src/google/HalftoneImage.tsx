@@ -6,18 +6,11 @@ import {useCurrentFrame} from '../timeline';
 // Foto halftone (gerada por tools/make_halftone.py) com traço vermelho deslocado atrás.
 // Quatro camadas: sombra vermelha deslocada → contorno branco → base preta → pontos brancos.
 
-export type PicName = 'hospital' | 'records' | 'doctor' | 'paper' | 'screen' | 'exterior' | 'person' | 'notes';
+import sizes from './picSizes.json';
 
-const SIZE: Record<PicName, [number, number]> = {
-  hospital: [1400, 933],
-  records: [1400, 933],
-  doctor: [900, 1350],
-  paper: [1400, 933],
-  screen: [1400, 933],
-  exterior: [1400, 933],
-  person: [900, 1350],
-  notes: [1400, 933],
-};
+export type PicName = string;
+
+const SIZE = sizes as unknown as Record<string, [number, number]>;
 
 type Props = {
   name: PicName;
@@ -31,7 +24,7 @@ type Props = {
 
 export const HalftoneImage: React.FC<Props> = ({name, x, y, width, reveal = 1, opacity = 1, outlineOffset = [-18, 16]}) => {
   const frame = useCurrentFrame();
-  const [iw, ih] = SIZE[name];
+  const [iw, ih] = SIZE[name] ?? [1400, 933];
   // flutuação lenta (profundidade) — o recorte "respira" ao de leve
   const floatY = Math.sin(frame / 55) * 6;
   const tilt = Math.sin(frame / 90) * 0.35;

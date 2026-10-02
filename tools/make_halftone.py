@@ -6,8 +6,12 @@ cortados rente à silhueta. Saídas em public/google/ht/:
   <nome>-mask.png     silhueta suave
   <nome>-outline.png  silhueta dilatada (contorno branco/vermelho estilo sticker)
 
-Uso: python3 tools/make_halftone.py   (pip install pillow numpy scipy rembg onnxruntime)
+Uso: python3 tools/make_halftone.py [nome ...]   (pip install pillow numpy scipy rembg onnxruntime)
 """
+import json
+import os
+import sys
+
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 from scipy import ndimage as ndi
@@ -19,19 +23,54 @@ S = 3          # supersampling dos pontos
 OUTLINE = 11   # espessura do contorno sticker (px, na resolução de saída)
 INSET = 3      # os pontos ficam a esta distância (px) da fronteira
 ANGLE = np.deg2rad(45)
+SIZES = 'src/google/picSizes.json'  # dimensões de cada halftone (lidas por HalftoneImage)
 
 # nome: (ficheiro, largura de saída, célula, modelo rembg, alpha matting)
 # FLOOD: imagens onde o rembg sozinho corta demasiado → une-se o recorte por limiar de branco (flood-fill).
 FLOOD = {'hospital': 0.965}
+# opções por imagem: crop='nonwhite' corta a moldura/margens brancas; rect=True usa a foto inteira (sem recorte).
+ISNET, U2, HUMAN = 'isnet-general-use', 'u2net', 'u2net_human_seg'
 IMAGES = {
-    'hospital': ('01-hospital.jpg', 1400, 7, 'isnet-general-use', False),
-    'records': ('02-records.jpg', 1400, 7, 'isnet-general-use', False),
-    'doctor': ('03-doctor.jpg', 900, 6, 'u2net_human_seg', True),
-    'paper': ('04-paper.jpg', 1400, 7, 'u2net', False),
-    'screen': ('05-screen.jpg', 1400, 7, 'isnet-general-use', False),
-    'exterior': ('06-exterior.jpg', 1400, 7, 'isnet-general-use', False),
-    'person': ('07-person.jpg', 900, 6, 'u2net_human_seg', True),
-    'notes': ('08-notes.jpg', 1400, 7, 'u2net', False),
+    'hospital': ('01-hospital.jpg', 1400, 7, ISNET, False, {}),
+    'records': ('02-records.jpg', 1400, 7, ISNET, False, {}),
+    'doctor': ('03-doctor.jpg', 900, 6, HUMAN, True, {}),
+    'paper': ('04-paper.jpg', 1400, 7, U2, False, {}),
+    'screen': ('05-screen.jpg', 1400, 7, ISNET, False, {}),
+    'exterior': ('06-exterior.jpg', 1400, 7, ISNET, False, {}),
+    'person': ('07-person.jpg', 900, 6, HUMAN, True, {}),
+    'notes': ('08-notes.jpg', 1400, 7, U2, False, {}),
+    # Ato III
+    'a3-office': ('a3-office.jpg', 1400, 7, ISNET, False, {}),
+    'a3-phone-scroll': ('a3-phone-scroll.jpg', 1400, 7, ISNET, False, {}),
+    'a3-banknotes': ('a3-banknotes.jpg', 1400, 7, ISNET, False, {}),
+    'a3-billboard': ('a3-billboard.jpg', 1400, 7, ISNET, False, {}),
+    # Ato IV
+    'a4-chess': ('a4-chess.jpg', 1400, 7, ISNET, False, {}),
+    'a4-bed-phone': ('a4-bed-phone.jpg', 900, 6, HUMAN, True, {}),
+    'a4-corridor': ('a4-corridor.jpg', 1100, 7, ISNET, False, {'rect': True, 'crop': 'nonwhite'}),
+    'a4-dial': ('a4-dial.jpg', 1400, 7, ISNET, False, {}),
+    # Ato V
+    'a5-teen-phone': ('a5-teen-phone.jpg', 900, 6, HUMAN, True, {}),
+    'a5-many-screens': ('a5-many-screens.jpg', 1400, 7, ISNET, False, {}),
+    'a5-projector': ('a5-projector.jpg', 1400, 7, ISNET, False, {}),
+    'a5-crowd-top': ('a5-crowd-top.jpg', 1400, 7, ISNET, False, {}),
+    'a5-clock': ('a5-clock.jpg', 1100, 7, ISNET, False, {}),
+    # Ato VI
+    'a6-hand-map': ('a6-hand-map.jpg', 1400, 7, ISNET, False, {}),
+    'a6-laptop': ('a6-laptop.jpg', 1400, 7, ISNET, False, {'rect': True}),
+    'a6-gavel': ('a6-gavel.jpg', 1400, 7, ISNET, False, {}),
+    'a6-courthouse': ('a6-courthouse.jpg', 1400, 7, ISNET, False, {}),
+    'a6-handshake': ('a6-handshake.jpg', 1400, 7, ISNET, False, {}),
+    'a6-vault': ('a6-vault.jpg', 1400, 7, ISNET, False, {}),
+    # Ato VII
+    'a7-window': ('a7-window.jpg', 900, 6, ISNET, False, {'rect': True}),
+    'a7-night-typing': ('a7-night-typing.jpg', 900, 6, HUMAN, True, {}),
+    'a7-hand-glass': ('a7-hand-glass.jpg', 1400, 7, ISNET, False, {}),
+    # Ato VIII
+    'a8-meter': ('a8-meter.jpg', 1100, 7, ISNET, False, {}),
+    'a8-walk-away': ('a8-walk-away.jpg', 900, 6, ISNET, False, {'rect': True}),
+    'a8-hospital-hall': ('a8-hospital-hall.jpg', 1400, 7, ISNET, False, {'rect': True, 'crop': 'nonwhite'}),
+    'a8-eye': ('a8-eye.jpg', 1400, 7, ISNET, False, {'rect': True}),
 }
 
 _sessions = {}
@@ -77,12 +116,37 @@ def cutout_mask(img, name, lum, model, matting):
     return soft, smooth
 
 
-def build(name, fname, width, cell, model, matting):
+PAD = 16  # margem branca à volta das fotos "retângulo", para o contorno sticker caber
+
+
+def crop_nonwhite(img, thr=244):
+    g = np.asarray(img.convert('L'))
+    ys, xs = np.where(g < thr)
+    if len(xs) == 0:
+        return img
+    return img.crop((int(xs.min()), int(ys.min()), int(xs.max()) + 1, int(ys.max()) + 1))
+
+
+def build(name, fname, width, cell, model, matting, opts=None):
+    opts = opts or {}
     src = Image.open(f'{SRC}/{fname}').convert('RGB')
+    if opts.get('crop') == 'nonwhite':
+        src = crop_nonwhite(src)
     h = round(src.height * width / src.width)
     src = src.resize((width, h), Image.LANCZOS)
-    lum = np.asarray(src.convert('L'), dtype=np.float32) / 255.0
-    mask, hard = cutout_mask(src, name, lum, model, matting)
+    if opts.get('rect'):
+        # foto inteira: margem branca à volta e máscara retangular (sem IA)
+        canvas = Image.new('RGB', (width + 2 * PAD, h + 2 * PAD), (255, 255, 255))
+        canvas.paste(src, (PAD, PAD))
+        src = canvas
+        width, h = src.size
+        lum = np.asarray(src.convert('L'), dtype=np.float32) / 255.0
+        hard = np.zeros((h, width), dtype=bool)
+        hard[PAD:h - PAD, PAD:width - PAD] = True
+        mask = ndi.gaussian_filter(hard.astype(np.float32), 0.8)
+    else:
+        lum = np.asarray(src.convert('L'), dtype=np.float32) / 255.0
+        mask, hard = cutout_mask(src, name, lum, model, matting)
 
     white = Image.new('RGBA', (width, h), (255, 255, 255, 255))
     white.putalpha(Image.fromarray((mask * 255).astype(np.uint8)))
@@ -128,9 +192,15 @@ def build(name, fname, width, cell, model, matting):
 
     dots(1.0, f'{OUT}/{name}.png')
     dots(1.28, f'{OUT}/{name}-bold.png')
-    print(name, f'{width}x{h}', f'cobertura {hard.mean():.0%}', model, 'matting' if matting else '')
+    sizes = json.load(open(SIZES)) if os.path.exists(SIZES) else {}
+    sizes[name] = [width, h]
+    json.dump(sizes, open(SIZES, 'w'), indent=1, sort_keys=True)
+    print(name, f'{width}x{h}', f'cobertura {hard.mean():.0%}', model, 'rect' if opts.get('rect') else ('matting' if matting else ''), flush=True)
 
 
 if __name__ == '__main__':
+    only = set(sys.argv[1:])  # python3 tools/make_halftone.py a8-eye a6-laptop → só esses
     for n, cfg in IMAGES.items():
+        if only and n not in only:
+            continue
         build(n, *cfg)
