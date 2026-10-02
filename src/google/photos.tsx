@@ -7,6 +7,7 @@ import {KineticText, RedDisc} from './Fx';
 import {Shell} from './scenes';
 import {Tag} from './Vox';
 import sizes from './picSizes.json';
+import bottomTouch from './picBottom.json';
 
 // Cenas de foto (halftone com contorno sticker): uma foto por ideia, usada uma só vez no vídeo.
 export type PhotoSpec = {
@@ -56,32 +57,55 @@ export const PHOTOS: Record<string, PhotoSpec> = {
 
 const SZ = sizes as unknown as Record<string, [number, number]>;
 
+const BOTTOM = new Set(bottomTouch as string[]);
+const RECT = (n: string) => ['a4-corridor', 'a5-crowd-top', 'a6-laptop', 'a7-window', 'a8-walk-away', 'a8-hospital-hall', 'a8-eye'].includes(n);
+
+// largura estimada de uma linha de texto em Archivo Black (maiúsculas)
+const lineW = (chars: number, size: number) => chars * size * 0.68;
+
 export const PhotoScene: React.FC<{name: string}> = ({name}) => {
   const spec = PHOTOS[name];
   const frame = useCurrentFrame();
   const [iw, ih] = SZ[name] ?? [1400, 933];
   const portrait = ih > iw;
-  // caixa máxima da foto
-  const maxW = portrait ? 620 : 1000;
-  const maxH = 800;
+  const touchesBottom = BOTTOM.has(name) && !RECT(name);
+
+  // caixa da foto
+  const maxW = portrait ? 620 : 900;
+  const maxH = touchesBottom ? 940 : 800;
   const w = Math.min(maxW, (iw / ih) * maxH);
   const h = (ih / iw) * w;
   const photoLeft = spec.side === 'left';
   const x = photoLeft ? 110 : 1920 - 110 - w;
-  const y = Math.round(540 - h / 2);
-  const textX = photoLeft ? 110 + w + 90 : 110;
+  const y = touchesBottom ? 1080 - h : Math.round(540 - h / 2); // fotos cortadas na base ancoram ao fundo do ecrã
+  const cy = y + h / 2;
+
+  // forma atrás: raio limitado, e o texto desvia-se dela
+  const r = spec.disc ? Math.min(Math.max(w, h) * 0.5, 420) : 0;
+  const shapeL = spec.disc ? Math.min(x, x + w / 2 - r) : x;
+  const shapeR = spec.disc ? Math.max(x + w, x + w / 2 + r) : x + w;
+  const textX = photoLeft ? shapeR + 70 : 110;
+  const availW = photoLeft ? 1920 - 110 - textX : shapeL - 70 - 110;
+
+  // título e legenda ajustam-se ao espaço livre
+  const longest = Math.max(...spec.kinetic.map((l) => l.join(' ').length));
+  const size = Math.min(spec.size ?? 96, availW / (longest * 0.68));
+  const tagN = spec.tag ? spec.tag.length : 0;
+  const tagSize = Math.min(32, availW / (0.78 * tagN + 1.2));
+  const blockH = spec.kinetic.length * size * 1.08 + (spec.tag ? 60 + tagSize * 1.7 : 0);
+  const ty = Math.max(120, Math.min(1080 - blockH - 120, 540 - blockH / 2));
   const reveal = interpolate(frame, [0, 22], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-  const size = spec.size ?? 96;
+  void lineW;
 
   return (
     <Shell theme={spec.theme} grain={0.6}>
       <LayeredScene
-        back={spec.disc ? <RedDisc x={x + w / 2} y={540} r={Math.max(w, h) * 0.52} appearAt={1} shape={spec.disc} /> : undefined}
+        back={spec.disc ? <RedDisc x={x + w / 2} y={cy} r={r} appearAt={1} shape={spec.disc} /> : undefined}
         mid={<HalftoneImage name={name} x={x} y={y} width={w} reveal={reveal} />}
         fore={
           <>
-            <KineticText lines={spec.kinetic} x={textX} y={380} size={size} startAt={4} stagger={7} hot={spec.hot ?? []} />
-            {spec.tag ? <Tag text={spec.tag} appearAt={22} x={textX} y={380 + spec.kinetic.length * size * 1.08 + 50} size={32} fill /> : null}
+            <KineticText lines={spec.kinetic} x={textX} y={ty} size={size} startAt={4} stagger={7} hot={spec.hot ?? []} />
+            {spec.tag ? <Tag text={spec.tag} appearAt={22} x={textX} y={ty + spec.kinetic.length * size * 1.08 + 50} size={tagSize} fill /> : null}
           </>
         }
       />

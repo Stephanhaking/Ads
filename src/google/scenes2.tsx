@@ -185,7 +185,7 @@ export const A4Fortune: React.FC = () => {
           <>
             <KineticText lines={[['Certainty'], ['is worth'], ['a fortune']]} x={110} y={180} size={104} startAt={1.4 * fps} stagger={9} hot={['fortune']} />
             <Tag text="The cheapest way to buy it" appearAt={4.6 * fps} x={110} y={640} size={36} />
-            <Tag text="Shape the behaviour you already sold" appearAt={6.1 * fps} x={110} y={760} fill size={36} />
+            <Tag text="Shape the behaviour you already sold" appearAt={5.4 * fps} x={110} y={760} fill size={36} />
           </>
         }
       />
@@ -307,7 +307,7 @@ export const A5Hours: React.FC = () => {
             <StatTile x={1250} y={560} w={560} big="FOR YOU" label="MOST OF IT WAS CHOSEN" at={6.4 * fps} tilt={-1} />
           </>
         }
-        fore={<Tag text="A system that learned one simple lesson" appearAt={6.6 * fps} x={110} y={820} fill size={34} />}
+        fore={<Tag text="A system that learned one simple lesson" appearAt={5.9 * fps} x={110} y={820} fill size={34} />}
       />
     </Shell>
   );
@@ -488,7 +488,7 @@ export const A6Default: React.FC = () => {
         fore={
           <>
             <Tag text="Where Google doesn’t own the window · it rents it" appearAt={0.2 * fps} x={110} y={90} size={32} />
-            <Tag text="The default on a phone it never made" appearAt={3.6 * fps} x={110} y={760} fill size={36} />
+            <Tag text="The default on a phone it never made" appearAt={2.4 * fps} x={110} y={760} fill size={36} />
           </>
         }
       />
@@ -507,8 +507,8 @@ export const A6Court: React.FC = () => {
             <Tag text="2024 · a court" appearAt={0.2 * fps} x={110} y={100} size={36} />
             <Tag text="the plainest word it had" appearAt={3.2 * fps} x={110} y={230} size={38} />
             <KineticText lines={[['Monopoly.'], ['Illegal.']]} x={110} y={380} size={130} startAt={7.2 * fps} stagger={14} hot={['Illegal.']} />
-            <Tag text="A company that had already won" appearAt={9.4 * fps} x={110} y={780} size={34} />
-            <Tag text="defending the win" appearAt={11.0 * fps} x={110} y={890} fill size={34} />
+            <Tag text="A company that had already won" appearAt={8.8 * fps} x={110} y={780} size={34} />
+            <Tag text="defending the win" appearAt={10.2 * fps} x={110} y={890} fill size={34} />
           </>
         }
       />
