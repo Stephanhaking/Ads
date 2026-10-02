@@ -40,31 +40,31 @@ IMAGES = {
     'person': ('07-person.jpg', 900, 6, HUMAN, True, {}),
     'notes': ('08-notes.jpg', 1400, 7, U2, False, {}),
     # Ato III
-    'a3-office': ('a3-office.jpg', 1400, 7, ISNET, False, {}),
-    'a3-phone-scroll': ('a3-phone-scroll.jpg', 1400, 7, ISNET, False, {}),
+    'a3-office': ('a3-office.jpg', 1400, 7, ISNET, False, {'flood': 0.96}),
+    'a3-phone-scroll': ('a3-phone-scroll.jpg', 1400, 7, ISNET, False, {'flood': 0.965}),
     'a3-banknotes': ('a3-banknotes.jpg', 1400, 7, ISNET, False, {}),
     'a3-billboard': ('a3-billboard.jpg', 1400, 7, ISNET, False, {}),
     # Ato IV
-    'a4-chess': ('a4-chess.jpg', 1400, 7, ISNET, False, {}),
-    'a4-bed-phone': ('a4-bed-phone.jpg', 900, 6, HUMAN, True, {}),
+    'a4-chess': ('a4-chess.jpg', 1400, 7, ISNET, False, {'flood': 0.96}),
+    'a4-bed-phone': ('a4-bed-phone.jpg', 900, 6, HUMAN, True, {'flood': 0.97}),
     'a4-corridor': ('a4-corridor.jpg', 1100, 7, ISNET, False, {'rect': True, 'crop': 'nonwhite'}),
     'a4-dial': ('a4-dial.jpg', 1400, 7, ISNET, False, {}),
     # Ato V
     'a5-teen-phone': ('a5-teen-phone.jpg', 900, 6, HUMAN, True, {}),
     'a5-many-screens': ('a5-many-screens.jpg', 1400, 7, ISNET, False, {}),
     'a5-projector': ('a5-projector.jpg', 1400, 7, ISNET, False, {}),
-    'a5-crowd-top': ('a5-crowd-top.jpg', 1400, 7, ISNET, False, {}),
+    'a5-crowd-top': ('a5-crowd-top.jpg', 1400, 7, ISNET, False, {'rect': True}),
     'a5-clock': ('a5-clock.jpg', 1100, 7, ISNET, False, {}),
     # Ato VI
-    'a6-hand-map': ('a6-hand-map.jpg', 1400, 7, ISNET, False, {}),
+    'a6-hand-map': ('a6-hand-map.jpg', 1400, 7, ISNET, False, {'flood': 0.965}),
     'a6-laptop': ('a6-laptop.jpg', 1400, 7, ISNET, False, {'rect': True}),
-    'a6-gavel': ('a6-gavel.jpg', 1400, 7, ISNET, False, {}),
-    'a6-courthouse': ('a6-courthouse.jpg', 1400, 7, ISNET, False, {}),
+    'a6-gavel': ('a6-gavel.jpg', 1400, 7, ISNET, False, {'flood': 0.94}),
+    'a6-courthouse': ('a6-courthouse.jpg', 1400, 7, ISNET, False, {'flood': 0.975}),
     'a6-handshake': ('a6-handshake.jpg', 1400, 7, ISNET, False, {}),
     'a6-vault': ('a6-vault.jpg', 1400, 7, ISNET, False, {}),
     # Ato VII
     'a7-window': ('a7-window.jpg', 900, 6, ISNET, False, {'rect': True}),
-    'a7-night-typing': ('a7-night-typing.jpg', 900, 6, HUMAN, True, {}),
+    'a7-night-typing': ('a7-night-typing.jpg', 900, 6, HUMAN, True, {'flood': 0.965}),
     'a7-hand-glass': ('a7-hand-glass.jpg', 1400, 7, ISNET, False, {}),
     # Ato VIII
     'a8-meter': ('a8-meter.jpg', 1100, 7, ISNET, False, {}),
@@ -91,7 +91,10 @@ def flood_mask(lum, thr):
     return ndi.binary_fill_holes(m)
 
 
-def cutout_mask(img, name, lum, model, matting):
+def cutout_mask(img, name, lum, model, matting, flood_only=None):
+    if flood_only:
+        a = ndi.gaussian_filter(flood_mask(lum, flood_only).astype(np.float32), 1.0)
+        return _finish(a)
     kw = dict(session=session_for(model), only_mask=True, post_process_mask=True)
     if matting:
         kw.update(alpha_matting=True, alpha_matting_foreground_threshold=235,
@@ -99,6 +102,10 @@ def cutout_mask(img, name, lum, model, matting):
     a = np.asarray(remove(img, **kw), dtype=np.float32) / 255.0
     if name in FLOOD:
         a = np.maximum(a, ndi.gaussian_filter(flood_mask(lum, FLOOD[name]).astype(np.float32), 1.0))
+    return _finish(a)
+
+
+def _finish(a):
     hard = a > 0.5
     # fragmentos soltos (< 0.3%) e buracos pequenos (< 0.3%)
     lab, n = ndi.label(hard)
@@ -146,7 +153,7 @@ def build(name, fname, width, cell, model, matting, opts=None):
         mask = ndi.gaussian_filter(hard.astype(np.float32), 0.8)
     else:
         lum = np.asarray(src.convert('L'), dtype=np.float32) / 255.0
-        mask, hard = cutout_mask(src, name, lum, model, matting)
+        mask, hard = cutout_mask(src, name, lum, model, matting, opts.get('flood'))
 
     white = Image.new('RGBA', (width, h), (255, 255, 255, 255))
     white.putalpha(Image.fromarray((mask * 255).astype(np.uint8)))
