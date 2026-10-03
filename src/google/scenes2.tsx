@@ -480,8 +480,8 @@ export const A6Apparatus: React.FC = () => {
         mid={<InstalledWindows x={830} y={170} at={[w('the search box'), w('the browser'), w('the phone'), w('the map')]} />}
         fore={
           <>
-            <KineticText lines={[['Hands'], ['on the wheel']]} x={110} y={150} size={92} times={T('hands', 'on the wheel')} hot={['wheel']} />
-            <Tag text="You fitted most of them yourself" appearAt={w('you fitted')} x={110} y={470} fill size={36} />
+            <KineticText lines={[['Hands'], ['on the wheel']]} x={110} y={150} size={76} times={T('hands', 'on the wheel')} hot={['wheel']} />
+            <Tag text="You fitted most of them yourself" appearAt={w('you fitted')} x={110} y={470} fill size={29} />
             <Tag text="7 in 10 screens" appearAt={w('on roughly seven')} x={110} y={660} size={36} />
             <Tag text="7 in 10 handsets on Earth" appearAt={w('on seven in ten handsets')} x={110} y={780} size={36} />
             <Tag text="The map keeps the history" appearAt={w('keeps the history')} x={110} y={900} size={32} />

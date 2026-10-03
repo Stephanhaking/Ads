@@ -394,12 +394,12 @@ export const SceneFile: React.FC = () => {
     <Shell theme="paper" grain={0.3}>
       <LayeredScene
         back={<RedDisc x={1500} y={880} r={300} appearAt={2} shape="ring" />}
-        mid={<MapsApp x={680} y={150} w={1200} h={800} startAt={2.2 * fps} />}
+        mid={<MapsApp x={740} y={150} w={1140} h={780} startAt={2.2 * fps} />}
         fore={
           <>
             <Tag text="Already knows where you were" appearAt={0.8 * fps} x={110} y={90} size={38} />
             <KineticText lines={[['A', 'dated,'], ['annotated'], ['file']]} x={110} y={230} size={74} startAt={2.2 * fps} stagger={9} hot={[]} />
-            <Tag text="Not anonymous for long" appearAt={7.5 * fps} x={110} y={780} fill size={32} />
+            <Tag text="Not anonymous for long" appearAt={7.5 * fps} x={110} y={780} fill size={28} />
           </>
         }
       />
@@ -419,7 +419,7 @@ export const SceneNever: React.FC = () => (
       }
       fore={
         <>
-          <KineticText lines={[['The', 'patients'], ['were', 'never'], ['asked.']]} x={110} y={170} size={118} startAt={4} stagger={9} hot={['asked.']} />
+          <KineticText lines={[['The', 'patients'], ['were', 'never'], ['asked.']]} x={110} y={170} size={98} startAt={4} stagger={9} hot={['asked.']} />
           <SfxAt name="hit" at={4 + 4 * 9} />
         </>
       }
