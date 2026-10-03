@@ -38,8 +38,9 @@ export const Ring: React.FC<{cx: number; cy: number; r: number; pct: number; at:
   const p = interpolate(f - at, [0, 40], [0, 1], {...clampOpts, easing: easeIO});
   const C = 2 * Math.PI * r;
   const shown = Math.round(pct * p);
+  const vis = interpolate(f - at, [-2, 6], [0, 1], clampOpts); // só aparece quando a voz chega a esse número
   return (
-    <div style={{position: 'absolute', left: cx - r - width, top: cy - r - width, width: (r + width) * 2, height: (r + width) * 2}}>
+    <div style={{position: 'absolute', left: cx - r - width, top: cy - r - width, width: (r + width) * 2, height: (r + width) * 2, opacity: vis, transform: `scale(${0.92 + 0.08 * vis})`}}>
       <svg width={(r + width) * 2} height={(r + width) * 2} style={{overflow: 'visible'}}>
         <circle cx={r + width} cy={r + width} r={r} fill="none" stroke={track} strokeWidth={width} />
         <circle cx={r + width} cy={r + width} r={r} fill="none" stroke={color} strokeWidth={width} strokeLinecap="butt" strokeDasharray={C} strokeDashoffset={C * (1 - (pct / 100) * p)} transform={`rotate(-90 ${r + width} ${r + width})`} />
@@ -276,7 +277,7 @@ export const NudgeTrio: React.FC<{x: number; y: number; at: number[]}> = ({x, y,
 // ── Etiquetas de preço: precisão vs. certeza ──
 export const PriceTags: React.FC<{x: number; y: number; at: number}> = ({x, y, at}) => {
   const a = useIn(at, 14);
-  const b = useIn(at + 22, 14);
+  const b = useIn(at + 12, 14);
   return (
     <>
       <div style={{position: 'absolute', left: x, top: y, opacity: a, transform: `rotate(-4deg) translateY(${(1 - a) * 30}px)`}}>

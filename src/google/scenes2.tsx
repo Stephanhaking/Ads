@@ -183,9 +183,8 @@ export const A4Fortune: React.FC = () => {
         mid={<PriceTags x={880} y={380} at={0.2 * fps} />}
         fore={
           <>
-            <KineticText lines={[['Certainty'], ['is worth'], ['a fortune']]} x={110} y={180} size={104} startAt={1.4 * fps} stagger={9} hot={['fortune']} />
-            <Tag text="The cheapest way to buy it" appearAt={4.6 * fps} x={110} y={640} size={36} />
-            <Tag text="Shape the behaviour you already sold" appearAt={5.4 * fps} x={110} y={760} fill size={36} />
+            <KineticText lines={[['Certainty'], ['is worth'], ['a fortune']]} x={110} y={180} size={104} startAt={0} stagger={5} hot={['fortune']} />
+            <Tag text="The cheapest way to buy it" appearAt={2.0 * fps} x={110} y={640} size={36} />
           </>
         }
       />
@@ -198,12 +197,12 @@ export const A4Loop: React.FC = () => {
   return (
     <Shell theme="paper" grain={0.3}>
       <LayeredScene
-        mid={<LoopDiagram cx={1400} cy={540} r={250} at={5.3 * fps} />}
+        mid={<LoopDiagram cx={1400} cy={540} r={250} at={5.6 * fps} />}
         fore={
           <>
             <Tag text="From watching to steering" appearAt={0.2 * fps} x={110} y={90} size={36} />
-            <KineticText lines={[['Predict.'], ['Nudge.'], ['Confirm.']]} x={110} y={230} size={104} startAt={5.8 * fps} stagger={12} hot={[]} />
-            <KineticText lines={[['Nobody chose this.'], ['The incentive did.']]} x={110} y={700} size={62} startAt={10.9 * fps} stagger={20} hot={['did.']} />
+            <KineticText lines={[['Predict.'], ['Nudge.'], ['Confirm.']]} x={110} y={230} size={104} startAt={5.75 * fps} stagger={27} hot={[]} />
+            <KineticText lines={[['Nobody chose this.'], ['The incentive did.']]} x={110} y={700} size={62} startAt={12.8 * fps} stagger={46} hot={['did.']} />
           </>
         }
       />
@@ -233,7 +232,7 @@ export const A5Open: React.FC = () => {
 export const A5Question: React.FC = () => {
   const {frame, fps} = useT('a5a');
   const cross = interpolate(frame, [2.4 * fps, 3.0 * fps], [0, 1], clamp);
-  const wt = interpolate(frame, [5.4 * fps, 8.2 * fps], [0, 1], {...clamp, easing: EASE_OUT});
+  const wt = interpolate(frame, [6.2 * fps, 8.7 * fps], [0, 1], {...clamp, easing: EASE_OUT});
   const th = useTheme();
   return (
     <Shell theme="paper" grain={0.3}>
@@ -259,14 +258,14 @@ export const A5Question: React.FC = () => {
         }
         fore={
           <>
-            <Card x={1250} y={190} w={560} at={5.4 * fps} tilt={2} bg="#fff" pad={0}>
+            <Card x={1250} y={190} w={560} at={6.1 * fps} tilt={2} bg="#fff" pad={0}>
               <div style={{padding: '26px 34px'}}>
                 <div style={{fontFamily: fonts.mono, fontSize: 18, letterSpacing: 4, color: '#80868B'}}>ONE NUMBER</div>
                 <div style={{fontFamily: fonts.heading, fontSize: 76, color: '#202124', marginTop: 6}}>WATCH TIME</div>
                 <div style={{fontFamily: fonts.mono, fontSize: 52, color: RED, marginTop: 10}}>{Math.floor(wt * 4)}h {String(Math.floor(wt * 3600) % 60).padStart(2, '0')}m ▲</div>
               </div>
             </Card>
-            <Tag text="And it worked" appearAt={6.7 * fps} x={1250} y={560} fill size={44} />
+            <Tag text="And it worked" appearAt={9.8 * fps} x={1250} y={560} fill size={44} />
           </>
         }
       />
@@ -279,13 +278,13 @@ export const A5Seventy: React.FC = () => {
   return (
     <Shell theme="red" grain={0.3}>
       <LayeredScene
-        mid={<Ring cx={1380} cy={520} r={250} pct={70} at={0.8 * fps} color={RED} track="#202124" label="RECOMMENDED" sub="what the machine plays next" width={56} dark />}
+        mid={<Ring cx={1380} cy={520} r={250} pct={70} at={1.7 * fps} color={RED} track="#202124" label="RECOMMENDED" sub="what the machine plays next" width={56} dark />}
         fore={
           <>
             <Tag text="By the company’s own account" appearAt={0.2 * fps} x={110} y={100} size={34} />
-            <KineticText lines={[['Seventy'], ['per cent']]} x={110} y={230} size={118} startAt={1.0 * fps} stagger={10} hot={['cent']} />
-            <Tag text="of everything watched on YouTube" appearAt={4.0 * fps} x={110} y={600} size={36} />
-            <Tag text="not from anything anyone searched" appearAt={7.0 * fps} x={110} y={730} fill size={34} />
+            <KineticText lines={[['Seventy'], ['per cent']]} x={110} y={230} size={118} startAt={1.7 * fps} stagger={6} hot={['cent']} />
+            <Tag text="of everything watched on YouTube" appearAt={2.6 * fps} x={110} y={600} size={36} />
+            <Tag text="not from anything anyone searched" appearAt={6.3 * fps} x={110} y={730} fill size={34} />
           </>
         }
       />
