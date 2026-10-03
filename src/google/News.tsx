@@ -11,12 +11,16 @@ export const NewsPreroll: React.FC = () => {
   const f = useRealFrame();
   const {fps, durationInFrames} = useRealConfig();
   const t = f / fps;
-  const push = interpolate(f, [0, durationInFrames], [1, 1.07], clamp);
-  const vol = interpolate(f, [0, 0.3 * fps, durationInFrames - 0.5 * fps, durationInFrames], [0, 1, 1, 0], clamp);
+  const push = interpolate(f, [0, durationInFrames], [1, 1.16], clamp);
+  const vol = interpolate(f, [0, 0.3 * fps, durationInFrames - 1.1 * fps, durationInFrames - 0.4 * fps], [0, 1, 1, 0], clamp);
+  // nos últimos 2 s a notícia "transforma-se" no estilo do filme: p&b, trama de halftone e tinta vermelha
+  const k = interpolate(f, [durationInFrames - 2.2 * fps, durationInFrames - 0.3 * fps], [0, 1], {...clamp, easing: Easing.inOut(Easing.cubic)});
   return (
     <div style={{position: 'absolute', inset: 0, background: '#000', overflow: 'hidden'}}>
       <div style={{position: 'absolute', inset: 0, transform: `scale(${push})`}}>
-        <OffthreadVideo src={staticFile('google/news/kgun.mp4')} volume={vol} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+        <OffthreadVideo src={staticFile('google/news/kgun.mp4')} volume={vol} style={{width: '100%', height: '100%', objectFit: 'cover', filter: `grayscale(${k * 0.9}) contrast(${1 + k * 0.15}) brightness(${1 - k * 0.12})`}} />
+        <div style={{position: 'absolute', inset: 0, opacity: k, backgroundImage: 'radial-gradient(circle, rgba(0,0,0,0.55) 1.4px, transparent 1.9px)', backgroundSize: '8px 8px', mixBlendMode: 'multiply'}} />
+        <div style={{position: 'absolute', inset: 0, background: '#E5232B', opacity: k * 0.4, mixBlendMode: 'multiply'}} />
       </div>
       <PrerollTag at={1.0 * fps} />
       <div style={{position: 'absolute', inset: 0, boxShadow: 'inset 0 0 220px rgba(0,0,0,0.55)'}} />
