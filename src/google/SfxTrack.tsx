@@ -19,6 +19,10 @@ const SAMPLES: Record<string, Sample> = {
   paperSlide: {file: 'paper-slide', peak: 0.33, vol: 1},
   writing: {file: 'writing', peak: 0.1, vol: 0.5},
   pop: {file: 'pop2', peak: 0.03, vol: 0.3},
+  heart: {file: 'heart', peak: 0.4, vol: 0.5},
+  riserHit: {file: 'riserhit', peak: 1.81, vol: 0.55},
+  impact: {file: 'impact', peak: 0.07, vol: 0.55},
+  stamp: {file: 'stamp-real', peak: 0.2, vol: 0.7},
 };
 type Cue = {t: number; sound: string; level: string; where: string};
 type Play = {at: number; s: Sample; vol: number};
@@ -29,6 +33,10 @@ const plan = (): Play[] => {
   let alt = 0;
   for (const c of cues as Cue[]) {
     const snd = c.sound.split('+')[0];
+    if (c.sound === 'RISER+IMPACT') {
+      out.push({at: c.t - SAMPLES.riserHit.peak, s: SAMPLES.riserHit, vol: 1});
+      continue;
+    }
     if (snd === 'WHOOSH') {
       const peak = c.t + 0.15; // o mapa marca o início do wipe; o pico cai no corte
       if (peak - lastWhoosh < 1.2) continue; // máx. 1 whoosh por 1,2 s
@@ -45,7 +53,11 @@ const plan = (): Play[] => {
     else if (snd === 'PAPER_SLIDE' || snd === 'PAPER') out.push({at: c.t - SAMPLES.paperSlide.peak, s: SAMPLES.paperSlide, vol: 1});
     else if (snd === 'WRITING') out.push({at: c.t - SAMPLES.writing.peak, s: SAMPLES.writing, vol: 1});
     else if (snd === 'POP') out.push({at: c.t - SAMPLES.pop.peak, s: SAMPLES.pop, vol: 1});
-    // IMPACT, STAMP, TICK, MONITOR, DRONE: à espera de ficheiros reais
+    else if (snd === 'IMPACT' || snd === 'SILENCIO_DEPOIS_IMPACT') out.push({at: c.t - SAMPLES.impact.peak, s: SAMPLES.impact, vol: c.level === 'forte' ? 1.1 : 0.7});
+    else if (snd === 'STAMP') out.push({at: c.t - SAMPLES.stamp.peak, s: SAMPLES.stamp, vol: 1});
+    else if (snd === 'AMBIENTE_MONITOR') out.push({at: c.t - SAMPLES.heart.peak, s: SAMPLES.heart, vol: 0.45});
+    else if (snd === 'BEEP_MONITOR') out.push({at: c.t - SAMPLES.heart.peak, s: SAMPLES.heart, vol: 1});
+    // TICK, DRONE: à espera de ficheiros reais
   }
   return out;
 };
