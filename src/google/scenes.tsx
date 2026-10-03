@@ -8,6 +8,7 @@ import {EASE_OUT} from './motion';
 import {Connector, Flash, Grain, KineticText, RedDisc, useShake} from './Fx';
 import {ClimaxChart} from './ClimaxChart';
 import {scaleFor} from './timing';
+import {RealShot} from './News';
 import {ThemeName, ThemeProvider, useTheme} from './theme';
 import {DotField, SearchBar, Wordmark} from './brand/Brand';
 import {ArticlePage, BrowserWindow, Cursor, DocFlow, HandCircle, ReadingsGrid, ScribbleUnderline} from './doc/Doc';
@@ -154,27 +155,38 @@ export const SceneClimax: React.FC = () => (
   </Shell>
 );
 
-// 5 (0:46–0:54) — publicado numa revista médica.
+// 5 (0:46–0:54) — publicado numa revista médica: notícias reais (capturas de ecrã) com destaque.
 export const ScenePaper: React.FC = () => {
   const {fps} = useT('cold');
+  const f = useCurrentFrame();
+  const swap = interpolate(f, [3.0 * fps, 3.0 * fps + 10], [0, 1], clamp);
+  const swap2 = interpolate(f, [5.6 * fps, 5.6 * fps + 10], [0, 1], clamp);
   return (
     <Shell theme="paper" grain={0.3}>
       <LayeredScene
         back={<RedDisc x={1300} y={600} r={330} appearAt={2} shape="block" />}
         mid={
           <>
-            <BrowserWindow x={720} y={150} w={1140} h={800} url="nature.com › npj Digital Medicine" tab="Scalable and accurate deep learning for electronic health records" at={0.4 * fps}>
-              <ArticlePage hlAt={3.2 * fps} />
-            </BrowserWindow>
-            <HandCircle cx={1010} cy={382} rx={330} ry={56} at={4.6 * fps} />
-            <Cursor path={[[1560, 760, 1.6 * fps], [1250, 400, 3.2 * fps], [1236, 392, 3.5 * fps]]} />
+            <div style={{opacity: 1 - swap}}>
+              <RealShot src="google/news/fierce-head.png" x={780} y={170} w={1080} crop={{x: 236, y: 150, w: 1100, h: 430}} at={0.4 * fps} tilt={-1}
+                hl={[{rect: {x: 1025, y: 280, w: 140, h: 62}, at: 1.6 * fps}, {rect: {x: 262, y: 360, w: 280, h: 62}, at: 1.9 * fps}]} />
+            </div>
+            <div style={{opacity: swap * (1 - swap2)}}>
+              <RealShot src="google/news/fierce-body.png" x={780} y={170} w={1080} crop={{x: 236, y: 215, w: 1100, h: 460}} at={3.0 * fps} tilt={0.8}
+                hl={[{rect: {x: 262, y: 441, w: 1070, h: 40}, at: 3.7 * fps}, {rect: {x: 262, y: 521, w: 1070, h: 80}, at: 4.5 * fps, color: '#FFB3B3'}]} />
+            </div>
+            <div style={{opacity: swap2}}>
+              <RealShot src="google/news/dive.png" x={780} y={170} w={1080} crop={{x: 300, y: 130, w: 820, h: 420}} at={5.6 * fps} tilt={-0.6}
+                hl={[{rect: {x: 330, y: 235, w: 740, h: 150}, at: 6.2 * fps}]} />
+            </div>
           </>
         }
         fore={
           <>
             <KineticText lines={[['Published'], ['in a medical'], ['journal']]} x={110} y={120} size={68} startAt={6} stagger={9} hot={[]} />
-            <Tag text="Nature" appearAt={3.4 * fps} x={110} y={640} size={52} />
-            <Tag text="May 2018" appearAt={4.6 * fps} x={110} y={790} fill size={52} />
+            <Tag text="npj Digital Medicine" appearAt={3.2 * fps} x={110} y={640} size={44} />
+            <Tag text="95% vs 85%" appearAt={4.4 * fps} x={110} y={760} fill size={48} />
+            <Tag text="Fierce Biotech · Healthcare Dive" appearAt={0.5 * fps} x={110} y={900} size={26} />
           </>
         }
       />

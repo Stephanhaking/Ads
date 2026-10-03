@@ -21,6 +21,7 @@ import * as A from './google/scenes2';
 import {Flash, RedWipe} from './google/Fx';
 import {PhotoScene} from './google/photos';
 import {FrameOffset} from './timeline';
+import {NewsPreroll, PREROLL_SEC} from './google/News';
 import {BeatProvider} from './google/beat';
 import {wordTime} from './google/words';
 import {SFX_ENABLED, SFX_VOLUME} from './google/motion';
@@ -102,7 +103,8 @@ export const SEGMENTS: Segment[] = GG_BEATS.flatMap((b): Segment[] => {
   return out;
 });
 
-export const GG_TOTAL = s(GG_BEATS[GG_BEATS.length - 1].to); // fim da última cena, já re-mapeado para a locução
+const PRE = Math.round(PREROLL_SEC * FPS); // gancho: notícia real antes da locução
+export const GG_TOTAL = PRE + s(GG_BEATS[GG_BEATS.length - 1].to); // fim da última cena, já re-mapeado para a locução
 
 // Música de fundo: volume baixo, com fade de entrada e saída.
 const Music: React.FC = () => {
@@ -132,6 +134,10 @@ const Voice: React.FC = () => {
 
 export const GoogleVideo: React.FC = () => (
   <AbsoluteFill style={{backgroundColor: colors.black}}>
+    <Sequence name="news-preroll" from={0} durationInFrames={PRE}>
+      <NewsPreroll />
+    </Sequence>
+    <Sequence name="film" from={PRE}>
     <Voice />
     <Music />
     {SEGMENTS.map((g) => {
@@ -160,5 +166,9 @@ export const GoogleVideo: React.FC = () => (
         </Sequence>
       ),
     )}
+    </Sequence>
+    <Sequence name="wipe-into-film" from={PRE - FPS * 0.3} durationInFrames={FPS * 0.6}>
+      <RedWipe />
+    </Sequence>
   </AbsoluteFill>
 );
