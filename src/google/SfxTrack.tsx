@@ -23,7 +23,7 @@ const SAMPLES: Record<string, Sample> = {
   riserHit: {file: 'riserhit', peak: 1.81, vol: 0.55},
   impact: {file: 'impact', peak: 0.07, vol: 0.55},
   stamp: {file: 'stamp-real', peak: 0.2, vol: 0.7},
-  tick: {file: 'tick-real', peak: 0.05, vol: 0.5},
+  tick: {file: 'tick-real', peak: 0.08, vol: 0.5},
   monitor: {file: 'monitor', peak: 0.1, vol: 0.45},
 };
 type Cue = {t: number; sound: string; level: string; where: string};
