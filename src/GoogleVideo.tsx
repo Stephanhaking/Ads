@@ -21,6 +21,8 @@ import * as A from './google/scenes2';
 import {Flash, RedWipe} from './google/Fx';
 import {PhotoScene} from './google/photos';
 import {FrameOffset} from './timeline';
+import {BeatProvider} from './google/beat';
+import {wordTime} from './google/words';
 import {SFX_ENABLED, SFX_VOLUME} from './google/motion';
 
 // Timecodes em segundos na timeline estimada; `s()` converte-os para o tempo real da locução
@@ -30,7 +32,7 @@ export const FPS = 60; // fps real do render (as animações correm numa escala 
 export const s = (sec: number) => Math.round(mapTime(sec) * FPS);
 
 type PhotoCut = {name: string; at: 'start' | 'end'; dur: number}; // dur em segundos (escala estimada = voz)
-type Beat = {id: string; from: number; to: number; Component: React.FC; photos?: PhotoCut[]};
+type Beat = {id: string; from: number; to: number; Component: React.FC; photos?: PhotoCut[]; par?: string; a?: number};
 const BEATS_1: Beat[] = [
   {id: 'hospital', from: 0, to: 16, Component: SceneHospital},
   {id: 'year', from: 16, to: 20.3, Component: SceneYear},
@@ -55,31 +57,47 @@ const nextStart = (id: string) => {
   const i = para(id);
   return i + 1 < PARAGRAPHS.length ? PARAGRAPHS[i + 1].estStart : PARAGRAPHS[i].estStart + PARAGRAPHS[i].estSec;
 };
-const mk = (id: string, par: string, a: number, b: number | 'end', Component: React.FC, photos?: PhotoCut[]): Beat => ({id, from: est(par, a), to: b === 'end' ? nextStart(par) : est(par, b), Component, photos});
+// a/b: segundos no parágrafo, ou uma frase (âncora em palavra: começa 0,15 s antes de ser dita).
+const at = (par: string, v: number | string) => (typeof v === 'number' ? v : wordTime(par, v) - 0.15);
+const mk = (id: string, par: string, a: number | string, b: number | string | 'end', Component: React.FC, photos?: PhotoCut[]): Beat => ({
+  id,
+  par,
+  a: at(par, a),
+  from: est(par, at(par, a)),
+  to: b === 'end' ? nextStart(par) : est(par, at(par, b)),
+  Component,
+  photos,
+});
 const P = (name: string, at: 'start' | 'end', dur: number): PhotoCut => ({name, at, dur});
 const BEATS_2: Beat[] = [
-  mk('a3-years', 'a3', 0, 8.5, A.A3Years, [P('a3-office', 'start', 5.0)]), mk('a3-measure', 'a3', 8.5, 20.6, A.A3Measure, [P('a3-phone-scroll', 'start', 6.1)]), mk('a3-bet', 'a3', 20.6, 34.1, A.A3Bet, [P('a3-billboard', 'start', 3.8)]), mk('a3-money', 'a3', 34.1, 42.2, A.A3Money, [P('a3-banknotes', 'start', 4.4)]), mk('a3-flow', 'a3', 42.2, 'end', A.A3Flow),
-  mk('a4-pred', 'a4', 0, 6.9, A.A4Prediction, [P('a4-dial', 'start', 4.6)]), mk('a4-certain', 'a4', 6.9, 17.0, A.A4Certain, [P('a4-chess', 'start', 4.6)]), mk('a4-nudges', 'a4', 17.0, 25.2, A.A4Nudges), mk('a4-fortune', 'a4', 25.2, 32.1, A.A4Fortune, [P('a4-corridor', 'end', 2.8)]), mk('a4-loop', 'a4', 32.1, 'end', A.A4Loop, [P('a4-bed-phone', 'start', 5.6)]),
-  mk('a5-open', 'a5a', 0, 13.0, A.A5Open, [P('a5-teen-phone', 'start', 7.2)]), mk('a5-question', 'a5a', 13.0, 24.1, A.A5Question), mk('a5-seventy', 'a5a', 24.1, 32.5, A.A5Seventy), mk('a5-hours', 'a5a', 32.5, 41.9, A.A5Hours, [P('a5-clock', 'start', 2.0), P('a5-many-screens', 'end', 2.5)]), mk('a5-autoplay', 'a5a', 41.9, 'end', A.A5Autoplay, [P('a5-crowd-top', 'end', 2.8)]),
-  mk('a5-ledger0', 'a5b', 0, 10.0, A.A5Ledger0), mk('a5-ledger1', 'a5b', 10.0, 22.9, A.A5Ledger1, [P('a5-projector', 'start', 4.0)]), mk('a5-pop', 'a5b', 22.9, 34.0, A.A5Populations), mk('a5-leaked', 'a5b', 34.0, 41.6, A.A5Leaked), mk('a5-machine', 'a5b', 41.6, 'end', A.A5Machine),
-  mk('a6-apparatus', 'a6', 0, 19.3, A.A6Apparatus, [P('a6-laptop', 'start', 5.7), P('a6-hand-map', 'end', 2.0)]), mk('a6-signin', 'a6', 19.3, 26.0, A.A6SignIn, [P('a6-handshake', 'end', 3.1)]), mk('a6-default', 'a6', 26.0, 31.6, A.A6Default, [P('a6-vault', 'end', 2.2)]), mk('a6-court', 'a6', 31.6, 'end', A.A6Court, [P('a6-courthouse', 'start', 3.0), P('a6-gavel', 'end', 1.6)]),
-  mk('a7-mouth', 'a7', 0, 8.8, A.A7Mouth), mk('a7-record', 'a7', 8.8, 18.0, A.A7Record), mk('a7-question', 'a7', 18.0, 25.7, A.A7Question, [P('a7-night-typing', 'end', 3.0)]), mk('a7-glass', 'a7', 25.7, 'end', A.A7Glass, [P('a7-window', 'start', 4.0), P('a7-hand-glass', 'end', 2.8)]),
-  mk('a8-free', 'a8', 0, 7.6, A.A8Free), mk('a8-sells', 'a8', 7.6, 17.0, A.A8Sells), mk('a8-alert', 'a8', 17.0, 25.7, A.A8Alert, [P('a8-hospital-hall', 'start', 3.0)]), mk('a8-incentive', 'a8', 25.7, 35.4, A.A8Incentive, [P('a8-walk-away', 'start', 2.1)]), mk('a8-meter', 'a8', 35.4, 44.7, A.A8Meter, [P('a8-meter', 'end', 1.9)]), mk('a8-next', 'a8', 44.7, 'end', A.A8Next, [P('a8-eye', 'start', 3.5)]),
+  mk('a3-years', 'a3', 0, 'a system that turns', A.A3Years, [P('a3-office', 'start', 5.0)]), mk('a3-measure', 'a3', 'a system that turns', 'on their own', A.A3Measure, [P('a3-phone-scroll', 'start', 6.1)]), mk('a3-bet', 'a3', 'on their own', 'last year alphabet', A.A3Bet, [P('a3-billboard', 'start', 3.8)]), mk('a3-money', 'a3', 'last year alphabet', 'the death algorithm', A.A3Money, [P('a3-banknotes', 'start', 4.4)]), mk('a3-flow', 'a3', 'the death algorithm', 'end', A.A3Flow),
+  mk('a4-pred', 'a4', 0, 'if you know', A.A4Prediction, [P('a4-dial', 'start', 4.6)]), mk('a4-certain', 'a4', 'if you know', 'a default set here', A.A4Certain, [P('a4-chess', 'start', 4.6)]), mk('a4-nudges', 'a4', 'a default set here', 'accuracy is worth pennies', A.A4Nudges), mk('a4-fortune', 'a4', 'accuracy is worth pennies', 'so the machine drifts', A.A4Fortune, [P('a4-corridor', 'end', 2.8)]), mk('a4-loop', 'a4', 'so the machine drifts', 'end', A.A4Loop, [P('a4-bed-phone', 'start', 5.6)]),
+  mk('a5-open', 'a5a', 0, 'not what does', A.A5Open, [P('a5-teen-phone', 'start', 7.2)]), mk('a5-question', 'a5a', 'not what does', 'by the company\'s', A.A5Question), mk('a5-seventy', 'a5a', 'by the company\'s', 'a billion hours', A.A5Seventy), mk('a5-hours', 'a5a', 'a billion hours', 'the surest way', A.A5Hours, [P('a5-clock', 'start', 2.0), P('a5-many-screens', 'end', 2.5)]), mk('a5-autoplay', 'a5a', 'the surest way', 'end', A.A5Autoplay, [P('a5-crowd-top', 'end', 2.8)]),
+  mk('a5-ledger0', 'a5b', 0, 'in twenty sixteen', A.A5Ledger0), mk('a5-ledger1', 'a5b', 'in twenty sixteen', 'and it imagined', A.A5Ledger1, [P('a5-projector', 'start', 4.0)]), mk('a5-pop', 'a5b', 'and it imagined', 'when the film leaked', A.A5Populations), mk('a5-leaked', 'a5b', 'when the film leaked', 'but you don\'t sit', A.A5Leaked), mk('a5-machine', 'a5b', 'but you don\'t sit', 'end', A.A5Machine),
+  mk('a6-apparatus', 'a6', 0, 'you downloaded all of it', A.A6Apparatus, [P('a6-laptop', 'start', 5.7), P('a6-hand-map', 'end', 2.0)]), mk('a6-signin', 'a6', 'you downloaded all of it', 'where google doesn\'t own', A.A6SignIn, [P('a6-handshake', 'end', 3.1)]), mk('a6-default', 'a6', 'where google doesn\'t own', 'in twenty twenty four', A.A6Default, [P('a6-vault', 'end', 2.2)]), mk('a6-court', 'a6', 'in twenty twenty four', 'end', A.A6Court, [P('a6-courthouse', 'start', 3.0), P('a6-gavel', 'end', 1.6)]),
+  mk('a7-mouth', 'a7', 0, 'the largest record', A.A7Mouth), mk('a7-record', 'a7', 'the largest record', 'and exactly what you need', A.A7Record), mk('a7-question', 'a7', 'and exactly what you need', 'when a machine built', A.A7Question, [P('a7-night-typing', 'end', 1.9)]), mk('a7-glass', 'a7', 'when a machine built', 'it has stopped watching', A.A7Glass), mk('a7-stopped', 'a7', 'it has stopped watching', 'end', A.A7Glass, [P('a7-window', 'start', 3.1), P('a7-hand-glass', 'end', 3.55)]),
+  mk('a8-free', 'a8', 0, 'it listens from', A.A8Free), mk('a8-sells', 'a8', 'it listens from', 'and it\'s grown so good', A.A8Sells), mk('a8-alert', 'a8', 'and it\'s grown so good', 'none of this needed', A.A8Alert, [P('a8-hospital-hall', 'start', 3.0)]), mk('a8-incentive', 'a8', 'none of this needed', 'you handed it over', A.A8Incentive, [P('a8-walk-away', 'start', 2.1)]), mk('a8-meter', 'a8', 'you handed it over', 'the most valuable thing', A.A8Meter, [P('a8-meter', 'end', 1.9)]), mk('a8-next', 'a8', 'the most valuable thing', 'end', A.A8Next, [P('a8-eye', 'start', 3.0)]),
   mk('last', 'last', 0, 'end', A.EndLast), mk('sign', 'sign', 0, 1.62, A.EndSign),
 ];
 
 export const GG_BEATS: Beat[] = [...BEATS_1, ...BEATS_2];
 
 // Segmentos reais: cada beat com fotos parte-se em [foto início] + [interface] + [foto fim].
-type Segment = {id: string; from: number; to: number; kind: 'scene' | 'photo'; Component?: React.FC; photo?: string; offset?: number; wipe: boolean};
+type Segment = {par?: string; a?: number; skip?: number; id: string; from: number; to: number; kind: 'scene' | 'photo'; Component?: React.FC; photo?: string; offset?: number; wipe: boolean};
 export const SEGMENTS: Segment[] = GG_BEATS.flatMap((b): Segment[] => {
   const startCut = b.photos?.find((p) => p.at === 'start');
   const endCut = b.photos?.find((p) => p.at === 'end');
   const f = b.from + (startCut?.dur ?? 0);
   const t = b.to - (endCut?.dur ?? 0);
   const out: Segment[] = [];
+  if (t <= f) {
+    // beat só com fotos (sem cena de interface)
+    if (startCut) out.push({id: `${b.id}-photo-start`, from: b.from, to: f, kind: 'photo', photo: startCut.name, wipe: true});
+    if (endCut) out.push({id: `${b.id}-photo-end`, from: f, to: b.to, kind: 'photo', photo: endCut.name, wipe: false});
+    return out;
+  }
   if (startCut) out.push({id: `${b.id}-photo-start`, from: b.from, to: f, kind: 'photo', photo: startCut.name, wipe: true});
-  out.push({id: b.id, from: f, to: t, kind: 'scene', Component: b.Component, offset: (startCut?.dur ?? 0) * 30, wipe: !startCut});
+  out.push({par: b.par, a: b.a, skip: startCut?.dur, id: b.id, from: f, to: t, kind: 'scene', Component: b.Component, offset: (startCut?.dur ?? 0) * 30, wipe: !startCut});
   if (endCut) out.push({id: `${b.id}-photo-end`, from: t, to: b.to, kind: 'photo', photo: endCut.name, wipe: false});
   return out;
 });
@@ -123,7 +141,9 @@ export const GoogleVideo: React.FC = () => (
           {g.kind === 'photo' ? (
             <PhotoScene name={g.photo as string} />
           ) : (
-            <FrameOffset frames={g.offset ?? 0}>{C ? <C /> : null}</FrameOffset>
+            <BeatProvider par={g.par ?? 'a3'} a={g.a ?? 0} skip={g.skip}>
+              <FrameOffset frames={g.offset ?? 0}>{C ? <C /> : null}</FrameOffset>
+            </BeatProvider>
           )}
         </Sequence>
       );

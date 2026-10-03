@@ -50,7 +50,8 @@ export const KineticText: React.FC<{
   startAt?: number;
   stagger?: number;
   hot?: string[];
-}> = ({lines, x, y, size = 130, startAt = 0, stagger = 6, hot = []}) => {
+  times?: number[]; // frame de entrada de cada palavra (âncoras na locução); substitui startAt/stagger
+}> = ({lines, x, y, size = 130, startAt = 0, stagger = 6, hot = [], times}) => {
   const frame = useCurrentFrame();
   const th = useTheme();
   const ease = Easing.out(Easing.exp);
@@ -61,7 +62,7 @@ export const KineticText: React.FC<{
       {lines.map((line, li) => (
         <div key={li} style={{display: 'flex', gap: size * 0.22, overflow: 'hidden', paddingBottom: size * 0.14, marginBottom: -size * 0.08, paddingRight: size * 0.12}}>
           {line.map((w) => {
-            const at = startAt + n++ * stagger;
+            const at = times ? times[n++] ?? times[times.length - 1] : startAt + n++ * stagger;
             const rise = interpolate(frame - at, [0, 14], [0, 1], {...clampOpts, easing: ease});
             const isHot = hot.includes(w);
             const box = interpolate(frame - at, [-4, 8], [0, 1], {...clampOpts, easing: ease});

@@ -275,9 +275,9 @@ export const NudgeTrio: React.FC<{x: number; y: number; at: number[]}> = ({x, y,
 };
 
 // ── Etiquetas de preço: precisão vs. certeza ──
-export const PriceTags: React.FC<{x: number; y: number; at: number}> = ({x, y, at}) => {
+export const PriceTags: React.FC<{x: number; y: number; at: number; at2?: number}> = ({x, y, at, at2}) => {
   const a = useIn(at, 14);
-  const b = useIn(at + 12, 14);
+  const b = useIn(at2 ?? at + 12, 14);
   return (
     <>
       <div style={{position: 'absolute', left: x, top: y, opacity: a, transform: `rotate(-4deg) translateY(${(1 - a) * 30}px)`}}>
