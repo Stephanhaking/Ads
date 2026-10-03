@@ -32,13 +32,14 @@ const C: [string, string, string, Cue['level'], string, string][] = [
   ['cold', 'hundred and fourteen', 'TICK_RAPIDO', 'suave', 'Contador 114 000', 'ticks acelerados enquanto o número sobe'],
   ['cold', 'who in this', 'IMPACT', 'média', 'WHO WILL DIE?', 'a pergunta aparece na caixa do modelo'],
   ['cold', 'ninety five', 'RISER+IMPACT', 'forte', 'Clímax 95%', 'subida e pico vermelho (momento mais forte da abertura)'],
-  ['cold', 'journal', 'PAPER', 'suave', 'Capturas Fierce Biotech', 'troca de página/artigo'],
+  ['cold', 'journal', 'PAPER_FLIP', 'suave', 'Capturas Fierce Biotech', 'virar a página para o artigo'],
+  ['cold', 'it leaves', 'PAPER_SLIDE', 'suave', 'Capturas Healthcare Dive', 'troca de artigo'],
   ['cold', 'advertising company', 'IMPACT', 'média', 'A pergunta (vermelho)', 'pico: «why is an advertising company…»'],
   ['act1', 'twenty years', 'TICK_RAPIDO', 'suave', 'Barra 2006→2026', 'barra a preencher'],
   ['act1', 'final variable', 'IMPACT', 'média', 'LAST BREATH', 'a última saída acende'],
   ['act2', 'the numbers', 'POP', 'suave', 'Registo clínico', 'camada 1: números'],
   ['act2', 'the scans', 'POP', 'suave', 'Registo clínico', 'camada 2: scans'],
-  ['act2', 'free text', 'PAPER', 'suave', 'Registo clínico', 'camada 3: notas à mão'],
+  ['act2', 'free text', 'WRITING', 'suave', 'Registo clínico', 'camada 3: notas à mão (caneta)'],
   ['act2', 'forty six', 'RISER', 'média', '46 mil milhões', 'contador de dados'],
   ['act2', 'anonymous', 'POP', 'suave', 'PDF «anonymous»', 'carimbo/selo'],
   ['act2', 'dated annotated', 'STAMP', 'média', 'Ficheiro datado', 'etiqueta «not anonymous for long»'],
@@ -55,7 +56,7 @@ const C: [string, string, string, Cue['level'], string, string][] = [
   ['a5a', 'seventy', 'RISER+IMPACT', 'forte', 'Anel 70%', 'o anel enche e fica vermelho'],
   ['a5a', 'a billion hours', 'TICK_RAPIDO', 'suave', 'Mil milhões de horas', 'contador'],
   ['a5a', 'nobody\'s forcing', 'DRONE_SUAVE', 'suave', 'Autoplay', 'fundo calmo, quase silêncio, para a frase pesar'],
-  ['a5b', 'wrote it down', 'PAPER', 'suave', 'Documento/ledger', ''],
+  ['a5b', 'wrote it down', 'PAPER_SLIDE', 'suave', 'Documento/ledger', ''],
   ['a5b', 'leaked', 'STAMP', 'forte', 'Carimbo LEAKED · 2018', 'carimbo vermelho'],
   ['a5b', 'holding', 'IMPACT', 'forte', '«holding the machine»', 'fecho do Ato V (vermelho)'],
   ['a6', 'the search box', 'POP', 'suave', 'Janelas instaladas', '4 pops: search box · browser · phone · map'],
@@ -63,7 +64,7 @@ const C: [string, string, string, Cue['level'], string, string][] = [
   ['a6', 'monopoly', 'IMPACT', 'forte', 'Monopoly. Illegal.', 'martelo/pancada seca'],
   ['a6', 'illegal', 'IMPACT', 'forte', 'Carimbo ILLEGAL', 'segundo golpe, mais grave'],
   ['a7', 'because the machine', 'POP', 'suave', 'Chat «a new mouth»', 'resposta da máquina aparece'],
-  ['a7', 'the company that', 'POP', 'suave', 'Barra de pesquisa Google', 'digitação'],
+  ['a7', 'the company that', 'WRITING', 'suave', 'Barra de pesquisa Google', 'digitação'],
   ['a8', 'a hospital', 'RISER', 'média', 'AlertCard', 'sobe até ao alerta'],
   ['a8', 'a day left', 'BEEP_MONITOR', 'forte', 'A day left to live', 'bip contínuo/flatline discreto'],
   ['a8', 'you just never saw', 'SILENCIO_DEPOIS_IMPACT', 'forte', 'O medidor', 'cortar o ambiente 0,3 s e cair um impacto grave'],
@@ -97,4 +98,5 @@ md += '## Regras de mistura\n\n- Locução sempre à frente: SFX a −18 dB a �
 if (missing.length) md += `\n> Frases não encontradas (rever): ${missing.join('; ')}\n`;
 fs.writeFileSync('docs/sfx_map.json', JSON.stringify(cues.map((c) => ({...c, t: Math.round(c.t * 100) / 100})), null, 1));
 fs.writeFileSync('docs/SFX_MAP.md', md);
+fs.writeFileSync('src/google/sfxCues.json', JSON.stringify(cues.map((c) => ({...c, t: Math.round(c.t * 100) / 100}))));
 console.log(cues.length, 'cues; faltam:', missing);

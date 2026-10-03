@@ -17,7 +17,7 @@ Tempos absolutos no vídeo final (inclui o gancho de 12,6 s). Gerado por `tools/
 | MONITOR (bip lento + flatline) | hospital e «a day left to live» |
 | DRONE (suave e grave) | ambiente nas cenas vermelhas e no fecho |
 
-Total: 127 sinais (13 fortes, 64 médios, 50 suaves).
+Total: 128 sinais (13 fortes, 64 médios, 51 suaves).
 
 ## Gancho KGUN (0:00.0)
 
@@ -39,7 +39,8 @@ Total: 127 sinais (13 fortes, 64 médios, 50 suaves).
 | 0:39.1 | WHOOSH | média | Corte para «climax» | wipe vermelho entre ideias |
 | 0:40.3 | RISER+IMPACT | forte | Clímax 95% | subida e pico vermelho (momento mais forte da abertura) |
 | 0:47.6 | WHOOSH | média | Corte para «paper» | wipe vermelho entre ideias |
-| 0:50.8 | PAPER | suave | Capturas Fierce Biotech | troca de página/artigo |
+| 0:50.8 | PAPER_FLIP | suave | Capturas Fierce Biotech | virar a página para o artigo |
+| 0:51.9 | PAPER_SLIDE | suave | Capturas Healthcare Dive | troca de artigo |
 | 0:54.0 | WHOOSH | média | Corte para «question» | wipe vermelho entre ideias |
 | 0:55.3 | IMPACT | média | A pergunta (vermelho) | pico: «why is an advertising company…» |
 | 0:59.1 | WHOOSH | média | Corte para «building» | wipe vermelho entre ideias |
@@ -50,7 +51,7 @@ Total: 127 sinais (13 fortes, 64 médios, 50 suaves).
 | 1:37.7 | WHOOSH | média | Corte para «notes» | wipe vermelho entre ideias |
 | 1:38.1 | POP | suave | Registo clínico | camada 1: números |
 | 1:39.1 | POP | suave | Registo clínico | camada 2: scans |
-| 1:40.7 | PAPER | suave | Registo clínico | camada 3: notas à mão |
+| 1:40.7 | WRITING | suave | Registo clínico | camada 3: notas à mão (caneta) |
 | 1:44.6 | RISER | média | 46 mil milhões | contador de dados |
 | 1:45.5 | WHOOSH | média | Corte para «data» | wipe vermelho entre ideias |
 | 1:52.5 | WHOOSH | média | Corte para «anon» | wipe vermelho entre ideias |
@@ -117,7 +118,7 @@ Total: 127 sinais (13 fortes, 64 médios, 50 suaves).
 | 4:42.0 | DRONE_SUAVE | suave | Autoplay | fundo calmo, quase silêncio, para a frase pesar |
 | 4:50.1 | HIT_SOFT | suave | Corte para «a5-autoplay-photo-end» | flash foto ↔ interface |
 | 4:53.2 | WHOOSH | média | Corte para «a5-ledger0» | wipe vermelho entre ideias |
-| 5:03.4 | PAPER | suave | Documento/ledger |  |
+| 5:03.4 | PAPER_SLIDE | suave | Documento/ledger |  |
 | 5:04.7 | WHOOSH | média | Corte para «a5-ledger1-photo-start» | wipe vermelho entre ideias |
 | 5:08.8 | HIT_SOFT | suave | Corte para «a5-ledger1» | flash foto ↔ interface |
 | 5:13.1 | WHOOSH | suave | Insert de stock · s-ledger | entrada do vídeo de stock |
@@ -156,7 +157,7 @@ Total: 127 sinais (13 fortes, 64 médios, 50 suaves).
 | 6:36.9 | WHOOSH | suave | Insert de stock · s-record | entrada do vídeo de stock |
 | 6:40.7 | HIT_SOFT | suave | Corte para «a7-record-b» | flash foto ↔ interface |
 | 6:44.5 | WHOOSH | média | Corte para «a7-question» | wipe vermelho entre ideias |
-| 6:48.0 | POP | suave | Barra de pesquisa Google | digitação |
+| 6:48.0 | WRITING | suave | Barra de pesquisa Google | digitação |
 | 6:52.0 | HIT_SOFT | suave | Corte para «a7-question-photo-end» | flash foto ↔ interface |
 | 6:53.7 | WHOOSH | média | Corte para «a7-glass» | wipe vermelho entre ideias |
 | 7:02.0 | WHOOSH | média | Corte para «a7-stopped-photo-start» | wipe vermelho entre ideias |

@@ -78,10 +78,17 @@
  },
  {
   "t": 50.78,
-  "sound": "PAPER",
+  "sound": "PAPER_FLIP",
   "level": "suave",
   "where": "Capturas Fierce Biotech",
-  "why": "troca de página/artigo"
+  "why": "virar a página para o artigo"
+ },
+ {
+  "t": 51.87,
+  "sound": "PAPER_SLIDE",
+  "level": "suave",
+  "where": "Capturas Healthcare Dive",
+  "why": "troca de artigo"
  },
  {
   "t": 54.02,
@@ -155,10 +162,10 @@
  },
  {
   "t": 100.66,
-  "sound": "PAPER",
+  "sound": "WRITING",
   "level": "suave",
   "where": "Registo clínico",
-  "why": "camada 3: notas à mão"
+  "why": "camada 3: notas à mão (caneta)"
  },
  {
   "t": 104.59,
@@ -519,7 +526,7 @@
  },
  {
   "t": 303.45,
-  "sound": "PAPER",
+  "sound": "PAPER_SLIDE",
   "level": "suave",
   "where": "Documento/ledger",
   "why": ""
@@ -722,7 +729,7 @@
  },
  {
   "t": 408.03,
-  "sound": "POP",
+  "sound": "WRITING",
   "level": "suave",
   "where": "Barra de pesquisa Google",
   "why": "digitação"

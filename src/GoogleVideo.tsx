@@ -22,6 +22,7 @@ import {Flash, RedWipe} from './google/Fx';
 import {PhotoScene} from './google/photos';
 import {FrameOffset} from './timeline';
 import {StockScene, ClipSpec} from './google/Stock';
+import {SfxTrack} from './google/SfxTrack';
 import {NewsPreroll, PREROLL_SEC} from './google/News';
 import {BeatProvider} from './google/beat';
 import {wordTime} from './google/words';
@@ -185,6 +186,7 @@ export const GoogleVideo: React.FC = () => (
       ),
     )}
     </Sequence>
+    <SfxTrack />
     <Sequence name="wipe-into-film" from={PRE - FPS * 0.3} durationInFrames={FPS * 0.6}>
       <RedWipe />
     </Sequence>
