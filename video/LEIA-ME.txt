@@ -1,0 +1,12 @@
+GOOGLE — The Company That Predicts Your Death
+Render final 1920x1080, 60 fps, H.264 (CRF 20) + AAC 192 kb/s. Duracao 8:05.
+O ficheiro foi dividido em 16 partes (<= 95 MB cada, limite do GitHub) SEM perder qualidade: os cortes sao feitos em keyframes, sem recodificar.
+
+COMO JUNTAR
+1. Descarrega TODAS as partes (parte01.mp4 ... parte16.mp4) e o lista.txt para a mesma pasta.
+2. Instala o ffmpeg (Windows: winget install ffmpeg   |  Mac: brew install ffmpeg).
+3. Nessa pasta, corre:
+   ffmpeg -f concat -safe 0 -i lista.txt -c copy video-final.mp4
+4. Resultado: video-final.mp4 (29083 frames, igual ao original). Podes carregar para o Drive: o download devolve o ficheiro original.
+
+Alternativa sem ffmpeg: renderizar localmente (ver docs/RENDER_LOCAL.md no ramo claude/hopeful-babbage-yw6bff).
