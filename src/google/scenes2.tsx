@@ -7,6 +7,7 @@ import {Cursor, HandCircle} from './doc/Doc';
 import {EASE_OUT} from './motion';
 import {Shell, useT} from './scenes';
 import {useW} from './beat';
+import {StockBg} from './Stock';
 import {LayeredScene} from './Layers';
 import {Fx_KT as KineticText} from './kt';
 import {Tag} from './Vox';
@@ -254,7 +255,7 @@ export const A5Question: React.FC = () => {
   const {frame, fps} = useT('a5a');
   const {w, T} = useA();
   const cross = interpolate(frame, [w('but what will', 0), w('but what will', 0) + 14], [0, 1], clamp);
-  const wt = interpolate(frame, [w('it tuned'), w('and it worked', 0)], [0, 1], {...clamp, easing: EASE_OUT});
+  const wt = interpolate(frame, [w('watch time'), w('and it worked', 0)], [0, 1], {...clamp, easing: EASE_OUT});
   const th = useTheme();
   return (
     <Shell theme="paper" grain={0.3}>
@@ -280,7 +281,7 @@ export const A5Question: React.FC = () => {
         }
         fore={
           <>
-            <Card x={1250} y={190} w={560} at={w('it tuned')} tilt={2} bg="#fff" pad={0}>
+            <Card x={1250} y={190} w={560} at={w('watch time')} tilt={2} bg="#fff" pad={0}>
               <div style={{padding: '26px 34px'}}>
                 <div style={{fontFamily: fonts.mono, fontSize: 18, letterSpacing: 4, color: '#80868B'}}>ONE NUMBER</div>
                 <div style={{fontFamily: fonts.heading, fontSize: 76, color: '#202124', marginTop: 6}}>WATCH TIME</div>
@@ -771,6 +772,7 @@ export const EndLast: React.FC = () => {
   return (
     <Shell theme="dark" grain={0.4}>
       <LayeredScene
+        back={<StockBg name="s-window" />}
         fore={<KineticText lines={[['Including'], ['the last thing.']]} x={150} y={330} size={150} times={T('including', 'the last')} hot={[]} />}
       />
     </Shell>
