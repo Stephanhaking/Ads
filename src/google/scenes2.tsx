@@ -242,7 +242,7 @@ export const A5Open: React.FC = () => {
         fore={
           <>
             <Tag text="Already happened · in the open" appearAt={w('around twenty')} x={110} y={90} size={34} />
-            <KineticText lines={[['Around 2016'], ['YouTube'], ['changed'], ['the question']]} x={110} y={240} size={86} times={T('around twenty', 'youtube', 'quietly changed', 'the question')} hot={['question']} />
+            <KineticText lines={[['Around 2016'], ['YouTube'], ['changed'], ['the question']]} x={110} y={240} size={66} times={T('around twenty', 'youtube', 'quietly changed', 'the question')} hot={['question']} />
             <Tag text="One quiet change" appearAt={w('quietly changed')} x={110} y={760} fill size={34} />
           </>
         }

@@ -37,22 +37,6 @@ export const s = (sec: number) => Math.round(mapTime(sec) * FPS);
 
 type PhotoCut = {name: string; at: 'start' | 'end'; dur: number}; // dur em segundos (escala estimada = voz)
 type Beat = {id: string; from: number; to: number; Component: React.FC; photos?: PhotoCut[]; par?: string; a?: number; clip?: ClipSpec};
-const BEATS_1: Beat[] = [
-  {id: 'hospital', from: 0, to: 16, Component: SceneHospital},
-  {id: 'year', from: 16, to: 20.3, Component: SceneYear},
-  {id: 'records', from: 20.3, to: 34.6, Component: SceneRecords},
-  {id: 'climax', from: 34.6, to: 45.7, Component: SceneClimax},
-  {id: 'paper', from: 45.7, to: 54, Component: ScenePaper},
-  {id: 'question', from: 54, to: 60, Component: SceneQuestion},
-  {id: 'building', from: 60, to: 69.8, Component: SceneBuilding},
-  {id: 'engine', from: 69.8, to: 102.6, Component: SceneEngine},
-  {id: 'readAll', from: 102.6, to: 111, Component: SceneReadAll},
-  {id: 'notes', from: 111, to: 121.2, Component: SceneNotes},
-  {id: 'data', from: 121.2, to: 130.4, Component: SceneData},
-  {id: 'anon', from: 130.4, to: 144.8, Component: SceneAnon},
-  {id: 'file', from: 144.8, to: 156.1, Component: SceneFile},
-  {id: 'never', from: 156.1, to: 161.2, Component: SceneNever},
-];
 
 
 // Beats dos Atos III–VIII: [id, parágrafo, início (s), fim (s | 'end' = início do parágrafo seguinte), cena].
@@ -62,18 +46,39 @@ const nextStart = (id: string) => {
   return i + 1 < PARAGRAPHS.length ? PARAGRAPHS[i + 1].estStart : PARAGRAPHS[i].estStart + PARAGRAPHS[i].estSec;
 };
 // a/b: segundos no parágrafo, ou uma frase (âncora em palavra: começa 0,15 s antes de ser dita).
+// segundos reais no parágrafo → segundos na timeline estimada (escala 1 nos Atos III–VIII)
+const toEst = (par: string, sec: number) => {
+  const p = PARAGRAPHS.find((x) => x.id === par);
+  return p ? sec * (p.estSec / p.sec) : sec;
+};
 const at = (par: string, v: number | string) => (typeof v === 'number' ? v : wordTime(par, v) - 0.15);
 const mk = (id: string, par: string, a: number | string, b: number | string | 'end', Component: React.FC, photos?: PhotoCut[], clip?: ClipSpec): Beat => ({
   id,
   par,
   a: at(par, a),
-  from: est(par, at(par, a)),
-  to: b === 'end' ? nextStart(par) : est(par, at(par, b)),
+  from: est(par, toEst(par, at(par, a))),
+  to: b === 'end' ? nextStart(par) : est(par, toEst(par, at(par, b))),
   Component,
   photos,
   clip,
 });
 const P = (name: string, at: 'start' | 'end', dur: number): PhotoCut => ({name, at, dur});
+const BEATS_1: Beat[] = [
+  mk('hospital', 'cold', 0, 'in twenty eighteen', SceneHospital),
+  mk('year', 'cold', 'in twenty eighteen', 'google took', SceneYear),
+  mk('records', 'cold', 'google took', 'it answered', SceneRecords),
+  mk('climax', 'cold', 'it answered', 'the result was published', SceneClimax),
+  mk('paper', 'cold', 'the result was published', 'why is an advertising', ScenePaper),
+  mk('question', 'cold', 'why is an advertising', 'end', SceneQuestion),
+  mk('building', 'act1', 0, 'look at what', SceneBuilding),
+  mk('engine', 'act1', 'look at what', 'end', SceneEngine),
+  mk('readAll', 'act2', 0, 'the numbers', SceneReadAll),
+  mk('notes', 'act2', 'the numbers', 'forty six', SceneNotes),
+  mk('data', 'act2', 'forty six', 'and the raw material', SceneData),
+  mk('anon', 'act2', 'and the raw material', 'and for a company', SceneAnon),
+  mk('file', 'act2', 'and for a company', 'the patients were never asked', SceneFile),
+  mk('never', 'act2', 'the patients were never asked', 'end', SceneNever),
+];
 const BEATS_2: Beat[] = [
   mk('a3-years', 'a3', 0, 'a system that turns', A.A3Years, [P('a3-office', 'start', 5.0)]), mk('a3-measure', 'a3', 'a system that turns', 'on their own', A.A3Measure, [P('a3-phone-scroll', 'start', 6.1)]), mk('a3-bet', 'a3', 'on their own', 'last year alphabet', A.A3Bet, [P('a3-billboard', 'start', 3.8)]), mk('a3-money', 'a3', 'last year alphabet', 'the death algorithm', A.A3Money, [P('a3-banknotes', 'start', 4.4)]), mk('a3-flow', 'a3', 'the death algorithm', 'end', A.A3Flow),
   mk('a4-pred', 'a4', 0, 'if you know', A.A4Prediction, [P('a4-dial', 'start', 4.6)]), mk('a4-certain', 'a4', 'if you know', 'a default set here', A.A4Certain, [P('a4-chess', 'start', 4.6)]), mk('a4-nudges', 'a4', 'a default set here', 'accuracy is worth pennies', A.A4Nudges, undefined, {name: 's-nudge', from: 'a nudge so small', to: 'end', theme: 'paper', lines: [['So small'], ['no one'], ['feels it']], words: ['so small', 'no one', 'feels it'], hot: ['feels it']}), mk('a4-fortune', 'a4', 'accuracy is worth pennies', 'so the machine drifts', A.A4Fortune, [P('a4-corridor', 'end', 2.8)]), mk('a4-loop', 'a4', 'so the machine drifts', 'end', A.A4Loop, [P('a4-bed-phone', 'start', 5.6)]),

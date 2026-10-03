@@ -18,7 +18,7 @@ for m in re.finditer(r"mk\('[^']+', '(\w+)', ((?:'(?:[^'\\]|\\.)*'|[\d.]+)), ((?
             ph = g[1:-1].replace("\\'", "'")
             if find(m.group(1), ph) is None: print('FALTA', m.group(1), ph); bad += 1
 # scenes: w('frase') com o parágrafo do useT('xx') anterior mais próximo
-src = open('src/google/scenes2.tsx').read()
+src = open('src/google/scenes2.tsx').read() + '\n' + open('src/google/scenes.tsx').read()
 par = None
 for line in src.split('\n'):
     m = re.search(r"useT\('(\w+)'\)", line)
