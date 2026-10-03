@@ -23,6 +23,7 @@ import {PhotoScene} from './google/photos';
 import {FrameOffset} from './timeline';
 import {StockScene, ClipSpec} from './google/Stock';
 import {SfxTrack} from './google/SfxTrack';
+import {MusicBed} from './google/MusicBed';
 import {NewsPreroll, PREROLL_SEC} from './google/News';
 import {BeatProvider} from './google/beat';
 import {wordTime} from './google/words';
@@ -152,7 +153,7 @@ export const GoogleVideo: React.FC = () => (
     </Sequence>
     <Sequence name="film" from={PRE}>
     <Voice />
-    <Music />
+    <MusicBed />
     {SEGMENTS.map((g) => {
       const C = g.Component;
       return (
