@@ -2,7 +2,7 @@
   "name": "vox-style-video",
   "version": "1.0.0",
   "private": true,
-  "description": "Vídeo documental estilo Vox feito com Remotion",
+  "description": "V\u00eddeo documental estilo Vox feito com Remotion",
   "scripts": {
     "dev": "remotion studio",
     "build": "remotion render MainVideo out/video.mp4",
@@ -10,7 +10,8 @@
     "measure": "python3 tools/measure_wavs.py",
     "render:google": "remotion render GoogleVideo out/google.mp4 --codec=h264 --crf=18 --pixel-format=yuv420p --audio-codec=aac",
     "render:google:2min": "remotion render GoogleVideo out/google-2min.mp4 --codec=h264 --crf=18 --pixel-format=yuv420p --audio-codec=aac --frames=0-3635",
-    "tts": "python3 tools/tts_google.py"
+    "tts": "python3 tools/tts_google.py",
+    "render:final": "remotion render GoogleVideo out/google-final-1080p.mp4 --codec=h264 --crf=18 --pixel-format=yuv420p --audio-codec=aac --audio-bitrate=192k"
   },
   "dependencies": {
     "@fontsource/archivo-black": "^5.3.0",
