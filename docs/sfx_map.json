@@ -1,0 +1,891 @@
+[
+ {
+  "t": 10.4,
+  "sound": "RISER",
+  "level": "média",
+  "where": "Gancho KGUN",
+  "why": "a notícia transforma-se em halftone/vermelho (últimos 2 s)"
+ },
+ {
+  "t": 12.45,
+  "sound": "WHOOSH",
+  "level": "forte",
+  "where": "Gancho → filme",
+  "why": "wipe vermelho para a primeira cena"
+ },
+ {
+  "t": 14.16,
+  "sound": "AMBIENTE_MONITOR",
+  "level": "suave",
+  "where": "Abertura",
+  "why": "bip lento de monitor + sala; atravessa a primeira cena"
+ },
+ {
+  "t": 23.75,
+  "sound": "IMPACT",
+  "level": "média",
+  "where": "Carimbo 2018",
+  "why": "o ano entra"
+ },
+ {
+  "t": 24.77,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «year»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 28.07,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «records»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 29.57,
+  "sound": "TICK_RAPIDO",
+  "level": "suave",
+  "where": "Contador 114 000",
+  "why": "ticks acelerados enquanto o número sobe"
+ },
+ {
+  "t": 36.73,
+  "sound": "IMPACT",
+  "level": "média",
+  "where": "WHO WILL DIE?",
+  "why": "a pergunta aparece na caixa do modelo"
+ },
+ {
+  "t": 39.08,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «climax»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 40.31,
+  "sound": "RISER+IMPACT",
+  "level": "forte",
+  "where": "Clímax 95%",
+  "why": "subida e pico vermelho (momento mais forte da abertura)"
+ },
+ {
+  "t": 47.62,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «paper»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 50.78,
+  "sound": "PAPER",
+  "level": "suave",
+  "where": "Capturas Fierce Biotech",
+  "why": "troca de página/artigo"
+ },
+ {
+  "t": 54.02,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «question»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 55.3,
+  "sound": "IMPACT",
+  "level": "média",
+  "where": "A pergunta (vermelho)",
+  "why": "pico: «why is an advertising company…»"
+ },
+ {
+  "t": 59.08,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «building»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 66.38,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «engine»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 84.94,
+  "sound": "TICK_RAPIDO",
+  "level": "suave",
+  "where": "Barra 2006→2026",
+  "why": "barra a preencher"
+ },
+ {
+  "t": 89.86,
+  "sound": "IMPACT",
+  "level": "média",
+  "where": "LAST BREATH",
+  "why": "a última saída acende"
+ },
+ {
+  "t": 91.32,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «readAll»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 97.73,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «notes»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 98.13,
+  "sound": "POP",
+  "level": "suave",
+  "where": "Registo clínico",
+  "why": "camada 1: números"
+ },
+ {
+  "t": 99.06,
+  "sound": "POP",
+  "level": "suave",
+  "where": "Registo clínico",
+  "why": "camada 2: scans"
+ },
+ {
+  "t": 100.66,
+  "sound": "PAPER",
+  "level": "suave",
+  "where": "Registo clínico",
+  "why": "camada 3: notas à mão"
+ },
+ {
+  "t": 104.59,
+  "sound": "RISER",
+  "level": "média",
+  "where": "46 mil milhões",
+  "why": "contador de dados"
+ },
+ {
+  "t": 105.52,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «data»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 112.55,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «anon»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 119.89,
+  "sound": "POP",
+  "level": "suave",
+  "where": "PDF «anonymous»",
+  "why": "carimbo/selo"
+ },
+ {
+  "t": 123.55,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «file»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 128.64,
+  "sound": "STAMP",
+  "level": "média",
+  "where": "Ficheiro datado",
+  "why": "etiqueta «not anonymous for long»"
+ },
+ {
+  "t": 132.18,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «never»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 133.87,
+  "sound": "IMPACT",
+  "level": "forte",
+  "where": "Consentimento: 0",
+  "why": "fecho do Ato II (vermelho)"
+ },
+ {
+  "t": 136.53,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a3-years-photo-start»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 141.68,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a3-years»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 145.2,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a3-measure-photo-start»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 151.45,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a3-measure»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 157.32,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a3-bet-photo-start»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 161.27,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a3-bet»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 166.41,
+  "sound": "TICK_RAPIDO",
+  "level": "suave",
+  "where": "Leilão",
+  "why": "licitações em milissegundos"
+ },
+ {
+  "t": 170.93,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a3-money-photo-start»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 171.24,
+  "sound": "RISER",
+  "level": "média",
+  "where": "Receitas Alphabet",
+  "why": "entrada do cartão de receita"
+ },
+ {
+  "t": 175.48,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a3-money»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 176.58,
+  "sound": "IMPACT",
+  "level": "média",
+  "where": "3 em cada 4",
+  "why": "a fração aparece"
+ },
+ {
+  "t": 178.93,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a3-flow»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 185.63,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a4-pred-photo-start»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 190.38,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a4-pred»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 192.78,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a4-certain-photo-start»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 197.53,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a4-certain»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 201.02,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a4-nudges»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 203.88,
+  "sound": "WHOOSH",
+  "level": "suave",
+  "where": "Insert de stock · s-nudge",
+  "why": "entrada do vídeo de stock"
+ },
+ {
+  "t": 207.58,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a4-fortune»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 207.88,
+  "sound": "POP",
+  "level": "suave",
+  "where": "Cartão ACCURACY $0.01",
+  "why": ""
+ },
+ {
+  "t": 210.19,
+  "sound": "IMPACT",
+  "level": "forte",
+  "where": "Cartão CERTAINTY $$$$$",
+  "why": "pico vermelho"
+ },
+ {
+  "t": 215.03,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a4-fortune-photo-end»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 217.68,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a4-loop-photo-start»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 223.43,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a4-loop»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 223.63,
+  "sound": "TICK",
+  "level": "média",
+  "where": "Ciclo Predict",
+  "why": "3 ticks em sequência: predict · nudge · confirm"
+ },
+ {
+  "t": 230.71,
+  "sound": "IMPACT",
+  "level": "forte",
+  "where": "«Nobody chose this»",
+  "why": "fecho do Ato IV"
+ },
+ {
+  "t": 233.9,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a5-open-photo-start»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 241.25,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a5-open»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 247.12,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a5-question»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 252.95,
+  "sound": "WHOOSH",
+  "level": "suave",
+  "where": "Insert de stock · s-watching",
+  "why": "entrada do vídeo de stock"
+ },
+ {
+  "t": 255.53,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a5-question-b»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 255.69,
+  "sound": "RISER",
+  "level": "média",
+  "where": "WATCH TIME ▲",
+  "why": "contador sobe"
+ },
+ {
+  "t": 256.93,
+  "sound": "IMPACT",
+  "level": "média",
+  "where": "Etiqueta «and it worked»",
+  "why": ""
+ },
+ {
+  "t": 257.98,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a5-seventy»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 259.89,
+  "sound": "RISER+IMPACT",
+  "level": "forte",
+  "where": "Anel 70%",
+  "why": "o anel enche e fica vermelho"
+ },
+ {
+  "t": 266.57,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a5-hours-photo-start»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 266.87,
+  "sound": "TICK_RAPIDO",
+  "level": "suave",
+  "where": "Mil milhões de horas",
+  "why": "contador"
+ },
+ {
+  "t": 268.72,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a5-hours»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 273.68,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a5-hours-photo-end»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 276.03,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a5-autoplay»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 281.97,
+  "sound": "DRONE_SUAVE",
+  "level": "suave",
+  "where": "Autoplay",
+  "why": "fundo calmo, quase silêncio, para a frase pesar"
+ },
+ {
+  "t": 290.07,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a5-autoplay-photo-end»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 293.17,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a5-ledger0»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 303.45,
+  "sound": "PAPER",
+  "level": "suave",
+  "where": "Documento/ledger",
+  "why": ""
+ },
+ {
+  "t": 304.68,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a5-ledger1-photo-start»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 308.83,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a5-ledger1»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 313.08,
+  "sound": "WHOOSH",
+  "level": "suave",
+  "where": "Insert de stock · s-ledger",
+  "why": "entrada do vídeo de stock"
+ },
+ {
+  "t": 316.18,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a5-pop»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 327.25,
+  "sound": "WHOOSH",
+  "level": "suave",
+  "where": "Insert de stock · s-populations",
+  "why": "entrada do vídeo de stock"
+ },
+ {
+  "t": 328.95,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a5-leaked»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 329.76,
+  "sound": "STAMP",
+  "level": "forte",
+  "where": "Carimbo LEAKED · 2018",
+  "why": "carimbo vermelho"
+ },
+ {
+  "t": 336.53,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a5-machine»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 341.57,
+  "sound": "IMPACT",
+  "level": "forte",
+  "where": "«holding the machine»",
+  "why": "fecho do Ato V (vermelho)"
+ },
+ {
+  "t": 343.22,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a6-apparatus-photo-start»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 349.07,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a6-apparatus»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 349.55,
+  "sound": "POP",
+  "level": "suave",
+  "where": "Janelas instaladas",
+  "why": "4 pops: search box · browser · phone · map"
+ },
+ {
+  "t": 360.87,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a6-apparatus-photo-end»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 362.72,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a6-signin»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 363.42,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a6-signin-photo-end»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 364.31,
+  "sound": "CLICK",
+  "level": "suave",
+  "where": "Diálogo Sign in",
+  "why": "clique no botão"
+ },
+ {
+  "t": 366.37,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a6-default»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 373,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a6-default-photo-end»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 375.05,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a6-court-photo-start»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 378.2,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a6-court»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 381.45,
+  "sound": "IMPACT",
+  "level": "forte",
+  "where": "Monopoly. Illegal.",
+  "why": "martelo/pancada seca"
+ },
+ {
+  "t": 382.52,
+  "sound": "IMPACT",
+  "level": "forte",
+  "where": "Carimbo ILLEGAL",
+  "why": "segundo golpe, mais grave"
+ },
+ {
+  "t": 385.85,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a6-court-photo-end»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 387.75,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a7-mouth»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 394.04,
+  "sound": "POP",
+  "level": "suave",
+  "where": "Chat «a new mouth»",
+  "why": "resposta da máquina aparece"
+ },
+ {
+  "t": 396.95,
+  "sound": "WHOOSH",
+  "level": "suave",
+  "where": "Insert de stock · s-record",
+  "why": "entrada do vídeo de stock"
+ },
+ {
+  "t": 400.72,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a7-record-b»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 404.45,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a7-question»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 408.03,
+  "sound": "POP",
+  "level": "suave",
+  "where": "Barra de pesquisa Google",
+  "why": "digitação"
+ },
+ {
+  "t": 411.95,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a7-question-photo-end»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 413.7,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a7-glass»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 422,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a7-stopped-photo-start»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 425.25,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a7-stopped-photo-end»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 428.13,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a8-free»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 438.02,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a8-sells»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 443.37,
+  "sound": "WHOOSH",
+  "level": "suave",
+  "where": "Insert de stock · s-strangers",
+  "why": "entrada do vídeo de stock"
+ },
+ {
+  "t": 445.18,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a8-alert-photo-start»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 448.33,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a8-alert»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 449.17,
+  "sound": "RISER",
+  "level": "média",
+  "where": "AlertCard",
+  "why": "sobe até ao alerta"
+ },
+ {
+  "t": 450.09,
+  "sound": "BEEP_MONITOR",
+  "level": "forte",
+  "where": "A day left to live",
+  "why": "bip contínuo/flatline discreto"
+ },
+ {
+  "t": 454.08,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a8-incentive-photo-start»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 456.33,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a8-incentive»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 463.53,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a8-meter»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 471.29,
+  "sound": "SILENCIO_DEPOIS_IMPACT",
+  "level": "forte",
+  "where": "O medidor",
+  "why": "cortar o ambiente 0,3 s e cair um impacto grave"
+ },
+ {
+  "t": 471.37,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a8-meter-photo-end»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 473.12,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «a8-next-photo-start»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 476.27,
+  "sound": "HIT_SOFT",
+  "level": "suave",
+  "where": "Corte para «a8-next»",
+  "why": "flash foto ↔ interface"
+ },
+ {
+  "t": 478.52,
+  "sound": "IMPACT",
+  "level": "forte",
+  "where": "«What you'd do next»",
+  "why": "pergunta final em vermelho"
+ },
+ {
+  "t": 480.65,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «last»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 480.93,
+  "sound": "DRONE_GRAVE",
+  "level": "média",
+  "where": "Fecho",
+  "why": "drone a entrar sobre a silhueta à janela"
+ },
+ {
+  "t": 482.95,
+  "sound": "WHOOSH",
+  "level": "média",
+  "where": "Corte para «sign»",
+  "why": "wipe vermelho entre ideias"
+ },
+ {
+  "t": 483.71,
+  "sound": "IMPACT",
+  "level": "média",
+  "where": "Assinatura",
+  "why": "toque final do logo"
+ }
+]
