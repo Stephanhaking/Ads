@@ -23,6 +23,8 @@ const SAMPLES: Record<string, Sample> = {
   riserHit: {file: 'riserhit', peak: 1.81, vol: 0.55},
   impact: {file: 'impact', peak: 0.07, vol: 0.55},
   stamp: {file: 'stamp-real', peak: 0.2, vol: 0.7},
+  tick: {file: 'tick-real', peak: 0.05, vol: 0.5},
+  monitor: {file: 'monitor', peak: 0.1, vol: 0.45},
 };
 type Cue = {t: number; sound: string; level: string; where: string};
 type Play = {at: number; s: Sample; vol: number};
@@ -56,8 +58,10 @@ const plan = (): Play[] => {
     else if (snd === 'IMPACT' || snd === 'SILENCIO_DEPOIS_IMPACT') out.push({at: c.t - SAMPLES.impact.peak, s: SAMPLES.impact, vol: c.level === 'forte' ? 1.1 : 0.7});
     else if (snd === 'STAMP') out.push({at: c.t - SAMPLES.stamp.peak, s: SAMPLES.stamp, vol: 1});
     else if (snd === 'AMBIENTE_MONITOR') out.push({at: c.t - SAMPLES.heart.peak, s: SAMPLES.heart, vol: 0.45});
-    else if (snd === 'BEEP_MONITOR') out.push({at: c.t - SAMPLES.heart.peak, s: SAMPLES.heart, vol: 1});
-    // TICK, DRONE: à espera de ficheiros reais
+    else if (snd === 'BEEP_MONITOR') out.push({at: c.t - SAMPLES.monitor.peak, s: SAMPLES.monitor, vol: 1});
+    else if (snd === 'TICK_RAPIDO') for (let k = 0; k < 9; k++) out.push({at: c.t + k * 0.11 - SAMPLES.tick.peak, s: SAMPLES.tick, vol: 0.45 + k * 0.04});
+    else if (snd === 'TICK') for (const off of [0, 0.83, 1.75]) out.push({at: c.t + off - SAMPLES.tick.peak, s: SAMPLES.tick, vol: 1}); // predict · nudge · confirm
+    // DRONE: à espera de ficheiro real
   }
   return out;
 };
