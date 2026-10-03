@@ -32,6 +32,38 @@ def load16k(path):
     return x.astype(np.int16).tobytes()
 
 
+def onsets(path, thr_db=-42, gap_ms=22):
+    """Instantes em que a fala recomeça depois de uma micro-pausa (energia a subir)."""
+    w = wave.open(path)
+    sr = w.getframerate()
+    x = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768
+    hop = int(sr * 0.005)
+    n = len(x) // hop
+    rms = np.sqrt((x[:n * hop].reshape(n, hop) ** 2).mean(1)) + 1e-9
+    loud = 20 * np.log10(rms) > thr_db
+    g = max(1, int(gap_ms / 5))
+    out, i = [], 0
+    while i < n:
+        if loud[i]:
+            j = i
+            while j < n and (loud[j] or loud[j:j + g].any()):
+                j += 1
+            out.append(i * 0.005)
+            i = j
+        else:
+            i += 1
+    return np.array(out)
+
+
+def snap(words, ons, tol=0.12):
+    for w in words:
+        if len(ons):
+            k = int(np.argmin(abs(ons - w['t'])))
+            if abs(ons[k] - w['t']) <= tol:
+                w['t'] = round(float(ons[k]), 3)
+    return words
+
+
 def align(text, pcm):
     toks = [norm(t) for t in re.split(r"[\s—-]+", text)]
     toks = [SUBS.get(t, t) for t in toks if t]
@@ -46,6 +78,7 @@ def align(text, pcm):
         w = seg.word
         if w in ('<s>', '</s>', '<sil>', '[NOISE]', '[SPEECH]') or w.startswith('++'):
             continue
+        w = re.sub(r'\(\d+\)$', '', w)
         out.append({'w': w, 't': round(seg.start_frame / 100, 2), 'e': round(seg.end_frame / 100, 2)})
     return toks, out
 
@@ -61,6 +94,8 @@ if __name__ == '__main__':
         if not os.path.exists(wav):
             continue
         toks, words = align(text, load16k(wav))
-        res[pid] = words
+        res[pid] = snap(words, onsets(wav))
         print(f'{pid}: {len(words)}/{len(toks)} palavras alinhadas', flush=True)
     json.dump(res, open(OUT, 'w'), indent=1, ensure_ascii=False)
+    # cópia dentro de src/ para o Remotion importar
+    json.dump(res, open(os.path.join(ROOT, 'src/google/wordTimes.json'), 'w'), ensure_ascii=False)
