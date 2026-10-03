@@ -1,0 +1,17 @@
+{
+  "cold-hospital": ["nurse checking patient monitor night", "hospital corridor night", "heart rate monitor hospital"],
+  "a3-phone-scroll": ["person scrolling smartphone dark room", "thumb scrolling social feed"],
+  "a3-billboard": ["city billboard advertising night", "times square advertising"],
+  "a4-chess": ["chess hands playing close up", "chess board move"],
+  "a4-bed-phone": ["person using phone in bed at night", "phone light face dark bedroom"],
+  "a5-teen-phone": ["teenager phone watching videos dark", "teen scrolling phone couch"],
+  "a5-autoplay": ["finger tapping video next screen", "watching tv autoplay couch"],
+  "a6-signin": ["typing login password laptop hands", "person signing in computer"],
+  "a6-map": ["hand holding phone maps navigation street", "gps navigation walking city"],
+  "a6-court": ["courthouse steps", "judge gavel courtroom"],
+  "a7-question": ["person typing question search night", "woman searching laptop late"],
+  "a8-hospital-hall": ["hospital hallway empty night", "doctor walking hospital corridor"],
+  "a8-bedside": ["hospital bed patient hand", "elderly patient hospital bed"],
+  "a8-walk-away": ["person walking away city dusk", "silhouette walking street night"],
+  "general-data": ["data center servers corridor", "server room blue light"]
+}
