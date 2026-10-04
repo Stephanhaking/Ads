@@ -2,6 +2,7 @@ import {Composition} from 'remotion';
 import {MainVideo} from './MainVideo';
 import {GoogleVideo, GG_TOTAL} from './GoogleVideo';
 import {video} from './styles';
+import {FeudalPreview, FEUDAL_PREVIEW_FRAMES} from './feudal/Preview';
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -13,6 +14,7 @@ export const RemotionRoot: React.FC = () => (
     width={video.width}
     height={video.height}
   />
+  <Composition id="FeudalPreview" component={FeudalPreview} durationInFrames={FEUDAL_PREVIEW_FRAMES} fps={30} width={1920} height={1080} />
   <Composition
     id="MainVideo"
     component={MainVideo}
