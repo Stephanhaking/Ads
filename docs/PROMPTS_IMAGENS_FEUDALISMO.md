@@ -4,10 +4,10 @@ Cada imagem é usada **uma só vez**. Sem logos nem texto legível (as marcas, s
 Formato: 16:9 (3:4 nos retratos), preto e branco, sujeito isolado em fundo branco, contraste alto. Sem rostos de pessoas reais.
 Nomes de ficheiro sugeridos entre parênteses (prefixo `f-`).
 
-**Bloco de estilo A (recomendado, fotografia; colar no fim de cada prompt):**
+**Bloco de estilo A (fotografia; para as cenas de hoje, Atos IV–V):**
 `black and white documentary photograph, high contrast, dramatic side lighting, subject isolated on a plain pure white background, sharp focus, no text, no logos, no watermark, editorial photojournalism style`
 
-**Bloco de estilo B (alternativa, gravura; para as cenas de época com pessoas):**
+**Bloco de estilo B (RECOMENDADO para as cenas de época, Atos I–III e VIII; ver ESTILO_VISUAL_FEUDALISMO.md):**
 `black and white woodcut engraving style, bold ink lines, high contrast, medieval illustration, subject isolated on a plain pure white background, no text, no watermark`
 
 ## Abertura

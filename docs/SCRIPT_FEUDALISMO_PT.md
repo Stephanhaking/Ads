@@ -1,6 +1,6 @@
 # Guião — "Estamos a viver no feudalismo outra vez" (PT)
 
-Vídeo #2 da série. Duração alvo: ~9 min (≈1 450 palavras a ~150 pal./min).
+Vídeo #2 da série. Duração alvo: **~12 min** (≈1 750 palavras a ~145 pal./min, mais pausas).
 Só narração, sem visuais nem beats. Frases marcadas com **[VERIFICAR]** precisam de fonte antes de gravar.
 
 **Títulos possíveis**
@@ -26,9 +26,13 @@ Pelo século IX, a Europa estava a ser atacada de todos os lados. Vikings pelo n
 
 Quem vivia no campo percebeu depressa uma coisa simples: ninguém ia defendê-lo. Ou arranjava um protetor, ou não sobrevivia.
 
-E o protetor mais próximo era sempre o mesmo: o homem forte da região. O que tinha cavalos, armas e uma torre de pedra. O senhor.
+E o protetor mais próximo era sempre o mesmo: o homem forte da região. O que tinha cavalos, armas e um sítio onde se refugiar. Primeiro, uma torre de madeira num monte. Depois, com o tempo, uma fortaleza de pedra.
+
+Repara na lógica. Ninguém construiu o castelo para te roubar. Construiu-o para te proteger. O roubo só veio depois, devagar, com a proteção já aceite.
 
 ## Ato II — O contrato
+
+Quando um camponês aceitava um senhor, havia até uma cerimónia. Ajoelhava-se, punha as mãos entre as mãos do senhor, e jurava fidelidade. Hoje reconhecemos a imagem, porque se parece estranhamente com um aperto de mão antes de assinar um papel.
 
 O acordo era direto. O senhor garantia proteção e deixava o camponês trabalhar um pedaço de terra. Em troca, o camponês entregava três coisas.
 
@@ -38,7 +42,9 @@ Segundo, uma parte da colheita. E ainda havia a décima parte para a Igreja.
 
 Terceiro, e a mais importante: a liberdade de sair. Os servos ficavam presos à terra. A terra pertencia ao senhor, e eles vinham com ela.
 
-Repara numa coisa: ninguém lhes pôs uma faca ao pescoço no dia em que assinaram. Era uma troca. Tinham medo, e o senhor tinha uma solução. Só mais tarde perceberam o preço.
+Em muitos lugares, até os momentos mais pessoais tinham preço. Casar uma filha podia exigir pagar uma taxa ao senhor. **[VERIFICAR: exemplos e variações por região, ex.: "merchet" em Inglaterra]**
+
+E repara numa coisa: ninguém lhes pôs uma faca ao pescoço no dia em que assinaram. Era uma troca. Tinham medo, e o senhor tinha uma solução. Só mais tarde perceberam o preço.
 
 ## Ato III — A porta e a portagem
 
@@ -78,7 +84,17 @@ Pensa em quem vende numa grande plataforma de comércio online. O vendedor paga 
 
 É o moinho outra vez. Não é preciso proibir ninguém de moer o trigo. Basta ser dono do único moinho da região.
 
-## Ato V-B — O contrato que muda sozinho
+## Ato V-B — Dois casos reais
+
+Estes não são exemplos inventados para o vídeo. Já foram parar a tribunais.
+
+Em 2020, a Epic Games, a empresa por trás de um jogo muito popular, processou a Apple por causa das regras e das comissões da sua loja de aplicações. A Epic dizia que não podia vender diretamente aos jogadores, nem sequer avisá-los de que existia um preço mais barato fora da loja. **[VERIFICAR: datas, alegações e decisões; o tribunal deu razão à Apple na maioria dos pontos mas limitou o bloqueio de links]**
+
+E nos Estados Unidos, a autoridade da concorrência processou a Amazon, alegando que a empresa penalizava os vendedores que oferecessem preços mais baixos noutros sítios, e que as taxas totais tinham ficado difíceis de contornar. **[VERIFICAR: data do processo, alegações exatas e estado atual]**
+
+Repara no padrão. Em ambos os casos, a queixa não é só o preço. É a porta. Quem controla a passagem decide as regras, e quem quer chegar aos clientes tem de aceitar.
+
+## Ato V-C — O contrato que muda sozinho
 
 Há ainda uma diferença que torna tudo mais subtil. O contrato do camponês ficava escrito, ou pelo menos era conhecido por todos. O teu não.
 
@@ -88,7 +104,7 @@ Dizem-te que és tu que escolhes. Mas escolher entre aceitar tudo ou perder a tu
 
 E o que é pedido hoje já não é só trabalho ou colheita. É conhecimento sobre ti.
 
-## Ato V-C — Quando o senhor te conhece
+## Ato V-D — Quando o senhor te conhece
 
 No primeiro vídeo deste canal, contámos como uma empresa treinou um sistema para prever, a partir de registos de hospital, quem corria risco de morrer. Pensa no que isso significa: uma máquina capaz de olhar para os teus dados e dizer o que vai acontecer contigo.
 
@@ -96,21 +112,35 @@ Agora pensa no mesmo princípio, aplicado ao que compras, ao que vês, ao que se
 
 ## Ato VI — Quem disse isto primeiro
 
-Esta ideia não é minha. O economista grego Yanis Varoufakis chama-lhe tecnofeudalismo, no livro de 2023 com esse nome. Para ele, as grandes plataformas já não competem num mercado: são donas do território onde o mercado acontece, e cobram renda por lá estarmos. Antes, o francês Cédric Durand tinha escrito sobre algo parecido, em *Techno-féodalisme*, em 2020.
+Esta ideia não é minha. O economista grego Yanis Varoufakis chama-lhe tecnofeudalismo, no livro de 2023 com esse nome. Para ele, as grandes plataformas já não competem num mercado: são donas do território onde o mercado acontece, e cobram renda por lá estarmos. Antes, o francês Cédric Durand tinha escrito sobre algo parecido, em *Techno-féodalisme*, em 2020. **[VERIFICAR: títulos, anos e a tese de cada um]**
 
 ## Ato VII — Os limites da comparação
 
-Mas sejamos honestos. A comparação tem limites, e há economistas que discordam dela.
+Mas sejamos honestos. A comparação tem limites, e há economistas que discordam dela. **[VERIFICAR: citar uma voz crítica concreta, ex. a crítica de Evgeny Morozov ao conceito]**
 
-O camponês não podia mudar de senhor. Tu podes apagar uma conta. Existem alternativas. As empresas ainda competem entre si, e há leis a tentar travá-las.
+Uns dizem que isto não é feudalismo, é capitalismo com monopólios. As empresas ainda competem entre si, há leis a tentar travá-las, e há alternativas.
+
+O camponês não podia mudar de senhor. Tu podes apagar uma conta.
 
 Só que apagar uma conta é uma coisa. Perder as fotografias de dez anos, o contacto com os teus amigos, o teu emprego ou os teus clientes é outra. É isso que torna a saída cara. Não é proibida, é só caríssima. E esse custo é, para os senhores de hoje, o equivalente das muralhas.
 
+Podes concordar com a analogia ou não. O que importa é o que ela faz ver: onde está o poder, quem cobra para passar, e o que perdes se saíres.
+
+## Ato VIII — Como acabou o feudalismo
+
+E como acabou o feudalismo? A resposta não é uma batalha.
+
+A meio do século XIV, a peste negra matou uma parte enorme da população europeia. **[VERIFICAR: estimativa de mortes, normalmente citada entre um terço e metade em várias regiões]** De repente, faltavam trabalhadores. E um camponês que sabe que o senhor precisa dele tem, pela primeira vez, algo para negociar. Podia pedir mais, ir para outro lugar, ou ir para a cidade.
+
+As cidades cresceram. O comércio, o dinheiro e os ofícios davam outra forma de viver, longe do moinho do senhor. Havia até um ditado alemão: "o ar da cidade torna livre". **[VERIFICAR: origem e uso do ditado "Stadtluft macht frei"]**
+
+Repara no que mudou. Não foi a bondade dos senhores. Foi o aparecimento de alternativas, e de pessoas com poder para as escolher.
+
 ## Fecho
 
-Há uma coisa que o feudalismo ensina bem. Não acabou porque os senhores ficaram simpáticos. Acabou quando as pessoas encontraram alternativas, quando as regras mudaram e quando perceberam que o acordo podia ser outro.
+Há uma coisa que o feudalismo ensina bem. Acabou quando as pessoas encontraram outro caminho, quando as regras mudaram e quando perceberam que o acordo podia ser outro.
 
-Não precisas de apagar tudo e viver numa cabana. Precisas de saber o que estás a entregar, a quem, e em troca de quê.
+Não precisas de apagar tudo e viver numa cabana. Precisas de saber o que estás a entregar, a quem, e em troca de quê. E de saber que a saída existe, mesmo quando é cara.
 
 No próximo vídeo vamos ver, passo a passo, como sair do castelo sem sair do mundo.
 
@@ -119,10 +149,11 @@ Isto foi o Distinguish.
 ---
 
 ## Fontes a confirmar antes de gravar
-1. Feudalismo e as obrigações do servo (corveia, dízimo, banalidades): obra de referência de história medieval (ex.: Marc Bloch, *A Sociedade Feudal*; Georges Duby).
-2. Cronologia das invasões (vikings, magiares, sarracenos) nos séculos IX–X.
+1. Feudalismo e as obrigações do servo (corveia, dízimo, banalidades, cerimónia de homenagem): obra de referência de história medieval (ex.: Marc Bloch, *A Sociedade Feudal*; Georges Duby).
+2. Cronologia das invasões (vikings, magiares, sarracenos) nos séculos IX–X e da passagem de torres de madeira a castelos de pedra.
 3. Varoufakis, *Technofeudalism: What Killed Capitalism* (2023); Durand, *Techno-féodalisme* (2020). Conferir o ano e o que cada um defende.
-4. Comissão das lojas de aplicações (Apple e Google): valores e exceções atuais, e o caso Epic v. Apple.
-5. Taxas totais cobradas a vendedores de uma grande plataforma de comércio online: usar relatório independente (por exemplo da FTC ou de uma análise de terceiros).
+4. Comissão das lojas de aplicações (Apple e Google): valores e exceções atuais, e o caso Epic v. Apple (datas, decisões, recursos).
+5. Processo da autoridade da concorrência dos EUA contra a Amazon (data, alegações, estado atual) e as taxas totais cobradas a vendedores, com relatório independente.
 6. Se usares a frase "empresas a saber mais sobre ti do que tu próprio", mostra o exemplo que a sustenta (o do vídeo #1 serve).
-7. Contra-argumentos: incluir 1 voz crítica do conceito de tecnofeudalismo, para o vídeo ficar equilibrado.
+7. Contra-argumento: pelo menos 1 voz crítica do conceito de tecnofeudalismo, citada com fonte.
+8. Peste negra e o fim do feudalismo: estimativas de mortalidade, efeito nos salários e na mobilidade dos camponeses, e o ditado "o ar da cidade torna livre".
