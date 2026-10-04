@@ -58,6 +58,16 @@ Tal como o camponês, não houve uma faca ao pescoço. Houve conveniência. Tinh
 
 E tal como o camponês, só mais tarde começamos a perceber o preço. Os teus dados deixam de ser teus. Não é só a tua privacidade: é a empresa a saber mais sobre ti do que tu próprio, e a usar isso para te prever.
 
+## Ato IV-B — Um dia na vida de um servo digital
+
+Acorda com o alarme do telemóvel. Antes de sair da cama, já abriu três aplicações. Uma diz-lhe o que aconteceu enquanto dormia. Outra mostra-lhe o tempo. A terceira, a cara de pessoas que conhece, a fazer coisas que ele não fez.
+
+Vai para o trabalho, e o mapa sabe o caminho. Pergunta uma dúvida ao motor de pesquisa. À hora de almoço, compra algo online. À noite, vê um vídeo, e depois outro, e outro, porque o próximo já está a começar sozinho.
+
+Nenhum destes momentos teve um preço visível. E, no entanto, ao fim do dia, várias empresas sabem onde esteve, o que procurou, o que quase comprou e quanto tempo hesitou.
+
+Cada gesto é pequeno. É a soma que forma o retrato. E esse retrato vale dinheiro, porque permite prever o que ele vai fazer a seguir.
+
 ## Ato V — A renda
 
 Mas o paralelo mais forte não são os dados. É a renda.
@@ -67,6 +77,22 @@ Pensa na loja de aplicações do telemóvel. Se criares uma aplicação e quiser
 Pensa em quem vende numa grande plataforma de comércio online. O vendedor paga para estar lá, paga para aparecer à frente, paga pela logística. **[VERIFICAR: percentagem total de taxas, fonte independente]**
 
 É o moinho outra vez. Não é preciso proibir ninguém de moer o trigo. Basta ser dono do único moinho da região.
+
+## Ato V-B — O contrato que muda sozinho
+
+Há ainda uma diferença que torna tudo mais subtil. O contrato do camponês ficava escrito, ou pelo menos era conhecido por todos. O teu não.
+
+Os termos de uma plataforma mudam. Muitas vezes sem aviso claro, outras com um texto longo que quase ninguém lê, e um botão no fim. Aceitas, porque a alternativa é perder o acesso.
+
+Dizem-te que és tu que escolhes. Mas escolher entre aceitar tudo ou perder a tua vida digital não é bem uma escolha. É o mesmo dilema do camponês perante o senhor: um pouco mais de proteção, um pouco menos de liberdade, de cada vez.
+
+E o que é pedido hoje já não é só trabalho ou colheita. É conhecimento sobre ti.
+
+## Ato V-C — Quando o senhor te conhece
+
+No primeiro vídeo deste canal, contámos como uma empresa treinou um sistema para prever, a partir de registos de hospital, quem corria risco de morrer. Pensa no que isso significa: uma máquina capaz de olhar para os teus dados e dizer o que vai acontecer contigo.
+
+Agora pensa no mesmo princípio, aplicado ao que compras, ao que vês, ao que sentes. O senhor medieval conhecia os teus campos. O de hoje conhece os teus hábitos. E quem conhece os teus hábitos pode influenciar as tuas escolhas, quase sem que dês por isso.
 
 ## Ato VI — Quem disse isto primeiro
 
