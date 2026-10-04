@@ -1,0 +1,132 @@
+{
+ "voice": "Iapetus",
+ "style": "Read as a calm, intelligent documentary narrator. Measured pace, natural pauses, subtle emphasis on key words. No theatrics.",
+ "short": false,
+ "chunks": [
+  {
+   "block": "cold-open",
+   "text": "A thousand years ago, a peasant made the most important choice of his life. It wasn't what crop to plant in the spring, or when to begin the autumn harvest. It was who to hand his freedom to.\n\nToday, you make that very same choice dozens of times a day. Except nobody asks you to kneel or swear a solemn oath. You just tap \"Accept.\"\n\nYou're not a peasant. But you do pay rent every month. You just never see the bill.\n\nThis is a very old story. And if you look closely at how it unfolded back then, you will see that today's digital world was already written centuries ago.",
+   "id": "c01"
+  },
+  {
+   "block": "cold-open",
+   "text": "By the end of this video, you'll know who you're paying, how much, and the one thing that ended feudalism last time. It's something you can start this week.",
+   "id": "c02"
+  },
+  {
+   "block": "act-i",
+   "text": "In the ninth century, Europe was unraveling under relentless, violent attacks. Vikings raided from the northern seas, Magyars struck from the east, and Saracen raiders pressed from the south. Central authority had fragmented. Kings were far away, and their royal armies were even farther.\n\nIf you lived in the countryside, you quickly realized one simple, terrifying truth: nobody was coming to defend you. You either found a local protector, or you didn't survive.\n\nAnd that protector was always the same man: the regional warlord who possessed armored horses, trained fighters, and somewhere safe to retreat—first a wooden tower on an earthen mound, later a formidable fortress of stone.",
+   "id": "c03"
+  },
+  {
+   "block": "act-i",
+   "text": "Notice the crucial logic. Nobody built the castle to rob you. They built it to protect you from chaos. The extraction didn't start with a sword at your throat. It came later, slowly and systematically, once that protection was already accepted as indispensable.\n\nProtection was the offer. But there was a second contract, one nobody read. It had three clauses.",
+   "id": "c04"
+  },
+  {
+   "block": "act-ii",
+   "text": "When a peasant accepted a lord, they held a formal homage ceremony. The peasant knelt, placed his hands between the lord's hands, and swore fealty. That gesture—known as the immixtio manuum—is often compared to the handshake we still use before signing a contract.\n\nThe deal was straightforward: military protection and a plot of land to feed your family, in exchange for three heavy obligations.\n\nFirst, forced labor—known as corvée. In many regions, serfs had to spend several days a week farming the lord's personal fields before they were allowed to touch their own crops.\n\nSecond, a heavy share of the harvest, plus a tithe to the local Church.",
+   "id": "c05"
+  },
+  {
+   "block": "act-ii",
+   "text": "Third, and most importantly: the surrender of your freedom to leave. Serfs were bound to the soil, legally attached to the estate as part of the property.\n\nEven personal life carried a price tag. In medieval England, a serf paid a \"merchet\" tax to his lord for permission to marry off his daughter, or a \"heriot\" death duty, surrendering his family's best animal just to keep farming the same dirt.\n\nNobody held a knife to their throats on day one. It was a trade driven by fear and necessity. Only long after agreeing did they realize the true, lasting price.\n\nBut the contract wasn't where the lord made his real money. That was somewhere nobody thought to look: the mill.",
+   "id": "c06"
+  },
+  {
+   "block": "act-iii",
+   "text": "Beyond labor and taxes, the feudal system contained a stroke of economic genius: the lord owned the infrastructure. Under exclusive feudal monopolies known as banalités, the lord owned the village mill, the communal oven, and the wine press.\n\nIf you harvested wheat and wanted to make flour, building your own hand mill was strictly forbidden. You had to bring your grain to the lord's mill and pay a fixed share of your flour as a fee. If you wanted to bake bread, the oven was his.",
+   "id": "c07"
+  },
+  {
+   "block": "act-iii",
+   "text": "See the trick? The lord didn't need to threaten you with weapons every day. He simply controlled the single bottleneck through which all economic life had to pass. Wherever you turned, there was a door, and beside the door stood someone with an open hand.\n\nNow here's the part that should make you uncomfortable. You already use a mill. You carry it in your pocket.",
+   "id": "c08"
+  },
+  {
+   "block": "act-iv",
+   "text": "Now, think about the smartphone in your pocket.\n\nWhen you accept a modern tech platform's terms of service, you hand over a continuous stream of personal data: where you go, what you buy, who you talk to, and what you think. You hand over hours of your attention every single day. In return, you get protection and access: to your friends, your job, your photos, and the map that guides you home.\n\nJust like the medieval peasant, nobody forced you into this contract. There was no violence. A giant corporation offered a frictionless, zero-cost solution to your everyday problems.",
+   "id": "c09"
+  },
+  {
+   "block": "act-iv",
+   "text": "And just like the peasant, only long after getting comfortable do we begin to grasp the price. Your data stops belonging to you. But this isn't just a quiet loss of personal privacy. It creates an extreme asymmetry of power: companies can learn patterns about you that you never notice yourself, and use that knowledge to predict, steer, and monetize your behavior.",
+   "id": "c10"
+  },
+  {
+   "block": "act-iv-b",
+   "text": "Consider a single day in the life of a modern digital serf.\n\nHe wakes up to his phone's alarm. Before his feet touch the floor, he has opened three apps—one telling him what happened in the world while he slept, another displaying the weather, and a third showing a stream of friends living curated lives.\n\nHe commutes using an algorithmic navigation map, types a private health question into a search engine, buys a household item online at lunch, and spends his evening streaming videos that automatically queue up the next clip before he can even decide to stop.",
+   "id": "c11"
+  },
+  {
+   "block": "act-iv-b",
+   "text": "Not a single one of these moments required an upfront cash payment. Yet by bedtime, a handful of global corporations know exactly where he walked, what worried him, what items he hovered over, and how many seconds he hesitated.\n\nEach individual gesture is small. But the sum total builds a high-definition psychological portrait—value generated entirely by his life, owned entirely by them, and sold to predict his next move.\n\nSo if they're not charging him money, how do they get paid? Follow the rent.",
+   "id": "c12"
+  },
+  {
+   "block": "act-v",
+   "text": "Yet the strongest parallel between our world and the Middle Ages isn't the extraction of data. It's the collection of rent.\n\nTake the app store on your phone. If you build software and want to reach customers, you cannot simply hand them your work. You must pass through a gatekeeper's store, paying a standard platform commission of up to thirty percent—or fifteen percent for smaller developers and recurring subscriptions.\n\nOr look at merchants selling on a massive online marketplace. Sellers pay listing fees, compulsory logistics fees, and sponsored ad placements just to appear in search results. Independent researchers estimate that when you add these fees together, the platform can take close to half of a seller's revenue.",
+   "id": "c13"
+  },
+  {
+   "block": "act-v",
+   "text": "It is the lord's mill all over again. You don't need to ban competition; you just need to own the only mill in town and charge a toll on everyone who needs to grind wheat.\n\nYou might think this is just a clever comparison. It isn't. Two of the biggest companies on Earth are being sued over exactly this.",
+   "id": "c14"
+  },
+  {
+   "block": "act-v-b",
+   "text": "These aren't hypothetical metaphors. They are active legal battles unfolding inside federal courtrooms.\n\nIn 2020, Epic Games sued Apple over app store commissions and strict anti-steering rules. While judges ruled that Apple wasn't an illegal monopolist under federal law on most counts, courts found that its anti-steering policies violated California unfair competition laws—forcing Apple to allow external payment links, though the fight over what Apple may charge on those links has continued in court.",
+   "id": "c15"
+  },
+  {
+   "block": "act-v-b",
+   "text": "In September 2023, the U.S. Federal Trade Commission and seventeen state Attorneys General filed a landmark antitrust lawsuit against Amazon. The government alleges Amazon abuses monopoly power by punishing sellers who offer lower prices elsewhere, artificially inflating prices across the web and coercing merchants into expensive fulfillment services.\n\nNotice the recurring pattern. In both cases, the core grievance isn't just high prices—it's control of the door. Whoever commands the bottleneck dictates the rules of economic life.\n\nAnd that's only the part we can see in court. The part we can't see is what they take that isn't money.",
+   "id": "c16"
+  },
+  {
+   "block": "act-v-c",
+   "text": "Digital feudalism adds a subtler, more insidious twist: your contract changes while you sleep. Medieval feudal agreements rested on fixed local customs. Modern terms of service update silently. You click \"Agree\" on a dense, lengthy legal document because rejecting it means losing access.\n\nThey tell us this is consumer choice. But choosing between accepting continuous surveillance or losing access to your social connections, career tools, and daily utilities is not a choice. It is the exact trade-off the peasant faced outside the castle walls: yield another slice of your freedom, or face the wilderness alone.",
+   "id": "c17"
+  },
+  {
+   "block": "act-v-d",
+   "text": "And what is extracted from us today is far more intimate than physical grain. It is behavioral intelligence.\n\nJust as predictive models in healthcare analyze patient records to anticipate mortality risks, platform algorithms analyze your digital footprint to predict your choices.\n\nThe medieval lord knew the size of your harvest. Today's digital lord can infer your late-night worries, your political leanings, and what moves you. And whoever controls the map of your habits holds the power to nudge your decisions without you ever realizing your will was steered.",
+   "id": "c18"
+  },
+  {
+   "block": "act-vi",
+   "text": "This structural critique isn't just an internet theory. It is grounded in serious economic literature.\n\nIn 2020, French economist Cédric Durand published Techno-féodalisme, detailing how digital platforms extract rent through technological lock-in rather than traditional market competition.\n\nIn 2023, former Greek finance minister Yanis Varoufakis published Technofeudalism: What Killed Capitalism. Varoufakis argues that classical capitalism has been replaced by \"cloud capital.\" Major platforms no longer function as open markets, but as private cloud fiefs where users generate value as \"cloud serfs\" and traditional businesses pay rent as \"cloud vassals.\"\n\nAnd yet, before you take their word for it, there's a serious argument that all of this is wrong.",
+   "id": "c19"
+  },
+  {
+   "block": "act-vii",
+   "text": "To be intellectually honest, however, we must recognize the limits of this comparison. Many economists and scholars push back against the technofeudal label.\n\nWriters like Evgeny Morozov argue, in a well-known critique of the idea, that Big Tech is simply monopoly capitalism at work. In his view, tech platforms are still driven by classical capital accumulation, intense corporate competition, and profit extraction—not a regression to pre-capitalist feudalism.\n\nFurthermore, medieval peasants were legally bound to the soil under threat of physical violence, whereas you can technically delete your apps and walk away.",
+   "id": "c20"
+  },
+  {
+   "block": "act-vii",
+   "text": "Yet while deleting an app takes seconds, leaving the digital ecosystem is painfully costly. Severing ten years of photos, professional contacts, client networks, and communication tools creates immense structural friction—the digital equivalent of castle walls. You aren't forbidden from leaving; the cost of leaving is simply designed to be ruinously high.\n\nSo if the comparison is even half right, history has a very specific answer to one question: how do you actually get out? And it's not what you'd expect.",
+   "id": "c21"
+  },
+  {
+   "block": "act-viii",
+   "text": "How did historical feudalism actually end? You'd expect a revolution. There wasn't one. It took a massive structural shock.\n\nBetween 1346 and 1353, the Black Death swept across Europe, eliminating between one-third and one-half of the population. Severe labor shortages inverted the balance of power. For the first time in centuries, surviving peasants possessed genuine bargaining power. They could demand wages, move to another estate, or head toward growing towns.",
+   "id": "c22"
+  },
+  {
+   "block": "act-viii",
+   "text": "Cities flourished as independent hubs of trade and craft, giving birth to the famous medieval German legal principle: Stadtluft macht frei—\"City air makes you free.\" Under customary law in many German towns, a serf who lived in a free city for a year and a day without being claimed gained legal freedom.\n\nFeudalism collapsed not because lords grew generous, but because alternative spaces emerged, economic leverage shifted, and ordinary people gained the practical ability to walk away.",
+   "id": "c23"
+  },
+  {
+   "block": "close",
+   "text": "The history of feudalism teaches us one timeless lesson: coercive systems endure only as long as people believe no alternative exists. Feudalism ended when new spaces were created, when the rules were rewritten, and when people realized that the contract governing their lives was not a law of nature.\n\nYou don't need to smash your phone or go live off the grid in a cabin. But you do need to see the digital landscape for what it really is: to recognize what you are handing over, to whom, and at what cost. And above all, to remember that new paths can be built when we demand them.",
+   "id": "c24"
+  },
+  {
+   "block": "close",
+   "text": "That's the thing I promised at the start. Not a revolution. Alternatives, chosen by enough people. And you can start this week: pick one service you rely on, and set up an exit. Export your data from it, or try one alternative.\n\nIn the next video, I'll show you the exact steps to leave the castle without leaving the modern world. And the first one costs you nothing.\n\nThis was Distinguish.",
+   "id": "c25"
+  }
+ ]
+}

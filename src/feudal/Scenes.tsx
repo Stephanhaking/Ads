@@ -1,0 +1,179 @@
+import React from 'react';
+import {AbsoluteFill, interpolate} from 'remotion';
+import {fonts} from '../styles';
+import {ArtSlot, Bg, Defs, INK, Lines, Mono, Panel, RED, SceneCtx, Tag, clamp, ease, fg, rev, useAt, useT} from './Common';
+import type {Sc} from './script';
+import {wt} from './words';
+
+const Wipe: React.FC = () => {
+  const t = useT();
+  const p = interpolate(t, [0, 0.42], [0, 1], clamp);
+  if (p >= 1) return null;
+  return <div style={{position: 'absolute', top: 0, bottom: 0, left: 0, width: 1920, background: RED, transform: `translateX(${p * 100}%)`, zIndex: 20}} />;
+};
+
+const Stat: React.FC<{d: any; theme: Sc['theme']; at: (p: string, o?: number) => number}> = ({d, theme, at}) => {
+  const t = useT();
+  const a = Math.min(at(d.p), 0.9);
+  const pr = rev(t, a, 0.5);
+  const col = fg(theme);
+  const sub = d.sp ? at(d.sp) : a + 1;
+  return (
+    <div style={{position: 'absolute', left: 120, right: 120, top: 330, textAlign: 'center', color: col}}>
+      <div style={{fontFamily: fonts.heading, fontSize: 330, lineHeight: 1, color: RED, transform: `scale(${0.8 + pr * 0.2})`, opacity: pr}}>{d.value}</div>
+      <div style={{fontFamily: fonts.heading, fontSize: 56, textTransform: 'uppercase', opacity: pr}}>{d.label}</div>
+      {d.frac > 0 && (
+        <div style={{margin: '36px auto 0', width: 1100, height: 46, border: `5px solid ${col}`, position: 'relative'}}>
+          <div style={{position: 'absolute', left: 0, top: 0, bottom: 0, width: `${d.frac * 100 * pr}%`, background: RED}} />
+        </div>
+      )}
+      <div style={{marginTop: 30, fontFamily: 'Georgia, serif', fontSize: 38, opacity: rev(t, sub, 0.4)}}>{d.sub}</div>
+    </div>
+  );
+};
+
+const Compare: React.FC<{d: any; at: (p: string, o?: number) => number}> = ({d, at}) => (
+  <>
+    {[d.l, d.r].map((c, i) => (
+      <Panel key={i} x={i ? 1000 : 120} y={250} w={800} h={560} at={at(c.p)} tilt={i ? 1.2 : -1.2} bg={i ? INK : '#fff'}>
+        <div style={{color: i ? '#fff' : INK}}>
+          <Mono color={RED}>{c.h}</Mono>
+          <div style={{fontFamily: fonts.heading, fontSize: 74, textTransform: 'uppercase', lineHeight: 1.05, marginTop: 30}}>{c.b}</div>
+        </div>
+      </Panel>
+    ))}
+  </>
+);
+
+const Books: React.FC<{d: any; at: (p: string, o?: number) => number}> = ({d, at}) => (
+  <>
+    {d.books.map((b: any, i: number) => (
+      <Panel key={i} x={150 + i * 850} y={200} w={720} h={700} at={at(b.p)} tilt={i ? 2.5 : -2.5} bg={i ? INK : RED} pad={50}>
+        <div style={{color: '#fff', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', border: '4px solid rgba(255,255,255,0.7)', padding: 40, boxSizing: 'border-box'}}>
+          <Mono color="#fff">{b.y}</Mono>
+          <div style={{fontFamily: fonts.heading, fontSize: i ? 76 : 92, textTransform: 'uppercase', lineHeight: 1.05}}>{b.t}</div>
+          <div style={{fontFamily: 'Georgia, serif', fontSize: 46}}>{b.a}</div>
+        </div>
+      </Panel>
+    ))}
+  </>
+);
+
+const Quote: React.FC<{d: any; at: (p: string, o?: number) => number}> = ({d, at}) => {
+  const t = useT();
+  const a = at(d.p);
+  return (
+    <div style={{position: 'absolute', left: 160, right: 160, top: 220}}>
+      <Tag text={d.kicker} at={0.2} x={0} y={0} fill size={36} />
+      <div style={{marginTop: 120, fontFamily: fonts.heading, fontSize: 130, lineHeight: 1.02, textTransform: 'uppercase', opacity: rev(t, 0.3, 0.5), transform: `translateY(${(1 - rev(t, 0.3, 0.5)) * 40}px)`}}>{d.text}</div>
+      <div style={{marginTop: 50, fontFamily: 'Georgia, serif', fontSize: 52, opacity: rev(t, a, 0.4)}}>{d.sub}</div>
+      <div style={{marginTop: 30, opacity: rev(t, a + 0.3, 0.4)}}><Mono color={RED} size={28}>{d.by}</Mono></div>
+    </div>
+  );
+};
+
+const Mill: React.FC<{d: any; at: (p: string, o?: number) => number}> = ({d, at}) => {
+  const t = useT();
+  const items = [{k: d.a, p: d.pa}, {k: d.b, p: d.pb}, {k: d.c, p: d.pc}];
+  return (
+    <div style={{position: 'absolute', left: 100, top: 560, width: 1720, display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
+      {items.map((it, i) => {
+        const p = rev(t, at(it.p), 0.4);
+        return (
+          <React.Fragment key={i}>
+            <div style={{opacity: p, transform: `scale(${0.85 + p * 0.15})`, background: i === 1 ? INK : '#fff', color: i === 1 ? '#fff' : INK, padding: '34px 50px', fontFamily: fonts.heading, fontSize: 64, boxShadow: '10px 10px 0 ' + RED, border: `4px solid ${INK}`}}>{it.k}</div>
+            {i < 2 && <div style={{fontFamily: fonts.heading, fontSize: 90, color: RED, opacity: p}}>→</div>}
+          </React.Fragment>
+        );
+      })}
+      <div style={{position: 'absolute', right: 40, top: -110, opacity: rev(t, at(d.pc), 0.3), fontFamily: fonts.heading, fontSize: 80, color: RED}}>{d.fee}</div>
+      <div style={{position: 'absolute', left: 560, top: 180, opacity: rev(t, at(d.pf), 0.3), transform: 'rotate(-4deg)'}}>
+        <Tag text="Own mill: forbidden" at={at(d.pf)} x={0} y={0} fill size={50} />
+      </div>
+    </div>
+  );
+};
+
+const Tos: React.FC<{d: any; at: (p: string, o?: number) => number}> = ({d, at}) => {
+  const t = useT();
+  const sw = rev(t, at(d.v2), 0.3);
+  const ok = rev(t, at(d.ok), 0.3);
+  return (
+    <Panel x={420} y={300} w={1080} h={640} at={0.2} tilt={-1}>
+      <Mono>Terms of service · v{sw > 0.5 ? '2' : '1'}</Mono>
+      {[0.95, 0.9, 1, 0.8, 0.96, 0.7, 0.92].map((w, i) => <div key={i} style={{height: 16, width: `${w * 100}%`, background: sw > 0.5 && i % 3 === 1 ? RED : '#d9d9d9', marginTop: 22}} />)}
+      {sw > 0.5 && <div style={{marginTop: 30, fontFamily: fonts.heading, fontSize: 40, color: RED}}>UPDATED — WHILE YOU SLEPT</div>}
+      <div style={{position: 'absolute', right: 40, bottom: 36, padding: '16px 56px', background: ok > 0.5 ? RED : INK, color: '#fff', fontFamily: fonts.heading, fontSize: 48, transform: `scale(${1 + (ok > 0.5 ? 0.08 : 0)})`}}>I AGREE</div>
+    </Panel>
+  );
+};
+
+const Cta: React.FC<{d: any; at: (p: string, o?: number) => number}> = ({d, at}) => {
+  const t = useT();
+  return (
+    <div style={{position: 'absolute', left: 140, top: 330, color: '#fff'}}>
+      {d.items.map((it: any, i: number) => {
+        const p = rev(t, at(it.p), 0.4);
+        return (
+          <div key={i} style={{display: 'flex', alignItems: 'center', gap: 36, margin: '30px 0', opacity: p, transform: `translateX(${(1 - p) * -80}px)`}}>
+            <div style={{width: 96, height: 96, background: '#fff', color: RED, fontFamily: fonts.heading, fontSize: 70, textAlign: 'center', lineHeight: '96px'}}>{i + 1}</div>
+            <div style={{fontFamily: fonts.heading, fontSize: 90, textTransform: 'uppercase'}}>{it.t}</div>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+const End: React.FC = () => {
+  const t = useT();
+  const p = rev(t, 0.2, 0.7);
+  return (
+    <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', color: INK}}>
+      <div style={{opacity: p, textAlign: 'center'}}>
+        <Mono color={RED} size={34}>This was</Mono>
+        <div style={{fontFamily: fonts.heading, fontSize: 210, textTransform: 'uppercase', lineHeight: 1}}>Distinguish</div>
+        <div style={{width: 420 * p, height: 14, background: RED, margin: '30px auto 0'}} />
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+export const SceneView: React.FC<{sc: Sc; start: number}> = ({sc, start}) => {
+  const at = useAt();
+  const theme = sc.theme ?? 'paper';
+  const hasArt = !!sc.art;
+  const kind = sc.kind;
+  const size = sc.size ?? (hasArt ? 104 : kind ? 84 : 128);
+  const lines = sc.lines ?? [];
+  const times = lines.map((l, i) => (l.p ? at(l.p, l.o ?? 1) : 0.15 + i * 0.28));
+  const hot = lines.flatMap((l, i) => (l.hot ? [i] : []));
+  const tags = sc.tags ?? [];
+  const lineY = kind ? 80 : tags.length && !hasArt ? 120 : 190;
+  const tagX = hasArt ? 110 : 120;
+  const tagY0 = hasArt ? 690 : lineY + (lines.length ? 190 : 0) + 40;
+  return (
+    <SceneCtx.Provider value={{start}}>
+      <AbsoluteFill>
+        <Bg theme={theme} />
+        {sc.wipe && <Wipe />}
+        {sc.art && (
+          <ArtSlot name={sc.art.name} x={sc.art.side === 'l' ? 90 : 960} y={130} w={880} h={820} at={sc.art.p ? at(sc.art.p, sc.art.o ?? 1) : 0.25} tilt={sc.art.tilt ?? 0} dark={theme === 'dark'} />
+        )}
+        {lines.length > 0 && kind !== 'end' && <Lines lines={lines.map((l) => l.t)} times={times} x={110} y={lineY} size={size} theme={theme} hot={hot} width={hasArt ? 880 : 1700} />}
+        {tags.map((g, i) => (
+          <Tag key={i} text={g.t} at={at(g.p, g.o ?? 1)} x={tagX} y={tagY0 + i * 104} fill={g.fill} size={hasArt ? 44 : 56} theme={theme} />
+        ))}
+        {kind === 'stat' && <Stat d={sc.data} theme={theme} at={at} />}
+        {kind === 'compare' && <Compare d={sc.data} at={at} />}
+        {kind === 'books' && <Books d={sc.data} at={at} />}
+        {kind === 'quote' && <Quote d={sc.data} at={at} />}
+        {kind === 'mill' && <Mill d={sc.data} at={at} />}
+        {kind === 'tos' && <Tos d={sc.data} at={at} />}
+        {kind === 'cta' && <Cta d={sc.data} at={at} />}
+        {kind === 'end' && <End />}
+      </AbsoluteFill>
+    </SceneCtx.Provider>
+  );
+};
+export {wt, ease};
