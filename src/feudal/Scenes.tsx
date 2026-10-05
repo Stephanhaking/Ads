@@ -3,6 +3,7 @@ import {AbsoluteFill, interpolate} from 'remotion';
 import {fonts} from '../styles';
 import {ArtSlot, Bg, hasImage, Defs, INK, Lines, Mono, Panel, RED, SceneCtx, Tag, clamp, ease, fg, rev, useT} from './Common';
 import {OBJ_MAP} from './script';
+import {BEATS, BeatCaption, BeatStage, Until} from './Beats';
 import type {Sc} from './script';
 import {CollageBG, ICON_MAP, IconStage, Obj} from './Collage';
 import {wt} from './words';
@@ -151,6 +152,16 @@ const Cuts: React.FC<{d: any}> = ({d}) => {
 };
 
 export const SceneView: React.FC<{sc: Sc; start: number; figNo?: number}> = ({sc, start, figNo = 1}) => {
+  const sceneIdx = figNo - 1;
+  const hasBeats = (BEATS[sceneIdx]?.length ?? 0) > 0 && sc.kind !== 'cuts' && sc.kind !== 'end';
+  const firstEnd = hasBeats ? BEATS[sceneIdx][0].t1 - start : 0;
+  const cardKind = !!sc.kind && ['stat', 'quote', 'compare', 'books'].includes(sc.kind);
+  const beatsRight = hasBeats && !sc.kind;
+  // o cartão (stat/quote/compare/books) fica enquanto o conteúdo ainda se desenvolve (última âncora + 2,5 s, no máx. 6 s depois da 1.ª janela)
+  const anchors: number[] = [];
+  const d0 = sc.data ?? {};
+  [d0.p, d0.sp, d0.l?.p, d0.r?.p, ...(d0.books ?? []).map((b: any) => b.p)].forEach((ph) => { if (ph) anchors.push(Math.max(0, wt(ph, 1) - start)); });
+  const holdEnd = cardKind && hasBeats ? Math.max(firstEnd, Math.min(Math.max(0, ...anchors) + 2.5, firstEnd + 6)) : firstEnd;
   const at = (phrase: string, occ = 1, lead = 0.08) => Math.max(0, wt(phrase, occ) - start - lead); // tempo local (s) desde o início da cena
   const theme = sc.theme ?? 'paper';
   const hasArt = !!sc.art;
@@ -170,24 +181,39 @@ export const SceneView: React.FC<{sc: Sc; start: number; figNo?: number}> = ({sc
       <AbsoluteFill>
         <Bg theme={theme} />
         {(isText || (!hasArt && kind && kind !== 'cuts' && kind !== 'end')) && <CollageBG theme={theme} word={((lines.find((l) => l.hot) ?? lines[lines.length - 1])?.t ?? sc.data?.text ?? sc.data?.value ?? 'ARCHIVE').toString().replace(/[.?!:]/g, '').split(' ').slice(-1)[0]} />}
-        {isText && tags.length > 0 && tags.every((g) => ICON_MAP[g.t]) ? <IconStage items={tags.map((g) => ({ic: ICON_MAP[g.t], at: at(g.p, g.o ?? 1)}))} fallback={OBJ_MAP[sc.p]} theme={theme} /> : isText && OBJ_MAP[sc.p] && <Obj name={OBJ_MAP[sc.p]} theme={theme} />}
+        {beatsRight ? <BeatStage sceneIdx={sceneIdx} start={start} theme={theme} /> : isText && tags.length > 0 && tags.every((g) => ICON_MAP[g.t]) ? <IconStage items={tags.map((g) => ({ic: ICON_MAP[g.t], at: at(g.p, g.o ?? 1)}))} fallback={OBJ_MAP[sc.p]} theme={theme} /> : isText && OBJ_MAP[sc.p] && <Obj name={OBJ_MAP[sc.p]} theme={theme} />}
         {sc.wipe && <Wipe />}
         <TornDefs />
-        {sc.art && hasImage(sc.art.name) && (
+        {!beatsRight && sc.art && hasImage(sc.art.name) && (
           <Plate name={sc.art.name} fig={`FIG. ${String(figNo).padStart(2, '0')}`} cap={sc.art.name.replace(/^f-/, '').replace(/-/g, ' ')} tilt={(figNo % 2 ? -1 : 1) * 2.2} x={sc.art.side === 'l' ? 60 : 1010} y={150} w={830} h={720} at={sc.art.p ? Math.min(1.2, at(sc.art.p, sc.art.o ?? 1) - 0.1) : 0.15} />
         )}
         {kind === 'cuts' && <Cuts d={sc.data} />}
-        {sc.art && !hasImage(sc.art.name) && (
+        {!beatsRight && sc.art && !hasImage(sc.art.name) && (
           <ArtSlot name={sc.art.name} x={sc.art.side === 'l' ? 90 : 960} y={130} w={880} h={820} at={sc.art.p ? Math.min(1.2, at(sc.art.p, sc.art.o ?? 1)) : 0.25} tilt={sc.art.tilt ?? 0} dark={theme === 'dark'} />
         )}
-        {lines.length > 0 && kind !== 'end' && <Lines lines={lines.map((l) => l.t)} times={times} x={110} y={lineY} size={size} theme={theme} hot={hot} width={hasArt || kind === 'tos' || (isText && !!OBJ_MAP[sc.p]) ? 900 : 1700} />}
+        {lines.length > 0 && kind !== 'end' && (cardKind && hasBeats ? <Until end={holdEnd}><Lines lines={lines.map((l) => l.t)} times={times} x={110} y={lineY} size={size} theme={theme} hot={hot} width={1700} /></Until> : <Lines lines={lines.map((l) => l.t)} times={times} x={110} y={lineY} size={size} theme={theme} hot={hot} width={hasArt || beatsRight || kind === 'tos' || (isText && !!OBJ_MAP[sc.p]) ? 900 : 1700} />)}
         {tags.map((g, i) => (
           <Tag key={i} text={g.t} at={at(g.p, g.o ?? 1)} x={tagX} y={tagY0 + i * 104} fill={g.fill} size={hasArt ? 44 : 56} theme={theme} />
         ))}
-        {kind === 'stat' && <Stat d={sc.data} theme={theme} at={at} />}
-        {kind === 'compare' && <Compare d={sc.data} at={at} />}
-        {kind === 'books' && <Books d={sc.data} at={at} />}
-        {kind === 'quote' && <Quote d={sc.data} at={at} />}
+        {cardKind && hasBeats ? (
+          <>
+            <Until end={holdEnd}>
+              {kind === 'stat' && <Stat d={sc.data} theme={theme} at={at} />}
+              {kind === 'compare' && <Compare d={sc.data} at={at} />}
+              {kind === 'books' && <Books d={sc.data} at={at} />}
+              {kind === 'quote' && <Quote d={sc.data} at={at} />}
+            </Until>
+            <BeatStage sceneIdx={sceneIdx} start={start} theme={theme} after={holdEnd} noCap />
+            <BeatCaption sceneIdx={sceneIdx} start={start} after={holdEnd} theme={theme} />
+          </>
+        ) : (
+          <>
+            {kind === 'stat' && <Stat d={sc.data} theme={theme} at={at} />}
+            {kind === 'compare' && <Compare d={sc.data} at={at} />}
+            {kind === 'books' && <Books d={sc.data} at={at} />}
+            {kind === 'quote' && <Quote d={sc.data} at={at} />}
+          </>
+        )}
         {kind === 'mill' && <Mill d={sc.data} at={at} />}
         {kind === 'tos' && <Tos d={sc.data} at={at} />}
         {kind === 'cta' && <Cta d={sc.data} at={at} />}

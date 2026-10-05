@@ -11,7 +11,7 @@ import type {Theme} from './Common';
 const useT = () => useCurrentFrame() / FPS;
 // Imagens reais dos objetos (public/feudal/obj/<nome>.png|jpg, registadas por tools/feudal_ingest.py); sem ficheiro usa o desenho de código.
 const objFile = (name: string) => (objs as string[]).find((f) => f.startsWith(name + '.'));
-const ObjArt: React.FC<{name: string; size: number; plate?: boolean}> = ({name, size, plate}) => {
+export const ObjArt: React.FC<{name: string; size: number; plate?: boolean}> = ({name, size, plate}) => {
   const f = objFile(name);
   const Art = OBJS[name] ?? OBJS.coin;
   if (!f) return <svg width={size} height={size} viewBox="0 0 600 600" filter="url(#rough)"><Defs /><Art /></svg>;
@@ -111,7 +111,7 @@ export const CollageBG: React.FC<{theme: Theme; word: string}> = ({theme, word})
           </g>
         )}
       </svg>
-      <Bolt x={1690} y={880} s={0.8} r={12} />
+      <Bolt x={1660} y={10} s={0.7} r={12} />
       <div style={{position: 'absolute', left: 860 + slide * 0.2, top: 790, fontFamily: fonts.heading, fontSize: 90, color: RED, transform: 'rotate(8deg)', opacity: 0.9}}>×</div>
     </AbsoluteFill>
   );

@@ -18,7 +18,8 @@
     "feudal:check": "npx esbuild tools/feudal_check.ts --bundle --platform=node --format=cjs --outfile=/tmp/feudal_check.cjs --loader:.json=json --log-level=error && node /tmp/feudal_check.cjs",
     "feudal:draft": "remotion render FeudalVideo out/feudal-draft.mp4 --scale=0.5 --codec=h264 --crf=26 --audio-codec=aac",
     "feudal:final": "remotion render FeudalVideo out/feudal-final-1080p.mp4 --codec=h264 --crf=18 --pixel-format=yuv420p --audio-codec=aac --audio-bitrate=192k",
-    "feudal:thumb": "remotion still FeudalThumbA out/thumb-A.png && remotion still FeudalThumbB out/thumb-B.png"
+    "feudal:thumb": "remotion still FeudalThumbA out/thumb-A.png && remotion still FeudalThumbB out/thumb-B.png",
+    "feudal:beats": "npx esbuild tools/feudal_beats.ts --bundle --platform=node --format=cjs --outfile=/tmp/feudal_beats.cjs --loader:.json=json --log-level=error && node /tmp/feudal_beats.cjs && python3 tools/feudal_beats_apply.py"
   },
   "dependencies": {
     "@fontsource/archivo-black": "^5.3.0",

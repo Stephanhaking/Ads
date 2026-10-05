@@ -22,7 +22,8 @@ export const TornDefs: React.FC = () => (
 );
 
 // recorte de gravura: folha rasgada + sombra de impressão vermelha desalinhada + legenda
-export const Plate: React.FC<{name: string; fig: string; cap: string; tilt?: number; x?: number; y?: number; w?: number; h?: number; at?: number}> = ({name, fig, cap, tilt = -2, x = 360, y = 130, w = 1200, h = 760, at = 0}) => {
+export type Zoom = {s: number; fx: number; fy: number};
+export const Plate: React.FC<{name: string; fig: string; cap: string; tilt?: number; x?: number; y?: number; w?: number; h?: number; at?: number; zoom?: Zoom; children?: React.ReactNode}> = ({name, fig, cap, tilt = -2, x = 360, y = 130, w = 1200, h = 760, at = 0, zoom, children}) => {
   const f = useCurrentFrame();
   const p = T(f, at, at + 0.18);
   const z = 1 + f / FPS * 0.05;
@@ -31,14 +32,17 @@ export const Plate: React.FC<{name: string; fig: string; cap: string; tilt?: num
       <div style={{position: 'absolute', inset: 0, background: RED, transform: 'translate(22px,18px)', filter: 'url(#torn)'}} />
       <div style={{position: 'absolute', inset: 0, background: '#FBF7EE', filter: 'url(#torn)', boxShadow: '0 20px 50px rgba(0,0,0,.25)'}} />
       <div style={{position: 'absolute', inset: 40, overflow: 'hidden'}}>
-        {imgFile(name) ? (
-          <Img src={staticFile(`feudal/img/${imgFile(name)}`)} style={{width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.1) grayscale(1)'}} />
+        {children ? children : imgFile(name) ? (
+          <Img src={staticFile(`feudal/img/${imgFile(name)}`)} style={{width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.1) grayscale(1)', transform: zoom ? `scale(${zoom.s + f / FPS * 0.04})` : undefined, transformOrigin: zoom ? `${zoom.fx * 100}% ${zoom.fy * 100}%` : undefined}} />
         ) : (
           <ArtSlot name={name} x={0} y={0} w={w - 80} h={h - 80} at={-9} />
         )}
       </div>
+      {zoom && (
+        <div style={{position: 'absolute', left: 40 + (w - 80) * zoom.fx - 130, top: 40 + (h - 80) * zoom.fy - 130, width: 260, height: 260, borderRadius: '50%', border: `10px solid ${RED}`, opacity: T(f, 0.3, 0.6), transform: `scale(${1.4 - 0.4 * T(f, 0.3, 0.6)})`}} />
+      )}
       <div style={{position: 'absolute', left: 28, top: -30, background: INK, color: '#fff', fontFamily: fonts.mono, fontSize: 28, letterSpacing: 4, padding: '8px 18px'}}>{fig}</div>
-      <div style={{position: 'absolute', right: 30, bottom: -26, background: RED, color: '#fff', fontFamily: fonts.heading, fontSize: 36, textTransform: 'uppercase', padding: '8px 22px'}}>{cap}</div>
+      {cap && <div style={{position: 'absolute', right: 30, bottom: -26, background: RED, color: '#fff', fontFamily: fonts.heading, fontSize: 36, textTransform: 'uppercase', padding: '8px 22px'}}>{cap}</div>}
     </div>
   );
 };
