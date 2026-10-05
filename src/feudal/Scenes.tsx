@@ -105,9 +105,9 @@ const Tos: React.FC<{d: any; at: (p: string, o?: number) => number}> = ({d, at})
     <>
       <Obj name="phone" x={900} y={110} s={1.5} theme="paper" />
       {sw > 0.4 && (
-        <div style={{position: 'absolute', left: 140, top: 520, transform: `rotate(-6deg) scale(${0.8 + sw * 0.2})`, opacity: sw, background: RED, color: '#fff', fontFamily: fonts.heading, fontSize: 64, padding: '14px 34px', boxShadow: `10px 10px 0 ${INK}`, textTransform: 'uppercase'}}>Updated — while you slept</div>
+        <div style={{position: 'absolute', left: 120, top: 470, width: 640, transform: `rotate(-4deg) scale(${0.8 + sw * 0.2})`, opacity: sw, background: RED, color: '#fff', fontFamily: fonts.heading, fontSize: 58, lineHeight: 1.05, padding: '14px 30px', boxShadow: `10px 10px 0 ${INK}`, textTransform: 'uppercase'}}>Updated — while you slept</div>
       )}
-      {ok > 0.4 && <div style={{position: 'absolute', left: 140, top: 700, transform: 'rotate(2deg)', fontFamily: fonts.heading, fontSize: 64, color: INK, textTransform: 'uppercase', opacity: ok}}>…and you tap “I agree”.</div>}
+      {ok > 0.4 && <div style={{position: 'absolute', left: 120, top: 720, width: 700, transform: 'rotate(2deg)', fontFamily: fonts.heading, fontSize: 56, color: INK, textTransform: 'uppercase', opacity: ok}}>…and you tap “I agree”.</div>}
     </>
   );
 };
@@ -180,7 +180,7 @@ export const SceneView: React.FC<{sc: Sc; start: number; figNo?: number}> = ({sc
         {sc.art && !hasImage(sc.art.name) && (
           <ArtSlot name={sc.art.name} x={sc.art.side === 'l' ? 90 : 960} y={130} w={880} h={820} at={sc.art.p ? Math.min(1.2, at(sc.art.p, sc.art.o ?? 1)) : 0.25} tilt={sc.art.tilt ?? 0} dark={theme === 'dark'} />
         )}
-        {lines.length > 0 && kind !== 'end' && <Lines lines={lines.map((l) => l.t)} times={times} x={110} y={lineY} size={size} theme={theme} hot={hot} width={hasArt || (isText && !!OBJ_MAP[sc.p]) ? 900 : 1700} />}
+        {lines.length > 0 && kind !== 'end' && <Lines lines={lines.map((l) => l.t)} times={times} x={110} y={lineY} size={size} theme={theme} hot={hot} width={hasArt || kind === 'tos' || (isText && !!OBJ_MAP[sc.p]) ? 900 : 1700} />}
         {tags.map((g, i) => (
           <Tag key={i} text={g.t} at={at(g.p, g.o ?? 1)} x={tagX} y={tagY0 + i * 104} fill={g.fill} size={hasArt ? 44 : 56} theme={theme} />
         ))}

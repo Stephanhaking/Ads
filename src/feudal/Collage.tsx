@@ -111,8 +111,8 @@ export const CollageBG: React.FC<{theme: Theme; word: string}> = ({theme, word})
           </g>
         )}
       </svg>
-      <Bolt x={1250} y={90} s={0.9} r={-10} />
-      <div style={{position: 'absolute', left: 1180 + slide * 0.2, top: 640, fontFamily: fonts.heading, fontSize: 90, color: RED, transform: 'rotate(8deg)', opacity: 0.9}}>×</div>
+      <Bolt x={1690} y={880} s={0.8} r={12} />
+      <div style={{position: 'absolute', left: 860 + slide * 0.2, top: 790, fontFamily: fonts.heading, fontSize: 90, color: RED, transform: 'rotate(8deg)', opacity: 0.9}}>×</div>
     </AbsoluteFill>
   );
 };
@@ -340,7 +340,7 @@ export const Obj: React.FC<{name: string; x?: number; y?: number; s?: number; th
   return (
     <div style={{position: 'absolute', left: x, top: y, width: 600 * s, height: 600 * s, opacity: p, mixBlendMode: plate ? 'normal' : 'multiply', transform: `translateX(${(1 - p) * 220}px) translateY(${bob}px) rotate(${(1 - p) * 8}deg)`}}>
       <ObjArt name={name} size={600 * s} plate={plate} />
-      <Bolt x={-30} y={-20} s={0.8} r={-15} />
+      <Bolt x={600 * s * 0.86} y={600 * s * 0.8} s={0.8} r={-15} />
     </div>
   );
 };
