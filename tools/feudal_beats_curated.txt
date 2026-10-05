@@ -13,10 +13,10 @@
 4.3|obj:cloud~Today’s digital world: already written
 5.1|obj:ledger~Who you’re paying · how much
 5.2|obj:door~What ended feudalism
-5.3|obj:clock#1~A step for this week
-6.1|img:f-longship~9th century: Europe unravels
-6.2|img:f-longship#1~Vikings from the north
-6.3|obj:map~Raiders from east and south
+5.3|obj:calendar~A step for this week
+6.1|obj:medieval-town~9th century: Europe under attack
+6.2|obj:viking-longship-sail~Vikings from the northern seas ; obj:viking-helmet~Norse raiders ; obj:viking-shield~Axe and shield
+6.3|obj:magyar-horseman~Magyars strike from the east ; obj:steppe-map~From the east ; obj:saracen-dhow~Saracen raiders press from the south ; obj:southern-map~From the south
 7.1|img:f-burning-village~No central authority
 7.2|img:a5~Royal armies even farther
 8.1|img:f-empty-road~The countryside
@@ -162,7 +162,7 @@
 47.3|img:f-toll-booth~Whoever commands the bottleneck sets the rules
 48.1|obj:courthouse#2~Only what we see in court
 48.2|obj:eye~The part we can’t see
-50.1|obj:thought~They call it consumer choice
+50.1|obj:mousetrap~A “choice” with a trap
 50.2|obj:handcuffs~Surveillance — or lose access
 50.3|obj:people~Friends · career tools · utilities
 50.4|img:f-fork-road~Not a choice: the peasant’s trade-off
@@ -218,7 +218,7 @@
 63.1|img:a5~The Black Death, 1346–1353
 63.2|obj:people#3~A third to a half of the population
 64.1|obj:wheat-bundle~Labor shortages invert power
-64.2|img:f-peasant-plough~For the first time: bargaining power
+64.2|obj:megaphone-crowd~For the first time: bargaining power
 64.3|obj:coin~Demand wages · change estates
 64.4|img:a4~…or head to the growing towns
 65.1|obj:medieval-town~Cities flourish: trade and craft
@@ -241,5 +241,5 @@
 68.3|obj:cloud~What you hand over ; obj:people~To whom
 68.4|obj:coin~At what cost ; obj:door~New paths can be built
 68.5|img:f-fork-road#3~…when we demand them
-70.1|img:f-open-gate~Next: how to leave the castle
-70.2|obj:suitcase#1~…without leaving the world
+70.1|obj:toolbox~Next: the exact steps
+70.2|obj:exit-door~…to leave the castle
