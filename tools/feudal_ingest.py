@@ -9,10 +9,13 @@ def scan(d, exts):
 imgs = scan('public/feudal/img', ('.jpg', '.jpeg', '.png', '.webp'))
 thumb = scan('public/feudal/thumb', ('.png',))
 json.dump(imgs, open(os.path.join(R, 'src/feudal/imgs.json'), 'w'), indent=1)
+objs = scan('public/feudal/obj', ('.jpg', '.jpeg', '.png', '.webp'))
+json.dump(objs, open(os.path.join(R, 'src/feudal/objs.json'), 'w'), indent=1)
 json.dump(thumb, open(os.path.join(R, 'src/feudal/thumb.json'), 'w'), indent=1)
 want = list(json.load(open(os.path.join(R, 'src/feudal/prompts.json'))))
 have = {os.path.splitext(f)[0] for f in imgs}
 miss = [w for w in want if w not in have]
+print(f'{len(objs)} objetos de colagem registados (de 23).')
 print(f'{len(imgs)} imagens registadas, {len(thumb)} recortes de miniatura.')
 print('Faltam:', ', '.join(miss) if miss else 'nenhuma ✔')
 extra = sorted(have - set(want))

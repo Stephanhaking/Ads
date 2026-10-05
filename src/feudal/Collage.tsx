@@ -1,5 +1,6 @@
 import React from 'react';
-import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame} from 'remotion';
+import objs from './objs.json';
 import {fonts} from '../styles';
 import {Defs, FPS, INK, PAPER, RED, clamp, ease} from './Common';
 import type {Theme} from './Common';
@@ -8,6 +9,17 @@ import type {Theme} from './Common';
 // papel com manchas, quadrícula rasgada, tira de jornal, chão em papel rasgado a deslizar, raios e X vermelhos,
 // uma palavra gigante por trás e um objeto de gravura desenhado em código que entra e flutua.
 const useT = () => useCurrentFrame() / FPS;
+// Imagens reais dos objetos (public/feudal/obj/<nome>.png|jpg, registadas por tools/feudal_ingest.py); sem ficheiro usa o desenho de código.
+const objFile = (name: string) => (objs as string[]).find((f) => f.startsWith(name + '.'));
+const ObjArt: React.FC<{name: string; size: number}> = ({name, size}) => {
+  const f = objFile(name);
+  const Art = OBJS[name] ?? OBJS.coin;
+  return f ? (
+    <Img src={staticFile(`feudal/obj/${f}`)} style={{width: size, height: size, objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.08)'}} />
+  ) : (
+    <svg width={size} height={size} viewBox="0 0 600 600" filter="url(#rough)"><Defs /><Art /></svg>
+  );
+};
 const TornDefs2: React.FC = () => (
   <svg width="0" height="0" style={{position: 'absolute'}}>
     <filter id="tornc" x="-5%" y="-5%" width="110%" height="110%">
@@ -263,17 +275,15 @@ export const IconStage: React.FC<{items: {ic: string; at: number}[]; fallback?: 
   if (!name) return null;
   const since = cur >= 0 ? t - items[cur].at : t;
   const p = interpolate(since, [0, 0.45], [0, 1], {...clamp, easing: ease});
-  const Art = OBJS[name] ?? OBJS.coin;
   const bob = Math.sin(t * 1.4) * 8;
   return (
     <>
       <div key={name + cur} style={{position: 'absolute', left: 1030, top: 150, width: 700, height: 700, opacity: p, transform: `scale(${0.55 + p * 0.45}) translateY(${bob}px) rotate(${(1 - p) * -12}deg)`}}>
-        <svg width="700" height="700" viewBox="0 0 600 600" filter="url(#rough)"><Defs /><Art /></svg>
+        <ObjArt name={name} size={700} />
       </div>
       <div style={{position: 'absolute', right: 80, bottom: 150, display: 'flex', gap: 18}}>
         {items.slice(0, Math.max(0, cur)).map((it, i) => {
-          const A = OBJS[it.ic] ?? OBJS.coin;
-          return <svg key={i} width="110" height="110" viewBox="0 0 600 600" style={{opacity: 0.75}}><A /></svg>;
+          return <div key={i} style={{opacity: 0.75}}><ObjArt name={it.ic} size={110} /></div>;
         })}
       </div>
     </>
@@ -285,11 +295,10 @@ export const OBJ_NAMES = Object.keys(OBJS);
 export const Obj: React.FC<{name: string; x?: number; y?: number; s?: number}> = ({name, x = 1030, y = 170, s = 1.35}) => {
   const t = useT();
   const p = interpolate(t, [0.1, 0.7], [0, 1], {...clamp, easing: ease});
-  const Art = OBJS[name] ?? OBJS.coin;
   const bob = Math.sin(t * 1.4) * 10;
   return (
     <div style={{position: 'absolute', left: x, top: y, width: 600 * s, height: 600 * s, opacity: p, transform: `translateX(${(1 - p) * 220}px) translateY(${bob}px) rotate(${(1 - p) * 8}deg)`}}>
-      <svg width={600 * s} height={600 * s} viewBox="0 0 600 600" filter="url(#rough)"><Defs /><Art /></svg>
+      <ObjArt name={name} size={600 * s} />
       <Bolt x={-30} y={-20} s={0.8} r={-15} />
     </div>
   );
