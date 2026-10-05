@@ -2,7 +2,9 @@ import React from 'react';
 import {AbsoluteFill, interpolate} from 'remotion';
 import {fonts} from '../styles';
 import {ArtSlot, Bg, hasImage, Defs, INK, Lines, Mono, Panel, RED, SceneCtx, Tag, clamp, ease, fg, rev, useAt, useT} from './Common';
+import {OBJ_MAP} from './script';
 import type {Sc} from './script';
+import {CollageBG, Obj} from './Collage';
 import {wt} from './words';
 import {Plate, TornDefs} from './StyleV2';
 
@@ -157,6 +159,7 @@ export const SceneView: React.FC<{sc: Sc; start: number; figNo?: number}> = ({sc
   const times = lines.map((l, i) => (l.p ? at(l.p, l.o ?? 1) : 0.15 + i * 0.28));
   const hot = lines.flatMap((l, i) => (l.hot ? [i] : []));
   const tags = sc.tags ?? [];
+  const isText = !sc.art && !kind && lines.length > 0;
   const lineY = kind ? 80 : tags.length && !hasArt ? 120 : 190;
   const tagX = hasArt ? 110 : 120;
   const tagY0 = hasArt ? 690 : lineY + (lines.length ? 190 : 0) + 40;
@@ -164,6 +167,8 @@ export const SceneView: React.FC<{sc: Sc; start: number; figNo?: number}> = ({sc
     <SceneCtx.Provider value={{start}}>
       <AbsoluteFill>
         <Bg theme={theme} />
+        {(isText || (!hasArt && kind && kind !== 'cuts' && kind !== 'end')) && <CollageBG theme={theme} word={((lines.find((l) => l.hot) ?? lines[lines.length - 1])?.t ?? sc.data?.text ?? sc.data?.value ?? 'ARCHIVE').toString().replace(/[.?!:]/g, '').split(' ').slice(-1)[0]} />}
+        {isText && OBJ_MAP[sc.p] && <Obj name={OBJ_MAP[sc.p]} />}
         {sc.wipe && <Wipe />}
         <TornDefs />
         {sc.art && hasImage(sc.art.name) && (
@@ -173,7 +178,7 @@ export const SceneView: React.FC<{sc: Sc; start: number; figNo?: number}> = ({sc
         {sc.art && !hasImage(sc.art.name) && (
           <ArtSlot name={sc.art.name} x={sc.art.side === 'l' ? 90 : 960} y={130} w={880} h={820} at={sc.art.p ? Math.min(1.2, at(sc.art.p, sc.art.o ?? 1)) : 0.25} tilt={sc.art.tilt ?? 0} dark={theme === 'dark'} />
         )}
-        {lines.length > 0 && kind !== 'end' && <Lines lines={lines.map((l) => l.t)} times={times} x={110} y={lineY} size={size} theme={theme} hot={hot} width={hasArt ? 880 : 1700} />}
+        {lines.length > 0 && kind !== 'end' && <Lines lines={lines.map((l) => l.t)} times={times} x={110} y={lineY} size={size} theme={theme} hot={hot} width={hasArt || (isText && !!OBJ_MAP[sc.p]) ? 900 : 1700} />}
         {tags.map((g, i) => (
           <Tag key={i} text={g.t} at={at(g.p, g.o ?? 1)} x={tagX} y={tagY0 + i * 104} fill={g.fill} size={hasArt ? 44 : 56} theme={theme} />
         ))}

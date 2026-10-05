@@ -116,3 +116,17 @@ export const SCENES: Sc[] = [
   {p: 'In the next video', theme: 'dark', lines: [L('Next video:'), L('leave the castle', 'leave the castle', true), L('without leaving the world.', 'without leaving the modern world')], size: 100, tags: [T('The first step costs nothing', 'costs you nothing')]},
   {p: 'This was Distinguish', theme: 'paper', kind: 'end'},
 ];
+
+// Objeto de colagem para as cenas que só tinham texto (chave = início da cena). Ver Collage.tsx.
+export const OBJ_MAP: Record<string, string> = {
+  "You're not a peasant": 'coin', 'This is a very old story': 'doc', 'By the end of this video': 'scale', 'Notice the crucial logic': 'bricks',
+  'Protection was the offer': 'doc', 'The deal was straightforward': 'scale', 'Even personal life carried a price tag': 'coin',
+  'Nobody held a knife to their throats': 'door', "But the contract wasn't where": 'coin', 'Now, think about the smartphone': 'phone',
+  'In return, you get protection and access': 'cloud', 'And just like the peasant': 'coin', 'But this isn’t just a quiet loss': 'eye',
+  'Not a single one of these moments': 'eye', 'Each individual gesture is small': 'cloud', 'So if they’re not charging him money': 'coin',
+  'You might think this is just a clever comparison': 'scale', 'These aren’t hypothetical metaphors': 'doc', 'And that’s only the part we can see in court': 'eye',
+  'And what is extracted from us today': 'eye', 'This structural critique': 'doc', 'Varoufakis argues that classical capitalism': 'cloud',
+  'And yet, before you take their word': 'scale', 'To be intellectually honest': 'scale', 'Yet while deleting an app takes seconds': 'bricks',
+  'So if the comparison is even half right': 'door', 'How did historical feudalism actually end': 'door', 'Severe labor shortages': 'coin',
+  'You don’t need to smash your phone': 'phone', 'In the next video': 'door',
+};
