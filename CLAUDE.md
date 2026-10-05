@@ -3,7 +3,7 @@
 O utilizador pediu para ser **travado** depois da última ronda de mudanças ("bloqueie todas, I need to be stopped").
 
 **Mudanças ainda permitidas (última ronda):**
-1. (Cancelado: os Vikings ficam como estão.)
+1. Visuais dos Vikings/Magyars/Saracenos (cena 6): prompts em `docs/PROMPTS_VIKINGS_MAGYARS_SARACENOS.md`; integrar quando ele enviar as imagens.
 2. Integrar os objetos novos (`docs/PROMPTS_OBJETOS_NOVOS.md`) quando ele disser que acabou de os enviar.
 3. Corrigir erros objetivos (sobreposições, texto cortado, sincronização partida).
 
