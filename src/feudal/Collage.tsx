@@ -139,6 +139,147 @@ const OBJS: Record<string, React.FC> = {
     </g>
   ),
 };
+
+const MORE: Record<string, React.FC> = {
+  pin: () => (
+    <g>
+      <path d="M40 470 C150 380 230 520 330 430 S470 330 560 380" fill="none" stroke={INK} strokeWidth="8" strokeDasharray="22 16" />
+      <path d="M300 60 C190 60 140 150 160 230 C185 330 300 470 300 470 C300 470 415 330 440 230 C460 150 410 60 300 60 Z" fill={RED} stroke={INK} strokeWidth="10" />
+      <circle cx="300" cy="215" r="58" fill={PAPER} stroke={INK} strokeWidth="8" /><ellipse cx="300" cy="500" rx="110" ry="20" fill="rgba(0,0,0,.25)" />
+    </g>
+  ),
+  cart: () => (
+    <g>
+      <path d="M40 90 H130 L190 360 H470 L520 160 H150" fill="none" stroke={INK} strokeWidth="18" strokeLinejoin="round" />
+      <path d="M150 160 H520 L470 360 H190 Z" fill={H('hDiag')} opacity="0.9" />
+      <circle cx="230" cy="440" r="42" fill={INK} /><circle cx="430" cy="440" r="42" fill={INK} />
+      <g transform="translate(300 40) rotate(12)"><rect width="150" height="90" rx="10" fill={RED} stroke={INK} strokeWidth="7" /><circle cx="26" cy="45" r="11" fill={PAPER} /></g>
+    </g>
+  ),
+  chat: () => (
+    <g>
+      <path d="M60 80 H400 Q440 80 440 120 V260 Q440 300 400 300 H220 L130 380 V300 H100 Q60 300 60 260 V120 Q60 80 100 80 Z" fill={PAPER} stroke={INK} strokeWidth="10" />
+      {[140, 190, 240].map((y, i) => <path key={y} d={`M110 ${y} H${360 - i * 60}`} stroke={INK} strokeWidth="9" />)}
+      <path d="M520 250 H220 Q190 250 190 280 V420 Q190 450 220 450 H260 V520 L350 450 H520 Q550 450 550 420 V280 Q550 250 520 250 Z" transform="translate(0 20)" fill={RED} stroke={INK} strokeWidth="10" />
+    </g>
+  ),
+  thought: () => (
+    <g>
+      <path d="M150 380 Q40 380 60 290 Q70 210 150 230 Q170 120 290 130 Q380 60 450 150 Q560 150 550 250 Q580 360 470 380 Z" fill={PAPER} stroke={INK} strokeWidth="10" />
+      <circle cx="160" cy="440" r="30" fill={PAPER} stroke={INK} strokeWidth="8" /><circle cx="105" cy="500" r="18" fill={PAPER} stroke={INK} strokeWidth="7" />
+      <text x="305" y="320" textAnchor="middle" fontFamily="Archivo Black, Arial" fontSize="190" fill={RED}>?</text>
+    </g>
+  ),
+  clock: () => (
+    <g>
+      <circle cx="300" cy="300" r="230" fill={PAPER} stroke={INK} strokeWidth="16" />
+      {Array.from({length: 12}).map((_, i) => <path key={i} d="M300 90 V120" stroke={INK} strokeWidth="9" transform={`rotate(${i * 30} 300 300)`} />)}
+      <path d="M300 300 V160" stroke={INK} strokeWidth="16" strokeLinecap="round" /><path d="M300 300 L400 350" stroke={RED} strokeWidth="14" strokeLinecap="round" />
+      <path d="M300 300 L300 70 A230 230 0 0 1 480 400 Z" fill={RED} opacity="0.2" /><circle cx="300" cy="300" r="20" fill={INK} />
+    </g>
+  ),
+  people: () => (
+    <g>
+      {[[150, 60, 0.85], [450, 60, 0.85], [300, 20, 1.15]].map(([x, y, k], i) => (
+        <g key={i} transform={`translate(${x} ${y + 120}) scale(${k})`}>
+          <circle cx="0" cy="40" r="62" fill={i === 2 ? RED : PAPER} stroke={INK} strokeWidth="9" />
+          <path d="M-120 330 Q-130 150 0 140 Q130 150 120 330 Z" fill={i === 2 ? RED : H('hDiag')} stroke={INK} strokeWidth="9" />
+        </g>
+      ))}
+    </g>
+  ),
+  brief: () => (
+    <g>
+      <path d="M210 150 V110 Q210 80 240 80 H360 Q390 80 390 110 V150" fill="none" stroke={INK} strokeWidth="18" />
+      <rect x="60" y="150" width="480" height="340" rx="26" fill={H('hDiagL')} stroke={INK} strokeWidth="12" /><rect x="60" y="150" width="480" height="340" rx="26" fill={PAPER} opacity="0.5" />
+      <path d="M60 300 H540" stroke={INK} strokeWidth="10" /><rect x="262" y="270" width="76" height="64" fill={RED} stroke={INK} strokeWidth="8" />
+    </g>
+  ),
+  photo: () => (
+    <g>
+      <g transform="rotate(-8 300 300)"><rect x="70" y="90" width="420" height="380" fill="#FBF7EE" stroke={INK} strokeWidth="9" /><rect x="105" y="125" width="350" height="250" fill={H('hDiagL')} stroke={INK} strokeWidth="6" />
+        <circle cx="360" cy="195" r="34" fill={RED} /><path d="M105 375 L215 250 L290 330 L350 270 L455 375 Z" fill={INK} /></g>
+      <g transform="rotate(9 300 300) translate(80 30)"><rect x="70" y="90" width="320" height="290" fill="#FBF7EE" stroke={INK} strokeWidth="8" opacity="0.9" /><rect x="100" y="120" width="260" height="170" fill={H('hDiag')} stroke={INK} strokeWidth="5" /></g>
+    </g>
+  ),
+  map: () => (
+    <g>
+      <path d="M40 120 L210 80 L390 130 L560 90 V470 L390 510 L210 460 L40 500 Z" fill="#FBF7EE" stroke={INK} strokeWidth="10" /><path d="M210 80 V460 M390 130 V510" stroke={INK} strokeWidth="6" />
+      <path d="M90 400 C170 300 250 380 320 270 S450 250 520 160" fill="none" stroke={RED} strokeWidth="10" strokeDasharray="20 14" /><circle cx="520" cy="160" r="26" fill={RED} stroke={INK} strokeWidth="7" />
+    </g>
+  ),
+  cursor: () => (
+    <g>
+      <rect x="40" y="70" width="440" height="330" rx="20" fill={PAPER} stroke={INK} strokeWidth="10" />
+      <rect x="80" y="120" width="360" height="130" fill={H('hDiag')} stroke={INK} strokeWidth="6" /><rect x="80" y="280" width="220" height="70" rx="35" fill={RED} stroke={INK} strokeWidth="6" />
+      <path d="M300 250 L300 520 L370 450 L420 570 L475 545 L425 430 L520 430 Z" fill={INK} stroke="#fff" strokeWidth="8" strokeLinejoin="round" />
+    </g>
+  ),
+  target: () => (
+    <g>
+      {[250, 190, 130, 70].map((r, i) => <circle key={r} cx="300" cy="300" r={r} fill={i % 2 ? RED : PAPER} stroke={INK} strokeWidth="9" />)}
+      <path d="M300 300 L540 80" stroke={INK} strokeWidth="12" /><path d="M540 80 l-20 62 M540 80 l-62 20 M510 110 l-20 60 M510 110 l-60 18" stroke={INK} strokeWidth="9" />
+    </g>
+  ),
+  wheel: () => (
+    <g>
+      <circle cx="300" cy="300" r="230" fill="none" stroke={INK} strokeWidth="38" /><circle cx="300" cy="300" r="64" fill={RED} stroke={INK} strokeWidth="10" />
+      {[90, 210, 330].map((a) => <path key={a} d="M300 300 L300 78" stroke={INK} strokeWidth="30" transform={`rotate(${a} 300 300)`} />)}
+    </g>
+  ),
+  rings: () => (
+    <g>
+      <circle cx="220" cy="320" r="150" fill="none" stroke={INK} strokeWidth="34" /><circle cx="380" cy="320" r="150" fill="none" stroke={RED} strokeWidth="34" />
+      <circle cx="220" cy="320" r="150" fill="none" stroke={PAPER} strokeWidth="8" /><path d="M320 190 l-30 -60 l30 -40 l30 40 z" fill={PAPER} stroke={INK} strokeWidth="7" />
+    </g>
+  ),
+  cow: () => (
+    <g>
+      <rect x="130" y="190" width="340" height="190" rx="70" fill={PAPER} stroke={INK} strokeWidth="10" />
+      <path d="M200 260 q40 -40 70 0 q-20 50 -70 0 M340 280 q40 -40 70 10 q-30 40 -70 -10" fill={INK} />
+      <path d="M150 370 V500 M220 380 V500 M390 380 V500 M450 360 V500" stroke={INK} strokeWidth="18" />
+      <rect x="40" y="130" width="130" height="120" rx="40" fill={PAPER} stroke={INK} strokeWidth="9" /><path d="M60 130 l-20 -50 M150 130 l20 -50" stroke={INK} strokeWidth="9" /><circle cx="70" cy="190" r="9" fill={INK} /><ellipse cx="85" cy="232" rx="38" ry="20" fill={RED} opacity="0.7" />
+    </g>
+  ),
+};
+Object.assign(OBJS, MORE);
+export const ICON_MAP: Record<string, string> = {
+  'Where you go': 'pin', 'What you buy': 'cart', 'Who you talk to': 'chat', 'What you think': 'thought', 'Hours of attention': 'clock',
+  'Your friends': 'people', 'Your job': 'brief', 'Your photos': 'photo', 'The way home': 'map',
+  'Where he walked': 'pin', 'What worried him': 'thought', 'What he hovered over': 'cursor', 'Seconds he hesitated': 'clock',
+  'Predict': 'target', 'Steer': 'wheel', 'Monetize': 'coin',
+  'Merchet: marry your daughter': 'rings', 'Heriot: your best animal': 'cow',
+  'Platforms = private fiefs': 'cloud', 'Users = cloud serfs': 'people', 'Businesses = cloud vassals': 'brief',
+  '10 years of photos': 'photo', 'Professional contacts': 'people', 'Client networks': 'chat', '= The castle walls': 'bricks',
+  'Who you’re paying': 'people', 'How much': 'coin', 'What ended feudalism': 'door', 'Start it this week': 'clock', 'To whom': 'people', 'At what cost': 'coin',
+};
+
+// Palco de ícones: mostra o ícone da etiqueta atual (grande, a entrar com pop) e deixa os anteriores em fila pequena.
+export const IconStage: React.FC<{items: {ic: string; at: number}[]; fallback?: string}> = ({items, fallback}) => {
+  const t = useT();
+  let cur = -1;
+  items.forEach((it, i) => { if (t >= it.at) cur = i; });
+  const name = cur >= 0 ? items[cur].ic : fallback;
+  if (!name) return null;
+  const since = cur >= 0 ? t - items[cur].at : t;
+  const p = interpolate(since, [0, 0.45], [0, 1], {...clamp, easing: ease});
+  const Art = OBJS[name] ?? OBJS.coin;
+  const bob = Math.sin(t * 1.4) * 8;
+  return (
+    <>
+      <div key={name + cur} style={{position: 'absolute', left: 1030, top: 150, width: 700, height: 700, opacity: p, transform: `scale(${0.55 + p * 0.45}) translateY(${bob}px) rotate(${(1 - p) * -12}deg)`}}>
+        <svg width="700" height="700" viewBox="0 0 600 600" filter="url(#rough)"><Defs /><Art /></svg>
+      </div>
+      <div style={{position: 'absolute', right: 80, bottom: 150, display: 'flex', gap: 18}}>
+        {items.slice(0, Math.max(0, cur)).map((it, i) => {
+          const A = OBJS[it.ic] ?? OBJS.coin;
+          return <svg key={i} width="110" height="110" viewBox="0 0 600 600" style={{opacity: 0.75}}><A /></svg>;
+        })}
+      </div>
+    </>
+  );
+};
+
 export const OBJ_NAMES = Object.keys(OBJS);
 
 export const Obj: React.FC<{name: string; x?: number; y?: number; s?: number}> = ({name, x = 1030, y = 170, s = 1.35}) => {

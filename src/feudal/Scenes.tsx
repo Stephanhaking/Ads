@@ -1,10 +1,10 @@
 import React from 'react';
 import {AbsoluteFill, interpolate} from 'remotion';
 import {fonts} from '../styles';
-import {ArtSlot, Bg, hasImage, Defs, INK, Lines, Mono, Panel, RED, SceneCtx, Tag, clamp, ease, fg, rev, useAt, useT} from './Common';
+import {ArtSlot, Bg, hasImage, Defs, INK, Lines, Mono, Panel, RED, SceneCtx, Tag, clamp, ease, fg, rev, useT} from './Common';
 import {OBJ_MAP} from './script';
 import type {Sc} from './script';
-import {CollageBG, Obj} from './Collage';
+import {CollageBG, ICON_MAP, IconStage, Obj} from './Collage';
 import {wt} from './words';
 import {Plate, TornDefs} from './StyleV2';
 
@@ -150,7 +150,7 @@ const Cuts: React.FC<{d: any}> = ({d}) => {
 };
 
 export const SceneView: React.FC<{sc: Sc; start: number; figNo?: number}> = ({sc, start, figNo = 1}) => {
-  const at = useAt();
+  const at = (phrase: string, occ = 1, lead = 0.08) => Math.max(0, wt(phrase, occ) - start - lead); // tempo local (s) desde o início da cena
   const theme = sc.theme ?? 'paper';
   const hasArt = !!sc.art;
   const kind = sc.kind;
@@ -168,7 +168,7 @@ export const SceneView: React.FC<{sc: Sc; start: number; figNo?: number}> = ({sc
       <AbsoluteFill>
         <Bg theme={theme} />
         {(isText || (!hasArt && kind && kind !== 'cuts' && kind !== 'end')) && <CollageBG theme={theme} word={((lines.find((l) => l.hot) ?? lines[lines.length - 1])?.t ?? sc.data?.text ?? sc.data?.value ?? 'ARCHIVE').toString().replace(/[.?!:]/g, '').split(' ').slice(-1)[0]} />}
-        {isText && OBJ_MAP[sc.p] && <Obj name={OBJ_MAP[sc.p]} />}
+        {isText && tags.length > 0 && tags.every((g) => ICON_MAP[g.t]) ? <IconStage items={tags.map((g) => ({ic: ICON_MAP[g.t], at: at(g.p, g.o ?? 1)}))} fallback={OBJ_MAP[sc.p]} /> : isText && OBJ_MAP[sc.p] && <Obj name={OBJ_MAP[sc.p]} />}
         {sc.wipe && <Wipe />}
         <TornDefs />
         {sc.art && hasImage(sc.art.name) && (
