@@ -1,9 +1,10 @@
 import React from 'react';
 import {AbsoluteFill, interpolate} from 'remotion';
 import {fonts} from '../styles';
-import {ArtSlot, Bg, Defs, INK, Lines, Mono, Panel, RED, SceneCtx, Tag, clamp, ease, fg, rev, useAt, useT} from './Common';
+import {ArtSlot, Bg, hasImage, Defs, INK, Lines, Mono, Panel, RED, SceneCtx, Tag, clamp, ease, fg, rev, useAt, useT} from './Common';
 import type {Sc} from './script';
 import {wt} from './words';
+import {Plate, TornDefs} from './StyleV2';
 
 const Wipe: React.FC = () => {
   const t = useT();
@@ -139,7 +140,14 @@ const End: React.FC = () => {
   );
 };
 
-export const SceneView: React.FC<{sc: Sc; start: number}> = ({sc, start}) => {
+const Cuts: React.FC<{d: any}> = ({d}) => {
+  const t = useT();
+  const i = Math.min(d.imgs.length - 1, Math.floor(t / d.every));
+  const n = d.imgs[i] as string;
+  return <Plate key={n} name={n} fig={`FIG. ${String(i + 1).padStart(2, '0')}`} cap={['motte', 'keep', 'gate', 'castle', 'town', 'fort', 'siege', 'ruin'][i] ?? 'arch'} tilt={i % 2 ? 2.5 : -2.5} x={1010} y={150} w={830} h={720} at={(i * d.every)} />;
+};
+
+export const SceneView: React.FC<{sc: Sc; start: number; figNo?: number}> = ({sc, start, figNo = 1}) => {
   const at = useAt();
   const theme = sc.theme ?? 'paper';
   const hasArt = !!sc.art;
@@ -157,8 +165,13 @@ export const SceneView: React.FC<{sc: Sc; start: number}> = ({sc, start}) => {
       <AbsoluteFill>
         <Bg theme={theme} />
         {sc.wipe && <Wipe />}
-        {sc.art && (
-          <ArtSlot name={sc.art.name} x={sc.art.side === 'l' ? 90 : 960} y={130} w={880} h={820} at={sc.art.p ? at(sc.art.p, sc.art.o ?? 1) : 0.25} tilt={sc.art.tilt ?? 0} dark={theme === 'dark'} />
+        <TornDefs />
+        {sc.art && hasImage(sc.art.name) && (
+          <Plate name={sc.art.name} fig={`FIG. ${String(figNo).padStart(2, '0')}`} cap={sc.art.name.replace(/^f-/, '').replace(/-/g, ' ')} tilt={(figNo % 2 ? -1 : 1) * 2.2} x={sc.art.side === 'l' ? 60 : 1010} y={150} w={830} h={720} at={sc.art.p ? Math.min(1.2, at(sc.art.p, sc.art.o ?? 1) - 0.1) : 0.15} />
+        )}
+        {kind === 'cuts' && <Cuts d={sc.data} />}
+        {sc.art && !hasImage(sc.art.name) && (
+          <ArtSlot name={sc.art.name} x={sc.art.side === 'l' ? 90 : 960} y={130} w={880} h={820} at={sc.art.p ? Math.min(1.2, at(sc.art.p, sc.art.o ?? 1)) : 0.25} tilt={sc.art.tilt ?? 0} dark={theme === 'dark'} />
         )}
         {lines.length > 0 && kind !== 'end' && <Lines lines={lines.map((l) => l.t)} times={times} x={110} y={lineY} size={size} theme={theme} hot={hot} width={hasArt ? 880 : 1700} />}
         {tags.map((g, i) => (

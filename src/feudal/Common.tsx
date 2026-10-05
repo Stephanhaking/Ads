@@ -104,6 +104,7 @@ export const Mono: React.FC<{children: React.ReactNode; size?: number; color?: s
 
 // ── imagem gerada (multiply sobre o papel) ou marcador com o prompt em falta ──
 const HAVE = imgs as string[];
+export const imgFile = (name: string) => HAVE.find((f) => f.startsWith(name + '.'));
 export const hasImage = (name: string) => HAVE.some((f) => f.startsWith(name + '.'));
 export const ArtSlot: React.FC<{name: string; x: number; y: number; w: number; h: number; at?: number; tilt?: number; dark?: boolean}> = ({name, x, y, w, h, at = 0, tilt = 0, dark}) => {
   const t = useT();

@@ -1,8 +1,8 @@
 import React from 'react';
-import {AbsoluteFill, Audio, Sequence, interpolate, staticFile, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, Audio, Img, Sequence, interpolate, staticFile, useCurrentFrame} from 'remotion';
 import '../fonts';
 import {fonts} from '../styles';
-import {ArtSlot, Bg, Defs, INK, PAPER, RED, SceneCtx, clamp, ease, FPS} from './Common';
+import {ArtSlot, Bg, Defs, imgFile, INK, PAPER, RED, SceneCtx, clamp, ease, FPS} from './Common';
 
 // ESTILO V2 — "Colagem de arquivo": recortes de gravura em papel rasgado, com impressão vermelha desalinhada,
 // legendas "FIG.", setas e fio vermelho desenhados à mão, cartão de personagem em círculo vermelho e título com marcador.
@@ -11,7 +11,7 @@ export const STYLEV2_FRAMES = 9 * FPS;
 const T = (f: number, a: number, b: number) => interpolate(f / FPS, [a, b], [0, 1], {...clamp, easing: ease});
 const S = (t: number) => Math.round(t * FPS);
 
-const TornDefs: React.FC = () => (
+export const TornDefs: React.FC = () => (
   <svg width="0" height="0" style={{position: 'absolute'}}>
     <filter id="torn" x="-5%" y="-5%" width="110%" height="110%">
       <feTurbulence type="fractalNoise" baseFrequency="0.03 0.05" numOctaves="3" seed="11" result="n" />
@@ -22,7 +22,7 @@ const TornDefs: React.FC = () => (
 );
 
 // recorte de gravura: folha rasgada + sombra de impressão vermelha desalinhada + legenda
-const Plate: React.FC<{name: string; fig: string; cap: string; tilt?: number; x?: number; y?: number; w?: number; h?: number; at?: number}> = ({name, fig, cap, tilt = -2, x = 360, y = 130, w = 1200, h = 760, at = 0}) => {
+export const Plate: React.FC<{name: string; fig: string; cap: string; tilt?: number; x?: number; y?: number; w?: number; h?: number; at?: number}> = ({name, fig, cap, tilt = -2, x = 360, y = 130, w = 1200, h = 760, at = 0}) => {
   const f = useCurrentFrame();
   const p = T(f, at, at + 0.18);
   const z = 1 + f / FPS * 0.05;
@@ -31,7 +31,11 @@ const Plate: React.FC<{name: string; fig: string; cap: string; tilt?: number; x?
       <div style={{position: 'absolute', inset: 0, background: RED, transform: 'translate(22px,18px)', filter: 'url(#torn)'}} />
       <div style={{position: 'absolute', inset: 0, background: '#FBF7EE', filter: 'url(#torn)', boxShadow: '0 20px 50px rgba(0,0,0,.25)'}} />
       <div style={{position: 'absolute', inset: 40, overflow: 'hidden'}}>
-        <ArtSlot name={name} x={0} y={0} w={w - 80} h={h - 80} at={-9} />
+        {imgFile(name) ? (
+          <Img src={staticFile(`feudal/img/${imgFile(name)}`)} style={{width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.1) grayscale(1)'}} />
+        ) : (
+          <ArtSlot name={name} x={0} y={0} w={w - 80} h={h - 80} at={-9} />
+        )}
       </div>
       <div style={{position: 'absolute', left: 28, top: -30, background: INK, color: '#fff', fontFamily: fonts.mono, fontSize: 28, letterSpacing: 4, padding: '8px 18px'}}>{fig}</div>
       <div style={{position: 'absolute', right: 30, bottom: -26, background: RED, color: '#fff', fontFamily: fonts.heading, fontSize: 36, textTransform: 'uppercase', padding: '8px 22px'}}>{cap}</div>

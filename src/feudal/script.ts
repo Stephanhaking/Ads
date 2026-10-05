@@ -9,7 +9,7 @@ export type Sc = {
   p: string; o?: number; theme?: Theme; wipe?: boolean;
   lines?: Ln[]; size?: number; tags?: Tg[];
   art?: {name: string; p?: string; o?: number; side?: 'l' | 'r'; tilt?: number};
-  kind?: 'stat' | 'compare' | 'books' | 'quote' | 'mill' | 'tos' | 'cta' | 'end';
+  kind?: 'cuts' | 'stat' | 'compare' | 'books' | 'quote' | 'mill' | 'tos' | 'cta' | 'end';
   data?: any;
   fx?: Fx[];
 };
@@ -29,7 +29,7 @@ export const SCENES: Sc[] = [
   {p: 'Central authority had fragmented', theme: 'paper', lines: [L('No central authority.'), L('Kings: far away.', 'kings were far away')], art: {name: 'f-burning-village', side: 'r'}},
   {p: 'If you lived in the countryside', theme: 'paper', lines: [L('Nobody is coming.', 'nobody was coming to defend you', true), L('Find a protector.', 'you either found a local protector')], art: {name: 'f-empty-road', side: 'r'}},
   {p: 'And that protector was always the same man', theme: 'paper', lines: [L('The protector.'), L('Horses. Fighters.', 'armored horses'), L('A place to retreat.', 'somewhere safe to retreat')], art: {name: 'f-knight-horse', side: 'r'}},
-  {p: 'first a wooden tower', theme: 'paper', lines: [L('Wood, then stone.')], art: {name: 'f-stone-tower', p: 'a formidable fortress of stone', side: 'r'}},
+  {p: 'first a wooden tower', theme: 'paper', kind: 'cuts', lines: [L('Wood, then stone.')], data: {imgs: ['a1', 'a3', 'a6', 'a7', 'a4', 'a9', 'a5', 'a8'], every: 1.1}},
   {p: 'Notice the crucial logic', theme: 'paper', lines: [L('Built to protect.'), L('Not to rob.', 'to protect you from chaos'), L('The robbing', 'it came later'), L('came later.', undefined, true)], fx: [{p: 'it came later', s: 'stamp'}]},
   {p: 'Protection was the offer', theme: 'dark', lines: [L('Protection:'), L('the offer.'), L('The second contract:', 'but there was a second contract'), L('three clauses.', 'it had three clauses', true)], fx: [{p: 'it had three clauses', s: 'riser'}]},
 

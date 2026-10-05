@@ -80,7 +80,7 @@ export const FeudalVideo: React.FC = () => (
       const end = i + 1 < SCENES.length ? Math.round(starts[i + 1] * FPS) : FEUDAL_FRAMES;
       return (
         <Sequence key={i} from={from} durationInFrames={Math.max(1, end - from)} name={`${i + 1} · ${sc.p.slice(0, 30)}`}>
-          <SceneView sc={sc} start={starts[i]} />
+          <SceneView sc={sc} start={starts[i]} figNo={i + 1} />
         </Sequence>
       );
     })}
