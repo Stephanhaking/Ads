@@ -5,3 +5,4 @@ footage/*.src.mp4
 footage/
 tmp/
 __pycache__/
+public/feudal/ref/
