@@ -15,7 +15,12 @@ const ObjArt: React.FC<{name: string; size: number; plate?: boolean}> = ({name, 
   const f = objFile(name);
   const Art = OBJS[name] ?? OBJS.coin;
   if (!f) return <svg width={size} height={size} viewBox="0 0 600 600" filter="url(#rough)"><Defs /><Art /></svg>;
-  const img = <Img src={staticFile(`feudal/obj/${f}`)} style={{width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.06)'}} />;
+  const img = (
+    <div style={{position: 'relative', width: '100%', height: '100%'}}>
+      <Img src={staticFile(`feudal/obj/${f}`)} style={{width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.06)'}} />
+      {name === 'phone' && <PhoneTos k={size / 1600} />}
+    </div>
+  );
   if (!plate) return <div style={{width: size, height: size}}>{img}</div>;
   // fundo escuro/vermelho: o objeto assenta numa folha de papel rasgado (o branco da imagem funde com o papel)
   return (
@@ -26,6 +31,34 @@ const ObjArt: React.FC<{name: string; size: number; plate?: boolean}> = ({name, 
     </div>
   );
 };
+
+// Termos de serviço a rolar no ecrã do telemóvel (máscara do ecrã = phone-screen.png; inclinação ≈ 10°).
+const TOS_BLOCKS: [string, number[]][] = [
+  ['1. Your data', [92, 80, 96, 60]], ['2. How we use it', [88, 94, 70, 90, 52]], ['3. Sharing with partners', [96, 84, 90, 66]],
+  ['4. Changes to these terms', [90, 76, 94, 88, 58]], ['5. Arbitration', [94, 82, 70]], ['6. Your consent', [86, 96, 92, 64, 90]],
+];
+export const PhoneTos: React.FC<{k: number}> = ({k}) => {
+  const t = useT();
+  const loop = 1500;
+  const y = -((t * 120) % loop);
+  const rows = (k: number) => TOS_BLOCKS.map(([h, ws], i) => (
+    <div key={k + '-' + i} style={{marginBottom: 46}}>
+      <div style={{fontFamily: fonts.heading, fontSize: 38, color: INK, marginBottom: 14}}>{h}</div>
+      {ws.map((w, j) => <div key={j} style={{height: 15, width: `${w}%`, background: 'rgba(26,20,16,0.32)', marginBottom: 12, borderRadius: 3}} />)}
+    </div>
+  ));
+  return (
+    <div style={{position: 'absolute', left: 0, top: 0, width: 1600, height: 1600, transformOrigin: '0 0', transform: `scale(${k})`, WebkitMaskImage: `url(${staticFile('feudal/obj/phone-screen.png')})`, WebkitMaskSize: '1600px 1600px', maskImage: `url(${staticFile('feudal/obj/phone-screen.png')})`, maskSize: '1600px 1600px'}}>
+      <div style={{position: 'absolute', left: 784 - 312, top: 727 - 470, width: 640, height: 940, transform: 'rotate(10deg)', overflow: 'hidden', background: '#fff'}}>
+        <div style={{padding: '40px 60px 0', borderBottom: '4px solid #ddd', fontFamily: fonts.heading, fontSize: 46, color: INK, paddingBottom: 20, background: '#fff', position: 'relative', zIndex: 2}}>TERMS OF SERVICE</div>
+        <div style={{padding: '30px 60px', transform: `translateY(${y}px)`}}>{rows(0)}{rows(1)}{rows(2)}</div>
+        <div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: 150, background: 'linear-gradient(#fff0,#fff 40%)'}} />
+        <div style={{position: 'absolute', left: 90, right: 90, bottom: 34, height: 80, borderRadius: 40, background: RED, color: '#fff', fontFamily: fonts.heading, fontSize: 40, textAlign: 'center', lineHeight: '80px', boxShadow: '0 6px 0 rgba(0,0,0,0.25)'}}>I AGREE</div>
+      </div>
+    </div>
+  );
+};
+
 const TornDefs2: React.FC = () => (
   <svg width="0" height="0" style={{position: 'absolute'}}>
     <filter id="tornc" x="-5%" y="-5%" width="110%" height="110%">

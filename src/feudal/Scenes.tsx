@@ -102,12 +102,13 @@ const Tos: React.FC<{d: any; at: (p: string, o?: number) => number}> = ({d, at})
   const sw = rev(t, at(d.v2), 0.3);
   const ok = rev(t, at(d.ok), 0.3);
   return (
-    <Panel x={420} y={300} w={1080} h={640} at={0.2} tilt={-1}>
-      <Mono>Terms of service · v{sw > 0.5 ? '2' : '1'}</Mono>
-      {[0.95, 0.9, 1, 0.8, 0.96, 0.7, 0.92].map((w, i) => <div key={i} style={{height: 16, width: `${w * 100}%`, background: sw > 0.5 && i % 3 === 1 ? RED : '#d9d9d9', marginTop: 22}} />)}
-      {sw > 0.5 && <div style={{marginTop: 30, fontFamily: fonts.heading, fontSize: 40, color: RED}}>UPDATED — WHILE YOU SLEPT</div>}
-      <div style={{position: 'absolute', right: 40, bottom: 36, padding: '16px 56px', background: ok > 0.5 ? RED : INK, color: '#fff', fontFamily: fonts.heading, fontSize: 48, transform: `scale(${1 + (ok > 0.5 ? 0.08 : 0)})`}}>I AGREE</div>
-    </Panel>
+    <>
+      <Obj name="phone" x={900} y={110} s={1.5} theme="paper" />
+      {sw > 0.4 && (
+        <div style={{position: 'absolute', left: 140, top: 520, transform: `rotate(-6deg) scale(${0.8 + sw * 0.2})`, opacity: sw, background: RED, color: '#fff', fontFamily: fonts.heading, fontSize: 64, padding: '14px 34px', boxShadow: `10px 10px 0 ${INK}`, textTransform: 'uppercase'}}>Updated — while you slept</div>
+      )}
+      {ok > 0.4 && <div style={{position: 'absolute', left: 140, top: 700, transform: 'rotate(2deg)', fontFamily: fonts.heading, fontSize: 64, color: INK, textTransform: 'uppercase', opacity: ok}}>…and you tap “I agree”.</div>}
+    </>
   );
 };
 
