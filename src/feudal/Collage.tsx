@@ -11,13 +11,19 @@ import type {Theme} from './Common';
 const useT = () => useCurrentFrame() / FPS;
 // Imagens reais dos objetos (public/feudal/obj/<nome>.png|jpg, registadas por tools/feudal_ingest.py); sem ficheiro usa o desenho de código.
 const objFile = (name: string) => (objs as string[]).find((f) => f.startsWith(name + '.'));
-const ObjArt: React.FC<{name: string; size: number}> = ({name, size}) => {
+const ObjArt: React.FC<{name: string; size: number; plate?: boolean}> = ({name, size, plate}) => {
   const f = objFile(name);
   const Art = OBJS[name] ?? OBJS.coin;
-  return f ? (
-    <Img src={staticFile(`feudal/obj/${f}`)} style={{width: size, height: size, objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.08)'}} />
-  ) : (
-    <svg width={size} height={size} viewBox="0 0 600 600" filter="url(#rough)"><Defs /><Art /></svg>
+  if (!f) return <svg width={size} height={size} viewBox="0 0 600 600" filter="url(#rough)"><Defs /><Art /></svg>;
+  const img = <Img src={staticFile(`feudal/obj/${f}`)} style={{width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.06)'}} />;
+  if (!plate) return <div style={{width: size, height: size}}>{img}</div>;
+  // fundo escuro/vermelho: o objeto assenta numa folha de papel rasgado (o branco da imagem funde com o papel)
+  return (
+    <div style={{position: 'relative', width: size, height: size}}>
+      <div style={{position: 'absolute', inset: 0, background: RED, transform: 'translate(16px,14px)', filter: 'url(#tornc)'}} />
+      <div style={{position: 'absolute', inset: 0, background: '#FBF7EE', filter: 'url(#tornc)'}} />
+      <div style={{position: 'absolute', inset: '6%'}}>{img}</div>
+    </div>
   );
 };
 const TornDefs2: React.FC = () => (
@@ -267,7 +273,8 @@ export const ICON_MAP: Record<string, string> = {
 };
 
 // Palco de ícones: mostra o ícone da etiqueta atual (grande, a entrar com pop) e deixa os anteriores em fila pequena.
-export const IconStage: React.FC<{items: {ic: string; at: number}[]; fallback?: string}> = ({items, fallback}) => {
+export const IconStage: React.FC<{items: {ic: string; at: number}[]; fallback?: string; theme?: Theme}> = ({items, fallback, theme}) => {
+  const plate = theme === 'dark' || theme === 'red';
   const t = useT();
   let cur = -1;
   items.forEach((it, i) => { if (t >= it.at) cur = i; });
@@ -278,12 +285,12 @@ export const IconStage: React.FC<{items: {ic: string; at: number}[]; fallback?: 
   const bob = Math.sin(t * 1.4) * 8;
   return (
     <>
-      <div key={name + cur} style={{position: 'absolute', left: 1030, top: 150, width: 700, height: 700, opacity: p, transform: `scale(${0.55 + p * 0.45}) translateY(${bob}px) rotate(${(1 - p) * -12}deg)`}}>
-        <ObjArt name={name} size={700} />
+      <div key={name + cur} style={{position: 'absolute', left: 1030, top: 150, width: 700, height: 700, opacity: p, mixBlendMode: plate ? 'normal' : 'multiply', transform: `scale(${0.55 + p * 0.45}) translateY(${bob}px) rotate(${(1 - p) * -12}deg)`}}>
+        <ObjArt name={name} size={700} plate={plate} />
       </div>
       <div style={{position: 'absolute', right: 80, bottom: 150, display: 'flex', gap: 18}}>
         {items.slice(0, Math.max(0, cur)).map((it, i) => {
-          return <div key={i} style={{opacity: 0.75}}><ObjArt name={it.ic} size={110} /></div>;
+          return <div key={i} style={{opacity: 0.85, mixBlendMode: plate ? 'normal' : 'multiply'}}><ObjArt name={it.ic} size={110} plate={plate} /></div>;
         })}
       </div>
     </>
@@ -292,13 +299,14 @@ export const IconStage: React.FC<{items: {ic: string; at: number}[]; fallback?: 
 
 export const OBJ_NAMES = Object.keys(OBJS);
 
-export const Obj: React.FC<{name: string; x?: number; y?: number; s?: number}> = ({name, x = 1030, y = 170, s = 1.35}) => {
+export const Obj: React.FC<{name: string; x?: number; y?: number; s?: number; theme?: Theme}> = ({name, x = 1030, y = 170, s = 1.35, theme}) => {
+  const plate = theme === 'dark' || theme === 'red';
   const t = useT();
   const p = interpolate(t, [0.1, 0.7], [0, 1], {...clamp, easing: ease});
   const bob = Math.sin(t * 1.4) * 10;
   return (
-    <div style={{position: 'absolute', left: x, top: y, width: 600 * s, height: 600 * s, opacity: p, transform: `translateX(${(1 - p) * 220}px) translateY(${bob}px) rotate(${(1 - p) * 8}deg)`}}>
-      <ObjArt name={name} size={600 * s} />
+    <div style={{position: 'absolute', left: x, top: y, width: 600 * s, height: 600 * s, opacity: p, mixBlendMode: plate ? 'normal' : 'multiply', transform: `translateX(${(1 - p) * 220}px) translateY(${bob}px) rotate(${(1 - p) * 8}deg)`}}>
+      <ObjArt name={name} size={600 * s} plate={plate} />
       <Bolt x={-30} y={-20} s={0.8} r={-15} />
     </div>
   );

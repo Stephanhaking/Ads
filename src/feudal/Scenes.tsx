@@ -154,7 +154,8 @@ export const SceneView: React.FC<{sc: Sc; start: number; figNo?: number}> = ({sc
   const theme = sc.theme ?? 'paper';
   const hasArt = !!sc.art;
   const kind = sc.kind;
-  const size = sc.size ?? (hasArt ? 104 : kind ? 84 : 128);
+  const withObj = !sc.art && !sc.kind && !!OBJ_MAP[sc.p];
+  const size = Math.min(sc.size ?? (hasArt ? 104 : kind ? 84 : 128), withObj ? 100 : 999);
   const lines = sc.lines ?? [];
   const times = lines.map((l, i) => (l.p ? at(l.p, l.o ?? 1) : 0.15 + i * 0.28));
   const hot = lines.flatMap((l, i) => (l.hot ? [i] : []));
@@ -168,7 +169,7 @@ export const SceneView: React.FC<{sc: Sc; start: number; figNo?: number}> = ({sc
       <AbsoluteFill>
         <Bg theme={theme} />
         {(isText || (!hasArt && kind && kind !== 'cuts' && kind !== 'end')) && <CollageBG theme={theme} word={((lines.find((l) => l.hot) ?? lines[lines.length - 1])?.t ?? sc.data?.text ?? sc.data?.value ?? 'ARCHIVE').toString().replace(/[.?!:]/g, '').split(' ').slice(-1)[0]} />}
-        {isText && tags.length > 0 && tags.every((g) => ICON_MAP[g.t]) ? <IconStage items={tags.map((g) => ({ic: ICON_MAP[g.t], at: at(g.p, g.o ?? 1)}))} fallback={OBJ_MAP[sc.p]} /> : isText && OBJ_MAP[sc.p] && <Obj name={OBJ_MAP[sc.p]} />}
+        {isText && tags.length > 0 && tags.every((g) => ICON_MAP[g.t]) ? <IconStage items={tags.map((g) => ({ic: ICON_MAP[g.t], at: at(g.p, g.o ?? 1)}))} fallback={OBJ_MAP[sc.p]} theme={theme} /> : isText && OBJ_MAP[sc.p] && <Obj name={OBJ_MAP[sc.p]} theme={theme} />}
         {sc.wipe && <Wipe />}
         <TornDefs />
         {sc.art && hasImage(sc.art.name) && (
