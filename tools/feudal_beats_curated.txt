@@ -8,10 +8,10 @@
 2.3|img:f-accept-button~You just tap “Accept”
 3.1|obj:coin~You still pay rent
 3.2|obj:eye~…and never see the bill
-4.1|obj:doc~A very old story
-4.2|obj:clock~Look at how it unfolded
+4.1|obj:open-book~A very old story
+4.2|obj:hourglass~Look at how it unfolded
 4.3|obj:cloud~Today’s digital world: already written
-5.1|obj:people~Who you’re paying · how much
+5.1|obj:ledger~Who you’re paying · how much
 5.2|obj:door~What ended feudalism
 5.3|obj:clock#1~A step for this week
 6.1|img:f-longship~9th century: Europe unravels
@@ -21,26 +21,26 @@
 7.2|img:a5~Royal armies even farther
 8.1|img:f-empty-road~The countryside
 8.2|img:f-walk-out~Nobody coming to defend you
-8.3|obj:lock~Find a protector—or don’t survive
+8.3|obj:shield~Find a protector—or don’t survive
 9.1|img:f-knight-horse~The local protector
 9.2|img:f-knight-horse#1~Armored horses, trained fighters
 9.3|img:a3~Somewhere safe to retreat
 10.1|img:a1~A wooden tower on a mound
 10.2|img:f-stone-tower~Later: a stone fortress
 11.1|obj:target~The crucial logic
-11.2|img:a6~Built to protect you
+11.2|obj:shield#1~Built to protect you
 11.3|img:a7~Protection from chaos
-11.4|img:f-iron-chain~No sword at your throat
-11.5|obj:clock~…it came later, slowly
+11.4|obj:sword~No sword at your throat
+11.5|obj:hourglass#1~…it came later, slowly
 11.6|obj:bricks~Once protection was indispensable
 12.1|obj:scale~Protection was the offer
 12.2|obj:doc~A second contract nobody read
 12.3|obj:doc#1~Three clauses
 13.1|img:f-kneeling-hands#1~A peasant accepts a lord
-13.2|obj:people~The homage ceremony
+13.2|obj:crown~The homage ceremony
 13.3|img:f-kneeling-hands#2~Hands between the lord’s hands
 13.4|img:f-quill-hand~He swears fealty
-13.5|img:f-kneeling-hands#3~Like a handshake before signing
+13.5|obj:handshake~Like a handshake before signing
 13.6|obj:doc#2~A contract
 14.1|obj:scale~Protection + a plot of land
 14.2|obj:doc#3~Three heavy obligations
@@ -51,20 +51,20 @@
 17.1|img:f-church-tithe~+ the Church’s tithe
 18.1|img:f-iron-chain~3 · Your freedom to leave
 18.2|obj:door#1~Freedom surrendered
-18.3|img:f-iron-chain#1~Bound to the soil
+18.3|obj:ball-chain~Bound to the soil
 18.4|obj:lock#1~Part of the property
-19.1|obj:coin#1~Even life had a price
+19.1|obj:price-tag~Even life had a price
 19.2|obj:rings~Merchet: a marriage tax
 19.3|obj:rings#1~…to marry off a daughter
-19.4|obj:cow~Heriot: the best animal
-20.1|obj:lock#2~No knife at their throats
+19.4|obj:tombstone~Heriot: the best animal
+20.1|obj:sword#1~No knife at their throats
 20.2|obj:thought~A trade driven by fear
-20.3|obj:clock#3~The price came later
+20.3|obj:hourglass#2~The price came later
 21.1|obj:coin#2~Where the real money was
 21.2|img:f-windmill~The mill
 22.1|obj:scale#3~Beyond labor and taxes
-22.2|obj:bricks#1~An economic stroke of genius
-22.3|obj:cloud~The lord owned the infrastructure
+22.2|obj:crown#1~An economic stroke of genius
+22.3|obj:crown#2~The lord owned the infrastructure
 22.4|obj:doc#2~Banalités: exclusive monopolies
 22.5|img:f-windmill#1~The village mill
 23.1|img:f-bread-oven~The communal oven
@@ -74,67 +74,67 @@
 25.3|img:f-windmill#2~The lord’s mill + a share of flour
 25.4|img:f-bread-oven#1~The oven was his too
 26.1|obj:door#2~See the trick?
-26.2|img:f-turnstile~One bottleneck
+26.2|obj:millstone~One bottleneck
 26.3|img:f-toll-booth~All economic life passes through
 27.1|img:f-open-gate~A door everywhere
 27.2|img:f-open-hand~…and an open hand
 28.1|obj:phone~The uncomfortable part
 28.2|obj:phone#1~A mill in your pocket
 29.1|obj:phone#2~The smartphone in your pocket
-29.2|obj:doc#4~You accept the terms of service
+29.2|obj:checkbox~You accept the terms of service
 29.3|obj:cloud~A stream of personal data
 29.4|obj:pin~Where you go ; obj:cart~What you buy ; obj:chat~Who you talk to
 29.5|obj:thought~What you think ; obj:clock~Hours of attention
 29.6|obj:clock#1~Every single day
 30.1|obj:cloud#1~In return: access
-30.2|obj:people~Your friends ; obj:cloud#2~Your job ; obj:photo~Your photos
+30.2|obj:people~Your friends ; obj:briefcase~Your job ; obj:photo~Your photos
 30.3|obj:map~The map home
 31.1|img:f-peasant-plough#2~Just like the peasant
 31.2|img:f-fingerprint~Nobody forced you
 31.3|img:f-accept-button#1~No violence · frictionless
 31.4|obj:coin#4~A zero-cost solution
-32.1|obj:clock~Only long after getting comfortable
+32.1|obj:hourglass~Only long after getting comfortable
 32.2|obj:scale~…do we grasp the price
 32.3|obj:cloud#3~Your data stops being yours
 33.1|obj:lock~A quiet loss of privacy
 33.2|obj:scale#1~An asymmetry of power
-33.3|obj:eye~Patterns you never notice
-33.4|obj:target~Predict ; obj:wheel~Steer
+33.3|obj:magnifier~Patterns you never notice
+33.4|obj:crystal-ball~Predict ; obj:puppet-strings~Steer
 33.5|obj:coin~Monetize your behavior
 34.1|obj:people~A day in a digital serf’s life
-34.2|img:f-wake-up-phone~He wakes to his phone’s alarm
-34.3|img:f-phone-hand~Three apps before he gets up
-34.4|obj:cloud#3~What happened while he slept
+34.2|obj:alarm-clock~He wakes to his phone’s alarm
+34.3|obj:app-grid~Three apps before he gets up
+34.4|obj:newspaper~What happened while he slept
 34.5|obj:photo~The weather · a stream of friends
 34.6|obj:people#1~Curated lives
 35.1|obj:map#1~Commuting by algorithmic map
 35.2|obj:thought#1~A private health question to a search engine
 35.3|obj:cart~Buying online at lunch
-35.4|img:f-city-commuter~Evening: videos that auto-queue
-35.5|obj:cursor~…before he can decide to stop
+35.4|obj:play-button~Evening: videos that auto-queue
+35.5|obj:fishhook~…before he can decide to stop
 36.1|obj:coin#3~Not one moment cost cash
 36.2|obj:eye#1~By bedtime, corporations know…
 36.3|obj:pin#1~Where he walked ; obj:thought#2~What worried him
 36.4|obj:cursor#1~What he hovered over ; obj:clock#2~Seconds he hesitated
 37.1|obj:photo#1~Each gesture is small
-37.2|obj:eye#2~…but the sum is a portrait
+37.2|obj:dossier~…but the sum is a portrait
 37.3|obj:people#2~Value created by his life
-37.4|obj:target#1~Owned by them, sold to predict his move
+37.4|obj:barcode~Owned by them, sold to predict his move
 38.1|obj:thought#3~Not charging money — how do they get paid?
 38.2|img:f-open-hand~Follow the rent
 39.1|img:f-coins-hand~The strongest parallel
 39.2|obj:coin~It’s the collection of rent
-40.1|obj:phone~The app store on your phone
+40.1|obj:storefront~The app store on your phone
 40.2|obj:phone#1~Building software to reach customers
 40.3|obj:doc~You can’t just hand over your work
 40.4|img:f-toll-booth~Pass through a gatekeeper’s store
-40.5|obj:coin~Up to 30% commission
-40.6|obj:coin#1~15% for smaller developers
-41.1|obj:cart~Merchants on a massive marketplace
-41.2|obj:cart#1~Listing and logistics fees
-41.3|obj:target~Sponsored ad placements
+40.5|obj:price-tag#1~Up to 30% commission
+40.6|obj:price-tag#2~15% for smaller developers
+41.1|obj:storefront#1~Merchants on a massive marketplace
+41.2|obj:shipping-box~Listing and logistics fees
+41.3|obj:megaphone~Sponsored ad placements
 41.4|obj:scale~Independent estimates add it up
-41.5|obj:coin#2~Close to half of a seller’s revenue
+41.5|obj:price-tag#3~Close to half of a seller’s revenue
 42.1|img:f-windmill#3~The lord’s mill all over again
 42.2|img:f-open-gate~No need to ban competition
 42.3|img:f-toll-booth#1~Own the only mill. Charge a toll.
@@ -142,48 +142,48 @@
 43.1|obj:thought~Just a clever comparison? It isn’t.
 43.2|obj:scale#2~Two giants are being sued
 44.1|obj:doc~Not hypothetical metaphors
-44.2|obj:scale#3~Active legal battles in federal court
+44.2|obj:courthouse~Active legal battles in federal court
 44.3|obj:doc#1~2020
 45.1|obj:phone~Epic Games v. Apple
-45.2|obj:scale~Not an illegal monopolist (federal law)
+45.2|obj:courthouse#1~Not an illegal monopolist (federal law)
 45.3|obj:doc~…on most counts
-45.4|obj:lock~Anti-steering violated California law
+45.4|obj:gavel~Anti-steering violated California law
 45.5|obj:door~Apple must allow external payment links
 45.6|obj:coin~What Apple may charge: still disputed
-45.7|obj:scale#1~Still in court
+45.7|obj:gavel#1~Still in court
 46.1|obj:cart~FTC + 17 states v. Amazon
-46.2|obj:doc~A landmark antitrust lawsuit
+46.2|obj:gavel#2~A landmark antitrust lawsuit
 46.3|obj:target~Alleged abuse of monopoly power
 46.4|obj:coin~Punishing sellers who price lower elsewhere
-46.5|obj:cart#1~Inflating prices across the web
-46.6|obj:door~Forcing costly fulfillment services
+46.5|obj:price-tag#3~Inflating prices across the web
+46.6|obj:shipping-box#1~Forcing costly fulfillment services
 47.1|img:f-turnstile~Not just high prices
 47.2|img:f-door-lock~It’s control of the door
 47.3|img:f-toll-booth~Whoever commands the bottleneck sets the rules
-48.1|obj:scale~Only what we see in court
+48.1|obj:courthouse#2~Only what we see in court
 48.2|obj:eye~The part we can’t see
 50.1|obj:thought~They call it consumer choice
-50.2|obj:lock~Surveillance — or lose access
+50.2|obj:handcuffs~Surveillance — or lose access
 50.3|obj:people~Friends · career tools · utilities
 50.4|img:f-fork-road~Not a choice: the peasant’s trade-off
 50.5|img:f-walk-out~Yield freedom — or face the wilderness
 51.1|img:f-wheat-sacks#2~Far more intimate than grain
-51.2|obj:eye#1~Behavioral intelligence
-51.3|obj:doc#2~Predictive models read patient records
-51.4|obj:target#2~Algorithms read your digital footprint
+51.2|obj:brain~Behavioral intelligence
+51.3|obj:stethoscope~Predictive models read patient records
+51.4|obj:magnifier#1~Algorithms read your digital footprint
 51.5|obj:wheel~…to predict your choices
 52.1|img:f-wheat-sacks~The lord knew your harvest
 52.2|obj:thought~Your late-night worries
 52.3|obj:people~Your politics · what moves you
-52.4|obj:wheel~Nudging decisions unnoticed
+52.4|obj:puppet-strings#1~Nudging decisions unnoticed
 53.1|obj:doc~Not an internet theory
-53.2|obj:scale~Serious economic literature
+53.2|obj:books-stack~Serious economic literature
 54.1|obj:doc~Cédric Durand, 2020
 54.2|obj:cloud~Rent through technological lock-in
 54.3|obj:bricks~Not market competition
-54.4|obj:people~Yanis Varoufakis, ex-finance minister
-54.5|obj:doc~Technofeudalism
-54.6|obj:doc#1~What Killed Capitalism
+54.4|obj:books-stack#1~Yanis Varoufakis, ex-finance minister
+54.5|obj:books-stack#2~Technofeudalism
+54.6|obj:open-book#1~What Killed Capitalism
 55.1|obj:scale~Capitalism, replaced
 55.2|obj:cloud#1~“Cloud capital”
 55.3|obj:cloud~Private cloud fiefs
@@ -195,7 +195,7 @@
 57.2|obj:bricks~The limits of the comparison
 57.3|obj:people#1~Many scholars push back
 58.1|obj:doc~Evgeny Morozov
-58.2|obj:doc#1~A well-known critique
+58.2|obj:open-book#2~A well-known critique
 58.3|obj:coin~Just monopoly capitalism at work
 58.4|obj:cloud~Still capital, competition, profit
 58.5|obj:target~Profit extraction
@@ -205,35 +205,35 @@
 60.1|obj:phone~Deleting an app takes seconds
 60.2|obj:bricks~Leaving is painfully costly
 60.3|obj:photo~10 years of photos ; obj:people~Professional contacts ; obj:chat~Client networks
-60.4|obj:lock#1~Communication tools, locked in
+60.4|obj:handcuffs#1~Communication tools, locked in
 60.5|obj:bricks#2~The digital castle walls
-60.6|obj:door#2~Not forbidden — just costly
+60.6|obj:ladder~Not forbidden — just costly
 60.7|obj:coin#3~Ruinously high
 61.1|obj:scale#2~If the comparison is half right
-61.2|img:f-fork-road~History has an answer
-61.3|img:f-open-gate~How do you actually get out?
-62.1|obj:clock~How did feudalism end?
+61.2|obj:signpost~History has an answer
+61.3|obj:big-key~How do you actually get out?
+62.1|obj:hourglass#3~How did feudalism end?
 62.2|obj:door#3~You’d expect a revolution. There wasn’t one.
-62.3|obj:target#3~A massive structural shock
+62.3|obj:plague-mask~A massive structural shock
 63.1|img:a5~The Black Death, 1346–1353
 63.2|obj:people#3~A third to a half of the population
-64.1|obj:scale#3~Labor shortages invert power
+64.1|obj:wheat-bundle~Labor shortages invert power
 64.2|img:f-peasant-plough~For the first time: bargaining power
 64.3|obj:coin~Demand wages · change estates
 64.4|img:a4~…or head to the growing towns
-65.1|img:a4#1~Cities flourish: trade and craft
-65.2|img:a6#1~Free cities of the Middle Ages
-65.3|obj:door~“City air makes you free”
+65.1|obj:medieval-town~Cities flourish: trade and craft
+65.2|obj:medieval-town#1~Free cities of the Middle Ages
+65.3|obj:big-key#1~“City air makes you free”
 65.4|img:a7#1~Customary law in German towns
 65.5|obj:clock~A year and a day in a free city
 65.6|img:f-open-gate#2~Legal freedom
 66.1|obj:lock#3~Not because lords grew generous
-66.2|img:f-fork-road#1~Alternative spaces emerged
-66.3|img:f-walk-out#2~People gained the power to walk away
+66.2|obj:sunrise~Alternative spaces emerged
+66.3|obj:suitcase~People gained the power to walk away
 67.1|obj:scale~Coercive systems endure…
 67.2|obj:thought~…while no alternative seems to exist
-67.3|img:f-fork-road#2~Alternatives exist
-67.4|img:a1#1~New spaces were created
+67.3|obj:signpost#1~Alternatives exist
+67.4|obj:sunrise#1~New spaces were created
 67.5|obj:doc~The rules were rewritten
 67.6|obj:thought#1~Not a law of nature
 68.1|obj:phone~No need to smash your phone
@@ -242,4 +242,4 @@
 68.4|obj:coin~At what cost ; obj:door~New paths can be built
 68.5|img:f-fork-road#3~…when we demand them
 70.1|img:f-open-gate~Next: how to leave the castle
-70.2|img:f-walk-out~…without leaving the world
+70.2|obj:suitcase#1~…without leaving the world

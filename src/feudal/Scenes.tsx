@@ -55,7 +55,7 @@ const Books: React.FC<{d: any; at: (p: string, o?: number) => number}> = ({d, at
       <Panel key={i} x={150 + i * 850} y={200} w={720} h={700} at={at(b.p)} tilt={i ? 2.5 : -2.5} bg={i ? INK : RED} pad={50}>
         <div style={{color: '#fff', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', border: '4px solid rgba(255,255,255,0.7)', padding: 40, boxSizing: 'border-box'}}>
           <Mono color="#fff">{b.y}</Mono>
-          <div style={{fontFamily: fonts.heading, fontSize: i ? 76 : 92, textTransform: 'uppercase', lineHeight: 1.05}}>{b.t}</div>
+          <div style={{fontFamily: fonts.heading, fontSize: i ? 62 : 68, textTransform: 'uppercase', lineHeight: 1.05}}>{b.t}</div>
           <div style={{fontFamily: 'Georgia, serif', fontSize: 46}}>{b.a}</div>
         </div>
       </Panel>
