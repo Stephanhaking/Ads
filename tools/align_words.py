@@ -64,11 +64,16 @@ def snap(words, ons, tol=0.12):
     return words
 
 
+EXTRA = {}
+
+
 def align(text, pcm):
     toks = [norm(t) for t in re.split(r"[\s—-]+", text)]
     toks = [SUBS.get(t, t) for t in toks if t]
     d = Decoder(samprate=16000)
     d.add_word('plainest', 'P L EY N AH S T', True)
+    for w_, p_ in EXTRA.items():
+        d.add_word(w_, p_, True)
     d.set_align_text(' '.join(toks))
     d.start_utt()
     d.process_raw(pcm, False, True)

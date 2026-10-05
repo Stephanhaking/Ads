@@ -8,6 +8,12 @@ import json, os, sys, wave
 import numpy as np
 sys.path.insert(0, os.path.dirname(__file__))
 import align_words as A
+A.EXTRA.update({
+    'banalites': 'B AH N AA L IH T EY', 'corvee': 'K AO R V EY', 'evgeny': 'EH V G EH N IY', 'feodalisme': 'F EY AA D AA L IY Z M',
+    "gatekeeper's": 'G EY T K IY P ER Z', 'heriot': 'HH EH R IY AH T', 'immixtio': 'IH M IH K S T IY OW', 'manuum': 'M AE N Y UW AH M',
+    'merchet': 'M ER CH IH T', 'morozov': 'M AO R AO Z AA V', 'ruinously': 'R UW AH N AH S L IY', 'saracen': 'S EH R AH S AH N',
+    'stadtluft': 'SH T AA T L UH F T', 'technofeudal': 'T EH K N OW F Y UW D AH L', 'technofeudalism': 'T EH K N OW F Y UW D AH L IH Z AH M',
+    'varoufakis': 'V AA R UW F AA K IH S'})
 
 ROOT = os.path.join(os.path.dirname(__file__), '..')
 D = os.path.join(ROOT, 'public/audio/feudal')
@@ -36,8 +42,8 @@ for c in cfg['chunks']:
         continue
     w = wave.open(p); sr = w.getframerate(); x = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16); w.close()
     import unicodedata, re as _re
-    clean = unicodedata.normalize('NFKD', c['text']).encode('ascii', 'ignore').decode().replace('’', "'")
-    clean = _re.sub(r'[—–-]', ' ', clean).replace('\n', ' ')
+    clean = _re.sub(r'[—–-]', ' ', c['text']).replace('’', "'")
+    clean = unicodedata.normalize('NFKD', clean).encode('ascii', 'ignore').decode().replace('\n', ' ')
     toks, ws = A.align(clean, A.load16k(p))
     ws = A.snap(ws, A.onsets(p))
     for k in ws:

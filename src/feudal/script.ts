@@ -76,8 +76,8 @@ export const SCENES: Sc[] = [
 
   // ── Act V-B ──
   {p: 'These aren’t hypothetical metaphors', theme: 'paper', wipe: true, lines: [L('Real cases.'), L('Federal courts.', 'federal courtrooms', true)], size: 130},
-  {p: 'In 2020, Epic Games sued Apple', theme: 'paper', kind: 'quote', data: {kicker: '2020 · COURT', text: 'Epic Games v. Apple', sub: 'Anti-steering rules → external payment links', p: 'anti steering rules', by: 'App store commissions'}},
-  {p: 'In September 2023', theme: 'paper', kind: 'quote', data: {kicker: 'SEPTEMBER 2023 · COURT', text: 'FTC + 17 states v. Amazon', sub: 'Sellers punished for lower prices elsewhere', p: 'punishing sellers', by: 'Alleged monopoly power'}},
+  {p: 'Epic Games sued Apple', theme: 'paper', kind: 'quote', data: {kicker: '2020 · COURT', text: 'Epic Games v. Apple', sub: 'Anti-steering rules → external payment links', p: 'anti steering rules', by: 'App store commissions'}},
+  {p: 'in september', theme: 'paper', kind: 'quote', data: {kicker: 'SEPTEMBER 2023 · COURT', text: 'FTC + 17 states v. Amazon', sub: 'Sellers punished for lower prices elsewhere', p: 'punishing sellers', by: 'Alleged monopoly power'}},
   {p: 'Notice the recurring pattern', theme: 'paper', lines: [L('Not just price.'), L('Control of the door.', 'control of the door', true)], art: {name: 'f-turnstile', side: 'r'}},
   {p: 'And that’s only the part we can see in court', theme: 'dark', lines: [L('Only what we see'), L('in court.'), L('The rest isn’t money.', 'what they take that isn’t money', true)], size: 100},
 
@@ -91,7 +91,7 @@ export const SCENES: Sc[] = [
 
   // ── Act VI ──
   {p: 'This structural critique', theme: 'paper', wipe: true, lines: [L('Not an'), L('internet theory.', 'internet theory', true)], size: 130},
-  {p: 'In 2020, French economist', theme: 'paper', kind: 'books', data: {books: [{t: 'Techno-féodalisme', a: 'Cédric Durand', y: '2020', p: 'french economist'}, {t: 'Technofeudalism: What Killed Capitalism', a: 'Yanis Varoufakis', y: '2023', p: 'former greek finance minister'}]}},
+  {p: 'french economist', theme: 'paper', kind: 'books', data: {books: [{t: 'Techno-féodalisme', a: 'Cédric Durand', y: '2020', p: 'french economist'}, {t: 'Technofeudalism: What Killed Capitalism', a: 'Yanis Varoufakis', y: '2023', p: 'former greek finance minister'}]}},
   {p: 'Varoufakis argues that classical capitalism', theme: 'dark', lines: [L('Cloud capital.', 'cloud capital', true)], size: 100, tags: [T('Platforms = private fiefs', 'private cloud fiefs'), T('Users = cloud serfs', 'cloud serfs'), T('Businesses = cloud vassals', 'cloud vassals')]},
   {p: 'And yet, before you take their word', theme: 'red', lines: [L('A serious argument'), L('that all of this', 'that all of this is wrong'), L('is wrong.', undefined, true)], fx: [{p: 'that all of this is wrong', s: 'impact'}]},
 
@@ -104,7 +104,7 @@ export const SCENES: Sc[] = [
 
   // ── Act VIII ──
   {p: 'How did historical feudalism actually end', theme: 'paper', wipe: true, lines: [L('How did it end?'), L('No revolution.', 'there wasn’t one', true)], size: 130},
-  {p: 'Between 1346 and 1353', theme: 'dark', kind: 'stat', lines: [L('The Black Death')], data: {value: '1346–1353', label: 'It swept across Europe', frac: 0, p: 'between 1346 and 1353', sub: 'one-third to one-half of the population', sp: 'one third and one half'}},
+  {p: 'swept across europe', theme: 'dark', kind: 'stat', lines: [L('The Black Death')], data: {value: '1346–1353', label: 'It swept across Europe', frac: 0, p: 'swept across europe', sub: 'one-third to one-half of the population', sp: 'one third and one half'}},
   {p: 'Severe labor shortages', theme: 'paper', lines: [L('Workers became'), L('scarce.', undefined, true), L('Bargaining power.', 'genuine bargaining power')], size: 120},
   {p: 'Cities flourished', theme: 'paper', kind: 'quote', data: {kicker: 'GERMAN LEGAL PRINCIPLE', text: 'Stadtluft macht frei.', sub: '“City air makes you free.”', p: 'city air makes you free', by: 'A year and a day in a free city'}},
   {p: 'Feudalism collapsed not because', theme: 'paper', lines: [L('Not kindness.'), L('Alternatives.', 'alternative spaces emerged', true)], art: {name: 'f-open-gate', side: 'r'}, fx: [{p: 'alternative spaces emerged', s: 'stamp'}]},
