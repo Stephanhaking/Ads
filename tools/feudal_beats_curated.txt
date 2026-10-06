@@ -15,8 +15,8 @@
 5.2|obj:door~What ended feudalism
 5.3|obj:calendar~A step for this week
 6.1|obj:medieval-town~9th century: Europe under attack
-6.2|obj:viking-longship-sail~Vikings from the northern seas ; obj:viking-helmet~Norse raiders ; obj:viking-shield~Axe and shield
-6.3|obj:magyar-horseman~Magyars strike from the east ; obj:steppe-map~From the east ; obj:saracen-dhow~Saracen raiders press from the south ; obj:southern-map~From the south
+6.2|obj:viking-shield~Violent attacks ; obj:viking-longship-sail~Vikings from the northern seas@vikings ; obj:viking-helmet~Norse raiders@northern
+6.3|obj:magyar-horseman~Magyars strike from the east@magyars ; obj:steppe-map~From the east@from the east ; obj:saracen-dhow~Saracen raiders press from the south@saracen ; obj:southern-map~From the south@from the south
 7.1|img:f-burning-village~No central authority
 7.2|img:a5~Royal armies even farther
 8.1|img:f-empty-road~The countryside
@@ -83,11 +83,11 @@
 29.1|obj:phone#2~The smartphone in your pocket
 29.2|obj:checkbox~You accept the terms of service
 29.3|obj:cloud~A stream of personal data
-29.4|obj:pin~Where you go ; obj:cart~What you buy ; obj:chat~Who you talk to
-29.5|obj:thought~What you think ; obj:clock~Hours of attention
+29.4|obj:pin~Where you go@where you go ; obj:cart~What you buy@what you buy ; obj:chat~Who you talk to@who you talk to
+29.5|obj:thought~What you think@what you think ; obj:clock~Hours of attention@hours of your attention
 29.6|obj:clock#1~Every single day
 30.1|obj:cloud#1~In return: access
-30.2|obj:people~Your friends ; obj:briefcase~Your job ; obj:photo~Your photos
+30.2|obj:people~Your friends@to your friends ; obj:briefcase~Your job@your job ; obj:photo~Your photos@your photos
 30.3|obj:map~The map home
 31.1|img:f-peasant-plough#2~Just like the peasant
 31.2|img:f-fingerprint~Nobody forced you
@@ -99,7 +99,7 @@
 33.1|obj:lock~A quiet loss of privacy
 33.2|obj:scale#1~An asymmetry of power
 33.3|obj:magnifier~Patterns you never notice
-33.4|obj:crystal-ball~Predict ; obj:puppet-strings~Steer
+33.4|obj:crystal-ball~Predict@predict ; obj:puppet-strings~Steer@steer
 33.5|obj:coin~Monetize your behavior
 34.1|obj:people~A day in a digital serf’s life
 34.2|obj:alarm-clock~He wakes to his phone’s alarm
@@ -114,8 +114,8 @@
 35.5|obj:fishhook~…before he can decide to stop
 36.1|obj:coin#3~Not one moment cost cash
 36.2|obj:eye#1~By bedtime, corporations know…
-36.3|obj:pin#1~Where he walked ; obj:thought#2~What worried him
-36.4|obj:cursor#1~What he hovered over ; obj:clock#2~Seconds he hesitated
+36.3|obj:pin#1~Where he walked@where he walked ; obj:thought#2~What worried him@what worried him
+36.4|obj:cursor#1~What he hovered over@hovered over ; obj:clock#2~Seconds he hesitated@how many seconds
 37.1|obj:photo#1~Each gesture is small
 37.2|obj:dossier~…but the sum is a portrait
 37.3|obj:people#2~Value created by his life
@@ -204,7 +204,7 @@
 59.2|obj:phone~You can delete your apps
 60.1|obj:phone~Deleting an app takes seconds
 60.2|obj:bricks~Leaving is painfully costly
-60.3|obj:photo~10 years of photos ; obj:people~Professional contacts ; obj:chat~Client networks
+60.3|obj:photo~10 years of photos@ten years of photos ; obj:people~Professional contacts@professional contacts ; obj:chat~Client networks@client networks
 60.4|obj:handcuffs#1~Communication tools, locked in
 60.5|obj:bricks#2~The digital castle walls
 60.6|obj:ladder~Not forbidden — just costly
@@ -238,8 +238,8 @@
 67.6|obj:thought#1~Not a law of nature
 68.1|obj:phone~No need to smash your phone
 68.2|obj:eye~See the digital landscape as it is
-68.3|obj:cloud~What you hand over ; obj:people~To whom
-68.4|obj:coin~At what cost ; obj:door~New paths can be built
+68.3|obj:cloud~What you hand over@what you are handing over ; obj:people~To whom@to whom
+68.4|obj:coin~At what cost@at what cost ; obj:door~New paths can be built@new paths
 68.5|img:f-fork-road#3~…when we demand them
 70.1|obj:toolbox~Next: the exact steps
 70.2|obj:exit-door~…to leave the castle

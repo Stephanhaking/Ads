@@ -25,9 +25,9 @@ const BeatView: React.FC<{b: Beat; fig: string; theme: Theme; k: number; noCap?:
   const plate = theme === 'dark' || theme === 'red';
   const size = 640;
   return (
-    <div style={{position: 'absolute', left: 1030, top: 150, width: 800, height: 740, opacity: p, mixBlendMode: plate ? 'normal' : 'multiply', transform: `translateX(${(1 - p) * 200}px) rotate(${(1 - p) * 7}deg)`}}>
-      <div style={{position: 'absolute', left: 80, top: 20, transform: `scale(${zoom ? zoom.s * 0.9 : 1}) translateY(${Math.sin(t * 1.4) * 8}px)`, transformOrigin: zoom ? `${zoom.fx * 100}% ${zoom.fy * 100}%` : undefined}}>
-        <ObjArt name={name} size={size} plate={plate} />
+    <div style={{position: 'absolute', left: 1030, top: 150, width: 800, height: 740, overflow: 'hidden', opacity: p, mixBlendMode: plate ? 'normal' : 'multiply', transform: `translateX(${(1 - p) * 200}px) rotate(${(1 - p) * 7}deg)`}}>
+      <div style={{position: 'absolute', left: 80, top: 20, transform: `translateY(${Math.sin(t * 1.4) * 8}px)`}}>
+        <ObjArt name={name} size={size} plate={plate} zoom={zoom} />
       </div>
       {zoom && <div style={{position: 'absolute', left: 80 + size * zoom.fx - 120, top: 20 + size * zoom.fy - 120, width: 240, height: 240, borderRadius: '50%', border: `10px solid ${RED}`, opacity: interpolate(t, [0.3, 0.6], [0, 1], clamp)}} />}
       {!noCap && <div style={{position: 'absolute', right: 10, bottom: 10, background: RED, color: '#fff', fontFamily: fonts.heading, fontSize: 36, textTransform: 'uppercase', padding: '8px 22px', boxShadow: `6px 6px 0 ${INK}`}}>{b.cap}</div>}

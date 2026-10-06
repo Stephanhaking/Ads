@@ -11,14 +11,17 @@ import type {Theme} from './Common';
 const useT = () => useCurrentFrame() / FPS;
 // Imagens reais dos objetos (public/feudal/obj/<nome>.png|jpg, registadas por tools/feudal_ingest.py); sem ficheiro usa o desenho de código.
 const objFile = (name: string) => (objs as string[]).find((f) => f.startsWith(name + '.'));
-export const ObjArt: React.FC<{name: string; size: number; plate?: boolean}> = ({name, size, plate}) => {
+export const ObjArt: React.FC<{name: string; size: number; plate?: boolean; zoom?: {s: number; fx: number; fy: number}}> = ({name, size, plate, zoom}) => {
   const f = objFile(name);
   const Art = OBJS[name] ?? OBJS.coin;
   if (!f) return <svg width={size} height={size} viewBox="0 0 600 600" filter="url(#rough)"><Defs /><Art /></svg>;
+  const zs: React.CSSProperties = zoom ? {transform: `scale(${zoom.s})`, transformOrigin: `${zoom.fx * 100}% ${zoom.fy * 100}%`} : {};
   const img = (
-    <div style={{position: 'relative', width: '100%', height: '100%'}}>
+    <div style={{position: 'relative', width: '100%', height: '100%', overflow: zoom ? 'hidden' : undefined}}>
+      <div style={{position: 'absolute', inset: 0, ...zs}}>
       <Img src={staticFile(`feudal/obj/${f}`)} style={{width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.06)'}} />
       {name === 'phone' && <PhoneTos k={size / 1600} />}
+      </div>
     </div>
   );
   if (!plate) return <div style={{width: size, height: size}}>{img}</div>;
@@ -49,7 +52,7 @@ export const PhoneTos: React.FC<{k: number}> = ({k}) => {
   ));
   return (
     <div style={{position: 'absolute', left: 0, top: 0, width: 1600, height: 1600, transformOrigin: '0 0', transform: `scale(${k})`, WebkitMaskImage: `url(${staticFile('feudal/obj/phone-screen.png')})`, WebkitMaskSize: '1600px 1600px', maskImage: `url(${staticFile('feudal/obj/phone-screen.png')})`, maskSize: '1600px 1600px'}}>
-      <div style={{position: 'absolute', left: 784 - 312, top: 727 - 470, width: 640, height: 940, transform: 'rotate(10deg)', overflow: 'hidden', background: '#fff'}}>
+      <div style={{position: 'absolute', left: 784 - 312 + 40, top: 727 - 470, width: 640, height: 940, transform: 'rotate(10deg)', overflow: 'hidden', background: '#fff'}}>
         <div style={{padding: '40px 60px 0', borderBottom: '4px solid #ddd', fontFamily: fonts.heading, fontSize: 46, color: INK, paddingBottom: 20, background: '#fff', position: 'relative', zIndex: 2}}>TERMS OF SERVICE</div>
         <div style={{padding: '30px 60px', transform: `translateY(${y}px)`}}>{rows(0)}{rows(1)}{rows(2)}</div>
         <div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: 150, background: 'linear-gradient(#fff0,#fff 40%)'}} />
