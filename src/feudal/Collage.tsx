@@ -19,7 +19,7 @@ export const ObjArt: React.FC<{name: string; size: number; plate?: boolean; zoom
   const img = (
     <div style={{position: 'relative', width: '100%', height: '100%', overflow: zoom ? 'hidden' : undefined}}>
       <div style={{position: 'absolute', inset: 0, ...zs}}>
-      <Img src={staticFile(`feudal/obj/${f}`)} style={{width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.06)'}} />
+      {name === 'gavel' ? <GavelLayers /> : <Img src={staticFile(`feudal/obj/${f}`)} style={{width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.06)'}} />}
       {name === 'phone' && <PhoneTos k={size / 1600} />}
       {name === 'app-grid' && <AppPress k={size / 1600} />}
       </div>
@@ -102,7 +102,6 @@ export const LIFE: Record<string, (t: number) => {transform: string; origin?: st
   eye: (t) => ({transform: `scaleY(${t % 3.2 > 3.05 ? 0.12 : 1})`, origin: '50% 50%'}),
   'puppet-strings': (t) => ({transform: `rotate(${Math.sin(t * 1.5) * 5}deg)`, origin: '50% 0%'}),
   wheel: (t) => ({transform: `rotate(${Math.sin(t * 0.9) * 28}deg)`, origin: '50% 50%'}),
-  gavel: (t) => ({transform: `rotate(${-22 * Math.max(0, 1 - (t % 1.5) / 0.22)}deg)`, origin: '15% 85%'}),
   cursor: (t) => ({transform: `scale(${1 - 0.08 * Math.max(0, Math.sin(t * 5)) ** 6})`, origin: '30% 20%'}),
   crown: (t) => ({transform: `rotate(${Math.sin(t * 1.1) * 2.2}deg)`, origin: '50% 100%'}),
   pin: (t) => ({transform: `translateY(${-300 * Math.max(0, 1 - t / 0.35) ** 2}px)`, origin: '50% 100%'}),
@@ -118,6 +117,29 @@ export const Waves: React.FC = () => {
         <path key={i} d={`M-200 ${70 + i * 40} ${Array.from({length: 14}).map((_, j) => `q50 ${(j % 2 ? 1 : -1) * 18} 100 0`).join(' ')}`} transform={`translate(${((t * (30 + i * 14)) % 200) * -1} 0)`} fill="none" stroke={INK} strokeWidth={5 - i} />
       ))}
     </svg>
+  );
+};
+
+
+// Martelo: o bloco fica fixo e só o martelo (cabo + cabeça) sobe e bate (duas camadas separadas da imagem).
+const GavelLayers: React.FC = () => {
+  const t = useT();
+  const c = t % 1.6;
+  const raise = interpolate(c, [0, 0.7], [0, 1], {...clamp, easing: ease});
+  const hit = interpolate(c, [0.7, 0.8], [0, 1], clamp);
+  const angle = c < 0.7 ? -19 * raise : c < 0.8 ? -19 * (1 - hit) : 0;
+  const bounce = c >= 0.8 && c < 0.95 ? Math.sin((c - 0.8) / 0.15 * Math.PI) * -2.5 : 0;
+  const impact = c >= 0.78 && c < 0.98 ? interpolate(c, [0.78, 0.98], [0, 1], clamp) : 0;
+  const shake = c >= 0.78 && c < 0.88 ? (Math.sin(c * 220) * 5) : 0;
+  const st: React.CSSProperties = {position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.06)'};
+  return (
+    <>
+      <Img src={staticFile('feudal/obj/gavel-block.png')} style={{...st, transform: `translateY(${shake}px)`}} />
+      <Img src={staticFile('feudal/obj/gavel-head.png')} style={{...st, transform: `rotate(${angle + bounce}deg)`, transformOrigin: '2.5% 72%'}} />
+      {impact > 0 && (
+        <div style={{position: 'absolute', left: '62%', top: '58%', width: '30%', height: '14%', borderRadius: '50%', border: `${8 * (1 - impact) + 2}px solid ${RED}`, opacity: 1 - impact, transform: `scale(${0.6 + impact * 0.9})`}} />
+      )}
+    </>
   );
 };
 
