@@ -3,6 +3,7 @@ import {AbsoluteFill, staticFile} from 'remotion';
 import '../fonts';
 import {fonts} from '../styles';
 import {ArtSlot, Bg, Defs, INK, PAPER, RED, SceneCtx} from './Common';
+import {ObjArt} from './Collage';
 
 // Miniatura 1280×720 (desenhada a 1920×1080 e reduzida). Variantes de texto: A "NEW LORDS?" · B "DIGITAL SERFDOM".
 // Para fotos de CEOs: pôr recortes PNG (fundo transparente) em public/feudal/thumb/ceo-1..3.png e `npm run feudal:ingest` mete-os aqui.
@@ -26,12 +27,12 @@ export const Thumb: React.FC<{variant?: 'A' | 'B'}> = ({variant = 'A'}) => {
       <AbsoluteFill>
         <Bg theme="paper" />
         <svg width="1920" height="1080" style={{position: 'absolute', inset: 0}}><Defs /></svg>
-        <ArtSlot name="f-stone-tower" x={820} y={80} w={1100} h={900} at={-9} />
-        <div style={{position: 'absolute', right: 40, top: 150, transform: 'rotate(7deg)'}}><Phone /></div>
+        <div style={{position: 'absolute', right: 20, top: 10, mixBlendMode: 'multiply'}}><ObjArt name="crown" size={520} /></div>
+        <div style={{position: 'absolute', right: 40, top: 400, mixBlendMode: 'multiply', transform: 'rotate(-4deg)'}}><ObjArt name="phone" size={700} /></div>
         {PH.map((f, i) => <img key={f} src={staticFile(`feudal/thumb/${f}`)} style={{position: 'absolute', left: 560 + i * 170, bottom: 0, height: 560}} />)}
-        <div style={{position: 'absolute', left: 70, top: 90, fontFamily: fonts.heading, textTransform: 'uppercase', lineHeight: 0.92, color: INK}}>
-          <div style={{fontSize: A ? 330 : 250, WebkitTextStroke: `2px ${INK}`}}>{A ? 'NEW' : 'DIGITAL'}</div>
-          <div style={{fontSize: A ? 330 : 250, background: RED, color: '#fff', display: 'inline-block', padding: '0 34px', boxShadow: `14px 14px 0 ${INK}`}}>{A ? 'LORDS?' : 'SERFDOM'}</div>
+        <div style={{position: 'absolute', left: 70, top: 110, fontFamily: fonts.heading, textTransform: 'uppercase', lineHeight: 0.92, color: INK}}>
+          <div style={{fontSize: A ? 300 : 230}}>{A ? 'NEW' : 'DIGITAL'}</div>
+          <div style={{fontSize: A ? 300 : 230, background: RED, color: '#fff', display: 'inline-block', padding: '0 34px', boxShadow: `14px 14px 0 ${INK}`}}>{A ? 'LORDS?' : 'SERFDOM'}</div>
         </div>
         <div style={{position: 'absolute', left: 80, bottom: 70, fontFamily: fonts.mono, fontSize: 40, letterSpacing: 6, color: INK, background: PAPER, padding: '8px 18px', border: `4px solid ${INK}`}}>YOU PAY RENT. YOU NEVER SEE THE BILL.</div>
       </AbsoluteFill>
