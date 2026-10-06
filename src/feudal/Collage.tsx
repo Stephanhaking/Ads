@@ -19,7 +19,7 @@ export const ObjArt: React.FC<{name: string; size: number; plate?: boolean; zoom
   const img = (
     <div style={{position: 'relative', width: '100%', height: '100%', overflow: zoom ? 'hidden' : undefined}}>
       <div style={{position: 'absolute', inset: 0, ...zs}}>
-      {name === 'gavel' ? <GavelLayers /> : <Img src={staticFile(`feudal/obj/${f}`)} style={{width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.06)'}} />}
+      {name === 'gavel' ? <GavelLayers /> : name === 'scale' ? <ScaleLayers k={size / 1600} /> : name === 'door' ? <DoorLayers /> : <Img src={staticFile(`feudal/obj/${f}`)} style={{width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.06)'}} />}
       {name === 'phone' && <PhoneTos k={size / 1600} />}
       {name === 'app-grid' && <AppPress k={size / 1600} />}
       </div>
@@ -96,7 +96,6 @@ const AppPress: React.FC<{k: number}> = ({k}) => {
 export const LIFE: Record<string, (t: number) => {transform: string; origin?: string}> = {
   'viking-longship-sail': (t) => ({transform: `translate(${Math.min(t * 10, 40)}px, ${Math.sin(t * 1.7) * 10}px) rotate(${Math.sin(t * 1.15) * 2.6}deg)`, origin: '50% 85%'}),
   'saracen-dhow': (t) => ({transform: `translate(${Math.min(t * 10, 40)}px, ${Math.sin(t * 1.7) * 9}px) rotate(${Math.sin(t * 1.05) * 2.4}deg)`, origin: '50% 85%'}),
-  scale: (t) => ({transform: `rotate(${Math.sin(t * 1.3) * 4}deg)`, origin: '50% 18%'}),
   bell: (t) => ({transform: `rotate(${Math.sin(t * 7) * 11 * Math.exp(-((t % 2.2)) * 0.9)}deg)`, origin: '50% 8%'}),
   'alarm-clock': (t) => ({transform: `rotate(${Math.sin(t * 42) * (t % 1.6 < 0.7 ? 3 : 0)}deg)`, origin: '50% 90%'}),
   eye: (t) => ({transform: `scaleY(${t % 3.2 > 3.05 ? 0.12 : 1})`, origin: '50% 50%'}),
@@ -139,6 +138,53 @@ const GavelLayers: React.FC = () => {
       {impact > 0 && (
         <div style={{position: 'absolute', left: '62%', top: '58%', width: '30%', height: '14%', borderRadius: '50%', border: `${8 * (1 - impact) + 2}px solid ${RED}`, opacity: 1 - impact, transform: `scale(${0.6 + impact * 0.9})`}} />
       )}
+    </>
+  );
+};
+
+
+// Balança: coluna fixa; travessão oscila sobre o pivô e os pratos acompanham as pontas (sem rodar, como pêndulos).
+const ScaleLayers: React.FC<{k: number}> = ({k}) => {
+  const t = useT();
+  const d = 6.5 * Math.sin(t * 1.15);
+  const rad = (d * Math.PI) / 180;
+  const P = [790, 393], HL = [350, 663], HR = [1239, 217];
+  const move = (H: number[]) => {
+    const x = H[0] - P[0], y = H[1] - P[1];
+    return [(x * Math.cos(rad) - y * Math.sin(rad) + P[0] - H[0]) * k, (x * Math.sin(rad) + y * Math.cos(rad) + P[1] - H[1]) * k];
+  };
+  const [lx, ly] = move(HL), [rx, ry] = move(HR);
+  const st: React.CSSProperties = {position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.06)'};
+  const pct = (H: number[]) => `${(H[0] / 1600) * 100}% ${(H[1] / 1600) * 100}%`;
+  const sway = Math.sin(t * 2.1) * 1.4;
+  return (
+    <>
+      <div style={{position: 'absolute', left: '22%', top: '85%', width: '58%', height: '6%', borderRadius: '50%', background: 'rgba(0,0,0,0.22)', filter: 'blur(14px)'}} />
+      <Img src={staticFile('feudal/obj/scale-stand.png')} style={st} />
+      <Img src={staticFile('feudal/obj/scale-beam.png')} style={{...st, transform: `rotate(${d}deg)`, transformOrigin: pct(P)}} />
+      <Img src={staticFile('feudal/obj/scale-left.png')} style={{...st, transform: `translate(${lx}px, ${ly}px) rotate(${sway}deg)`, transformOrigin: pct(HL)}} />
+      <Img src={staticFile('feudal/obj/scale-right.png')} style={{...st, transform: `translate(${rx}px, ${ry}px) rotate(${-sway}deg)`, transformOrigin: pct(HR)}} />
+    </>
+  );
+};
+
+
+// Porta: a folha abre sobre a dobradiça (esquerda) e revela luz vermelha atrás; o aro fica fixo.
+const DoorLayers: React.FC = () => {
+  const t = useT();
+  const open = interpolate(t, [0.5, 1.5], [0, 1], {...clamp, easing: ease});
+  const st: React.CSSProperties = {position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.06)'};
+  const leaf = 'polygon(25% 17%, 28% 13%, 33% 10%, 40% 8.5%, 50% 8%, 60% 8.5%, 66% 11%, 70% 16%, 71% 91%, 25% 91%)';
+  return (
+    <>
+      <Img src={staticFile('feudal/obj/door.webp')} style={st} />
+      <div style={{position: 'absolute', inset: 0, clipPath: leaf, opacity: open, mixBlendMode: 'multiply'}}>
+        <div style={{position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 62% 52%, #ff6a5c 0%, #E5232B 38%, #3a0508 100%)', mixBlendMode: 'normal'}} />
+        <div style={{position: 'absolute', left: '28%', top: '58%', width: '40%', height: '36%', background: 'linear-gradient(90deg, rgba(255,255,255,0), rgba(255,220,200,0.55))', filter: 'blur(18px)', transform: `scaleX(${open})`, transformOrigin: '0 50%'}} />
+      </div>
+      <div style={{position: 'absolute', inset: 0, clipPath: leaf, mixBlendMode: 'multiply'}}>
+        <Img src={staticFile('feudal/obj/door.webp')} style={{...st, transform: `scaleX(${1 - 0.62 * open}) skewY(${-4 * open}deg)`, transformOrigin: '25% 50%', mixBlendMode: 'normal'}} />
+      </div>
     </>
   );
 };
