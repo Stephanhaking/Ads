@@ -1,6 +1,6 @@
 # Ainda em falta (visuais únicos)
 
-Faltam **78** de 154. Ordenados por duração do beat (os mais longos primeiro).
+Faltam **74** de 154. Mais longos primeiro.
 
 | # | Beat | Ficheiro | Duração | Prompt |
 |---|---|---|---|---|
@@ -38,47 +38,43 @@ Faltam **78** de 154. Ordenados por duração do beat (os mais longos primeiro).
 | 32 | 50.5 | `forest-edge` | 4.4s | A dark forest edge with a single path |
 | 33 | 51.1 | `wheat-ear-closeup` | 4.3s | A single wheat ear in extreme close-up |
 | 34 | 41.1 | `market-stall` | 4.2s | A small wooden market stall with striped awning and crates |
-| 35 | 38.1 | `big-question-mark` | 4.2s | A large 3D question mark standing on a base |
-| 36 | 67.6 | `apple-on-ground` | 4.1s | An apple on the ground with a falling leaf |
-| 37 | 53.1 | `cable-tangle` | 4.0s | A tangle of network cables |
-| 38 | 41.4 | `abacus` | 4.0s | A wooden abacus |
-| 39 | 46.4 | `price-signs` | 3.9s | Two price signs side by side, one lower, no numbers |
-| 40 | 41.5 | `split-coin` | 3.9s | A coin cut neatly in half, two halves |
-| 41 | 68.5 | `price-chain` | 3.9s | A chain with a price tag on it |
-| 42 | 54.1 | `cafe-table-book` | 3.8s | A small café table with an open book and a cup |
-| 43 | 40.5 | `percent-sign` | 3.8s | A large brass percent sign standing |
-| 44 | 48.2 | `iceberg` | 3.7s | An iceberg with a large hidden base underwater, engraving |
-| 45 | 65.2 | `city-wall-gate` | 3.7s | A city wall gate with open doors |
-| 46 | 67.4 | `seedling` | 3.6s | A small seedling growing through cracked ground |
-| 47 | 56.2 | `cracked-mirror` | 3.5s | A cracked hand mirror |
-| 48 | 66.1 | `open-wallet` | 3.5s | An open wallet with a hand giving a coin |
-| 49 | 37.3 | `beehive` | 3.5s | A straw beehive with bees |
-| 50 | 42.1 | `windmill-night` | 3.3s | A windmill silhouette at dusk with a big moon |
-| 51 | 45.3 | `verdict-scroll` | 3.3s | A verdict scroll with ribbon, blank |
-| 52 | 55.3 | `floating-island` | 3.3s | A floating island with a tiny fort |
-| 53 | 40.2 | `laptop-open` | 3.2s | An open laptop seen from the back, no logos |
-| 54 | 52.1 | `old-barn` | 3.2s | A wooden barn full of hay, front view |
-| 55 | 42.4 | `grindstone` | 3.1s | A grindstone wheel with a crank and sparks |
-| 56 | 57.1 | `feather-scale` | 3.1s | A feather on one pan of a small scale |
-| 57 | 36.6 | `stopwatch` | 3.1s | A vintage stopwatch |
-| 58 | 37.1 | `pebble-ripples` | 3.0s | A small pebble dropping into water with ripples |
-| 59 | 55.2 | `rain-cloud-coins` | 3.0s | A rain cloud dropping coins |
-| 60 | 44.1 | `courtroom-bench` | 3.0s | A judge’s bench seen from the front |
-| 61 | 40.4 | `velvet-rope` | 2.9s | Two stanchions with a velvet rope |
-| 62 | 54.6 | `toppled-crown` | 2.8s | A crown tipped over on its side |
-| 63 | 65.4 | `law-tablet` | 2.8s | A stone law tablet with lines |
-| 64 | 56.1 | `crossed-fingers` | 2.7s | A hand with crossed fingers |
-| 65 | 42.2 | `garden-wall` | 2.7s | A low stone wall enclosing a single tree |
-| 66 | 68.3 | `passing-parcel` | 2.7s | Two hands passing a parcel |
-| 67 | 48.1 | `witness-stand` | 2.7s | A courtroom witness stand |
-| 68 | 46.6 | `forklift-pallet` | 2.7s | A forklift carrying a pallet of boxes |
-| 69 | 54.5 | `castle-on-cloud` | 2.6s | A small castle standing on a cloud |
-| 70 | 67.3 | `compass-rose` | 2.5s | A compass rose on old map |
-| 71 | 40.3 | `locked-package` | 2.5s | A wrapped package with a padlock on the string |
-| 72 | 54.3 | `race-flag` | 2.3s | A checkered race flag on a pole |
-| 73 | 65.6 | `broken-shackle` | 2.3s | A broken iron shackle |
-| 74 | 38.2 | `coin-trail` | 2.0s | A trail of coins leading away in a line |
-| 75 | 45.7 | `court-clock` | 1.8s | A wall clock above a courtroom door |
-| 76 | 44.3 | `torn-calendar-page` | 1.2s | A torn-off calendar page, blank |
-| 77 | 68.4 | `ledger-tab` | 1.0s | A ledger with a protruding tab |
-| 78 | 68.6 | `path-lantern` | 0.5s | A lantern on a dark path |
+| 35 | 67.6 | `apple-on-ground` | 4.1s | An apple on the ground with a falling leaf |
+| 36 | 53.1 | `cable-tangle` | 4.0s | A tangle of network cables |
+| 37 | 41.4 | `abacus` | 4.0s | A wooden abacus |
+| 38 | 46.4 | `price-signs` | 3.9s | Two price signs side by side, one lower, no numbers |
+| 39 | 41.5 | `split-coin` | 3.9s | A coin cut neatly in half, two halves |
+| 40 | 68.5 | `price-chain` | 3.9s | A chain with a price tag on it |
+| 41 | 54.1 | `cafe-table-book` | 3.8s | A small café table with an open book and a cup |
+| 42 | 40.5 | `percent-sign` | 3.8s | A large brass percent sign standing |
+| 43 | 48.2 | `iceberg` | 3.7s | An iceberg with a large hidden base underwater, engraving |
+| 44 | 65.2 | `city-wall-gate` | 3.7s | A city wall gate with open doors |
+| 45 | 67.4 | `seedling` | 3.6s | A small seedling growing through cracked ground |
+| 46 | 56.2 | `cracked-mirror` | 3.5s | A cracked hand mirror |
+| 47 | 66.1 | `open-wallet` | 3.5s | An open wallet with a hand giving a coin |
+| 48 | 42.1 | `windmill-night` | 3.3s | A windmill silhouette at dusk with a big moon |
+| 49 | 45.3 | `verdict-scroll` | 3.3s | A verdict scroll with ribbon, blank |
+| 50 | 55.3 | `floating-island` | 3.3s | A floating island with a tiny fort |
+| 51 | 40.2 | `laptop-open` | 3.2s | An open laptop seen from the back, no logos |
+| 52 | 52.1 | `old-barn` | 3.2s | A wooden barn full of hay, front view |
+| 53 | 42.4 | `grindstone` | 3.1s | A grindstone wheel with a crank and sparks |
+| 54 | 57.1 | `feather-scale` | 3.1s | A feather on one pan of a small scale |
+| 55 | 55.2 | `rain-cloud-coins` | 3.0s | A rain cloud dropping coins |
+| 56 | 44.1 | `courtroom-bench` | 3.0s | A judge’s bench seen from the front |
+| 57 | 40.4 | `velvet-rope` | 2.9s | Two stanchions with a velvet rope |
+| 58 | 54.6 | `toppled-crown` | 2.8s | A crown tipped over on its side |
+| 59 | 65.4 | `law-tablet` | 2.8s | A stone law tablet with lines |
+| 60 | 56.1 | `crossed-fingers` | 2.7s | A hand with crossed fingers |
+| 61 | 42.2 | `garden-wall` | 2.7s | A low stone wall enclosing a single tree |
+| 62 | 68.3 | `passing-parcel` | 2.7s | Two hands passing a parcel |
+| 63 | 48.1 | `witness-stand` | 2.7s | A courtroom witness stand |
+| 64 | 46.6 | `forklift-pallet` | 2.7s | A forklift carrying a pallet of boxes |
+| 65 | 54.5 | `castle-on-cloud` | 2.6s | A small castle standing on a cloud |
+| 66 | 67.3 | `compass-rose` | 2.5s | A compass rose on old map |
+| 67 | 40.3 | `locked-package` | 2.5s | A wrapped package with a padlock on the string |
+| 68 | 54.3 | `race-flag` | 2.3s | A checkered race flag on a pole |
+| 69 | 65.6 | `broken-shackle` | 2.3s | A broken iron shackle |
+| 70 | 38.2 | `coin-trail` | 2.0s | A trail of coins leading away in a line |
+| 71 | 45.7 | `court-clock` | 1.8s | A wall clock above a courtroom door |
+| 72 | 44.3 | `torn-calendar-page` | 1.2s | A torn-off calendar page, blank |
+| 73 | 68.4 | `ledger-tab` | 1.0s | A ledger with a protruding tab |
+| 74 | 68.6 | `path-lantern` | 0.5s | A lantern on a dark path |
