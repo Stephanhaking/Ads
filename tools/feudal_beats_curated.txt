@@ -103,7 +103,7 @@
 33.5|obj:coin~Monetize your behavior
 34.1|obj:people~A day in a digital serf’s life
 34.2|obj:alarm-clock~He wakes to his phone’s alarm
-34.3|obj:app-grid~Three apps before he gets up
+34.3|img:f-phone-hand~Three apps before he gets up
 34.4|obj:newspaper~What happened while he slept
 34.5|obj:photo~The weather · a stream of friends
 34.6|obj:people#1~Curated lives
@@ -202,7 +202,7 @@
 58.6|obj:door~Not a regression to feudalism
 59.1|img:f-iron-chain~Peasants were legally bound to the soil
 59.2|obj:phone~You can delete your apps
-60.1|obj:phone~Deleting an app takes seconds
+60.1|obj:app-grid~Deleting an app takes seconds
 60.2|obj:bricks~Leaving is painfully costly
 60.3|obj:photo~10 years of photos@ten years of photos ; obj:people~Professional contacts@professional contacts ; obj:chat~Client networks@client networks
 60.4|obj:handcuffs#1~Communication tools, locked in

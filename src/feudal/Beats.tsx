@@ -1,7 +1,7 @@
 import React from 'react';
 import {Sequence, interpolate, useCurrentFrame} from 'remotion';
 import {fonts} from '../styles';
-import {ObjArt} from './Collage';
+import {LIFE, ObjArt, SHIPS, Waves} from './Collage';
 import {FPS, INK, RED, clamp, ease} from './Common';
 import type {Theme} from './Common';
 import {Plate} from './StyleV2';
@@ -19,6 +19,7 @@ const BeatView: React.FC<{b: Beat; fig: string; theme: Theme; k: number; noCap?:
   const [kind, name] = b.view.name.split(':');
   const zoom = b.view.variant ? ZOOMS[b.view.variant % 4] : undefined;
   const tilt = (k % 2 ? 1 : -1) * 2.2;
+  const life = LIFE[name]?.(t);
   if (kind === 'img') return <Plate name={name} fig={fig} cap={noCap ? '' : b.cap} tilt={tilt} x={1010} y={150} w={830} h={720} at={0} zoom={zoom} />;
   // objeto
   const p = interpolate(t, [0, 0.45], [0, 1], {...clamp, easing: ease});
@@ -26,7 +27,8 @@ const BeatView: React.FC<{b: Beat; fig: string; theme: Theme; k: number; noCap?:
   const size = 640;
   return (
     <div style={{position: 'absolute', left: 1030, top: 150, width: 800, height: 740, overflow: 'hidden', opacity: p, mixBlendMode: plate ? 'normal' : 'multiply', transform: `translateX(${(1 - p) * 200}px) rotate(${(1 - p) * 7}deg)`}}>
-      <div style={{position: 'absolute', left: 80, top: 20, transform: `translateY(${Math.sin(t * 1.4) * 8}px)`}}>
+      {name === 'saracen-dhow' && <Waves />}
+      <div style={{position: 'absolute', left: 80, top: 20, transform: `translateY(${Math.sin(t * 1.4) * 8}px) ${life?.transform ?? ''}`, transformOrigin: life?.origin}}>
         <ObjArt name={name} size={size} plate={plate} zoom={zoom} />
       </div>
       {zoom && <div style={{position: 'absolute', left: 80 + size * zoom.fx - 120, top: 20 + size * zoom.fy - 120, width: 240, height: 240, borderRadius: '50%', border: `10px solid ${RED}`, opacity: interpolate(t, [0.3, 0.6], [0, 1], clamp)}} />}

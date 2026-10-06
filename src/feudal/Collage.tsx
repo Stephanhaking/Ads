@@ -21,6 +21,7 @@ export const ObjArt: React.FC<{name: string; size: number; plate?: boolean; zoom
       <div style={{position: 'absolute', inset: 0, ...zs}}>
       <Img src={staticFile(`feudal/obj/${f}`)} style={{width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.06)'}} />
       {name === 'phone' && <PhoneTos k={size / 1600} />}
+      {name === 'app-grid' && <AppPress k={size / 1600} />}
       </div>
     </div>
   );
@@ -59,6 +60,64 @@ export const PhoneTos: React.FC<{k: number}> = ({k}) => {
         <div style={{position: 'absolute', left: 90, right: 90, bottom: 34, height: 80, borderRadius: 40, background: RED, color: '#fff', fontFamily: fonts.heading, fontSize: 40, textAlign: 'center', lineHeight: '80px', boxShadow: '0 6px 0 rgba(0,0,0,0.25)'}}>I AGREE</div>
       </div>
     </div>
+  );
+};
+
+
+// Menu de "carregar na app": o dedo aproxima-se do ícone vermelho, carrega, o fundo esbate-se e surgem "Move app" / "Uninstall".
+const AppPress: React.FC<{k: number}> = ({k}) => {
+  const t = useT();
+  const ease3 = (a: number, b: number) => interpolate(t, [a, b], [0, 1], {...clamp, easing: ease});
+  const fx = interpolate(ease3(0.3, 0.8), [0, 1], [1000, 718]);
+  const fy = interpolate(ease3(0.3, 0.8), [0, 1], [1150, 700]);
+  const press = ease3(0.8, 1.0);
+  const dim = ease3(1.0, 1.4);
+  const menu = ease3(1.15, 1.6);
+  const jiggle = t > 1.6 ? Math.sin(t * 28) * 2.2 : 0;
+  const gone = ease3(2.7, 3.1);
+  return (
+    <div style={{position: 'absolute', left: 0, top: 0, width: 1600, height: 1600, transformOrigin: '0 0', transform: `scale(${k})`, pointerEvents: 'none'}}>
+      <div style={{position: 'absolute', left: 456, top: 296, width: 684, height: 968, overflow: 'hidden'}}>
+        <div style={{position: 'absolute', inset: 0, background: `rgba(255,255,255,${0.86 * dim})`}} />
+        <div style={{position: 'absolute', left: 718 - 456 - 70, top: 668 - 296 - 85, width: 140, height: 170, borderRadius: 34, background: RED, boxShadow: `0 ${20 * dim}px ${50 * dim}px rgba(0,0,0,${0.35 * dim})`, transform: `scale(${(1 + 0.12 * dim - 0.06 * press) * (1 - gone)}) rotate(${jiggle}deg)`, opacity: dim > 0.01 ? 1 : 0}} />
+        <div style={{position: 'absolute', left: 718 - 456 + 90, top: 668 - 296 + 110, width: 380, borderRadius: 26, background: '#fff', boxShadow: '0 24px 60px rgba(0,0,0,0.35)', opacity: menu, transform: `scale(${0.7 + 0.3 * menu})`, transformOrigin: '0 0', overflow: 'hidden', fontFamily: fonts.body}}>
+          {[['Move app', INK], ['Uninstall', RED]].map(([lab, col], i) => (
+            <div key={i} style={{padding: '26px 30px', fontSize: 46, fontWeight: 700, color: col as string, borderTop: i ? '2px solid #e6e6e6' : undefined}}>{lab}</div>
+          ))}
+        </div>
+      </div>
+      <div style={{position: 'absolute', left: fx - 55, top: fy - 55, width: 110, height: 110, borderRadius: '50%', background: 'rgba(26,20,16,0.55)', border: '6px solid rgba(255,255,255,0.9)', transform: `scale(${1 - 0.25 * press})`, opacity: ease3(0.25, 0.4) * (1 - ease3(2.2, 2.5))}} />
+    </div>
+  );
+};
+
+
+// "Vida" por objeto: pequenas animações contínuas (balanço do barco, balança, sino, despertador, olho a piscar, leme, martelo…).
+export const LIFE: Record<string, (t: number) => {transform: string; origin?: string}> = {
+  'viking-longship-sail': (t) => ({transform: `translate(${Math.min(t * 10, 40)}px, ${Math.sin(t * 1.7) * 10}px) rotate(${Math.sin(t * 1.15) * 2.6}deg)`, origin: '50% 85%'}),
+  'saracen-dhow': (t) => ({transform: `translate(${Math.min(t * 10, 40)}px, ${Math.sin(t * 1.7) * 9}px) rotate(${Math.sin(t * 1.05) * 2.4}deg)`, origin: '50% 85%'}),
+  scale: (t) => ({transform: `rotate(${Math.sin(t * 1.3) * 4}deg)`, origin: '50% 18%'}),
+  bell: (t) => ({transform: `rotate(${Math.sin(t * 7) * 11 * Math.exp(-((t % 2.2)) * 0.9)}deg)`, origin: '50% 8%'}),
+  'alarm-clock': (t) => ({transform: `rotate(${Math.sin(t * 42) * (t % 1.6 < 0.7 ? 3 : 0)}deg)`, origin: '50% 90%'}),
+  eye: (t) => ({transform: `scaleY(${t % 3.2 > 3.05 ? 0.12 : 1})`, origin: '50% 50%'}),
+  'puppet-strings': (t) => ({transform: `rotate(${Math.sin(t * 1.5) * 5}deg)`, origin: '50% 0%'}),
+  wheel: (t) => ({transform: `rotate(${Math.sin(t * 0.9) * 28}deg)`, origin: '50% 50%'}),
+  gavel: (t) => ({transform: `rotate(${-22 * Math.max(0, 1 - (t % 1.5) / 0.22)}deg)`, origin: '15% 85%'}),
+  cursor: (t) => ({transform: `scale(${1 - 0.08 * Math.max(0, Math.sin(t * 5)) ** 6})`, origin: '30% 20%'}),
+  crown: (t) => ({transform: `rotate(${Math.sin(t * 1.1) * 2.2}deg)`, origin: '50% 100%'}),
+  pin: (t) => ({transform: `translateY(${-300 * Math.max(0, 1 - t / 0.35) ** 2}px)`, origin: '50% 100%'}),
+  coin: (t) => ({transform: `rotate(${Math.sin(t * 1.2) * 3}deg)`, origin: '50% 90%'}),
+  'toy-windmill': (t) => ({transform: `rotate(${t * 90}deg)`, origin: '50% 40%'}),
+};
+export const SHIPS = ['viking-longship-sail', 'saracen-dhow'];
+export const Waves: React.FC = () => {
+  const t = useT();
+  return (
+    <svg width="800" height="200" viewBox="0 0 800 200" style={{position: 'absolute', left: 0, bottom: 0, opacity: 0.55}}>
+      {[0, 1, 2].map((i) => (
+        <path key={i} d={`M-200 ${70 + i * 40} ${Array.from({length: 14}).map((_, j) => `q50 ${(j % 2 ? 1 : -1) * 18} 100 0`).join(' ')}`} transform={`translate(${((t * (30 + i * 14)) % 200) * -1} 0)`} fill="none" stroke={INK} strokeWidth={5 - i} />
+      ))}
+    </svg>
   );
 };
 
