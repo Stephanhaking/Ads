@@ -84,8 +84,8 @@
 29.2|obj:checkbox~You accept the terms of service
 29.3|obj:cloud~A stream of personal data
 29.4|obj:pin~Where you go@where you go ; obj:cart~What you buy@what you buy ; obj:chat~Who you talk to@who you talk to
-29.5|obj:thought~What you think@what you think ; obj:clock~Hours of attention@hours of your attention
-29.6|obj:clock#1~Every single day
+29.5|obj:thought~What you think@what you think ; obj:clock-face~Hours of attention@hours of your attention
+29.6|obj:alarm-clock-face#1~Every single day
 30.1|obj:cloud#1~In return: access
 30.2|obj:people~Your friends@to your friends ; obj:briefcase~Your job@your job ; obj:photo~Your photos@your photos
 30.3|obj:map~The map home
@@ -102,7 +102,7 @@
 33.4|obj:crystal-ball~Predict@predict ; obj:puppet-strings~Steer@steer
 33.5|obj:coin~Monetize your behavior
 34.1|obj:people~A day in a digital serf’s life
-34.2|obj:alarm-clock~He wakes to his phone’s alarm
+34.2|obj:alarm-clock-face~He wakes to his phone’s alarm
 34.3|img:f-phone-hand~Three apps before he gets up
 34.4|obj:newspaper~What happened while he slept
 34.5|obj:photo~The weather · a stream of friends
@@ -115,7 +115,7 @@
 36.1|obj:coin#3~Not one moment cost cash
 36.2|obj:eye#1~By bedtime, corporations know…
 36.3|obj:pin#1~Where he walked@where he walked ; obj:thought#2~What worried him@what worried him
-36.4|obj:cursor#1~What he hovered over@hovered over ; obj:clock#2~Seconds he hesitated@how many seconds
+36.4|obj:cursor#1~What he hovered over@hovered over ; obj:pocket-watch-face~Seconds he hesitated@how many seconds
 37.1|obj:photo#1~Each gesture is small
 37.2|obj:dossier~…but the sum is a portrait
 37.3|obj:people#2~Value created by his life
@@ -225,7 +225,7 @@
 65.2|obj:medieval-town#1~Free cities of the Middle Ages
 65.3|obj:big-key#1~“City air makes you free”
 65.4|img:a7#1~Customary law in German towns
-65.5|obj:clock~A year and a day in a free city
+65.5|obj:pocket-watch-face#1~A year and a day in a free city
 65.6|img:f-open-gate#2~Legal freedom
 66.1|obj:lock#3~Not because lords grew generous
 66.2|obj:sunrise~Alternative spaces emerged

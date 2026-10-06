@@ -21,6 +21,7 @@ export const ObjArt: React.FC<{name: string; size: number; plate?: boolean; zoom
       <div style={{position: 'absolute', inset: 0, ...zs}}>
       {name === 'gavel' ? <GavelLayers /> : name === 'scale' ? <ScaleLayers k={size / 1600} /> : name === 'door' ? <DoorLayers /> : <Img src={staticFile(`feudal/obj/${f}`)} style={{width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.06)'}} />}
       {name === 'phone' && <PhoneTos k={size / 1600} />}
+      {CLOCKS[name] && <ClockHands name={name} />}
       {name === 'app-grid' && <AppPress k={size / 1600} />}
       </div>
     </div>
@@ -184,6 +185,41 @@ const DoorLayers: React.FC = () => {
       <Img src={staticFile('feudal/obj/door-leaf.png')} style={{...st, transform: `perspective(1400px) rotateY(${-72 * open}deg)`, transformOrigin: '29.5% 50%'}} />
       <Img src={staticFile('feudal/obj/door-frame.png')} style={st} />
     </>
+  );
+};
+
+
+// Ponteiros desenhados por cima de mostradores vazios (clock-face, alarm-clock-face, pocket-watch-face): o tempo "corre" e o dos segundos varre a vermelho.
+const CLOCKS: Record<string, {cx: number; cy: number; m: number; h: number; sec: number; w: number}> = {
+  'clock-face': {cx: 800, cy: 795, m: 400, h: 270, sec: 430, w: 1},
+  'alarm-clock-face': {cx: 800, cy: 944, m: 255, h: 175, sec: 285, w: 0.8},
+  'pocket-watch-face': {cx: 840, cy: 802, m: 250, h: 170, sec: 275, w: 0.75},
+};
+const ClockHands: React.FC<{name: string}> = ({name}) => {
+  const t = useT();
+  const c = CLOCKS[name];
+  const run = interpolate(t, [0.2, 4.2], [0, 1], {...clamp, easing: ease});
+  const min = 288 + 700 * run + t * 6;          // °: minuto roda ~2 voltas e meia e continua devagar
+  const hour = 300 + (700 * run + t * 6) / 12;
+  const sec = ((t * 150) % 360);                 // varrimento
+  const hand = (deg: number, len: number, wd: number, fill: string, tail = 0.12) => (
+    <g transform={`rotate(${deg} ${c.cx} ${c.cy})`}>
+      <path d={`M ${c.cx - wd} ${c.cy + len * tail} L ${c.cx - wd * 0.45} ${c.cy - len} L ${c.cx + wd * 0.45} ${c.cy - len} L ${c.cx + wd} ${c.cy + len * tail} Z`} fill={fill} stroke="#fff" strokeWidth={3} />
+    </g>
+  );
+  return (
+    <svg viewBox="0 0 1600 1600" style={{position: 'absolute', inset: 0, width: '100%', height: '100%'}}>
+      <g style={{filter: 'drop-shadow(5px 7px 6px rgba(0,0,0,0.35))'}}>
+        {hand(hour, c.h, 20 * c.w, INK)}
+        {hand(min, c.m, 14 * c.w, INK)}
+        <g transform={`rotate(${sec} ${c.cx} ${c.cy})`}>
+          <rect x={c.cx - 4 * c.w} y={c.cy - c.sec} width={8 * c.w} height={c.sec + 70} fill={RED} />
+          <circle cx={c.cx} cy={c.cy + 70} r={14 * c.w} fill={RED} />
+        </g>
+        <circle cx={c.cx} cy={c.cy} r={26 * c.w} fill={RED} stroke={INK} strokeWidth={6} />
+        <circle cx={c.cx} cy={c.cy} r={8 * c.w} fill={INK} />
+      </g>
+    </svg>
   );
 };
 
