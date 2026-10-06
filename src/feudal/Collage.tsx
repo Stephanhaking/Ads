@@ -169,22 +169,20 @@ const ScaleLayers: React.FC<{k: number}> = ({k}) => {
 };
 
 
-// Porta: a folha abre sobre a dobradiça (esquerda) e revela luz vermelha atrás; o aro fica fixo.
+// Porta: o aro (door-frame) fica fixo; a folha (door-leaf, recortada) roda sobre a dobradiça e revela uma luz vermelha atrás. Só aparece uma porta.
 const DoorLayers: React.FC = () => {
   const t = useT();
-  const open = interpolate(t, [0.5, 1.5], [0, 1], {...clamp, easing: ease});
+  const open = interpolate(t, [0.5, 1.6], [0, 1], {...clamp, easing: ease});
   const st: React.CSSProperties = {position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.06)'};
-  const leaf = 'polygon(25% 17%, 28% 13%, 33% 10%, 40% 8.5%, 50% 8%, 60% 8.5%, 66% 11%, 70% 16%, 71% 91%, 25% 91%)';
+  const hole = 'polygon(29% 25%, 32% 19%, 36% 16.5%, 42% 15%, 50% 14.5%, 58% 15%, 63% 16.5%, 67% 19%, 70% 25%, 70% 91%, 28.5% 91%)';
+  const w = 1 - 0.7 * open;
   return (
     <>
-      <Img src={staticFile('feudal/obj/door.webp')} style={st} />
-      <div style={{position: 'absolute', inset: 0, clipPath: leaf, opacity: open, mixBlendMode: 'multiply'}}>
-        <div style={{position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 62% 52%, #ff6a5c 0%, #E5232B 38%, #3a0508 100%)', mixBlendMode: 'normal'}} />
-        <div style={{position: 'absolute', left: '28%', top: '58%', width: '40%', height: '36%', background: 'linear-gradient(90deg, rgba(255,255,255,0), rgba(255,220,200,0.55))', filter: 'blur(18px)', transform: `scaleX(${open})`, transformOrigin: '0 50%'}} />
+      <div style={{position: 'absolute', inset: 0, clipPath: hole, opacity: open}}>
+        <div style={{position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 60% 55%, #ffe2d6 0%, #ff5a4d 22%, #E5232B 50%, #4a070b 100%)'}} />
       </div>
-      <div style={{position: 'absolute', inset: 0, clipPath: leaf, mixBlendMode: 'multiply'}}>
-        <Img src={staticFile('feudal/obj/door.webp')} style={{...st, transform: `scaleX(${1 - 0.62 * open}) skewY(${-4 * open}deg)`, transformOrigin: '25% 50%', mixBlendMode: 'normal'}} />
-      </div>
+      <Img src={staticFile('feudal/obj/door-leaf.png')} style={{...st, transform: `perspective(1400px) rotateY(${-72 * open}deg)`, transformOrigin: '29.5% 50%'}} />
+      <Img src={staticFile('feudal/obj/door-frame.png')} style={st} />
     </>
   );
 };
