@@ -144,11 +144,16 @@ const End: React.FC = () => {
   );
 };
 
+// Madeira e depois pedra: a torre de madeira entra e a de pedra sobrepõe-se por cima na palavra "stone".
 const Cuts: React.FC<{d: any}> = ({d}) => {
-  const t = useT();
-  const i = Math.min(d.imgs.length - 1, Math.floor(t / d.every));
-  const n = d.imgs[i] as string;
-  return <Plate key={n} name={n} fig={`FIG. ${String(i + 1).padStart(2, '0')}`} cap={['motte', 'keep', 'gate', 'castle', 'town', 'fort', 'siege', 'ruin'][i] ?? 'arch'} tilt={i % 2 ? 2.5 : -2.5} x={1010} y={150} w={830} h={720} at={(i * d.every)} />;
+  const {start} = React.useContext(SceneCtx);
+  const ts = Math.max(0.5, wt(d.p) - start - 0.15);
+  return (
+    <>
+      <Plate name={d.wood} fig="FIG. 10.1" cap="wood" tilt={-3} x={790} y={130} w={760} h={680} at={0.1} />
+      <Plate name={d.stone} fig="FIG. 10.2" cap="then stone" tilt={3} x={1150} y={270} w={700} h={640} at={ts} />
+    </>
+  );
 };
 
 export const SceneView: React.FC<{sc: Sc; start: number; figNo?: number}> = ({sc, start, figNo = 1}) => {

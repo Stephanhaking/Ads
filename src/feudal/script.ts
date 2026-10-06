@@ -25,11 +25,11 @@ export const SCENES: Sc[] = [
   {p: 'By the end of this video', theme: 'dark', lines: [L('By the end:')], size: 90, tags: [T('Who you’re paying', 'who you’re paying'), T('How much', 'how much'), T('What ended feudalism', 'the one thing that ended feudalism', true), T('Start it this week', 'something you can start this week')]},
 
   // ── Act I ──
-  {p: 'In the ninth century', theme: 'paper', wipe: true, lines: [L('9th century.'), L('Europe', 'unraveling'), L('unraveling.')], art: {name: 'f-longship', p: 'vikings raided', side: 'r'}, tags: [T('Vikings · Magyars · Saracens', 'magyars struck')]},
+  {p: 'In the ninth century', theme: 'paper', wipe: true, lines: [L('9th century.'), L('Europe', 'europe was'), L('unraveling.', 'unraveling')], art: {name: 'f-longship', p: 'vikings raided', side: 'r'}, tags: [T('Vikings · Magyars · Saracens', 'magyars struck')]},
   {p: 'Central authority had fragmented', theme: 'paper', lines: [L('No central authority.'), L('Kings: far away.', 'kings were far away')], art: {name: 'f-burning-village', side: 'r'}},
   {p: 'If you lived in the countryside', theme: 'paper', lines: [L('Nobody is coming.', 'nobody was coming to defend you', true), L('Find a protector.', 'you either found a local protector')], art: {name: 'f-empty-road', side: 'r'}},
   {p: 'And that protector was always the same man', theme: 'paper', lines: [L('The protector.'), L('Horses. Fighters.', 'armored horses'), L('A place to retreat.', 'somewhere safe to retreat')], art: {name: 'f-knight-horse', side: 'r'}},
-  {p: 'first a wooden tower', theme: 'paper', kind: 'cuts', lines: [L('Wood, then stone.')], data: {imgs: ['a1', 'a3', 'a6', 'a7', 'a4', 'a9', 'a5', 'a8'], every: 1.1}},
+  {p: 'first a wooden tower', theme: 'paper', kind: 'cuts', lines: [L('Wood,', 'wooden tower'), L('then stone.', 'stone', true)], data: {wood: 'a1', stone: 'f-stone-tower', p: 'stone'}},
   {p: 'Notice the crucial logic', theme: 'paper', lines: [L('Built to protect.'), L('Not to rob.', 'to protect you from chaos'), L('The robbing', 'it came later'), L('came later.', undefined, true)], fx: [{p: 'it came later', s: 'stamp'}]},
   {p: 'Protection was the offer', theme: 'dark', lines: [L('Protection:'), L('the offer.'), L('The second contract:', 'but there was a second contract'), L('three clauses.', 'it had three clauses', true)], fx: [{p: 'it had three clauses', s: 'riser'}]},
 

@@ -41,22 +41,50 @@ export const Defs: React.FC = () => (
 
 export type Theme = 'paper' | 'red' | 'dark';
 export const Bg: React.FC<{theme?: Theme}> = ({theme = 'paper'}) => {
-  if (theme === 'dark') {
-    return (
-      <>
-        <AbsoluteFill style={{background: '#0b0b0b'}} />
-        <AbsoluteFill style={{backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.05) 1.3px, transparent 1.8px)', backgroundSize: '9px 9px'}} />
-      </>
-    );
-  }
+  if (theme === 'dark') return <DarkBg />;
+  return <PaperBg theme={theme} />;
+};
+const DarkBg: React.FC = () => {
+  const t = useCurrentFrame() / FPS;
   return (
     <>
-      <AbsoluteFill style={{background: theme === 'red' ? RED : PAPER}} />
+      <AbsoluteFill style={{background: '#0b0b0b'}} />
+      <div style={{position: 'absolute', width: 1000, height: 800, left: 400 + Math.sin(t * 0.4) * 500, top: 100 + Math.cos(t * 0.33) * 200, borderRadius: '50%', background: 'radial-gradient(closest-side, rgba(229,35,43,0.16), transparent)'}} />
+      <AbsoluteFill style={{backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.07) 1.4px, transparent 1.9px)', backgroundSize: '9px 9px', backgroundPosition: `${(t * 12) % 9}px ${(t * 7) % 9}px`}} />
+      <AbsoluteFill style={{background: `linear-gradient(180deg, transparent ${((t * 9) % 140) - 20}%, rgba(255,255,255,0.045) ${((t * 9) % 140) - 10}%, transparent ${((t * 9) % 140)}%)`}} />
+    </>
+  );
+};
+// Fundo vivo: manchas de papel a derivar, grelha de caderno a deslizar, poeira a flutuar, varrimento de luz e grão que muda de quadro a quadro.
+const DUST = Array.from({length: 26}, (_, i) => ({x: (i * 379) % 1920, y: (i * 613) % 1080, r: 2 + (i % 4), v: 14 + (i % 5) * 9, ph: i * 1.7}));
+const PaperBg: React.FC<{theme: Theme}> = ({theme}) => {
+  const f = useCurrentFrame();
+  const t = f / FPS;
+  const red = theme === 'red';
+  const blob = red ? 'rgba(120,0,10,0.20)' : 'rgba(176,140,86,0.22)';
+  const grid = red ? 'rgba(0,0,0,0.10)' : 'rgba(26,20,16,0.07)';
+  const sweep = ((t * 0.16) % 1.6) - 0.3;
+  return (
+    <>
+      <AbsoluteFill style={{background: red ? RED : PAPER}} />
+      {[0, 1, 2].map((i) => (
+        <div key={i} style={{position: 'absolute', width: 900 + i * 260, height: 700 + i * 160, left: 300 + i * 520 + Math.sin(t * 0.35 + i * 2) * 200 - 450, top: 160 + i * 230 + Math.cos(t * 0.3 + i) * 140 - 350, borderRadius: '50%', background: `radial-gradient(closest-side, ${blob}, transparent)`}} />
+      ))}
+      <AbsoluteFill style={{backgroundImage: `linear-gradient(${grid} 2px, transparent 2px), linear-gradient(90deg, ${grid} 2px, transparent 2px)`, backgroundSize: '96px 96px', backgroundPosition: `${(t * 26) % 96}px ${(t * 14) % 96}px`}} />
       <svg width="1920" height="1080" style={{position: 'absolute', inset: 0, opacity: 0.22, mixBlendMode: 'multiply'}}>
-        <Defs />
-        <rect width="1920" height="1080" filter="url(#grain)" />
+        <filter id="grainA" x="0" y="0" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed={1 + (Math.floor(f / 3) % 7)} />
+          <feColorMatrix values="0 0 0 0 0.1  0 0 0 0 0.08  0 0 0 0 0.05  0 0 0 0.55 0" />
+        </filter>
+        <rect width="1920" height="1080" filter="url(#grainA)" />
       </svg>
-      <AbsoluteFill style={{background: theme === 'red' ? 'radial-gradient(ellipse at center, rgba(0,0,0,0) 50%, rgba(80,0,0,0.35) 100%)' : 'radial-gradient(ellipse at center, rgba(0,0,0,0) 55%, rgba(60,40,20,0.28) 100%)'}} />
+      <svg width="1920" height="1080" style={{position: 'absolute', inset: 0}}>
+        {DUST.map((d, i) => (
+          <circle key={i} cx={(d.x + t * d.v + Math.sin(t + d.ph) * 30) % 1960} cy={(d.y - t * d.v * 0.6 + 1080 * 4) % 1080} r={d.r} fill={red ? 'rgba(255,255,255,0.35)' : 'rgba(26,20,16,0.22)'} />
+        ))}
+      </svg>
+      <AbsoluteFill style={{background: `linear-gradient(105deg, transparent ${sweep * 100 - 14}%, rgba(255,255,255,${red ? 0.10 : 0.22}) ${sweep * 100}%, transparent ${sweep * 100 + 14}%)`}} />
+      <AbsoluteFill style={{background: red ? 'radial-gradient(ellipse at center, rgba(0,0,0,0) 50%, rgba(80,0,0,0.35) 100%)' : 'radial-gradient(ellipse at center, rgba(0,0,0,0) 55%, rgba(60,40,20,0.28) 100%)'}} />
     </>
   );
 };

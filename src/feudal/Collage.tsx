@@ -19,7 +19,7 @@ export const ObjArt: React.FC<{name: string; size: number; plate?: boolean; zoom
   const img = (
     <div style={{position: 'relative', width: '100%', height: '100%', overflow: zoom ? 'hidden' : undefined}}>
       <div style={{position: 'absolute', inset: 0, ...zs}}>
-      {name === 'gavel' ? <GavelLayers /> : name === 'scale' ? <ScaleLayers k={size / 1600} /> : name === 'door' ? <DoorLayers /> : <Img src={staticFile(`feudal/obj/${f}`)} style={{width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.06)'}} />}
+      {name === 'gavel' ? <GavelLayers /> : name === 'scale' ? <ScaleLayers k={size / 1600} /> : name === 'door' ? <DoorLayers /> : name === 'lock' ? <LockLayers /> : <Img src={staticFile(`feudal/obj/${f}`)} style={{width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.06)'}} />}
       {name === 'phone' && <PhoneTos k={size / 1600} />}
       {CLOCKS[name] && <ClockHands name={name} />}
       {name === 'app-grid' && <AppPress k={size / 1600} />}
@@ -54,9 +54,9 @@ export const PhoneTos: React.FC<{k: number}> = ({k}) => {
   ));
   return (
     <div style={{position: 'absolute', left: 0, top: 0, width: 1600, height: 1600, transformOrigin: '0 0', transform: `scale(${k})`, WebkitMaskImage: `url(${staticFile('feudal/obj/phone-screen.png')})`, WebkitMaskSize: '1600px 1600px', maskImage: `url(${staticFile('feudal/obj/phone-screen.png')})`, maskSize: '1600px 1600px'}}>
-      <div style={{position: 'absolute', left: 784 - 312 + 40, top: 727 - 470, width: 640, height: 940, transform: 'rotate(10deg)', overflow: 'hidden', background: '#fff'}}>
-        <div style={{padding: '40px 60px 0', borderBottom: '4px solid #ddd', fontFamily: fonts.heading, fontSize: 46, color: INK, paddingBottom: 20, background: '#fff', position: 'relative', zIndex: 2}}>TERMS OF SERVICE</div>
-        <div style={{padding: '30px 60px', transform: `translateY(${y}px)`}}>{rows(0)}{rows(1)}{rows(2)}</div>
+      <div style={{position: 'absolute', left: 801 - 310, top: 751 - 450, width: 620, height: 900, transform: 'rotate(11deg)', overflow: 'hidden', background: '#fff'}}>
+        <div style={{padding: '56px 50px 0', borderBottom: '4px solid #ddd', fontFamily: fonts.heading, fontSize: 40, color: INK, paddingBottom: 20, background: '#fff', position: 'relative', zIndex: 2}}>TERMS OF SERVICE</div>
+        <div style={{padding: '30px 50px', transform: `translateY(${y}px)`}}>{rows(0)}{rows(1)}{rows(2)}</div>
         <div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: 150, background: 'linear-gradient(#fff0,#fff 40%)'}} />
         <div style={{position: 'absolute', left: 90, right: 90, bottom: 34, height: 80, borderRadius: 40, background: RED, color: '#fff', fontFamily: fonts.heading, fontSize: 40, textAlign: 'center', lineHeight: '80px', boxShadow: '0 6px 0 rgba(0,0,0,0.25)'}}>I AGREE</div>
       </div>
@@ -169,6 +169,24 @@ const ScaleLayers: React.FC<{k: number}> = ({k}) => {
   );
 };
 
+
+// Cadeado: o arco (lock-shackle) começa levantado e a abanar; às 1,2 s desce de repente, o corpo treme, clique e anel vermelho.
+const LockLayers: React.FC = () => {
+  const t = useT();
+  const close = interpolate(t, [1.1, 1.26], [0, 1], {...clamp, easing: (x) => x * x});
+  const lift = (1 - close) * -7.5 + (t > 1.26 ? Math.sin((t - 1.26) * 38) * 0.5 * Math.exp(-(t - 1.26) * 9) : 0);
+  const rot = t < 1.1 ? Math.sin(t * 3.2) * 4 : 0;
+  const hit = t > 1.26 && t < 1.7 ? (t - 1.26) / 0.44 : 0;
+  const shake = t > 1.26 && t < 1.5 ? Math.sin(t * 180) * 5 * (1 - (t - 1.26) / 0.24) : 0;
+  const st: React.CSSProperties = {position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.06)'};
+  return (
+    <>
+      <Img src={staticFile('feudal/obj/lock-body.png')} style={{...st, transform: `translateX(${shake}px)`}} />
+      <Img src={staticFile('feudal/obj/lock-shackle.png')} style={{...st, transform: `translate(${shake}px, ${lift}%) rotate(${rot}deg)`, transformOrigin: '65% 40%'}} />
+      {hit > 0 && <div style={{position: 'absolute', left: '50%', top: '42%', width: '40%', height: '40%', marginLeft: '-20%', marginTop: '-20%', borderRadius: '50%', border: `${10 * (1 - hit) + 2}px solid ${RED}`, opacity: 1 - hit, transform: `scale(${0.6 + hit * 1.1})`}} />}
+    </>
+  );
+};
 
 // Porta: o aro (door-frame) fica fixo; a folha (door-leaf, recortada) roda sobre a dobradiça e revela uma luz vermelha atrás. Só aparece uma porta.
 const DoorLayers: React.FC = () => {
