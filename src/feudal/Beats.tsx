@@ -20,7 +20,7 @@ const BeatView: React.FC<{b: Beat; fig: string; theme: Theme; k: number; noCap?:
   const zoom = b.view.variant ? ZOOMS[b.view.variant % 4] : undefined;
   const tilt = (k % 2 ? 1 : -1) * 2.2;
   const life = LIFE[name]?.(t);
-  if (kind === 'img') return <Plate name={name} fig={fig} cap={noCap ? '' : b.cap} tilt={tilt} x={1010} y={150} w={830} h={720} at={0} zoom={zoom} />;
+  if (kind === 'img') return <Plate name={name} fig={fig} cap={noCap ? '' : b.cap} tilt={tilt} x={1010} y={150} w={830} h={720} at={0} zoom={zoom} bare={theme === 'paper'} />;
   // objeto
   const p = interpolate(t, [0, 0.45], [0, 1], {...clamp, easing: ease});
   const plate = theme === 'dark' || theme === 'red';

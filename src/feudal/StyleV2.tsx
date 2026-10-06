@@ -18,13 +18,14 @@ export const TornDefs: React.FC = () => (
       <feTurbulence type="fractalNoise" baseFrequency="0.03 0.05" numOctaves="3" seed="11" result="n" />
       <feDisplacementMap in="SourceGraphic" in2="n" scale="26" />
     </filter>
+    <filter id="inkkey" x="0" y="0" width="100%" height="100%" colorInterpolationFilters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 0.1  0 0 0 0 0.08  0 0 0 0 0.06  -0.383 -0.383 -0.383 0 1.03" /></filter>
     <filter id="redprint"><feColorMatrix type="matrix" values="0 0 0 0 0.898  0 0 0 0 0.137  0 0 0 0 0.169  0.9 0.9 0.9 0 -0.2" /></filter>
   </svg>
 );
 
 // recorte de gravura: folha rasgada + sombra de impressão vermelha desalinhada + legenda
 export type Zoom = {s: number; fx: number; fy: number};
-export const Plate: React.FC<{name: string; fig: string; cap: string; tilt?: number; x?: number; y?: number; w?: number; h?: number; at?: number; zoom?: Zoom; children?: React.ReactNode}> = ({name, fig, cap, tilt = -2, x = 360, y = 130, w = 1200, h = 760, at = 0, zoom, children}) => {
+export const Plate: React.FC<{name: string; fig: string; cap: string; tilt?: number; x?: number; y?: number; w?: number; h?: number; at?: number; zoom?: Zoom; bare?: boolean; children?: React.ReactNode}> = ({name, fig, cap, tilt = -2, x = 360, y = 130, w = 1200, h = 760, at = 0, zoom, bare, children}) => {
   const f = useCurrentFrame();
   const p = T(f, at, at + 0.18);
   const sp = spring({frame: f - Math.round(at * FPS), fps: FPS, config: {damping: 11, stiffness: 110, mass: 0.9}});
@@ -33,14 +34,15 @@ export const Plate: React.FC<{name: string; fig: string; cap: string; tilt?: num
   const dir = tilt < 0 ? 1 : -1;
   const fl = Math.sin(t * 1.3 + tilt) * 7;
   const offp = 18 + Math.sin(t * 2.2) * 5;
-  const alive = name === 'f-quill-hand' ? <QuillWrite w={w - 80} h={h - 80} /> : name === 'f-peasant-plough' ? <PloughWalk w={w - 80} h={h - 80} /> : null;
+  const alive = name === 'f-quill-hand' ? <QuillWrite w={w - 80} h={h - 80} bare={bare} /> : name === 'f-peasant-plough' ? <PloughWalk w={w - 80} h={h - 80} bare={bare} /> : null;
   return (
     <div style={{position: 'absolute', left: x + (1 - sp) * 380 * dir, top: y + fl, width: w, height: h, transform: `rotate(${tilt + (1 - sp) * 9 * dir + Math.sin(t * 0.9) * 0.5}deg) scale(${(0.9 + sp * 0.1) * z})`, opacity: p}}>
-      <div style={{position: 'absolute', inset: 0, background: RED, transform: `translate(${offp + 4}px,${offp}px)`, filter: 'url(#torn)'}} />
-      <div style={{position: 'absolute', inset: 0, background: '#FBF7EE', filter: 'url(#torn)', boxShadow: '0 20px 50px rgba(0,0,0,.25)'}} />
-      <div style={{position: 'absolute', inset: 40, overflow: 'hidden'}}>
+      {!bare && <div style={{position: 'absolute', inset: 0, background: RED, transform: `translate(${offp + 4}px,${offp}px)`, filter: 'url(#torn)'}} />}
+      {!bare && <div style={{position: 'absolute', inset: 0, background: '#FBF7EE', filter: 'url(#torn)', boxShadow: '0 20px 50px rgba(0,0,0,.25)'}} />}
+      {bare && <div style={{position: 'absolute', left: '12%', right: '12%', bottom: 10, height: 26, borderRadius: '50%', background: 'rgba(26,20,16,0.18)', filter: 'blur(14px)'}} />}
+      <div style={{position: 'absolute', inset: bare ? 0 : 40, overflow: bare ? 'visible' : 'hidden'}}>
         {children ? children : alive ? alive : imgFile(name) ? (
-          <Img src={staticFile(`feudal/img/${imgFile(name)}`)} style={{width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.1) grayscale(1)', transform: `translate(${Math.sin(t * 0.5) * 10}px, ${-t * 5}px) scale(${zoom ? zoom.s + t * 0.04 : 1.02 + t * 0.03})`, transformOrigin: zoom ? `${zoom.fx * 100}% ${zoom.fy * 100}%` : '50% 50%'}} />
+          <Img src={staticFile(`feudal/img/${imgFile(name)}`)} style={{width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: bare ? 'normal' : 'multiply', filter: bare ? 'contrast(1.1) grayscale(1) url(#inkkey)' : 'contrast(1.1) grayscale(1)', transform: `translate(${Math.sin(t * 0.5) * 10}px, ${-t * 5}px) scale(${zoom ? zoom.s + t * 0.04 : 1.02 + t * 0.03})`, transformOrigin: zoom ? `${zoom.fx * 100}% ${zoom.fy * 100}%` : '50% 50%'}} />
         ) : (
           <ArtSlot name={name} x={0} y={0} w={w - 80} h={h - 80} at={-9} />
         )}
@@ -48,8 +50,8 @@ export const Plate: React.FC<{name: string; fig: string; cap: string; tilt?: num
       {zoom && (
         <div style={{position: 'absolute', left: 40 + (w - 80) * zoom.fx - 130, top: 40 + (h - 80) * zoom.fy - 130, width: 260, height: 260, borderRadius: '50%', border: `10px solid ${RED}`, opacity: T(f, 0.3, 0.6), transform: `scale(${1.4 - 0.4 * T(f, 0.3, 0.6)})`}} />
       )}
-      <div style={{position: 'absolute', left: -34, top: 6, width: 120, height: 38, background: 'rgba(214,196,150,0.82)', transform: 'rotate(-38deg)', boxShadow: '0 2px 4px rgba(0,0,0,.2)'}} />
-      <div style={{position: 'absolute', right: -34, top: 6, width: 120, height: 38, background: 'rgba(214,196,150,0.82)', transform: 'rotate(38deg)', boxShadow: '0 2px 4px rgba(0,0,0,.2)'}} />
+      {!bare && <div style={{position: 'absolute', left: -34, top: 6, width: 120, height: 38, background: 'rgba(214,196,150,0.82)', transform: 'rotate(-38deg)', boxShadow: '0 2px 4px rgba(0,0,0,.2)'}} />}
+      {!bare && <div style={{position: 'absolute', right: -34, top: 6, width: 120, height: 38, background: 'rgba(214,196,150,0.82)', transform: 'rotate(38deg)', boxShadow: '0 2px 4px rgba(0,0,0,.2)'}} />}
       <div style={{position: 'absolute', left: 28, top: -30, background: INK, color: '#fff', fontFamily: fonts.mono, fontSize: 28, letterSpacing: 4, padding: '8px 18px'}}>{fig}</div>
       {cap && <div style={{position: 'absolute', right: 30, bottom: -26, background: RED, color: '#fff', fontFamily: fonts.heading, fontSize: 36, textTransform: 'uppercase', padding: '8px 22px'}}>{cap}</div>}
     </div>

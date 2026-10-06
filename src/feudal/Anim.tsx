@@ -9,12 +9,13 @@ const Box: React.FC<{w: number; h: number; children: React.ReactNode}> = ({w, h,
     <div style={{position: 'absolute', left: (w - 1920 * k) / 2, top: (h - 1280 * k) / 2, width: 1920, height: 1280, transform: `scale(${k})`, transformOrigin: '0 0'}}>{children}</div>
   );
 };
-const img: React.CSSProperties = {position: 'absolute', inset: 0, width: 1920, height: 1280, mixBlendMode: 'multiply', filter: 'contrast(1.1) grayscale(1)'};
+const imgS = (bare?: boolean): React.CSSProperties => ({position: 'absolute', inset: 0, width: 1920, height: 1280, mixBlendMode: bare ? 'normal' : 'multiply', filter: bare ? 'contrast(1.1) grayscale(1) url(#inkkey)' : 'contrast(1.1) grayscale(1)'});
 
 // Pena a escrever: a mão desloca-se e a ponta deixa uma linha de tinta cursiva que cresce; no fim, um rubrica vermelha.
 const NIB = [652, 946];
 const pt = (s: number) => [NIB[0] + 420 * s, NIB[1] + 36 * s - 26 * Math.abs(Math.sin(s * Math.PI * 9)) * (1 - 0.3 * s)];
-export const QuillWrite: React.FC<{w: number; h: number}> = ({w, h}) => {
+export const QuillWrite: React.FC<{w: number; h: number; bare?: boolean}> = ({w, h, bare}) => {
+  const img = imgS(bare);
   const f = useCurrentFrame();
   const t = f / FPS;
   const s = Math.min(1, Math.max(0, (t - 0.35) / 3.0));
@@ -34,7 +35,8 @@ export const QuillWrite: React.FC<{w: number; h: number}> = ({w, h}) => {
 };
 
 // Boi e lavrador a andar: duas metades da mesma imagem (boi | homem+arado) com passada própria, chão a deslizar e poeira.
-export const PloughWalk: React.FC<{w: number; h: number}> = ({w, h}) => {
+export const PloughWalk: React.FC<{w: number; h: number; bare?: boolean}> = ({w, h, bare}) => {
+  const img = imgS(bare);
   const f = useCurrentFrame();
   const t = f / FPS;
   const ph = t * 5.2;
