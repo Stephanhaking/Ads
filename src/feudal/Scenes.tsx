@@ -193,7 +193,7 @@ export const SceneView: React.FC<{sc: Sc; start: number; figNo?: number}> = ({sc
         )}
         {lines.length > 0 && kind !== 'end' && (cardKind && hasBeats ? <Until end={holdEnd}><Lines lines={lines.map((l) => l.t)} times={times} x={110} y={lineY} size={size} theme={theme} hot={hot} width={1700} /></Until> : <Lines lines={lines.map((l) => l.t)} times={times} x={110} y={lineY} size={size} theme={theme} hot={hot} width={hasArt || beatsRight || kind === 'tos' || (isText && !!OBJ_MAP[sc.p]) ? 900 : 1700} />)}
         {tags.map((g, i) => (
-          <Tag key={i} text={g.t} at={at(g.p, g.o ?? 1)} x={tagX} y={tagY0 + i * 104} fill={g.fill} size={hasArt ? 44 : 56} theme={theme} />
+          <Tag key={i} text={g.t} at={at(g.p, g.o ?? 1)} x={tagX} y={tagY0 + i * 104} fill={g.fill} size={hasArt ? 44 : beatsRight ? 38 : 56} theme={theme} />
         ))}
         {cardKind && hasBeats ? (
           <>

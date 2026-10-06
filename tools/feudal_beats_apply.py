@@ -40,6 +40,17 @@ for line in open(os.path.join(R, 'tools/feudal_beats_curated.txt'), encoding='ut
             new.append({'t0': round(starts[i], 3), 't1': round(en, 3), 'text': bt['text'], 'cap': cap, 'view': {'name': name, 'variant': var}})
         beats[s - 1][b - 1] = new  # lista aninhada, achatada abaixo
     n += 1
+# visuais únicos (docs/shotlist_map.json: chave = beat já achatado) — só os que já têm ficheiro em public/feudal/obj
+have = {os.path.splitext(f)[0] for f in os.listdir(os.path.join(R, 'public/feudal/obj'))}
+mp = json.load(open(os.path.join(R, 'docs/shotlist_map.json')))
+flat0 = [[x for item in sc for x in (item if isinstance(item, list) else [item])] for sc in beats]
+sw = 0
+for k, name in mp.items():
+    si, bi = [int(x) for x in k.split('.')]
+    if name in have and si - 1 < len(flat0) and bi - 1 < len(flat0[si - 1]):
+        flat0[si - 1][bi - 1]['view'] = {'name': 'obj:' + name, 'variant': 0}; sw += 1
+print(sw, 'visuais únicos aplicados')
+beats = flat0
 flat = [[x for item in sc for x in (item if isinstance(item, list) else [item])] for sc in beats]
 json.dump(flat, open(os.path.join(R, 'src/feudal/beats.json'), 'w'), ensure_ascii=False)
 print(f'{n} beats curados; total {sum(len(s) for s in flat)}')
