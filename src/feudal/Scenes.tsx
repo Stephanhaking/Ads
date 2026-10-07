@@ -174,7 +174,9 @@ export const SceneView: React.FC<{sc: Sc; start: number; figNo?: number}> = ({sc
   const hasArt = !!sc.art;
   const kind = sc.kind;
   const withObj = !sc.art && !sc.kind && !!OBJ_MAP[sc.p];
-  const size = Math.min(sc.size ?? (hasArt ? 104 : kind ? 84 : 128), withObj ? 100 : 999);
+  const narrow = hasArt || beatsRight || kind === 'tos' || (!sc.kind && !!OBJ_MAP[sc.p]);
+  const longestWord = Math.max(1, ...(sc.lines ?? []).flatMap((l) => l.t.split(/\s+/).map((w) => w.length)));
+  const size = Math.min(sc.size ?? (hasArt ? 104 : kind ? 84 : 128), withObj ? 100 : 999, narrow ? Math.floor(880 / (longestWord * 0.76)) : 999);
   const lines = sc.lines ?? [];
   const times = lines.map((l, i) => (l.p ? at(l.p, l.o ?? 1) : 0.15 + i * 0.28));
   const hot = lines.flatMap((l, i) => (l.hot ? [i] : []));
