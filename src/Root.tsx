@@ -1,4 +1,5 @@
 import {Composition} from 'remotion';
+import {CHASE_FRAMES, ChaseDemo} from './chase/ChaseDemo';
 import {MainVideo} from './MainVideo';
 import {GoogleVideo, GG_TOTAL} from './GoogleVideo';
 import {video} from './styles';
@@ -18,6 +19,7 @@ export const RemotionRoot: React.FC = () => (
     width={video.width}
     height={video.height}
   />
+  <Composition id="ChaseDemo" component={ChaseDemo} durationInFrames={CHASE_FRAMES} fps={30} width={1920} height={1080} />
   <Composition id="FeudalVideo" component={FeudalVideo} durationInFrames={FEUDAL_FRAMES} fps={30} width={1920} height={1080} />
   <Composition id="StyleRecreate" component={StyleRecreate} durationInFrames={STYLE_FRAMES} fps={30} width={1920} height={1080} />
   <Composition id="StyleV2" component={StyleV2} durationInFrames={STYLEV2_FRAMES} fps={30} width={1920} height={1080} />
