@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, Img, continueRender, delayRender, interpolate, staticFile, useCurrentFrame} from 'remotion';
 import objs from './objs.json';
 import {fonts} from '../styles';
 import {Defs, FPS, INK, PAPER, RED, clamp, ease} from './Common';
@@ -19,10 +19,10 @@ export const ObjArt: React.FC<{name: string; size: number; plate?: boolean; zoom
   const img = (
     <div style={{position: 'relative', width: '100%', height: '100%', overflow: zoom ? 'hidden' : undefined}}>
       <div style={{position: 'absolute', inset: 0, ...zs}}>
-      {name === 'gavel' ? <GavelLayers /> : name === 'scale' ? <ScaleLayers k={size / 1600} /> : name === 'door' ? <DoorLayers /> : name === 'lock' ? <LockLayers /> : <Img src={staticFile(`feudal/obj/${f}`)} style={{width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.06)'}} />}
-      {name === 'phone' && <PhoneTos k={size / 1600} />}
+      {name === 'gavel' ? <GavelLayers /> : name === 'scale' ? <ScaleLayers k={size * (plate ? 0.88 : 1) / 1600} /> : name === 'door' ? <DoorLayers /> : name === 'lock' ? <LockLayers /> : <Img src={staticFile(`feudal/obj/${f}`)} style={{width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', filter: 'contrast(1.06)'}} />}
+      {name === 'phone' && <PhoneTos k={size * (plate ? 0.88 : 1) / 1600} />}
       {CLOCKS[name] && <ClockHands name={name} />}
-      {name === 'app-grid' && <AppPress k={size / 1600} />}
+      {name === 'app-grid' && <AppPress k={size * (plate ? 0.88 : 1) / 1600} />}
       </div>
     </div>
   );
@@ -42,8 +42,21 @@ const TOS_BLOCKS: [string, number[]][] = [
   ['1. Your data', [92, 80, 96, 60]], ['2. How we use it', [88, 94, 70, 90, 52]], ['3. Sharing with partners', [96, 84, 90, 66]],
   ['4. Changes to these terms', [90, 76, 94, 88, 58]], ['5. Arbitration', [94, 82, 70]], ['6. Your consent', [86, 96, 92, 64, 90]],
 ];
+// o CSS mask-image carrega em segundo plano e o Remotion não espera por ele: pré-carrega e segura o render até a máscara existir.
+const useMaskReady = (src: string) => {
+  const [h] = React.useState(() => delayRender('mask ' + src));
+  const [ready, setReady] = React.useState(false);
+  React.useEffect(() => {
+    const im = new window.Image();
+    const done = () => { setReady(true); continueRender(h); };
+    im.onload = done; im.onerror = done; im.src = src;
+  }, [src, h]);
+  return ready;
+};
 export const PhoneTos: React.FC<{k: number}> = ({k}) => {
   const t = useT();
+  const ready = useMaskReady(staticFile('feudal/obj/phone-screen.png'));
+  if (!ready) return null;
   const loop = 1500;
   const y = -((t * 120) % loop);
   const rows = (k: number) => TOS_BLOCKS.map(([h, ws], i) => (

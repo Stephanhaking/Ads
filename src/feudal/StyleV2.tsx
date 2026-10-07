@@ -52,7 +52,7 @@ export const Plate: React.FC<{name: string; fig: string; cap: string; tilt?: num
       )}
       {!bare && <div style={{position: 'absolute', left: -34, top: 6, width: 120, height: 38, background: 'rgba(214,196,150,0.82)', transform: 'rotate(-38deg)', boxShadow: '0 2px 4px rgba(0,0,0,.2)'}} />}
       {!bare && <div style={{position: 'absolute', right: -34, top: 6, width: 120, height: 38, background: 'rgba(214,196,150,0.82)', transform: 'rotate(38deg)', boxShadow: '0 2px 4px rgba(0,0,0,.2)'}} />}
-      <div style={{position: 'absolute', left: 28, top: -30, background: INK, color: '#fff', fontFamily: fonts.mono, fontSize: 28, letterSpacing: 4, padding: '8px 18px'}}>{fig}</div>
+      
       {cap && <div style={{position: 'absolute', right: 30, bottom: -26, background: RED, color: '#fff', fontFamily: fonts.heading, fontSize: 36, textTransform: 'uppercase', padding: '8px 22px'}}>{cap}</div>}
     </div>
   );
