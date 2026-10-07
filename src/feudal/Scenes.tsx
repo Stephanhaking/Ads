@@ -148,9 +148,11 @@ const End: React.FC = () => {
 const Cuts: React.FC<{d: any}> = ({d}) => {
   const {start} = React.useContext(SceneCtx);
   const ts = Math.max(0.5, wt(d.p) - start - 0.15);
+  const t = useT();
+  const gone = interpolate(t, [ts + 0.45, ts + 0.9], [1, 0], clamp);
   return (
     <>
-      <Plate name={d.wood} fig="FIG. 10.1" cap="wood" tilt={-3} x={790} y={130} w={760} h={680} at={0.1} bare />
+      {gone > 0 && <div style={{opacity: gone}}><Plate name={d.wood} fig="FIG. 10.1" cap="wood" tilt={-3} x={790} y={130} w={760} h={680} at={0.1} bare /></div>}
       <Plate name={d.stone} fig="FIG. 10.2" cap="then stone" tilt={3} x={1150} y={270} w={700} h={640} at={ts} bare />
     </>
   );

@@ -67,7 +67,7 @@ export const PhoneTos: React.FC<{k: number}> = ({k}) => {
   ));
   return (
     <div style={{position: 'absolute', left: 0, top: 0, width: 1600, height: 1600, transformOrigin: '0 0', transform: `scale(${k})`, WebkitMaskImage: `url(${staticFile('feudal/obj/phone-screen.png')})`, WebkitMaskSize: '1600px 1600px', maskImage: `url(${staticFile('feudal/obj/phone-screen.png')})`, maskSize: '1600px 1600px'}}>
-      <div style={{position: 'absolute', left: 801 - 310, top: 751 - 450, width: 620, height: 900, transform: 'rotate(11deg)', overflow: 'hidden', background: '#fff'}}>
+      <div style={{position: 'absolute', left: 0, top: 0, width: 620, height: 900, transformOrigin: '0 0', transform: 'matrix3d(0.711571,-0.12486,0,-0.000105189,-0.256929,0.803592,0,-0.000128024,0,0,1,0,617,327,0,1)', overflow: 'hidden', background: '#fff'}}>
         <div style={{padding: '56px 50px 0', borderBottom: '4px solid #ddd', fontFamily: fonts.heading, fontSize: 40, color: INK, paddingBottom: 20, background: '#fff', position: 'relative', zIndex: 2}}>TERMS OF SERVICE</div>
         <div style={{padding: '30px 50px', transform: `translateY(${y}px)`}}>{rows(0)}{rows(1)}{rows(2)}</div>
         <div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: 150, background: 'linear-gradient(#fff0,#fff 40%)'}} />

@@ -38,7 +38,7 @@ export const SCENES: Sc[] = [
   {p: 'The deal was straightforward', theme: 'paper', lines: [L('Protection', 'military protection'), L('+ a plot of land.', 'plot of land'), L('Price: three obligations.', 'three heavy obligations', true)], size: 100},
   {p: 'First, forced labor', theme: 'paper', lines: [L('1 · Labor', undefined, true), L('Corvée.', 'corvée'), L('Days a week, free.', 'several days a week')], art: {name: 'f-peasant-plough', side: 'r'}},
   {p: 'Second, a heavy share', theme: 'paper', lines: [L('2 · The harvest', undefined, true), L('+ the tithe.', 'a tithe to the local church')], art: {name: 'f-wheat-sacks', side: 'r'}},
-  {p: 'to the local church', theme: 'paper', lines: [L('2 · The harvest', undefined, true), L('+ the Church.')], art: {name: 'f-church-tithe', side: 'r'}},
+  {p: 'a tithe to the local church', theme: 'paper', lines: [L('2 · The harvest', undefined, true), L('+ the Church.')], art: {name: 'f-church-tithe', side: 'r'}},
   {p: 'Third, and most importantly', theme: 'red', lines: [L('3 · Your freedom'), L('to leave.', 'to leave', true), L('Bound to the soil.', 'bound to the soil')], art: {name: 'f-iron-chain', side: 'r'}, fx: [{p: 'surrender of your freedom', s: 'impact'}]},
   {p: 'Even personal life carried a price tag', theme: 'paper', lines: [L('Even life', 'even personal life'), L('had a price.')], tags: [T('Merchet: marry your daughter', 'merchet'), T('Heriot: your best animal', 'heriot', true)]},
   {p: 'Nobody held a knife to their throats', theme: 'red', lines: [L('No knife.'), L('Just fear.', 'driven by fear'), L('And a trade.', 'it was a trade')]},

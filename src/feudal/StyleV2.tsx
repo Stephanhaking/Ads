@@ -28,7 +28,7 @@ export type Zoom = {s: number; fx: number; fy: number};
 export const Plate: React.FC<{name: string; fig: string; cap: string; tilt?: number; x?: number; y?: number; w?: number; h?: number; at?: number; zoom?: Zoom; bare?: boolean; children?: React.ReactNode}> = ({name, fig, cap, tilt = -2, x = 360, y = 130, w = 1200, h = 760, at = 0, zoom, bare, children}) => {
   const f = useCurrentFrame();
   const p = T(f, at, at + 0.18);
-  const sp = spring({frame: f - Math.round(at * FPS), fps: FPS, config: {damping: 11, stiffness: 110, mass: 0.9}});
+  const sp = spring({frame: f - Math.round(at * FPS), fps: FPS, config: {damping: 14, stiffness: 190, mass: 0.8}});
   const t = f / FPS;
   const z = 1 + t * 0.05;
   const dir = tilt < 0 ? 1 : -1;
@@ -36,13 +36,13 @@ export const Plate: React.FC<{name: string; fig: string; cap: string; tilt?: num
   const offp = 18 + Math.sin(t * 2.2) * 5;
   const alive = name === 'f-quill-hand' ? <QuillWrite w={w - 80} h={h - 80} bare={bare} /> : name === 'f-peasant-plough' ? <PloughWalk w={w - 80} h={h - 80} bare={bare} /> : null;
   return (
-    <div style={{position: 'absolute', left: x + (1 - sp) * 380 * dir, top: y + fl, width: w, height: h, transform: `rotate(${tilt + (1 - sp) * 9 * dir + Math.sin(t * 0.9) * 0.5}deg) scale(${(0.9 + sp * 0.1) * z})`, opacity: p}}>
+    <div style={{position: 'absolute', left: x + (1 - sp) * 240 * dir, top: y + fl, width: w, height: h, transform: `rotate(${tilt + (1 - sp) * 9 * dir + Math.sin(t * 0.9) * 0.5}deg) scale(${(0.9 + sp * 0.1) * z})`, opacity: p}}>
       {!bare && <div style={{position: 'absolute', inset: 0, background: RED, transform: `translate(${offp + 4}px,${offp}px)`, filter: 'url(#torn)'}} />}
       {!bare && <div style={{position: 'absolute', inset: 0, background: '#FBF7EE', filter: 'url(#torn)', boxShadow: '0 20px 50px rgba(0,0,0,.25)'}} />}
       {bare && <div style={{position: 'absolute', left: '12%', right: '12%', bottom: 10, height: 26, borderRadius: '50%', background: 'rgba(26,20,16,0.18)', filter: 'blur(14px)'}} />}
       <div style={{position: 'absolute', inset: bare ? 0 : 40, overflow: bare ? 'visible' : 'hidden'}}>
         {children ? children : alive ? alive : imgFile(name) ? (
-          <Img src={staticFile(`feudal/img/${imgFile(name)}`)} style={{width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: bare ? 'normal' : 'multiply', filter: bare ? 'contrast(1.1) grayscale(1) url(#inkkey)' : 'contrast(1.1) grayscale(1)', transform: `translate(${Math.sin(t * 0.5) * 10}px, ${-t * 5}px) scale(${zoom ? zoom.s + t * 0.04 : 1.02 + t * 0.03})`, transformOrigin: zoom ? `${zoom.fx * 100}% ${zoom.fy * 100}%` : '50% 50%'}} />
+          <Img src={staticFile(`feudal/img/${imgFile(name)}`)} style={{width: '100%', height: '100%', objectFit: 'contain', background: bare ? '#fff' : undefined, mixBlendMode: bare ? 'normal' : 'multiply', filter: bare ? 'contrast(1.1) grayscale(1) url(#inkkey)' : 'contrast(1.1) grayscale(1)', transform: `translate(${Math.sin(t * 0.5) * 10}px, ${-t * 5}px) scale(${zoom ? zoom.s + t * 0.04 : 1.02 + t * 0.03})`, transformOrigin: zoom ? `${zoom.fx * 100}% ${zoom.fy * 100}%` : '50% 50%'}} />
         ) : (
           <ArtSlot name={name} x={0} y={0} w={w - 80} h={h - 80} at={-9} />
         )}
