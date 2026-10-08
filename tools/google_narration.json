@@ -1,0 +1,102 @@
+{
+ "voice": "Iapetus",
+ "style": "Read as a calm, intelligent documentary narrator. Measured pace, natural pauses, subtle emphasis on key words. No theatrics.",
+ "short": false,
+ "chunks": [
+  {
+   "id": "g01",
+   "block": "LOOP 1",
+   "text": "Picture a night-shift nurse. She's an example, not a real person. It's three-twelve in the morning. The hospital is quiet. All you can hear is the machines. There's a moment nurses are trained to catch: the instant a patient starts to get worse. It doesn't come with an alarm. It's hidden in a hundred small readings. A blood pressure. A pulse. A value in the blood that dips a little. Each one, alone, means nothing. It's easy to miss. Now picture a system that could read all of those readings at once, for every patient in the building, without tiring and without blinking. And in twenty eighteen, a machine learned to do exactly that, for one very specific purpose: to see it first."
+  },
+  {
+   "id": "g02",
+   "block": "LOOP 1",
+   "text": "Google was part of a team that trained an artificial intelligence on the records of more than two hundred thousand hospital stays, from about a hundred and fourteen thousand people, at two American university hospitals. Almost forty-seven billion data points. Including the notes doctors write by hand. And it asked the machine one question. Among these patients, who is going to die during this stay? The machine did better than the models hospitals were already using. In a retrospective test, on records already closed, it scored between point nine three and point nine four, on a scale where one is perfect. It wasn't standing at anyone's bedside. But it proved it could be done."
+  },
+  {
+   "id": "g03",
+   "block": "LOOP 1",
+   "text": "If the story ended here, it would be a nice story about technology saving lives. It's what most videos would tell you. But there's a question almost nobody asks. What data did a machine learn to see death from? The answer begins with a word everyone hears, and almost nobody checks."
+  },
+  {
+   "id": "g04",
+   "block": "LOOP 2",
+   "text": "Those records belonged to people who walked through those doors because they were sick, or frightened, or sitting with someone who was. No one was thinking they were teaching a machine. Whoever signed an admission form was signing to be treated, not to be an example."
+  },
+  {
+   "id": "g05",
+   "block": "LOOP 2",
+   "text": "And there's something worth understanding about \"anonymous.\" Removing a name from a file doesn't make it anonymous. A record still has dates: the day you came in, the day you left. It still has notes, written in a hurry. Anyone holding other pieces of the puzzle can put them together. That's the argument. Here's an illustration, not a real case: in a file with no names, there's one person with three hospital stays on very specific dates, in a small town. For someone with other data from that town, the names stop being necessary. You're about to see who made this argument. The hospitals said the data had been treated so it couldn't identify anyone. But was it really anonymous? Look at two cases, because they're different."
+  },
+  {
+   "id": "g06",
+   "block": "LOOP 2",
+   "text": "In the United States, the hospital shared the records with Google after processing them. In twenty nineteen, a former patient sued. He claimed that the dates and the notes, combined with everything Google already knows about where you are, could let people be identified. The case was dismissed, in twenty twenty and again on appeal in twenty twenty-three. But look at why: the court said the plaintiff hadn't shown concrete harm. It did not say identification was impossible. That question was never tested."
+  },
+  {
+   "id": "g07",
+   "block": "LOOP 2",
+   "text": "In London, in twenty fifteen, the story was different. A hospital handed DeepMind, a company owned by the same parent, the data of one point six million patients, for an app. In twenty seventeen, Britain's data regulator found that the hospital had not complied with data protection law. The patients hadn't been properly informed. The regulator put the blame on the hospital, not on DeepMind. Notice what didn't happen in either case. Nobody broke in. Nobody stole anything. The data was handed over, with a contract and with signatures. The unsettling part of this story isn't a crime. It's a contract. So why would an advertising company want hospital records?"
+  },
+  {
+   "id": "g08",
+   "block": "LOOP 3",
+   "text": "To answer that, leave the hospital and look at your day. You woke up and picked up your phone. You searched for something. You opened the map. You watched a video while waiting for the bus. You paused. You went back. You stopped for two seconds on an image. Every one of those gestures is a reading. Like the nurse's. Except nobody is watching you from a chair. A machine is. It doesn't get distracted. It doesn't need to understand what you feel. It only needs to count, to compare, and to guess what you'll do next. So what does Google do with all that? What is the product, really? The logical answer is: ads. It's one level below the true one."
+  },
+  {
+   "id": "g09",
+   "block": "LOOP 3",
+   "text": "Every search is a measurement. Every route, every video, every pause. Alone, they're just readings. But point them at a market, and each reading becomes a bet: on what you'll do next. And that bet is sold at auction, in a fraction of a second, while the page is still loading, to whoever wants your next decision. Last year, Alphabet, Google's parent, took in more than four hundred billion dollars, most of it from advertising. Look at who pays. You pay nothing. The advertiser pays. And what the advertiser buys isn't your time. It's a probability. The more certain, the more expensive. The product was never the ad. The product is certainty."
+  },
+  {
+   "id": "g10",
+   "block": "LOOP 3",
+   "text": "That's why a hospital matters. A hospital is just another place where people stop hiding. The skill trained on your clicks at three in the afternoon is the same skill trained on records at three in the morning: take everything known about a person, and work out what they'll do next. And certainty has a dangerous property. It can be manufactured."
+  },
+  {
+   "id": "g11",
+   "block": "LOOP 4",
+   "text": "If you know what someone will probably do, you can start adjusting the world around them until \"probably\" quietly becomes \"certainly.\" A default option set here. Research, from retirement plans to organ donation, shows how hard a default pulls. A feed arranged there. A notification at the hour you usually give in. A nudge so small nobody feels it. Alone, each one looks harmless. Together, they draw a path. And the better drawn it is, the more it feels like you chose it. A prediction is worth little. Certainty is worth a fortune. Is this just theory, or has it already happened? It happened in plain sight, on a product you use every day."
+  },
+  {
+   "id": "g12",
+   "block": "LOOP 4",
+   "text": "YouTube changed the question its algorithm was trying to answer. In twenty twelve, it went from \"what does this person want to watch\" to \"what will keep them watching longest.\" By twenty sixteen, Google was describing its recommendations as built on deep neural networks. Think about what that means. It's no longer a library where you choose. It's a machine deciding the next video, and measuring whether it worked. If it worked, repeat. If not, adjust. In twenty eighteen, YouTube's chief product officer said that more than seventy percent of the time people spend watching comes from the site's own recommendations. And if that still sounds like exaggeration, Google put it on paper."
+  },
+  {
+   "id": "g13",
+   "block": "LOOP 4",
+   "text": "In twenty sixteen, an internal team at its X lab made a film called The Selfish Ledger. It described the data you accumulate as a record that could be passed on and outlive you, and it imagined using it to steer people toward a desired result. Not one user. Society at large. In twenty eighteen, the film leaked to the press. The company said it was speculative design, meant to provoke debate, and not tied to any product. A provocation. Maybe. But look at who made it: people with the data, the screens, and the attention to make it real. The only question left is how many screens."
+  },
+  {
+   "id": "g14",
+   "block": "LOOP 5",
+   "text": "In August of twenty twenty-four, an American court reached for the plainest word it had, and used it: monopolist. And here a lot of people sigh with relief. Good, the courts took care of it. But took care of what, exactly? Who controls the window you look at the world through? In September of twenty twenty-five, the judge decided the consequences. He did not force Google to sell Chrome. He banned exclusive contracts, and ordered some search data shared with rivals. The payments to Apple, about twenty billion dollars in twenty twenty-two according to testimony at the trial, to be the default search on the iPhone, can continue, as long as they're not exclusive. In twenty twenty-six, the Justice Department appealed. Now look at what the window is made of."
+  },
+  {
+   "id": "g15",
+   "block": "LOOP 5",
+   "text": "The search box hears what you want. The browser, in roughly two of every three visits worldwide, sees where you go. The phone, on more than seven in ten devices on Earth, knows where you are. The map keeps the history. You downloaded all of it, signed in, and said thank you. And nobody forced you. Every piece was useful, and free, and right there. That's what makes it so hard to put down: there's no single moment where you say yes. There are a thousand small moments where you said yes, and none of them felt important. The court judged search. Power, meanwhile, has moved. It no longer lives only in the box where you type. It lives in whatever answers. Because the machine just grew a mouth."
+  },
+  {
+   "id": "g16",
+   "block": "LOOP 6",
+   "text": "The largest record of human behavior ever gathered is exactly what you need to build an artificial intelligence. And exactly what you need to make it answer you. A search was a short question that left a trail. A conversation with an assistant is longer, more personal. People ask it things they'd never type into a search box. Picture it's you, at three-twelve in the morning, typing a symptom you don't want to tell anyone about. Same hour. Other side of the screen. What happens when whoever predicts your next click is also whoever answers everything you ask? Remember the hospital's question? Who, in this building, is going to die? It seemed to be about patients. It never was."
+  },
+  {
+   "id": "g17",
+   "block": "LOOP 6",
+   "text": "It was about a capability: take everything known about a person and work out what happens next. It's Google's oldest skill. It spent twenty years perfecting it on us. The hospital was just the place where they tested it on a question you can't ignore."
+  },
+  {
+   "id": "g18",
+   "block": "LOOP 6",
+   "text": "The same technique, aimed at you, doesn't need a hospital."
+  },
+  {
+   "id": "g19",
+   "block": "LOOP 6",
+   "text": "None of this needed a villain. It needed an incentive, pointed patiently in one direction for twenty years. You didn't lose your privacy in a breach. You handed it over, one free click at a time, for a better map. The map was real. The price was real. You just never saw the meter. This week, do one thing: open your Google account settings, and look at one thing it keeps about you. Just one. You don't have to delete anything. You just have to see the meter. And if you want to know what the other companies that know you this well are doing, that's the next one. This was Distinguish."
+  }
+ ]
+}
