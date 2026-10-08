@@ -116,7 +116,7 @@ It happened in plain sight, on a product you use every day.
 
 YouTube changed the question its algorithm was trying to answer. In twenty twelve, it went from "what does this person want to watch" to "what will keep them watching longest." By twenty sixteen, Google was describing its recommendations as built on deep neural networks.
 
-Think about what that means. It's no longer a library where you choose. It's a machine deciding the next video, and measuring whether it worked. If it worked, repeat. If not, adjust. A senior YouTube executive has said that most of what people watch there comes from recommendations, not from searches. ⚠ [add the exact share, about seventy percent, only once the source is pinned down]
+Think about what that means. It's no longer a library where you choose. It's a machine deciding the next video, and measuring whether it worked. If it worked, repeat. If not, adjust. In twenty eighteen, YouTube's chief product officer said that more than seventy percent of the time people spend watching comes from the site's own recommendations.
 
 And if that still sounds like exaggeration, Google put it on paper.
 
@@ -200,11 +200,11 @@ This was Distinguish.
 - Alphabet 2025 revenue $402.8B (Verdict, Outlook Business). Antitrust: remedies Sept 2025 (no Chrome sale; exclusive contracts banned; data sharing; Apple payments allowed if non-exclusive); DOJ appealed Feb 2026.
 - YouTube: shift to watch time in 2012 (Business Insider, YouTube blog); "Deep Neural Networks for YouTube Recommendations", RecSys 2016 (research.google/pubs/pub45530).
 - Selfish Ledger: 2016, Nick Foster (head of design at X), ~9 min; Google's reply "speculative design… not related to any current or future product" (Genbeta, Xataka, Hipertextual).
+- YouTube 70%: Neal Mohan (YouTube chief product officer), CES, Jan 2018: "more than 70%" of watch time comes from recommendations (Quartz, MediaPost, Tubefilter; the CBS copy of the CNET piece says 75%, so "more than seventy" is the safe wording).
 - Browser/OS share 2025: Chrome ≈ 65%, Android ≈ 72% (third-party summaries of StatCounter).
 - Apple payment: about $20B in 2022, per Eddy Cue's trial testimony (AppleInsider, Bloomberg).
 - Defaults: Madrian & Shea 2000 (401k inertia, NBER w7682); Johnson & Goldstein 2003 (organ donation; a 2022 replication reproduced it).
 
 **Could NOT confirm here (soften or source before recording):**
-- The "about 70% of watch time comes from recommendations" figure (attributed to Neal Mohan, 2018). No source found: keep the vaguer wording.
 - Exact date of the Selfish Ledger leak (The Verge, May 2018) and the "values" wording: removed the quote.
 - The 2019 filing year of the US lawsuit, and the "auction in a fraction of a second" claim (real-time bidding): general knowledge, no source pulled.
