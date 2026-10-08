@@ -49,11 +49,11 @@ The hospitals said the data had been treated so it couldn't identify anyone. But
 [HEADFAKE: two separate cases]
 Look at two cases, because they're different.
 
-In the United States, the hospital shared the records with Google after processing them. In twenty nineteen, a former patient sued. He claimed that the dates and the notes, combined with everything Google already knows about where you are, could let people be identified. ⚠
+In the United States, the hospital shared the records with Google after processing them. In twenty nineteen, a former patient sued. ⚠ He claimed that the dates and the notes, combined with everything Google already knows about where you are, could let people be identified. ⚠
 
 The case was dismissed, in twenty twenty and again on appeal in twenty twenty-three. But look at why: the court said the plaintiff hadn't shown concrete harm. It did not say identification was impossible. That question was never tested. ⚠
 
-In London, in twenty fifteen, the story was different. A hospital handed DeepMind, a company owned by the same parent, the data of one point six million patients, for an app. In twenty seventeen, Britain's data regulator found that the hospital had not complied with data protection law. The patients hadn't been properly informed. ⚠
+In London, in twenty fifteen, the story was different. A hospital handed DeepMind, a company owned by the same parent, the data of one point six million patients, for an app. In twenty seventeen, Britain's data regulator found that the hospital had not complied with data protection law. The patients hadn't been properly informed. The regulator put the blame on the hospital, not on DeepMind. ⚠
 
 Notice what didn't happen in either case. Nobody broke in. Nobody stole anything. The data was handed over, with a contract and with signatures.
 
@@ -104,7 +104,7 @@ And certainty has a dangerous property. It can be manufactured.
 [STAKES]
 If you know what someone will probably do, you can start adjusting the world around them until "probably" quietly becomes "certainly."
 
-A default option set here. Studies keep finding that when there's a default, most people stay with it. A feed arranged there. A notification at the hour you usually give in. A nudge so small nobody feels it. Alone, each one looks harmless. Together, they draw a path. And the better drawn it is, the more it feels like you chose it. ⚠
+A default option set here. Research, from retirement plans to organ donation, shows how hard a default pulls. A feed arranged there. A notification at the hour you usually give in. A nudge so small nobody feels it. Alone, each one looks harmless. Together, they draw a path. And the better drawn it is, the more it feels like you chose it. ⚠
 
 A prediction is worth little. Certainty is worth a fortune.
 
@@ -114,15 +114,15 @@ Is this just theory, or has it already happened?
 [HEADFAKE]
 It happened in plain sight, on a product you use every day.
 
-YouTube changed the question its algorithm was trying to answer. In twenty twelve, it went from "what does this person want to watch" to "what will keep them watching longest." In twenty sixteen, it handed that job to neural networks. ⚠
+YouTube changed the question its algorithm was trying to answer. In twenty twelve, it went from "what does this person want to watch" to "what will keep them watching longest." By twenty sixteen, Google was describing its recommendations as built on deep neural networks.
 
-Think about what that means. It's no longer a library where you choose. It's a machine deciding the next video, and measuring whether it worked. If it worked, repeat. If not, adjust. In twenty eighteen, an executive at the company said that around seventy percent of what people watch on YouTube comes from recommendations, not from searches. ⚠
+Think about what that means. It's no longer a library where you choose. It's a machine deciding the next video, and measuring whether it worked. If it worked, repeat. If not, adjust. A senior YouTube executive has said that most of what people watch there comes from recommendations, not from searches. ⚠ [add the exact share, about seventy percent, only once the source is pinned down]
 
 And if that still sounds like exaggeration, Google put it on paper.
 
-In twenty sixteen, an internal team at its X lab made a film called The Selfish Ledger. It described the data you accumulate as a record that could be passed on and outlive you, and it imagined using it to nudge people toward chosen goals, goals that, in the film's words, reflect Google's values. Not one user. Populations. ⚠
+In twenty sixteen, an internal team at its X lab made a film called The Selfish Ledger. It described the data you accumulate as a record that could be passed on and outlive you, and it imagined using it to steer people toward a desired result. Not one user. Society at large. ⚠
 
-In twenty eighteen, the film leaked to the press. The company said it was a thought experiment, a provocation.
+In twenty eighteen, the film leaked to the press. ⚠ The company said it was speculative design, meant to provoke debate, and not tied to any product.
 
 A provocation. Maybe. But look at who made it: people with the data, the screens, and the attention to make it real.
 
@@ -142,11 +142,11 @@ And here a lot of people sigh with relief. Good, the courts took care of it.
 But took care of what, exactly? Who controls the window you look at the world through?
 
 [HEADFAKE]
-In September of twenty twenty-five, the judge decided the consequences. He did not force Google to sell Chrome. He banned exclusive contracts, and ordered some search data shared with rivals. The payments to Apple, around twenty billion dollars a year to be the default search on the iPhone, can continue, as long as they're not exclusive. ⚠ In twenty twenty-six, the Justice Department appealed. ⚠
+In September of twenty twenty-five, the judge decided the consequences. He did not force Google to sell Chrome. He banned exclusive contracts, and ordered some search data shared with rivals. The payments to Apple, about twenty billion dollars in twenty twenty-two according to testimony at the trial, to be the default search on the iPhone, can continue, as long as they're not exclusive. ⚠ In twenty twenty-six, the Justice Department appealed. ⚠
 
 Now look at what the window is made of.
 
-The search box hears what you want. The browser, on roughly two in three screens, sees where you go. The phone, on roughly seven in ten devices on Earth, knows where you are. The map keeps the history. ⚠
+The search box hears what you want. The browser, in roughly two of every three visits worldwide, sees where you go. The phone, on more than seven in ten devices on Earth, knows where you are. The map keeps the history.
 
 You downloaded all of it, signed in, and said thank you. And nobody forced you. Every piece was useful, and free, and right there. That's what makes it so hard to put down: there's no single moment where you say yes. There are a thousand small moments where you said yes, and none of them felt important.
 
@@ -192,6 +192,19 @@ This was Distinguish.
 
 ---
 
-## Verification log
-Same as `SCRIPT_GOOGLE_V2_1_PT.md` (study, lawsuit outcome, Alphabet revenue, antitrust remedies confirmed with sources; the ⚠ items still need a source before recording).
-New to confirm: the "fraction of a second" ad auction; a citable source for the default effect before saying "studies keep finding"; the loop-6 claim kept as a possibility.
+## Verification log (2026-10-08)
+**Confirmed with sources:**
+- Study: npj Digital Medicine, May 2018; 216,221 hospitalizations, 114,003 patients, UCSF + University of Chicago; ≈46.9 billion data points; in-hospital mortality AUROC 0.93–0.94 (research.google/pubs/pub46926; PMC6550175).
+- US lawsuit (Dinerstein v. Google/UChicago): dismissed 2020 (N.D. Ill.), affirmed by the 7th Circuit 11 July 2023, for lack of standing (Morgan Lewis Health Law Scan).
+- Royal Free / DeepMind: 1.6 million patients, ICO ruling July 2017: the hospital (not DeepMind) failed to comply with the Data Protection Act; patients not adequately informed; no fine (digitalhealth.net, medConfidential).
+- Alphabet 2025 revenue $402.8B (Verdict, Outlook Business). Antitrust: remedies Sept 2025 (no Chrome sale; exclusive contracts banned; data sharing; Apple payments allowed if non-exclusive); DOJ appealed Feb 2026.
+- YouTube: shift to watch time in 2012 (Business Insider, YouTube blog); "Deep Neural Networks for YouTube Recommendations", RecSys 2016 (research.google/pubs/pub45530).
+- Selfish Ledger: 2016, Nick Foster (head of design at X), ~9 min; Google's reply "speculative design… not related to any current or future product" (Genbeta, Xataka, Hipertextual).
+- Browser/OS share 2025: Chrome ≈ 65%, Android ≈ 72% (third-party summaries of StatCounter).
+- Apple payment: about $20B in 2022, per Eddy Cue's trial testimony (AppleInsider, Bloomberg).
+- Defaults: Madrian & Shea 2000 (401k inertia, NBER w7682); Johnson & Goldstein 2003 (organ donation; a 2022 replication reproduced it).
+
+**Could NOT confirm here (soften or source before recording):**
+- The "about 70% of watch time comes from recommendations" figure (attributed to Neal Mohan, 2018). No source found: keep the vaguer wording.
+- Exact date of the Selfish Ledger leak (The Verge, May 2018) and the "values" wording: removed the quote.
+- The 2019 filing year of the US lawsuit, and the "auction in a fraction of a second" claim (real-time bidding): general knowledge, no source pulled.
