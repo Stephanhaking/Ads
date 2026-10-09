@@ -1,11 +1,11 @@
 // Guião visual do Google v2 (primeiros 3 min). `s` = segundo da locução (alinhado em words.json); o beat dura até ao seguinte.
-export type GBeat = {s: number; k: 'img' | 'obj' | 'chase' | 'big' | 'count' | 'strike' | 'stock'; n?: string; L?: string[]; hot?: number[]; v?: number; suf?: string; lab?: string};
+export type GBeat = {s: number; k: 'img' | 'obj' | 'clock' | 'chase' | 'big' | 'count' | 'strike' | 'stock'; n?: string; L?: string[]; hot?: number[]; v?: number; suf?: string; lab?: string};
 export const G_END = 182;
 export const GBEATS: GBeat[] = [
   {s: 0, k: 'chase', n: 'nurse-walking-side', L: ['A NIGHT-SHIFT', 'NURSE.'], hot: [1]},
   {s: 8.3, k: 'chase', n: 'hospital-bed-side', L: ['3:12 A.M.', 'THE HOSPITAL', 'IS QUIET.'], hot: [0]},
   {s: 15.4, k: 'chase', n: 'ambulance-side', L: ['THE INSTANT', 'A PATIENT', 'GETS WORSE.']},
-  {s: 20.2, k: 'obj', n: 'alarm-clock', L: ['NO ALARM.']},
+  {s: 20.2, k: 'clock', n: 'alarm-clock-face', L: ['NO ALARM.', 'JUST 3:12.'], hot: [1]},
   {s: 23.2, k: 'img', n: 'vitals-monitor', L: ['A HUNDRED', 'SMALL READINGS.']},
   {s: 26.2, k: 'img', n: 'blood-pressure-cuff', L: ['A BLOOD', 'PRESSURE.']},
   {s: 27.8, k: 'img', n: 'pulse-clip', L: ['A PULSE.']},

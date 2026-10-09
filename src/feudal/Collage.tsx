@@ -221,7 +221,7 @@ const DoorLayers: React.FC = () => {
 
 
 // Ponteiros desenhados por cima de mostradores vazios (clock-face, alarm-clock-face, pocket-watch-face): o tempo "corre" e o dos segundos varre a vermelho.
-const CLOCKS: Record<string, {cx: number; cy: number; m: number; h: number; sec: number; w: number}> = {
+export const CLOCKS: Record<string, {cx: number; cy: number; m: number; h: number; sec: number; w: number}> = {
   'clock-face': {cx: 800, cy: 795, m: 400, h: 270, sec: 430, w: 1},
   'alarm-clock-face': {cx: 800, cy: 944, m: 255, h: 175, sec: 285, w: 0.8},
   'pocket-watch-face': {cx: 840, cy: 802, m: 250, h: 170, sec: 275, w: 0.75},
