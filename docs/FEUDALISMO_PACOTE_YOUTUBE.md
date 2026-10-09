@@ -30,7 +30,14 @@ Duas variantes prontas (1920×1080): `out/thumb-A.png` ("NEW LORDS?") e `out/thu
 ## Descrição
 You're not a peasant. But you do pay rent every month — you just never see the bill.
 
-In the ninth century, a peasant handed his freedom to a lord in exchange for protection. Today we tap "Accept." This video follows the parallel between medieval feudalism and the platform economy: the contract, the mill, the toll — and how feudalism actually ended.
+Technofeudalism, explained: in the ninth century a peasant handed his freedom to a lord in exchange for protection. Today we tap "Accept." This video follows the parallel between medieval feudalism and the platform economy (the contract, the mill, the toll) and shows how feudalism actually ended.
+
+In this video:
+• The three things a medieval lord demanded (labor, a share of the harvest, your freedom to leave) and what they look like on your phone
+• Why the lord's mill, oven and wine press were the real business, and what today's equivalents are
+• The app store's commission, the marketplace's fees, and two real court cases: Epic Games v. Apple and FTC v. Amazon
+• The strongest case for the comparison (Varoufakis, Durand) and the strongest case against it (Morozov)
+• How feudalism ended, and one thing you can do this week
 
 Chapters:
 0:00 The choice
@@ -49,13 +56,16 @@ Chapters:
 15:01 What you can do this week
 
 Sources & further reading:
-- Yanis Varoufakis — Technofeudalism: What Killed Capitalism (2023)
-- Cédric Durand — Techno-féodalisme (2020)
-- Evgeny Morozov — critique of the technofeudalism thesis (New Left Review)
+- Yanis Varoufakis, Technofeudalism: What Killed Capitalism (2023)
+- Cédric Durand, Techno-féodalisme (2020)
+- Evgeny Morozov, critique of the technofeudalism thesis (New Left Review)
 - Epic Games v. Apple (N.D. Cal. 2021; 9th Cir.) · FTC et al. v. Amazon (W.D. Wash., filed Sept. 2023)
-- Marc Bloch, Feudal Society; Georges Duby
+- Marc Bloch, Feudal Society · Georges Duby
 
-An explainer, not legal or financial advice. Corrections welcome in the comments.
+Subscribe for more structural breakdowns of the systems behind the platforms you use, and tell us in the comments where you think the comparison holds, or breaks.
+An explainer, not legal or financial advice. Corrections welcome.
+
+#technofeudalism #bigtech #feudalism
 
 ## Tags
 technofeudalism, techno feudalism, digital feudalism, big tech, Varoufakis, Cédric Durand, feudalism explained, how apps make money, app store commission, data privacy, platform economy, surveillance capitalism, Epic v Apple, FTC v Amazon, Black Death, medieval history, documentary
