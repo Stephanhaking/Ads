@@ -5,7 +5,7 @@ import {INK, RED, FPS} from '../feudal/Common';
 
 // Transições de impacto no estilo do canal (papel rasgado, tinta, vermelho). Cada uma dura 2·H frames e está centrada na fronteira:
 // os primeiros H frames cobrem o ecrã, os últimos H descobrem o novo plano. A troca de conteúdo acontece no frame H.
-export type TrKind = 'redtear' | 'ink' | 'iris' | 'strips' | 'punch';
+export type TrKind = 'redtear' | 'ink' | 'iris' | 'strips' | 'punch' | 'roll';
 export const TR_H = 7;
 const io = Easing.inOut(Easing.cubic);
 const cl = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
@@ -69,7 +69,7 @@ export const TransitionAt: React.FC<{at: number; kind: TrKind; cx?: number; cy?:
       {kind === 'ink' && <Ink />}
       {kind === 'iris' && <Iris cx={cx} cy={cy} />}
       {kind === 'strips' && <Strips />}
-      {kind === 'punch' && <Flash />}
+      {(kind === 'punch' || kind === 'roll') && <Flash />}
     </Sequence>
   );
 };
@@ -82,6 +82,21 @@ export const punchStyle = (frame: number, boundaries: number[]): React.CSSProper
       const s = d < 0 ? 1 + 0.22 * Math.pow((d + TR_H) / TR_H, 2) : 0.9 + 0.1 * Easing.out(Easing.cubic)(d / TR_H);
       const bl = d < 0 ? 5 * Math.pow((d + TR_H) / TR_H, 2) : 5 * (1 - d / TR_H);
       return {transform: `scale(${s})`, filter: `blur(${bl}px)`, transformOrigin: '50% 50%'};
+    }
+  }
+  return {};
+};
+
+// câmara a girar: rola 360° em torno do centro com zoom e desfoque; a troca de plano acontece a meio, escondida pelo movimento
+export const rollStyle = (frame: number, boundaries: number[]): React.CSSProperties => {
+  const R = 11;
+  for (const b of boundaries) {
+    const d = frame - Math.round(b * FPS);
+    if (d >= -R && d <= R) {
+      const p = (d + R) / (2 * R);
+      const e = io(p);
+      const bump = Math.sin(Math.PI * p);
+      return {transform: `rotate(${e * 360}deg) scale(${1 + 0.35 * bump})`, filter: `blur(${7 * bump}px)`, transformOrigin: '50% 50%'};
     }
   }
   return {};

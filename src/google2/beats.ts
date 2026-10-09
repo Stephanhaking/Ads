@@ -1,9 +1,9 @@
 // Guião visual do Google v2 (primeiros 3 min). `s` = segundo da locução (alinhado em words.json); o beat dura até ao seguinte.
-export type GBeat = {tr?: 'redtear' | 'ink' | 'iris' | 'strips' | 'punch'; s: number; k: 'img' | 'obj' | 'clock' | 'chase' | 'big' | 'count' | 'strike' | 'stock'; n?: string; L?: string[]; hot?: number[]; v?: number; suf?: string; lab?: string};
+export type GBeat = {tr?: 'redtear' | 'ink' | 'iris' | 'strips' | 'punch' | 'roll'; s: number; k: 'img' | 'obj' | 'clock' | 'doors' | 'chase' | 'big' | 'count' | 'strike' | 'stock'; n?: string; L?: string[]; hot?: number[]; v?: number; suf?: string; lab?: string};
 export const G_END = 182;
 export const GBEATS: GBeat[] = [
   {s: 0, k: 'chase', n: 'nurse-walking-side', L: ['A NIGHT-SHIFT', 'NURSE.'], hot: [1]},
-  {s: 8.3, tr: 'punch', k: 'chase', n: 'hospital-bed-side', L: ['3:12 A.M.', 'THE HOSPITAL', 'IS QUIET.'], hot: [0]},
+  {s: 8.3, tr: 'roll', k: 'chase', n: 'hospital-bed-side', L: ['3:12 A.M.', 'THE HOSPITAL', 'IS QUIET.'], hot: [0]},
   {s: 15.4, tr: 'ink', k: 'chase', n: 'ambulance-side', L: ['THE INSTANT', 'A PATIENT', 'GETS WORSE.']},
   {s: 20.2, tr: 'strips', k: 'clock', n: 'alarm-clock-face', L: ['NO ALARM.', 'JUST 3:12.'], hot: [1]},
   {s: 23.2, tr: 'redtear', k: 'img', n: 'vitals-monitor', L: ['A HUNDRED', 'SMALL READINGS.']},
@@ -11,7 +11,7 @@ export const GBEATS: GBeat[] = [
   {s: 27.8, k: 'img', n: 'pulse-clip', L: ['A PULSE.']},
   {s: 29.0, k: 'img', n: 'test-tube-rack', L: ['A VALUE', 'IN THE BLOOD.']},
   {s: 32.3, k: 'img', n: 'iv-drip-stand', L: ['EACH ONE:', 'NOTHING.', 'EASY TO MISS.'], hot: [2]},
-  {s: 37.7, tr: 'punch', k: 'img', n: 'server-rack', L: ['ALL OF THEM.', 'AT ONCE.'], hot: [1]},
+  {s: 37.7, tr: 'roll', k: 'img', n: 'server-rack', L: ['ALL OF THEM.', 'AT ONCE.'], hot: [1]},
   {s: 43.2, k: 'img', n: 'security-camera', L: ['WITHOUT TIRING.', 'WITHOUT BLINKING.']},
   {s: 48.3, tr: 'iris', k: 'obj', n: 'network-nodes', L: ['2018.', 'A MACHINE LEARNS.'], hot: [0]},
   {s: 52.3, k: 'stock', n: 'watching', L: ['TO SEE', 'IT FIRST.'], hot: [1]},
@@ -26,12 +26,12 @@ export const GBEATS: GBeat[] = [
   {s: 93.4, k: 'img', n: 'closed-file-cabinet', L: ['TESTED ON', 'RECORDS', 'ALREADY CLOSED.']},
   {s: 97.7, k: 'img', n: 'gauge-dial-near-max', L: ['0.93–0.94', 'ON A SCALE', 'WHERE 1 = PERFECT.'], hot: [0]},
   {s: 100.5, k: 'img', n: 'empty-bedside-chair', L: ['NOT AT', 'ANYONE’S', 'BEDSIDE.']},
-  {s: 105.0, tr: 'redtear', k: 'big', L: ['BUT IT PROVED', 'IT COULD BE DONE.']},
+  {s: 105.0, tr: 'roll', k: 'big', L: ['BUT IT PROVED', 'IT COULD BE DONE.']},
   {s: 108.4, k: 'obj', n: 'stethoscope', L: ['A NICE STORY', 'ABOUT TECHNOLOGY', 'SAVING LIVES.']},
   {s: 116.0, tr: 'iris', k: 'obj', n: 'big-question-mark', L: ['ONE QUESTION', 'ALMOST NOBODY', 'ASKS.'], hot: [2]},
   {s: 121.6, tr: 'ink', k: 'big', L: ['WHAT DATA DID IT', 'LEARN TO SEE', 'DEATH FROM?'], hot: [2]},
-  {s: 125.7, tr: 'punch', k: 'strike', n: 'wristband-redacted', L: ['ANONYMOUS']},
-  {s: 134.7, tr: 'redtear', k: 'img', n: 'hospital-swing-doors', L: ['THEY WALKED', 'THROUGH', 'THOSE DOORS.']},
+  {s: 125.7, tr: 'roll', k: 'strike', n: 'wristband-redacted', L: ['ANONYMOUS']},
+  {s: 134.7, tr: 'redtear', k: 'doors', n: 'hospital-swing-doors', v: 1.2, L: ['THEY WALKED', 'THROUGH', 'THOSE DOORS.']},
   {s: 142.9, k: 'obj', n: 'brain', L: ['NOBODY THOUGHT', 'THEY WERE TEACHING', 'A MACHINE.']},
   {s: 146.9, k: 'img', n: 'admission-clipboard', L: ['SIGNED TO', 'BE TREATED.']},
   {s: 150.4, tr: 'strips', k: 'big', L: ['NOT TO BE', 'AN EXAMPLE.']},

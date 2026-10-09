@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, interpolate, spring, staticFile, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, Audio, Easing, Img, OffthreadVideo, Sequence, interpolate, spring, staticFile, useCurrentFrame} from 'remotion';
 import '../fonts';
 import {fonts} from '../styles';
 import {Bg, FPS, INK, Lines, RED, clamp, ease} from '../feudal/Common';
@@ -8,7 +8,7 @@ import {TornDefs} from '../feudal/StyleV2';
 import words from './words.json';
 import {GBEATS, G_END} from './beats';
 import type {GBeat} from './beats';
-import {TransitionAt, punchStyle} from './Transitions';
+import {TransitionAt, punchStyle, rollStyle} from './Transitions';
 
 export const G2_TOTAL = (words as {total: number}).total;
 export const G2_FRAMES = Math.ceil(G2_TOTAL * FPS) + 30;
@@ -41,30 +41,68 @@ const layerS = (n: string, extra?: React.CSSProperties) => <Img src={rig(n)} sty
 const travel = (t: number) => (t < 1.2 ? 300 * ((t * t) / 2.4) : 300 * (0.6 + (t - 1.2)));
 const frac = (x: number) => x - Math.floor(x);
 
-// passada: x do pé relativo à anca (px da imagem) e elevação, para a fase p ∈ [0,1)
-const A_DEG = 26, LEG = 310, FOOT_A = LEG * Math.sin((A_DEG * Math.PI) / 180);
-const footPhase = (p: number) => {
-  if (p < 0.5) return {x: FOOT_A * (1 - 4 * p), lift: 0};            // apoio: o pé anda para trás a velocidade constante
-  const s = (p - 0.5) * 2;
-  return {x: -FOOT_A + 2 * FOOT_A * (0.5 - 0.5 * Math.cos(Math.PI * s)), lift: 26 * Math.sin(Math.PI * s)};
+// passada: o pé/tornozelo anda à velocidade do chão durante o apoio; o pé fica plano (calcanhar toca, dedos saem) e a anca sobe/desce
+import footDepth from './foot_depth.json';
+const A_DEG = 26;
+const HIPX = 300, HIPY = 790, GROUND = 1100;
+const LEGS = {
+  F: {A0: [440, 1052], th0: 29, drawnToeUp: 14},     // perna da frente: desenhada com a ponta do pé para cima
+  B: {A0: [85, 1005], th0: -45, drawnToeUp: -19.5},  // perna de trás: desenhada na descolagem (calcanhar no ar)
+} as const;
+const lenOf = (k: 'F' | 'B') => Math.hypot(LEGS[k].A0[0] - HIPX, LEGS[k].A0[1] - HIPY);
+const ease01 = (x: number) => 0.5 - 0.5 * Math.cos(Math.PI * Math.min(1, Math.max(0, x)));
+const depthAt = (k: 'F' | 'B', css: number) => {
+  const t = footDepth[k] as Record<string, number>;
+  const c = Math.max(-45, Math.min(45, css)), lo = Math.floor(c), hi = Math.ceil(c);
+  return t[String(lo)] + (t[String(hi)] - t[String(lo)]) * (c - lo);
 };
+const footToeUp = (p: number) => {                      // ângulo da ponta do pé (° para cima) ao longo do ciclo
+  if (p < 0.5) { if (p < 0.1) return 14 * (1 - p / 0.1); if (p < 0.38) return 0; return -22 * ((p - 0.38) / 0.12); }
+  return -22 + 36 * ease01((p - 0.5) / 0.5);
+};
+const rotPt = (dx: number, dy: number, deg: number) => { const r = (deg * Math.PI) / 180; return [dx * Math.cos(r) - dy * Math.sin(r), dx * Math.sin(r) + dy * Math.cos(r)]; };
+
 const Nurse: React.FC<{tr: number; k: number}> = ({tr, k}) => {
-  const STRIDE = (4 * FOOT_A) * k;                                    // px do ecrã por ciclo completo (dois passos)
+  const FOOT_A = lenOf('F') * Math.sin((A_DEG * Math.PI) / 180);        // meio passo (px da imagem)
+  const STRIDE = 4 * FOOT_A * k;                                           // px do ecrã por ciclo (dois passos)
   const u = frac(tr / STRIDE);
-  const HIP = '300px 790px';
-  const leg = (p: number, theta0: number, name: string) => {
-    const {x, lift} = footPhase(p);
-    const th = Math.asin(Math.max(-1, Math.min(1, x / LEG)));
-    return {el: layerS(name, {transformOrigin: HIP, transform: `translateY(${-lift}px) rotate(${(-(th * 180) / Math.PI + theta0)}deg)`}), th, st: p < 0.5};
+  const calc = (key: 'F' | 'B', p: number) => {
+    const L = lenOf(key), cfg = LEGS[key];
+    // posição horizontal do tornozelo relativa à anca: apoio linear (pé parado no chão), balanço suave
+    const x = p < 0.5 ? FOOT_A * (1 - 4 * p) : -FOOT_A + 2 * FOOT_A * ease01((p - 0.5) * 2);
+    const th = Math.asin(Math.max(-1, Math.min(1, x / L)));
+    const legCss = cfg.th0 - (th * 180) / Math.PI;                         // rotação CSS (horário) da perna em torno da anca
+    const footCss = cfg.drawnToeUp - footToeUp(p);                          // rotação CSS do pé em torno do tornozelo
+    return {key, p, L, th, legCss, footCss, stance: p < 0.5};
   };
-  const F = leg(u, 29, 'nurse-legF'), B = leg(frac(u + 0.5), -40, 'nurse-legB');
-  const stance = F.st ? F.th : B.th;
-  const drop = LEG * (1 - Math.cos(stance));                          // a anca desce quando a perna de apoio está inclinada
+  const lf = calc('F', u), lb = calc('B', frac(u + 0.5));
+  // a anca ajusta-se para o pé de apoio tocar no chão com a sola plana
+  const st = lf.stance ? lf : lb;
+  const stAnkleY = GROUND - depthAt(st.key, st.footCss);
+  const drop = stAnkleY - HIPY - st.L * Math.cos(st.th);
+  const build = (l: typeof lf) => {
+    const cfg = LEGS[l.key];
+    const [rx, ry] = rotPt(cfg.A0[0] - HIPX, cfg.A0[1] - HIPY, l.legCss);   // tornozelo depois de rodar a perna
+    let lift = 0;
+    if (!l.stance) {
+      const ankleY = HIPY + drop + ry;                                       // sem elevação
+      const need = Math.max(0, ankleY - (GROUND - depthAt(l.key, l.footCss)));
+      lift = need + 20 * Math.sin(Math.PI * (l.p - 0.5) * 2);
+    }
+    const ax = HIPX + rx, ay = HIPY + ry - lift;
+    const name = l.key === 'F' ? 'F' : 'B';
+    return (
+      <>
+        {layerS(`nurse-leg${name}`, {transformOrigin: `${HIPX}px ${HIPY}px`, transform: `translateY(${-lift}px) rotate(${l.legCss}deg)`})}
+        {layerS(`nurse-foot${name}`, {transformOrigin: `${cfg.A0[0]}px ${cfg.A0[1]}px`, transform: `translate(${ax - cfg.A0[0]}px, ${ay - cfg.A0[1]}px) rotate(${l.footCss}deg)`})}
+      </>
+    );
+  };
   const arm = Math.sin(u * Math.PI * 2) * 4;
   return (
     <div style={{position: 'absolute', left: 0, top: 0, width: 651, height: 1111, transform: `translateY(${drop}px)`}}>
-      {B.el}
-      {F.el}
+      {build(lb)}
+      {build(lf)}
       {layerS('nurse-body', {transformOrigin: '260px 330px', transform: `rotate(${arm * 0.25}deg)`})}
     </div>
   );
@@ -88,8 +126,9 @@ const Chase: React.FC<{n: string}> = ({n}) => {
   const dims = isN ? {w: 651, h: 1111, h2: 560, x: 760} : isB ? {w: 1500, h: 747, h2: 400, x: 600} : {w: 1500, h: 781, h2: 430, x: 640};
   const k = dims.h2 / dims.h;
   const bounce = isN ? 0 : Math.sin(t * 9) * 1.2 * ramp;
+  const sway = Math.sin(t * 0.8) * 1.4, zoom = 1.06 + Math.sin(t * 0.5) * 0.015;
   return (
-    <>
+    <div style={{position: 'absolute', inset: 0, transform: `rotate(${sway}deg) scale(${zoom})`, transformOrigin: '50% 60%'}}>
       {[0, 1, 2].map((i) => (
         <Img key={i} src={cut('hospital-corridor-wall')} style={{position: 'absolute', left: ((i * tile - tr * 0.55) % (3 * tile) + 3 * tile) % (3 * tile) - tile, top: ROAD - 560, height: 560, opacity: 0.55}} />
       ))}
@@ -102,7 +141,7 @@ const Chase: React.FC<{n: string}> = ({n}) => {
         <div style={{position: 'absolute', left: '8%', right: '8%', bottom: -10, height: 40, borderRadius: '50%', background: 'rgba(0,0,0,0.3)', filter: 'blur(14px)'}} />
         {isN ? <Nurse tr={tr} k={k} /> : isB ? <Wheeled {...BED} tr={tr} k={k} bounce={bounce} /> : <Wheeled {...AMB} tr={tr} k={k} bounce={bounce} />}
       </div>
-    </>
+    </div>
   );
 };
 
@@ -119,10 +158,10 @@ const ClockFixed: React.FC<{name: string; size: number; t0?: number}> = ({name, 
       <path d={`M ${c.cx - wd} ${c.cy + len * tail} L ${c.cx - wd * 0.45} ${c.cy - len} L ${c.cx + wd * 0.45} ${c.cy - len} L ${c.cx + wd} ${c.cy + len * tail} Z`} fill={INK} stroke="#fff" strokeWidth={3} />
     </g>
   );
-  const f = staticFile(`feudal/obj/${name}.png`);
+  const f = staticFile(`google2/rig/${name}.png`);
   return (
     <div style={{position: 'relative', width: size, height: size}}>
-      <Img src={f} style={{width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply'}} />
+      <Img src={f} style={{width: '100%', height: '100%', objectFit: 'contain'}} />
       <svg viewBox="0 0 1600 1600" style={{position: 'absolute', inset: 0, width: '100%', height: '100%'}}>
         <g style={{filter: 'drop-shadow(5px 7px 6px rgba(0,0,0,0.35))'}}>
           {hand(hour, c.h, 20 * c.w)}{hand(min, c.m, 14 * c.w)}
@@ -140,7 +179,7 @@ const ClockFixed: React.FC<{name: string; size: number; t0?: number}> = ({name, 
 const ClockWall: React.FC = () => {
   const f = useCurrentFrame();
   const o = interpolate(f, [0, 12], [0, 1], clamp);
-  return <div style={{position: 'absolute', right: 120, top: 250, mixBlendMode: 'multiply', transform: `scale(${0.85 + 0.15 * o})`}}><ClockFixed name="clock-face" size={240} t0={4.8} /></div>;
+  return <div style={{position: 'absolute', right: 120, top: 250, transform: `scale(${0.85 + 0.15 * o})`}}><ClockFixed name="clock-face" size={240} t0={4.8} /></div>;
 };
 
 const Count: React.FC<{v: number; suf?: string; lab?: string}> = ({v, suf, lab}) => {
@@ -201,11 +240,37 @@ const ClockBeat: React.FC<{n: string}> = ({n}) => {
   return <div style={{position: 'absolute', left: 1030, top: 150, opacity: p, transform: `translateY(${Math.sin(t * 1.4) * 8}px)`}}><ClockFixed name={n} size={700} t0={0} /></div>;
 };
 
+const Doors: React.FC<{open?: number}> = ({open = 1.2}) => {
+  const f = useCurrentFrame(); const t = f / FPS;
+  const o = interpolate(t, [open, open + 1.3], [0, 1], {...clamp, easing: Easing.inOut(Easing.cubic)});
+  const ang = o * 82;
+  const sp = spring({frame: f, fps: FPS, config: {damping: 14, stiffness: 190, mass: 0.8}});
+  const W0 = 1032, H0 = 1232, S = 0.62;
+  const L = (n: string, st?: React.CSSProperties) => <Img src={staticFile(`google2/rig/${n}.png`)} style={{position: 'absolute', left: 0, top: 0, width: W0, height: H0, ...st}} />;
+  return (
+    <div style={{position: 'absolute', left: 1000 + (1 - sp) * 240, top: 150, width: W0 * S, height: H0 * S, perspective: 1500}}>
+      <div style={{position: 'absolute', left: 0, top: 0, width: W0, height: H0, transformOrigin: '0 0', transform: `scale(${S})`}}>
+        <div style={{position: 'absolute', left: 52, top: 48, width: 923, height: 1128, overflow: 'hidden', background: INK}}>
+          <div style={{position: 'absolute', inset: 0, background: `radial-gradient(ellipse at 50% 55%, #ffffff 0%, #ffe3dc ${20 + 10 * o}%, ${RED} 70%, #3a0a0d 100%)`, opacity: 0.25 + 0.75 * o}} />
+          <svg width="923" height="1128" style={{position: 'absolute', inset: 0, opacity: o}}>
+            {[0.1, 0.25, 0.4, 0.6, 0.75, 0.9].map((x, i) => <line key={i} x1={x * 923} y1={x < 0.5 ? 0 : 1128} x2={461} y2={564} stroke={INK} strokeWidth="5" opacity="0.5" />)}
+            <rect x={361} y={414} width={200} height={300} fill="none" stroke={INK} strokeWidth="6" opacity="0.6" />
+          </svg>
+        </div>
+        {L('doors-frame')}
+        <div style={{position: 'absolute', left: 0, top: 0, width: W0, height: H0, transformOrigin: '52px 0', transform: `rotateY(${-ang}deg)`, transformStyle: 'preserve-3d'}}>{L('doors-leafL')}</div>
+        <div style={{position: 'absolute', left: 0, top: 0, width: W0, height: H0, transformOrigin: '975px 0', transform: `rotateY(${ang}deg)`}}>{L('doors-leafR')}</div>
+      </div>
+    </div>
+  );
+};
+
 const Beat: React.FC<{b: GBeat}> = ({b}) => (
   <>
     {b.k === 'chase' && <><Chase n={b.n!} /><Cap L={b.L!} hot={b.hot} w={1500} size={b.L!.length > 2 ? 84 : 104} y={60} /></>}
     {b.k === 'img' && <><CutImg n={b.n!} /><Cap L={b.L!} hot={b.hot} /></>}
     {b.k === 'obj' && <><ObjView n={b.n!} /><Cap L={b.L!} hot={b.hot} /></>}
+    {b.k === 'doors' && <><Doors open={b.v} /><Cap L={b.L!} hot={b.hot} /></>}
     {b.k === 'clock' && <><ClockBeat n={b.n!} /><Cap L={b.L!} hot={b.hot} /></>}
     {b.k === 'stock' && <><Stock n={b.n!} /><Cap L={b.L!} hot={b.hot} /></>}
     {b.k === 'big' && <Big L={b.L!} hot={b.hot} />}
@@ -230,11 +295,12 @@ const Counter: React.FC = () => {
 export const GoogleV2: React.FC = () => {
   const frame = useCurrentFrame();
   const punches = GBEATS.filter((b) => b.tr === 'punch').map((b) => b.s);
+  const rolls = GBEATS.filter((b) => b.tr === 'roll').map((b) => b.s);
   return (
     <AbsoluteFill>
       <Bg theme="paper" />
       <TornDefs />
-      <AbsoluteFill style={punchStyle(frame, punches)}>
+      <AbsoluteFill style={{...punchStyle(frame, punches), ...rollStyle(frame, rolls)}}>
         {GBEATS.map((b, i) => {
           const e = i + 1 < GBEATS.length ? GBEATS[i + 1].s : G_END;
           return (
