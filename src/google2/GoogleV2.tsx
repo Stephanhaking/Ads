@@ -8,6 +8,7 @@ import {TornDefs} from '../feudal/StyleV2';
 import words from './words.json';
 import {GBEATS, G_END} from './beats';
 import type {GBeat} from './beats';
+import {TransitionAt, punchStyle} from './Transitions';
 
 export const G2_TOTAL = (words as {total: number}).total;
 export const G2_FRAMES = Math.ceil(G2_TOTAL * FPS) + 30;
@@ -120,7 +121,7 @@ const ClockFixed: React.FC<{name: string; size: number; t0?: number}> = ({name, 
   );
   const f = staticFile(`feudal/obj/${name}.png`);
   return (
-    <div style={{position: 'relative', width: size, height: size, mixBlendMode: 'multiply'}}>
+    <div style={{position: 'relative', width: size, height: size}}>
       <Img src={f} style={{width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply'}} />
       <svg viewBox="0 0 1600 1600" style={{position: 'absolute', inset: 0, width: '100%', height: '100%'}}>
         <g style={{filter: 'drop-shadow(5px 7px 6px rgba(0,0,0,0.35))'}}>
@@ -139,7 +140,7 @@ const ClockFixed: React.FC<{name: string; size: number; t0?: number}> = ({name, 
 const ClockWall: React.FC = () => {
   const f = useCurrentFrame();
   const o = interpolate(f, [0, 12], [0, 1], clamp);
-  return <div style={{position: 'absolute', right: 120, top: 250, opacity: o}}><ClockFixed name="clock-face" size={240} t0={4.8} /></div>;
+  return <div style={{position: 'absolute', right: 120, top: 250, mixBlendMode: 'multiply', transform: `scale(${0.85 + 0.15 * o})`}}><ClockFixed name="clock-face" size={240} t0={4.8} /></div>;
 };
 
 const Count: React.FC<{v: number; suf?: string; lab?: string}> = ({v, suf, lab}) => {
@@ -226,21 +227,28 @@ const Counter: React.FC = () => {
   );
 };
 
-export const GoogleV2: React.FC = () => (
-  <AbsoluteFill>
-    <Bg theme="paper" />
-    <TornDefs />
-    {GBEATS.map((b, i) => {
-      const e = i + 1 < GBEATS.length ? GBEATS[i + 1].s : G_END;
-      return (
-        <Sequence key={i} from={Math.round(b.s * FPS)} durationInFrames={Math.max(1, Math.round((e - b.s) * FPS))} layout="none">
-          <Beat b={b} />
-          {(b.k === 'img' || b.k === 'obj') && <Audio src={staticFile('audio/sfx/whoosh-b.wav')} volume={0.18} />}
-        </Sequence>
-      );
-    })}
-    <Counter />
-    <Audio src={staticFile('audio/google2/voice.wav')} />
-    <Audio src={staticFile('audio/music/distinguish.mp3')} volume={(f) => 0.15 * interpolate(f, [0, 90], [0, 1], clamp)} />
-  </AbsoluteFill>
-);
+export const GoogleV2: React.FC = () => {
+  const frame = useCurrentFrame();
+  const punches = GBEATS.filter((b) => b.tr === 'punch').map((b) => b.s);
+  return (
+    <AbsoluteFill>
+      <Bg theme="paper" />
+      <TornDefs />
+      <AbsoluteFill style={punchStyle(frame, punches)}>
+        {GBEATS.map((b, i) => {
+          const e = i + 1 < GBEATS.length ? GBEATS[i + 1].s : G_END;
+          return (
+            <Sequence key={i} from={Math.round(b.s * FPS)} durationInFrames={Math.max(1, Math.round((e - b.s) * FPS))} layout="none">
+              <Beat b={b} />
+              {(b.k === 'img' || b.k === 'obj') && !b.tr && <Audio src={staticFile('audio/sfx/whoosh-b.wav')} volume={0.18} />}
+            </Sequence>
+          );
+        })}
+        <Counter />
+      </AbsoluteFill>
+      {GBEATS.filter((b) => b.tr).map((b, i) => <TransitionAt key={i} at={b.s} kind={b.tr!} />)}
+      <Audio src={staticFile('audio/google2/voice.wav')} />
+      <Audio src={staticFile('audio/music/distinguish.mp3')} volume={(f) => 0.15 * interpolate(f, [0, 90], [0, 1], clamp)} />
+    </AbsoluteFill>
+  );
+};
