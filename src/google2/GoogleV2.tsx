@@ -64,33 +64,44 @@ const rotPt = (dx: number, dy: number, deg: number) => { const r = (deg * Math.P
 
 // enfermeira: pernas vetoriais (cinemática inversa de 2 ossos) com ciclo de passada exato.
 // O pé de apoio fica parado no chão (anda à velocidade do ecrã), a sola assenta plana, o calcanhar sobe antes de sair.
-const L1 = 185, L2 = 185;
-const NGROUND = 1100, NHIPX = 292, NHIP_NOM = 717;
-const SHOE: [number, number][] = [[-22, -14], [-27, 18], [-20, 24], [52, 24], [69, 16], [61, 2], [35, -7], [12, -16]];
+const NS = 0.225;                                              // escala da perna gravada (px da imagem da enfermeira por px da gravura)
+const LEG_TOP = [506, 200], LEG_KNEE = [526, 740], LEG_ANK = [497, 1830];
+const L1 = Math.hypot(LEG_KNEE[0] - LEG_TOP[0], LEG_KNEE[1] - LEG_TOP[1]) * NS;
+const L2 = Math.hypot(LEG_ANK[0] - LEG_KNEE[0], LEG_ANK[1] - LEG_KNEE[1]) * NS;
+const NGROUND = 1100, NHIPX = 292, NHIP_NOM = 694;
+const SHOE_S = 0.12, SHOE_Q = [240, 95];                     // sapato gravado: escala e ponto do tornozelo
+const SHOE: [number, number][] = [[-29, 0], [-29, 36], [-24, 40], [80, 40], [91, 30], [91, 16], [50, 0]];
 const rotXY = (x: number, y: number, deg: number): [number, number] => { const r = (deg * Math.PI) / 180; return [x * Math.cos(r) - y * Math.sin(r), x * Math.sin(r) + y * Math.cos(r)]; };
-const taper = (a: number[], b: number[], wa: number, wb: number) => {
-  const dx = b[0] - a[0], dy = b[1] - a[1], d = Math.hypot(dx, dy) || 1, nx = -dy / d, ny = dx / d;
-  return `${a[0] + nx * wa / 2},${a[1] + ny * wa / 2} ${b[0] + nx * wb / 2},${b[1] + ny * wb / 2} ${b[0] - nx * wb / 2},${b[1] - ny * wb / 2} ${a[0] - nx * wa / 2},${a[1] - ny * wa / 2}`;
+// transformação que leva o segmento s0→s1 da gravura para t0→t1 no ecrã
+const segT = (s0: number[], s1: number[], t0: number[], t1: number[]) => {
+  const sc = Math.hypot(t1[0] - t0[0], t1[1] - t0[1]) / Math.hypot(s1[0] - s0[0], s1[1] - s0[1]);
+  const ang = (Math.atan2(t1[1] - t0[1], t1[0] - t0[0]) - Math.atan2(s1[1] - s0[1], s1[0] - s0[0])) * 180 / Math.PI;
+  return `translate(${t0[0]} ${t0[1]}) rotate(${ang}) scale(${sc}) translate(${-s0[0]} ${-s0[1]})`;
 };
-const NurseLeg: React.FC<{hip: number[]; p: number; A: number; id: string}> = ({hip, p, A, id}) => {
+const NurseLeg: React.FC<{hip: number[]; p: number; A: number}> = ({hip, p, A}) => {
   const stance = p < 0.5;
   const x = stance ? A * (1 - 4 * p) : -A + 2 * A * ease01((p - 0.5) * 2);
   const toe = footToeUp(p);
-  const pts = SHOE.map(([sx, sy]) => rotXY(sx, sy, -toe));
-  const maxY = Math.max(...pts.map((q) => q[1]));
+  const maxY = Math.max(...SHOE.map(([sx, sy]) => rotXY(sx, sy, -toe)[1]));
   const lift = stance ? 0 : 52 * Math.sin(Math.PI * (p - 0.5) * 2) ** 1.3;
   const ank = [hip[0] + x, NGROUND - maxY - lift];
-  const dx = ank[0] - hip[0], dy = ank[1] - hip[1], d = Math.min(Math.hypot(dx, dy), L1 + L2 - 0.5);
-  const hh = Math.sqrt(Math.max(0, L1 * L1 - (d / 2) * (d / 2)));
-  const ux = dx / Math.hypot(dx, dy), uy = dy / Math.hypot(dx, dy);
-  const knee = [hip[0] + ux * d / 2 + uy * hh, hip[1] + uy * d / 2 - ux * hh];   // joelho dobra para a frente (+x)
-  const poly = SHOE.map(([sx, sy]) => { const [rx, ry] = rotXY(sx, sy, -toe); return `${ank[0] + rx},${ank[1] + ry}`; }).join(' ');
+  const dx = ank[0] - hip[0], dy = ank[1] - hip[1], dist = Math.hypot(dx, dy), d = Math.min(dist, L1 + L2 - 0.5);
+  const cosA = (L1 * L1 + d * d - L2 * L2) / (2 * L1 * d);                    // ângulo na anca entre coxa e a linha anca→tornozelo
+  const aH = Math.acos(Math.max(-1, Math.min(1, cosA)));
+  const base = Math.atan2(dy, dx);
+  const kA = base - aH;                                                        // joelho para a frente (+x): roda para o lado "antes" da linha
+  const knee = [hip[0] + Math.cos(kA) * L1, hip[1] + Math.sin(kA) * L1];
+  const src = staticFile('google2/rig/nurse2-leg.png'), shoe = staticFile('google2/rig/nurse2-shoe.png');
+  const tT = segT(LEG_TOP, LEG_KNEE, hip, knee), tS = segT(LEG_KNEE, LEG_ANK, knee, ank);
+  const img = <image href={src} x={0} y={0} width={1000} height={2000} />;
   return (
-    <g stroke={INK} strokeWidth={3.5} strokeLinejoin="round">
-      <polygon points={taper(hip, knee, 72, 54)} fill={`url(#${id})`} />
-      <polygon points={taper(knee, ank, 54, 36)} fill={`url(#${id})`} />
-      <circle cx={knee[0]} cy={knee[1]} r={27} fill={`url(#${id})`} stroke="none" />
-      <polygon points={poly} fill="#f3ecdc" strokeWidth={4.5} />
+    <g>
+      <g transform={tT}><g clipPath="url(#thc)">{img}</g></g>
+      <g transform={tS}><g clipPath="url(#shc)">{img}</g></g>
+      <g transform={tS}><g clipPath="url(#knc)">{img}</g></g>
+      <g transform={`translate(${ank[0]} ${ank[1]}) rotate(${-toe}) scale(${SHOE_S}) translate(${-SHOE_Q[0]} ${-SHOE_Q[1]})`}>
+        <image href={shoe} x={0} y={0} width={1000} height={427} />
+      </g>
     </g>
   );
 };
@@ -100,7 +111,7 @@ const Nurse: React.FC<{tr: number; k: number}> = ({tr, k}) => {
   const u = frac(tr / STRIDE);
   const pF = u, pB = frac(u + 0.5);
   const xs = Math.abs((pF < 0.5 ? A * (1 - 4 * pF) : A * (1 - 4 * pB)));
-  const hipY = NGROUND - 24 - Math.sqrt((L1 + L2 - 4) ** 2 - xs * xs);   // a anca desce na dupla-apoio e sobe a meio do apoio
+  const hipY = NGROUND - 42 - Math.sqrt((L1 + L2 - 4) ** 2 - xs * xs);   // a anca desce na dupla-apoio e sobe a meio do apoio
   const drop = hipY - NHIP_NOM;
   const hip = [NHIPX, hipY + 0];
   const arm = Math.sin(u * Math.PI * 2) * 4;
@@ -108,12 +119,12 @@ const Nurse: React.FC<{tr: number; k: number}> = ({tr, k}) => {
     <div style={{position: 'absolute', left: 0, top: 0, width: 651, height: 1111}}>
       <svg width={651} height={1111} style={{position: 'absolute', left: 0, top: 0}}>
         <defs>
-          <pattern id="nl" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
-            <rect width="6" height="6" fill="#d9ccb2" /><circle cx="3" cy="3" r="2.5" fill={INK} />
-          </pattern>
+          <clipPath id="thc"><rect x={0} y={0} width={1000} height={820} /></clipPath>
+          <clipPath id="shc"><rect x={0} y={690} width={1000} height={1310} /></clipPath>
+          <clipPath id="knc"><circle cx={LEG_KNEE[0]} cy={LEG_KNEE[1]} r={150} /></clipPath>
         </defs>
-        <NurseLeg hip={hip} p={pB} A={A} id="nl" />
-        <NurseLeg hip={hip} p={pF} A={A} id="nl" />
+        <NurseLeg hip={hip} p={pB} A={A} />
+        <NurseLeg hip={hip} p={pF} A={A} />
       </svg>
       <div style={{position: 'absolute', left: 0, top: 0, width: 651, height: 1111, transform: `translateY(${drop}px)`}}>
         {layerS('nurse-body', {transformOrigin: '260px 330px', transform: `rotate(${arm * 0.25}deg)`})}
