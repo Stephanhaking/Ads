@@ -72,7 +72,7 @@ if __name__ == '__main__':
             print(q, 'erro', str(e)[:80])
     res.sort(key=lambda r: -r['score'])
     day = dt.date.today().isoformat()
-    base = os.path.join(os.path.dirname(__file__), '..', 'docs', f'NICHOS_{day}')
+    base = os.path.join(os.path.dirname(__file__), '..', 'docs', f'NICHOS_{day}_' + dt.datetime.now().strftime('%H%M%S'))
     with open(base + '.csv', 'w', newline='', encoding='utf-8') as f:
         w = csv.writer(f); w.writerow(['tema', 'procura', 'outlier', 'pequenos', 'gigantes', 'score', 'melhor_video', 'melhor_canal_pequeno'])
         for r in res: w.writerow([r['q'], r['demand'], r['outlier'], r['small'], r['giants'], int(r['score']), r['best']['title'], (r['best_small'] or {}).get('title', '')])
