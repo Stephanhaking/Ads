@@ -62,48 +62,62 @@ const footToeUp = (p: number) => {                      // ângulo da ponta do p
 };
 const rotPt = (dx: number, dy: number, deg: number) => { const r = (deg * Math.PI) / 180; return [dx * Math.cos(r) - dy * Math.sin(r), dx * Math.sin(r) + dy * Math.cos(r)]; };
 
+// enfermeira: pernas vetoriais (cinemática inversa de 2 ossos) com ciclo de passada exato.
+// O pé de apoio fica parado no chão (anda à velocidade do ecrã), a sola assenta plana, o calcanhar sobe antes de sair.
+const L1 = 185, L2 = 185;
+const NGROUND = 1100, NHIPX = 292, NHIP_NOM = 717;
+const SHOE: [number, number][] = [[-22, -14], [-27, 18], [-20, 24], [52, 24], [69, 16], [61, 2], [35, -7], [12, -16]];
+const rotXY = (x: number, y: number, deg: number): [number, number] => { const r = (deg * Math.PI) / 180; return [x * Math.cos(r) - y * Math.sin(r), x * Math.sin(r) + y * Math.cos(r)]; };
+const taper = (a: number[], b: number[], wa: number, wb: number) => {
+  const dx = b[0] - a[0], dy = b[1] - a[1], d = Math.hypot(dx, dy) || 1, nx = -dy / d, ny = dx / d;
+  return `${a[0] + nx * wa / 2},${a[1] + ny * wa / 2} ${b[0] + nx * wb / 2},${b[1] + ny * wb / 2} ${b[0] - nx * wb / 2},${b[1] - ny * wb / 2} ${a[0] - nx * wa / 2},${a[1] - ny * wa / 2}`;
+};
+const NurseLeg: React.FC<{hip: number[]; p: number; A: number; id: string}> = ({hip, p, A, id}) => {
+  const stance = p < 0.5;
+  const x = stance ? A * (1 - 4 * p) : -A + 2 * A * ease01((p - 0.5) * 2);
+  const toe = footToeUp(p);
+  const pts = SHOE.map(([sx, sy]) => rotXY(sx, sy, -toe));
+  const maxY = Math.max(...pts.map((q) => q[1]));
+  const lift = stance ? 0 : 52 * Math.sin(Math.PI * (p - 0.5) * 2) ** 1.3;
+  const ank = [hip[0] + x, NGROUND - maxY - lift];
+  const dx = ank[0] - hip[0], dy = ank[1] - hip[1], d = Math.min(Math.hypot(dx, dy), L1 + L2 - 0.5);
+  const hh = Math.sqrt(Math.max(0, L1 * L1 - (d / 2) * (d / 2)));
+  const ux = dx / Math.hypot(dx, dy), uy = dy / Math.hypot(dx, dy);
+  const knee = [hip[0] + ux * d / 2 + uy * hh, hip[1] + uy * d / 2 - ux * hh];   // joelho dobra para a frente (+x)
+  const poly = SHOE.map(([sx, sy]) => { const [rx, ry] = rotXY(sx, sy, -toe); return `${ank[0] + rx},${ank[1] + ry}`; }).join(' ');
+  return (
+    <g stroke={INK} strokeWidth={3.5} strokeLinejoin="round">
+      <polygon points={taper(hip, knee, 72, 54)} fill={`url(#${id})`} />
+      <polygon points={taper(knee, ank, 54, 36)} fill={`url(#${id})`} />
+      <circle cx={knee[0]} cy={knee[1]} r={27} fill={`url(#${id})`} stroke="none" />
+      <polygon points={poly} fill="#f3ecdc" strokeWidth={4.5} />
+    </g>
+  );
+};
 const Nurse: React.FC<{tr: number; k: number}> = ({tr, k}) => {
-  const FOOT_A = lenOf('F') * Math.sin((A_DEG * Math.PI) / 180);        // meio passo (px da imagem)
-  const STRIDE = 4 * FOOT_A * k;                                           // px do ecrã por ciclo (dois passos)
+  const A = 88;                                                  // meio passo (px da imagem)
+  const STRIDE = 4 * A * k;                                      // px do ecrã por ciclo (dois passos)
   const u = frac(tr / STRIDE);
-  const calc = (key: 'F' | 'B', p: number) => {
-    const L = lenOf(key), cfg = LEGS[key];
-    // posição horizontal do tornozelo relativa à anca: apoio linear (pé parado no chão), balanço suave
-    const x = p < 0.5 ? FOOT_A * (1 - 4 * p) : -FOOT_A + 2 * FOOT_A * ease01((p - 0.5) * 2);
-    const th = Math.asin(Math.max(-1, Math.min(1, x / L)));
-    const legCss = cfg.th0 - (th * 180) / Math.PI;                         // rotação CSS (horário) da perna em torno da anca
-    const footCss = cfg.drawnToeUp - footToeUp(p);                          // rotação CSS do pé em torno do tornozelo
-    return {key, p, L, th, legCss, footCss, stance: p < 0.5};
-  };
-  const lf = calc('F', u), lb = calc('B', frac(u + 0.5));
-  // a anca ajusta-se para o pé de apoio tocar no chão com a sola plana
-  const st = lf.stance ? lf : lb;
-  const stAnkleY = GROUND - depthAt(st.key, st.footCss);
-  const drop = stAnkleY - HIPY - st.L * Math.cos(st.th);
-  const build = (l: typeof lf) => {
-    const cfg = LEGS[l.key];
-    const [rx, ry] = rotPt(cfg.A0[0] - HIPX, cfg.A0[1] - HIPY, l.legCss);   // tornozelo depois de rodar a perna
-    let lift = 0;
-    if (!l.stance) {
-      const ankleY = HIPY + drop + ry;                                       // sem elevação
-      const need = Math.max(0, ankleY - (GROUND - depthAt(l.key, l.footCss)));
-      lift = need + 20 * Math.sin(Math.PI * (l.p - 0.5) * 2);
-    }
-    const ax = HIPX + rx, ay = HIPY + ry - lift;
-    const name = l.key === 'F' ? 'F' : 'B';
-    return (
-      <>
-        {layerS(`nurse-leg${name}`, {transformOrigin: `${HIPX}px ${HIPY}px`, transform: `translateY(${-lift}px) rotate(${l.legCss}deg)`})}
-        {layerS(`nurse-foot${name}`, {transformOrigin: `${cfg.A0[0]}px ${cfg.A0[1]}px`, transform: `translate(${ax - cfg.A0[0]}px, ${ay - cfg.A0[1]}px) rotate(${l.footCss}deg)`})}
-      </>
-    );
-  };
+  const pF = u, pB = frac(u + 0.5);
+  const xs = Math.abs((pF < 0.5 ? A * (1 - 4 * pF) : A * (1 - 4 * pB)));
+  const hipY = NGROUND - 24 - Math.sqrt((L1 + L2 - 4) ** 2 - xs * xs);   // a anca desce na dupla-apoio e sobe a meio do apoio
+  const drop = hipY - NHIP_NOM;
+  const hip = [NHIPX, hipY + 0];
   const arm = Math.sin(u * Math.PI * 2) * 4;
   return (
-    <div style={{position: 'absolute', left: 0, top: 0, width: 651, height: 1111, transform: `translateY(${drop}px)`}}>
-      {build(lb)}
-      {build(lf)}
-      {layerS('nurse-body', {transformOrigin: '260px 330px', transform: `rotate(${arm * 0.25}deg)`})}
+    <div style={{position: 'absolute', left: 0, top: 0, width: 651, height: 1111}}>
+      <svg width={651} height={1111} style={{position: 'absolute', left: 0, top: 0}}>
+        <defs>
+          <pattern id="nl" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
+            <rect width="6" height="6" fill="#d9ccb2" /><circle cx="3" cy="3" r="2.5" fill={INK} />
+          </pattern>
+        </defs>
+        <NurseLeg hip={hip} p={pB} A={A} id="nl" />
+        <NurseLeg hip={hip} p={pF} A={A} id="nl" />
+      </svg>
+      <div style={{position: 'absolute', left: 0, top: 0, width: 651, height: 1111, transform: `translateY(${drop}px)`}}>
+        {layerS('nurse-body', {transformOrigin: '260px 330px', transform: `rotate(${arm * 0.25}deg)`})}
+      </div>
     </div>
   );
 };
@@ -116,6 +130,17 @@ const Wheeled: React.FC<{body: string; wheels: {n: string; cx: number; cy: numbe
 const AMB = {body: 'amb-body', wheels: [{n: 'amb-wheel0', cx: 313.5, cy: 636.5, r: 138}, {n: 'amb-wheel1', cx: 1298.5, cy: 636.5, r: 138}]};
 const BED = {body: 'bed-body', wheels: [0, 1, 2].map((i) => ({n: `bed-wheel${i}`, cx: [220, 700, 1240][i], cy: 700, r: 52}))};
 
+// olhar de coruja: pára, vira a cabeça depressa para um lado (com ligeiro excesso), pára, vira para o outro, volta
+const OWL: [number, number][] = [[0, 0], [1.1, 0], [1.55, 1], [3.1, 1], [3.5, -0.8], [5.2, -0.8], [5.7, 0], [7, 0]];
+const owlLook = (t: number) => {
+  const tt = t % 7;
+  for (let i = 0; i < OWL.length - 1; i++) {
+    const [t0, v0] = OWL[i], [t1, v1] = OWL[i + 1];
+    if (tt >= t0 && tt <= t1) return v0 === v1 ? v0 : interpolate(tt, [t0, t1], [v0, v1], {easing: Easing.bezier(0.7, 0, 0.2, 1.12), ...clamp});
+  }
+  return 0;
+};
+
 const Chase: React.FC<{n: string}> = ({n}) => {
   const f = useCurrentFrame(); const t = f / FPS;
   const ramp = interpolate(t, [0, 1.2], [0, 1], {...clamp, easing: ease});
@@ -126,18 +151,19 @@ const Chase: React.FC<{n: string}> = ({n}) => {
   const dims = isN ? {w: 651, h: 1111, h2: 560, x: 760} : isB ? {w: 1500, h: 747, h2: 400, x: 600} : {w: 1500, h: 781, h2: 430, x: 640};
   const k = dims.h2 / dims.h;
   const bounce = isN ? 0 : Math.sin(t * 9) * 1.2 * ramp;
-  const sway = Math.sin(t * 0.8) * 1.4, zoom = 1.06 + Math.sin(t * 0.5) * 0.015;
+  const sway = Math.sin(t * 0.8) * 0.6, zoom = 1.1 + Math.sin(t * 0.5) * 0.012;
+  const owl = owlLook(t), camX = owl * 150;
   return (
-    <div style={{position: 'absolute', inset: 0, transform: `rotate(${sway}deg) scale(${zoom})`, transformOrigin: '50% 60%'}}>
+    <div style={{position: 'absolute', inset: 0, transform: `perspective(1800px) translateX(${camX}px) rotateY(${owl * -6}deg) rotate(${sway + owl * 0.9}deg) scale(${zoom})`, transformOrigin: '50% 60%'}}>
       {[0, 1, 2].map((i) => (
         <Img key={i} src={cut('hospital-corridor-wall')} style={{position: 'absolute', left: ((i * tile - tr * 0.55) % (3 * tile) + 3 * tile) % (3 * tile) - tile, top: ROAD - 560, height: 560, opacity: 0.55}} />
       ))}
       <ClockWall />
-      <div style={{position: 'absolute', left: -60, right: -60, top: ROAD, height: 170, background: INK, filter: 'url(#torn)'}} />
+      <div style={{position: 'absolute', left: -400, right: -400, top: ROAD, height: 170, background: INK, filter: 'url(#torn)'}} />
       <svg width="1920" height="1080" style={{position: 'absolute', inset: 0}}>
         {Array.from({length: 14}).map((_, i) => <rect key={i} x={((i * 190 - tr) % 2660 + 2660) % 2660 - 200} y={ROAD + 62} width="110" height="9" rx="3" fill="#F2EADB" />)}
       </svg>
-      <div style={{position: 'absolute', left: dims.x + (1 - ramp) * -800, top: ROAD - dims.h2 - 4, width: dims.w, height: dims.h, transformOrigin: '0 0', transform: `translateY(${(dims.h2 - dims.h * k) * 0}px) scale(${k})`}}>
+      <div style={{position: 'absolute', left: dims.x + (1 - ramp) * -800 - camX * 0.5, top: ROAD - dims.h2 - 4, width: dims.w, height: dims.h, transformOrigin: '0 0', transform: `translateY(${(dims.h2 - dims.h * k) * 0}px) scale(${k})`}}>
         <div style={{position: 'absolute', left: '8%', right: '8%', bottom: -10, height: 40, borderRadius: '50%', background: 'rgba(0,0,0,0.3)', filter: 'blur(14px)'}} />
         {isN ? <Nurse tr={tr} k={k} /> : isB ? <Wheeled {...BED} tr={tr} k={k} bounce={bounce} /> : <Wheeled {...AMB} tr={tr} k={k} bounce={bounce} />}
       </div>
