@@ -131,9 +131,9 @@ const AMB = {body: 'amb-body', wheels: [{n: 'amb-wheel0', cx: 313.5, cy: 636.5, 
 const BED = {body: 'bed-body', wheels: [0, 1, 2].map((i) => ({n: `bed-wheel${i}`, cx: [220, 700, 1240][i], cy: 700, r: 52}))};
 
 // olhar de coruja: pára, vira a cabeça depressa para um lado (com ligeiro excesso), pára, vira para o outro, volta
-const OWL: [number, number][] = [[0, 0], [1.1, 0], [1.55, 1], [3.1, 1], [3.5, -0.8], [5.2, -0.8], [5.7, 0], [7, 0]];
+const OWL: [number, number][] = [[0, 0], [0.5, 0], [0.95, -1], [2.0, -1], [2.45, 1], [3.7, 1], [4.2, 0], [5.5, 0]];
 const owlLook = (t: number) => {
-  const tt = t % 7;
+  const tt = t % 5.5;
   for (let i = 0; i < OWL.length - 1; i++) {
     const [t0, v0] = OWL[i], [t1, v1] = OWL[i + 1];
     if (tt >= t0 && tt <= t1) return v0 === v1 ? v0 : interpolate(tt, [t0, t1], [v0, v1], {easing: Easing.bezier(0.7, 0, 0.2, 1.12), ...clamp});
@@ -151,10 +151,10 @@ const Chase: React.FC<{n: string}> = ({n}) => {
   const dims = isN ? {w: 651, h: 1111, h2: 560, x: 760} : isB ? {w: 1500, h: 747, h2: 400, x: 600} : {w: 1500, h: 781, h2: 430, x: 640};
   const k = dims.h2 / dims.h;
   const bounce = isN ? 0 : Math.sin(t * 9) * 1.2 * ramp;
-  const sway = Math.sin(t * 0.8) * 0.6, zoom = 1.1 + Math.sin(t * 0.5) * 0.012;
-  const owl = owlLook(t), camX = owl * 150;
+  const sway = Math.sin(t * 0.8) * 1.4, zoom = 1.06 + Math.sin(t * 0.5) * 0.015;
+  const camX = 0;
   return (
-    <div style={{position: 'absolute', inset: 0, transform: `perspective(1800px) translateX(${camX}px) rotateY(${owl * -6}deg) rotate(${sway + owl * 0.9}deg) scale(${zoom})`, transformOrigin: '50% 60%'}}>
+    <div style={{position: 'absolute', inset: 0, transform: `rotate(${sway}deg) scale(${zoom})`, transformOrigin: '50% 60%'}}>
       {[0, 1, 2].map((i) => (
         <Img key={i} src={cut('hospital-corridor-wall')} style={{position: 'absolute', left: ((i * tile - tr * 0.55) % (3 * tile) + 3 * tile) % (3 * tile) - tile, top: ROAD - 560, height: 560, opacity: 0.55}} />
       ))}
@@ -240,6 +240,28 @@ const Strike: React.FC<{n: string; L: string[]}> = ({n, L}) => {
   );
 };
 
+
+// câmara de vigilância (objeto): o suporte fica fixo e a cúpula vira como a cabeça de uma coruja
+const OwlCam: React.FC = () => {
+  const f = useCurrentFrame(); const t = f / FPS;
+  const sp = spring({frame: f, fps: FPS, config: {damping: 14, stiffness: 190, mass: 0.8}});
+  const a = owlLook(t);
+  const W = 987, H = 1167, S = 800 / H;
+  const DOME = 'polygon(0px 270px, 520px 270px, 745px 430px, 770px 1167px, 0px 1167px)';
+  const BRACKET = 'polygon(0px 0px, 987px 0px, 987px 1167px, 770px 1167px, 745px 430px, 520px 270px, 0px 270px)';
+  const img = <Img src={cut('security-camera')} style={{position: 'absolute', left: 0, top: 0, width: W, height: H}} />;
+  return (
+    <div style={{position: 'absolute', left: 1091 + (1 - sp) * 260, top: 120 + Math.sin(t * 1.3) * 5, width: W * S, height: H * S, opacity: Math.min(1, f / 5)}}>
+      <div style={{position: 'absolute', left: 0, top: 0, width: W, height: H, transformOrigin: '0 0', transform: `scale(${S})`}}>
+        <div style={{position: 'absolute', inset: 0, clipPath: BRACKET}}>{img}</div>
+        <div style={{position: 'absolute', inset: 0, perspective: 1600, perspectiveOrigin: '560px 640px'}}>
+          <div style={{position: 'absolute', inset: 0, clipPath: DOME, transformOrigin: '560px 640px', transform: `rotateY(${a * 50}deg) rotateZ(${a * -2.5}deg)`}}>{img}</div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Stock: React.FC<{n: string}> = ({n}) => {
   const f = useCurrentFrame();
   const o = interpolate(f, [0, 8], [0, 1], clamp);
@@ -294,7 +316,7 @@ const Doors: React.FC<{open?: number}> = ({open = 1.2}) => {
 const Beat: React.FC<{b: GBeat}> = ({b}) => (
   <>
     {b.k === 'chase' && <><Chase n={b.n!} /><Cap L={b.L!} hot={b.hot} w={1500} size={b.L!.length > 2 ? 84 : 104} y={60} /></>}
-    {b.k === 'img' && <><CutImg n={b.n!} /><Cap L={b.L!} hot={b.hot} /></>}
+    {b.k === 'img' && <>{b.n === 'security-camera' ? <OwlCam /> : <CutImg n={b.n!} />}<Cap L={b.L!} hot={b.hot} /></>}
     {b.k === 'obj' && <><ObjView n={b.n!} /><Cap L={b.L!} hot={b.hot} /></>}
     {b.k === 'doors' && <><Doors open={b.v} /><Cap L={b.L!} hot={b.hot} /></>}
     {b.k === 'clock' && <><ClockBeat n={b.n!} /><Cap L={b.L!} hot={b.hot} /></>}
