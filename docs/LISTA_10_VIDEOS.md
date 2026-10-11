@@ -22,3 +22,20 @@ Dados: `docs/NICHOS_2026-10-11_run1.md` e `_run2.md` (YouTube Data API, últimos
 
 ## Aviso honesto
 O canal tem vídeos com 2 a 188 visualizações (dados da API em 11 de outubro de 2026). Temas com procura baixa (#5 a #10) podem não ter público. O que escolhermos deve ser validado: 10 minutos à mão no YouTube por tema e uma miniatura/título testados.
+
+## Títulos (v2), no estilo dos que já funcionaram no canal ("Jaguar Just Quit. Here's Why.", "P&G Was Accused of Satanism. By a Rival.")
+Fórmula: **uma afirmação concreta + uma reviravolta**, sem "explained" nem palavras abstratas. Verificar cada afirmação antes de gravar.
+| # | Opção A | Opção B | Opção C |
+|---|---|---|---|
+| 1 Contentor | The Steel Box That Broke Every Port on Earth | One Trucker, One Box, and the End of the Dockworker | The Box That Made Everything Cheaper (and Workers Powerless) |
+| 2 Banca | Banks Used to Hold Your Money, Not Lend It | Your First Bank Was a Vault | Banks Charged You to Keep Your Money. Apps Do It Free. |
+| 3 Standard Oil | Rockefeller Never Cared About Oil. He Cared About the Pipe. | The Monopoly That Owned the Road, Not the Cargo | The Pipe Was the Business. Who Owns It Now? |
+| 4 Hora padrão | Your City Had Its Own Time. Then the Trains Arrived. | Who Decided What Time It Is? A Railroad. | The Day the Clocks Stopped Disagreeing |
+| 5 Portagem | A Medieval Toll Bridge and Your App Store Have One Thing in Common | The Business Model That Never Stopped Charging at the Bridge | You Pay a Toll Every Day. You Just Never See the Bridge. |
+| 6 Company store | Paid in Money That Only Worked at One Store | The Boss Who Was Also Your Landlord and Your Grocer | The Coal Miner's Wage That Was Never Real Money |
+| 7 Seguros | Insurance Was Born in a Coffee Shop | The Coffee House That Taught the World to Price Risk | They Bet on Ships in a Café. Now They Bet on You. |
+| 8 Imposto do sal | They Taxed the One Thing You Couldn't Live Without | The Tax Nobody Could Refuse | Salt Was the First Subscription |
+| 9 Muralha | Your Phone Is a Castle. You're Not the Lord. | The Moat Around Your Phone | Why the Walls Are the Product |
+| 10 Código de barras | The Pack of Gum That Changed Who Holds Power in Retail | Eight Stripes and the Shift of Power to the Store | The Stripes That Know More Than the Shelf |
+
+**Os três que eu escolheria** (mais fortes, no tom do canal): #3-A *"Rockefeller Never Cared About Oil. He Cared About the Pipe."*, #1-A *"The Steel Box That Broke Every Port on Earth"*, #9-A *"Your Phone Is a Castle. You're Not the Lord."*
