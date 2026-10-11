@@ -252,20 +252,21 @@ const Strike: React.FC<{n: string; L: string[]}> = ({n, L}) => {
 };
 
 
-// câmara de vigilância (objeto): suporte fixo + 3 vistas reais da cúpula a girar (−35°, +55°, −60°) + zoom até à lente
+// câmara de vigilância (objeto): suporte fixo + 4 vistas reais da cúpula (−35°, +55°, −60°, de frente) + zoom até à lente
 const CAMF = (n: string) => staticFile(`google2/rig/${n}.png`);
 const OwlCam: React.FC = () => {
   const f = useCurrentFrame(); const t = f / FPS;
   const sp = spring({frame: f, fps: FPS, config: {damping: 14, stiffness: 190, mass: 0.8}});
   const eio = Easing.inOut(Easing.cubic);
-  const m1 = interpolate(t, [1.0, 1.2], [0, 1], {...clamp, easing: eio});     // L1 → R
-  const m2 = interpolate(t, [2.5, 2.7], [0, 1], {...clamp, easing: eio});     // R → L2
-  const o = {L1: 1 - m1, R: m1 * (1 - m2), L2: m2};
-  const turn = Math.max(Math.sin(Math.PI * m1), Math.sin(Math.PI * m2));       // intensidade a meio de cada viragem
-  const shake = (t > 1.18 && t < 1.4) || (t > 2.68 && t < 2.9) ? Math.sin(f * 7) * 3 : 0;
-  const push = interpolate(t, [3.7, 4.6], [0, 1], {...clamp, easing: eio});
-  const k = 1 + 1.1 * push;
-  const LENS = [581, 1181];
+  const m1 = interpolate(t, [0.9, 1.1], [0, 1], {...clamp, easing: eio});     // −35° → +55°
+  const m2 = interpolate(t, [1.9, 2.1], [0, 1], {...clamp, easing: eio});     // +55° → −60°
+  const m3 = interpolate(t, [2.9, 3.1], [0, 1], {...clamp, easing: eio});     // −60° → de frente
+  const o = {L1: 1 - m1, R: m1 * (1 - m2), L2: m2 * (1 - m3), F: m3};
+  const turn = Math.max(Math.sin(Math.PI * m1), Math.sin(Math.PI * m2), Math.sin(Math.PI * m3));
+  const shake = [1.08, 2.08, 3.08].some((x) => t > x && t < x + 0.22) ? Math.sin(f * 7) * 3 : 0;
+  const push = interpolate(t, [3.6, 4.6], [0, 1], {...clamp, easing: eio});
+  const k = 1 + 1.3 * push;
+  const LENS = [750, 1177];
   const S = 0.62, W = 1500;
   const BR = 'polygon(0 0, 1500px 0, 1500px 650px, 0 650px)', DM = 'polygon(0 640px, 1500px 640px, 1500px 1500px, 0 1500px)';
   const im = (n: string, extra?: React.CSSProperties) => <Img src={CAMF(n)} style={{position: 'absolute', left: 0, top: 0, width: W, height: W, ...extra}} />;
@@ -275,9 +276,9 @@ const OwlCam: React.FC = () => {
         <div style={{position: 'absolute', inset: 0, transformOrigin: `${LENS[0]}px ${LENS[1]}px`, transform: `scale(${k}) translateX(${shake}px)`}}>
           <div style={{position: 'absolute', inset: 0, clipPath: BR}}>{im('cam-yaw-L1')}</div>
           <div style={{position: 'absolute', inset: 0, clipPath: DM, transformOrigin: '750px 900px', transform: `scaleX(${1 - 0.07 * turn})`, filter: `blur(${turn * 2.5}px)`}}>
-            {im('cam-yaw-L1', {opacity: o.L1})}{im('cam-yaw-R', {opacity: o.R})}{im('cam-yaw-L2', {opacity: o.L2})}
+            {im('cam-yaw-L1', {opacity: o.L1})}{im('cam-yaw-R', {opacity: o.R})}{im('cam-yaw-L2', {opacity: o.L2})}{im('cam-yaw-0', {opacity: o.F})}
           </div>
-          <div style={{position: 'absolute', left: LENS[0] - 81, top: LENS[1] - 81, width: 162, height: 162, opacity: interpolate(t, [4.1, 4.6], [0, 1], clamp)}}>
+          <div style={{position: 'absolute', left: LENS[0] - 186, top: LENS[1] - 186, width: 372, height: 372, opacity: interpolate(t, [4.0, 4.5], [0, 1], clamp)}}>
             <Img src={CAMF('cam-lens')} style={{width: '100%', height: '100%'}} />
           </div>
         </div>
