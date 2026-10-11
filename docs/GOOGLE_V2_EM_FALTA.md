@@ -1,28 +1,13 @@
 # Google v2 — ainda em falta
 
-Entregues: **22** de 61. Faltam **39**. Por ordem de aparição. As marcadas com ★ entram antes das 3:00.
+Entregues: **37** de 61 (os 15 do lote de hoje já estão integrados). Faltam **24**, por ordem de aparição. Todas aparecem depois das 6:20.
 
-Os prompts são os de `PROMPTS_GOOGLE_V2.md` (BLOCO O para objetos, BLOCO S para vistas laterais). Pasta: **`public/google2/img/`** (não a do feudalismo).
+Os prompts são os de `PROMPTS_GOOGLE_V2.md` (BLOCO O para objetos). Pasta: **`public/google2/img/`**.
 
-**Não podem sair:** `window-peering-eye` (a janela com a íris, loop 5) e o stock `s-watching` (o olho).
+**Não pode sair:** `window-peering-eye` (a janela com a íris, loop 5). O stock `s-watching` já está montado.
 
 | # | Ficheiro | Prompt | Vermelho | Entra em |
 |---|---|---|---|---|
-| 1 | `small-town-map` | A folded street map of a small town with a single pin | o pin | 3:07 |
-| 2 | `legal-complaint-stack` | A stack of stapled legal documents with a seal | o selo | 3:36 |
-| 3 | `dismissed-stamp` | A rubber stamp and ink pad, stamp handle in front, no letters | a almofada de tinta | 3:48 |
-| 4 | `evidence-box` | A cardboard evidence box with a tag tied to the handle | a etiqueta | 3:58 |
-| 5 | `london-bus-side` | A vintage London double-decker bus, strict side view facing right, full object visible, wheels or feet touching an invisible ground line, nothing cropped | o autocarro todo | 4:06 |
-| 6 | `hands-passing-folder` | Two hands passing a thin folder to each other, sleeves visible | a pasta | 4:12 |
-| 7 | `crowbar` | A crowbar leaning diagonally | a ponta | 4:42 |
-| 8 | `signed-contract-pen` | A contract page with a fountain pen resting on a signature line, no text | a assinatura | 4:47 |
-| 9 | `city-bus-side` | A plain city bus, strict side view facing right, full object visible, wheels or feet touching an invisible ground line, nothing cropped | o painel de destino | 5:13 |
-| 10 | `pause-button` | A vintage pause button, two bars | as barras | 5:15 |
-| 11 | `rewind-button` | A vintage rewind button, double left arrows | as setas | 5:16 |
-| 12 | `delivery-van-side` | A small boxy delivery van, strict side view facing right, full object visible, wheels or feet touching an invisible ground line, nothing cropped | a porta lateral | 6:04 |
-| 13 | `armored-truck-side` | An armored cash truck, strict side view facing right, full object visible, wheels or feet touching an invisible ground line, nothing cropped | a risca lateral | 6:09 |
-| 14 | `auction-paddle` | A bidder's paddle on a stick, blank face | a pá | 6:09 |
-| 15 | `browser-window-loading` | A blank browser window with a loading bar and no text | a barra de carregamento | 6:13 |
 | 16 | `money-bag` | A burlap money bag tied at the neck | o laço | 6:23 |
 | 17 | `billboard` | A roadside billboard on two posts, blank face | a moldura | 6:26 |
 | 18 | `pair-of-dice` | Two six-sided dice mid-tumble | os pontos de um dado | 6:38 |
@@ -47,3 +32,5 @@ Os prompts são os de `PROMPTS_GOOGLE_V2.md` (BLOCO O para objetos, BLOCO S para
 | 37 | `locked-diary` | A small diary with a brass lock | o fecho | 12:14 |
 | 38 | `tally-counter` | A handheld mechanical tally counter with blank number wheels and a thumb button | o botão | 13:26 |
 | 39 | `gear-cogs-pair` | Two meshing cog gears | uma das engrenagens | 13:31 |
+
+Extras já entregues e usados: câmara de vigilância em 3 vistas + lente + aro do pescoço (`cam-*`), perna esticada, perna dobrada e sapato (enfermeira). `evidence-box` ainda sem lugar no guião.

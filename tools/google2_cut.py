@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Recorta fundo branco -> PNG alpha (luminância→alpha, vermelho protegido). Uso: google2_cut.py in.png out.png"""
+"""Recorta fundo branco -> PNG alpha (luminância→alpha, vermelho protegido). Uso: google2_cut.py in.png out.png [nocrop]"""
 import sys, numpy as np
 from PIL import Image
 a = np.array(Image.open(sys.argv[1]).convert('RGB')).astype(float) / 255
@@ -13,6 +13,7 @@ out = np.dstack([rgb, al])
 ys, xs = np.where(al > 0.05)
 p = 8
 box = (max(xs.min() - p, 0), max(ys.min() - p, 0), min(xs.max() + p, a.shape[1]), min(ys.max() + p, a.shape[0]))
-im = Image.fromarray((out * 255).astype('uint8'), 'RGBA').crop(box)
+im = Image.fromarray((out * 255).astype('uint8'), 'RGBA')
+if len(sys.argv) <= 3: im = im.crop(box)
 if im.width > 1500: im = im.resize((1500, round(im.height * 1500 / im.width)), Image.LANCZOS)
 im.save(sys.argv[2], optimize=True)

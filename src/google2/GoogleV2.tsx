@@ -252,21 +252,34 @@ const Strike: React.FC<{n: string; L: string[]}> = ({n, L}) => {
 };
 
 
-// câmara de vigilância (objeto): o suporte fica fixo e a cúpula vira como a cabeça de uma coruja
+// câmara de vigilância (objeto): suporte fixo + 3 vistas reais da cúpula a girar (−35°, +55°, −60°) + zoom até à lente
+const CAMF = (n: string) => staticFile(`google2/rig/${n}.png`);
 const OwlCam: React.FC = () => {
   const f = useCurrentFrame(); const t = f / FPS;
   const sp = spring({frame: f, fps: FPS, config: {damping: 14, stiffness: 190, mass: 0.8}});
-  const a = owlLook(t);
-  const W = 987, H = 1167, S = 800 / H;
-  const DOME = 'polygon(0px 270px, 520px 270px, 745px 430px, 770px 1167px, 0px 1167px)';
-  const BRACKET = 'polygon(0px 0px, 987px 0px, 987px 1167px, 770px 1167px, 745px 430px, 520px 270px, 0px 270px)';
-  const img = <Img src={cut('security-camera')} style={{position: 'absolute', left: 0, top: 0, width: W, height: H}} />;
+  const eio = Easing.inOut(Easing.cubic);
+  const m1 = interpolate(t, [1.0, 1.2], [0, 1], {...clamp, easing: eio});     // L1 → R
+  const m2 = interpolate(t, [2.5, 2.7], [0, 1], {...clamp, easing: eio});     // R → L2
+  const o = {L1: 1 - m1, R: m1 * (1 - m2), L2: m2};
+  const turn = Math.max(Math.sin(Math.PI * m1), Math.sin(Math.PI * m2));       // intensidade a meio de cada viragem
+  const shake = (t > 1.18 && t < 1.4) || (t > 2.68 && t < 2.9) ? Math.sin(f * 7) * 3 : 0;
+  const push = interpolate(t, [3.7, 4.6], [0, 1], {...clamp, easing: eio});
+  const k = 1 + 1.1 * push;
+  const LENS = [581, 1181];
+  const S = 0.62, W = 1500;
+  const BR = 'polygon(0 0, 1500px 0, 1500px 650px, 0 650px)', DM = 'polygon(0 640px, 1500px 640px, 1500px 1500px, 0 1500px)';
+  const im = (n: string, extra?: React.CSSProperties) => <Img src={CAMF(n)} style={{position: 'absolute', left: 0, top: 0, width: W, height: W, ...extra}} />;
   return (
-    <div style={{position: 'absolute', left: 1091 + (1 - sp) * 260, top: 120 + Math.sin(t * 1.3) * 5, width: W * S, height: H * S, opacity: Math.min(1, f / 5)}}>
-      <div style={{position: 'absolute', left: 0, top: 0, width: W, height: H, transformOrigin: '0 0', transform: `scale(${S})`}}>
-        <div style={{position: 'absolute', inset: 0, clipPath: BRACKET}}>{img}</div>
-        <div style={{position: 'absolute', inset: 0, perspective: 1600, perspectiveOrigin: '560px 640px'}}>
-          <div style={{position: 'absolute', inset: 0, clipPath: DOME, transformOrigin: '560px 640px', transform: `rotateY(${a * 50}deg) rotateZ(${a * -2.5}deg)`}}>{img}</div>
+    <div style={{position: 'absolute', left: 1000, top: 0, width: 920, height: 1080, overflow: 'hidden'}}>
+      <div style={{position: 'absolute', left: -44 + (1 - sp) * 260, top: 30 + Math.sin(t * 1.3) * 4, width: W, height: W, opacity: Math.min(1, f / 5), transformOrigin: '0 0', transform: `scale(${S})`}}>
+        <div style={{position: 'absolute', inset: 0, transformOrigin: `${LENS[0]}px ${LENS[1]}px`, transform: `scale(${k}) translateX(${shake}px)`}}>
+          <div style={{position: 'absolute', inset: 0, clipPath: BR}}>{im('cam-yaw-L1')}</div>
+          <div style={{position: 'absolute', inset: 0, clipPath: DM, transformOrigin: '750px 900px', transform: `scaleX(${1 - 0.07 * turn})`, filter: `blur(${turn * 2.5}px)`}}>
+            {im('cam-yaw-L1', {opacity: o.L1})}{im('cam-yaw-R', {opacity: o.R})}{im('cam-yaw-L2', {opacity: o.L2})}
+          </div>
+          <div style={{position: 'absolute', left: LENS[0] - 81, top: LENS[1] - 81, width: 162, height: 162, opacity: interpolate(t, [4.1, 4.6], [0, 1], clamp)}}>
+            <Img src={CAMF('cam-lens')} style={{width: '100%', height: '100%'}} />
+          </div>
         </div>
       </div>
     </div>
