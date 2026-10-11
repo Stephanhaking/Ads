@@ -1,7 +1,8 @@
 // Guião visual do Google v2 (primeiros 3 min). `s` = segundo da locução (alinhado em words.json); o beat dura até ao seguinte.
 export type GBeat = {tr?: 'redtear' | 'ink' | 'iris' | 'strips' | 'punch' | 'roll'; s: number; k: 'img' | 'obj' | 'clock' | 'doors' | 'chase' | 'big' | 'count' | 'strike' | 'stock'; n?: string; L?: string[]; hot?: number[]; v?: number; suf?: string; lab?: string};
-export const G_END = 182;
-export const GBEATS: GBeat[] = [
+import {GTAIL} from './beatsTail';
+export const G_END = 831.1;
+const HEAD: GBeat[] = [
   {s: 0, k: 'chase', n: 'nurse-walking-side', L: ['A NIGHT-SHIFT', 'NURSE.'], hot: [1]},
   {s: 8.3, tr: 'roll', k: 'chase', n: 'hospital-bed-side', L: ['3:12 A.M.', 'THE HOSPITAL', 'IS QUIET.'], hot: [0]},
   {s: 15.4, tr: 'ink', k: 'chase', n: 'ambulance-side', L: ['THE INSTANT', 'A PATIENT', 'GETS WORSE.']},
@@ -41,3 +42,4 @@ export const GBEATS: GBeat[] = [
   {s: 171.5, k: 'obj', n: 'puzzle-pieces', L: ['OTHER PIECES', 'OF THE PUZZLE.']},
   {s: 174.7, tr: 'ink', k: 'big', L: ['AN ILLUSTRATION.', 'NOT A REAL CASE.'], hot: [1]},
 ];
+export const GBEATS: GBeat[] = [...HEAD, ...GTAIL];

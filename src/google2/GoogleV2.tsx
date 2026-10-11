@@ -14,7 +14,7 @@ export const G2_TOTAL = (words as {total: number}).total;
 export const G2_FRAMES = Math.ceil(G2_TOTAL * FPS) + 30;
 const cut = (n: string) => staticFile(`google2/cut/${n}.png`);
 const useT = () => useCurrentFrame() / FPS;
-const fit = (L: string[], max = 108, w = 860) => Math.min(max, Math.floor(w / (Math.max(...L.flatMap((l) => l.split(' ').map((x) => x.length)), 1) * 0.78)));
+const fit = (L: string[], max = 108, w = 860) => Math.max(56, Math.min(max, Math.floor(w / (Math.max(...L.flatMap((l) => l.split(' ').map((x) => x.length)), 1) * 0.78)), Math.floor(w / (Math.max(...L.map((l) => l.length), 1) * 0.68))));
 
 // legenda grande à esquerda; linhas entram uma a uma
 const Cap: React.FC<{L: string[]; hot?: number[]; w?: number; size?: number; y?: number}> = ({L, hot, w = 880, size, y = 230}) => (
@@ -282,12 +282,23 @@ const Beat: React.FC<{b: GBeat}> = ({b}) => (
 // contador de leituras: o fio condutor do vídeo (0:00–0:57)
 const Counter: React.FC = () => {
   const t = useT();
-  const o = interpolate(t, [0.4, 1.0, 55.5, 57.5], [0, 1, 1, 0], clamp);
-  const n = Math.floor(Math.pow(t, 1.75) * 3.2);
+  // janelas em que o contador aparece: abertura, "o teu dia" (loop 3) e o fecho (pára e pisca em "o contador")
+  const W: [number, number][] = [[0.4, 57.5], [299.5, 345], [790, 831]];
+  const w = W.find(([a, b]) => t >= a - 1 && t <= b + 1);
+  if (!w) return null;
+  const [a, b] = w;
+  const o = interpolate(t, [a, a + 0.6, b - 1.5, b], [0, 1, 1, 0], clamp);
+  const STOP = 805.8;
+  const frozen = t >= STOP;
+  const tt = frozen ? STOP : t;
+  const n = Math.floor(Math.pow(Math.max(0, tt - a), 1.75) * 3.2) + (a > 100 ? 4000 : 0);
+  const blink = frozen && Math.floor(t * 3) % 2 === 0;
+  const LAB: [number, string][] = [[304, 'SEARCH'], [307.3, 'SEARCH'], [311, 'ROUTE'], [314.2, 'VIDEO'], [318.9, 'PAUSE']];
+  const lab = a === 299.5 ? (LAB.filter(([x]) => t >= x).pop()?.[1] ?? 'READINGS') : 'READINGS';
   return (
     <div style={{position: 'absolute', right: 60, top: 40, opacity: o, textAlign: 'right', fontFamily: fonts.mono, color: INK}}>
-      <div style={{fontSize: 22, letterSpacing: 6}}><span style={{display: 'inline-block', width: 14, height: 14, borderRadius: 7, background: RED, marginRight: 10, opacity: 0.4 + 0.6 * (Math.floor(t * 2) % 2)}} />READINGS</div>
-      <div style={{fontSize: 64, letterSpacing: 4, marginTop: 4}}>{String(n).padStart(5, '0')}</div>
+      <div style={{fontSize: 22, letterSpacing: 6}}><span style={{display: 'inline-block', width: 14, height: 14, borderRadius: 7, background: RED, marginRight: 10, opacity: frozen ? (blink ? 1 : 0.15) : 0.4 + 0.6 * (Math.floor(t * 2) % 2)}} />{lab}</div>
+      <div style={{fontSize: 64, letterSpacing: 4, marginTop: 4, color: frozen && blink ? RED : INK}}>{String(n).padStart(5, '0')}</div>
     </div>
   );
 };
