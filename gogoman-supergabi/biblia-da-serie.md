@@ -21,10 +21,18 @@ Dois melhores amigos com vidas normais escondem identidades de super-heróis. Qu
 
 ### Gogoman (identidade civil: Bisteca) — protagonista
 - Visual: cabelo castanho-escuro ondulado e bagunçado, sobrancelhas grossas, bigode e cavanhaque. Headset azul-neon vira comunicador/mira; lenço estampado vira cachecol/capa.
-- **Poder:** conjura armas do nada. **Arma favorita: sniper convencional**, pontaria extraordinária (nunca erra o primeiro tiro — erra só quando está emocionalmente abalado).
-- Personalidade: sarcástico, estrategista, fala pouco na ação e muito no fone. Medo secreto: perder o Gabi.
-- Limite (para criar tensão): cada arma conjurada some depois de um tempo/de poucos tiros; conjurar muito o cansa.
-- Bordão sugerido: "Um tiro. Só preciso de um."
+- **Poder:** conjura armas do nada (a arma simplesmente aparece nas mãos, num corte rápido, **sem brilho, energia ou efeito mágico**).
+- **Arma favorita: sniper convencional, aparência realista**, sem energia, lasers ou efeitos futuristas. Pontaria extraordinária.
+- **Inteligência tática:** observa o campo de batalha, identifica ameaças e escolhe posições estratégicas (telhados, torres, janelas). Sempre mostrar ele "lendo" o cenário antes de agir (vento, distância, rotas de fuga).
+- **Função nas missões:** eliminar ou neutralizar ameaças perigosas, enfrentar adversários à distância, surpreender inimigos e protagonizar os momentos de ação mais marcantes.
+- **Fraquezas narrativas** (usar para criar tensão e deixar o Gabi essencial):
+  - pode ser surpreendido em combate próximo;
+  - perde a vantagem quando fica sem espaço para se movimentar;
+  - cai em armadilhas por confiar demais na própria capacidade;
+  - erra o tiro quando está emocionalmente abalado;
+  - cada arma conjurada some depois de poucos tiros e conjurar muito o cansa.
+- Personalidade: sarcástico, estratégico, fala pouco na ação e muito no fone. Medo secreto: perder o Gabi.
+- **Frase característica:** "Um alvo, um disparo. Bora acabar com isso." (dita ao mirar no tiro decisivo).
 
 ### SuperGabi (identidade civil: Gabriel) — parceiro
 - Visual: cabelo curto e crespo, sorriso largo marcante, corpo robusto. Traje preto/laranja com "G" em chama dourada.
@@ -79,9 +87,9 @@ País fictício governado há décadas pelo **Partido Soberano Unido (PSU)**.
 ## 8. Roteiro do EP 01 — "O Tiro Que Mudou Tudo" (~50 s)
 **[0–3 s] GANCHO** — Close no olho do Gogoman na mira. Som de vento. LEGENDA: "Faltam 10 segundos."
 **[3–10 s]** Praça lotada, comício do político Valmont. Cartazes do PSU rasgados. Gogoman, no fone, do telhado: "Gabi, tá vendo o cara da jaqueta?" Gabi, já abrindo caminho na multidão: **"Tu cuida dos caras lá de longe, que eu resolvo os daqui!"**
-**[10–20 s]** Vilão tira um detonador. Gabi atravessa a multidão correndo. Gogoman conjura uma sniper em pose épica (efeito de luz verde/azul).
+**[10–20 s]** Vilão tira um detonador. Gabi atravessa a multidão correndo. Gogoman escolhe o telhado ideal, lê o vento e conjura uma sniper realista (a arma só aparece nas mãos dele, sem brilho nem efeito).
 **[20–32 s]** Vilão atira em Gabi — as balas quicam. Gabi segura o vilão pelo colarinho: "Isso fez cócegas!" Gogoman (no fone): "Ficou parado, valeu. Agora."
-**[32–40 s]** Um tiro. O detonador voa. Câmera lenta. Aplausos... ninguém vê quem atirou.
+**[32–40 s]** Gogoman, mirando: **"Um alvo, um disparo. Bora acabar com isso."** Um tiro. O detonador voa. Câmera lenta. Aplausos... ninguém vê quem atirou.
 **[40–50 s]** Corte: Bisteca e Gabriel "normais", tomando café. Na TV: "Herói misterioso salva comício". Gabriel: "Quem será?" Bisteca (sem olhar): "Ninguém." A câmera mostra no telhado vizinho um drone filmando. **Gancho:** tela preta com um olho vermelho: "Ele está aqui."
 
 ## 9. Prompts-base para consistência (inglês, para geradores de imagem/vídeo)
@@ -90,8 +98,8 @@ País fictício governado há décadas pelo **Partido Soberano Unido (PSU)**.
 3D animated character, stylized mid-century retro-futuristic look, young man superhero,
 messy voluminous wavy dark-brown hair with a lock on the forehead, thick eyebrows,
 mustache and short goatee, square jaw. Emerald-green and electric-blue suit, golden "G" emblem,
-glowing blue headset communicator, patterned scarf as cape. Holding a conjured sniper rifle
-made of green-blue light. Cinematic lighting, vertical 9:16.
+glowing blue headset communicator, patterned scarf as cape. Holding a realistic conventional sniper rifle
+(no glow, no energy, no lasers, no sci-fi effects). Cinematic lighting, vertical 9:16.
 ```
 **SuperGabi:**
 ```
