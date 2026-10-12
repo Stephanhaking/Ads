@@ -9,10 +9,10 @@ Publicar **primeiro como privado**, rever no Studio, e só depois tornar públic
 3. Google's AI Predicted Hospital Deaths. Who Gave It the Records?
 > Fórmula que funcionou no canal: afirmação concreta + reviravolta. Verificar com `vidiq_score_title` quando houver créditos.
 
-## Miniatura (a criar quando o utilizador quiser)
-- **A:** câmara de vigilância de frente com a lente vermelha + texto "WHO DIES NEXT?" (vermelho sobre creme).
-- **B:** relógio das 3:12 + enfermeira de lado + texto "3:12 A.M.".
-- Regra: um elemento vermelho, no máximo 3 palavras, legível a 120 px de largura.
+## Miniatura (decidida pelo utilizador)
+**Imagem do olho vermelho com o G, sem texto** (o título diz do que trata o vídeo). Ficheiro pronto para o Studio: `out/thumb-google-FINAL.jpg` (1280×720, JPEG, <2 MB). Fonte da composição: `GoogleThumbBNoText` (`src/google2/Thumb.tsx`) e `public/google2/thumb/eye-ref.jpg`.
+Reserva (estilo do canal, sem texto): `out/thumb-google-A-sem-texto.png`.
+Aviso: a origem/licença da imagem do olho é do utilizador; o G é marca registada.
 
 ## Capítulos (tempos reais da narração)
 0:00 3:12 a.m.: the question
