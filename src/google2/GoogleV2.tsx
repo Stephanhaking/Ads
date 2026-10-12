@@ -14,10 +14,11 @@ export const G2_TOTAL = (words as {total: number}).total;
 export const G2_FRAMES = Math.ceil(G2_TOTAL * FPS) + 30;
 const cut = (n: string) => staticFile(`google2/cut/${n}.png`);
 const useT = () => useCurrentFrame() / FPS;
-const fit = (L: string[], max = 108, w = 860) => Math.max(56, Math.min(max, Math.floor(w / (Math.max(...L.flatMap((l) => l.split(' ').map((x) => x.length)), 1) * 0.78)), Math.floor(w / (Math.max(...L.map((l) => l.length), 1) * 0.68))));
+export const fit = (L: string[], max = 108, w = 860) => Math.max(56, Math.min(max, Math.floor(w / (Math.max(...L.flatMap((l) => l.split(' ').map((x) => x.length)), 1) * 0.78)), Math.floor(w / (Math.max(...L.map((l) => l.length), 1) * 0.68))));
 
 // legenda grande à esquerda; linhas entram uma a uma
-const Cap: React.FC<{L: string[]; hot?: number[]; w?: number; size?: number; y?: number}> = ({L, hot, w = 880, size, y = 230}) => (
+export const VertCtx = React.createContext(false);
+const Cap: React.FC<{L: string[]; hot?: number[]; w?: number; size?: number; y?: number}> = ({L, hot, w = 880, size, y = 230}) => React.useContext(VertCtx) ? null : (
   <Lines lines={L} times={L.map((_, i) => 0.12 + i * 0.28)} x={110} y={y} size={size ?? fit(L, 108, w)} theme="paper" hot={hot ?? []} width={w} />
 );
 
@@ -338,7 +339,7 @@ const Doors: React.FC<{open?: number}> = ({open = 1.2}) => {
   );
 };
 
-const Beat: React.FC<{b: GBeat}> = ({b}) => (
+export const Beat: React.FC<{b: GBeat}> = ({b}) => (
   <>
     {b.k === 'chase' && <><Chase n={b.n!} /><Cap L={b.L!} hot={b.hot} w={1500} size={b.L!.length > 2 ? 84 : 104} y={60} /></>}
     {b.k === 'img' && <>{b.n === 'security-camera' ? <OwlCam /> : <CutImg n={b.n!} />}<Cap L={b.L!} hot={b.hot} /></>}
