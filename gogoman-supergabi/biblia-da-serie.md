@@ -11,11 +11,18 @@ Dois melhores amigos com vidas normais escondem identidades de super-heróis. Qu
 - Temporada 1: 12 episódios, 2–3 por semana. Legenda sempre ligada (retenção sem som).
 - Título padrão: `GOGOMAN & SUPERGABI | EP 01 – <título curto>` + #shorts #animação #superheróis
 
-## 3. Estilo visual
-- Referência de ESTILO (não de personagens): 3D estilizado anos 60 retrô-futurista, formas geométricas, cores chapadas, luz de cinema.
-- Gogoman: verde-esmeralda + azul-elétrico + bege. Super Gabi: preto grafite + laranja-fogo + dourado.
-- Mundo: cidade art déco/modernista, neon laranja, cartazes de propaganda do governo.
-- Não copiar trajes, logos, cenas ou personagens de Os Incríveis (risco de strike/desmonetização).
+## 3. Estilo visual — baseado em "Invencível" (Invincible, Prime Video)
+> Referência de ESTILO, não de personagens. O estilo de animação substitui a ideia anterior de 3D Pixar.
+
+- **2D estilo quadrinho adulto (Kirkman/Walking Dead/Invincible):** contornos finos e limpos, cores chapadas, sombras duras em bloco (cel-shading de 1–2 tons), sem texturas fotorrealistas.
+- **Proporções realistas e atléticas** (nada de cabeças gigantes): rostos angulosos, queixos fortes, sobrancelhas grossas e expressivas, rugas marcadas com poucas linhas.
+- **Paleta:** cores saturadas nos trajes sobre fundos mais sóbrios/escuros (céu cinza-esverdeado, cidade em tons de concreto, vegetação outonal). Contraste forte entre herói e cenário.
+- **Planos de cinema:** close extremo em olhos/boca em momentos tensos, plano aberto para escala, contra-plongée em figuras de poder. Cortes secos e silêncio dramático.
+- **Ação:** poses estáticas de impacto (impact frames), efeitos de linhas de velocidade, poeira e destroços, poucos frames mas muito peso; câmera trepidando em explosões.
+- **Violência sem gore:** manter o impacto do estilo sem mostrar sangue (usar sombra, corte, silhueta, flash branco, reação). A série de referência é para adultos; aqui seguimos o tom intenso, mas sem imagens gráficas (ver 3b).
+- Mundo: cidade moderna decadente com cartazes de propaganda do governo, neon laranja pontual, telhados e torres como palco para o Gogoman.
+- Cores dos heróis (originais, **não** as amarelo/azul do Mark nem o vermelho/branco do Nolan): Gogoman verde-esmeralda + azul-elétrico + bege; Super Gabi preto grafite + laranja-fogo + dourado.
+- **Direitos autorais:** não copiar trajes, símbolos, personagens, cenas, trilha ou o logotipo de Invincible (Amazon/Skybound). Inspiração de linguagem visual e narrativa, tudo original.
 
 ## 3b. Tom, violência e suspense
 
@@ -109,22 +116,29 @@ Colunas: **Surpresa/Revelação** do episódio e **O que o gancho ameaça** (ide
 **[40–50 s]** Corte: Bisteca e Gabriel "normais", tomando café. Na TV: "Herói misterioso salva comício". Gabriel: "Quem será?" Bisteca (sem olhar): "Ninguém." A câmera mostra no telhado vizinho um drone filmando. **Gancho:** tela preta com um olho vermelho: "Ele está aqui."
 
 ## 9. Prompts-base para consistência (inglês, para geradores de imagem/vídeo)
+Sufixo de estilo (colar em TODOS os prompts):
+```
+2D adult superhero animation style inspired by modern western comic-book animation
+(Invincible-like): clean thin outlines, flat cel-shaded colors with hard-edged shadows,
+realistic athletic proportions, angular faces, thick expressive eyebrows,
+cinematic framing, muted moody backgrounds with saturated costume colors, no blood, vertical 9:16.
+```
 **Gogoman:**
 ```
-3D animated character, stylized mid-century retro-futuristic look, young man superhero,
-messy voluminous wavy dark-brown hair with a lock on the forehead, thick eyebrows,
-mustache and short goatee, square jaw. Emerald-green and electric-blue suit, golden "G" emblem,
-glowing blue headset communicator, patterned scarf as cape. Holding a realistic conventional sniper rifle
-(no glow, no energy, no lasers, no sci-fi effects). Cinematic lighting, vertical 9:16.
+Young man superhero named Gogoman, messy voluminous wavy dark-brown hair with a lock on the
+forehead, thick eyebrows, mustache and short goatee, square jaw. Emerald-green and
+electric-blue suit with beige details and a "G" emblem, blue headset communicator,
+patterned scarf as cape. Holding a realistic conventional sniper rifle
+(no glow, no energy, no lasers, no sci-fi effects). Perched on a rooftop, calm and focused.
 ```
 **SuperGabi:**
 ```
-3D animated character, stylized mid-century retro-futuristic look, strong friendly young man
-superhero, short coily dark hair, round warm face, big contagious smile, thin mustache and
-short goatee, broad shoulders. Charcoal-black and fire-orange suit with golden flaming "G"
-emblem, retro tactical vest. Fighting stance, bullets bouncing off his chest. Cinematic lighting, 9:16.
+Strong friendly young man superhero named SuperGabi, short coily dark hair with low faded sides,
+round warm face, big contagious smile, thin mustache and short goatee, broad shoulders.
+Charcoal-black and fire-orange suit with golden flaming "G" emblem, retro tactical vest.
+Fighting stance, bullets bouncing off his chest.
 ```
-Dica de consistência: reutilizar sempre o mesmo texto de personagem + a foto de referência, mudar só a ação/cena.
+Dica de consistência: reutilizar sempre o mesmo texto de personagem + a foto de referência, mudar só a ação/cena. Gerar primeiro uma ficha de personagem (frente, lado, costas, expressões) e usá-la como referência nos demais.
 
 ## 10. Pendências
 - Confirmar nomes (país, partido, vilões) e se quer manter o aparelho dentário nos personagens.
