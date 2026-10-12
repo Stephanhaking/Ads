@@ -63,32 +63,44 @@ Dois melhores amigos com vidas normais escondem identidades de super-heróis. Qu
 - **Frase característica:** "Tu cuida dos caras lá de longe, que eu resolvo os daqui!" (dita ao Gogoman antes de cada ação: ele cobre a distância com a sniper, Gabi resolve o corpo a corpo). Vira o ritual da dupla; a resposta do Gogoman pode variar a cada episódio ("Fechou." / "Não demora." / "Tá me devendo.").
 
 ### Heitor Valmont — o político revolucionário (personagem FICTÍCIO)
-- **Quem é:** jovem político carismático de Nova Aurélia que lidera a revolução contra o PSU. Ídolo das ruas, discurso firme, aparência impecável.
-- **Visual (inspirado em uma foto de referência enviada pelo criador, de forma ESTILIZADA e não como retrato):** homem de ~30 anos, terno azul-marinho, camisa branca, gravata azul, pin na lapela (aqui o pin é o símbolo da revolução: um sol nascente). Para o personagem ficar original e não parecer pessoa real: cabelo castanho-escuro com risca lateral e uma mecha grisalha, rosto mais anguloso, queixo marcado, olhar intenso, sobrancelhas grossas (linguagem visual de Invincible).
-- **Personalidade:** persuasivo, calmo, sempre parece ter razão. Acredita de verdade na causa, mas aceita fazer acordos sombrios "pelo bem do país".
-- **Arco (padrão proposto, a confirmar):** AMBÍGUO. EP 03 pede ajuda aos heróis; EP 09 discursa na noite da revolução; EP 10 vira revelação do acordo com Sombra; EP 11 Gogoman o tem na mira; EP 12 o mandante verdadeiro é outro.
+- **Quem é:** jovem político de Nova Aurélia que lidera a revolução contra o PSU, que governa o país como uma **ditadura**. Ele inspira esperança num país cansado.
+- **Visual (inspirado em foto de referência, estilizado e original):** ~30 anos, terno azul-marinho, camisa branca, gravata azul, pin de sol nascente na lapela (símbolo da revolução). Para ficar original: cabelo castanho-escuro com risca lateral e mecha grisalha, rosto mais anguloso, queixo marcado, olhar intenso, sobrancelhas grossas.
+- **Personalidade:**
+  - **Engraçadinho:** faz piadas mesmo em situações perigosas, às vezes nos piores momentos possíveis.
+  - **Simpático:** trata as pessoas com respeito, conversa com os cidadãos e conquista a confiança dos outros com facilidade.
+  - **Carismático:** reúne pessoas em torno da causa e inspira esperança num país cansado da ditadura.
+  - **Corajoso:** tem medo de morrer, mas não deixa que isso o impeça de lutar.
+  - **Inteligente:** não é só discurso. Conhece os riscos, sabe negociar e pode surpreender os heróis com informações importantes.
+  - **Teimoso:** às vezes insiste em continuar uma missão mesmo quando Gogoman e SuperGabi dizem que é perigoso demais (fonte de conflito e de perigo real).
+- **Arco (proposta, com lado mais heroico):** aliado de verdade. O mistério vem de o que ele sabe e de acordos arriscados que faz "pelo país", não de maldade. EP 03 pede ajuda aos heróis; EP 09 discursa na noite da revolução; EP 10 revela-se o acordo arriscado (com o Sombra); EP 11 o conflito moral e a teimosia dele põem todos em risco; EP 12 reviravolta com o mandante real.
 - **Bordão sugerido:** "O povo não pede licença para mudar o país."
-- **Regras de segurança do personagem:** país, partido, nomes e símbolos 100% fictícios; nenhuma referência a partidos, políticos, slogans ou fatos reais; não usar cartazes ou frases de política real; não reproduzir o rosto da foto fielmente.
+- **Regras de segurança:** país, partido, nomes e símbolos 100% fictícios; nenhuma referência a partidos, políticos, slogans ou fatos reais; não usar cartazes ou frases de política real; não reproduzir o rosto da foto fielmente.
 - **Prompt:**
 ```
 Charismatic young politician character named Heitor Valmont, around 30, dark-brown hair with
 side part and a streak of grey, angular face, strong jaw, intense eyes, thick eyebrows,
-navy suit, white shirt, blue tie, sun-rise emblem pin on the lapel. Calm confident expression.
+navy suit, white shirt, blue tie, sun-rise emblem pin on the lapel. Friendly confident smile.
 + (colar o sufixo de estilo 2D da seção 9)
 ```
 
-### A Loira Mascarada (personagem FICTÍCIA, papel a confirmar)
-- **Visual (inspirado em foto de referência enviada pelo criador, estilizado e original):** mulher jovem, cabelo loiro longo e ondulado, olhos claros esverdeados, sobrancelhas marcadas e lábios suaves. **O rosto fica quase todo coberto por uma máscara** (tática, preta com detalhes dourados, cobrindo nariz e boca ou só os olhos), então o que a identifica é o cabelo, o olhar e a postura. Traje tático escuro e prático, estilo Invencível (contornos finos, cores chapadas).
-- **Personalidade:** misteriosa, fria, calculista e bem-humorada nas horas certas. Nunca confia em ninguém por completo.
-- **Papel na história (proposta padrão):** agente independente, aliada ou rival dos heróis, com agenda própria. Aparece no EP 02 (a mensagem "Sei quem vocês são" é dela ou de alguém de confiança dela) e sempre está um passo à frente do Ferrão. A identidade real dela é um dos segredos da série.
-- **Habilidades (sem poder sobrenatural):** infiltração, disfarce, combate ágil e armas de curta distância. Boa em obter informação e em desaparecer.
-- **Função narrativa:** cria suspense e reviravolta (será traidora, aliada ou a verdadeira mandante?). Também resolve o caso do "Mira" (contato da dupla): pode ser a mesma pessoa, ou parceira dela.
-- **Regras:** nada de erotização, ela é competente e dona do próprio arco; sem relacionar a personagem a pessoas reais; manter nome e identidade 100% fictícios.
+### A Loira Mascarada (personagem FICTÍCIA)
+- **Aparência (inspirada em foto de referência, estilizada e original):** cabelo loiro, **máscara que esconde parte do rosto** (olhar claro esverdeado e sobrancelhas marcadas ficam visíveis), roupa tática escura e leve, feita para correr, saltar e lutar. Estilo 2D de Invencível.
+- **Objetivo:** cumprir missões secretas para uma **organização misteriosa**, embora tenha **os próprios planos**.
+- **Personalidade e comportamento:**
+  - **Atrevida:** não demonstra medo nem em desvantagem; gosta de provocar o Gogoman e desafiar a confiança dele.
+  - **Ágil:** movimentos rápidos, esquivas, saltos entre telhados, fugas por becos e combate corpo a corpo.
+  - **Esperta:** analisa adversários, prepara armadilhas e transforma situações desfavoráveis em oportunidade. Raramente revela o plano completo.
+  - **Provocadora:** usa humor e charme para distrair adversários, principalmente o Gogoman, e percebe que ele hesita quando ela está perto.
+  - **Misteriosa:** nunca revela a identidade verdadeira. Parece fiel aos superiores, mas nem sempre obedece às ordens.
+- **Função narrativa:** é a contrapartida do Gogoman. Ele é tático à distância; ela é imprevisível e próxima. Ela explora a fraqueza dele (combate próximo e distração emocional), o que torna o SuperGabi essencial para proteger a missão.
+- **Habilidades:** sem superpoder (agilidade, infiltração, armas leves).
+- **Papel (proposta):** aliada/rival ambígua. Pode ser quem manda a mensagem "Sei quem vocês são" (EP 02), ser o contato "Mira" ou parceira dela, e a organização misteriosa pode ser ligada ao mandante final (EP 12).
+- **Regras:** a provocação é charme e jogo mental, **sem cenas sexualizadas**; ela é competente e dona do próprio arco; nome e identidade 100% fictícios, sem relação com pessoas reais.
 - **Prompt:**
 ```
-Mysterious masked woman vigilante, long wavy blonde hair, light green eyes, defined eyebrows,
-black tactical mask with golden details covering the lower face, dark practical tactical outfit,
-confident and cold gaze, standing on a rooftop at night.
+Mysterious masked woman agent, blonde hair, mask hiding part of her face, light eyes visible,
+defined eyebrows, dark light-weight tactical outfit for running, jumping and fighting,
+smirking cocky attitude, leaping between rooftops at night.
 + (colar o sufixo de estilo 2D da seção 9)
 ```
 
@@ -104,7 +116,7 @@ Gogoman = cérebro e precisão à distância. Gabi = força e escudo na linha de
 - Fontes de humor: videogame (competição na vida real e dentro das missões), planos que um acha genial e o outro acha loucura, o ritual da frase, os dois tentando manter a vida normal.
 
 ## 5. Mundo — "Nova Aurélia" (nome sugerido)
-País fictício governado há décadas pelo **Partido Soberano Unido (PSU)**.
+País fictício governado há décadas pelo **Partido Soberano Unido (PSU)**, num regime de ditadura.
 - **Presidente Augusto Lacerda** (PSU): velho, calmo, sorridente — controla tudo por trás de uma imagem paternal.
 - **Heitor Valmont**: novo político carismático que quer derrubar o PSU numa **revolução política**. Ídolo das ruas.
 - **General Ferrão**: chefe da segurança do PSU, caça os "mascarados" (heróis).
@@ -173,6 +185,7 @@ Dica de consistência: reutilizar sempre o mesmo texto de personagem + a foto de
 ## 10. Pendências
 - Confirmar nomes (país, partido, vilões) e se quer manter o aparelho dentário nos personagens.
 - Definir idioma/voz (PT-BR) e como gerar a animação (IA / Blender / outro).
-- Definir o papel da Loira Mascarada (aliada, rival, mandante?).
-- Definir se Valmont é mocinho, vilão ou os dois (hoje está como ambíguo).
+- Confirmar o papel da Loira Mascarada (hoje: aliada/rival ambígua) e a organização misteriosa dela.
+- Valmont está como aliado teimoso, com segredos (confirmar).
+- Confirmar que os traços "Engraçadinho… Teimoso" são do Valmont (assumido).
 - Confirmar a frase característica como sendo do SuperGabi (assumido).
