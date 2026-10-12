@@ -17,6 +17,20 @@ Dois melhores amigos com vidas normais escondem identidades de super-heróis. Qu
 - Mundo: cidade art déco/modernista, neon laranja, cartazes de propaganda do governo.
 - Não copiar trajes, logos, cenas ou personagens de Os Incríveis (risco de strike/desmonetização).
 
+## 3b. Tom, violência e suspense
+
+### Violência
+- Pode ser **intensa**, e os heróis **podem matar inimigos quando fizer sentido para a história** (morte tem peso: Gogoman não comemora, Gabi comenta, o país reage).
+- **Sem sangue e sem ferimentos gráficos.** O perigo vem de: som (tiro, silêncio depois), sombras, silhuetas, câmera cortando para a reação, cenário (vidro quebrando, poeira, queda), elipses ("corte para o dia seguinte") e consequências (manchete, luto, perseguição).
+- Mortes importantes (aliados, vilões) são **fora de quadro ou em silhueta**. Evitar tortura, crueldade gratuita e violência contra crianças.
+- Dica de plataforma: manter o conteúdo sem gore ajuda na monetização e no alcance dos Shorts; mesmo assim, a violência intensa pode levar a restrição de idade. Marcar corretamente no upload.
+
+### Suspense (regra de ouro)
+- **Todo episódio tem pelo menos 1 surpresa ou revelação.**
+- **Todo gancho final ameaça algo importante** para os protagonistas, sempre um destes cinco: (1) **identidades secretas**, (2) **família**, (3) **amizade entre os dois**, (4) **uma missão**, (5) **o futuro do país**.
+- Ritmo: pergunta aberta no segundo 0-3 ("Quem vazou?"), reviravolta por volta dos 2/3, gancho nos últimos 3 s. Cada resposta abre uma pergunta nova.
+- Registro de "o que o público já sabe" (para planejar traições): manter uma lista de segredos e quem sabe de cada um.
+
 ## 4. Personagens
 
 ### Gogoman (identidade civil: Bisteca) — protagonista
@@ -69,20 +83,22 @@ País fictício governado há décadas pelo **Partido Soberano Unido (PSU)**.
 5. Reviravolta final: o verdadeiro mandante nem é o PSU nem o Valmont puro — cliffhanger para a T2.
 
 ## 7. Episódios da Temporada 1 (esqueleto)
-| Ep | Título | Resumo | Gancho final |
-|----|--------|--------|--------------|
-| 1 | O Tiro Que Mudou Tudo | Vida normal do Bisteca e Gabriel; sniper de Gogoman impede um atentado a um comício | Alguém filmou o rosto do Gogoman |
-| 2 | Identidade Secreta | Os dois voltam ao "dia normal" tentando disfarçar; Ferrão começa a investigar | Mira envia mensagem anônima: "Sei quem vocês são" |
-| 3 | Quem é Valmont? | Conhecem o político revolucionário; ele pede ajuda | Sombra mata um aliado diante deles |
-| 4 | Corpo a Corpo | Gabi enfrenta capangas do PSU sozinho; mostra a resistência a balas | Aparece o Capitão Aço |
-| 5 | Mira Perfeita | Duelo de snipers: Gogoman vs Sombra | Gogoman erra o tiro |
-| 6 | O Traidor | Vazam a identidade deles | Bisteca e Gabriel são cercados em casa |
-| 7 | Fuga | Perseguição pela cidade | Gabi é atingido por algo que fura a resistência |
-| 8 | Aliado Improvável | Capitão Aço escolhe um lado | Ferrão descobre o esconderijo |
-| 9 | Noite da Revolução | Início do levante nas ruas | Valmont discursa... e algo está errado |
-| 10 | Duas Faces | Os heróis descobrem o segredo de Valmont | Gogoman tem Valmont na mira |
-| 11 | Um Tiro Só | Decisão moral: atirar ou não? | O tiro sai |
-| 12 | Quem Governa Agora? | Desfecho + reviravolta | Aparece o verdadeiro mandante |
+Colunas: **Surpresa/Revelação** do episódio e **O que o gancho ameaça** (identidade, família, amizade, missão ou país).
+
+| Ep | Título | Resumo | Surpresa/Revelação | Gancho final | Ameaça |
+|----|--------|--------|--------------------|--------------|--------|
+| 1 | O Tiro Que Mudou Tudo | Vida normal de Bisteca e Gabriel; sniper do Gogoman impede um atentado num comício | O atirador era do próprio comício de segurança do PSU | Drone filmou o rosto do Gogoman: "Ele está aqui." | Identidade |
+| 2 | Identidade Secreta | Voltam ao dia normal; Ferrão investiga o atentado | Ferrão já tem a silhueta do Gogoman num retrato falado | Mira envia: "Sei quem vocês são" | Identidade |
+| 3 | Quem é Valmont? | Conhecem o político revolucionário; ele pede ajuda | Valmont sabe que Gogoman existe e quem ele protegeu | Sombra mata um aliado (fora de quadro) | Missão |
+| 4 | Corpo a Corpo | Gabi enfrenta capangas do PSU sozinho e segura a missão | Capangas usam munição especial que ainda não fura a resistência dele | Aparece o Capitão Aço | Amizade |
+| 5 | Mira Perfeita | Duelo de snipers: Gogoman vs Sombra | Sombra conhece os pontos de mira favoritos dele | Gogoman erra o tiro | Missão |
+| 6 | O Traidor | Vazam a identidade deles | O traidor é alguém muito próximo | Cercados em casa | Família/Identidade |
+| 7 | Fuga | Perseguição; **Gabi salva o Gogoman** | Gabi aguenta algo impossível por ele | Gabi é atingido por algo que fura a resistência | Amizade |
+| 8 | Aliado Improvável | Capitão Aço escolhe um lado | Aço sempre soube e protegia os dois | Ferrão descobre o esconderijo | Missão |
+| 9 | Noite da Revolução | Início do levante nas ruas | O levante foi planejado pelo PSU para justificar repressão | Valmont discursa... e algo está errado | País |
+| 10 | Duas Faces | Heróis descobrem o segredo de Valmont | Valmont fez acordo com o assassino Sombra | Gogoman tem Valmont na mira | País |
+| 11 | Um Tiro Só | Decisão: atirar ou não? **Gabi salva o Gogoman** | Quem manda Sombra é outra pessoa | O tiro sai | Amizade/País |
+| 12 | Quem Governa Agora? | Desfecho + reviravolta | O verdadeiro mandante revelado | Aparece o mandante | País |
 
 ## 8. Roteiro do EP 01 — "O Tiro Que Mudou Tudo" (~50 s)
 **[0–3 s] GANCHO** — Close no olho do Gogoman na mira. Som de vento. LEGENDA: "Faltam 10 segundos."
