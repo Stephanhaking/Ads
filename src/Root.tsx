@@ -1,6 +1,7 @@
 import {Composition} from 'remotion';
 import {CHASE_FRAMES, ChaseDemo} from './chase/ChaseDemo';
 import {G2_FRAMES, GoogleV2} from './google2/GoogleV2';
+import {GThumb} from './google2/Thumb';
 import {FShort, GShort, fshortFrames, shortFrames} from './google2/Shorts';
 import {MainVideo} from './MainVideo';
 import {GoogleVideo, GG_TOTAL} from './GoogleVideo';
@@ -23,6 +24,8 @@ export const RemotionRoot: React.FC = () => (
   />
   {(['S1', 'S2', 'S3'] as const).map((k) => <Composition key={k} id={`GShort${k}`} component={GShort} defaultProps={{id: k}} durationInFrames={shortFrames(k)} fps={30} width={1080} height={1920} />)}
   {(['F1', 'F2', 'F3'] as const).map((k) => <Composition key={k} id={`FShort${k}`} component={FShort} defaultProps={{id: k}} durationInFrames={fshortFrames(k)} fps={30} width={1080} height={1920} />)}
+  <Composition id="GoogleThumbA" component={GThumb} defaultProps={{variant: 'A' as const}} durationInFrames={1} fps={30} width={1920} height={1080} />
+  <Composition id="GoogleThumbB" component={GThumb} defaultProps={{variant: 'B' as const}} durationInFrames={1} fps={30} width={1920} height={1080} />
   <Composition id="GoogleV2" component={GoogleV2} durationInFrames={G2_FRAMES} fps={30} width={1920} height={1080} />
   <Composition id="ChaseDemo" component={ChaseDemo} durationInFrames={CHASE_FRAMES} fps={30} width={1920} height={1080} />
   <Composition id="FeudalVideo" component={FeudalVideo} durationInFrames={FEUDAL_FRAMES} fps={30} width={1920} height={1080} />
