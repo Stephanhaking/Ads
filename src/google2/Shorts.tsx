@@ -7,6 +7,10 @@ import {TornDefs} from '../feudal/StyleV2';
 import {Beat, VertCtx, fit} from './GoogleV2';
 import {GBEATS} from './beats';
 import type {GBeat} from './beats';
+import {SCENES} from '../feudal/script';
+import {SceneView} from '../feudal/Scenes';
+import {starts as FSTARTS} from '../feudal/FeudalVideo';
+import {TOTAL as FTOTAL} from '../feudal/words';
 
 export type ShortDef = {t0: number; t1: number; tag: string};
 export const SHORTS: Record<string, ShortDef> = {
@@ -86,6 +90,59 @@ export const GShort: React.FC<{id: string}> = ({id}) => {
       </Sequence>
       <Audio src={staticFile('audio/music/distinguish.mp3')} volume={(g) => 0.12 * interpolate(g, [0, 30, dur - 30, dur], [0, 1, 1, 0], clamp)} />
       <div style={{position: 'absolute', left: 60, top: 54, fontFamily: fonts.mono, fontSize: 30, letterSpacing: 8, color: INK}}>
+        <span style={{display: 'inline-block', width: 16, height: 16, borderRadius: 8, background: RED, marginRight: 14, opacity: 0.4 + 0.6 * (Math.floor(f / 15) % 2)}} />DISTINGUISH · {tag}
+      </div>
+      <div style={{position: 'absolute', left: 0, bottom: 0, height: 14, width: `${(f / dur) * 100}%`, background: RED}} />
+      <div style={{position: 'absolute', left: 0, right: 0, bottom: 150, textAlign: 'center', opacity: cta, fontFamily: fonts.heading, fontSize: 52, color: '#fff'}}>
+        <span style={{background: RED, padding: '14px 34px'}}>FULL VIDEO ON THE CHANNEL</span>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// ── Shorts do Feudalismo: a cena horizontal original é mostrada em duas janelas (texto em cima, imagem em baixo) ──
+export const FSHORTS: Record<string, ShortDef> = {
+  F1: {t0: 0, t1: 50.9, tag: 'YOU PAY RENT'},
+  F2: {t0: 374.9, t1: 413.4, tag: 'A DIGITAL SERF'},
+  F3: {t0: 610.3, t1: 651.6, tag: 'THE CONTRACT CHANGES'},
+};
+export const fshortFrames = (k: string) => Math.round((FSHORTS[k].t1 - FSHORTS[k].t0) * FPS);
+
+const FScene: React.FC<{i: number}> = ({i}) => {
+  const sc = SCENES[i];
+  const win = (style: React.CSSProperties, x0: number, y0: number, z: number) => (
+    <div style={{position: 'absolute', left: 0, width: 1080, overflow: 'hidden', ...style}}>
+      <div style={{position: 'absolute', left: -x0, top: -y0, width: 1920, height: 1080, zoom: z} as React.CSSProperties}>
+        <SceneView sc={sc} start={FSTARTS[i]} figNo={i + 1} />
+      </div>
+    </div>
+  );
+  return (
+    <>
+      {win({top: 110, height: 860}, 0, 0, 1.1)}
+      {win({top: 940, height: 940}, 880, 120, 1.03)}
+    </>
+  );
+};
+
+export const FShort: React.FC<{id: string}> = ({id}) => {
+  const f = useCurrentFrame();
+  const {t0, t1, tag} = FSHORTS[id];
+  const dur = fshortFrames(id);
+  const cta = interpolate(f, [dur - 90, dur - 70], [0, 1], clamp);
+  return (
+    <AbsoluteFill style={{background: '#F2EADB'}}>
+      <Sequence from={-Math.round(t0 * FPS)} layout="none">
+        {SCENES.map((sc, i) => {
+          const from = Math.round(FSTARTS[i] * FPS);
+          const end = i + 1 < SCENES.length ? Math.round(FSTARTS[i + 1] * FPS) : Math.round((FTOTAL + 3) * FPS);
+          if (end <= t0 * FPS || from >= t1 * FPS) return null;
+          return <Sequence key={i} from={from} durationInFrames={Math.max(1, end - from)} layout="none"><FScene i={i} /></Sequence>;
+        })}
+        <Audio src={staticFile('audio/feudal/voice.wav')} />
+      </Sequence>
+      <Audio src={staticFile('audio/music/distinguish.mp3')} volume={(g) => 0.12 * interpolate(g, [0, 30, dur - 30, dur], [0, 1, 1, 0], clamp)} />
+      <div style={{position: 'absolute', left: 60, top: 44, fontFamily: fonts.mono, fontSize: 30, letterSpacing: 8, color: INK}}>
         <span style={{display: 'inline-block', width: 16, height: 16, borderRadius: 8, background: RED, marginRight: 14, opacity: 0.4 + 0.6 * (Math.floor(f / 15) % 2)}} />DISTINGUISH · {tag}
       </div>
       <div style={{position: 'absolute', left: 0, bottom: 0, height: 14, width: `${(f / dur) * 100}%`, background: RED}} />
