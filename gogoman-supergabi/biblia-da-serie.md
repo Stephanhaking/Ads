@@ -72,7 +72,7 @@ Dois melhores amigos com vidas normais escondem identidades de super-heróis. Qu
   - **Corajoso:** tem medo de morrer, mas não deixa que isso o impeça de lutar.
   - **Inteligente:** não é só discurso. Conhece os riscos, sabe negociar e pode surpreender os heróis com informações importantes.
   - **Teimoso:** às vezes insiste em continuar uma missão mesmo quando Gogoman e SuperGabi dizem que é perigoso demais (fonte de conflito e de perigo real).
-- **Arco (proposta, com lado mais heroico):** aliado de verdade. O mistério vem de o que ele sabe e de acordos arriscados que faz "pelo país", não de maldade. EP 03 pede ajuda aos heróis; EP 09 discursa na noite da revolução; EP 10 revela-se o acordo arriscado (com o Sombra); EP 11 o conflito moral e a teimosia dele põem todos em risco; EP 12 reviravolta com o mandante real.
+- **Arco (proposta, com lado mais heroico):** aliado de verdade. O mistério vem de o que ele sabe e de acordos arriscados que faz "pelo país", não de maldade. EP 01 é protegido pelos heróis na escolta; EP 09 discursa na noite da revolução; EP 10 revela-se o acordo arriscado (com o Sombra); EP 11 o conflito moral e a teimosia dele põem todos em risco; EP 12 reviravolta com o mandante real.
 - **Bordão sugerido:** "O povo não pede licença para mudar o país."
 - **Regras de segurança:** país, partido, nomes e símbolos 100% fictícios; nenhuma referência a partidos, políticos, slogans ou fatos reais; não usar cartazes ou frases de política real; não reproduzir o rosto da foto fielmente.
 - **Prompt:**
@@ -136,9 +136,9 @@ Colunas: **Surpresa/Revelação** do episódio e **O que o gancho ameaça** (ide
 
 | Ep | Título | Resumo | Surpresa/Revelação | Gancho final | Ameaça |
 |----|--------|--------|--------------------|--------------|--------|
-| 1 | O Tiro Que Mudou Tudo | Vida normal de Bisteca e Gabriel; sniper do Gogoman impede um atentado num comício | O atirador era do próprio comício de segurança do PSU | Drone filmou o rosto do Gogoman: "Ele está aqui." | Identidade |
-| 2 | Identidade Secreta | Voltam ao dia normal; Ferrão investiga o atentado | Ferrão já tem a silhueta do Gogoman num retrato falado | Mira envia: "Sei quem vocês são" | Identidade |
-| 3 | Quem é Valmont? | Conhecem o político revolucionário; ele pede ajuda | Valmont sabe que Gogoman existe e quem ele protegeu | Sombra mata um aliado (fora de quadro) | Missão |
+| 1 | A Escolta Mortal | Escoltam Valmont, emboscada, duelo com a Loira Mascarada; Gogoman hesita e a deixa fugir | A Loira conhece a identidade deles e a hesitação dele | Foto de Bisteca e Gabriel jogando PS5 em casa | Identidade |
+| 2 | A Mulher da Máscara | Quem é ela? Por que ela se interessa pelo Gogoman? Ferrão investiga a escolta | Ela recebe ordens de alguém mais poderoso (a "voz misteriosa") | Gabi desconfia que o Gogoman perdeu o foco | Amizade/Identidade |
+| 3 | Quem é Valmont? | Valmont conta a verdade que quer revelar e pede proteção | Valmont sabe que Gogoman existe e quem ele protegeu | Sombra mata um aliado (fora de quadro) | Missão |
 | 4 | Corpo a Corpo | Gabi enfrenta capangas do PSU sozinho e segura a missão | Capangas usam munição especial que ainda não fura a resistência dele | Aparece o Capitão Aço | Amizade |
 | 5 | Mira Perfeita | Duelo de snipers: Gogoman vs Sombra | Sombra conhece os pontos de mira favoritos dele | Gogoman erra o tiro | Missão |
 | 6 | O Traidor | Vazam a identidade deles | O traidor é alguém muito próximo | Cercados em casa | Família/Identidade |
@@ -149,13 +149,15 @@ Colunas: **Surpresa/Revelação** do episódio e **O que o gancho ameaça** (ide
 | 11 | Um Tiro Só | Decisão: atirar ou não? **Gabi salva o Gogoman** | Quem manda Sombra é outra pessoa | O tiro sai | Amizade/País |
 | 12 | Quem Governa Agora? | Desfecho + reviravolta | O verdadeiro mandante revelado | Aparece o mandante | País |
 
-## 8. Roteiro do EP 01 — "O Tiro Que Mudou Tudo" (~50 s)
-**[0–3 s] GANCHO** — Close no olho do Gogoman na mira. Som de vento. LEGENDA: "Faltam 10 segundos."
-**[3–10 s]** Praça lotada, comício do político Valmont. Cartazes do PSU rasgados. Gogoman, no fone, do telhado: "Gabi, tá vendo o cara da jaqueta?" Gabi, já abrindo caminho na multidão: **"Tu cuida dos caras lá de longe, que eu resolvo os daqui!"**
-**[10–20 s]** Vilão tira um detonador. Gabi atravessa a multidão correndo. Gogoman escolhe o telhado ideal, lê o vento e conjura uma sniper realista (a arma só aparece nas mãos dele, sem brilho nem efeito).
-**[20–32 s]** Vilão atira em Gabi — as balas quicam. Gabi segura o vilão pelo colarinho: "Isso fez cócegas!" Gogoman (no fone): "Ficou parado, valeu. Agora."
-**[32–40 s]** Gogoman, mirando: **"Um alvo, um disparo. Bora acabar com isso."** Um tiro. O detonador voa. Câmera lenta. Aplausos... ninguém vê quem atirou.
-**[40–50 s]** Corte: Bisteca e Gabriel "normais", tomando café. Na TV: "Herói misterioso salva comício". Gabriel: "Quem será?" Bisteca (sem olhar): "Ninguém." A câmera mostra no telhado vizinho um drone filmando. **Gancho:** tela preta com um olho vermelho: "Ele está aqui."
+## 8. Roteiros
+- **EP 01 — A Escolta Mortal:** ver `roteiros/ep01-a-escolta-mortal.md` (roteiro do criador, com ajustes marcados).
+
+## 8b. Direção criativa para os próximos episódios (do criador)
+- **A Loira:** fica mascarada no EP 01; a identidade é revelada **gradualmente**.
+- **Relação com o Gogoman:** começa com curiosidade e atração inesperada; evolui devagar entre desconfiança, rivalidade e tensão romântica.
+- **SuperGabi:** percebe que Bisteca deixou a mulher fugir e começa a desconfiar que o amigo está perdendo o foco (sem virar vilão do arco; ele continua leal e essencial).
+- **Conspiração:** a Loira não é a chefe suprema; ela recebe ordens de alguém mais poderoso (a "voz misteriosa").
+- **Gancho recorrente:** a foto da sala liga a rival à vida pessoal dos protagonistas.
 
 ## 9. Prompts-base para consistência (inglês, para geradores de imagem/vídeo)
 Sufixo de estilo (colar em TODOS os prompts):
