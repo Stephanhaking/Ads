@@ -77,6 +77,21 @@ navy suit, white shirt, blue tie, sun-rise emblem pin on the lapel. Calm confide
 + (colar o sufixo de estilo 2D da seção 9)
 ```
 
+### A Loira Mascarada (personagem FICTÍCIA, papel a confirmar)
+- **Visual (inspirado em foto de referência enviada pelo criador, estilizado e original):** mulher jovem, cabelo loiro longo e ondulado, olhos claros esverdeados, sobrancelhas marcadas e lábios suaves. **O rosto fica quase todo coberto por uma máscara** (tática, preta com detalhes dourados, cobrindo nariz e boca ou só os olhos), então o que a identifica é o cabelo, o olhar e a postura. Traje tático escuro e prático, estilo Invencível (contornos finos, cores chapadas).
+- **Personalidade:** misteriosa, fria, calculista e bem-humorada nas horas certas. Nunca confia em ninguém por completo.
+- **Papel na história (proposta padrão):** agente independente, aliada ou rival dos heróis, com agenda própria. Aparece no EP 02 (a mensagem "Sei quem vocês são" é dela ou de alguém de confiança dela) e sempre está um passo à frente do Ferrão. A identidade real dela é um dos segredos da série.
+- **Habilidades (sem poder sobrenatural):** infiltração, disfarce, combate ágil e armas de curta distância. Boa em obter informação e em desaparecer.
+- **Função narrativa:** cria suspense e reviravolta (será traidora, aliada ou a verdadeira mandante?). Também resolve o caso do "Mira" (contato da dupla): pode ser a mesma pessoa, ou parceira dela.
+- **Regras:** nada de erotização, ela é competente e dona do próprio arco; sem relacionar a personagem a pessoas reais; manter nome e identidade 100% fictícios.
+- **Prompt:**
+```
+Mysterious masked woman vigilante, long wavy blonde hair, light green eyes, defined eyebrows,
+black tactical mask with golden details covering the lower face, dark practical tactical outfit,
+confident and cold gaze, standing on a rooftop at night.
++ (colar o sufixo de estilo 2D da seção 9)
+```
+
 ### Dinâmica
 Gogoman = cérebro e precisão à distância. Gabi = força e escudo na linha de frente. A amizade é o motor emocional; as traições testam isso.
 
@@ -158,5 +173,6 @@ Dica de consistência: reutilizar sempre o mesmo texto de personagem + a foto de
 ## 10. Pendências
 - Confirmar nomes (país, partido, vilões) e se quer manter o aparelho dentário nos personagens.
 - Definir idioma/voz (PT-BR) e como gerar a animação (IA / Blender / outro).
+- Definir o papel da Loira Mascarada (aliada, rival, mandante?).
 - Definir se Valmont é mocinho, vilão ou os dois (hoje está como ambíguo).
 - Confirmar a frase característica como sendo do SuperGabi (assumido).
