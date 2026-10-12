@@ -12,23 +12,23 @@ const Line: React.FC<{t: string; hot?: boolean; size: number; color?: string}> =
 );
 
 // A: estilo do canal (papel, gravura, um vermelho). B: usa a imagem do olho enviada pelo utilizador.
-export const GThumb: React.FC<{variant: 'A' | 'B'}> = ({variant}) => (
+export const GThumb: React.FC<{variant: 'A' | 'B'; text?: boolean}> = ({variant, text = true}) => (
   <AbsoluteFill style={{background: '#EADFC8'}}>
     {variant === 'A' ? (
       <>
         <Bg theme="paper" />
-        <Img src={staticFile('google2/cut/window-peering-eye.png')} style={{position: 'absolute', right: 70, top: 30, height: 1020, filter: 'drop-shadow(18px 22px 0 rgba(26,20,16,0.18))'}} />
-        <div style={{position: 'absolute', left: 80, top: 120}}>
+        <Img src={staticFile('google2/cut/window-peering-eye.png')} style={text ? {position: 'absolute', right: 70, top: 30, height: 1020, filter: 'drop-shadow(18px 22px 0 rgba(26,20,16,0.18))'} : {position: 'absolute', left: 560, top: 20, height: 1040, filter: 'drop-shadow(18px 22px 0 rgba(26,20,16,0.18))'}} />
+        {text && <div style={{position: 'absolute', left: 80, top: 120}}>
           <Line t="Who" size={250} /><Line t="dies" size={250} /><Line t="next?" hot size={250} />
-        </div>
+        </div>}
       </>
     ) : (
       <>
         <Img src={staticFile('google2/thumb/eye-ref.jpg')} style={{position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover'}} />
-        <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(90deg, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.25) 55%, rgba(0,0,0,0) 100%)'}} />
-        <div style={{position: 'absolute', left: 70, top: 210}}>
+        {text && <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(90deg, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.25) 55%, rgba(0,0,0,0) 100%)'}} />}
+        {text && <div style={{position: 'absolute', left: 70, top: 210}}>
           <Line t="Who" size={200} color="#fff" /><Line t="dies" size={200} color="#fff" /><Line t="next?" hot size={200} />
-        </div>
+        </div>}
       </>
     )}
   </AbsoluteFill>

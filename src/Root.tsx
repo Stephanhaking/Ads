@@ -26,6 +26,8 @@ export const RemotionRoot: React.FC = () => (
   {(['F1', 'F2', 'F3'] as const).map((k) => <Composition key={k} id={`FShort${k}`} component={FShort} defaultProps={{id: k}} durationInFrames={fshortFrames(k)} fps={30} width={1080} height={1920} />)}
   <Composition id="GoogleThumbA" component={GThumb} defaultProps={{variant: 'A' as const}} durationInFrames={1} fps={30} width={1920} height={1080} />
   <Composition id="GoogleThumbB" component={GThumb} defaultProps={{variant: 'B' as const}} durationInFrames={1} fps={30} width={1920} height={1080} />
+  <Composition id="GoogleThumbANoText" component={GThumb} defaultProps={{variant: 'A' as const, text: false}} durationInFrames={1} fps={30} width={1920} height={1080} />
+  <Composition id="GoogleThumbBNoText" component={GThumb} defaultProps={{variant: 'B' as const, text: false}} durationInFrames={1} fps={30} width={1920} height={1080} />
   <Composition id="GoogleV2" component={GoogleV2} durationInFrames={G2_FRAMES} fps={30} width={1920} height={1080} />
   <Composition id="ChaseDemo" component={ChaseDemo} durationInFrames={CHASE_FRAMES} fps={30} width={1920} height={1080} />
   <Composition id="FeudalVideo" component={FeudalVideo} durationInFrames={FEUDAL_FRAMES} fps={30} width={1920} height={1080} />
