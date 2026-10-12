@@ -19,8 +19,7 @@ Publicar **primeiro como privado**, rever no Studio, e só depois tornar públic
 1:22 Who, in this building, is going to die?
 2:06 The word almost nobody checks
 3:26 Two cases, two countries
-4:55 Why would an ad company want hospital records?
-5:00 Your day, measured
+4:55 Why an ad company wants hospital records (and your day, measured)
 5:41 What is the product?
 6:48 Why a hospital matters
 7:19 When "probably" becomes "certainly"
