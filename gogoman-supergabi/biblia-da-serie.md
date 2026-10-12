@@ -62,6 +62,21 @@ Dois melhores amigos com vidas normais escondem identidades de super-heróis. Qu
 - Limite: balas comuns não passam, mas armas especiais/explosivos/blindagem pesada machucam.
 - **Frase característica:** "Tu cuida dos caras lá de longe, que eu resolvo os daqui!" (dita ao Gogoman antes de cada ação: ele cobre a distância com a sniper, Gabi resolve o corpo a corpo). Vira o ritual da dupla; a resposta do Gogoman pode variar a cada episódio ("Fechou." / "Não demora." / "Tá me devendo.").
 
+### Heitor Valmont — o político revolucionário (personagem FICTÍCIO)
+- **Quem é:** jovem político carismático de Nova Aurélia que lidera a revolução contra o PSU. Ídolo das ruas, discurso firme, aparência impecável.
+- **Visual (inspirado em uma foto de referência enviada pelo criador, de forma ESTILIZADA e não como retrato):** homem de ~30 anos, terno azul-marinho, camisa branca, gravata azul, pin na lapela (aqui o pin é o símbolo da revolução: um sol nascente). Para o personagem ficar original e não parecer pessoa real: cabelo castanho-escuro com risca lateral e uma mecha grisalha, rosto mais anguloso, queixo marcado, olhar intenso, sobrancelhas grossas (linguagem visual de Invincible).
+- **Personalidade:** persuasivo, calmo, sempre parece ter razão. Acredita de verdade na causa, mas aceita fazer acordos sombrios "pelo bem do país".
+- **Arco (padrão proposto, a confirmar):** AMBÍGUO. EP 03 pede ajuda aos heróis; EP 09 discursa na noite da revolução; EP 10 vira revelação do acordo com Sombra; EP 11 Gogoman o tem na mira; EP 12 o mandante verdadeiro é outro.
+- **Bordão sugerido:** "O povo não pede licença para mudar o país."
+- **Regras de segurança do personagem:** país, partido, nomes e símbolos 100% fictícios; nenhuma referência a partidos, políticos, slogans ou fatos reais; não usar cartazes ou frases de política real; não reproduzir o rosto da foto fielmente.
+- **Prompt:**
+```
+Charismatic young politician character named Heitor Valmont, around 30, dark-brown hair with
+side part and a streak of grey, angular face, strong jaw, intense eyes, thick eyebrows,
+navy suit, white shirt, blue tie, sun-rise emblem pin on the lapel. Calm confident expression.
++ (colar o sufixo de estilo 2D da seção 9)
+```
+
 ### Dinâmica
 Gogoman = cérebro e precisão à distância. Gabi = força e escudo na linha de frente. A amizade é o motor emocional; as traições testam isso.
 
@@ -143,5 +158,5 @@ Dica de consistência: reutilizar sempre o mesmo texto de personagem + a foto de
 ## 10. Pendências
 - Confirmar nomes (país, partido, vilões) e se quer manter o aparelho dentário nos personagens.
 - Definir idioma/voz (PT-BR) e como gerar a animação (IA / Blender / outro).
-- Definir se Valmont é mocinho, vilão ou os dois.
+- Definir se Valmont é mocinho, vilão ou os dois (hoje está como ambíguo).
 - Confirmar a frase característica como sendo do SuperGabi (assumido).
