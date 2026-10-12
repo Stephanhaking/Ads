@@ -31,10 +31,18 @@ Dois melhores amigos com vidas normais escondem identidades de super-heróis. Qu
 - **Poder:** especialista em combate corpo a corpo + **resistência a balas comuns**.
 - Personalidade: coração do time, brincalhão, leal, sempre vai na frente para proteger o amigo.
 - Limite: balas comuns não passam, mas armas especiais/explosivos/blindagem pesada machucam.
-- Bordão sugerido: "Pode vir, eu aguento!" (e ele aguenta... até aparecer algo que não aguenta).
+- **Frase característica:** "Tu cuida dos caras lá de longe, que eu resolvo os daqui!" (dita ao Gogoman antes de cada ação: ele cobre a distância com a sniper, Gabi resolve o corpo a corpo). Vira o ritual da dupla; a resposta do Gogoman pode variar a cada episódio ("Fechou." / "Não demora." / "Tá me devendo.").
 
 ### Dinâmica
-Gogoman = cérebro e precisão à distância. Gabi = força e escudo na linha de frente. Rivalidade amigável, piadas internas, lealdade absoluta. A amizade é o motor emocional; as traições testam isso.
+Gogoman = cérebro e precisão à distância. Gabi = força e escudo na linha de frente. A amizade é o motor emocional; as traições testam isso.
+
+### A relação entre os dois (regras de roteiro)
+- **Melhores amigos ANTES de serem heróis.** Um conhece a identidade secreta do outro; confiança total.
+- Podem discutir, competir nos videogames, fazer piadas e discordar dos planos, mas **nunca deixam de se ajudar quando a situação fica séria**. Brigas são leves e viram piada; a lealdade nunca é posta em dúvida entre eles.
+- **Gogoman é o protagonista** e recebe os momentos mais destacados e os golpes finais nos grandes inimigos.
+- **SuperGabi nunca pode parecer inútil ou fraco.** É essencial em toda missão (abre caminho, protege, segura o inimigo) e, em situações-chave, **salva o Gogoman** (meta: pelo menos 1 salvamento grande a cada 3–4 episódios; ex.: EP 07 e EP 11).
+- **O humor vem do contraste de personalidades** (Gogoman: calculista, seco, sarcástico; Gabi: barulhento, caloroso, impulsivo), nunca de tornar um dos dois incompetente. Proibido: Gabi "burro" ou Gogoman "covarde" como piada.
+- Fontes de humor: videogame (competição na vida real e dentro das missões), planos que um acha genial e o outro acha loucura, o ritual da frase, os dois tentando manter a vida normal.
 
 ## 5. Mundo — "Nova Aurélia" (nome sugerido)
 País fictício governado há décadas pelo **Partido Soberano Unido (PSU)**.
@@ -70,9 +78,9 @@ País fictício governado há décadas pelo **Partido Soberano Unido (PSU)**.
 
 ## 8. Roteiro do EP 01 — "O Tiro Que Mudou Tudo" (~50 s)
 **[0–3 s] GANCHO** — Close no olho do Gogoman na mira. Som de vento. LEGENDA: "Faltam 10 segundos."
-**[3–10 s]** Praça lotada, comício do político Valmont. Cartazes do PSU rasgados. Narração (Gogoman, no fone): "Gabi, tá vendo o cara da jaqueta?" Gabi (bochechudo, comendo pastel): "Vendo. Vou lá."
+**[3–10 s]** Praça lotada, comício do político Valmont. Cartazes do PSU rasgados. Gogoman, no fone, do telhado: "Gabi, tá vendo o cara da jaqueta?" Gabi, já abrindo caminho na multidão: **"Tu cuida dos caras lá de longe, que eu resolvo os daqui!"**
 **[10–20 s]** Vilão tira um detonador. Gabi atravessa a multidão correndo. Gogoman conjura uma sniper em pose épica (efeito de luz verde/azul).
-**[20–32 s]** Vilão atira em Gabi — as balas quicam. Gabi: "Isso fez cócegas!" Gogoman: "Fica parado, Gabi."
+**[20–32 s]** Vilão atira em Gabi — as balas quicam. Gabi segura o vilão pelo colarinho: "Isso fez cócegas!" Gogoman (no fone): "Ficou parado, valeu. Agora."
 **[32–40 s]** Um tiro. O detonador voa. Câmera lenta. Aplausos... ninguém vê quem atirou.
 **[40–50 s]** Corte: Bisteca e Gabriel "normais", tomando café. Na TV: "Herói misterioso salva comício". Gabriel: "Quem será?" Bisteca (sem olhar): "Ninguém." A câmera mostra no telhado vizinho um drone filmando. **Gancho:** tela preta com um olho vermelho: "Ele está aqui."
 
@@ -98,3 +106,4 @@ Dica de consistência: reutilizar sempre o mesmo texto de personagem + a foto de
 - Confirmar nomes (país, partido, vilões) e se quer manter o aparelho dentário nos personagens.
 - Definir idioma/voz (PT-BR) e como gerar a animação (IA / Blender / outro).
 - Definir se Valmont é mocinho, vilão ou os dois.
+- Confirmar a frase característica como sendo do SuperGabi (assumido).
