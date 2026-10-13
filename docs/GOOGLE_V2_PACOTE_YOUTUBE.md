@@ -57,5 +57,5 @@ Note: the nurse is an illustrative example, not a real person. Visuals and narra
 google, ai, data privacy, health records, antitrust, youtube algorithm, documentary
 
 ## Antes de publicar
-- Reconfirmar as marcas ⚠ do guião: ano da queixa nos EUA (2019, processo 1:19-cv-04311), "RTB em 100–200 ms" (afirmação geral; sem fonte puxada) e a data da fuga do Selfish Ledger (maio de 2018).
+- Marcas ⚠ do guião reconfirmadas em 2026-10-13 (fontes secundárias): queixa nos EUA arquivada em 2019 (1:19-cv-04311), arquivada em 2020 e confirmada em recurso em julho de 2023 por falta de dano concreto; Selfish Ledger de 2016, divulgado pelo The Verge em maio de 2018. Leilão: dizer só "numa fracção de segundo" (não citar 100–200 ms; as fontes variam entre <100 ms e 50–150 ms).
 - Rever a tabela de capítulos no Studio (o YouTube exige o primeiro capítulo às 0:00 e pelo menos 3).
