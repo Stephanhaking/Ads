@@ -16,15 +16,20 @@ import argparse, os, re, sys, json
 ap = argparse.ArgumentParser()
 ap.add_argument('video'); ap.add_argument('--thumb'); ap.add_argument('--schedule', help='UTC ISO, ex. 2026-10-12T16:00:00Z (fica privado até lá)')
 ap.add_argument('--title'); ap.add_argument('--dry-run', action='store_true')
+ap.add_argument('--pacote', default='docs/FEUDALISMO_PACOTE_YOUTUBE.md', help='ficheiro com as secções Título/Descrição/Tags (ex. docs/GOOGLE_V2_PACOTE_YOUTUBE.md)')
 a = ap.parse_args()
 
-doc = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'docs/FEUDALISMO_PACOTE_YOUTUBE.md'), encoding='utf-8').read()
+doc = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', a.pacote), encoding='utf-8').read()
 def sec(name):
     m = re.search(r'^## ' + name + r'[^\n]*\n(.*?)(?=^## |\Z)', doc, re.S | re.M)
     return m.group(1).strip() if m else ''
 title = a.title or re.sub(r'^\d+\.\s*', '', sec('Título').split('\n')[0]).replace('**', '').strip()
-desc = sec('Descrição')
-tags = [t.strip() for t in sec('Tags').split(',') if t.strip()]
+title = re.sub(r'\s*\([^)]*\)\s*$', '', title)  # tira "(o título original…)"
+desc = re.sub(r'\s*\[linha opcional[^\]]*\]', '', sec('Descrição'))  # notas de produção não se publicam
+caps = sec('Capítulos')
+if caps and '0:00' not in desc:
+    desc += '\n\nChapters:\n' + '\n'.join(l for l in caps.split('\n') if re.match(r'\d+:\d\d', l))
+tags = [t.strip() for t in (sec('Tags') or sec('Etiquetas')).split(',') if t.strip()]
 print('Título:', title); print('Tags:', len(tags), '| descrição:', len(desc), 'car.')
 if a.dry_run: sys.exit()
 
