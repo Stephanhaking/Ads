@@ -39,3 +39,14 @@ Base de comparação: a nossa mediana atual ≈ 50 views por vídeo longo (melho
 | Subscritores ganhos | ≥ 2 | ≥ 10 | ≥ 50 |
 Leitura aos 7 dias (provisória): ≥ 100 views e fica@5% ≥ 40%. Um vídeo "cumpre" se passar em **visualizações e retenção**; o CTR explica porquê.
 Regra da série: ao fim de 4 vídeos, pelo menos 2 devem "cumprir"; se não, rever o método (N1/N2). A decisão final (N3) continua aos 10 vídeos.
+
+## Calendário (a partir de 17/10/2026; datas são pontos de medição, não previsões de resultado)
+Ritmo assumido: 1 vídeo longo por semana. O Google v3 (já enviado em privado) conta como vídeo 1 se for publicado esta semana.
+| Marco | 1 vídeo/semana | 2 vídeos/semana |
+|---|---|---|
+| 1.ª leitura do vídeo 1 (CTR e retenção, dia 7) | ~27/out | ~27/out |
+| Veredito do vídeo 1 (dia 28) | ~17/nov | ~17/nov |
+| 4 vídeos publicados → verificação "2 em 4 cumprem" (dia 28 do 4.º) | ~12/dez | ~25/nov |
+| 10 vídeos publicados → decisão N3 (dia 28 do 10.º) | ~23/jan/2027 | ~19/dez |
+Sinais por ordem de chegada: 48–72 h (impressões e CTR no Studio), 7 dias (retenção aos 5% se ≥100 views), 28 dias (visualizações e subscritores).
+Monetização (1 000 subscritores e 4 000 h de visualização; confirmar no Studio): o Doodle Dollars converteu ~0,4% das visualizações em subscritores, o que daria ~250 mil visualizações para 1 000 subs. Não é meta de 3 meses sem um vídeo que "acerte" (≥5 000 views).
