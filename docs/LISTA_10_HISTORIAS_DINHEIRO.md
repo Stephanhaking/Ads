@@ -19,3 +19,16 @@ Nível A = sinal forte; B = sinal médio; C = experiência. Títulos no molde "a
 Temas testados sem resultado útil (poucas pesquisas): BlackBerry, Enron, imobiliário do McDonald's, pipocas do cinema, pizza do bitcoin.
 Temas com sinal fraco: cartões de crédito (4 gigantes, sem sucessos pequenos), "os ricos evitam impostos" (9 gigantes), Netflix quase morreu, Nike, Elon/Tesla 2008, tulipas, WeWork, pets.com, Starbucks.
 Regras de produção: ilustrações originais (sem logótipos nem mascotes de marcas, sem rostos reais); todos os factos com fonte e registo de verificação, como no Google v2.
+
+## 2.ª ronda (17/10/2026): ângulo "dados e previsão" (liga ao vídeo do Google)
+Sinal **mais fraco** que na 1.ª ronda: temas de dados/privacidade têm muita procura mas muitos gigantes (data brokers: procura 584 mil, 5 gigantes; apps "grátis": 204 mil, 5 gigantes). Vários clássicos ficaram "sem resultado" porque o filtro só vê vídeos dos últimos 12 meses (a história do Target/gravidez é antiga): isso **não** prova campo livre.
+| Tema | Sinal | Título proposto | ⚠ |
+|---|---|---|---|
+| Carros a vender o teu modo de conduzir a seguradoras | 0 gigantes; 1 sucesso pequeno (26,7 mil subs → 135 mil views); notícia recente | *Your Car Is Selling How You Drive* | confirmar casos (GM/OnStar, intermediários de dados, ações oficiais) e datas |
+| Porque a Google paga à Apple por defeito na pesquisa | 0 gigantes e 0 sucessos pequenos em inglês; liga ao antitruste do vídeo Google | *Google Pays Apple $20 Billion a Year to Stay the Default* | valor e fonte (testemunho do julgamento) |
+| O caso Target e a gravidez prevista | sem leitura (história antiga); encaixa na receita (pessoa + paradoxo + "tu") | *Target Knew Before Her Father Did* | história muito contada e discutida: confirmar o que é facto |
+| Pontuação de crédito (FICO) | procura ~14: ninguém a explicar bem; incerto | *The Number That Decides Your Life Was Invented in 1989* | data, origem e números |
+
+## Ordem final sugerida (8 temas)
+1. Toys R Us · 2. Lehman · 3. Madoff (os de nível A) · 4. Carros/seguro (liga ao Google) · 5. New Coke · 6. Target (teste) · 7. Google paga à Apple · 8. Nokia.
+**Evitar por agora:** data brokers, apps grátis, Spotify, Uber, cartões de crédito, Netflix (gigantes ou sem sinal).

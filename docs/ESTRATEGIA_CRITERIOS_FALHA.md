@@ -1,0 +1,30 @@
+# Quando é que a estratégia falhou? (regras definidas a 17/10/2026, antes de testar)
+
+Definir antes de ver os resultados, para a decisão não depender do estado de espírito. **Ferramenta:** `python3 tools/strategy_check.py --method docs/videos_do_metodo.txt --ctr docs/ctr_manual.csv`.
+
+## A estratégia a testar ("o método")
+Tema validado com `niche_scan` (nome/empresa universal ou objeto do espectador) · título "afirmação + reviravolta" · gancho em 4 partes (paradoxo, pormenor estranho, arco adivinhado, promessa) nos primeiros 30–45 s · 2–3 ganchos plantados com pagamento · diálogos dramatizados · síntese no fim de cada ato · visuais simples e rápidos. Os vídeos feitos assim vão em `docs/videos_do_metodo.txt` (1 id por linha).
+
+## Três tipos de falha (não confundir)
+| Nível | Sinal | Significa | O que fazer |
+|---|---|---|---|
+| **N1 Gancho** | "fica aos 5%" < 30% em ≥3 dos últimos 4 vídeos com ≥100 views | Falha de **execução** (abertura) | Reescrever aberturas; o resto não muda |
+| **N2 Tema/embalagem** | CTR < 3% (com ≥1 000 impressões) em ≥4 dos últimos 6 | Falha de **escolha de tema/título/miniatura** | Mudar o método de escolher temas e miniaturas |
+| **N3 Estratégia falhada** | ≥10 vídeos feitos com o método **e** mediana < 300 views aos 28 dias **e** nenhum ≥ 2 000 **e** < 100 subscritores | A estratégia **não** consegue distribuição | Pivô de nicho ou de canal |
+
+## Amostra mínima (antes disto não se conclui nada)
+- Retenção: ≥100 visualizações no vídeo (com menos, a curva é ruído; hoje 7 de 9 vídeos não chegam lá).
+- CTR: ≥1 000 impressões (o CTR lê-se à mão no Studio: Análise, Alcance; a API não o dá).
+- Estratégia: ≥8 vídeos antes de falar de N3 (a decisão a sério é aos 10), e ler cada vídeo ao 7.º dia (leitura inicial) e ao 28.º (veredito). Nunca nas primeiras 72 h (o Analytics atrasa 1–2 dias).
+
+## Porque 8–10 vídeos e não 6
+Evidência do Doodle Dollars (API pública): os 5 primeiros vídeos tiveram 456, 2 602, 276, 960 e 276 views; o 1.º sucesso veio ao 6.º vídeo (~10 semanas, 19 mil), depois 96 mil e 30 mil. Os 3 melhores têm ~97% das visualizações. **Cinco fracassos seguidos são normais num canal que depois dispara.** Mas atenção: os piores vídeos dele (276) estão acima da nossa mediana atual (~50). Isso sugere que o problema atual é de **distribuição/embalagem**, não só de retenção.
+
+## O que NÃO conta como falhada
+Menos de 8 vídeos · qualquer regra com dados insuficientes · um vídeo isolado fraco · vídeos feitos fora do método · visualizações das primeiras 72 h.
+
+## Sucesso
+Qualquer vídeo ≥5 000 views em 28 dias: regra 80/20 (80% temas parecidos, 20% testes).
+
+## Estado em 17/10/2026
+A experiência **ainda não começou** (0 vídeos feitos com o método). Dos 9 vídeos longos públicos desde julho, só 2 (Jaguar, P&G) têm ≥100 views; ambos têm retenção aos 5% de 46–47%.
