@@ -50,3 +50,12 @@ Ritmo assumido: 1 vídeo longo por semana. O Google v3 (já enviado em privado) 
 | 10 vídeos publicados → decisão N3 (dia 28 do 10.º) | ~23/jan/2027 | ~19/dez |
 Sinais por ordem de chegada: 48–72 h (impressões e CTR no Studio), 7 dias (retenção aos 5% se ≥100 views), 28 dias (visualizações e subscritores).
 Monetização (1 000 subscritores e 4 000 h de visualização; confirmar no Studio): o Doodle Dollars converteu ~0,4% das visualizações em subscritores, o que daria ~250 mil visualizações para 1 000 subs. Não é meta de 3 meses sem um vídeo que "acerte" (≥5 000 views).
+
+## Cenário: 1 por semana até ao fim de novembro, depois 2 por semana (vídeo 1 a 24/out)
+| Vídeo | Publicação | Dia 28 |
+|---|---|---|
+| 1–6 | 24/out, 31/out, 7/nov, 14/nov, 21/nov, 28/nov | 21/nov … 26/dez |
+| 7–8 | semana de 1/dez | ~29/dez |
+| 9–10 | semana de 8/dez (10.º ~11/dez) | **~8/jan/2027** (contra ~23/jan a 1/semana: ganha ~2 semanas) |
+Em 30/nov só haverá veredito de 28 dias para 2 vídeos (21/nov e 28/nov) e leituras de 7 dias para ~5. A passagem a 2/semana decide-se com **sinais precoces**, não com veredito.
+**Regra para duplicar o ritmo:** só se, nos primeiros 4 vídeos, o "fica aos 5%" for ≥ 40% em pelo menos 2 **e** o CTR (≥1 000 impressões) for ≥ 3%. Se o CTR ou a retenção estiverem fracos, duplicar o ritmo multiplica o defeito: corrige-se primeiro o gancho/tema/miniatura (N1/N2).
