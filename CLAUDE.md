@@ -21,7 +21,8 @@ Este ficheiro vai para o GitHub: **nenhuma chave, segredo ou token pode ser escr
 |---|---|---|
 | `GEMINI_API_KEYS` (várias chaves separadas por vírgula; ou `GEMINI_API_KEY_1`, `_2`, …) | Locução Gemini TTS (voz Iapetus); o limite gratuito é ~10 pedidos/dia por chave, por isso rodam | `tools/tts_google.py`, `tools/google2_voice.py`, `tools/feudal_voice.py` |
 | `YOUTUBE_API_KEY` | YouTube Data API v3 (pesquisa de nichos, outliers; 10 000 unidades/dia) | `tools/niche_scout.py`, `tools/mcp_research/server.py` (MCP pessoal, `.mcp.json`) |
-| `YT_CLIENT_ID`, `YT_CLIENT_SECRET` | Upload para o YouTube (privado/agendado) | `tools/youtube_upload.py` (corre no computador do utilizador; o token fica em `~/.yt_token.json`) |
+| `YT_CLIENT_ID`, `YT_CLIENT_SECRET` | Upload para o YouTube (privado/agendado) e OAuth do Analytics | `tools/youtube_upload.py`, `tools/yt_auth.py` (correm no computador do utilizador; o token fica em `~/.yt_token.json`) |
+| `YT_REFRESH_TOKEN` | Ler o Analytics do canal do utilizador (retenção, tráfego), gerado por `tools/yt_auth.py` | `tools/mcp_research/server.py` (`my_channel_report`) |
 
 Regras para o Claude:
 1. No início de uma sessão que precise de voz ou upload, verificar **só os nomes** (`env | cut -d= -f1 | grep -E "GEMINI|YT_"`), nunca imprimir valores.

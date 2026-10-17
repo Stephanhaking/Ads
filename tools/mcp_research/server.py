@@ -6,6 +6,7 @@ Dá ao Claude ferramentas de pesquisa por cima da YouTube Data API v3 OFICIAL (n
   keyword_ideas    sugestões do autocomplete do YouTube para um tema
   channel_outliers vídeos de um canal que bateram muito acima da mediana do próprio canal
   video_info       estatísticas de um vídeo
+  my_channel_report  analytics do TEU canal (visão geral, tráfego, retenção, top vídeos) — precisa de YT_REFRESH_TOKEN
   script_brief     fórmula de guião do canal (docs/FORMULA_GUIAO.md) + tema, para o Claude escrever o guião
 
 Chave só por variável de ambiente: YOUTUBE_API_KEY (nunca no código nem no git).
@@ -98,6 +99,37 @@ def video_info(video_id: str) -> dict:
                 'likes': int(s.get('likeCount', 0) or 0), 'comentarios': int(s.get('commentCount', 0) or 0),
                 'descricao_inicio': v['snippet']['description'][:600], 'quota': 1}
     return cached('video_info', {'v': video_id}, run)
+
+def _access_token():
+    import urllib.request
+    need = [k for k in ('YT_CLIENT_ID', 'YT_CLIENT_SECRET', 'YT_REFRESH_TOKEN') if not os.environ.get(k)]
+    if need: raise RuntimeError('Faltam no ambiente: ' + ', '.join(need) + ' (ver CLAUDE.md; tools/yt_auth.py gera o refresh token)')
+    d = urllib.parse.urlencode({'client_id': os.environ['YT_CLIENT_ID'], 'client_secret': os.environ['YT_CLIENT_SECRET'],
+                                'refresh_token': os.environ['YT_REFRESH_TOKEN'], 'grant_type': 'refresh_token'}).encode()
+    return json.load(urllib.request.urlopen(urllib.request.Request('https://oauth2.googleapis.com/token', data=d), timeout=30))['access_token']
+
+@mcp.tool()
+def my_channel_report(kind: str = 'overview', days: int = 28, video_id: str = '') -> dict:
+    """Analytics do TEU canal (YouTube Analytics API, só leitura). kind: overview (por dia), traffic (fontes de tráfego),
+    top_videos (10 mais vistos no período) ou retention (curva de retenção; exige video_id). Precisa de YT_REFRESH_TOKEN."""
+    import urllib.request
+    end = dt.date.today() - dt.timedelta(days=1); start = end - dt.timedelta(days=max(1, days))
+    q = {'ids': 'channel==MINE', 'startDate': start.isoformat(), 'endDate': end.isoformat()}
+    if kind == 'overview':
+        q.update(metrics='views,estimatedMinutesWatched,averageViewDuration,subscribersGained,subscribersLost', dimensions='day', sort='day')
+    elif kind == 'traffic':
+        q.update(metrics='views,estimatedMinutesWatched', dimensions='insightTrafficSourceType', sort='-views')
+    elif kind == 'top_videos':
+        q.update(metrics='views,estimatedMinutesWatched,averageViewPercentage', dimensions='video', sort='-views', maxResults=10)
+    elif kind == 'retention':
+        if not video_id: raise RuntimeError('retention exige video_id')
+        q.update(metrics='audienceWatchRatio,relativeRetentionPerformance', dimensions='elapsedVideoTimeRatio', filters='video==' + video_id)
+    else:
+        raise RuntimeError('kind inválido: overview | traffic | top_videos | retention')
+    req = urllib.request.Request('https://youtubeanalytics.googleapis.com/v2/reports?' + urllib.parse.urlencode(q),
+                                 headers={'Authorization': 'Bearer ' + _access_token()})
+    r = json.load(urllib.request.urlopen(req, timeout=30))
+    return {'kind': kind, 'periodo': [start.isoformat(), end.isoformat()], 'colunas': [c['name'] for c in r.get('columnHeaders', [])], 'linhas': r.get('rows', [])}
 
 @mcp.tool()
 def script_brief(topic: str) -> dict:
