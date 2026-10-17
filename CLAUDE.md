@@ -20,6 +20,7 @@ Este ficheiro vai para o GitHub: **nenhuma chave, segredo ou token pode ser escr
 | Variável | Para quê | Usada por |
 |---|---|---|
 | `GEMINI_API_KEYS` (várias chaves separadas por vírgula; ou `GEMINI_API_KEY_1`, `_2`, …) | Locução Gemini TTS (voz Iapetus); o limite gratuito é ~10 pedidos/dia por chave, por isso rodam | `tools/tts_google.py`, `tools/google2_voice.py`, `tools/feudal_voice.py` |
+| `YOUTUBE_API_KEY` | YouTube Data API v3 (pesquisa de nichos, outliers; 10 000 unidades/dia) | `tools/niche_scout.py`, `tools/mcp_research/server.py` (MCP pessoal, `.mcp.json`) |
 | `YT_CLIENT_ID`, `YT_CLIENT_SECRET` | Upload para o YouTube (privado/agendado) | `tools/youtube_upload.py` (corre no computador do utilizador; o token fica em `~/.yt_token.json`) |
 
 Regras para o Claude:
