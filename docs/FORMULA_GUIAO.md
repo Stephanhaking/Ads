@@ -34,3 +34,10 @@ Vídeos: Steve Jobs fired (96 mil), Diamonds (30 mil), Money lie (19 mil), Gupta
 - **Fecho:** callback + pergunta para levar ("quem te disse que valia tanto?") + lição curta. Ritmo ≈ 135–150 palavras/min (igual ao nosso).
 - **O que NÃO explica o sucesso:** o Gupta tem o mesmo molde de gancho e teve 2,6 mil; o que o separa dos 96 mil é o **tema** (nome universal ou objeto do espectador) e a embalagem. Ver `docs/LISTA_10_HISTORIAS_DINHEIRO.md`.
 - **Diferença para o nosso Jaguar:** o Jaguar abre com um contraste de números forte (1 961 → 49) mas é narração analítica sem diálogos e sem "tu"; os do DD usam "tu", cenas faladas e ganchos plantados.
+
+## Erros de abertura a evitar (diagnóstico do nosso IKEA: 23% aos 5%, 8% aos 10%; Jaguar: 47% aos 5%)
+- **Estatísticas de escala nos primeiros 14 s** (receita, lojas, países, empregados): números grandes e estáticos que ninguém desafia. Abrir com **contraste ou mudança** (1 961 → 49), não com tamanho.
+- **O paradoxo chega tarde e abstrato** ("uma fundação que, em termos legais, é dona de si própria"). Abrir com **uma pessoa e um pormenor estranho** (o bilionário que voava em económica e deu a empresa toda).
+- **A melhor frase está enterrada:** "já compraste algo este ano de uma empresa que ninguém possui" estava aos 10:20; devia abrir o vídeo (segunda pessoa, stake pessoal).
+- **Origem sem tensão aos 1:00–1:40** (nome, farm, caixa plana) antes de haver um problema. A origem só entra depois de o espectador querer saber como acaba.
+- **O corpo do vídeo estava bem** (curva quase plana depois de ~1:30): o problema era só a abertura. Medir sempre a retenção aos 5% e aos 10%.
