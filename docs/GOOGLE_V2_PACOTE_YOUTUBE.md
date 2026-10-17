@@ -1,6 +1,6 @@
 # Pacote de publicação — Google v2 (vídeo #3 do canal)
 
-Duração: **13:52** · 1920×1080 · 30 fps · narração EN · render final em `out/g2_final/` (14 partes, a gerar).
+Duração: **13:55** (com pré-abertura de 3 s: a pergunta "who is going to die") · 1920×1080 · 30 fps · narração EN · render final em `out/g2_final/` (14 partes, a gerar).
 Publicar **primeiro como privado**, rever no Studio, e só depois tornar público ou agendar. Nada se publica sem o utilizador dizer.
 
 ## Título (por ordem de preferência)
@@ -15,21 +15,21 @@ Aviso: a origem/licença da imagem é do utilizador; o G é marca registada.
 
 ## Capítulos (tempos reais da narração)
 0:00 3:12 a.m.: the question
-1:22 Who, in this building, is going to die?
-2:06 The word almost nobody checks
-3:26 Two cases, two countries
-4:55 Why an ad company wants hospital records (and your day, measured)
-5:41 What is the product?
-6:48 Why a hospital matters
-7:19 When "probably" becomes "certainly"
-8:03 It already happened on YouTube
-9:03 The Selfish Ledger
-9:55 The court said "monopolist"
-10:49 What the window is made of
-11:45 The machine grew a mouth
-12:25 The question was never about patients
-13:06 You never saw the meter
-13:30 One thing to do this week
+1:25 Who, in this building, is going to die?
+2:09 The word almost nobody checks
+3:29 Two cases, two countries
+4:58 Why an ad company wants hospital records (and your day, measured)
+5:44 What is the product?
+6:51 Why a hospital matters
+7:22 When "probably" becomes "certainly"
+8:06 It already happened on YouTube
+9:06 The Selfish Ledger
+9:58 The court said "monopolist"
+10:52 What the window is made of
+11:48 The machine grew a mouth
+12:28 The question was never about patients
+13:09 You never saw the meter
+13:33 One thing to do this week
 
 ## Descrição
 A study trained an AI on more than 200,000 hospital stays to answer one question: who in this building is going to die? Google was part of the team. This video follows the question back to the data, and then forward to what it means for the rest of us.
