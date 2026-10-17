@@ -1,0 +1,21 @@
+{
+  "_nota": "palavra da locução -> palavras que aparecem nos nomes das imagens (editar à vontade)",
+  "doctor": ["doctor", "clipboard", "stethoscope"],
+  "patient": ["patient", "bed", "hospital"],
+  "money": ["coin", "cash", "bill", "wallet"],
+  "data": ["server", "rack", "database", "network"],
+  "watch": ["eye", "camera", "binoculars"],
+  "watching": ["eye", "camera", "binoculars"],
+  "court": ["courthouse", "gavel"],
+  "judge": ["gavel", "courthouse"],
+  "sued": ["complaint", "legal", "contract"],
+  "contract": ["contract", "pen", "signed"],
+  "phone": ["phone", "lockscreen"],
+  "search": ["search", "magnifier"],
+  "map": ["map"],
+  "ads": ["billboard", "megaphone", "auction"],
+  "advertising": ["billboard", "megaphone", "auction"],
+  "auction": ["auction", "paddle"],
+  "predict": ["crystal", "ball"],
+  "time": ["clock", "alarm"]
+}

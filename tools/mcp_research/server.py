@@ -7,6 +7,9 @@ Dá ao Claude ferramentas de pesquisa por cima da YouTube Data API v3 OFICIAL (n
   channel_outliers vídeos de um canal que bateram muito acima da mediana do próprio canal
   video_info       estatísticas de um vídeo
   my_channel_report  analytics do TEU canal (visão geral, tráfego, retenção, top vídeos) — precisa de YT_REFRESH_TOKEN
+  score_title / rank_titles  pontuação transparente de títulos (heurística; tools/title_score.py)
+  suggest_beats    batidas (cortes) e imagens sugeridas a partir dos tempos da voz (tools/beats_suggest.py)
+  image_library    nomes das imagens disponíveis
   script_brief     fórmula de guião do canal (docs/FORMULA_GUIAO.md) + tema, para o Claude escrever o guião
 
 Chave só por variável de ambiente: YOUTUBE_API_KEY (nunca no código nem no git).
@@ -18,6 +21,8 @@ import datetime as dt, hashlib, json, os, statistics as st, sys, urllib.parse
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, '..'))
 import niche_scout as ns  # noqa: E402  (lê YOUTUBE_API_KEY do ambiente ao importar)
+import title_score as ts  # noqa: E402
+import beats_suggest as bs  # noqa: E402
 from mcp.server.fastmcp import FastMCP  # noqa: E402
 
 CACHE = os.path.join(HERE, '.cache'); os.makedirs(CACHE, exist_ok=True)
@@ -130,6 +135,31 @@ def my_channel_report(kind: str = 'overview', days: int = 28, video_id: str = ''
                                  headers={'Authorization': 'Bearer ' + _access_token()})
     r = json.load(urllib.request.urlopen(req, timeout=30))
     return {'kind': kind, 'periodo': [start.isoformat(), end.isoformat()], 'colunas': [c['name'] for c in r.get('columnHeaders', [])], 'linhas': r.get('rows', [])}
+
+@mcp.tool()
+def score_title(title: str, keyword: str = '') -> dict:
+    """Pontua um título (0-100) com critérios transparentes: comprimento, "afirmação + reviravolta", concretude, genéricos, curiosidade, formatação.
+    Heurística: compara variantes, não prevê visualizações. keyword (opcional) verifica se aparece nos primeiros 40 caracteres. Sem quota."""
+    return ts.score(title, keyword)
+
+@mcp.tool()
+def rank_titles(titles: list[str], keyword: str = '') -> list[dict]:
+    """Ordena várias variantes de título por pontuação (melhor primeiro), com as sugestões de cada uma. Sem quota."""
+    return [{'score': r['score'], 'titulo': r['titulo'], 'sugestoes': r['sugestoes']} for r in ts.rank(titles, keyword)]
+
+@mcp.tool()
+def suggest_beats(words_path: str = 'src/google2/words.json', from_s: float = 0, to_s: float = 1e9, top: int = 3) -> dict:
+    """Propõe batidas a partir dos tempos reais da voz (words.json): início (s), duração, frase-âncora, tipo (count/big/img/obj),
+    linhas de texto e as `top` imagens da biblioteca com melhor correspondência lexical (já_usada=true se repetida).
+    NÃO altera ficheiros. A escolha semântica da imagem é tua (do Claude): usa image_library para ver as opções. Sem quota."""
+    f = words_path if os.path.isabs(words_path) else os.path.join(HERE, '..', '..', words_path)
+    return {'batidas': bs.suggest(json.load(open(f, encoding='utf-8'))['words'], from_s, to_s, top)}
+
+@mcp.tool()
+def image_library() -> dict:
+    """Lista os nomes das imagens disponíveis (public/google2/img = 'img'; public/feudal/obj = 'obj') e quais já foram usadas em beats.ts/beatsTail.ts."""
+    lib, used = bs.load_library(), bs.used_names()
+    return {'img': sorted(n for n, k in lib.items() if k == 'img'), 'obj': sorted(n for n, k in lib.items() if k == 'obj'), 'ja_usadas': sorted(used & set(lib))}
 
 @mcp.tool()
 def script_brief(topic: str) -> dict:
