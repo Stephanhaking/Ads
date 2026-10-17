@@ -28,3 +28,14 @@ Qualquer vídeo ≥5 000 views em 28 dias: regra 80/20 (80% temas parecidos, 20%
 
 ## Estado em 17/10/2026
 A experiência **ainda não começou** (0 vídeos feitos com o método). Dos 9 vídeos longos públicos desde julho, só 2 (Jaguar, P&G) têm ≥100 views; ambos têm retenção aos 5% de 46–47%.
+
+## Meta mínima por vídeo (propostas de 17/10/2026; o YouTube não publica referências oficiais)
+Base de comparação: a nossa mediana atual ≈ 50 views por vídeo longo (melhor 188); fica@5% entre 23% e 47%; os 5 piores vídeos iniciais do Doodle Dollars tiveram 276 a 2 600 views.
+| Métrica (ao dia 28) | Mínimo para contar como "cumpriu" | Bom | "Acertou" (80/20) |
+|---|---|---|---|
+| Fica aos 5% (retenção) | ≥ 40% (abaixo de 30% = falha de gancho, N1) | ≥ 45% | ≥ 50% |
+| CTR (Studio, com ≥1 000 impressões) | ≥ 3% (abaixo = N2) | ≥ 5% | ≥ 8% |
+| Visualizações | ≥ 300 (≈6× a mediana atual) | ≥ 1 000 | ≥ 5 000 |
+| Subscritores ganhos | ≥ 2 | ≥ 10 | ≥ 50 |
+Leitura aos 7 dias (provisória): ≥ 100 views e fica@5% ≥ 40%. Um vídeo "cumpre" se passar em **visualizações e retenção**; o CTR explica porquê.
+Regra da série: ao fim de 4 vídeos, pelo menos 2 devem "cumprir"; se não, rever o método (N1/N2). A decisão final (N3) continua aos 10 vídeos.
