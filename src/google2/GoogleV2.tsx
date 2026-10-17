@@ -6,7 +6,7 @@ import {Bg, FPS, INK, Lines, RED, clamp, ease} from '../feudal/Common';
 import {CLOCKS, ObjArt} from '../feudal/Collage';
 import {TornDefs} from '../feudal/StyleV2';
 import words from './words.json';
-import {GBEATS, G_END} from './beats';
+import {GBEATS, G_END, V3_SHIFT} from './beats';
 import type {GBeat} from './beats';
 import {TransitionAt, punchStyle, rollStyle} from './Transitions';
 
@@ -357,18 +357,20 @@ export const Beat: React.FC<{b: GBeat}> = ({b}) => (
 const Counter: React.FC = () => {
   const t = useT();
   // janelas em que o contador aparece: abertura, "o teu dia" (loop 3) e o fecho (pára e pisca em "o contador")
-  const W: [number, number][] = [[0.4, 57.5], [299.5, 345], [790, 831]];
+  // v3: a abertura nova acaba aos ~85,8 s; as outras janelas e etiquetas deslocam-se V3_SHIFT (−21,3 s)
+  const D = V3_SHIFT;
+  const W: [number, number][] = [[0.4, 85.8], [299.5 + D, 345 + D], [790 + D, 831 + D]];
   const w = W.find(([a, b]) => t >= a - 1 && t <= b + 1);
   if (!w) return null;
   const [a, b] = w;
   const o = interpolate(t, [a, a + 0.6, b - 1.5, b], [0, 1, 1, 0], clamp);
-  const STOP = 805.8;
+  const STOP = 805.8 + D;
   const frozen = t >= STOP;
   const tt = frozen ? STOP : t;
   const n = Math.floor(Math.pow(Math.max(0, tt - a), 1.75) * 3.2) + (a > 100 ? 4000 : 0);
   const blink = frozen && Math.floor(t * 3) % 2 === 0;
-  const LAB: [number, string][] = [[304, 'SEARCH'], [307.3, 'SEARCH'], [311, 'ROUTE'], [314.2, 'VIDEO'], [318.9, 'PAUSE']];
-  const lab = a === 299.5 ? (LAB.filter(([x]) => t >= x).pop()?.[1] ?? 'READINGS') : 'READINGS';
+  const LAB: [number, string][] = ([[304, 'SEARCH'], [307.3, 'SEARCH'], [311, 'ROUTE'], [314.2, 'VIDEO'], [318.9, 'PAUSE']] as [number, string][]).map(([x, n]) => [x + D, n]);
+  const lab = Math.abs(a - (299.5 + D)) < 1e-6 ? (LAB.filter(([x]) => t >= x).pop()?.[1] ?? 'READINGS') : 'READINGS';
   return (
     <div style={{position: 'absolute', right: 60, top: 40, opacity: o, textAlign: 'right', fontFamily: fonts.mono, color: INK}}>
       <div style={{fontSize: 22, letterSpacing: 6}}><span style={{display: 'inline-block', width: 14, height: 14, borderRadius: 7, background: RED, marginRight: 10, opacity: frozen ? (blink ? 1 : 0.15) : 0.4 + 0.6 * (Math.floor(t * 2) % 2)}} />{lab}</div>
@@ -399,7 +401,7 @@ export const GoogleV2: React.FC = () => {
       </AbsoluteFill>
       {GBEATS.filter((b) => b.tr).map((b, i) => <TransitionAt key={i} at={b.s} kind={b.tr!} />)}
       <Audio src={staticFile('audio/google2/voice.wav')} />
-      <Audio src={staticFile('audio/music/distinguish.mp3')} volume={(f) => 0.15 * interpolate(f, [0, 90], [0, 1], clamp)} />
+      <Audio src={staticFile('audio/music/distinguish.mp3')} startFrom={Math.round(-V3_SHIFT * FPS)} volume={(f) => 0.15 * interpolate(f, [0, 90], [0, 1], clamp)} />
     </AbsoluteFill>
   );
 };

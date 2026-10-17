@@ -6,12 +6,12 @@
   {
    "id": "g01",
    "block": "LOOP 1",
-   "text": "Picture a night-shift nurse. She's an example, not a real person. It's three-twelve in the morning. The hospital is quiet. All you can hear is the machines. There's a moment nurses are trained to catch: the instant a patient starts to get worse. It doesn't come with an alarm. It's hidden in a hundred small readings. A blood pressure. A pulse. A value in the blood that dips a little. Each one, alone, means nothing. It's easy to miss. Now picture a system that could read all of those readings at once, for every patient in the building, without tiring and without blinking. And in twenty eighteen, a machine learned to do exactly that, for one very specific purpose: to see it first."
+   "text": "In twenty eighteen, Google helped train an artificial intelligence to answer one question about hospital patients. Among these patients, who is going to die during this stay?\n\nIt read the records of more than two hundred thousand hospital stays. Almost forty-seven billion data points. Even the notes doctors wrote by hand. And it beat the models hospitals were already using.\n\nThe hospitals said the records had been made anonymous. Hold on to that word. It's the strangest part of this story.\n\nBecause the question was never about patients. By the end of this video, you'll know what that counter is counting. And why it matters to you."
   },
   {
    "id": "g02",
    "block": "LOOP 1",
-   "text": "Google was part of a team that trained an artificial intelligence on the records of more than two hundred thousand hospital stays, from about a hundred and fourteen thousand people, at two American university hospitals. Almost forty-seven billion data points. Including the notes doctors write by hand. And it asked the machine one question. Among these patients, who is going to die during this stay? The machine did better than the models hospitals were already using. In a retrospective test, on records already closed, it scored between point nine three and point nine four, on a scale where one is perfect. It wasn't standing at anyone's bedside. But it proved it could be done."
+   "text": "Picture a night-shift nurse. She's an example, not a real person. It's three-twelve in the morning. Her job is to catch the instant a patient starts to get worse. There's no alarm. It's hidden in a hundred small readings. A blood pressure. A pulse. A value in the blood that dips a little. Each one, alone, means nothing.\n\nNow picture a system that reads all of them at once, for every patient in the building, without tiring and without blinking. In twenty eighteen, a machine learned to do exactly that. To see it first."
   },
   {
    "id": "g03",

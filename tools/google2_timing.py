@@ -19,6 +19,7 @@ A.EXTRA.update({k: v for k, v in _EX.items() if _d0.lookup_word(k) is None})
 ROOT = os.path.join(os.path.dirname(__file__), '..')
 D = os.path.join(ROOT, 'public/audio/google2')
 GAP, GAP_SHOCK = 0.55, 1.55
+EXTRA_AFTER = {'g02': 0.006}  # v3: alinha o deslocamento do resto do vídeo a um nº inteiro de fotogramas (−639) para o corte com o render antigo ser exato
 cfg = json.load(open(os.path.join(os.path.dirname(__file__), 'google_narration.json')))
 words, chunks, pcm_all, t = [], [], [], 0.0
 for i, c in enumerate(cfg['chunks']):
@@ -43,7 +44,7 @@ for i, c in enumerate(cfg['chunks']):
     chunks.append({'id': c['id'], 'block': c['block'], 'start': round(t, 3), 'end': round(t + dur, 3)})
     pcm_all.append(x)
     nxt = cfg['chunks'][i + 1]['text'] if i + 1 < len(cfg['chunks']) else ''
-    gap = GAP_SHOCK if nxt.startswith('The same technique, aimed at you') else GAP
+    gap = (GAP_SHOCK if nxt.startswith('The same technique, aimed at you') else GAP) + EXTRA_AFTER.get(c['id'], 0)
     pcm_all.append(np.zeros(int(gap * sr), dtype=np.int16))
     print(f'{c["id"]}: {dur:.1f}s, {len(ws)}/{len(toks)} palavras alinhadas' + ('  [ESTIMADO: alinhamento falhou]' if est_used else ''))
     t += dur + gap

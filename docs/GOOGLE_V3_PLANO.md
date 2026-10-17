@@ -27,3 +27,11 @@ Remove do corpo as frases já ditas no gancho ("Google was part of a team…", "
 - Fecho de cada loop com uma frase de síntese.
 - 2–3 diálogos dramatizados (cartões de fala): decisão do hospital, resposta do regulador, a pergunta da Google.
 - Callback final ao contador.
+
+## Estado (17/10/2026): FEITO e enviado como privado
+- Voz nova (Gemini Iapetus) para g01 (gancho, 43 s) e g02 (enfermeira encurtada, 41 s); `g03` e seguintes iguais. Alinhamento 100% das palavras.
+- Deslocamento do resto do vídeo: **−21,300 s = −639 fotogramas exatos** (6 ms de silêncio extra depois de g02, `EXTRA_AFTER` em `tools/google2_timing.py`), para o corte com o render antigo ser exato.
+- `tools/google3_beats.py` gera as batidas novas do início (24) e desloca as antigas (13); `google2_beats_gen.py` regenera o rabo. Contador e etiquetas ajustados (`V3_SHIFT`); música com `startFrom` de 639 fotogramas para o corte ser contínuo.
+- Render só dos primeiros 3 561 fotogramas (0–118,7 s) + render antigo a partir dos 140 s (peças `q001`…`q035`). Resultado: 13:30,77 (v2: 13:52), 24 323 fotogramas.
+- Reconstrução: `google3_beats.py` precisa dos ficheiros v2 (`words.json`, `beats.ts`, `google_narration.json`) em `out/g2_old_audio/` (vêm do git: commit anterior a este).
+- Vídeo privado no Studio: ver `docs/GOOGLE_V3_PACOTE_YOUTUBE.md` (capítulos novos). Ainda por fazer: comparar a retenção aos 5% com a v2 depois de publicar, e a fase 2 (sínteses por loop e diálogos).

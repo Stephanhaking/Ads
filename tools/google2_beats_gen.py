@@ -207,7 +207,7 @@ def find(phrase, start):
             return i
     return None
 
-out, cur, last_t = [], 0, 174.7
+out, cur, last_t = [], 0, 153.4
 for ph, k, n, L, ex in B:
     i = find(ph, cur)
     if i is None:
