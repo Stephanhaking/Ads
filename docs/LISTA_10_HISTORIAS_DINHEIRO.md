@@ -67,3 +67,15 @@ Conclusão: nenhum tema é virgem. O que decide é o ângulo, não o tema.
 - **New Coke:** ângulo "desastre" ocupado (Company Man 1,8 M, Inside Edition 3,7 M, Our Future 1,9 M). Ocupado.
 - **Google paga à Apple:** em inglês quase só Shorts e podcasts (TechLinked 337 mil, All-In 381 mil; 6,4 M é um Short em hindi). Explicador longo com ângulo de sistema: **livre**, e liga ao vídeo do Google.
 - Limite: isto vê o que existe, não o que ganha.
+
+## Ranking de 40 candidatos (18/10/2026) — filtro de saturação por ângulo
+Método: pesquisa YouTube por ângulo (vídeos médios 4–20 min, inglês, ordem por visualizações, 15 resultados). "n≥500k" = vídeos com 500 mil+ nesse conjunto. **Limite:** mediana muito baixa significa que a pesquisa devolveu ruído (poucos vídeos sobre o tema), não procura zero. Dados em `out/`-fora-do-git (`/tmp`), refazer com `tools/` se preciso.
+| Rank | Tema | Marca global | Já feito (maior vídeo do ângulo) | Veredito |
+|---|---|---|---|---|
+| 1 | Google paga à Apple (padrão de pesquisa) | Sim | TechLinked 337 mil; sem explicador longo | Livre; liga ao v3 |
+| 2 | Southwest: o sistema de escalas que parou 2022 | Sim | Mentour Now 277 mil | Pouco feito; ⚠ factos do sistema |
+| 3 | Spotify: como o dinheiro por stream é repartido | Sim | 317 mil (criador, não explicador) | Pouco feito; ⚠ pool/pro-rata |
+| 4 | Ticketmaster e as taxas | Sim | Vox 360 mil | Médio; ⚠ DOJ 2024 |
+| 5 | Shrinkflation | Conceito global | 5,4 M, 2 vídeos ≥500 mil, procura mediana 95 mil | Procura alta, saturação média |
+| 6 | Intel/Boeing recompras de ações | Sim | quase nada achado (ruído) | Verificar à mão |
+Ocupados (≥2 vídeos ≥500 mil ou um vídeo de referência enorme): companhias aéreas e milhas (Wendover 7,4 M), McDonald's imobiliário (PolyMatter 4 M), Costco (WSJ 2,6 M), Nespresso (Hoffmann 3,6 M), tinteiros HP (6), WeWork (5), cartões Visa/MC (3), preços dinâmicos (6), CrowdStrike (6), insulina e taxas de concessionários (saturados).
