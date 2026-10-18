@@ -1,0 +1,523 @@
+{
+ "K1": [
+  {
+   "s": 0.0,
+   "k": "big",
+   "L": [
+    "GOOGLE TRAINED",
+    "AN AI TO PREDICT",
+    "WHO DIES."
+   ],
+   "hot": [
+    2
+   ]
+  },
+  {
+   "s": 4.81,
+   "k": "obj",
+   "n": "scale",
+   "L": [
+    "BETTER THAN",
+    "THEIR OWN TOOLS."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 7.16,
+   "k": "big",
+   "L": [
+    "WHAT NOBODY",
+    "CHECKS."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 8.88,
+   "k": "obj",
+   "n": "padlock-circuit",
+   "L": [
+    "“ANONYMOUS.”"
+   ],
+   "hot": [
+    0
+   ]
+  },
+  {
+   "s": 10.95,
+   "k": "img",
+   "n": "calendar-circled-dates",
+   "L": [
+    "DATES.",
+    "NOTES."
+   ],
+   "hot": [
+    0
+   ]
+  },
+  {
+   "s": 13.45,
+   "k": "obj",
+   "n": "map",
+   "L": [
+    "WHAT GOOGLE",
+    "ALREADY KNOWS."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 16.28,
+   "k": "img",
+   "n": "legal-complaint-stack",
+   "L": [
+    "ONE PATIENT",
+    "SUED."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 19.61,
+   "k": "img",
+   "n": "dismissed-stamp",
+   "L": [
+    "DISMISSED."
+   ],
+   "hot": [
+    0
+   ]
+  },
+  {
+   "s": 21.09,
+   "k": "big",
+   "L": [
+    "NOT BECAUSE",
+    "IT WAS",
+    "IMPOSSIBLE."
+   ],
+   "hot": [
+    2
+   ]
+  },
+  {
+   "s": 24.68,
+   "k": "big",
+   "L": [
+    "SO WHAT WAS",
+    "THE AI",
+    "REALLY FOR?"
+   ],
+   "hot": [
+    2
+   ]
+  },
+  {
+   "s": 27.23,
+   "k": "big",
+   "L": [
+    "GOOGLE TRAINED",
+    "AN AI TO PREDICT",
+    "WHO DIES."
+   ],
+   "hot": [
+    2
+   ]
+  }
+ ],
+ "K2": [
+  {
+   "s": 0.0,
+   "k": "obj",
+   "n": "sunrise",
+   "L": [
+    "YOU WOKE UP."
+   ],
+   "hot": [
+    0
+   ]
+  },
+  {
+   "s": 1.44,
+   "k": "obj",
+   "n": "phone",
+   "L": [
+    "YOU PICKED UP",
+    "YOUR PHONE."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 2.93,
+   "k": "obj",
+   "n": "blank-search-card",
+   "L": [
+    "YOU SEARCHED."
+   ],
+   "hot": [
+    0
+   ]
+  },
+  {
+   "s": 4.49,
+   "k": "obj",
+   "n": "map",
+   "L": [
+    "YOU OPENED",
+    "THE MAP."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 5.62,
+   "k": "obj",
+   "n": "play-button",
+   "L": [
+    "YOU WATCHED",
+    "A VIDEO."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 7.01,
+   "k": "img",
+   "n": "pause-button",
+   "L": [
+    "YOU PAUSED."
+   ],
+   "hot": [
+    0
+   ]
+  },
+  {
+   "s": 8.0,
+   "k": "img",
+   "n": "rewind-button",
+   "L": [
+    "YOU WENT BACK."
+   ],
+   "hot": [
+    0
+   ]
+  },
+  {
+   "s": 9.03,
+   "k": "obj",
+   "n": "photo",
+   "L": [
+    "TWO SECONDS",
+    "ON AN IMAGE."
+   ],
+   "hot": [
+    0
+   ]
+  },
+  {
+   "s": 12.01,
+   "k": "img",
+   "n": "empty-bedside-chair",
+   "L": [
+    "NOBODY WAS",
+    "WATCHING."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 13.72,
+   "k": "big",
+   "L": [
+    "A MACHINE",
+    "WAS COUNTING."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 16.24,
+   "k": "img",
+   "n": "pulse-clip",
+   "L": [
+    "A PULSE",
+    "IS A READING."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 19.08,
+   "k": "img",
+   "n": "pause-button",
+   "L": [
+    "SO IS",
+    "A PAUSE."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 22.38,
+   "k": "big",
+   "L": [
+    "ALONE:",
+    "NOTHING."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 23.95,
+   "k": "big",
+   "L": [
+    "TOGETHER:",
+    "A PREDICTION."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 27.61,
+   "k": "obj",
+   "n": "high-price-sign",
+   "L": [
+    "THE MORE CERTAIN,",
+    "THE MORE EXPENSIVE."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 32.17,
+   "k": "img",
+   "n": "tally-counter",
+   "L": [
+    "YOU NEVER SAW",
+    "THE METER."
+   ],
+   "hot": [
+    1
+   ]
+  }
+ ],
+ "K3": [
+  {
+   "s": 0.0,
+   "k": "big",
+   "L": [
+    "YOU PAY",
+    "NOTHING."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 1.35,
+   "k": "obj",
+   "n": "cash-register",
+   "L": [
+    "WHO PAYS?"
+   ],
+   "hot": [
+    0
+   ]
+  },
+  {
+   "s": 2.79,
+   "k": "obj",
+   "n": "briefcase",
+   "L": [
+    "THE ADVERTISER."
+   ],
+   "hot": [
+    0
+   ]
+  },
+  {
+   "s": 4.35,
+   "k": "obj",
+   "n": "pocket-watch-chain",
+   "L": [
+    "NOT YOUR TIME."
+   ],
+   "hot": [
+    0
+   ]
+  },
+  {
+   "s": 6.69,
+   "k": "img",
+   "n": "pair-of-dice",
+   "L": [
+    "A PROBABILITY."
+   ],
+   "hot": [
+    0
+   ]
+  },
+  {
+   "s": 8.14,
+   "k": "obj",
+   "n": "high-price-sign",
+   "L": [
+    "MORE CERTAIN =",
+    "MORE EXPENSIVE."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 12.14,
+   "k": "img",
+   "n": "money-bag",
+   "L": [
+    "ALPHABET.",
+    "LAST YEAR."
+   ],
+   "hot": [
+    0
+   ]
+  },
+  {
+   "s": 12.91,
+   "k": "count",
+   "v": 400,
+   "suf": "+ BILLION $",
+   "lab": "MOSTLY ADVERTISING"
+  },
+  {
+   "s": 17.44,
+   "k": "big",
+   "L": [
+    "THE PRODUCT",
+    "IS CERTAINTY."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 21.54,
+   "k": "big",
+   "L": [
+    "YOU PAY",
+    "NOTHING."
+   ],
+   "hot": [
+    1
+   ]
+  }
+ ],
+ "K4": [
+  {
+   "s": 0.0,
+   "k": "big",
+   "L": [
+    "ONE THING,",
+    "THIS WEEK."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 2.42,
+   "k": "obj",
+   "n": "laptop-open",
+   "L": [
+    "OPEN YOUR GOOGLE",
+    "ACCOUNT SETTINGS."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 4.43,
+   "k": "obj",
+   "n": "magnifier",
+   "L": [
+    "ONE THING",
+    "IT KEEPS."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 6.77,
+   "k": "big",
+   "L": [
+    "JUST ONE."
+   ],
+   "hot": [
+    0
+   ]
+  },
+  {
+   "s": 8.11,
+   "k": "obj",
+   "n": "delete-key",
+   "L": [
+    "NO NEED TO",
+    "DELETE ANYTHING."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 9.99,
+   "k": "obj",
+   "n": "utility-meter",
+   "L": [
+    "JUST SEE",
+    "THE METER."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 12.21,
+   "k": "big",
+   "L": [
+    "MOST PEOPLE",
+    "NEVER HAVE."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 14.23,
+   "k": "big",
+   "L": [
+    "OPEN IT.",
+    "LOOK."
+   ],
+   "hot": [
+    0
+   ]
+  }
+ ]
+}

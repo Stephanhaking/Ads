@@ -1,0 +1,26 @@
+{
+ "voice": "Iapetus",
+ "style": "Read as a calm, intelligent documentary narrator, but brisk and urgent. Short sentences, clear pauses, no theatrics.",
+ "shorts": [
+  {
+   "id": "K1",
+   "tag": "WHO DIES NEXT?",
+   "text": "Google helped train an AI to predict which hospital patients will die.\n\nIt beat the hospitals' own tools.\n\nHere's what nobody checks. The records were called anonymous.\n\nDates. Notes. A hospital. Add what Google already knows about where you go, and one patient sued, saying anyone could be identified.\n\nThe case was dismissed. Not because that was impossible. Because he couldn't show harm.\n\nSo what was the AI really for?\n\nGoogle helped train an AI to predict who will die."
+  },
+  {
+   "id": "K2",
+   "tag": "THE METER",
+   "text": "You woke up. You picked up your phone. You searched something. Opened the map. Watched a video. Paused it. Went back. Stopped for two seconds on one image.\n\nNobody was watching. A machine was counting.\n\nIn a hospital, a pulse is a reading. On your phone, so is a pause.\n\nAlone, nothing. Together, a prediction of what you'll do next.\n\nAnd the more certain the prediction, the more expensive the ad.\n\nYou never saw the meter."
+  },
+  {
+   "id": "K3",
+   "tag": "WHO PAYS?",
+   "text": "You pay nothing. So who pays?\n\nThe advertiser. And they're not buying your time. They're buying a probability.\n\nThe more certain it is that you'll click, the more it costs.\n\nAlphabet made more than four hundred billion dollars last year. Most of it from ads.\n\nThe product was never the ad. The product is certainty.\n\nYou pay nothing. So who pays?"
+  },
+  {
+   "id": "K4",
+   "tag": "DO THIS WEEK",
+   "text": "One thing to do this week.\n\nOpen your Google account settings. Find one thing it keeps about you. Just one.\n\nYou don't have to delete anything. You just have to see the meter.\n\nMost people never have.\n\nOpen it. Look. That's the whole assignment."
+  }
+ ]
+}

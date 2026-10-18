@@ -10,6 +10,8 @@ import type {GBeat} from './beats';
 import {SCENES} from '../feudal/script';
 import {SceneView} from '../feudal/Scenes';
 import {starts as FSTARTS} from '../feudal/FeudalVideo';
+import kwords from './shortsWords.json';
+import kbeats from './shortsBeats.json';
 import {TOTAL as FTOTAL} from '../feudal/words';
 
 export type ShortDef = {t0: number; t1: number; tag: string};
@@ -57,14 +59,14 @@ const VBeat: React.FC<{b: GBeat}> = ({b}) => {
     <VertCtx.Provider value>
       {b.k === 'big' && (
         <div style={{position: 'absolute', left: 0, top: 480, width: 1080}}>
-          <Lines lines={big.lines} times={big.lines.map((_, i) => 0.1 + i * 0.28)} x={60} y={0} size={vsize(big.lines, 150)} theme="paper" hot={big.hot} width={960} />
+          <Lines lines={big.lines} times={big.lines.map((_, i) => 0.02 + i * 0.12)} x={60} y={0} size={vsize(big.lines, 150)} theme="paper" hot={big.hot} width={960} />
         </div>
       )}
       {b.k === 'count' && <div style={{position: 'absolute', left: 0, top: 560, width: 1920, height: 1080, zoom: 0.5625} as React.CSSProperties}><Beat b={b} /></div>}
       {b.k === 'chase' && win(420, 1.0)}
       {RIGHT.has(b.k) && win(990, 1.22)}
       {RIGHT.has(b.k) || b.k === 'chase' ? (
-        <Lines lines={cap.lines} times={cap.lines.map((_, i) => 0.12 + i * 0.26)} x={60} y={1250} size={vsize(cap.lines, 124)} theme="paper" hot={cap.hot} width={960} />
+        <Lines lines={cap.lines} times={cap.lines.map((_, i) => 0.03 + i * 0.12)} x={60} y={1250} size={vsize(cap.lines, 124)} theme="paper" hot={cap.hot} width={960} />
       ) : null}
     </VertCtx.Provider>
   );
@@ -148,6 +150,43 @@ export const FShort: React.FC<{id: string}> = ({id}) => {
       <div style={{position: 'absolute', left: 0, bottom: 0, height: 14, width: `${(f / dur) * 100}%`, background: RED}} />
       <div style={{position: 'absolute', left: 0, right: 0, bottom: 150, textAlign: 'center', opacity: cta, fontFamily: fonts.heading, fontSize: 52, color: '#fff'}}>
         <span style={{background: RED, padding: '14px 34px'}}>FULL VIDEO ON THE CHANNEL</span>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// ── Shorts ORIGINAIS do Google (K1–K4): guião, voz e batidas próprios (tools/google_shorts_build.py); não são cortes do vídeo longo ──
+export const KS_IDS = ['K1', 'K2', 'K3', 'K4'] as const;
+const KB = kbeats as unknown as Record<string, GBeat[]>;
+const KW = kwords as unknown as Record<string, {tag: string; total: number}>;
+export const kshortFrames = (k: string) => Math.ceil((KW[k].total + 1.2) * FPS);
+
+export const KShort: React.FC<{id: string}> = ({id}) => {
+  const f = useCurrentFrame();
+  const dur = kshortFrames(id);
+  const total = KW[id].total + 1.2;
+  const bs = KB[id];
+  const cta = interpolate(f, [dur - 66, dur - 50], [0, 1], clamp);
+  return (
+    <AbsoluteFill>
+      <Bg theme="paper" />
+      <TornDefs />
+      {bs.map((b, i) => {
+        const e = i + 1 < bs.length ? bs[i + 1].s : total;
+        return (
+          <Sequence key={i} from={Math.round(b.s * FPS)} durationInFrames={Math.max(1, Math.round((e - b.s) * FPS))} layout="none">
+            <VBeat b={b} />
+          </Sequence>
+        );
+      })}
+      <Audio src={staticFile(`audio/google2/shorts/${id}.wav`)} />
+      <Audio src={staticFile('audio/music/distinguish.mp3')} volume={(g) => 0.12 * interpolate(g, [0, 30, dur - 30, dur], [0, 1, 1, 0], clamp)} />
+      <div style={{position: 'absolute', left: 60, top: 54, fontFamily: fonts.mono, fontSize: 30, letterSpacing: 8, color: INK}}>
+        <span style={{display: 'inline-block', width: 16, height: 16, borderRadius: 8, background: RED, marginRight: 14, opacity: 0.4 + 0.6 * (Math.floor(f / 15) % 2)}} />DISTINGUISH · {KW[id].tag}
+      </div>
+      <div style={{position: 'absolute', left: 0, bottom: 0, height: 14, width: `${(f / dur) * 100}%`, background: RED}} />
+      <div style={{position: 'absolute', left: 0, right: 0, bottom: 150, textAlign: 'center', opacity: cta, fontFamily: fonts.heading, fontSize: 52, color: '#fff'}}>
+        <span style={{background: RED, padding: '14px 34px'}}>FULL STORY ON THE CHANNEL</span>
       </div>
     </AbsoluteFill>
   );
