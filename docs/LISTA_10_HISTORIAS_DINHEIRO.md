@@ -32,3 +32,17 @@ Sinal **mais fraco** que na 1.ª ronda: temas de dados/privacidade têm muita pr
 ## Ordem final sugerida (8 temas)
 1. Toys R Us · 2. Lehman · 3. Madoff (os de nível A) · 4. Carros/seguro (liga ao Google) · 5. New Coke · 6. Target (teste) · 7. Google paga à Apple · 8. Nokia.
 **Evitar por agora:** data brokers, apps grátis, Spotify, Uber, cartões de crédito, Netflix (gigantes ou sem sinal).
+
+## Reordenação por reconhecimento da marca (18/10/2026)
+Critério novo do utilizador: se a marca não é conhecida fora dos EUA, o espectador não clica. Reconhecimento = **julgamento meu, não medição**; o sinal de procura continua a ser o da tabela acima.
+| Ordem | Tema | Marca conhecida no mundo? | Sinal | Título |
+|---|---|---|---|---|
+| 1 | Lehman Brothers | Sim (crise de 2008) | A | Lehman Brothers Died in One Weekend. Here's the Weekend. |
+| 2 | Coca-Cola / New Coke | Sim | B | Coca-Cola Killed Its Own Recipe. Customers Revolted. |
+| 3 | Apple 1997 | Sim | C | Apple Was 90 Days From Bankruptcy. Microsoft Saved It. |
+| 4 | Madoff | Nome conhecido | A | The $65 Billion That Never Existed |
+| 5 | Nokia | Sim | B | Nokia Was Winning. Then Its Own Managers Got Scared. |
+| 6 | Kodak | Sim | B | Kodak Invented the Digital Camera in 1975. Then Buried It. |
+| 7 | Google paga à Apple | Sim | teste | Google Pays Apple $20 Billion a Year to Stay the Default |
+| 8 | Fim do padrão-ouro 1971 | Tema, sem marca | A | The Day the Dollar Stopped Being Worth Gold |
+| 9 | Toys R Us | **Fraca fora dos EUA** | A | só com título sem marca (ver guião) |
