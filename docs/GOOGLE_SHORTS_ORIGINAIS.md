@@ -28,3 +28,23 @@ Motivo: o Short "Your Contract Changes While You Sleep" teve **41,8% de visualiz
 - Publicar 1 por dia (ou a cada 2 dias), não os 4 juntos; descrição com a ligação ao vídeo longo (acrescentar quando o v3 for público) e comentário fixado a perguntar uma coisa concreta.
 - Base de comparação: 41,8% de visualização média (n=18). **Mínimo para "cumprir": ≥ 50% de visualização média e ≥ 100 visualizações em 48 h; bom: ≥ 70%.** Ler no Studio: "visualizado vs deslizou" e visualização média. Com menos de ~100 visualizações a percentagem é ruído.
 - Um Short **não** conta para o N3 do vídeo longo (`docs/ESTRATEGIA_CRITERIOS_FALHA.md`): serve de descoberta; medir quantos espectadores passam ao vídeo longo (Studio, "o que os espectadores viram a seguir").
+
+## Agendamento feito (18/10/2026, 17:00 UTC = 18:00 em Lisboa/Londres até 25/out; 13:00 na Costa Leste)
+| Data | Vídeo | Estado |
+|---|---|---|
+| **ter 20/out** | **Longo: The Company That Predicts Your Death (v3)** `w4vmCajTed8` | agendado (privado até lá) |
+| qua 21/out | K1 WHO DIES NEXT? `IX9PK1zg130` | agendado |
+| qui 22/out | K2 THE METER `o6DIme8xu4o` | agendado |
+| sex 23/out | K3 WHO PAYS? `tT5KzFkopKA` | agendado |
+| sáb 24/out | K4 DO THIS WEEK `6qx-_FCMShw` | agendado |
+Regra dos longos: **terça às 17:00 UTC** (8 dos 10 longos do canal saíram à terça; os 2 melhores, Jaguar e P&G, também; amostra pequena). Próximo longo: ter 27/out.
+Público atual (47 visualizações com país): Reino Unido 34, EUA 13.
+
+## Que retenção num Short para "disparar"? (honestidade: o YouTube não publica um limiar)
+O que o YouTube diz é que mostra cada Short a um grupo pequeno e amplia se as pessoas **ficam a ver** em vez de deslizar. Os números abaixo são **regras empíricas de criadores, não oficiais** e não as consigo verificar:
+| Sinal (Studio, separador Shorts) | Raramente escala | Pode escalar | Bom sinal |
+|---|---|---|---|
+| "Visualizado" vs "deslizou" | < 50% | 60–70% | ≥ 70% |
+| Visualização média | < 50% | 70–100% | ≥ 100% (repetições) |
+| Primeiras 48 h | < 100 views | 100–1 000 | > 1 000 a acelerar |
+Referência nossa: 41,8% de visualização média (n=18). Um Short que dispare **não faz o longo disparar**: no Doodle Dollars só ~0,4% das visualizações viraram subscritores. O que decide o longo é o próprio CTR e retenção (fica@5% ≥ 40%). Medir o efeito Shorts→longo em "Fontes de tráfego" (Feed de Shorts) e "o que os espectadores viram a seguir".
