@@ -60,3 +60,10 @@ Mede o que já existe, não a qualidade. "Gigantes" = canais ≥500 mil subs ent
 | New Coke | 5 | 7,6 M (história geral da Coca-Cola) | Pouco coberto como tema isolado, mas sem sucessos pequenos |
 | Kodak | 3 | 1,5 M (hindi) | Menos coberto em inglês; sucesso pequeno só em russo |
 Conclusão: nenhum tema é virgem. O que decide é o ângulo, não o tema.
+
+## Teste de ângulo (18/10/2026, top por visualizações via YouTube Data API)
+- **Toys R Us:** o ângulo "dívida/private equity" JÁ está feito: CNBC 1,9 M, WSJ 1,3 M, Infographics Show 692 mil ("The Scam That Killed Toys R Us"), Warren 1,8 M, More Perfect Union 1,7 M. **Corrige a nota anterior de que ninguém o explicava pelo dinheiro.** Ocupado.
+- **Kodak:** "inventou a câmara digital e escondeu-a" já feito (Slidebean, Imperios Olvidados 2026, FD Finance 370 mil, Bright Sun 1 M, Daren Martin 2,8 M). Ocupado.
+- **New Coke:** ângulo "desastre" ocupado (Company Man 1,8 M, Inside Edition 3,7 M, Our Future 1,9 M). Ocupado.
+- **Google paga à Apple:** em inglês quase só Shorts e podcasts (TechLinked 337 mil, All-In 381 mil; 6,4 M é um Short em hindi). Explicador longo com ângulo de sistema: **livre**, e liga ao vídeo do Google.
+- Limite: isto vê o que existe, não o que ganha.
