@@ -46,3 +46,17 @@ Critério novo do utilizador: se a marca não é conhecida fora dos EUA, o espec
 | 7 | Google paga à Apple | Sim | teste | Google Pays Apple $20 Billion a Year to Stay the Default |
 | 8 | Fim do padrão-ouro 1971 | Tema, sem marca | A | The Day the Dollar Stopped Being Worth Gold |
 | 9 | Toys R Us | **Fraca fora dos EUA** | A | só com título sem marca (ver guião) |
+
+## Saturação (18/10/2026, `niche_scan` com 120 meses)
+Mede o que já existe, não a qualidade. "Gigantes" = canais ≥500 mil subs entre os 30 resultados. Resultados com ruído (ex.: Toys R Us traz vídeos de Minecraft; Lehman traz clipes de notícias).
+| Tema | Gigantes | Maior vídeo | Leitura |
+|---|---|---|---|
+| Madoff | 17 | 11,3 M (Frontline) | Muito coberto |
+| Lehman | 15 | 6,2 M (ColdFusion) | Muito coberto, sobretudo 2008 em geral |
+| Toys R Us | 13 | ruído | Coberto, mas quase só exploração de lojas abandonadas |
+| Nokia | 11 | 13,2 M | Muito coberto (inclui hindi/russo) |
+| Apple 1997 | 6 | 2,7 M (Business Casual) | Coberto, nenhum pequeno ≥100 mil |
+| Nixon 1971 | 6 | 1,9 M | Coberto, nenhum pequeno ≥100 mil |
+| New Coke | 5 | 7,6 M (história geral da Coca-Cola) | Pouco coberto como tema isolado, mas sem sucessos pequenos |
+| Kodak | 3 | 1,5 M (hindi) | Menos coberto em inglês; sucesso pequeno só em russo |
+Conclusão: nenhum tema é virgem. O que decide é o ângulo, não o tema.
