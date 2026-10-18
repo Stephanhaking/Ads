@@ -15,6 +15,8 @@ Here's the number that matters. Four hundred million dollars. That's roughly wha
 
 It was handed to the company the day three investors bought it. They borrowed the money to buy it, and then they made the toy store pay the loan back.
 
+If you didn't grow up in America, think of the biggest toy shop you ever walked into as a child. Now imagine hundreds of them, all closing in one year. That was Toys R Us.
+
 Keep that number in your head. And remember who got paid.
 
 This is the story of a toy store that was bought with its own loan. And why the people who bought it were not the ones who paid.
@@ -24,6 +26,8 @@ This is the story of a toy store that was bought with its own loan. And why the 
 ## ACT 2: The giraffe's kingdom (0:55 a 2:20)
 
 [ON SCREEN: Washington, D.C., 1948: obj calendar-circled-dates; "BABIES GROW UP."; toy-windmill; "ONE ROOF. EVERY TOY."; gravura de uma girafa (NÃO usar a mascote nem o logótipo da marca)]
+
+For Americans, this was childhood: the store you begged your parents to take you to, the aisle where you picked your birthday present. For everyone else, picture a warehouse-sized toy shop, a different aisle for every kind of toy, where a child could get lost for an hour. ⚠ The brand also operated stores in many other countries.
 
 To see what was lost, start small. Nineteen forty-eight. Washington, D.C. A young war veteran named Charles Lazarus opens a store that sells baby furniture. ⚠
 
