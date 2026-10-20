@@ -1,0 +1,82 @@
+{
+ "voice": "Iapetus",
+ "style": "Read as a calm, intelligent documentary narrator. Measured pace, natural pauses, subtle emphasis on key words. No theatrics.",
+ "short": false,
+ "chunks": [
+  {
+   "id": "a01",
+   "block": "ACT 1",
+   "text": "Every year, Google writes a check to Apple. About twenty billion dollars. And neither company printed that number in its annual report.\n\nThink about how strange that is. Apple makes the iPhone. Google makes Android, the phone that competes with it. Two rivals, fighting over every pocket on earth. And one pays the other twenty billion dollars a year.\n\nNot for a product. Not for a service. For a setting. The search engine your phone uses when you type something into the box, without choosing.\n\nKeep that word in your head. Default. And remember the number thirty-six.\n\nThis is the story of the most expensive button nobody presses."
+  },
+  {
+   "id": "a02",
+   "block": "ACT 2",
+   "text": "Here's the thing about a default. Almost nobody changes it.\n\nYou buy a phone. You open the browser. You type. Something answers. You never ask who picked it. The search engine isn't a choice you made. It's a choice that was made for you, before you opened the box.\n\nAnd that's exactly why it's worth billions. If most people never change the setting, then whoever is the default gets most of the searches. And every search carries an advertisement. Which means money."
+  },
+  {
+   "id": "a03",
+   "block": "ACT 2",
+   "text": "So the question was never whether Google was the best search engine. The question was: who gets to be the default on the most phones? Google's own executives told the court it was the best. The court wasn't convinced that was the whole story.\n\nLet me show you how a single search turns into money."
+  },
+  {
+   "id": "a04",
+   "block": "ACT 2",
+   "text": "You type a few words. Within a fraction of a second, advertisers compete for the space above the results. The winner pays a small amount, but only if you click. One search, a few cents, maybe a dollar. Now multiply that by the number of searches made on every iPhone, every day, all over the world. Small amounts, times a very large number, is how a setting becomes a twenty-billion-dollar check.\n\nAnd notice who controls the flow. Not the advertiser. Not the search engine. The one who decides where the search goes in the first place."
+  },
+  {
+   "id": "a05",
+   "block": "ACT 3",
+   "text": "Now remember the thirty-six.\n\nIn November twenty twenty-three, an economist testifying for Google, in the biggest antitrust trial in decades, said something that wasn't supposed to leave the room. Google pays Apple thirty-six percent of the search advertising money it earns from Safari. A lawyer in the courtroom visibly winced.\n\nThirty-six percent. Of every ad Google sells to someone who searches from an iPhone's browser.\n\nPicture a toll booth on a highway. The highway belongs to Apple. The cars are your searches. And every time a car passes, Google pays the toll. Not a fixed fee. A share of what each car is worth."
+  },
+  {
+   "id": "a06",
+   "block": "ACT 3",
+   "text": "What if Apple builds its own search engine?\nThen we lose the default.\nAnd the revenue?\nMost of it. So we make sure they never need to.\n\nThat's the real logic. The money isn't paid to buy a product. It's paid so that Apple never has a reason to build a competitor. And Apple doesn't have to build anything. It just has to keep collecting.\n\nFor Apple, the numbers get big enough to matter. One report put the payments at about seventeen percent of Apple's operating income in twenty twenty. That's one single setting, in one single app."
+  },
+  {
+   "id": "a07",
+   "block": "ACT 4",
+   "text": "Now, did anyone try to take the spot?\n\nAccording to court documents, Microsoft did. Repeatedly. It reportedly offered Apple ninety percent of the ad revenue from Safari searches, to make Bing the default. Ninety. Not thirty-six.\n\nThey're offering us more.\nIs it better?\nOur users would notice.\nThen it isn't more. It's a risk.\n\nApple stayed. And there's the part I find hardest to ignore. Giving up Google meant giving up a payment that grew to billions a year. And switching hundreds of millions of users to an engine they might like less was a gamble.\n\nSo Apple took the safe money. And Google paid for safety."
+  },
+  {
+   "id": "a08",
+   "block": "ACT 4",
+   "text": "The deal itself is old. It goes back to the early days of Safari, when Google was a growing search company and Apple was building a browser. By about twenty fourteen, Google was reportedly paying Apple around a billion dollars a year. Eight years later, it was twenty.\n\nNobody announced it. It just kept growing. Quietly. Every year.\n\nAnd Apple wasn't the only seat Google paid for. Court documents also describe deals with Android phone makers and wireless carriers, some paying a share between fifteen and forty percent of the ad revenue from their devices. The pattern was the same everywhere: don't compete for the user's choice. Buy the place where the choice is made."
+  },
+  {
+   "id": "a09",
+   "block": "ACT 4",
+   "text": "That's a strategy older than the internet. A soft drink company pays a restaurant to keep its product on the menu. A cereal brand pays for the eye-level shelf. Google just did it at the scale of every phone on earth."
+  },
+  {
+   "id": "a10",
+   "block": "ACT 5",
+   "text": "In August twenty twenty-four, a federal judge ruled that Google had illegally kept a monopoly in search. And the default deals were a big part of why.\n\nNow, here's where the story gets complicated. A year later, in September twenty twenty-five, the judge decided on what to do about it. And he did not ban the payments.\n\nHe banned exclusive deals. He limited the contracts to a year. He told Google to share some search data with rivals. But Google can still pay to be the default. The judge even said he'd revisit the question if competition didn't return.\n\nThink about what that means. The payments are legal. The monopoly was illegal. Both are true. And the check keeps arriving."
+  },
+  {
+   "id": "a11",
+   "block": "ACT 5",
+   "text": "And in May twenty twenty-five, an Apple executive told the court that Safari searches had dropped for the first time. He blamed the rise of AI tools. It was an unusual moment. The toll booth owner, quietly warning that the cars were taking another road."
+  },
+  {
+   "id": "a12",
+   "block": "ACT 6",
+   "text": "Now here's what the judge said the deal costs everyone else. When one engine is the default almost everywhere, it receives most of the searches. And searches are data. They show an engine what people want, and what it got wrong. The ruling found that rivals were denied the data they needed to improve. A competitor can't get better at search without searches. And it can't get searches without being the default.\n\nThat's a loop. The default creates the data. The data keeps the default. And the check pays for the loop to keep turning."
+  },
+  {
+   "id": "a13",
+   "block": "ACT 6",
+   "text": "So let's land this. You, the person holding the phone, are not the customer in this story. Your attention is the product. And your habits are what Google and Apple are paying for, because the most valuable thing in search isn't the engine. It's the default.\n\nApple talks a lot about privacy. And Apple's own browser sends your searches, by default, to the company that makes the most money from knowing what you search. Both things are true. It's not a scandal. It's a business model."
+  },
+  {
+   "id": "a14",
+   "block": "ACT 6",
+   "text": "And the same logic shows up in other places. Default apps. Default assistants. Whoever sits in the default seat gets the attention, because most people never change it. Whether others pay for the seat is a separate question, and I won't claim it here.\n\nRemember the thirty-six."
+  },
+  {
+   "id": "a15",
+   "block": "ACT 7",
+   "text": "Here's the one thing to do this week. Open your phone. Go to the browser's settings. Find the search engine. Look at what it says.\n\nYou don't have to change it. But look. And ask: who chose for you?\n\nBecause behind that single line is twenty billion dollars a year. And it only works if you never look.\n\nRemember the default. Remember the thirty-six. Today, you chose."
+  }
+ ]
+}
