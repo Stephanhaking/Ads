@@ -99,13 +99,13 @@ That's a strategy older than the internet. A soft drink company pays a restauran
 
 In August twenty twenty-four, a federal judge ruled that Google had illegally kept a monopoly in search. ⚠ And the default deals were a big part of why. ⚠
 
-Now, here's where the story gets complicated. A year later, in September twenty twenty-five, the judge decided on what to do about it. And he did not ban the payments. ⚠
+Now, here's where the story gets complicated. A year later, in September twenty twenty-five, the judge decided on what to do about it. And the judge did not ban the payments. ⚠
 
-He banned exclusive deals. He limited the contracts to a year. He told Google to share some search data with rivals. ⚠ But Google can still pay to be the default. ⚠ The judge even said he'd revisit the question if competition didn't return. ⚠
+The order banned exclusive deals. It limited the contracts to a year. It told Google to share some search data with rivals. ⚠ But Google can still pay to be the default. ⚠ The judge even said the question could be revisited if competition didn't return. ⚠
 
 Think about what that means. The payments are legal. The monopoly was illegal. Both are true. And the check keeps arriving.
 
-And in May twenty twenty-five, an Apple executive told the court that Safari searches had dropped for the first time. ⚠ He blamed the rise of AI tools. ⚠ It was an unusual moment. The toll booth owner, quietly warning that the cars were taking another road.
+And in May twenty twenty-five, an Apple executive told the court that Safari searches had dropped for the first time. ⚠ The executive blamed the rise of AI tools. ⚠ It was an unusual moment. The toll booth owner, quietly warning that the cars were taking another road.
 
 ---
 
