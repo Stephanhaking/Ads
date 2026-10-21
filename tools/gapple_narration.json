@@ -6,7 +6,7 @@
   {
    "id": "a01",
    "block": "ACT 1",
-   "text": "Every year, Google writes a check to Apple. About twenty billion dollars. And neither company printed that number in its annual report.\n\nThink about how strange that is. Apple makes the iPhone. Google makes Android, the phone that competes with it. Two rivals, fighting over every pocket on earth. And one pays the other twenty billion dollars a year.\n\nNot for a product. Not for a service. For a setting. The search engine your phone uses when you type something into the box, without choosing.\n\nKeep that word in your head. Default. And remember the number thirty-six.\n\nThis is the story of the most expensive button nobody presses."
+   "text": "Every year, Google writes a check to Apple. In twenty twenty-two, it was about twenty billion dollars. And neither company printed that number in its annual report.\n\nThink about how strange that is. Apple makes the iPhone. Google makes Android, the phone that competes with it. Two rivals, fighting over every pocket on earth. And one pays the other twenty billion dollars.\n\nNot for a product. Not for a service. For a setting. The search engine your phone uses when you type something into the box, without choosing.\n\nKeep that word in your head. Default. And remember the number thirty-six.\n\nThis is the story of the most expensive button nobody presses."
   },
   {
    "id": "a02",
@@ -16,7 +16,7 @@
   {
    "id": "a03",
    "block": "ACT 2",
-   "text": "So the question was never whether Google was the best search engine. The question was: who gets to be the default on the most phones? Google's own executives told the court it was the best. The court wasn't convinced that was the whole story.\n\nLet me show you how a single search turns into money."
+   "text": "So the question was never whether Google was the best search engine. The question was: who gets to be the default on the most phones? Google argued it won because it was the best, and Apple's own executive agreed. The court found that the default deals mattered too.\n\nLet me show you how a single search turns into money."
   },
   {
    "id": "a04",
@@ -26,22 +26,22 @@
   {
    "id": "a05",
    "block": "ACT 3",
-   "text": "Now remember the thirty-six.\n\nIn November twenty twenty-three, an economist testifying for Google, in the biggest antitrust trial in decades, said something that wasn't supposed to leave the room. Google pays Apple thirty-six percent of the search advertising money it earns from Safari. A lawyer in the courtroom visibly winced.\n\nThirty-six percent. Of every ad Google sells to someone who searches from an iPhone's browser.\n\nPicture a toll booth on a highway. The highway belongs to Apple. The cars are your searches. And every time a car passes, Google pays the toll. Not a fixed fee. A share of what each car is worth."
+   "text": "Now remember the thirty-six.\n\nIn November twenty twenty-three, an economist testifying for Google, in the biggest antitrust trial in decades, said something that wasn't supposed to leave the room. Google pays Apple thirty-six percent of the search advertising money it earns from Safari. A lawyer in the courtroom visibly winced.\n\nThirty-six percent. Of every ad Google sells to someone who searches from Safari.\n\nPicture a toll booth on a highway. The highway belongs to Apple. The cars are your searches. And every time a car passes, Google pays the toll. Not a fixed fee. A share of what each car is worth."
   },
   {
    "id": "a06",
    "block": "ACT 3",
-   "text": "What if Apple builds its own search engine?\nThen we lose the default.\nAnd the revenue?\nMost of it. So we make sure they never need to.\n\nThat's the real logic. The money isn't paid to buy a product. It's paid so that Apple never has a reason to build a competitor. And Apple doesn't have to build anything. It just has to keep collecting.\n\nFor Apple, the numbers get big enough to matter. One report put the payments at about seventeen percent of Apple's operating income in twenty twenty. That's one single setting, in one single app."
+   "text": "What if Apple builds its own search engine?\nThen we lose the default.\nAnd the revenue?\nMost of it. So we make sure they never need to.\n\nThat's the real logic. The money isn't paid to buy a product. It's paid so that Apple never has a reason to build a competitor. And Apple doesn't have to build anything. It just has to keep collecting.\n\nFor Apple, the numbers get big enough to matter. Unsealed court documents show that in twenty twenty, the payments made up about seventeen and a half percent of Apple's operating income. That's one single setting, in one single app."
   },
   {
    "id": "a07",
    "block": "ACT 4",
-   "text": "Now, did anyone try to take the spot?\n\nAccording to court documents, Microsoft did. Repeatedly. It reportedly offered Apple ninety percent of the ad revenue from Safari searches, to make Bing the default. Ninety. Not thirty-six.\n\nThey're offering us more.\nIs it better?\nOur users would notice.\nThen it isn't more. It's a risk.\n\nApple stayed. And there's the part I find hardest to ignore. Giving up Google meant giving up a payment that grew to billions a year. And switching hundreds of millions of users to an engine they might like less was a gamble.\n\nSo Apple took the safe money. And Google paid for safety."
+   "text": "Now, did anyone try to take the spot?\n\nAccording to a Google court filing, Microsoft did. Repeatedly, over the years. It reportedly offered Apple ninety percent of the ad revenue from Safari searches, to make Bing the default. Apple said no. Ninety. Not thirty-six.\n\nThey're offering us more.\nIs it better?\nOur users would notice.\nThen it isn't more. It's a risk.\n\nApple stayed. And there's the part I find hardest to ignore. Giving up Google meant giving up a payment that grew to billions a year. And switching a vast number of users to an engine they might like less was a gamble.\n\nSo Apple took the safe money. And Google paid for safety."
   },
   {
    "id": "a08",
    "block": "ACT 4",
-   "text": "The deal itself is old. It goes back to the early days of Safari, when Google was a growing search company and Apple was building a browser. By about twenty fourteen, Google was reportedly paying Apple around a billion dollars a year. Eight years later, it was twenty.\n\nNobody announced it. It just kept growing. Quietly. Every year.\n\nAnd Apple wasn't the only seat Google paid for. Court documents also describe deals with Android phone makers and wireless carriers, some paying a share between fifteen and forty percent of the ad revenue from their devices. The pattern was the same everywhere: don't compete for the user's choice. Buy the place where the choice is made."
+   "text": "The deal itself is old. It goes back to the early days of Safari, when Google was a growing search company and Apple was building a browser. An analyst note, citing court documents, put the payment at about a billion dollars in twenty fourteen. Eight years later, it was twenty.\n\nNobody announced it. It just kept growing. Quietly. Every year.\n\nAnd Apple wasn't the only seat Google paid for. The court found that Google signed revenue-sharing deals with browser makers, phone makers and wireless carriers. The pattern was the same everywhere: don't compete for the user's choice. Buy the place where the choice is made."
   },
   {
    "id": "a09",
@@ -51,12 +51,12 @@
   {
    "id": "a10",
    "block": "ACT 5",
-   "text": "In August twenty twenty-four, a federal judge ruled that Google had illegally kept a monopoly in search. And the default deals were a big part of why.\n\nNow, here's where the story gets complicated. A year later, in September twenty twenty-five, the judge decided on what to do about it. And the judge did not ban the payments.\n\nThe order banned exclusive deals. It limited the contracts to a year. It told Google to share some search data with rivals. But Google can still pay to be the default. The judge even said the question could be revisited if competition didn't return."
+   "text": "In August twenty twenty-four, a federal judge ruled that Google had illegally kept a monopoly in search. And the default deals were a big part of why.\n\nNow, here's where the story gets complicated. A year later, in September twenty twenty-five, the judge decided on what to do about it. And the judge did not ban the payments.\n\nThe order banned exclusive deals. It limited the contracts to a year. It told Google to share some search data with rivals. But Google can still pay to be the default. The judge even said the question could be revisited if competition didn't return. Today, both sides are appealing. Google wants the ruling reversed. The government wants the payments banned."
   },
   {
    "id": "a11",
    "block": "ACT 5",
-   "text": "Think about what that means. The payments are legal. The monopoly was illegal. Both are true. And the check keeps arriving.\n\nAnd in May twenty twenty-five, an Apple executive told the court that Safari searches had dropped for the first time. The executive blamed the rise of AI tools. It was an unusual moment. The toll booth owner, quietly warning that the cars were taking another road."
+   "text": "Think about what that means. The payments are legal. The monopoly was illegal. Both are true. And the check keeps arriving.\n\nAnd in May twenty twenty-five, an Apple executive told the court that Safari searches had dropped for the first time. The executive blamed the rise of AI tools. Google disputed that, saying it still saw overall query growth. It was an unusual moment. The toll booth owner, quietly warning that the cars were taking another road."
   },
   {
    "id": "a12",
@@ -66,7 +66,7 @@
   {
    "id": "a13",
    "block": "ACT 6",
-   "text": "So let's land this. You, the person holding the phone, are not the customer in this story. Your attention is the product. And your habits are what Google and Apple are paying for, because the most valuable thing in search isn't the engine. It's the default.\n\nApple talks a lot about privacy. And Apple's own browser sends your searches, by default, to the company that makes the most money from knowing what you search. Both things are true. It's not a scandal. It's a business model."
+   "text": "So let's land this. You, the person holding the phone, are not the customer in this story. Your attention is the product. And your habits are what Google and Apple are paying for, because the most valuable thing in search isn't the engine. It's the default.\n\nApple talks a lot about privacy. And Apple's own browser sends your searches, by default, to a company that earns most of its money from ads. Both things are true. It's not a scandal. It's a business model."
   },
   {
    "id": "a14",
@@ -76,7 +76,7 @@
   {
    "id": "a15",
    "block": "ACT 7",
-   "text": "Here's the one thing to do this week. Open your phone. Go to the browser's settings. Find the search engine. Look at what it says.\n\nYou don't have to change it. But look. And ask: who chose for you?\n\nBecause behind that single line is twenty billion dollars a year. And it only works if you never look.\n\nRemember the default. Remember the thirty-six. Today, you chose."
+   "text": "Here's the one thing to do this week. Open your phone. Go to the browser's settings. Find the search engine. Look at what it says.\n\nYou don't have to change it. But look. And ask: who chose for you?\n\nBecause behind that single line is twenty billion dollars. And it only works if you never look.\n\nRemember the default. Remember the thirty-six. Today, you chose."
   }
  ]
 }
