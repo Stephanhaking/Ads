@@ -59,3 +59,17 @@ Monetização (1 000 subscritores e 4 000 h de visualização; confirmar no Stud
 | 9–10 | semana de 8/dez (10.º ~11/dez) | **~8/jan/2027** (contra ~23/jan a 1/semana: ganha ~2 semanas) |
 Em 30/nov só haverá veredito de 28 dias para 2 vídeos (21/nov e 28/nov) e leituras de 7 dias para ~5. A passagem a 2/semana decide-se com **sinais precoces**, não com veredito.
 **Regra para duplicar o ritmo:** só se, nos primeiros 4 vídeos, o "fica aos 5%" for ≥ 40% em pelo menos 2 **e** o CTR (≥1 000 impressões) for ≥ 3%. Se o CTR ou a retenção estiverem fracos, duplicar o ritmo multiplica o defeito: corrige-se primeiro o gancho/tema/miniatura (N1/N2).
+
+## Decisão de 22/10/2026: aumentar a frequência para ter resposta mais depressa
+Contexto: o `strategy_check` dá N3 (estratégia falhada) para os 10 vídeos desde julho (mediana 19 views, melhor 188, 3 subs), mas 8 deles são anteriores à receita nova (`docs/FORMULA_GUIAO.md`). A receita nova só foi aplicada no Google v3 (20/10) e vai ser no Google-Apple (27/10).
+O utilizador decidiu: publicar mais vezes para ter resposta; se correr mal, **abandonar o Distinguish e seguir a estratégia do Stefan** (a que colou do canal faceless; reler a transcrição nessa altura, não decidir agora os pormenores).
+
+**Cadência proposta:** 2 longos por semana (terça e sexta, 17:00 UTC) a partir de 27/10: 27/10 Google-Apple, 30/10 Southwest, depois Spotify, Ticketmaster, shrinkflation (ver `docs/LISTA_10_HISTORIAS_DINHEIRO.md`). Shorts originais por vídeo, ligados ao longo no campo "vídeo relacionado".
+**Regra de qualidade que se mantém:** verificação de factos ANTES de voz e visuais (feito no Google-Apple só depois: não repetir). Sem isso, não se publica.
+
+**Teste (fixado antes de ver os resultados, para não decidir sob emoção):**
+- Amostra: os 6 vídeos com a receita nova (v3, Google-Apple, +4).
+- Sucesso: ≥ 2 dos 6 com fica@5% ≥ 40% **e** CTR ≥ 3% (com ≥ 1 000 impressões).
+- Falha: menos de 2 → pivô para o plano B.
+- Data de decisão: segunda 23/11/2026 (o 6.º vídeo terá ≥ 7 dias). Os dois primeiros terão ≥ 28 dias.
+- Limite: 6 vídeos é amostra pequena; ruído de assunto pode enganar. Por isso o critério usa retenção e CTR (que se medem cedo), não só visualizações.
