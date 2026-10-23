@@ -1,0 +1,499 @@
+{
+ "A1": [
+  {
+   "s": 0.0,
+   "k": "big",
+   "L": [
+    "GOOGLE PAYS",
+    "APPLE ABOUT",
+    "$20 BILLION."
+   ],
+   "hot": [
+    2
+   ]
+  },
+  {
+   "s": 3.75,
+   "k": "big",
+   "L": [
+    "IN ONE YEAR.",
+    "FOR ONE SETTING."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 6.14,
+   "k": "img",
+   "n": "toggle-switch",
+   "L": [
+    "NOT A PRODUCT.",
+    "A DEFAULT."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 8.35,
+   "k": "big",
+   "L": [
+    "WHAT NOBODY",
+    "CHECKS."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 9.93,
+   "k": "obj",
+   "n": "search-bar-cursor",
+   "L": [
+    "THE SEARCH ENGINE",
+    "ON YOUR PHONE."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 11.51,
+   "k": "big",
+   "L": [
+    "YOU DIDN’T",
+    "CHOOSE IT."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 14.08,
+   "k": "obj",
+   "n": "coin",
+   "L": [
+    "THE WHOLE",
+    "BUSINESS."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 15.86,
+   "k": "big",
+   "L": [
+    "DEFAULT =",
+    "THE SEARCHES."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 18.48,
+   "k": "obj",
+   "n": "megaphone",
+   "L": [
+    "EVERY SEARCH",
+    "CARRIES AN AD."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 20.41,
+   "k": "count",
+   "v": 20,
+   "suf": " BILLION",
+   "lab": "DOLLARS · 2022"
+  },
+  {
+   "s": 23.36,
+   "k": "big",
+   "L": [
+    "A SETTING",
+    "NOBODY CHANGES."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 25.5,
+   "k": "big",
+   "L": [
+    "GOOGLE PAYS",
+    "APPLE ABOUT",
+    "$20 BILLION."
+   ],
+   "hot": [
+    2
+   ]
+  }
+ ],
+ "A2": [
+  {
+   "s": 0.0,
+   "k": "count",
+   "v": 36,
+   "suf": "%",
+   "lab": "GOOGLE PAYS APPLE"
+  },
+  {
+   "s": 3.02,
+   "k": "big",
+   "L": [
+    "OF THE SEARCH",
+    "AD MONEY.",
+    "FROM SAFARI."
+   ],
+   "hot": [
+    2
+   ]
+  },
+  {
+   "s": 5.46,
+   "k": "big",
+   "L": [
+    "NOT SUPPOSED TO",
+    "LEAVE THE ROOM."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 7.97,
+   "k": "obj",
+   "n": "witness-stand",
+   "L": [
+    "AN ECONOMIST",
+    "TESTIFYING."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 11.52,
+   "k": "big",
+   "L": [
+    "A LAWYER",
+    "REPORTEDLY WINCED."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 14.09,
+   "k": "obj",
+   "n": "toll-booth-modern",
+   "L": [
+    "A TOLL BOOTH."
+   ],
+   "hot": [
+    0
+   ]
+  },
+  {
+   "s": 15.4,
+   "k": "big",
+   "L": [
+    "THE CARS:",
+    "YOUR SEARCHES."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 17.24,
+   "k": "obj",
+   "n": "coin",
+   "L": [
+    "GOOGLE PAYS",
+    "THE TOLL."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 20.3,
+   "k": "big",
+   "L": [
+    "NOT A FIXED FEE.",
+    "A SHARE."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 22.57,
+   "k": "big",
+   "L": [
+    "WHY WOULD",
+    "APPLE BUILD",
+    "ITS OWN?"
+   ],
+   "hot": [
+    2
+   ]
+  },
+  {
+   "s": 26.55,
+   "k": "obj",
+   "n": "cash-register",
+   "L": [
+    "IT JUST",
+    "COLLECTS."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 27.8,
+   "k": "count",
+   "v": 36,
+   "suf": "%",
+   "lab": "GOOGLE PAYS APPLE"
+  }
+ ],
+ "A3": [
+  {
+   "s": 0.0,
+   "k": "obj",
+   "n": "gavel",
+   "L": [
+    "ILLEGAL",
+    "MONOPOLY."
+   ],
+   "hot": [
+    0
+   ]
+  },
+  {
+   "s": 4.46,
+   "k": "obj",
+   "n": "calendar",
+   "L": [
+    "AUGUST 2024."
+   ],
+   "hot": [
+    0
+   ]
+  },
+  {
+   "s": 6.62,
+   "k": "big",
+   "L": [
+    "A YEAR LATER:",
+    "THE PUNISHMENT."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 9.15,
+   "k": "big",
+   "L": [
+    "THE PAYMENTS:",
+    "NOT BANNED."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 11.64,
+   "k": "big",
+   "L": [
+    "BANNED: EXCLUSIVE.",
+    "ALLOWED: THE CHECK."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 15.78,
+   "k": "obj",
+   "n": "handshake",
+   "L": [
+    "STILL PAYING TO",
+    "BE THE DEFAULT."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 18.69,
+   "k": "big",
+   "L": [
+    "MONOPOLY:",
+    "ILLEGAL.",
+    "PAYMENTS:",
+    "LEGAL."
+   ],
+   "hot": [
+    1,
+    3
+   ]
+  },
+  {
+   "s": 21.95,
+   "k": "big",
+   "L": [
+    "BOTH ARE TRUE."
+   ],
+   "hot": [
+    0
+   ]
+  },
+  {
+   "s": 23.73,
+   "k": "big",
+   "L": [
+    "BOTH SIDES",
+    "ARE APPEALING."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 25.95,
+   "k": "big",
+   "L": [
+    "MONOPOLY:",
+    "ILLEGAL.",
+    "PAYMENTS:",
+    "LEGAL."
+   ],
+   "hot": [
+    1,
+    3
+   ]
+  }
+ ],
+ "A4": [
+  {
+   "s": 0.0,
+   "k": "big",
+   "L": [
+    "ONE THING,",
+    "THIS WEEK."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 2.62,
+   "k": "obj",
+   "n": "phone-blank-screen",
+   "L": [
+    "OPEN YOUR PHONE."
+   ],
+   "hot": [
+    0
+   ]
+  },
+  {
+   "s": 4.12,
+   "k": "obj",
+   "n": "phone-settings-list",
+   "L": [
+    "BROWSER",
+    "SETTINGS."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 6.13,
+   "k": "obj",
+   "n": "search-bar-cursor",
+   "L": [
+    "FIND THE",
+    "SEARCH ENGINE."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 7.9,
+   "k": "obj",
+   "n": "magnifier",
+   "L": [
+    "LOOK AT",
+    "WHAT IT SAYS."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 9.94,
+   "k": "big",
+   "L": [
+    "NO NEED",
+    "TO CHANGE."
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 11.62,
+   "k": "big",
+   "L": [
+    "BUT LOOK."
+   ],
+   "hot": [
+    0
+   ]
+  },
+  {
+   "s": 12.74,
+   "k": "big",
+   "L": [
+    "WHO CHOSE",
+    "IT FOR YOU?"
+   ],
+   "hot": [
+    1
+   ]
+  },
+  {
+   "s": 14.78,
+   "k": "count",
+   "v": 20,
+   "suf": " BILLION",
+   "lab": "DOLLARS · 2022, ONE LINE"
+  },
+  {
+   "s": 21.34,
+   "k": "big",
+   "L": [
+    "ONE THING,",
+    "THIS WEEK.",
+    "LOOK."
+   ],
+   "hot": [
+    2
+   ]
+  }
+ ]
+}

@@ -38,7 +38,7 @@ const wrapLines = (L: string[], hot: number[], max: number) => {
 };
 const vsize = (lines: string[], max: number) => Math.min(max, Math.floor(960 / (Math.max(...lines.map((x) => x.length), 1) * 0.7)));
 
-const VBeat: React.FC<{b: GBeat}> = ({b}) => {
+export const VBeat: React.FC<{b: GBeat}> = ({b}) => {
   const f = useCurrentFrame();
   const pop = spring({frame: f, fps: FPS, config: {damping: 15, stiffness: 220, mass: 0.7}});
   const L = b.L ?? [];

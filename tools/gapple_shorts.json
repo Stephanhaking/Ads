@@ -1,0 +1,26 @@
+{
+ "voice": "Iapetus",
+ "style": "Read as a calm, intelligent documentary narrator, but brisk and urgent. Short sentences, clear pauses, no theatrics.",
+ "shorts": [
+  {
+   "id": "A1",
+   "tag": "THE $20B SETTING",
+   "text": "Google pays Apple about twenty billion dollars.\n\nIn one year. For one setting.\n\nNot a product. A default.\n\nHere's what nobody checks. The search engine on your phone? You didn't choose it. Almost nobody does.\n\nAnd that's the whole business. Whoever is the default gets the searches. Every search carries an ad.\n\nTwenty twenty-two. About twenty billion dollars. For a setting nobody changes.\n\nGoogle pays Apple about twenty billion dollars."
+  },
+  {
+   "id": "A2",
+   "tag": "THE 36%",
+   "text": "Google pays Apple thirty-six percent.\n\nOf the search ad money from Safari.\n\nThat number wasn't supposed to leave the courtroom. An economist testifying for Google said it out loud. A Google lawyer reportedly winced.\n\nPicture a toll booth. The cars are your searches. Every time a car passes, Google pays the toll. Not a fixed fee. A share.\n\nSo why would Apple ever build its own search engine?\n\nIt doesn't have to. It just collects.\n\nGoogle pays Apple thirty-six percent."
+  },
+  {
+   "id": "A3",
+   "tag": "BOTH ARE TRUE",
+   "text": "A federal judge ruled that Google illegally kept a monopoly in search.\n\nAugust twenty twenty-four.\n\nA year later, the judge decided the punishment. And did not ban the payments.\n\nBanned: exclusive deals. Allowed: the check.\n\nGoogle can still pay Apple to be the default.\n\nThe monopoly was illegal. The payments are legal. Both are true.\n\nToday, both sides are appealing.\n\nThe monopoly was illegal. The payments are legal."
+  },
+  {
+   "id": "A4",
+   "tag": "DO THIS WEEK",
+   "text": "One thing to do this week.\n\nOpen your phone. Go to your browser's settings. Find the search engine. Look at what it says.\n\nYou don't have to change it. But look.\n\nWho chose it for you?\n\nBehind that single line, in twenty twenty-two, was about twenty billion dollars.\n\nOne thing, this week. Look."
+  }
+ ]
+}
