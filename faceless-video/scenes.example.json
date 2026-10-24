@@ -1,0 +1,15 @@
+{
+  "title": "Why the sky is blue",
+  "aspect": "9:16",
+  "style": "stickman",
+  "voice": "en_US-lessac-medium",
+  "characters": [
+    {"id": "teacher", "description": "friendly stickman teacher with round glasses and a red tie"},
+    {"id": "kid", "description": "small stickman kid with a yellow cap"}
+  ],
+  "scenes": [
+    {"narration": "Have you ever wondered why the sky is blue?", "image_prompt": "kid looking up at a bright sky, outdoor park", "characters": ["kid"]},
+    {"narration": "Sunlight looks white, but it is really made of every color.", "image_prompt": "teacher holding a prism splitting light into a rainbow", "characters": ["teacher"]},
+    {"narration": "Blue light scatters the most when it hits the air, so we see blue everywhere.", "image_prompt": "teacher and kid pointing at a blue sky with scattering light rays", "characters": ["teacher", "kid"]}
+  ]
+}
