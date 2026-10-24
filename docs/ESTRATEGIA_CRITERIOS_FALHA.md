@@ -73,3 +73,21 @@ O utilizador decidiu: publicar mais vezes para ter resposta; se correr mal, **ab
 - Falha: menos de 2 → pivô para o plano B.
 - Data de decisão: segunda 23/11/2026 (o 6.º vídeo terá ≥ 7 dias). Os dois primeiros terão ≥ 28 dias.
 - Limite: 6 vídeos é amostra pequena; ruído de assunto pode enganar. Por isso o critério usa retenção e CTR (que se medem cedo), não só visualizações.
+
+## Decisão de 24/10/2026: abandonar o Distinguish (estilo e nicho)
+O utilizador decidiu desistir do estilo visual criado (colagem/meio-tom) e do nicho "sistemas modernos × paralelos históricos", **sem esperar** pelo teste de 23/11 definido a 22/10. Fica registado:
+- O teste dos 6 vídeos com a receita nova **não chegou a correr** (só o v3 tinha 2 dias). Não sabemos se o problema era o estilo, o nicho, o tema ou a embalagem. A decisão é do utilizador; este registo só serve para não a reinterpretar depois.
+- Parados: Google-Apple (vídeo e Shorts A1–A4, renderizados em `out/`, **nunca agendados**), Southwest, Spotify, Ticketmaster, shrinkflation.
+- Já públicos/agendados do Distinguish (v3, K1–K4 e os 10 longos antigos): decisão pendente (deixar, ocultar ou apagar).
+- Vídeo #2 (feudalismo) continua BLOQUEADO.
+
+## Plano B: o método do Stefan (transcrição que o utilizador colou), resumo fiel
+Fonte: vídeo promocional de um criador que vende mentoria; os números de ganhos que ele mostra são **autodeclarados e não verificados**. O método em si é razoável e pode ser testado com os nossos dados.
+1. **Pesquisa de nicho com critérios:** menos de 5 canais pequenos com views > subscritores (procura alta, oferta baixa); **nenhum canal com mais de 100 mil subs**; nenhum canal pequeno a falhar; nicho com menos de ~6 meses; conseguirmos fazer melhor; monetizável; ideal com vídeos longos.
+2. **Conta "dummy"** só para pesquisa: treinar a página inicial do YouTube para mostrar só canais faceless e descobrir nichos.
+3. **Temas:** 10–15 por nicho; outliers recentes em concorrentes, **sem copiar os mais populares**; se o tema já foi feito mais de 3 vezes sem ângulo novo, mudar; **topic transfer** (levar para o nosso nicho um tema que ganhou noutro); negatividade; depois 80% do que funciona + 20% testes.
+4. **Produção:** guião por IA, voz (11Labs/similar), editor freelancer barato, **vídeo ~1,5× mais longo que o concorrente**, miniatura/título de conceitos **já provados** (não inventar).
+5. **Publicação:** "postar, saltar, postar" (consistente mas não robótico). Se explodir, continuar; se ficar plano, diagnosticar (nicho, tema, embalagem, duração) e voltar à pesquisa de nicho.
+6. **Velocidade** acima de tudo.
+Diferença chave para o que fizemos: **não inventar estilo próprio**; replicar formatos já provados.
+**Conta:** ele recomenda conta pessoal, nova ou envelhecida; aquecer a conta 1 semana (1–2 h/dia) é prática dele, **não verificada**.
