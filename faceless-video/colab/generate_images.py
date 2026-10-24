@@ -27,7 +27,7 @@ def main(scenes_path, out="images"):
         "stabilityai/stable-diffusion-xl-base-1.0", torch_dtype=torch.float16, variant="fp16")
     pipe.load_ip_adapter("h94/IP-Adapter", subfolder="sdxl_models", weight_name="ip-adapter_sdxl.bin")
     pipe.enable_model_cpu_offload()  # after the adapter is loaded
-    pipe.enable_vae_tiling()
+    pipe.vae.enable_tiling()
     chars = {c["id"]: c for c in spec["characters"]}
     refs = {}
     pipe.set_ip_adapter_scale(0.0)
