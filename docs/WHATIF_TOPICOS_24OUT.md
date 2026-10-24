@@ -36,3 +36,7 @@ Método (Stefan): procura = outliers recentes de canais pequenos; oferta = ≤ 3
 8. **What If You Could See How Much Everyone Owes?**: padrão "número sobre a cabeça" (1,3 M), mas o equivalente do património tem 6 cópias a falhar: **testar uma versão antes**.
 9. **What If You Could Rewind One Day?**: variante de 24 h (as cópias são de 10 s); fraca.
 10. **What If 9/11 Never Happened?** (pedido do utilizador): 29 vídeos, 2 enormes de um canal antigo; tom delicado; segurança para anunciantes por verificar. **Menor prioridade.**
+
+## Sugestão do utilizador (24/10): "What if physics never existed"
+Medido: 6 vídeos com o tema no título, nenhum ≥ 100 mil (melhor: "What If The Moon Never Existed?" 11 mil; "What If Physics Disappeared?" 1,2 mil em 2025). "Leis da física erradas/alteradas": dois grandes (1,7 M e 1,2 M) mas de cientistas, outro enquadramento. Gravidade mais forte: saturado (39 vídeos).
+Leitura: oferta baixa. Problema de enquadramento: "a física nunca ter existido" é vago (sem leis não haveria nada) e os vencedores do nicho têm um parâmetro concreto e consequências que escalam (10× mais rápido, velocidade da luz). Variantes concretas a medir: "…the Laws of Physics Broke for 10 Seconds?", "…Physics Stopped Working for 1 Second?" (a segunda deu erro 429; por medir).
