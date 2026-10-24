@@ -22,9 +22,11 @@ def main(scenes_path, out="images"):
     out = Path(out); out.mkdir(exist_ok=True)
     style = STYLES.get(spec.get("style", "stickman"), spec["style"])
     portrait = spec.get("aspect", "9:16") == "9:16"
-    size = (768, 1344) if portrait else (1344, 768)
+    size = (640, 1152) if portrait else (1152, 640)  # kept small so it fits a 15GB T4
     pipe = AutoPipelineForText2Image.from_pretrained(
-        "stabilityai/stable-diffusion-xl-base-1.0", torch_dtype=torch.float16, variant="fp16").to("cuda")
+        "stabilityai/stable-diffusion-xl-base-1.0", torch_dtype=torch.float16, variant="fp16")
+    pipe.enable_model_cpu_offload()
+    pipe.enable_vae_tiling()
     pipe.load_ip_adapter("h94/IP-Adapter", subfolder="sdxl_models", weight_name="ip-adapter_sdxl.bin")
     chars = {c["id"]: c for c in spec["characters"]}
     refs = {}
@@ -34,7 +36,7 @@ def main(scenes_path, out="images"):
         g = torch.Generator("cuda").manual_seed(abs(hash(cid)) % 2**31)
         img = pipe(f"a single character, full body, centered, plain white background, {c['description']}, {style}",
                    negative_prompt="text, letters, words, multiple characters, collage, character sheet, grid, realistic, photo",
-                   ip_adapter_image=blank, width=1024, height=1024, generator=g).images[0]
+                   ip_adapter_image=blank, width=768, height=768, generator=g).images[0]
         img.save(out / f"char_{cid}.png"); refs[cid] = img
     for i, sc in enumerate(spec["scenes"]):
         cs = sc.get("characters", [])
