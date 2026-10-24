@@ -25,9 +25,9 @@ def main(scenes_path, out="images"):
     size = (640, 1152) if portrait else (1152, 640)  # kept small so it fits a 15GB T4
     pipe = AutoPipelineForText2Image.from_pretrained(
         "stabilityai/stable-diffusion-xl-base-1.0", torch_dtype=torch.float16, variant="fp16")
-    pipe.enable_model_cpu_offload()
-    pipe.enable_vae_tiling()
     pipe.load_ip_adapter("h94/IP-Adapter", subfolder="sdxl_models", weight_name="ip-adapter_sdxl.bin")
+    pipe.enable_model_cpu_offload()  # after the adapter is loaded
+    pipe.enable_vae_tiling()
     chars = {c["id"]: c for c in spec["characters"]}
     refs = {}
     pipe.set_ip_adapter_scale(0.0)
