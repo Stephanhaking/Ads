@@ -1,13 +1,16 @@
 #!/bin/bash
-# usage: remix.sh narration.mp3 -> anuncio_inflador_maputo.mp4 (needs silent.mp4 from render.py)
+# Builds anuncio_inflador_maputo.mp4 from silent.mp4 + per-scene narration g/t1..t6.wav
 set -e
 cd "$(dirname "$0")"
 [ -f silent.mp4 ] || python3 render.py silent.mp4
-ffmpeg -y -loglevel error -i silent.mp4 -i "$1" \
+ffmpeg -y -loglevel error -i silent.mp4 -i g/t1.wav -i g/t2.wav -i g/t3.wav -i g/t4.wav -i g/t5.wav -i g/t6.wav \
  -f lavfi -t 35 -i "aevalsrc='0.55*sin(2*PI*(52+90*exp(-mod(t,0.5)*35))*mod(t,0.5))*exp(-mod(t,0.5)*7)+0.10*sin(2*PI*110*t)*(0.6+0.4*sin(2*PI*0.25*t))+0.06*sin(2*PI*165*t)':s=44100" \
  -f lavfi -t 0.5 -i "anoisesrc=d=0.5:c=pink:a=0.5" \
- -filter_complex "[1]aresample=44100,volume=1.5[v];[2]volume=0.14,afade=t=out:st=33.5:d=1.5[m];\
-[3]highpass=f=400,afade=t=in:d=0.25,afade=t=out:st=0.25:d=0.25,volume=0.35,asplit=5[w1][w2][w3][w4][w5];\
+ -filter_complex "[1]aresample=44100,adelay=50|50[v1];[2]aresample=44100,adelay=4600|4600[v2];[3]aresample=44100,adelay=8800|8800[v3];\
+[4]aresample=44100,adelay=16300|16300[v4];[5]aresample=44100,adelay=25100|25100[v5];[6]aresample=44100,adelay=29300|29300[v6];\
+[7]volume=0.12,afade=t=out:st=33.5:d=1.5[m];\
+[8]highpass=f=400,afade=t=in:d=0.25,afade=t=out:st=0.25:d=0.25,volume=0.3,asplit=5[w1][w2][w3][w4][w5];\
 [w1]adelay=4350|4350[x1];[w2]adelay=8550|8550[x2];[w3]adelay=16050|16050[x3];[w4]adelay=24850|24850[x4];[w5]adelay=29050|29050[x5];\
-[v][m][x1][x2][x3][x4][x5]amix=inputs=7:normalize=0:duration=longest,alimiter=limit=0.95,atrim=0:35[a]" \
+[v1][v2][v3][v4][v5][v6]amix=inputs=6:normalize=0,volume=1.4[vo];\
+[vo][m][x1][x2][x3][x4][x5]amix=inputs=7:normalize=0:duration=longest,alimiter=limit=0.95,atrim=0:35[a]" \
  -map 0:v -map "[a]" -c:v copy -c:a aac -b:a 160k -movflags +faststart anuncio_inflador_maputo.mp4
