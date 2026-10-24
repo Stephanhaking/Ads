@@ -11,7 +11,7 @@ from diffusers import AutoPipelineForText2Image
 from PIL import Image
 
 STYLES = {
-    "stickman": "simple hand-drawn stickman illustration, thick black lines, flat colors, white background",
+    "stickman": "minimalist stickman cartoon, round head, thin line body, simple doodle, thick black outlines, flat colors, plain background",
     "claymation": "claymation stop-motion style, plasticine figures, soft studio lighting",
     "3d cartoon": "3D cartoon render, pixar-like, soft lighting, vibrant colors",
 }
@@ -32,7 +32,8 @@ def main(scenes_path, out="images"):
     blank = Image.new("RGB", (224, 224), "white")
     for cid, c in chars.items():
         g = torch.Generator("cuda").manual_seed(abs(hash(cid)) % 2**31)
-        img = pipe(f"character sheet, one character, full body, centered, {c['description']}, {style}",
+        img = pipe(f"a single character, full body, centered, plain white background, {c['description']}, {style}",
+                   negative_prompt="text, letters, words, multiple characters, collage, character sheet, grid, realistic, photo",
                    ip_adapter_image=blank, width=1024, height=1024, generator=g).images[0]
         img.save(out / f"char_{cid}.png"); refs[cid] = img
     for i, sc in enumerate(spec["scenes"]):
@@ -41,7 +42,7 @@ def main(scenes_path, out="images"):
         pipe.set_ip_adapter_scale(0.6 if cs else 0.0)
         ref = refs[cs[0]] if cs else blank
         g = torch.Generator("cuda").manual_seed(1000 + i)
-        img = pipe(f"{sc['image_prompt']}, {desc}, {style}", negative_prompt="text, watermark, blurry, extra limbs",
+        img = pipe(f"{sc['image_prompt']}, {desc}, {style}", negative_prompt="text, letters, words, watermark, blurry, extra limbs, realistic, photo",
                    ip_adapter_image=ref, width=size[0], height=size[1], generator=g).images[0]
         img.save(out / f"scene_{i:02d}.png"); print("done", i)
 
