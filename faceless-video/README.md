@@ -26,5 +26,8 @@ Default voice: `en_US-lessac-medium` (`.onnx` + `.onnx.json` in `voices/`).
 
 Verified here: steps 3-4 with placeholder images (1080x1920 mp4 with audio and captions). The Colab image step is written but not yet run on a GPU.
 
+## Character animation (optional)
+`python pipeline/layers.py` cuts the character head/body (and extras like an owl) out of each scene image with SAM, using boxes in `layers.json` (fractions of the image). `run.py render` then animates them over the full image: body breathing, head sway and nod while speaking, owl bobbing. Boxes are set per scene by hand; check the cutouts before rendering.
+
 ## Known limits
 Character consistency drifts more than paid pipelines; motion is pan/zoom only; Piper voices are less natural than paid TTS.

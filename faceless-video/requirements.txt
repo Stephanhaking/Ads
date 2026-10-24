@@ -1,3 +1,5 @@
 piper-tts
 faster-whisper
 av>=14,<16
+torch
+transformers

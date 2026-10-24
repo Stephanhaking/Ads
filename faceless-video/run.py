@@ -2,7 +2,7 @@
   python run.py narrate scenes.json        # voice + captions timing -> build/
   python run.py render [images_dir] [out]  # assemble mp4 with Remotion (images_dir from the Colab step)
 """
-import os, shutil, subprocess, sys
+import json, os, shutil, subprocess, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -16,6 +16,14 @@ def render(images=ROOT / "images", out=ROOT / "out" / "video.mp4"):
     shutil.copytree(build, pub)
     for img in Path(images).glob("scene_*.png"):
         shutil.copy(img, pub / img.name)
+    layers = build / "layers"
+    if (layers / "meta.json").exists():  # optional character animation layers (see pipeline/layers.py)
+        tl = json.loads((pub / "timeline.json").read_text())
+        meta = json.loads((layers / "meta.json").read_text())
+        for sc in tl["scenes"]:
+            if str(sc["index"]) in meta:
+                sc["layers"] = meta[str(sc["index"])]
+        (pub / "timeline.json").write_text(json.dumps(tl))
     out = Path(out); out.parent.mkdir(exist_ok=True)
     cmd = ["npx", "remotion", "render", "src/index.ts", "Video", str(out.resolve())]
     if os.environ.get("REMOTION_BROWSER"):  # optional: use an installed Chromium instead of Remotion's download

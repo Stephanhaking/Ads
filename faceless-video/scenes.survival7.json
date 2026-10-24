@@ -1,0 +1,70 @@
+{
+  "title": "Stickman survival: lost in the forest",
+  "aspect": "9:16",
+  "style": "stickman",
+  "voice": "en_US-lessac-medium",
+  "characters": [
+    {
+      "id": "sam",
+      "description": "stickman hiker named Sam with a green backpack and an orange beanie"
+    },
+    {
+      "id": "owl",
+      "description": "small stickman-style owl with big round eyes and a tiny brown scarf"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Sam is lost in the forest, and the sun is going down.",
+      "image_prompt": "lone hiker standing in a dark pine forest at sunset, looking worried",
+      "characters": [
+        "sam"
+      ]
+    },
+    {
+      "narration": "Rule number one: stop walking. Panic makes you wander farther from help.",
+      "image_prompt": "hiker sitting on a log, hand raised in a stop gesture, calm expression",
+      "characters": [
+        "sam"
+      ]
+    },
+    {
+      "narration": "A wise old owl watches him from a branch.",
+      "image_prompt": "owl perched on a branch above the hiker, forest at dusk",
+      "characters": [
+        "owl",
+        "sam"
+      ]
+    },
+    {
+      "narration": "Rule two: build a shelter before dark. Lean branches against a fallen log.",
+      "image_prompt": "hiker leaning branches against a fallen log to make a lean-to shelter",
+      "characters": [
+        "sam"
+      ]
+    },
+    {
+      "narration": "Rule three: make noise and signals. Three whistles mean help.",
+      "image_prompt": "hiker blowing a whistle, sound waves, owl nearby",
+      "characters": [
+        "sam",
+        "owl"
+      ]
+    },
+    {
+      "narration": "Stay warm, stay visible, and stay put.",
+      "image_prompt": "hiker sitting by a small campfire under the stars, owl beside him",
+      "characters": [
+        "sam",
+        "owl"
+      ]
+    },
+    {
+      "narration": "At sunrise, rescuers follow the whistle and find Sam safe.",
+      "image_prompt": "rescuers with flashlights arriving at the shelter at dawn, hiker waving happily",
+      "characters": [
+        "sam"
+      ]
+    }
+  ]
+}
