@@ -20,7 +20,7 @@ Default voice: `en_US-lessac-medium` (`.onnx` + `.onnx.json` in `voices/`).
 
 ## Use
 1. Write `scenes.json` (copy `scenes.example.json`).
-2. Open `colab/generate_images.ipynb` in Colab with a GPU runtime, upload `scenes.json`, run, and unzip the result into `images/` (files `scene_00.png`, ...).
+2. Open `colab/generate_images.ipynb` in Colab with a GPU runtime, upload `scenes.json` and `generate_images.py`, run, and unzip the result into `images/` (files `scene_00.png`, ...).
 3. `python run.py narrate scenes.json`
 4. `python run.py render images out/video.mp4` (set `REMOTION_BROWSER=/path/to/chromium` if Remotion can't download its own).
 
