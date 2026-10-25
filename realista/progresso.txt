@@ -1,0 +1,7 @@
+medio 17:47:14
+largo 17:48:51
+produto 17:50:49
+detalhe 17:52:52
+noite 17:54:46
+estudio 17:55:34
+FIM

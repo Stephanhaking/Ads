@@ -1,0 +1,15 @@
+/home/user/Ads/realista/cena.py:16: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']
+/home/user/Ads/realista/cena.py:107: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new('w'); sc.world = w; w.use_nodes = True; n = w.node_tree.nodes; l = w.node_tree.links; bg = n['Background']
+/home/user/Ads/realista/cena.py:93: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new('asfalto'); m.use_nodes = True; n = m.node_tree.nodes; l = m.node_tree.links; b = n['Principled BSDF']
+/home/user/Ads/realista/cena.py:115: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new('areia'); m.use_nodes = True; n = m.node_tree.nodes; l = m.node_tree.links; b = n['Principled BSDF']
+/home/user/Ads/realista/cena.py:214: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  sm = bpy.data.materials.new('ecra'); sm.use_nodes = True; nn = sm.node_tree.nodes; ll = sm.node_tree.links; bs = nn['Principled BSDF']; tx = nn.new('ShaderNodeTexImage'); tx.image = im
+/home/user/Ads/realista/cena.py:230: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new('trancado'); m.use_nodes = True; n = m.node_tree.nodes; l = m.node_tree.links; b = n['Principled BSDF']
+00:46.808  cycles           | WARNING CUEW initialization failed: Error opening the library
+01:53.775  render           | Saved: '/home/user/Ads/realista/out_noite.png'
+OK /home/user/Ads/realista/out_noite.png
