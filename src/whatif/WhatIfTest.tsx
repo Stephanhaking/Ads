@@ -12,7 +12,7 @@ const L = (x1: number, y1: number, x2: number, y2: number, w = 14) => (
   <line x1={x1} y1={y1} x2={x2} y2={y2} stroke={INK} strokeWidth={w} strokeLinecap="round" />
 );
 
-const Hero: React.FC<{t: number}> = ({t}) => {
+export const Hero: React.FC<{t: number}> = ({t}) => {
   const p = interpolate(t, [1.0, 1.5], [0, 1], {...clamp, easing: ei});        // pânico
   const fl = Math.max(0, t - 1.05);                                             // tempo desde a quebra
   const rise = 185 * (1 - Math.exp(-fl * 0.9)) + Math.sin(fl * 2.2) * 10 * Math.min(1, fl); // sobe e flutua
