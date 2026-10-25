@@ -29,5 +29,8 @@ Verified here: steps 3-4 with placeholder images (1080x1920 mp4 with audio and c
 ## Character animation (optional)
 `python pipeline/layers.py` cuts the character head/body (and extras like an owl) out of each scene image with SAM, using boxes in `layers.json` (fractions of the image). `run.py render` then animates them over the full image: body breathing, head sway and nod while speaking, owl bobbing. Boxes are set per scene by hand; check the cutouts before rendering.
 
+## Vector animation (RigVideo)
+`remotion/src/rig/` draws Sam, the owl and the forest as code-driven SVG with jointed arms and legs, mouth synced to the narration. Render with `npx remotion render src/index.ts RigVideo out/rig.mp4` after `run.py narrate` and `run.py render` have filled `remotion/public/build`. Each scene's pose is written by hand in `RigVideo.tsx` (`KINDS`), so a new script needs new poses.
+
 ## Known limits
 Character consistency drifts more than paid pipelines; motion is pan/zoom only; Piper voices are less natural than paid TTS.

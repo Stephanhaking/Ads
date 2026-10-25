@@ -1,7 +1,7 @@
 import React from 'react';
 import {Composition, staticFile} from 'remotion';
 import {Video, Timeline} from './Video';
-import {RigDemo} from './rig/RigDemo';
+import {RigVideo} from './rig/RigVideo';
 
 export const Root: React.FC = () => (
   <>
@@ -25,8 +25,8 @@ export const Root: React.FC = () => (
     }}
   />
   <Composition
-    id="RigDemo"
-    component={RigDemo}
+    id="RigVideo"
+    component={RigVideo}
     width={1080}
     height={1920}
     fps={30}
@@ -34,8 +34,7 @@ export const Root: React.FC = () => (
     defaultProps={{timeline: null as Timeline | null}}
     calculateMetadata={async () => {
       const timeline: Timeline = await (await fetch(staticFile('build/timeline.json'))).json();
-      const end = timeline.scenes[1].start + timeline.scenes[1].duration;
-      return {durationInFrames: Math.ceil(end * timeline.fps), props: {timeline}};
+      return {durationInFrames: Math.ceil(timeline.total * timeline.fps), props: {timeline}};
     }}
   />
   </>

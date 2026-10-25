@@ -27,7 +27,7 @@ const Limb: React.FC<{from: [number, number]; a: [number, number]; l1: number; l
   );
 };
 
-export const Sam: React.FC<{x: number; y: number; pose: Pose; scale?: number}> = ({x, y, pose, scale = 1}) => {
+export const Sam: React.FC<{x: number; y: number; pose: Pose; scale?: number; hat?: string; hat2?: string; pack?: boolean; armOverHead?: boolean; whistle?: boolean}> = ({x, y, pose, scale = 1, hat = '#e8812f', hat2 = '#ee8c3a', pack = true, armOverHead, whistle}) => {
   const neck: [number, number] = [Math.sin(rad(pose.lean)) * -300, -300];
   const shoulder: [number, number] = [Math.sin(rad(pose.lean)) * -270, -270];
   const headC: [number, number] = [neck[0], neck[1] - 125];
@@ -38,15 +38,15 @@ export const Sam: React.FC<{x: number; y: number; pose: Pose; scale?: number}> =
     <g transform={`translate(${x} ${y}) scale(${scale})`}>
       {/* back leg/arm first */}
       <Limb from={[0, 0]} a={pose.legR} l1={210} l2={210} />
-      <Limb from={shoulder} a={pose.armR} l1={150} l2={150} hand />
+      {!armOverHead && <Limb from={shoulder} a={pose.armR} l1={150} l2={150} hand />}
       {/* torso */}
       <line x1={0} y1={0} x2={neck[0]} y2={neck[1]} stroke={INK} strokeWidth={W} strokeLinecap="round" />
       {/* backpack */}
-      <g transform={`rotate(${pose.lean * 0.6} 0 -150)`}>
+      {pack && <g transform={`rotate(${pose.lean * 0.6} 0 -150)`}>
         <rect x={-30} y={-290} width={150} height={220} rx={40} fill="#58963f" stroke={INK} strokeWidth={W - 4} />
         <rect x={20} y={-150} width={80} height={70} rx={16} fill="#58963f" stroke={INK} strokeWidth={W - 6} />
         <path d="M -10 -290 Q -50 -200 -6 -90" fill="none" stroke={INK} strokeWidth={W - 6} />
-      </g>
+      </g>}
       <Limb from={[0, 0]} a={pose.legL} l1={210} l2={210} />
       <Limb from={shoulder} a={pose.armL} l1={150} l2={150} hand />
       {/* head */}
@@ -72,11 +72,13 @@ export const Sam: React.FC<{x: number; y: number; pose: Pose; scale?: number}> =
             <path d={mouthPath} fill="none" stroke={INK} strokeWidth={8} strokeLinecap="round" />
           )}
           {/* beanie */}
-          <path d="M -128 -40 Q -140 -150 0 -160 Q 140 -150 128 -40 Q 0 -70 -128 -40 Z" fill="#e8812f" stroke={INK} strokeWidth={W - 4} strokeLinejoin="round" />
-          <rect x={-136} y={-62} width={272} height={44} rx={22} fill="#ee8c3a" stroke={INK} strokeWidth={W - 4} />
-          <circle cx={0} cy={-172} r={26} fill="#e8812f" stroke={INK} strokeWidth={W - 6} />
+          <path d="M -128 -40 Q -140 -150 0 -160 Q 140 -150 128 -40 Q 0 -70 -128 -40 Z" fill={hat} stroke={INK} strokeWidth={W - 4} strokeLinejoin="round" />
+          <rect x={-136} y={-62} width={272} height={44} rx={22} fill={hat2} stroke={INK} strokeWidth={W - 4} />
+          <circle cx={0} cy={-172} r={26} fill={hat} stroke={INK} strokeWidth={W - 6} />
+          {whistle && <rect x={-18} y={34} width={70} height={30} rx={10} fill="#c9ccd1" stroke={INK} strokeWidth={6} />}
         </g>
       </g>
+      {armOverHead && <Limb from={shoulder} a={pose.armR} l1={150} l2={150} hand />}
     </g>
   );
 };
