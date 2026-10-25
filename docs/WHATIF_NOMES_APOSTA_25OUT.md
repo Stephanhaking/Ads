@@ -17,3 +17,9 @@ Leitura: **copiar o molde "Your X was 10x" falha** (audição 14 cópias, memór
 ## Nomes de canal (handles LIVRES a 25/10; marcas não verificadas)
 NthDegreeTV · TheTenXLife · MaxedOutTV · BeyondTenX · AfterTheLimit · WhatNowTV · SubjectZeroTV · Overdrive
 Ocupados (não usar): EdgeCaseLab, WhatThenTV, SubjectYou, TestSubjectYou, ImpossibleLab, CounterfactualTV, LimitBreakTV, OverclockedTV, ThenWhatTV, 10x Human, etc.
+
+## Atualização 25/10 (tarde): formato "What if you could [poder]", nomes e títulos
+Handles livres (25/10): ThePowerCatch, AtACostTV, PricedPowers, PowerTax, PowerWithACatch, CatchOfPower, Powered10x (+ NthDegreeTV, MaxedOutTV, AfterTheLimit, WhatNowTV, SubjectZeroTV da lista anterior). Ocupados: FinePrintPowers, TheCatchTV, PowerCatch, TheFinePrintTV, WhatIfPowers, TheCatchStories, NthPower.
+Poderes, oferta (últimos 90 dias) e melhor recente: atravessar paredes (12 títulos; 2 recentes; 3,4 M); respirar debaixo de água (3; 1; 1,6 M); nunca ficar doente (2; 0; 799 mil, antigo); curar-se (5; 49 mil); clonar-se (5; 142 mil); falar com animais (1; 0 recentes); crescer asas (3; 1; 21 M antigo); encolher (10; 75 mil); controlar o tempo (3; 1; minúsculo); cuspir fogo (7; 34 mil).
+Saturados, evitar: controlar o fogo (19 títulos, 14 recentes, melhor 31 mil), entender todas as línguas (18; 4,4 mil), 30 m de altura (28).
+Risco de esperar: o IFOLOGY faz ~1 poder por dia e pode tirar os poderes livres; rever a oferta na véspera do arranque.
