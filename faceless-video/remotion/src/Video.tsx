@@ -6,7 +6,7 @@ type Layers = {sam?: {neckY: number; headCx: number}; owl?: {cx: number; cy: num
 type Scene = {index: number; start: number; duration: number; audio: string; image: string; text: string; words: Word[]; layers?: Layers; clip?: string};
 export type Timeline = {title: string; fps: number; width: number; height: number; total: number; scenes: Scene[]};
 
-const Captions: React.FC<{words: Word[]}> = ({words}) => {
+export const Captions: React.FC<{words: Word[]}> = ({words}) => {
   const frame = useCurrentFrame();
   const {fps, height} = useVideoConfig();
   const t = frame / fps;

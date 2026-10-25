@@ -26,6 +26,11 @@ def main(scenes_path, build=ROOT / "build"):
         dur = wav_len(wav) + PAD
         segs, _ = whisper.transcribe(str(wav), word_timestamps=True)
         words = [{"w": w.word.strip(), "s": round(w.start, 3), "e": round(w.end, 3)} for s in segs for w in s.words]
+        # whisper mishears words ("Rule" -> "Roll"); keep its timings but show the script's own words
+        script = sc["narration"].split()
+        if words and script:
+            words = [{**words[min(len(words) - 1, round(i * len(words) / len(script)))], "w": w} for i, w in enumerate(script)] if len(script) != len(words) \
+                else [{**x, "w": w} for x, w in zip(words, script)]
         scenes.append({"index": i, "start": round(t, 3), "duration": round(dur, 3), "audio": wav.name,
                        "image": f"scene_{i:02d}.png", "text": sc["narration"], "words": words})
         t += dur
