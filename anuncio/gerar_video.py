@@ -9,10 +9,13 @@ F = "/usr/share/fonts/opentype/inter/Inter-ExtraBold.otf"
 def font(s): return ImageFont.truetype(F, s)
 
 # --- produto: recorta a foto real (zona branca do screenshot)
-src = Image.open("produto_original.jpg").convert("RGB").crop((0, 440, 720, 1160))
+_full = Image.open("produto_original.jpg").convert("RGB").crop((0, 440, 720, 1160))
+# só o inflador: remove cabo/bicos à direita (x>488) e centra o aparelho na imagem
+_only = _full.crop((70, 0, 488, 720))
+src = Image.new("RGB", (720, 720), (255, 255, 255)); src.paste(_only, (151, 0))
 PROD = src.resize((1440, 1440), Image.LANCZOS).point(lambda v: min(255, int(v*255/244)))          # base maior para zooms nítidos
 # região do ecrã digital, mangueira/bocal e acessórios (coords em 1440px)
-BOX_SCREEN = (330, 330, 720, 600)
+BOX_SCREEN = (480, 330, 870, 600)
 BOX_NOZZLE = (300, 1000, 760, 1500 if False else 1440)
 BOX_ACC    = (950, 420, 1300, 1300)
 
@@ -155,7 +158,7 @@ def scene3(t):  # 8-16 demonstração
         label, lt = "PORTÁTIL", 8.2
     elif u < 5.5:    # mangueira / bocal
         z = 1.0 + 0.2*(u-3)/2.5
-        crop = zoom_crop((300, 700, 900, 1440), (900, 1110), z)
+        crop = zoom_crop((440, 700, 1040, 1440), (900, 1110), z)
         bg[400:1510, 90:990] *= np.asarray(crop, np.float32)/255
         label, lt = "PRÁTICO", 11.0
     else:            # produto completo + acessórios
