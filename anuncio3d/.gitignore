@@ -1,0 +1,5 @@
+node_modules/
+frames/
+t/
+audio3d.wav
+voz/*.wav

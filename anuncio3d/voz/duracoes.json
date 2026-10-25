@@ -1,0 +1,80 @@
+[
+ {
+  "sec": "hook",
+  "txt": "Já imaginou ficar com um pneu vazio e não encontrar nenhuma bomba por perto?",
+  "file": "voz/f00.wav",
+  "dur": 3.2043537414965986
+ },
+ {
+  "sec": "hook",
+  "txt": "Com este inflador portátil, pode resolver esse problema sem sair do lugar!",
+  "file": "voz/f01.wav",
+  "dur": 3.250793650793651
+ },
+ {
+  "sec": "sol",
+  "txt": "Conheça o inflador portátil de pneus!",
+  "file": "voz/f02.wav",
+  "dur": 1.6137868480725623
+ },
+ {
+  "sec": "sol",
+  "txt": "Compacto, prático e fácil de transportar.",
+  "file": "voz/f03.wav",
+  "dur": 1.9040362811791383
+ },
+ {
+  "sec": "sol",
+  "txt": "Tenha mais comodidade para cuidar dos pneus do seu carro, onde quer que esteja!",
+  "file": "voz/f04.wav",
+  "dur": 3.436553287981859
+ },
+ {
+  "sec": "ben",
+  "txt": "Chega de depender sempre de uma bomba distante!",
+  "file": "voz/f05.wav",
+  "dur": 1.9272562358276644
+ },
+ {
+  "sec": "ben",
+  "txt": "Tenha este equipamento à mão e esteja mais preparado para imprevistos na estrada.",
+  "file": "voz/f06.wav",
+  "dur": 3.250793650793651
+ },
+ {
+  "sec": "ben",
+  "txt": "Pequeno no tamanho, grande na praticidade!",
+  "file": "voz/f07.wav",
+  "dur": 1.9736961451247166
+ },
+ {
+  "sec": "preco",
+  "txt": "E sabe quanto custa? Apenas dois mil quinhentos e noventa e nove meticais!",
+  "file": "voz/f08.wav",
+  "dur": 3.308843537414966
+ },
+ {
+  "sec": "preco",
+  "txt": "E tem mais: entrega grátis dentro de Maputo! Sim, recebe sem pagar pela entrega!",
+  "file": "voz/f09.wav",
+  "dur": 4.08671201814059
+ },
+ {
+  "sec": "cta",
+  "txt": "Não espere precisar dele para perceber a sua importância!",
+  "file": "voz/f10.wav",
+  "dur": 2.2291156462585033
+ },
+ {
+  "sec": "cta",
+  "txt": "Envie agora uma mensagem pelo WhatsApp e faça já a sua encomenda.",
+  "file": "voz/f11.wav",
+  "dur": 2.8444444444444446
+ },
+ {
+  "sec": "cta",
+  "txt": "Por apenas dois mil quinhentos e noventa e nove meticais, a praticidade pode estar nas suas mãos!",
+  "file": "voz/f12.wav",
+  "dur": 4.156371882086168
+ }
+]
