@@ -9,6 +9,22 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "pipeline"))
 
 
+def boomerang(src, dst, seconds):
+    """Play the clip forward then backward, repeated, and cut it to `seconds`, so short clips fill a longer scene without a jump."""
+    work = dst.with_suffix(".work")
+    work.mkdir(exist_ok=True)
+    fit = "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920"
+    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(src), "-an", "-r", "30", "-vf", fit, "-q:v", "2", str(work / "%04d.jpg")], check=True)
+    frames = sorted(work.glob("*.jpg"))
+    order = frames + frames[-2:0:-1]  # forward, then backward without repeating the end frames
+    n = int(seconds * 30) + 1
+    seq = [order[i % len(order)] for i in range(n)]
+    (work / "list.txt").write_text("".join(f"file '{f}'\nduration {1 / 30:.5f}\n" for f in seq))
+    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(work / "list.txt"),
+                    "-r", "30", "-c:v", "libx264", "-pix_fmt", "yuv420p", str(dst)], check=True)
+    shutil.rmtree(work)
+
+
 def render(images=ROOT / "images", out=ROOT / "out" / "video.mp4"):
     build = ROOT / "build"
     pub = ROOT / "remotion" / "public" / "build"
@@ -23,6 +39,17 @@ def render(images=ROOT / "images", out=ROOT / "out" / "video.mp4"):
         for sc in tl["scenes"]:
             if str(sc["index"]) in meta:
                 sc["layers"] = meta[str(sc["index"])]
+        (pub / "timeline.json").write_text(json.dumps(tl))
+    clips = ROOT / "clips"  # optional image-to-video clips: clips/scene_00.mp4 ...
+    if clips.exists():
+        tl = json.loads((pub / "timeline.json").read_text())
+        (pub / "clips").mkdir(exist_ok=True)
+        for sc in tl["scenes"]:
+            src = clips / f"scene_{sc['index']:02d}.mp4"
+            if src.exists():
+                dst = pub / "clips" / src.name
+                boomerang(src, dst, sc["duration"] + 0.5)
+                sc["clip"] = f"clips/{src.name}"
         (pub / "timeline.json").write_text(json.dumps(tl))
     out = Path(out); out.parent.mkdir(exist_ok=True)
     cmd = ["npx", "remotion", "render", "src/index.ts", "Video", str(out.resolve())]

@@ -1,9 +1,9 @@
 import React from 'react';
-import {AbsoluteFill, Audio, Img, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
+import {AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 
 type Word = {w: string; s: number; e: number};
 type Layers = {sam?: {neckY: number; headCx: number}; owl?: {cx: number; cy: number}};
-type Scene = {index: number; start: number; duration: number; audio: string; image: string; text: string; words: Word[]; layers?: Layers};
+type Scene = {index: number; start: number; duration: number; audio: string; image: string; text: string; words: Word[]; layers?: Layers; clip?: string};
 export type Timeline = {title: string; fps: number; width: number; height: number; total: number; scenes: Scene[]};
 
 const Captions: React.FC<{words: Word[]}> = ({words}) => {
@@ -66,8 +66,14 @@ const SceneView: React.FC<{scene: Scene}> = ({scene}) => {
   return (
     <AbsoluteFill style={{opacity: fade}}>
       <AbsoluteFill style={{overflow: 'hidden'}}>
-        <Img src={staticFile(`build/${scene.image}`)} style={{...fill, transform: `scale(${zoom})`}} />
-        <AbsoluteFill style={{transform: `scale(${zoom})`}}><Characters scene={scene} /></AbsoluteFill>
+        {scene.clip ? (
+          <OffthreadVideo src={staticFile(`build/${scene.clip}`)} muted style={fill} />
+        ) : (
+          <>
+            <Img src={staticFile(`build/${scene.image}`)} style={{...fill, transform: `scale(${zoom})`}} />
+            <AbsoluteFill style={{transform: `scale(${zoom})`}}><Characters scene={scene} /></AbsoluteFill>
+          </>
+        )}
       </AbsoluteFill>
       <Audio src={staticFile(`build/${scene.audio}`)} />
       <Captions words={scene.words} />
