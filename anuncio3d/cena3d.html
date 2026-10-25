@@ -49,11 +49,11 @@ const at = (m, x, y, z) => { m.position.set(x, y, z); return m; };
       vec3 hor = vec3(1.0,.70,.38), mid = vec3(.93,.43,.38), top = vec3(.18,.16,.42);
       vec3 c = h < .22 ? mix(hor, mid, smoothstep(0., .22, h)) : mix(mid, top, smoothstep(.22, .7, h));
       gl_FragColor = vec4(pow(c, vec3(1.0)), 1.); }` });
-  scene.add(new THREE.Mesh(new THREE.SphereGeometry(300, 32, 16), mat));
+  var skyM = new THREE.Mesh(new THREE.SphereGeometry(300, 32, 16), mat); skyM.name = 'sky'; scene.add(skyM);
   const sun = new THREE.Mesh(new THREE.CircleGeometry(14, 48), new THREE.MeshBasicMaterial({ color: 0xfff0c0, fog: false }));
-  sun.position.set(-18, 9, -150); scene.add(sun);
+  sun.name = 'sun'; sun.position.set(-18, 9, -150); scene.add(sun);
   const glow = new THREE.Mesh(new THREE.CircleGeometry(46, 48), new THREE.MeshBasicMaterial({ color: 0xffb060, transparent: true, opacity: .35, fog: false, depthWrite: false }));
-  glow.position.set(-18, 9, -151); scene.add(glow);
+  glow.name = 'glow'; glow.position.set(-18, 9, -151); scene.add(glow);
 }
 const sunL = new THREE.DirectionalLight(0xffb27a, 2.6); sunL.position.set(-14, 7, -18); sunL.castShadow = true;
 sunL.shadow.mapSize.set(2048, 2048); Object.assign(sunL.shadow.camera, { left: -9, right: 9, top: 9, bottom: -9, near: 1, far: 60 });
@@ -316,10 +316,48 @@ function stage(shot, u, d) {
   if (shot === 'hook1') SHOTS.hook1(u, d);
   else if (shot === 'hook2') SHOTS.inflate(u, d, 1, .55, 'b');
   else if (shot === 'inflate') SHOTS.inflate(u, d, 1, 0, 'a');
+  else if (shot === 'iso') { SHOTS.inflate(u, d, 1, .3, 'a'); cam(V(5.5, 6.0, 9.0), V(-1.5, .45, 1.4), 22); }
   else if (shot === 'hero') { SHOTS.hero(u, d); dev.lookAt(camera.position); }
   renderer.render(scene, camera);
 }
 window.renderShot = (shot, u, d, q = 0.93) => { stage(shot, u, d); return renderer.domElement.toDataURL('image/jpeg', q); };
+const STYLE = P.get('style') || '';
+function applyStyle() {
+  if (!STYLE) return;
+  const meshes = []; scene.traverse(o => { if (o.isMesh && o.name !== 'sky' && o.name !== 'sun' && o.name !== 'glow') meshes.push(o); });
+  const grad = new THREE.DataTexture(new Uint8Array([70, 70, 70, 255, 150, 150, 150, 255, 255, 255, 255, 255]), 3, 1, THREE.RGBAFormat); grad.needsUpdate = true; grad.minFilter = grad.magFilter = THREE.NearestFilter;
+  if (STYLE === 'toon') {
+    sunL.intensity = 2.0; fill.intensity = 1.4; scene.environmentIntensity = 0;
+    meshes.forEach(o => { const m = o.material; if (!m.color || m.isShaderMaterial || m.isMeshBasicMaterial) return;
+      o.material = new THREE.MeshToonMaterial({ color: m.color, map: m.map || null, gradientMap: grad, emissive: m.emissive || 0x000000, emissiveMap: m.emissiveMap || null, side: m.side });
+      o.material.color.offsetHSL(0, .12, .02);
+      o.geometry.computeBoundingSphere(); if (o.geometry.boundingSphere.radius > 4.5) return;
+      const ol = new THREE.Mesh(o.geometry, new THREE.ShaderMaterial({ side: THREE.BackSide, vertexShader: 'void main(){ gl_Position = projectionMatrix*modelViewMatrix*vec4(position + normal*0.012,1.); }', fragmentShader: 'void main(){ gl_FragColor = vec4(.05,.03,.05,1.); }' }));
+      ol.userData.outline = true; o.add(ol); });
+    scene.fog.color.set(0xf0b080);
+  }
+  if (STYLE === 'clay') {
+    const pastel = c => { const x = c.clone(); const hsl = {}; x.getHSL(hsl); if (hsl.l < .2) return x; return x.setHSL(hsl.h, Math.min(hsl.s, .38), .5 + hsl.l * .38); };
+    meshes.forEach(o => { const m = o.material; if (!m.color || m.isShaderMaterial || m.isMeshBasicMaterial) return;
+      const skin = m.isMeshPhysicalMaterial && m.clearcoat === 0.08; o.material = new THREE.MeshStandardMaterial({ color: skin ? m.color.clone().multiplyScalar(1.15) : pastel(m.color), roughness: skin ? .8 : 1, metalness: 0 }); });
+    skyM.material = new THREE.MeshBasicMaterial({ color: 0xf4e4d4, side: THREE.BackSide, fog: false }); scene.fog.color.set(0xf4e4d4); scene.fog.near = 25; scene.fog.far = 90;
+    sunL.color.set(0xfff0e0); sunL.intensity = 2.2; sunL.position.set(-8, 14, 8); sunL.shadow.radius = 6; fill.intensity = .7; scene.environmentIntensity = .2; scene.children.forEach(o => { if (o.isHemisphereLight) o.intensity = 1.4; });
+    scene.getObjectByName('sun').visible = false; scene.getObjectByName('glow').visible = false;
+  }
+  if (STYLE === 'night') {
+    skyM.material = new THREE.ShaderMaterial({ side: THREE.BackSide, depthWrite: false, fog: false, vertexShader: 'varying vec3 p; void main(){ p = position; gl_Position = projectionMatrix*modelViewMatrix*vec4(position,1.); }',
+      fragmentShader: 'varying vec3 p; void main(){ float h = normalize(p).y; vec3 c = mix(vec3(.10,.13,.28), vec3(.015,.02,.07), smoothstep(0.,.6,h)); gl_FragColor = vec4(c,1.); }' });
+    scene.fog.color.set(0x101830); scene.fog.near = 12; scene.fog.far = 70;
+    sunL.color.set(0x6f8cff); sunL.intensity = .9; sunL.position.set(-10, 12, -6); fill.color.set(0xaac0ff); fill.intensity = .35; scene.environmentIntensity = .25;
+    scene.children.forEach(o => { if (o.isHemisphereLight) { o.intensity = .35; o.color.set(0x3a4a90); } });
+    const sun = scene.getObjectByName('sun'); sun.material.color.set(0xdfe8ff); sun.scale.setScalar(.35); sun.position.set(-30, 45, -150); scene.getObjectByName('glow').visible = false;
+    const lamp = new THREE.PointLight(0xffa860, 14, 9, 1.6); lamp.position.set(-2.4, 2.2, 2.3); lamp.castShadow = false; scene.add(lamp);
+    [[-2.3, .75, 1.0], [-2.3, .75, -1.0]].forEach(p => { const l = new THREE.PointLight(0xff8a20, 2.5, 4, 2); l.position.set(...p); scene.add(l); });
+    const hl = new THREE.SpotLight(0xfff0d0, 90, 30, .45, .6, 1.2); hl.position.set(2.2, .8, .6); hl.target.position.set(12, 0, 0); scene.add(hl, hl.target);
+    renderer.toneMappingExposure = 1.35;
+  }
+}
 window.dbg = () => ({ dev: dev.position.toArray(), vis: dev.visible, scale: dev.scale.toArray(), cam: camera.position.toArray() });
+applyStyle();
 window.ready = true;
 </script></body></html>
