@@ -172,7 +172,7 @@ sh('s011', 'bathroom', 'golden', { cam: [BATH, mv(BATH, [0, -0.1, -0.5])],
     U.timeStack({ date: 'Night one', time: 'The bathtub test' }, { at: 0.2 });
     const knock = info.w('knocks', 1.9);
     const c = put(U, st, 'mum', [1.5, 0, 0.4], 1.68, t > knock && t < knock + 0.8 ? { ...P_STAND, aR: [100, 60 + 30 * Math.sin(tt * 18)] } : P_THINK, 'mum', { face: 'worried', flip: true, look: -0.7, rim: '#ffd29a' });
-    if (t > knock && t < knock + 1.2) U.svg('knock', `<text x="1500" y="300" font-family="Inter" font-weight="900" font-size="60" fill="#fff" stroke="#1b1410" stroke-width="3" opacity="${f(1 - (t - knock) / 1.2)}">KNOCK KNOCK</text>`, { z: 30 }); else U.svg('knock', '', {});
+    if (t > knock && t < knock + 1.2) U.svg('knock', `<text x="1180" y="300" font-family="Inter" font-weight="900" font-size="60" fill="#fff" stroke="#1b1410" stroke-width="3" opacity="${f(1 - (t - knock) / 1.2)}">KNOCK KNOCK</text>`, { z: 30 }); else U.svg('knock', '', {});
     if (c) says(U, 'b1', top(c), [['Why is it so quiet in there?', 'Why', 2.6]], t, info, { side: -1 });
   } });
 sh('s012', 'bathroom', 'golden', { cam: [{ pos: [-0.3, 1.5, 2.4], look: [-0.6, 0.55, -1.2], fov: 44 }],
