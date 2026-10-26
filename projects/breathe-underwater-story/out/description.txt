@@ -1,0 +1,36 @@
+What If You Could Breathe Underwater?
+
+You fall off a pier and find out you can breathe lake water. Not with gills, with your own lungs. This story follows what would really happen next: the bathtub test, the arithmetic of oxygen in water, a trick borrowed from fish, the cold, the depth, a rescue under the ice, and the real experiments where liquid has helped people breathe.
+
+The story and the characters are fiction. The numbers are real (sources below). Please don't try to breathe water, and never walk on thin ice.
+
+CHAPTERS
+0:00 The pier
+0:38 The bathtub test
+0:45 The numbers nobody tells you
+1:40 Coming up for air
+1:53 The fish trick
+2:31 The cold
+3:00 How deep can you go?
+3:33 The ice
+4:19 The message
+4:25 Could it be real?
+4:55 Your turn
+
+THE NUMBERS AND WHERE THEY COME FROM
+- Oxygen in air: 20.9 %, about 209 mL per litre (FAO, fao.org/3/ac183e/ac183e04.htm)
+- Oxygen in air-saturated water at 25 °C: 8.3 mg/L, about 5.8 mL per litre (dissolved-oxygen sensor white paper, wateronline.com). Colder water holds a little more.
+- Resting oxygen use: about 250 mL a minute for an adult (respiratory physiology references)
+- Lungs take up roughly a seventh to a quarter of the oxygen breathed in (exhaled oxygen 16–18 % vs 21 % inhaled; arXiv 2005.12362). We used a quarter, the generous end: 250 ÷ 5.8 ÷ 0.25 ≈ 172 L of water a minute (our arithmetic).
+- Maximal voluntary ventilation: about 140 L/min for young men in a short test (Monash University physiology module)
+- Water is about 800 times denser than air
+- Fish gills: sources give 70 % to over 90 % oxygen extraction; "up to 85 %" is a textbook figure
+- Cold water: heat loss often quoted as about 25 times faster than air; other sources say 4 to 32 times. Cold shock gasp; hands numb within minutes (water-safety guides)
+- Pressure: about one more atmosphere per 10 m of water; narcosis and decompression sickness are diving hazards for divers breathing air. Whether a liquid breather would get the bends is untested.
+- 1960s: mice breathed oxygenated liquids in lab experiments (Kylstra; Clark and Gollan). Accounts of how long they survived differ.
+- 1989: partial liquid ventilation in three premature infants in Philadelphia improved lung compliance (Greenspan et al., J Pediatr 1990;117:106-111)
+- 1996: a study of 13 infants saw blood oxygen (PaO2) rise by 138 % on average within an hour (NEJM, 1996). Later trials did not show lower illness rates in acute respiratory failure.
+
+These figures come from secondary sources and search summaries; the original papers were not all read. If you spot an error, tell us in the comments.
+
+Where's the first place you'd go if you could breathe underwater? Subscribe: next time, you find out who sent that message.
