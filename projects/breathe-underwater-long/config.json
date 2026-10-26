@@ -12,7 +12,7 @@
  "fadeIn": 0.4,
  "fadeOut": 1.0,
  "ui": {
-  "badge": "RECONSTRUCTION",
+  "badge": "SIMULATION",
   "look2d": "clay",
   "karaoke": false
  },
