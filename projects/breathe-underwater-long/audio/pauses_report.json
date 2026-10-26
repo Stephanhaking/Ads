@@ -2,18 +2,38 @@
  "profile": "documentary",
  "max": 1.15,
  "to": 0.85,
- "duration_before": 829.425,
- "duration_after": 827.745,
- "removed_s": 1.68,
+ "duration_before": 849.185,
+ "duration_after": 846.905,
+ "removed_s": 2.28,
  "cuts": [
   {
-   "at": 478.935,
-   "was": 2.11,
+   "at": 16.595,
+   "was": 1.26,
    "kind": "pause"
   },
   {
-   "at": 540.585,
-   "was": 1.27,
+   "at": 29.525,
+   "was": 1.37,
+   "kind": "pause"
+  },
+  {
+   "at": 32.135,
+   "was": 1.16,
+   "kind": "pause"
+  },
+  {
+   "at": 34.535,
+   "was": 1.16,
+   "kind": "pause"
+  },
+  {
+   "at": 36.465,
+   "was": 1.18,
+   "kind": "pause"
+  },
+  {
+   "at": 685.935,
+   "was": 1.25,
    "kind": "pause"
   }
  ],

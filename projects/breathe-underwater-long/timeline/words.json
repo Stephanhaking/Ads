@@ -1,0 +1,11805 @@
+{
+ "source": "whisper:small.en+script",
+ "words": [
+  {
+   "word": "Two",
+   "start": 0.0,
+   "end": 0.64
+  },
+  {
+   "word": "metres",
+   "start": 0.64,
+   "end": 0.94
+  },
+  {
+   "word": "under",
+   "start": 0.94,
+   "end": 1.24
+  },
+  {
+   "word": "a",
+   "start": 1.24,
+   "end": 1.44
+  },
+  {
+   "word": "lake.",
+   "start": 1.44,
+   "end": 1.76
+  },
+  {
+   "word": "A",
+   "start": 1.76,
+   "end": 2.23
+  },
+  {
+   "word": "pier",
+   "start": 2.23,
+   "end": 2.7
+  },
+  {
+   "word": "above,",
+   "start": 2.7,
+   "end": 3.12
+  },
+  {
+   "word": "a",
+   "start": 3.12,
+   "end": 3.74
+  },
+  {
+   "word": "clay-white",
+   "start": 3.74,
+   "end": 4.26
+  },
+  {
+   "word": "shape",
+   "start": 4.26,
+   "end": 4.54
+  },
+  {
+   "word": "below.",
+   "start": 4.54,
+   "end": 4.88
+  },
+  {
+   "word": "One",
+   "start": 6.04,
+   "end": 6.1
+  },
+  {
+   "word": "person.",
+   "start": 6.1,
+   "end": 6.48
+  },
+  {
+   "word": "Eyes",
+   "start": 7.42,
+   "end": 7.68
+  },
+  {
+   "word": "open.",
+   "start": 7.68,
+   "end": 8.16
+  },
+  {
+   "word": "Mouth",
+   "start": 9.08,
+   "end": 9.14
+  },
+  {
+   "word": "open.",
+   "start": 9.14,
+   "end": 9.62
+  },
+  {
+   "word": "In",
+   "start": 10.66,
+   "end": 10.76
+  },
+  {
+   "word": "the",
+   "start": 10.76,
+   "end": 10.84
+  },
+  {
+   "word": "corner",
+   "start": 10.84,
+   "end": 11.0
+  },
+  {
+   "word": "of",
+   "start": 11.0,
+   "end": 11.18
+  },
+  {
+   "word": "the",
+   "start": 11.18,
+   "end": 11.28
+  },
+  {
+   "word": "frame,",
+   "start": 11.28,
+   "end": 11.58
+  },
+  {
+   "word": "a",
+   "start": 11.74,
+   "end": 11.78
+  },
+  {
+   "word": "stopwatch",
+   "start": 11.78,
+   "end": 12.22
+  },
+  {
+   "word": "starts.",
+   "start": 12.22,
+   "end": 12.74
+  },
+  {
+   "word": "Ten",
+   "start": 13.98,
+   "end": 14.1
+  },
+  {
+   "word": "seconds.",
+   "start": 14.1,
+   "end": 14.54
+  },
+  {
+   "word": "Thirty.",
+   "start": 15.62,
+   "end": 16.02
+  },
+  {
+   "word": "A",
+   "start": 17.1,
+   "end": 17.16
+  },
+  {
+   "word": "minute.",
+   "start": 17.16,
+   "end": 17.42
+  },
+  {
+   "word": "She",
+   "start": 18.62,
+   "end": 18.76
+  },
+  {
+   "word": "is",
+   "start": 18.76,
+   "end": 18.86
+  },
+  {
+   "word": "not",
+   "start": 18.86,
+   "end": 19.0
+  },
+  {
+   "word": "holding",
+   "start": 19.0,
+   "end": 19.26
+  },
+  {
+   "word": "her",
+   "start": 19.26,
+   "end": 19.42
+  },
+  {
+   "word": "breath.",
+   "start": 19.42,
+   "end": 19.62
+  },
+  {
+   "word": "She",
+   "start": 20.7,
+   "end": 20.98
+  },
+  {
+   "word": "is",
+   "start": 20.98,
+   "end": 21.1
+  },
+  {
+   "word": "breathing.",
+   "start": 21.1,
+   "end": 21.4
+  },
+  {
+   "word": "The",
+   "start": 22.68,
+   "end": 22.8
+  },
+  {
+   "word": "water",
+   "start": 22.8,
+   "end": 22.96
+  },
+  {
+   "word": "goes",
+   "start": 22.96,
+   "end": 23.18
+  },
+  {
+   "word": "in.",
+   "start": 23.18,
+   "end": 23.54
+  },
+  {
+   "word": "Something",
+   "start": 24.1,
+   "end": 24.38
+  },
+  {
+   "word": "comes",
+   "start": 24.38,
+   "end": 24.64
+  },
+  {
+   "word": "out.",
+   "start": 24.64,
+   "end": 24.94
+  },
+  {
+   "word": "Her",
+   "start": 25.76,
+   "end": 26.2
+  },
+  {
+   "word": "chest",
+   "start": 26.2,
+   "end": 26.4
+  },
+  {
+   "word": "rises",
+   "start": 26.4,
+   "end": 26.82
+  },
+  {
+   "word": "and",
+   "start": 26.82,
+   "end": 27.1
+  },
+  {
+   "word": "falls",
+   "start": 27.1,
+   "end": 27.4
+  },
+  {
+   "word": "like",
+   "start": 27.4,
+   "end": 27.62
+  },
+  {
+   "word": "anyone's",
+   "start": 27.62,
+   "end": 28.08
+  },
+  {
+   "word": "on",
+   "start": 28.08,
+   "end": 28.2
+  },
+  {
+   "word": "dry",
+   "start": 28.2,
+   "end": 28.36
+  },
+  {
+   "word": "land.",
+   "start": 28.36,
+   "end": 28.64
+  },
+  {
+   "word": "Nobody",
+   "start": 29.58,
+   "end": 29.72
+  },
+  {
+   "word": "on",
+   "start": 29.72,
+   "end": 29.98
+  },
+  {
+   "word": "the",
+   "start": 29.98,
+   "end": 30.1
+  },
+  {
+   "word": "pier",
+   "start": 30.1,
+   "end": 30.24
+  },
+  {
+   "word": "knows",
+   "start": 30.24,
+   "end": 30.44
+  },
+  {
+   "word": "how.",
+   "start": 30.44,
+   "end": 30.74
+  },
+  {
+   "word": "The",
+   "start": 31.48,
+   "end": 31.68
+  },
+  {
+   "word": "answer",
+   "start": 31.68,
+   "end": 31.86
+  },
+  {
+   "word": "is",
+   "start": 31.86,
+   "end": 32.04
+  },
+  {
+   "word": "not",
+   "start": 32.04,
+   "end": 32.22
+  },
+  {
+   "word": "in",
+   "start": 32.22,
+   "end": 32.34
+  },
+  {
+   "word": "her",
+   "start": 32.34,
+   "end": 32.48
+  },
+  {
+   "word": "lungs.",
+   "start": 32.48,
+   "end": 32.7
+  },
+  {
+   "word": "It",
+   "start": 33.54,
+   "end": 33.76
+  },
+  {
+   "word": "is",
+   "start": 33.76,
+   "end": 33.88
+  },
+  {
+   "word": "in",
+   "start": 33.88,
+   "end": 34.02
+  },
+  {
+   "word": "a",
+   "start": 34.02,
+   "end": 34.14
+  },
+  {
+   "word": "number.",
+   "start": 34.14,
+   "end": 34.34
+  },
+  {
+   "word": "Two",
+   "start": 34.34,
+   "end": 35.09
+  },
+  {
+   "word": "hundred",
+   "start": 35.09,
+   "end": 35.84
+  },
+  {
+   "word": "and",
+   "start": 35.84,
+   "end": 36.59
+  },
+  {
+   "word": "fifty.",
+   "start": 36.59,
+   "end": 37.34
+  },
+  {
+   "word": "This",
+   "start": 37.34,
+   "end": 37.5
+  },
+  {
+   "word": "is",
+   "start": 37.5,
+   "end": 37.66
+  },
+  {
+   "word": "the",
+   "start": 37.66,
+   "end": 37.84
+  },
+  {
+   "word": "story",
+   "start": 37.84,
+   "end": 38.08
+  },
+  {
+   "word": "of",
+   "start": 38.08,
+   "end": 38.36
+  },
+  {
+   "word": "one",
+   "start": 38.36,
+   "end": 38.64
+  },
+  {
+   "word": "rule.",
+   "start": 38.64,
+   "end": 38.94
+  },
+  {
+   "word": "A",
+   "start": 39.44,
+   "end": 39.54
+  },
+  {
+   "word": "person",
+   "start": 39.54,
+   "end": 39.76
+  },
+  {
+   "word": "who",
+   "start": 39.76,
+   "end": 40.1
+  },
+  {
+   "word": "can",
+   "start": 40.1,
+   "end": 40.24
+  },
+  {
+   "word": "breathe",
+   "start": 40.24,
+   "end": 40.52
+  },
+  {
+   "word": "water.",
+   "start": 40.52,
+   "end": 40.94
+  },
+  {
+   "word": "Of",
+   "start": 41.52,
+   "end": 41.7
+  },
+  {
+   "word": "a",
+   "start": 41.7,
+   "end": 41.8
+  },
+  {
+   "word": "litre",
+   "start": 41.8,
+   "end": 41.9
+  },
+  {
+   "word": "of",
+   "start": 41.9,
+   "end": 42.12
+  },
+  {
+   "word": "air",
+   "start": 42.12,
+   "end": 42.32
+  },
+  {
+   "word": "and",
+   "start": 42.32,
+   "end": 42.76
+  },
+  {
+   "word": "a",
+   "start": 42.76,
+   "end": 42.84
+  },
+  {
+   "word": "litre",
+   "start": 42.84,
+   "end": 43.0
+  },
+  {
+   "word": "of",
+   "start": 43.0,
+   "end": 43.18
+  },
+  {
+   "word": "lake.",
+   "start": 43.18,
+   "end": 43.42
+  },
+  {
+   "word": "And",
+   "start": 44.02,
+   "end": 44.16
+  },
+  {
+   "word": "the",
+   "start": 44.16,
+   "end": 44.26
+  },
+  {
+   "word": "gap",
+   "start": 44.26,
+   "end": 44.44
+  },
+  {
+   "word": "between",
+   "start": 44.44,
+   "end": 44.8
+  },
+  {
+   "word": "them.",
+   "start": 44.8,
+   "end": 45.16
+  },
+  {
+   "word": "Of",
+   "start": 45.64,
+   "end": 45.84
+  },
+  {
+   "word": "a",
+   "start": 45.84,
+   "end": 45.96
+  },
+  {
+   "word": "fish",
+   "start": 45.96,
+   "end": 46.22
+  },
+  {
+   "word": "that",
+   "start": 46.22,
+   "end": 46.58
+  },
+  {
+   "word": "solves",
+   "start": 46.58,
+   "end": 46.92
+  },
+  {
+   "word": "the",
+   "start": 46.92,
+   "end": 47.14
+  },
+  {
+   "word": "problem",
+   "start": 47.14,
+   "end": 47.4
+  },
+  {
+   "word": "with",
+   "start": 47.4,
+   "end": 47.62
+  },
+  {
+   "word": "a",
+   "start": 47.62,
+   "end": 47.72
+  },
+  {
+   "word": "plumbing",
+   "start": 47.72,
+   "end": 47.94
+  },
+  {
+   "word": "trick.",
+   "start": 47.94,
+   "end": 48.22
+  },
+  {
+   "word": "And",
+   "start": 48.66,
+   "end": 48.8
+  },
+  {
+   "word": "a",
+   "start": 48.8,
+   "end": 48.92
+  },
+  {
+   "word": "lung",
+   "start": 48.92,
+   "end": 49.12
+  },
+  {
+   "word": "that",
+   "start": 49.12,
+   "end": 49.32
+  },
+  {
+   "word": "was",
+   "start": 49.32,
+   "end": 49.44
+  },
+  {
+   "word": "never",
+   "start": 49.44,
+   "end": 49.7
+  },
+  {
+   "word": "built",
+   "start": 49.7,
+   "end": 49.92
+  },
+  {
+   "word": "for",
+   "start": 49.92,
+   "end": 50.18
+  },
+  {
+   "word": "it.",
+   "start": 50.18,
+   "end": 50.62
+  },
+  {
+   "word": "Of",
+   "start": 50.86,
+   "end": 51.04
+  },
+  {
+   "word": "mice",
+   "start": 51.04,
+   "end": 51.28
+  },
+  {
+   "word": "in",
+   "start": 51.28,
+   "end": 51.84
+  },
+  {
+   "word": "a",
+   "start": 51.84,
+   "end": 51.94
+  },
+  {
+   "word": "tank",
+   "start": 51.94,
+   "end": 52.18
+  },
+  {
+   "word": "in",
+   "start": 52.18,
+   "end": 52.58
+  },
+  {
+   "word": "the",
+   "start": 52.58,
+   "end": 52.66
+  },
+  {
+   "word": "nineteen-sixties,",
+   "start": 52.66,
+   "end": 53.44
+  },
+  {
+   "word": "and",
+   "start": 53.44,
+   "end": 54.0
+  },
+  {
+   "word": "premature",
+   "start": 54.0,
+   "end": 54.32
+  },
+  {
+   "word": "babies",
+   "start": 54.32,
+   "end": 54.82
+  },
+  {
+   "word": "in",
+   "start": 54.82,
+   "end": 55.02
+  },
+  {
+   "word": "a",
+   "start": 55.02,
+   "end": 55.12
+  },
+  {
+   "word": "hospital",
+   "start": 55.12,
+   "end": 55.48
+  },
+  {
+   "word": "in",
+   "start": 55.48,
+   "end": 55.76
+  },
+  {
+   "word": "Philadelphia.",
+   "start": 55.76,
+   "end": 56.28
+  },
+  {
+   "word": "And",
+   "start": 56.28,
+   "end": 57.34
+  },
+  {
+   "word": "an",
+   "start": 57.34,
+   "end": 57.46
+  },
+  {
+   "word": "empty",
+   "start": 57.46,
+   "end": 57.76
+  },
+  {
+   "word": "pier",
+   "start": 57.76,
+   "end": 58.1
+  },
+  {
+   "word": "at",
+   "start": 58.1,
+   "end": 58.42
+  },
+  {
+   "word": "dusk.",
+   "start": 58.42,
+   "end": 58.74
+  },
+  {
+   "word": "Could",
+   "start": 59.66,
+   "end": 59.68
+  },
+  {
+   "word": "a",
+   "start": 59.68,
+   "end": 59.78
+  },
+  {
+   "word": "human",
+   "start": 59.78,
+   "end": 59.96
+  },
+  {
+   "word": "really",
+   "start": 59.96,
+   "end": 60.28
+  },
+  {
+   "word": "do",
+   "start": 60.28,
+   "end": 60.52
+  },
+  {
+   "word": "it?",
+   "start": 60.52,
+   "end": 60.74
+  },
+  {
+   "word": "And",
+   "start": 61.4,
+   "end": 61.54
+  },
+  {
+   "word": "what",
+   "start": 61.54,
+   "end": 61.7
+  },
+  {
+   "word": "would",
+   "start": 61.7,
+   "end": 61.82
+  },
+  {
+   "word": "it",
+   "start": 61.82,
+   "end": 61.96
+  },
+  {
+   "word": "cost",
+   "start": 61.96,
+   "end": 62.18
+  },
+  {
+   "word": "her,",
+   "start": 62.18,
+   "end": 62.46
+  },
+  {
+   "word": "minute",
+   "start": 62.46,
+   "end": 62.9
+  },
+  {
+   "word": "by",
+   "start": 62.9,
+   "end": 63.22
+  },
+  {
+   "word": "minute?",
+   "start": 63.22,
+   "end": 63.54
+  },
+  {
+   "word": "This",
+   "start": 64.34,
+   "end": 64.56
+  },
+  {
+   "word": "film",
+   "start": 64.56,
+   "end": 64.78
+  },
+  {
+   "word": "is",
+   "start": 64.78,
+   "end": 64.94
+  },
+  {
+   "word": "built",
+   "start": 64.94,
+   "end": 65.12
+  },
+  {
+   "word": "on",
+   "start": 65.12,
+   "end": 65.34
+  },
+  {
+   "word": "physiology",
+   "start": 65.34,
+   "end": 65.74
+  },
+  {
+   "word": "textbooks,",
+   "start": 65.74,
+   "end": 66.3
+  },
+  {
+   "word": "diving",
+   "start": 66.9,
+   "end": 67.12
+  },
+  {
+   "word": "manuals,",
+   "start": 67.12,
+   "end": 67.6
+  },
+  {
+   "word": "clinical",
+   "start": 68.02,
+   "end": 68.16
+  },
+  {
+   "word": "reviews",
+   "start": 68.16,
+   "end": 68.62
+  },
+  {
+   "word": "and",
+   "start": 68.82,
+   "end": 68.88
+  },
+  {
+   "word": "old",
+   "start": 68.88,
+   "end": 69.22
+  },
+  {
+   "word": "laboratory",
+   "start": 69.22,
+   "end": 69.62
+  },
+  {
+   "word": "reports.",
+   "start": 69.62,
+   "end": 70.14
+  },
+  {
+   "word": "It",
+   "start": 70.82,
+   "end": 70.98
+  },
+  {
+   "word": "is",
+   "start": 70.98,
+   "end": 71.06
+  },
+  {
+   "word": "a",
+   "start": 71.06,
+   "end": 71.16
+  },
+  {
+   "word": "calculation,",
+   "start": 71.16,
+   "end": 71.66
+  },
+  {
+   "word": "not",
+   "start": 72.18,
+   "end": 72.42
+  },
+  {
+   "word": "a",
+   "start": 72.42,
+   "end": 72.52
+  },
+  {
+   "word": "prediction.",
+   "start": 72.52,
+   "end": 72.78
+  },
+  {
+   "word": "And",
+   "start": 73.48,
+   "end": 73.64
+  },
+  {
+   "word": "the",
+   "start": 73.64,
+   "end": 73.72
+  },
+  {
+   "word": "unknowns",
+   "start": 73.72,
+   "end": 74.18
+  },
+  {
+   "word": "are",
+   "start": 74.18,
+   "end": 74.24
+  },
+  {
+   "word": "many.",
+   "start": 74.24,
+   "end": 74.44
+  },
+  {
+   "word": "Every",
+   "start": 75.22,
+   "end": 75.44
+  },
+  {
+   "word": "number",
+   "start": 75.44,
+   "end": 75.64
+  },
+  {
+   "word": "comes",
+   "start": 75.64,
+   "end": 75.96
+  },
+  {
+   "word": "from",
+   "start": 75.96,
+   "end": 76.2
+  },
+  {
+   "word": "a",
+   "start": 76.2,
+   "end": 76.32
+  },
+  {
+   "word": "named",
+   "start": 76.32,
+   "end": 76.54
+  },
+  {
+   "word": "source,",
+   "start": 76.54,
+   "end": 76.9
+  },
+  {
+   "word": "or",
+   "start": 76.9,
+   "end": 77.54
+  },
+  {
+   "word": "from",
+   "start": 77.54,
+   "end": 77.74
+  },
+  {
+   "word": "arithmetic",
+   "start": 77.74,
+   "end": 78.08
+  },
+  {
+   "word": "we",
+   "start": 78.08,
+   "end": 78.34
+  },
+  {
+   "word": "show.",
+   "start": 78.34,
+   "end": 78.56
+  },
+  {
+   "word": "Where",
+   "start": 79.16,
+   "end": 79.34
+  },
+  {
+   "word": "the",
+   "start": 79.34,
+   "end": 79.48
+  },
+  {
+   "word": "sources",
+   "start": 79.48,
+   "end": 79.68
+  },
+  {
+   "word": "disagree,",
+   "start": 79.68,
+   "end": 80.18
+  },
+  {
+   "word": "we",
+   "start": 80.54,
+   "end": 80.7
+  },
+  {
+   "word": "say",
+   "start": 80.7,
+   "end": 80.86
+  },
+  {
+   "word": "so.",
+   "start": 80.86,
+   "end": 81.12
+  },
+  {
+   "word": "Start",
+   "start": 81.88,
+   "end": 82.1
+  },
+  {
+   "word": "with",
+   "start": 82.1,
+   "end": 82.24
+  },
+  {
+   "word": "the",
+   "start": 82.24,
+   "end": 82.38
+  },
+  {
+   "word": "number.",
+   "start": 82.38,
+   "end": 82.54
+  },
+  {
+   "word": "Then",
+   "start": 83.06,
+   "end": 83.38
+  },
+  {
+   "word": "the",
+   "start": 83.38,
+   "end": 83.48
+  },
+  {
+   "word": "water.",
+   "start": 83.48,
+   "end": 83.76
+  },
+  {
+   "word": "Then",
+   "start": 84.58,
+   "end": 84.62
+  },
+  {
+   "word": "the",
+   "start": 84.62,
+   "end": 84.72
+  },
+  {
+   "word": "fish.",
+   "start": 84.72,
+   "end": 84.96
+  },
+  {
+   "word": "Then",
+   "start": 85.8,
+   "end": 85.84
+  },
+  {
+   "word": "the",
+   "start": 85.84,
+   "end": 85.94
+  },
+  {
+   "word": "liquid.",
+   "start": 85.94,
+   "end": 86.18
+  },
+  {
+   "word": "First,",
+   "start": 87.08,
+   "end": 87.56
+  },
+  {
+   "word": "what",
+   "start": 87.92,
+   "end": 88.1
+  },
+  {
+   "word": "a",
+   "start": 88.1,
+   "end": 88.2
+  },
+  {
+   "word": "body",
+   "start": 88.2,
+   "end": 88.34
+  },
+  {
+   "word": "needs.",
+   "start": 88.34,
+   "end": 88.7
+  },
+  {
+   "word": "At",
+   "start": 89.36,
+   "end": 89.48
+  },
+  {
+   "word": "rest,",
+   "start": 89.48,
+   "end": 89.7
+  },
+  {
+   "word": "an",
+   "start": 89.84,
+   "end": 89.86
+  },
+  {
+   "word": "adult",
+   "start": 89.86,
+   "end": 90.08
+  },
+  {
+   "word": "uses",
+   "start": 90.08,
+   "end": 90.32
+  },
+  {
+   "word": "about",
+   "start": 90.32,
+   "end": 90.62
+  },
+  {
+   "word": "two",
+   "start": 90.62,
+   "end": 90.916
+  },
+  {
+   "word": "hundred",
+   "start": 90.916,
+   "end": 91.212
+  },
+  {
+   "word": "and",
+   "start": 91.212,
+   "end": 91.508
+  },
+  {
+   "word": "fifty",
+   "start": 91.508,
+   "end": 91.804
+  },
+  {
+   "word": "millilitres",
+   "start": 91.804,
+   "end": 92.1
+  },
+  {
+   "word": "of",
+   "start": 92.1,
+   "end": 92.24
+  },
+  {
+   "word": "oxygen",
+   "start": 92.24,
+   "end": 92.58
+  },
+  {
+   "word": "a",
+   "start": 92.58,
+   "end": 92.76
+  },
+  {
+   "word": "minute.",
+   "start": 92.76,
+   "end": 92.94
+  },
+  {
+   "word": "That",
+   "start": 93.46,
+   "end": 93.72
+  },
+  {
+   "word": "is",
+   "start": 93.72,
+   "end": 93.82
+  },
+  {
+   "word": "the",
+   "start": 93.82,
+   "end": 93.94
+  },
+  {
+   "word": "figure",
+   "start": 93.94,
+   "end": 94.1
+  },
+  {
+   "word": "in",
+   "start": 94.1,
+   "end": 94.28
+  },
+  {
+   "word": "standard",
+   "start": 94.28,
+   "end": 94.56
+  },
+  {
+   "word": "physiology",
+   "start": 94.56,
+   "end": 95.04
+  },
+  {
+   "word": "teaching.",
+   "start": 95.04,
+   "end": 95.5
+  },
+  {
+   "word": "One",
+   "start": 96.06,
+   "end": 96.3
+  },
+  {
+   "word": "medical",
+   "start": 96.3,
+   "end": 96.58
+  },
+  {
+   "word": "exam-prep",
+   "start": 96.58,
+   "end": 97.16
+  },
+  {
+   "word": "page",
+   "start": 97.16,
+   "end": 97.46
+  },
+  {
+   "word": "gets",
+   "start": 97.46,
+   "end": 97.66
+  },
+  {
+   "word": "there",
+   "start": 97.66,
+   "end": 97.94
+  },
+  {
+   "word": "from",
+   "start": 97.94,
+   "end": 98.14
+  },
+  {
+   "word": "three",
+   "start": 98.14,
+   "end": 98.424
+  },
+  {
+   "word": "and",
+   "start": 98.424,
+   "end": 98.708
+  },
+  {
+   "word": "a",
+   "start": 98.708,
+   "end": 98.992
+  },
+  {
+   "word": "half",
+   "start": 98.992,
+   "end": 99.276
+  },
+  {
+   "word": "millilitres",
+   "start": 99.276,
+   "end": 99.56
+  },
+  {
+   "word": "per",
+   "start": 99.56,
+   "end": 99.76
+  },
+  {
+   "word": "kilogram,",
+   "start": 99.76,
+   "end": 100.16
+  },
+  {
+   "word": "for",
+   "start": 100.16,
+   "end": 100.6
+  },
+  {
+   "word": "a",
+   "start": 100.6,
+   "end": 100.72
+  },
+  {
+   "word": "seventy-kilogram",
+   "start": 100.72,
+   "end": 101.3
+  },
+  {
+   "word": "adult.",
+   "start": 101.3,
+   "end": 101.62
+  },
+  {
+   "word": "About",
+   "start": 102.28,
+   "end": 102.48
+  },
+  {
+   "word": "two",
+   "start": 102.48,
+   "end": 102.792
+  },
+  {
+   "word": "hundred",
+   "start": 102.792,
+   "end": 103.105
+  },
+  {
+   "word": "and",
+   "start": 103.105,
+   "end": 103.418
+  },
+  {
+   "word": "forty-five.",
+   "start": 103.418,
+   "end": 103.73
+  },
+  {
+   "word": "Two",
+   "start": 103.73,
+   "end": 104.042
+  },
+  {
+   "word": "hundred",
+   "start": 104.042,
+   "end": 104.355
+  },
+  {
+   "word": "and",
+   "start": 104.355,
+   "end": 104.668
+  },
+  {
+   "word": "fifty.",
+   "start": 104.668,
+   "end": 104.98
+  },
+  {
+   "word": "Hold",
+   "start": 104.98,
+   "end": 105.16
+  },
+  {
+   "word": "on",
+   "start": 105.16,
+   "end": 105.3
+  },
+  {
+   "word": "to",
+   "start": 105.3,
+   "end": 105.4
+  },
+  {
+   "word": "that.",
+   "start": 105.4,
+   "end": 105.56
+  },
+  {
+   "word": "In",
+   "start": 106.24,
+   "end": 106.42
+  },
+  {
+   "word": "air,",
+   "start": 106.42,
+   "end": 106.54
+  },
+  {
+   "word": "it",
+   "start": 106.7,
+   "end": 106.74
+  },
+  {
+   "word": "is",
+   "start": 106.74,
+   "end": 106.88
+  },
+  {
+   "word": "easy",
+   "start": 106.88,
+   "end": 107.12
+  },
+  {
+   "word": "to",
+   "start": 107.12,
+   "end": 107.3
+  },
+  {
+   "word": "supply.",
+   "start": 107.3,
+   "end": 107.6
+  },
+  {
+   "word": "A",
+   "start": 108.06,
+   "end": 108.28
+  },
+  {
+   "word": "litre",
+   "start": 108.28,
+   "end": 108.38
+  },
+  {
+   "word": "of",
+   "start": 108.38,
+   "end": 108.56
+  },
+  {
+   "word": "dry",
+   "start": 108.56,
+   "end": 108.76
+  },
+  {
+   "word": "air",
+   "start": 108.76,
+   "end": 108.96
+  },
+  {
+   "word": "is",
+   "start": 108.96,
+   "end": 109.08
+  },
+  {
+   "word": "about",
+   "start": 109.08,
+   "end": 109.26
+  },
+  {
+   "word": "twenty",
+   "start": 109.26,
+   "end": 109.515
+  },
+  {
+   "word": "point",
+   "start": 109.515,
+   "end": 109.77
+  },
+  {
+   "word": "nine",
+   "start": 109.77,
+   "end": 110.025
+  },
+  {
+   "word": "percent",
+   "start": 110.025,
+   "end": 110.28
+  },
+  {
+   "word": "oxygen,",
+   "start": 110.28,
+   "end": 110.74
+  },
+  {
+   "word": "according",
+   "start": 110.98,
+   "end": 111.3
+  },
+  {
+   "word": "to",
+   "start": 111.3,
+   "end": 111.52
+  },
+  {
+   "word": "the",
+   "start": 111.52,
+   "end": 111.64
+  },
+  {
+   "word": "United",
+   "start": 111.64,
+   "end": 111.88
+  },
+  {
+   "word": "Nations",
+   "start": 111.88,
+   "end": 112.32
+  },
+  {
+   "word": "food",
+   "start": 112.32,
+   "end": 112.56
+  },
+  {
+   "word": "agency's",
+   "start": 112.56,
+   "end": 113.14
+  },
+  {
+   "word": "fisheries",
+   "start": 113.14,
+   "end": 113.4
+  },
+  {
+   "word": "manual.",
+   "start": 113.4,
+   "end": 113.82
+  },
+  {
+   "word": "That",
+   "start": 114.42,
+   "end": 114.46
+  },
+  {
+   "word": "is",
+   "start": 114.46,
+   "end": 114.56
+  },
+  {
+   "word": "about",
+   "start": 114.56,
+   "end": 114.78
+  },
+  {
+   "word": "two",
+   "start": 114.78,
+   "end": 114.996
+  },
+  {
+   "word": "hundred",
+   "start": 114.996,
+   "end": 115.212
+  },
+  {
+   "word": "and",
+   "start": 115.212,
+   "end": 115.428
+  },
+  {
+   "word": "nine",
+   "start": 115.428,
+   "end": 115.644
+  },
+  {
+   "word": "millilitres",
+   "start": 115.644,
+   "end": 115.86
+  },
+  {
+   "word": "in",
+   "start": 115.86,
+   "end": 115.98
+  },
+  {
+   "word": "every",
+   "start": 115.98,
+   "end": 116.16
+  },
+  {
+   "word": "litre.",
+   "start": 116.16,
+   "end": 117.3
+  },
+  {
+   "word": "Resting",
+   "start": 117.3,
+   "end": 117.5
+  },
+  {
+   "word": "breathing",
+   "start": 117.5,
+   "end": 117.74
+  },
+  {
+   "word": "moves",
+   "start": 117.74,
+   "end": 118.06
+  },
+  {
+   "word": "about",
+   "start": 118.06,
+   "end": 118.6
+  },
+  {
+   "word": "five",
+   "start": 118.6,
+   "end": 118.96
+  },
+  {
+   "word": "to",
+   "start": 118.96,
+   "end": 119.16
+  },
+  {
+   "word": "eight",
+   "start": 119.16,
+   "end": 119.36
+  },
+  {
+   "word": "litres",
+   "start": 119.36,
+   "end": 119.68
+  },
+  {
+   "word": "of",
+   "start": 119.68,
+   "end": 119.8
+  },
+  {
+   "word": "air",
+   "start": 119.8,
+   "end": 119.9
+  },
+  {
+   "word": "a",
+   "start": 119.9,
+   "end": 120.04
+  },
+  {
+   "word": "minute,",
+   "start": 120.04,
+   "end": 120.26
+  },
+  {
+   "word": "according",
+   "start": 120.74,
+   "end": 120.76
+  },
+  {
+   "word": "to",
+   "start": 120.76,
+   "end": 120.94
+  },
+  {
+   "word": "the",
+   "start": 120.94,
+   "end": 121.06
+  },
+  {
+   "word": "standard",
+   "start": 121.06,
+   "end": 121.26
+  },
+  {
+   "word": "reference",
+   "start": 121.26,
+   "end": 121.64
+  },
+  {
+   "word": "on",
+   "start": 121.64,
+   "end": 121.84
+  },
+  {
+   "word": "minute",
+   "start": 121.84,
+   "end": 122.08
+  },
+  {
+   "word": "ventilation.",
+   "start": 122.08,
+   "end": 122.6
+  },
+  {
+   "word": "Call",
+   "start": 123.28,
+   "end": 123.42
+  },
+  {
+   "word": "it",
+   "start": 123.42,
+   "end": 123.54
+  },
+  {
+   "word": "six.",
+   "start": 123.54,
+   "end": 123.74
+  },
+  {
+   "word": "Six",
+   "start": 124.36,
+   "end": 124.58
+  },
+  {
+   "word": "litres",
+   "start": 124.58,
+   "end": 124.84
+  },
+  {
+   "word": "of",
+   "start": 124.84,
+   "end": 124.94
+  },
+  {
+   "word": "air.",
+   "start": 124.94,
+   "end": 125.1
+  },
+  {
+   "word": "Two",
+   "start": 125.1,
+   "end": 125.388
+  },
+  {
+   "word": "hundred",
+   "start": 125.388,
+   "end": 125.676
+  },
+  {
+   "word": "and",
+   "start": 125.676,
+   "end": 125.964
+  },
+  {
+   "word": "fifty",
+   "start": 125.964,
+   "end": 126.252
+  },
+  {
+   "word": "millilitres",
+   "start": 126.252,
+   "end": 126.54
+  },
+  {
+   "word": "of",
+   "start": 126.54,
+   "end": 126.66
+  },
+  {
+   "word": "oxygen.",
+   "start": 126.66,
+   "end": 127.0
+  },
+  {
+   "word": "A",
+   "start": 127.5,
+   "end": 127.72
+  },
+  {
+   "word": "comfortable,",
+   "start": 127.72,
+   "end": 128.06
+  },
+  {
+   "word": "quiet",
+   "start": 128.38,
+   "end": 128.78
+  },
+  {
+   "word": "job.",
+   "start": 128.78,
+   "end": 129.16
+  },
+  {
+   "word": "That",
+   "start": 130.36,
+   "end": 130.58
+  },
+  {
+   "word": "is",
+   "start": 130.58,
+   "end": 130.92
+  },
+  {
+   "word": "the",
+   "start": 130.92,
+   "end": 131.1
+  },
+  {
+   "word": "deal",
+   "start": 131.1,
+   "end": 131.3
+  },
+  {
+   "word": "the",
+   "start": 131.3,
+   "end": 131.5
+  },
+  {
+   "word": "lungs",
+   "start": 131.5,
+   "end": 131.74
+  },
+  {
+   "word": "were",
+   "start": 131.74,
+   "end": 131.96
+  },
+  {
+   "word": "built",
+   "start": 131.96,
+   "end": 132.18
+  },
+  {
+   "word": "around.",
+   "start": 132.18,
+   "end": 132.5
+  },
+  {
+   "word": "Now",
+   "start": 133.0,
+   "end": 133.16
+  },
+  {
+   "word": "change",
+   "start": 133.16,
+   "end": 133.42
+  },
+  {
+   "word": "the",
+   "start": 133.42,
+   "end": 133.64
+  },
+  {
+   "word": "fluid.",
+   "start": 133.64,
+   "end": 133.9
+  },
+  {
+   "word": "Water",
+   "start": 135.2,
+   "end": 135.32
+  },
+  {
+   "word": "holds",
+   "start": 135.32,
+   "end": 135.56
+  },
+  {
+   "word": "oxygen",
+   "start": 135.56,
+   "end": 135.9
+  },
+  {
+   "word": "too.",
+   "start": 135.9,
+   "end": 136.22
+  },
+  {
+   "word": "Not",
+   "start": 136.68,
+   "end": 136.8
+  },
+  {
+   "word": "much,",
+   "start": 136.8,
+   "end": 137.06
+  },
+  {
+   "word": "says",
+   "start": 137.32,
+   "end": 137.46
+  },
+  {
+   "word": "the",
+   "start": 137.46,
+   "end": 137.66
+  },
+  {
+   "word": "sensor",
+   "start": 137.66,
+   "end": 137.9
+  },
+  {
+   "word": "maker.",
+   "start": 137.9,
+   "end": 138.12
+  },
+  {
+   "word": "A",
+   "start": 138.6,
+   "end": 138.7
+  },
+  {
+   "word": "manufacturer",
+   "start": 138.7,
+   "end": 139.14
+  },
+  {
+   "word": "of",
+   "start": 139.14,
+   "end": 139.66
+  },
+  {
+   "word": "dissolved-oxygen",
+   "start": 139.66,
+   "end": 140.64
+  },
+  {
+   "word": "sensors",
+   "start": 140.64,
+   "end": 141.14
+  },
+  {
+   "word": "says",
+   "start": 141.14,
+   "end": 141.48
+  },
+  {
+   "word": "air-saturated",
+   "start": 141.48,
+   "end": 142.24
+  },
+  {
+   "word": "water",
+   "start": 142.24,
+   "end": 142.6
+  },
+  {
+   "word": "at",
+   "start": 142.6,
+   "end": 142.78
+  },
+  {
+   "word": "twenty-five",
+   "start": 142.78,
+   "end": 143.28
+  },
+  {
+   "word": "degrees",
+   "start": 143.28,
+   "end": 143.68
+  },
+  {
+   "word": "holds",
+   "start": 143.68,
+   "end": 144.2
+  },
+  {
+   "word": "about",
+   "start": 144.2,
+   "end": 144.46
+  },
+  {
+   "word": "eight",
+   "start": 144.46,
+   "end": 144.82
+  },
+  {
+   "word": "point",
+   "start": 144.82,
+   "end": 145.18
+  },
+  {
+   "word": "three",
+   "start": 145.18,
+   "end": 145.54
+  },
+  {
+   "word": "milligrams",
+   "start": 145.54,
+   "end": 146.06
+  },
+  {
+   "word": "of",
+   "start": 146.06,
+   "end": 146.28
+  },
+  {
+   "word": "oxygen",
+   "start": 146.28,
+   "end": 146.7
+  },
+  {
+   "word": "per",
+   "start": 146.7,
+   "end": 146.96
+  },
+  {
+   "word": "litre.",
+   "start": 146.96,
+   "end": 147.88
+  },
+  {
+   "word": "Convert",
+   "start": 147.88,
+   "end": 147.92
+  },
+  {
+   "word": "that,",
+   "start": 147.92,
+   "end": 148.2
+  },
+  {
+   "word": "and",
+   "start": 148.2,
+   "end": 148.56
+  },
+  {
+   "word": "it",
+   "start": 148.56,
+   "end": 148.72
+  },
+  {
+   "word": "is",
+   "start": 148.72,
+   "end": 148.84
+  },
+  {
+   "word": "about",
+   "start": 148.84,
+   "end": 149.08
+  },
+  {
+   "word": "five",
+   "start": 149.08,
+   "end": 149.565
+  },
+  {
+   "word": "point",
+   "start": 149.565,
+   "end": 150.05
+  },
+  {
+   "word": "eight",
+   "start": 150.05,
+   "end": 150.535
+  },
+  {
+   "word": "millilitres.",
+   "start": 150.535,
+   "end": 151.02
+  },
+  {
+   "word": "Our",
+   "start": 151.02,
+   "end": 151.22
+  },
+  {
+   "word": "conversion,",
+   "start": 151.22,
+   "end": 151.6
+  },
+  {
+   "word": "using",
+   "start": 151.6,
+   "end": 151.94
+  },
+  {
+   "word": "a",
+   "start": 151.94,
+   "end": 152.18
+  },
+  {
+   "word": "standard",
+   "start": 152.18,
+   "end": 152.46
+  },
+  {
+   "word": "value",
+   "start": 152.46,
+   "end": 152.8
+  },
+  {
+   "word": "for",
+   "start": 152.8,
+   "end": 153.02
+  },
+  {
+   "word": "oxygen's",
+   "start": 153.02,
+   "end": 153.56
+  },
+  {
+   "word": "density.",
+   "start": 153.56,
+   "end": 153.94
+  },
+  {
+   "word": "Two",
+   "start": 153.94,
+   "end": 154.255
+  },
+  {
+   "word": "hundred",
+   "start": 154.255,
+   "end": 154.57
+  },
+  {
+   "word": "and",
+   "start": 154.57,
+   "end": 154.885
+  },
+  {
+   "word": "nine",
+   "start": 154.885,
+   "end": 155.2
+  },
+  {
+   "word": "in",
+   "start": 155.2,
+   "end": 155.7
+  },
+  {
+   "word": "air.",
+   "start": 155.7,
+   "end": 155.94
+  },
+  {
+   "word": "Five",
+   "start": 155.94,
+   "end": 156.353
+  },
+  {
+   "word": "point",
+   "start": 156.353,
+   "end": 156.767
+  },
+  {
+   "word": "eight",
+   "start": 156.767,
+   "end": 157.18
+  },
+  {
+   "word": "in",
+   "start": 157.18,
+   "end": 157.36
+  },
+  {
+   "word": "water.",
+   "start": 157.36,
+   "end": 157.62
+  },
+  {
+   "word": "About",
+   "start": 158.12,
+   "end": 158.34
+  },
+  {
+   "word": "thirty-six",
+   "start": 158.34,
+   "end": 158.92
+  },
+  {
+   "word": "times",
+   "start": 158.92,
+   "end": 159.34
+  },
+  {
+   "word": "less.",
+   "start": 159.34,
+   "end": 159.7
+  },
+  {
+   "word": "Colder",
+   "start": 160.42,
+   "end": 160.56
+  },
+  {
+   "word": "water",
+   "start": 160.56,
+   "end": 160.76
+  },
+  {
+   "word": "holds",
+   "start": 160.76,
+   "end": 161.04
+  },
+  {
+   "word": "more.",
+   "start": 161.04,
+   "end": 161.34
+  },
+  {
+   "word": "Warm",
+   "start": 161.74,
+   "end": 161.86
+  },
+  {
+   "word": "water",
+   "start": 161.86,
+   "end": 162.12
+  },
+  {
+   "word": "holds",
+   "start": 162.12,
+   "end": 162.34
+  },
+  {
+   "word": "less.",
+   "start": 162.34,
+   "end": 162.64
+  },
+  {
+   "word": "But",
+   "start": 162.9,
+   "end": 163.18
+  },
+  {
+   "word": "the",
+   "start": 163.18,
+   "end": 163.34
+  },
+  {
+   "word": "order",
+   "start": 163.34,
+   "end": 163.62
+  },
+  {
+   "word": "of",
+   "start": 163.62,
+   "end": 163.82
+  },
+  {
+   "word": "magnitude",
+   "start": 163.82,
+   "end": 164.26
+  },
+  {
+   "word": "stays.",
+   "start": 164.26,
+   "end": 164.66
+  },
+  {
+   "word": "So",
+   "start": 165.66,
+   "end": 166.06
+  },
+  {
+   "word": "how",
+   "start": 166.06,
+   "end": 166.22
+  },
+  {
+   "word": "much",
+   "start": 166.22,
+   "end": 166.44
+  },
+  {
+   "word": "water",
+   "start": 166.44,
+   "end": 166.7
+  },
+  {
+   "word": "does",
+   "start": 166.7,
+   "end": 166.94
+  },
+  {
+   "word": "she",
+   "start": 166.94,
+   "end": 167.12
+  },
+  {
+   "word": "need?",
+   "start": 167.12,
+   "end": 167.44
+  },
+  {
+   "word": "If",
+   "start": 168.0,
+   "end": 168.32
+  },
+  {
+   "word": "her",
+   "start": 168.32,
+   "end": 168.44
+  },
+  {
+   "word": "lungs",
+   "start": 168.44,
+   "end": 168.64
+  },
+  {
+   "word": "took",
+   "start": 168.64,
+   "end": 168.88
+  },
+  {
+   "word": "every",
+   "start": 168.88,
+   "end": 169.26
+  },
+  {
+   "word": "last",
+   "start": 169.26,
+   "end": 169.54
+  },
+  {
+   "word": "molecule,",
+   "start": 169.54,
+   "end": 170.06
+  },
+  {
+   "word": "two",
+   "start": 170.06,
+   "end": 170.285
+  },
+  {
+   "word": "hundred",
+   "start": 170.285,
+   "end": 170.51
+  },
+  {
+   "word": "and",
+   "start": 170.51,
+   "end": 170.735
+  },
+  {
+   "word": "fifty",
+   "start": 170.735,
+   "end": 170.96
+  },
+  {
+   "word": "divided",
+   "start": 170.96,
+   "end": 171.48
+  },
+  {
+   "word": "by",
+   "start": 171.48,
+   "end": 171.68
+  },
+  {
+   "word": "five",
+   "start": 171.68,
+   "end": 171.94
+  },
+  {
+   "word": "point",
+   "start": 171.94,
+   "end": 172.2
+  },
+  {
+   "word": "eight",
+   "start": 172.2,
+   "end": 172.46
+  },
+  {
+   "word": "is",
+   "start": 172.46,
+   "end": 172.82
+  },
+  {
+   "word": "forty-three",
+   "start": 172.82,
+   "end": 173.29
+  },
+  {
+   "word": "litres",
+   "start": 173.29,
+   "end": 173.76
+  },
+  {
+   "word": "a",
+   "start": 173.76,
+   "end": 173.88
+  },
+  {
+   "word": "minute.",
+   "start": 173.88,
+   "end": 174.04
+  },
+  {
+   "word": "That",
+   "start": 174.6,
+   "end": 174.86
+  },
+  {
+   "word": "is",
+   "start": 174.86,
+   "end": 175.1
+  },
+  {
+   "word": "the",
+   "start": 175.1,
+   "end": 175.26
+  },
+  {
+   "word": "floor.",
+   "start": 175.26,
+   "end": 175.56
+  },
+  {
+   "word": "Physics",
+   "start": 176.1,
+   "end": 176.16
+  },
+  {
+   "word": "will",
+   "start": 176.16,
+   "end": 176.42
+  },
+  {
+   "word": "not",
+   "start": 176.42,
+   "end": 176.58
+  },
+  {
+   "word": "let",
+   "start": 176.58,
+   "end": 176.72
+  },
+  {
+   "word": "it",
+   "start": 176.72,
+   "end": 176.8
+  },
+  {
+   "word": "go",
+   "start": 176.8,
+   "end": 176.92
+  },
+  {
+   "word": "lower.",
+   "start": 176.92,
+   "end": 177.2
+  },
+  {
+   "word": "But",
+   "start": 177.74,
+   "end": 177.9
+  },
+  {
+   "word": "lungs",
+   "start": 177.9,
+   "end": 178.08
+  },
+  {
+   "word": "do",
+   "start": 178.08,
+   "end": 178.24
+  },
+  {
+   "word": "not",
+   "start": 178.24,
+   "end": 178.42
+  },
+  {
+   "word": "take",
+   "start": 178.42,
+   "end": 178.6
+  },
+  {
+   "word": "every",
+   "start": 178.6,
+   "end": 178.8
+  },
+  {
+   "word": "molecule.",
+   "start": 178.8,
+   "end": 179.22
+  },
+  {
+   "word": "An",
+   "start": 179.22,
+   "end": 179.85
+  },
+  {
+   "word": "arXiv",
+   "start": 179.85,
+   "end": 180.48
+  },
+  {
+   "word": "paper",
+   "start": 180.48,
+   "end": 180.76
+  },
+  {
+   "word": "on",
+   "start": 180.76,
+   "end": 180.96
+  },
+  {
+   "word": "lung",
+   "start": 180.96,
+   "end": 181.12
+  },
+  {
+   "word": "ventilation",
+   "start": 181.12,
+   "end": 181.6
+  },
+  {
+   "word": "in",
+   "start": 181.6,
+   "end": 181.84
+  },
+  {
+   "word": "mammals",
+   "start": 181.84,
+   "end": 182.16
+  },
+  {
+   "word": "reports",
+   "start": 182.16,
+   "end": 182.54
+  },
+  {
+   "word": "that",
+   "start": 182.54,
+   "end": 182.78
+  },
+  {
+   "word": "exhaled",
+   "start": 182.78,
+   "end": 183.28
+  },
+  {
+   "word": "air",
+   "start": 183.28,
+   "end": 183.58
+  },
+  {
+   "word": "is",
+   "start": 183.58,
+   "end": 183.82
+  },
+  {
+   "word": "sixteen",
+   "start": 183.82,
+   "end": 184.26
+  },
+  {
+   "word": "to",
+   "start": 184.26,
+   "end": 184.4
+  },
+  {
+   "word": "eighteen",
+   "start": 184.4,
+   "end": 184.8
+  },
+  {
+   "word": "percent",
+   "start": 184.8,
+   "end": 185.06
+  },
+  {
+   "word": "oxygen,",
+   "start": 185.06,
+   "end": 185.54
+  },
+  {
+   "word": "when",
+   "start": 185.98,
+   "end": 186.12
+  },
+  {
+   "word": "the",
+   "start": 186.12,
+   "end": 186.24
+  },
+  {
+   "word": "air",
+   "start": 186.24,
+   "end": 186.38
+  },
+  {
+   "word": "going",
+   "start": 186.38,
+   "end": 186.62
+  },
+  {
+   "word": "in",
+   "start": 186.62,
+   "end": 186.8
+  },
+  {
+   "word": "is",
+   "start": 186.8,
+   "end": 186.94
+  },
+  {
+   "word": "twenty-one.",
+   "start": 186.94,
+   "end": 190.66
+  },
+  {
+   "word": "A",
+   "start": 190.66,
+   "end": 190.84
+  },
+  {
+   "word": "drop",
+   "start": 190.84,
+   "end": 190.98
+  },
+  {
+   "word": "of",
+   "start": 190.98,
+   "end": 191.14
+  },
+  {
+   "word": "three",
+   "start": 191.14,
+   "end": 191.34
+  },
+  {
+   "word": "to",
+   "start": 191.34,
+   "end": 191.46
+  },
+  {
+   "word": "five",
+   "start": 191.46,
+   "end": 191.68
+  },
+  {
+   "word": "points.",
+   "start": 191.68,
+   "end": 192.08
+  },
+  {
+   "word": "That",
+   "start": 192.48,
+   "end": 192.68
+  },
+  {
+   "word": "is",
+   "start": 192.68,
+   "end": 192.82
+  },
+  {
+   "word": "roughly",
+   "start": 192.82,
+   "end": 193.06
+  },
+  {
+   "word": "a",
+   "start": 193.06,
+   "end": 193.22
+  },
+  {
+   "word": "seventh",
+   "start": 193.22,
+   "end": 193.52
+  },
+  {
+   "word": "to",
+   "start": 193.52,
+   "end": 193.78
+  },
+  {
+   "word": "a",
+   "start": 193.78,
+   "end": 193.9
+  },
+  {
+   "word": "quarter",
+   "start": 193.9,
+   "end": 194.12
+  },
+  {
+   "word": "of",
+   "start": 194.12,
+   "end": 194.28
+  },
+  {
+   "word": "what",
+   "start": 194.28,
+   "end": 194.4
+  },
+  {
+   "word": "comes",
+   "start": 194.4,
+   "end": 194.58
+  },
+  {
+   "word": "in.",
+   "start": 194.58,
+   "end": 194.86
+  },
+  {
+   "word": "Our",
+   "start": 194.86,
+   "end": 195.56
+  },
+  {
+   "word": "arithmetic.",
+   "start": 195.56,
+   "end": 196.0
+  },
+  {
+   "word": "Take",
+   "start": 196.74,
+   "end": 196.84
+  },
+  {
+   "word": "the",
+   "start": 196.84,
+   "end": 196.98
+  },
+  {
+   "word": "generous",
+   "start": 196.98,
+   "end": 197.24
+  },
+  {
+   "word": "end.",
+   "start": 197.24,
+   "end": 197.74
+  },
+  {
+   "word": "A",
+   "start": 197.98,
+   "end": 198.1
+  },
+  {
+   "word": "quarter.",
+   "start": 198.1,
+   "end": 198.32
+  },
+  {
+   "word": "Two",
+   "start": 198.32,
+   "end": 198.805
+  },
+  {
+   "word": "hundred",
+   "start": 198.805,
+   "end": 199.29
+  },
+  {
+   "word": "and",
+   "start": 199.29,
+   "end": 199.775
+  },
+  {
+   "word": "fifty,",
+   "start": 199.775,
+   "end": 200.26
+  },
+  {
+   "word": "divided",
+   "start": 200.26,
+   "end": 200.96
+  },
+  {
+   "word": "by",
+   "start": 200.96,
+   "end": 201.26
+  },
+  {
+   "word": "five",
+   "start": 201.26,
+   "end": 201.58
+  },
+  {
+   "word": "point",
+   "start": 201.58,
+   "end": 201.9
+  },
+  {
+   "word": "eight,",
+   "start": 201.9,
+   "end": 202.22
+  },
+  {
+   "word": "divided",
+   "start": 202.22,
+   "end": 202.76
+  },
+  {
+   "word": "by",
+   "start": 202.76,
+   "end": 203.16
+  },
+  {
+   "word": "a",
+   "start": 203.16,
+   "end": 203.42
+  },
+  {
+   "word": "quarter.",
+   "start": 203.42,
+   "end": 203.74
+  },
+  {
+   "word": "One",
+   "start": 203.74,
+   "end": 204.156
+  },
+  {
+   "word": "hundred",
+   "start": 204.156,
+   "end": 204.572
+  },
+  {
+   "word": "and",
+   "start": 204.572,
+   "end": 204.988
+  },
+  {
+   "word": "seventy-two",
+   "start": 204.988,
+   "end": 205.404
+  },
+  {
+   "word": "litres",
+   "start": 205.404,
+   "end": 205.82
+  },
+  {
+   "word": "a",
+   "start": 205.82,
+   "end": 205.98
+  },
+  {
+   "word": "minute.",
+   "start": 205.98,
+   "end": 206.18
+  },
+  {
+   "word": "At",
+   "start": 206.64,
+   "end": 206.86
+  },
+  {
+   "word": "the",
+   "start": 206.86,
+   "end": 207.02
+  },
+  {
+   "word": "stingy",
+   "start": 207.02,
+   "end": 207.38
+  },
+  {
+   "word": "end,",
+   "start": 207.38,
+   "end": 207.62
+  },
+  {
+   "word": "it",
+   "start": 207.72,
+   "end": 207.84
+  },
+  {
+   "word": "is",
+   "start": 207.84,
+   "end": 207.96
+  },
+  {
+   "word": "more",
+   "start": 207.96,
+   "end": 208.12
+  },
+  {
+   "word": "than",
+   "start": 208.12,
+   "end": 208.32
+  },
+  {
+   "word": "three",
+   "start": 208.32,
+   "end": 209.21
+  },
+  {
+   "word": "hundred.",
+   "start": 209.21,
+   "end": 210.1
+  },
+  {
+   "word": "How",
+   "start": 210.1,
+   "end": 210.28
+  },
+  {
+   "word": "much",
+   "start": 210.28,
+   "end": 210.52
+  },
+  {
+   "word": "can",
+   "start": 210.52,
+   "end": 210.82
+  },
+  {
+   "word": "a",
+   "start": 210.82,
+   "end": 210.94
+  },
+  {
+   "word": "person",
+   "start": 210.94,
+   "end": 211.24
+  },
+  {
+   "word": "breathe?",
+   "start": 211.24,
+   "end": 211.58
+  },
+  {
+   "word": "A",
+   "start": 212.12,
+   "end": 212.32
+  },
+  {
+   "word": "physiology",
+   "start": 212.32,
+   "end": 212.68
+  },
+  {
+   "word": "module",
+   "start": 212.68,
+   "end": 213.22
+  },
+  {
+   "word": "at",
+   "start": 213.22,
+   "end": 213.42
+  },
+  {
+   "word": "Monash",
+   "start": 213.42,
+   "end": 213.8
+  },
+  {
+   "word": "University",
+   "start": 213.8,
+   "end": 214.22
+  },
+  {
+   "word": "gives",
+   "start": 214.22,
+   "end": 214.62
+  },
+  {
+   "word": "a",
+   "start": 214.62,
+   "end": 214.82
+  },
+  {
+   "word": "mean",
+   "start": 214.82,
+   "end": 215.04
+  },
+  {
+   "word": "maximum",
+   "start": 215.04,
+   "end": 215.46
+  },
+  {
+   "word": "voluntary",
+   "start": 215.46,
+   "end": 216.06
+  },
+  {
+   "word": "ventilation",
+   "start": 216.06,
+   "end": 216.54
+  },
+  {
+   "word": "of",
+   "start": 216.54,
+   "end": 217.2
+  },
+  {
+   "word": "about",
+   "start": 217.2,
+   "end": 217.4
+  },
+  {
+   "word": "a",
+   "start": 217.4,
+   "end": 217.628
+  },
+  {
+   "word": "hundred",
+   "start": 217.628,
+   "end": 217.856
+  },
+  {
+   "word": "and",
+   "start": 217.856,
+   "end": 218.084
+  },
+  {
+   "word": "forty",
+   "start": 218.084,
+   "end": 218.312
+  },
+  {
+   "word": "litres",
+   "start": 218.312,
+   "end": 218.54
+  },
+  {
+   "word": "a",
+   "start": 218.54,
+   "end": 218.68
+  },
+  {
+   "word": "minute",
+   "start": 218.68,
+   "end": 218.88
+  },
+  {
+   "word": "for",
+   "start": 218.88,
+   "end": 219.14
+  },
+  {
+   "word": "healthy",
+   "start": 219.14,
+   "end": 219.44
+  },
+  {
+   "word": "young",
+   "start": 219.44,
+   "end": 219.62
+  },
+  {
+   "word": "men.",
+   "start": 219.62,
+   "end": 219.84
+  },
+  {
+   "word": "Range,",
+   "start": 220.32,
+   "end": 220.64
+  },
+  {
+   "word": "a",
+   "start": 220.64,
+   "end": 220.89
+  },
+  {
+   "word": "hundred",
+   "start": 220.89,
+   "end": 221.14
+  },
+  {
+   "word": "to",
+   "start": 221.14,
+   "end": 221.46
+  },
+  {
+   "word": "a",
+   "start": 221.46,
+   "end": 221.74
+  },
+  {
+   "word": "hundred",
+   "start": 221.74,
+   "end": 222.02
+  },
+  {
+   "word": "and",
+   "start": 222.02,
+   "end": 222.3
+  },
+  {
+   "word": "eighty.",
+   "start": 222.3,
+   "end": 222.58
+  },
+  {
+   "word": "For",
+   "start": 222.58,
+   "end": 222.74
+  },
+  {
+   "word": "women,",
+   "start": 222.74,
+   "end": 222.96
+  },
+  {
+   "word": "about",
+   "start": 223.2,
+   "end": 223.38
+  },
+  {
+   "word": "a",
+   "start": 223.38,
+   "end": 223.72
+  },
+  {
+   "word": "hundred.",
+   "start": 223.72,
+   "end": 224.06
+  },
+  {
+   "word": "Seventy",
+   "start": 224.06,
+   "end": 224.4
+  },
+  {
+   "word": "to",
+   "start": 224.4,
+   "end": 224.64
+  },
+  {
+   "word": "a",
+   "start": 224.64,
+   "end": 224.95
+  },
+  {
+   "word": "hundred",
+   "start": 224.95,
+   "end": 225.26
+  },
+  {
+   "word": "and",
+   "start": 225.26,
+   "end": 225.57
+  },
+  {
+   "word": "twenty.",
+   "start": 225.57,
+   "end": 225.88
+  },
+  {
+   "word": "That",
+   "start": 225.88,
+   "end": 226.06
+  },
+  {
+   "word": "is",
+   "start": 226.06,
+   "end": 226.22
+  },
+  {
+   "word": "a",
+   "start": 226.22,
+   "end": 226.38
+  },
+  {
+   "word": "short",
+   "start": 226.38,
+   "end": 226.56
+  },
+  {
+   "word": "test,",
+   "start": 226.56,
+   "end": 226.98
+  },
+  {
+   "word": "the",
+   "start": 227.16,
+   "end": 227.3
+  },
+  {
+   "word": "module",
+   "start": 227.3,
+   "end": 227.5
+  },
+  {
+   "word": "says,",
+   "start": 227.5,
+   "end": 227.84
+  },
+  {
+   "word": "with",
+   "start": 227.9,
+   "end": 228.08
+  },
+  {
+   "word": "the",
+   "start": 228.08,
+   "end": 228.2
+  },
+  {
+   "word": "subject",
+   "start": 228.2,
+   "end": 228.48
+  },
+  {
+   "word": "trying",
+   "start": 228.48,
+   "end": 228.82
+  },
+  {
+   "word": "as",
+   "start": 228.82,
+   "end": 228.98
+  },
+  {
+   "word": "hard",
+   "start": 228.98,
+   "end": 229.28
+  },
+  {
+   "word": "as",
+   "start": 229.28,
+   "end": 229.48
+  },
+  {
+   "word": "possible.",
+   "start": 229.48,
+   "end": 229.88
+  },
+  {
+   "word": "Her",
+   "start": 230.5,
+   "end": 230.62
+  },
+  {
+   "word": "resting",
+   "start": 230.62,
+   "end": 230.92
+  },
+  {
+   "word": "need",
+   "start": 230.92,
+   "end": 231.18
+  },
+  {
+   "word": "is",
+   "start": 231.18,
+   "end": 231.38
+  },
+  {
+   "word": "higher",
+   "start": 231.38,
+   "end": 231.62
+  },
+  {
+   "word": "than",
+   "start": 231.62,
+   "end": 231.86
+  },
+  {
+   "word": "that.",
+   "start": 231.86,
+   "end": 232.08
+  },
+  {
+   "word": "At",
+   "start": 232.5,
+   "end": 232.62
+  },
+  {
+   "word": "rest.",
+   "start": 232.62,
+   "end": 232.96
+  },
+  {
+   "word": "Then",
+   "start": 234.3,
+   "end": 234.62
+  },
+  {
+   "word": "there",
+   "start": 234.62,
+   "end": 234.8
+  },
+  {
+   "word": "is",
+   "start": 234.8,
+   "end": 234.98
+  },
+  {
+   "word": "what",
+   "start": 234.98,
+   "end": 235.16
+  },
+  {
+   "word": "water",
+   "start": 235.16,
+   "end": 235.46
+  },
+  {
+   "word": "is.",
+   "start": 235.46,
+   "end": 235.8
+  },
+  {
+   "word": "It",
+   "start": 236.22,
+   "end": 236.34
+  },
+  {
+   "word": "is",
+   "start": 236.34,
+   "end": 236.46
+  },
+  {
+   "word": "about",
+   "start": 236.46,
+   "end": 236.7
+  },
+  {
+   "word": "eight",
+   "start": 236.7,
+   "end": 236.92
+  },
+  {
+   "word": "hundred",
+   "start": 236.92,
+   "end": 237.14
+  },
+  {
+   "word": "times",
+   "start": 237.14,
+   "end": 237.72
+  },
+  {
+   "word": "denser",
+   "start": 237.72,
+   "end": 238.22
+  },
+  {
+   "word": "than",
+   "start": 238.22,
+   "end": 238.34
+  },
+  {
+   "word": "air.",
+   "start": 238.34,
+   "end": 238.58
+  },
+  {
+   "word": "Course",
+   "start": 239.26,
+   "end": 239.34
+  },
+  {
+   "word": "notes",
+   "start": 239.34,
+   "end": 239.54
+  },
+  {
+   "word": "give",
+   "start": 239.54,
+   "end": 239.78
+  },
+  {
+   "word": "a",
+   "start": 239.78,
+   "end": 239.92
+  },
+  {
+   "word": "ratio",
+   "start": 239.92,
+   "end": 240.28
+  },
+  {
+   "word": "of",
+   "start": 240.28,
+   "end": 240.5
+  },
+  {
+   "word": "about",
+   "start": 240.5,
+   "end": 240.8
+  },
+  {
+   "word": "eight",
+   "start": 240.8,
+   "end": 241.095
+  },
+  {
+   "word": "hundred",
+   "start": 241.095,
+   "end": 241.39
+  },
+  {
+   "word": "and",
+   "start": 241.39,
+   "end": 241.685
+  },
+  {
+   "word": "thirty,",
+   "start": 241.685,
+   "end": 241.98
+  },
+  {
+   "word": "a",
+   "start": 241.98,
+   "end": 242.12
+  },
+  {
+   "word": "flashcard",
+   "start": 242.12,
+   "end": 242.54
+  },
+  {
+   "word": "set",
+   "start": 242.54,
+   "end": 242.8
+  },
+  {
+   "word": "says.",
+   "start": 242.8,
+   "end": 243.04
+  },
+  {
+   "word": "One",
+   "start": 243.04,
+   "end": 243.68
+  },
+  {
+   "word": "litre",
+   "start": 243.68,
+   "end": 244.32
+  },
+  {
+   "word": "of",
+   "start": 244.32,
+   "end": 244.56
+  },
+  {
+   "word": "water",
+   "start": 244.56,
+   "end": 244.86
+  },
+  {
+   "word": "weighs",
+   "start": 244.86,
+   "end": 245.1
+  },
+  {
+   "word": "one",
+   "start": 245.1,
+   "end": 245.48
+  },
+  {
+   "word": "kilogram.",
+   "start": 245.48,
+   "end": 245.9
+  },
+  {
+   "word": "A",
+   "start": 245.9,
+   "end": 246.244
+  },
+  {
+   "word": "hundred",
+   "start": 246.244,
+   "end": 246.588
+  },
+  {
+   "word": "and",
+   "start": 246.588,
+   "end": 246.932
+  },
+  {
+   "word": "seventy-two",
+   "start": 246.932,
+   "end": 247.276
+  },
+  {
+   "word": "litres",
+   "start": 247.276,
+   "end": 247.62
+  },
+  {
+   "word": "a",
+   "start": 247.62,
+   "end": 247.76
+  },
+  {
+   "word": "minute",
+   "start": 247.76,
+   "end": 247.9
+  },
+  {
+   "word": "is",
+   "start": 247.9,
+   "end": 248.32
+  },
+  {
+   "word": "a",
+   "start": 248.32,
+   "end": 248.495
+  },
+  {
+   "word": "hundred",
+   "start": 248.495,
+   "end": 248.67
+  },
+  {
+   "word": "and",
+   "start": 248.67,
+   "end": 248.845
+  },
+  {
+   "word": "seventy-two",
+   "start": 248.845,
+   "end": 249.02
+  },
+  {
+   "word": "kilograms.",
+   "start": 249.02,
+   "end": 249.74
+  },
+  {
+   "word": "Through",
+   "start": 250.36,
+   "end": 250.64
+  },
+  {
+   "word": "the",
+   "start": 250.64,
+   "end": 250.78
+  },
+  {
+   "word": "throat.",
+   "start": 250.78,
+   "end": 251.06
+  },
+  {
+   "word": "Every",
+   "start": 251.66,
+   "end": 252.04
+  },
+  {
+   "word": "minute.",
+   "start": 252.04,
+   "end": 252.36
+  },
+  {
+   "word": "While",
+   "start": 252.82,
+   "end": 253.1
+  },
+  {
+   "word": "resting.",
+   "start": 253.1,
+   "end": 253.54
+  },
+  {
+   "word": "And",
+   "start": 254.52,
+   "end": 254.84
+  },
+  {
+   "word": "the",
+   "start": 254.84,
+   "end": 255.0
+  },
+  {
+   "word": "lung",
+   "start": 255.0,
+   "end": 255.2
+  },
+  {
+   "word": "has",
+   "start": 255.2,
+   "end": 255.44
+  },
+  {
+   "word": "a",
+   "start": 255.44,
+   "end": 255.58
+  },
+  {
+   "word": "second",
+   "start": 255.58,
+   "end": 255.82
+  },
+  {
+   "word": "problem.",
+   "start": 255.82,
+   "end": 256.24
+  },
+  {
+   "word": "It",
+   "start": 256.72,
+   "end": 256.86
+  },
+  {
+   "word": "breathes",
+   "start": 256.86,
+   "end": 257.24
+  },
+  {
+   "word": "in",
+   "start": 257.24,
+   "end": 257.42
+  },
+  {
+   "word": "and",
+   "start": 257.42,
+   "end": 257.58
+  },
+  {
+   "word": "out",
+   "start": 257.58,
+   "end": 257.8
+  },
+  {
+   "word": "through",
+   "start": 257.8,
+   "end": 258.0
+  },
+  {
+   "word": "the",
+   "start": 258.0,
+   "end": 258.16
+  },
+  {
+   "word": "same",
+   "start": 258.16,
+   "end": 258.32
+  },
+  {
+   "word": "pipes.",
+   "start": 258.32,
+   "end": 258.6
+  },
+  {
+   "word": "A",
+   "start": 259.36,
+   "end": 259.58
+  },
+  {
+   "word": "textbook",
+   "start": 259.58,
+   "end": 259.92
+  },
+  {
+   "word": "puts",
+   "start": 259.92,
+   "end": 260.24
+  },
+  {
+   "word": "the",
+   "start": 260.24,
+   "end": 260.46
+  },
+  {
+   "word": "anatomical",
+   "start": 260.46,
+   "end": 261.02
+  },
+  {
+   "word": "dead",
+   "start": 261.02,
+   "end": 261.38
+  },
+  {
+   "word": "space",
+   "start": 261.38,
+   "end": 261.68
+  },
+  {
+   "word": "at",
+   "start": 261.68,
+   "end": 261.96
+  },
+  {
+   "word": "about",
+   "start": 261.96,
+   "end": 262.16
+  },
+  {
+   "word": "a",
+   "start": 262.16,
+   "end": 262.484
+  },
+  {
+   "word": "hundred",
+   "start": 262.484,
+   "end": 262.808
+  },
+  {
+   "word": "and",
+   "start": 262.808,
+   "end": 263.132
+  },
+  {
+   "word": "fifty",
+   "start": 263.132,
+   "end": 263.456
+  },
+  {
+   "word": "millilitres,",
+   "start": 263.456,
+   "end": 263.78
+  },
+  {
+   "word": "out",
+   "start": 263.78,
+   "end": 263.94
+  },
+  {
+   "word": "of",
+   "start": 263.94,
+   "end": 264.04
+  },
+  {
+   "word": "a",
+   "start": 264.04,
+   "end": 264.16
+  },
+  {
+   "word": "resting",
+   "start": 264.16,
+   "end": 264.48
+  },
+  {
+   "word": "breath",
+   "start": 264.48,
+   "end": 264.74
+  },
+  {
+   "word": "of",
+   "start": 264.74,
+   "end": 264.96
+  },
+  {
+   "word": "five",
+   "start": 264.96,
+   "end": 265.46
+  },
+  {
+   "word": "hundred.",
+   "start": 265.46,
+   "end": 265.96
+  },
+  {
+   "word": "That",
+   "start": 265.96,
+   "end": 266.48
+  },
+  {
+   "word": "is",
+   "start": 266.48,
+   "end": 266.6
+  },
+  {
+   "word": "the",
+   "start": 266.6,
+   "end": 266.76
+  },
+  {
+   "word": "volume",
+   "start": 266.76,
+   "end": 267.06
+  },
+  {
+   "word": "of",
+   "start": 267.06,
+   "end": 267.24
+  },
+  {
+   "word": "the",
+   "start": 267.24,
+   "end": 267.36
+  },
+  {
+   "word": "airways",
+   "start": 267.36,
+   "end": 267.82
+  },
+  {
+   "word": "themselves.",
+   "start": 267.82,
+   "end": 268.3
+  },
+  {
+   "word": "Whatever",
+   "start": 269.04,
+   "end": 269.26
+  },
+  {
+   "word": "sits",
+   "start": 269.26,
+   "end": 269.54
+  },
+  {
+   "word": "there",
+   "start": 269.54,
+   "end": 269.8
+  },
+  {
+   "word": "at",
+   "start": 269.8,
+   "end": 269.94
+  },
+  {
+   "word": "the",
+   "start": 269.94,
+   "end": 270.04
+  },
+  {
+   "word": "end",
+   "start": 270.04,
+   "end": 270.16
+  },
+  {
+   "word": "of",
+   "start": 270.16,
+   "end": 270.26
+  },
+  {
+   "word": "an",
+   "start": 270.26,
+   "end": 270.36
+  },
+  {
+   "word": "outbreath",
+   "start": 270.36,
+   "end": 270.72
+  },
+  {
+   "word": "is",
+   "start": 270.72,
+   "end": 270.96
+  },
+  {
+   "word": "stale.",
+   "start": 270.96,
+   "end": 271.26
+  },
+  {
+   "word": "The",
+   "start": 271.86,
+   "end": 271.98
+  },
+  {
+   "word": "next",
+   "start": 271.98,
+   "end": 272.18
+  },
+  {
+   "word": "breath",
+   "start": 272.18,
+   "end": 272.42
+  },
+  {
+   "word": "mixes",
+   "start": 272.42,
+   "end": 272.74
+  },
+  {
+   "word": "with",
+   "start": 272.74,
+   "end": 273.0
+  },
+  {
+   "word": "it.",
+   "start": 273.0,
+   "end": 273.24
+  },
+  {
+   "word": "In",
+   "start": 273.66,
+   "end": 273.86
+  },
+  {
+   "word": "air,",
+   "start": 273.86,
+   "end": 274.14
+  },
+  {
+   "word": "that",
+   "start": 274.26,
+   "end": 274.44
+  },
+  {
+   "word": "costs",
+   "start": 274.44,
+   "end": 274.7
+  },
+  {
+   "word": "a",
+   "start": 274.7,
+   "end": 274.92
+  },
+  {
+   "word": "little.",
+   "start": 274.92,
+   "end": 275.04
+  },
+  {
+   "word": "The",
+   "start": 275.56,
+   "end": 275.76
+  },
+  {
+   "word": "textbook",
+   "start": 275.76,
+   "end": 276.06
+  },
+  {
+   "word": "says",
+   "start": 276.06,
+   "end": 276.34
+  },
+  {
+   "word": "it",
+   "start": 276.34,
+   "end": 276.54
+  },
+  {
+   "word": "leaves",
+   "start": 276.54,
+   "end": 276.74
+  },
+  {
+   "word": "the",
+   "start": 276.74,
+   "end": 276.92
+  },
+  {
+   "word": "oxygen",
+   "start": 276.92,
+   "end": 277.3
+  },
+  {
+   "word": "pressure",
+   "start": 277.3,
+   "end": 277.68
+  },
+  {
+   "word": "in",
+   "start": 277.68,
+   "end": 277.88
+  },
+  {
+   "word": "the",
+   "start": 277.88,
+   "end": 278.0
+  },
+  {
+   "word": "lung",
+   "start": 278.0,
+   "end": 278.2
+  },
+  {
+   "word": "lower",
+   "start": 278.2,
+   "end": 278.72
+  },
+  {
+   "word": "than",
+   "start": 278.72,
+   "end": 279.02
+  },
+  {
+   "word": "in",
+   "start": 279.02,
+   "end": 279.14
+  },
+  {
+   "word": "the",
+   "start": 279.14,
+   "end": 279.24
+  },
+  {
+   "word": "air",
+   "start": 279.24,
+   "end": 279.4
+  },
+  {
+   "word": "outside.",
+   "start": 279.4,
+   "end": 279.84
+  },
+  {
+   "word": "In",
+   "start": 280.6,
+   "end": 280.72
+  },
+  {
+   "word": "water,",
+   "start": 280.72,
+   "end": 281.04
+  },
+  {
+   "word": "count",
+   "start": 281.38,
+   "end": 281.6
+  },
+  {
+   "word": "it.",
+   "start": 281.6,
+   "end": 281.98
+  },
+  {
+   "word": "Five",
+   "start": 281.98,
+   "end": 282.473
+  },
+  {
+   "word": "hundred",
+   "start": 282.473,
+   "end": 282.967
+  },
+  {
+   "word": "millilitres",
+   "start": 282.967,
+   "end": 283.46
+  },
+  {
+   "word": "in.",
+   "start": 283.46,
+   "end": 283.68
+  },
+  {
+   "word": "A",
+   "start": 283.68,
+   "end": 283.93
+  },
+  {
+   "word": "hundred",
+   "start": 283.93,
+   "end": 284.18
+  },
+  {
+   "word": "and",
+   "start": 284.18,
+   "end": 284.43
+  },
+  {
+   "word": "fifty",
+   "start": 284.43,
+   "end": 284.68
+  },
+  {
+   "word": "of",
+   "start": 284.68,
+   "end": 284.96
+  },
+  {
+   "word": "it",
+   "start": 284.96,
+   "end": 285.1
+  },
+  {
+   "word": "stale.",
+   "start": 285.1,
+   "end": 285.34
+  },
+  {
+   "word": "Three",
+   "start": 285.34,
+   "end": 285.58
+  },
+  {
+   "word": "hundred",
+   "start": 285.58,
+   "end": 285.82
+  },
+  {
+   "word": "and",
+   "start": 285.82,
+   "end": 286.06
+  },
+  {
+   "word": "fifty",
+   "start": 286.06,
+   "end": 286.3
+  },
+  {
+   "word": "reach",
+   "start": 286.3,
+   "end": 286.9
+  },
+  {
+   "word": "the",
+   "start": 286.9,
+   "end": 287.08
+  },
+  {
+   "word": "air",
+   "start": 287.08,
+   "end": 287.22
+  },
+  {
+   "word": "sacs.",
+   "start": 287.22,
+   "end": 287.72
+  },
+  {
+   "word": "To",
+   "start": 288.08,
+   "end": 288.28
+  },
+  {
+   "word": "move",
+   "start": 288.28,
+   "end": 288.5
+  },
+  {
+   "word": "a",
+   "start": 288.5,
+   "end": 288.804
+  },
+  {
+   "word": "hundred",
+   "start": 288.804,
+   "end": 289.108
+  },
+  {
+   "word": "and",
+   "start": 289.108,
+   "end": 289.412
+  },
+  {
+   "word": "seventy-two",
+   "start": 289.412,
+   "end": 289.716
+  },
+  {
+   "word": "litres",
+   "start": 289.716,
+   "end": 290.02
+  },
+  {
+   "word": "of",
+   "start": 290.02,
+   "end": 290.18
+  },
+  {
+   "word": "fresh",
+   "start": 290.18,
+   "end": 290.34
+  },
+  {
+   "word": "water",
+   "start": 290.34,
+   "end": 290.64
+  },
+  {
+   "word": "through",
+   "start": 290.64,
+   "end": 290.9
+  },
+  {
+   "word": "them,",
+   "start": 290.9,
+   "end": 291.2
+  },
+  {
+   "word": "that",
+   "start": 291.32,
+   "end": 291.62
+  },
+  {
+   "word": "is",
+   "start": 291.62,
+   "end": 291.8
+  },
+  {
+   "word": "nearly",
+   "start": 291.8,
+   "end": 292.1
+  },
+  {
+   "word": "five",
+   "start": 292.1,
+   "end": 292.43
+  },
+  {
+   "word": "hundred",
+   "start": 292.43,
+   "end": 292.76
+  },
+  {
+   "word": "breaths",
+   "start": 292.76,
+   "end": 293.14
+  },
+  {
+   "word": "a",
+   "start": 293.14,
+   "end": 293.48
+  },
+  {
+   "word": "minute.",
+   "start": 293.48,
+   "end": 293.68
+  },
+  {
+   "word": "Or",
+   "start": 294.8,
+   "end": 295.1
+  },
+  {
+   "word": "take",
+   "start": 295.1,
+   "end": 295.34
+  },
+  {
+   "word": "the",
+   "start": 295.34,
+   "end": 295.54
+  },
+  {
+   "word": "biggest",
+   "start": 295.54,
+   "end": 295.78
+  },
+  {
+   "word": "breath",
+   "start": 295.78,
+   "end": 296.0
+  },
+  {
+   "word": "she",
+   "start": 296.0,
+   "end": 296.28
+  },
+  {
+   "word": "has.",
+   "start": 296.28,
+   "end": 296.62
+  },
+  {
+   "word": "Total",
+   "start": 297.16,
+   "end": 297.24
+  },
+  {
+   "word": "lung",
+   "start": 297.24,
+   "end": 297.46
+  },
+  {
+   "word": "capacity",
+   "start": 297.46,
+   "end": 297.92
+  },
+  {
+   "word": "is",
+   "start": 297.92,
+   "end": 298.18
+  },
+  {
+   "word": "about",
+   "start": 298.18,
+   "end": 298.44
+  },
+  {
+   "word": "six",
+   "start": 298.44,
+   "end": 299.01
+  },
+  {
+   "word": "litres,",
+   "start": 299.01,
+   "end": 299.58
+  },
+  {
+   "word": "and",
+   "start": 299.58,
+   "end": 299.7
+  },
+  {
+   "word": "the",
+   "start": 299.7,
+   "end": 299.8
+  },
+  {
+   "word": "usual",
+   "start": 299.8,
+   "end": 300.06
+  },
+  {
+   "word": "vital",
+   "start": 300.06,
+   "end": 300.38
+  },
+  {
+   "word": "capacity",
+   "start": 300.38,
+   "end": 300.94
+  },
+  {
+   "word": "is",
+   "start": 300.94,
+   "end": 301.28
+  },
+  {
+   "word": "four",
+   "start": 301.28,
+   "end": 301.567
+  },
+  {
+   "word": "point",
+   "start": 301.567,
+   "end": 301.853
+  },
+  {
+   "word": "six",
+   "start": 301.853,
+   "end": 302.14
+  },
+  {
+   "word": "to",
+   "start": 302.14,
+   "end": 302.42
+  },
+  {
+   "word": "four",
+   "start": 302.42,
+   "end": 302.747
+  },
+  {
+   "word": "point",
+   "start": 302.747,
+   "end": 303.073
+  },
+  {
+   "word": "eight,",
+   "start": 303.073,
+   "end": 303.4
+  },
+  {
+   "word": "depending",
+   "start": 303.4,
+   "end": 303.6
+  },
+  {
+   "word": "on",
+   "start": 303.6,
+   "end": 303.8
+  },
+  {
+   "word": "the",
+   "start": 303.8,
+   "end": 303.88
+  },
+  {
+   "word": "source.",
+   "start": 303.88,
+   "end": 304.1
+  },
+  {
+   "word": "A",
+   "start": 304.1,
+   "end": 305.0
+  },
+  {
+   "word": "full",
+   "start": 305.0,
+   "end": 305.18
+  },
+  {
+   "word": "breath",
+   "start": 305.18,
+   "end": 305.42
+  },
+  {
+   "word": "every",
+   "start": 305.42,
+   "end": 305.84
+  },
+  {
+   "word": "time.",
+   "start": 305.84,
+   "end": 306.18
+  },
+  {
+   "word": "Nearly",
+   "start": 306.74,
+   "end": 306.92
+  },
+  {
+   "word": "forty",
+   "start": 306.92,
+   "end": 307.34
+  },
+  {
+   "word": "a",
+   "start": 307.34,
+   "end": 307.54
+  },
+  {
+   "word": "minute.",
+   "start": 307.54,
+   "end": 307.76
+  },
+  {
+   "word": "Each",
+   "start": 308.34,
+   "end": 308.52
+  },
+  {
+   "word": "one",
+   "start": 308.52,
+   "end": 308.8
+  },
+  {
+   "word": "about",
+   "start": 308.8,
+   "end": 309.08
+  },
+  {
+   "word": "four",
+   "start": 309.08,
+   "end": 309.36
+  },
+  {
+   "word": "and",
+   "start": 309.36,
+   "end": 309.48
+  },
+  {
+   "word": "a",
+   "start": 309.48,
+   "end": 309.54
+  },
+  {
+   "word": "half",
+   "start": 309.54,
+   "end": 309.7
+  },
+  {
+   "word": "kilograms",
+   "start": 309.7,
+   "end": 310.06
+  },
+  {
+   "word": "of",
+   "start": 310.06,
+   "end": 310.32
+  },
+  {
+   "word": "lake.",
+   "start": 310.32,
+   "end": 310.54
+  },
+  {
+   "word": "Our",
+   "start": 310.54,
+   "end": 311.44
+  },
+  {
+   "word": "arithmetic.",
+   "start": 311.44,
+   "end": 311.72
+  },
+  {
+   "word": "Neither",
+   "start": 312.36,
+   "end": 312.44
+  },
+  {
+   "word": "is",
+   "start": 312.44,
+   "end": 312.74
+  },
+  {
+   "word": "a",
+   "start": 312.74,
+   "end": 312.86
+  },
+  {
+   "word": "pace",
+   "start": 312.86,
+   "end": 313.04
+  },
+  {
+   "word": "a",
+   "start": 313.04,
+   "end": 313.24
+  },
+  {
+   "word": "person",
+   "start": 313.24,
+   "end": 313.46
+  },
+  {
+   "word": "holds.",
+   "start": 313.46,
+   "end": 313.8
+  },
+  {
+   "word": "No",
+   "start": 314.34,
+   "end": 314.54
+  },
+  {
+   "word": "source",
+   "start": 314.54,
+   "end": 314.76
+  },
+  {
+   "word": "we",
+   "start": 314.76,
+   "end": 314.96
+  },
+  {
+   "word": "read",
+   "start": 314.96,
+   "end": 315.16
+  },
+  {
+   "word": "says",
+   "start": 315.16,
+   "end": 315.38
+  },
+  {
+   "word": "anyone",
+   "start": 315.38,
+   "end": 315.66
+  },
+  {
+   "word": "has.",
+   "start": 315.66,
+   "end": 316.0
+  },
+  {
+   "word": "All",
+   "start": 316.88,
+   "end": 317.44
+  },
+  {
+   "word": "this",
+   "start": 317.44,
+   "end": 317.64
+  },
+  {
+   "word": "is",
+   "start": 317.64,
+   "end": 317.82
+  },
+  {
+   "word": "hypothetical.",
+   "start": 317.82,
+   "end": 318.26
+  },
+  {
+   "word": "Here",
+   "start": 318.92,
+   "end": 319.1
+  },
+  {
+   "word": "is",
+   "start": 319.1,
+   "end": 319.22
+  },
+  {
+   "word": "what",
+   "start": 319.22,
+   "end": 319.34
+  },
+  {
+   "word": "happens",
+   "start": 319.34,
+   "end": 319.64
+  },
+  {
+   "word": "in",
+   "start": 319.64,
+   "end": 319.84
+  },
+  {
+   "word": "the",
+   "start": 319.84,
+   "end": 319.94
+  },
+  {
+   "word": "real",
+   "start": 319.94,
+   "end": 320.1
+  },
+  {
+   "word": "world.",
+   "start": 320.1,
+   "end": 320.4
+  },
+  {
+   "word": "When",
+   "start": 320.8,
+   "end": 320.92
+  },
+  {
+   "word": "someone",
+   "start": 320.92,
+   "end": 321.24
+  },
+  {
+   "word": "inhales",
+   "start": 321.24,
+   "end": 321.6
+  },
+  {
+   "word": "water,",
+   "start": 321.6,
+   "end": 322.0
+  },
+  {
+   "word": "a",
+   "start": 322.6,
+   "end": 322.78
+  },
+  {
+   "word": "clinical",
+   "start": 322.78,
+   "end": 323.02
+  },
+  {
+   "word": "update",
+   "start": 323.02,
+   "end": 323.4
+  },
+  {
+   "word": "on",
+   "start": 323.4,
+   "end": 323.58
+  },
+  {
+   "word": "drowning",
+   "start": 323.58,
+   "end": 323.92
+  },
+  {
+   "word": "describes",
+   "start": 323.92,
+   "end": 324.36
+  },
+  {
+   "word": "two",
+   "start": 324.36,
+   "end": 324.64
+  },
+  {
+   "word": "paths.",
+   "start": 324.64,
+   "end": 325.0
+  },
+  {
+   "word": "In",
+   "start": 325.62,
+   "end": 325.8
+  },
+  {
+   "word": "roughly",
+   "start": 325.8,
+   "end": 326.1
+  },
+  {
+   "word": "ten",
+   "start": 326.1,
+   "end": 326.42
+  },
+  {
+   "word": "to",
+   "start": 326.42,
+   "end": 326.64
+  },
+  {
+   "word": "twenty",
+   "start": 326.64,
+   "end": 326.88
+  },
+  {
+   "word": "percent",
+   "start": 326.88,
+   "end": 327.12
+  },
+  {
+   "word": "of",
+   "start": 327.12,
+   "end": 327.26
+  },
+  {
+   "word": "victims,",
+   "start": 327.26,
+   "end": 327.56
+  },
+  {
+   "word": "the",
+   "start": 327.94,
+   "end": 328.06
+  },
+  {
+   "word": "throat",
+   "start": 328.06,
+   "end": 328.24
+  },
+  {
+   "word": "clamps",
+   "start": 328.24,
+   "end": 328.6
+  },
+  {
+   "word": "shut.",
+   "start": 328.6,
+   "end": 328.9
+  },
+  {
+   "word": "Laryngospasm.",
+   "start": 329.42,
+   "end": 329.96
+  },
+  {
+   "word": "The",
+   "start": 330.54,
+   "end": 330.72
+  },
+  {
+   "word": "airway",
+   "start": 330.72,
+   "end": 330.96
+  },
+  {
+   "word": "closes",
+   "start": 330.96,
+   "end": 331.26
+  },
+  {
+   "word": "and",
+   "start": 331.26,
+   "end": 331.72
+  },
+  {
+   "word": "the",
+   "start": 331.72,
+   "end": 331.86
+  },
+  {
+   "word": "person",
+   "start": 331.86,
+   "end": 332.14
+  },
+  {
+   "word": "asphyxiates,",
+   "start": 332.14,
+   "end": 332.7
+  },
+  {
+   "word": "with",
+   "start": 332.7,
+   "end": 333.36
+  },
+  {
+   "word": "little",
+   "start": 333.36,
+   "end": 333.64
+  },
+  {
+   "word": "water",
+   "start": 333.64,
+   "end": 333.92
+  },
+  {
+   "word": "reaching",
+   "start": 333.92,
+   "end": 334.2
+  },
+  {
+   "word": "the",
+   "start": 334.2,
+   "end": 334.38
+  },
+  {
+   "word": "lungs.",
+   "start": 334.38,
+   "end": 334.6
+  },
+  {
+   "word": "Another",
+   "start": 335.58,
+   "end": 335.58
+  },
+  {
+   "word": "source",
+   "start": 335.58,
+   "end": 335.9
+  },
+  {
+   "word": "puts",
+   "start": 335.9,
+   "end": 336.12
+  },
+  {
+   "word": "it",
+   "start": 336.12,
+   "end": 336.26
+  },
+  {
+   "word": "lower,",
+   "start": 336.26,
+   "end": 336.48
+  },
+  {
+   "word": "under",
+   "start": 337.02,
+   "end": 337.14
+  },
+  {
+   "word": "ten",
+   "start": 337.14,
+   "end": 337.4
+  },
+  {
+   "word": "to",
+   "start": 337.4,
+   "end": 337.58
+  },
+  {
+   "word": "fifteen.",
+   "start": 337.58,
+   "end": 338.88
+  },
+  {
+   "word": "In",
+   "start": 338.88,
+   "end": 339.0
+  },
+  {
+   "word": "most,",
+   "start": 339.0,
+   "end": 339.26
+  },
+  {
+   "word": "the",
+   "start": 339.7,
+   "end": 339.84
+  },
+  {
+   "word": "throat",
+   "start": 339.84,
+   "end": 340.04
+  },
+  {
+   "word": "relaxes",
+   "start": 340.04,
+   "end": 340.62
+  },
+  {
+   "word": "and",
+   "start": 340.62,
+   "end": 341.02
+  },
+  {
+   "word": "water",
+   "start": 341.02,
+   "end": 341.28
+  },
+  {
+   "word": "goes",
+   "start": 341.28,
+   "end": 341.5
+  },
+  {
+   "word": "in.",
+   "start": 341.5,
+   "end": 341.82
+  },
+  {
+   "word": "Victims",
+   "start": 342.62,
+   "end": 342.62
+  },
+  {
+   "word": "typically",
+   "start": 342.62,
+   "end": 343.1
+  },
+  {
+   "word": "aspirate",
+   "start": 343.1,
+   "end": 343.72
+  },
+  {
+   "word": "about",
+   "start": 343.72,
+   "end": 343.96
+  },
+  {
+   "word": "two",
+   "start": 343.96,
+   "end": 344.34
+  },
+  {
+   "word": "to",
+   "start": 344.34,
+   "end": 344.42
+  },
+  {
+   "word": "four",
+   "start": 344.42,
+   "end": 344.87
+  },
+  {
+   "word": "millilitres",
+   "start": 344.87,
+   "end": 345.32
+  },
+  {
+   "word": "per",
+   "start": 345.32,
+   "end": 345.6
+  },
+  {
+   "word": "kilogram,",
+   "start": 345.6,
+   "end": 346.08
+  },
+  {
+   "word": "according",
+   "start": 346.64,
+   "end": 346.86
+  },
+  {
+   "word": "to",
+   "start": 346.86,
+   "end": 347.08
+  },
+  {
+   "word": "the",
+   "start": 347.08,
+   "end": 347.18
+  },
+  {
+   "word": "same",
+   "start": 347.18,
+   "end": 347.32
+  },
+  {
+   "word": "reviews.",
+   "start": 347.32,
+   "end": 347.64
+  },
+  {
+   "word": "A",
+   "start": 348.42,
+   "end": 348.56
+  },
+  {
+   "word": "small",
+   "start": 348.56,
+   "end": 348.84
+  },
+  {
+   "word": "volume.",
+   "start": 348.84,
+   "end": 349.22
+  },
+  {
+   "word": "But",
+   "start": 349.8,
+   "end": 350.0
+  },
+  {
+   "word": "it",
+   "start": 350.0,
+   "end": 350.1
+  },
+  {
+   "word": "does",
+   "start": 350.1,
+   "end": 350.28
+  },
+  {
+   "word": "damage.",
+   "start": 350.28,
+   "end": 350.62
+  },
+  {
+   "word": "The",
+   "start": 351.4,
+   "end": 351.5
+  },
+  {
+   "word": "lungs",
+   "start": 351.5,
+   "end": 351.78
+  },
+  {
+   "word": "line",
+   "start": 351.78,
+   "end": 352.12
+  },
+  {
+   "word": "their",
+   "start": 352.12,
+   "end": 352.34
+  },
+  {
+   "word": "air",
+   "start": 352.34,
+   "end": 352.52
+  },
+  {
+   "word": "sacs",
+   "start": 352.52,
+   "end": 352.84
+  },
+  {
+   "word": "with",
+   "start": 352.84,
+   "end": 352.92
+  },
+  {
+   "word": "a",
+   "start": 352.92,
+   "end": 353.08
+  },
+  {
+   "word": "thin",
+   "start": 353.08,
+   "end": 353.26
+  },
+  {
+   "word": "film",
+   "start": 353.26,
+   "end": 353.6
+  },
+  {
+   "word": "called",
+   "start": 353.6,
+   "end": 353.9
+  },
+  {
+   "word": "surfactant.",
+   "start": 353.9,
+   "end": 354.5
+  },
+  {
+   "word": "It",
+   "start": 354.94,
+   "end": 355.1
+  },
+  {
+   "word": "keeps",
+   "start": 355.1,
+   "end": 355.26
+  },
+  {
+   "word": "them",
+   "start": 355.26,
+   "end": 355.44
+  },
+  {
+   "word": "open.",
+   "start": 355.44,
+   "end": 355.7
+  },
+  {
+   "word": "Water",
+   "start": 356.58,
+   "end": 356.58
+  },
+  {
+   "word": "disrupts",
+   "start": 356.58,
+   "end": 357.2
+  },
+  {
+   "word": "it.",
+   "start": 357.2,
+   "end": 357.4
+  },
+  {
+   "word": "The",
+   "start": 357.72,
+   "end": 357.86
+  },
+  {
+   "word": "sacs",
+   "start": 357.86,
+   "end": 358.2
+  },
+  {
+   "word": "collapse.",
+   "start": 358.2,
+   "end": 358.5
+  },
+  {
+   "word": "Oxygen",
+   "start": 359.34,
+   "end": 359.74
+  },
+  {
+   "word": "can",
+   "start": 359.74,
+   "end": 359.9
+  },
+  {
+   "word": "no",
+   "start": 359.9,
+   "end": 360.08
+  },
+  {
+   "word": "longer",
+   "start": 360.08,
+   "end": 360.34
+  },
+  {
+   "word": "cross.",
+   "start": 360.34,
+   "end": 360.64
+  },
+  {
+   "word": "Older",
+   "start": 361.24,
+   "end": 361.8
+  },
+  {
+   "word": "teaching",
+   "start": 361.8,
+   "end": 362.06
+  },
+  {
+   "word": "said",
+   "start": 362.06,
+   "end": 362.36
+  },
+  {
+   "word": "fresh",
+   "start": 362.36,
+   "end": 362.64
+  },
+  {
+   "word": "water",
+   "start": 362.64,
+   "end": 363.0
+  },
+  {
+   "word": "and",
+   "start": 363.0,
+   "end": 363.24
+  },
+  {
+   "word": "salt",
+   "start": 363.24,
+   "end": 363.46
+  },
+  {
+   "word": "water",
+   "start": 363.46,
+   "end": 363.74
+  },
+  {
+   "word": "injure",
+   "start": 363.74,
+   "end": 364.08
+  },
+  {
+   "word": "the",
+   "start": 364.08,
+   "end": 364.28
+  },
+  {
+   "word": "lungs",
+   "start": 364.28,
+   "end": 364.44
+  },
+  {
+   "word": "differently.",
+   "start": 364.44,
+   "end": 364.94
+  },
+  {
+   "word": "Current",
+   "start": 365.68,
+   "end": 365.78
+  },
+  {
+   "word": "clinical",
+   "start": 365.78,
+   "end": 366.0
+  },
+  {
+   "word": "sources",
+   "start": 366.0,
+   "end": 366.4
+  },
+  {
+   "word": "say",
+   "start": 366.4,
+   "end": 366.7
+  },
+  {
+   "word": "the",
+   "start": 366.7,
+   "end": 366.86
+  },
+  {
+   "word": "practical",
+   "start": 366.86,
+   "end": 367.2
+  },
+  {
+   "word": "difference",
+   "start": 367.2,
+   "end": 367.52
+  },
+  {
+   "word": "is",
+   "start": 367.52,
+   "end": 367.8
+  },
+  {
+   "word": "minor.",
+   "start": 367.8,
+   "end": 367.96
+  },
+  {
+   "word": "The",
+   "start": 368.66,
+   "end": 368.8
+  },
+  {
+   "word": "result",
+   "start": 368.8,
+   "end": 369.02
+  },
+  {
+   "word": "is",
+   "start": 369.02,
+   "end": 369.34
+  },
+  {
+   "word": "the",
+   "start": 369.34,
+   "end": 369.5
+  },
+  {
+   "word": "same",
+   "start": 369.5,
+   "end": 369.7
+  },
+  {
+   "word": "chain.",
+   "start": 369.7,
+   "end": 370.04
+  },
+  {
+   "word": "Collapse,",
+   "start": 370.82,
+   "end": 371.1
+  },
+  {
+   "word": "falling",
+   "start": 371.54,
+   "end": 371.86
+  },
+  {
+   "word": "oxygen,",
+   "start": 371.86,
+   "end": 372.34
+  },
+  {
+   "word": "rising",
+   "start": 372.84,
+   "end": 373.16
+  },
+  {
+   "word": "carbon",
+   "start": 373.16,
+   "end": 373.48
+  },
+  {
+   "word": "dioxide,",
+   "start": 373.48,
+   "end": 373.94
+  },
+  {
+   "word": "and",
+   "start": 374.34,
+   "end": 374.6
+  },
+  {
+   "word": "then",
+   "start": 374.6,
+   "end": 374.74
+  },
+  {
+   "word": "the",
+   "start": 374.74,
+   "end": 374.9
+  },
+  {
+   "word": "heart.",
+   "start": 374.9,
+   "end": 375.06
+  },
+  {
+   "word": "So",
+   "start": 376.06,
+   "end": 376.24
+  },
+  {
+   "word": "our",
+   "start": 376.24,
+   "end": 376.44
+  },
+  {
+   "word": "hero's",
+   "start": 376.44,
+   "end": 376.88
+  },
+  {
+   "word": "lungs",
+   "start": 376.88,
+   "end": 377.08
+  },
+  {
+   "word": "would",
+   "start": 377.08,
+   "end": 377.32
+  },
+  {
+   "word": "need",
+   "start": 377.32,
+   "end": 377.52
+  },
+  {
+   "word": "two",
+   "start": 377.52,
+   "end": 377.8
+  },
+  {
+   "word": "things.",
+   "start": 377.8,
+   "end": 378.12
+  },
+  {
+   "word": "A",
+   "start": 378.82,
+   "end": 378.88
+  },
+  {
+   "word": "way",
+   "start": 378.88,
+   "end": 379.0
+  },
+  {
+   "word": "to",
+   "start": 379.0,
+   "end": 379.2
+  },
+  {
+   "word": "avoid",
+   "start": 379.2,
+   "end": 379.48
+  },
+  {
+   "word": "the",
+   "start": 379.48,
+   "end": 379.64
+  },
+  {
+   "word": "damage.",
+   "start": 379.64,
+   "end": 379.94
+  },
+  {
+   "word": "And",
+   "start": 380.52,
+   "end": 380.66
+  },
+  {
+   "word": "a",
+   "start": 380.66,
+   "end": 380.76
+  },
+  {
+   "word": "way",
+   "start": 380.76,
+   "end": 380.88
+  },
+  {
+   "word": "to",
+   "start": 380.88,
+   "end": 381.04
+  },
+  {
+   "word": "move",
+   "start": 381.04,
+   "end": 381.24
+  },
+  {
+   "word": "far",
+   "start": 381.24,
+   "end": 381.56
+  },
+  {
+   "word": "more",
+   "start": 381.56,
+   "end": 381.8
+  },
+  {
+   "word": "water",
+   "start": 381.8,
+   "end": 382.08
+  },
+  {
+   "word": "than",
+   "start": 382.08,
+   "end": 382.28
+  },
+  {
+   "word": "any",
+   "start": 382.28,
+   "end": 382.52
+  },
+  {
+   "word": "lung",
+   "start": 382.52,
+   "end": 382.74
+  },
+  {
+   "word": "has",
+   "start": 382.74,
+   "end": 382.92
+  },
+  {
+   "word": "moved.",
+   "start": 382.92,
+   "end": 383.22
+  },
+  {
+   "word": "Remember",
+   "start": 383.78,
+   "end": 384.0
+  },
+  {
+   "word": "the",
+   "start": 384.0,
+   "end": 384.18
+  },
+  {
+   "word": "second.",
+   "start": 384.18,
+   "end": 384.36
+  },
+  {
+   "word": "Fish",
+   "start": 385.8,
+   "end": 386.08
+  },
+  {
+   "word": "do",
+   "start": 386.08,
+   "end": 386.4
+  },
+  {
+   "word": "it.",
+   "start": 386.4,
+   "end": 386.64
+  },
+  {
+   "word": "Every",
+   "start": 387.06,
+   "end": 387.3
+  },
+  {
+   "word": "minute.",
+   "start": 387.3,
+   "end": 387.54
+  },
+  {
+   "word": "How?",
+   "start": 388.22,
+   "end": 388.4
+  },
+  {
+   "word": "Two",
+   "start": 389.12,
+   "end": 389.2
+  },
+  {
+   "word": "tricks.",
+   "start": 389.2,
+   "end": 389.48
+  },
+  {
+   "word": "One.",
+   "start": 389.48,
+   "end": 390.9
+  },
+  {
+   "word": "Their",
+   "start": 390.9,
+   "end": 391.0
+  },
+  {
+   "word": "gills",
+   "start": 391.0,
+   "end": 391.26
+  },
+  {
+   "word": "run",
+   "start": 391.26,
+   "end": 391.5
+  },
+  {
+   "word": "blood",
+   "start": 391.5,
+   "end": 391.78
+  },
+  {
+   "word": "and",
+   "start": 391.78,
+   "end": 392.02
+  },
+  {
+   "word": "water",
+   "start": 392.02,
+   "end": 392.28
+  },
+  {
+   "word": "in",
+   "start": 392.28,
+   "end": 392.5
+  },
+  {
+   "word": "opposite",
+   "start": 392.5,
+   "end": 392.82
+  },
+  {
+   "word": "directions.",
+   "start": 392.82,
+   "end": 393.38
+  },
+  {
+   "word": "The",
+   "start": 393.94,
+   "end": 394.0
+  },
+  {
+   "word": "most",
+   "start": 394.0,
+   "end": 394.16
+  },
+  {
+   "word": "oxygen-rich",
+   "start": 394.16,
+   "end": 394.82
+  },
+  {
+   "word": "blood",
+   "start": 394.82,
+   "end": 395.16
+  },
+  {
+   "word": "meets",
+   "start": 395.16,
+   "end": 395.48
+  },
+  {
+   "word": "the",
+   "start": 395.48,
+   "end": 395.66
+  },
+  {
+   "word": "most",
+   "start": 395.66,
+   "end": 395.82
+  },
+  {
+   "word": "oxygen-rich",
+   "start": 395.82,
+   "end": 396.44
+  },
+  {
+   "word": "water.",
+   "start": 396.44,
+   "end": 396.8
+  },
+  {
+   "word": "The",
+   "start": 397.28,
+   "end": 397.44
+  },
+  {
+   "word": "least",
+   "start": 397.44,
+   "end": 397.66
+  },
+  {
+   "word": "meets",
+   "start": 397.66,
+   "end": 398.0
+  },
+  {
+   "word": "the",
+   "start": 398.0,
+   "end": 398.22
+  },
+  {
+   "word": "least.",
+   "start": 398.22,
+   "end": 398.44
+  },
+  {
+   "word": "Diffusion",
+   "start": 399.06,
+   "end": 399.36
+  },
+  {
+   "word": "keeps",
+   "start": 399.36,
+   "end": 399.56
+  },
+  {
+   "word": "working",
+   "start": 399.56,
+   "end": 399.92
+  },
+  {
+   "word": "along",
+   "start": 399.92,
+   "end": 400.24
+  },
+  {
+   "word": "the",
+   "start": 400.24,
+   "end": 400.4
+  },
+  {
+   "word": "whole",
+   "start": 400.4,
+   "end": 400.56
+  },
+  {
+   "word": "surface.",
+   "start": 400.56,
+   "end": 400.88
+  },
+  {
+   "word": "How",
+   "start": 401.68,
+   "end": 401.76
+  },
+  {
+   "word": "well",
+   "start": 401.76,
+   "end": 401.92
+  },
+  {
+   "word": "does",
+   "start": 401.92,
+   "end": 402.04
+  },
+  {
+   "word": "it",
+   "start": 402.04,
+   "end": 402.16
+  },
+  {
+   "word": "work?",
+   "start": 402.16,
+   "end": 402.32
+  },
+  {
+   "word": "Sources",
+   "start": 403.1,
+   "end": 403.1
+  },
+  {
+   "word": "differ.",
+   "start": 403.1,
+   "end": 403.42
+  },
+  {
+   "word": "A",
+   "start": 404.04,
+   "end": 404.12
+  },
+  {
+   "word": "textbook",
+   "start": 404.12,
+   "end": 404.38
+  },
+  {
+   "word": "says",
+   "start": 404.38,
+   "end": 404.64
+  },
+  {
+   "word": "up",
+   "start": 404.64,
+   "end": 404.86
+  },
+  {
+   "word": "to",
+   "start": 404.86,
+   "end": 405.0
+  },
+  {
+   "word": "eighty-five",
+   "start": 405.0,
+   "end": 405.36
+  },
+  {
+   "word": "percent",
+   "start": 405.36,
+   "end": 405.72
+  },
+  {
+   "word": "of",
+   "start": 405.72,
+   "end": 405.88
+  },
+  {
+   "word": "the",
+   "start": 405.88,
+   "end": 406.0
+  },
+  {
+   "word": "oxygen",
+   "start": 406.0,
+   "end": 406.32
+  },
+  {
+   "word": "in",
+   "start": 406.32,
+   "end": 406.52
+  },
+  {
+   "word": "the",
+   "start": 406.52,
+   "end": 406.6
+  },
+  {
+   "word": "water.",
+   "start": 406.6,
+   "end": 406.82
+  },
+  {
+   "word": "A",
+   "start": 407.3,
+   "end": 407.42
+  },
+  {
+   "word": "school",
+   "start": 407.42,
+   "end": 407.6
+  },
+  {
+   "word": "resource",
+   "start": 407.6,
+   "end": 407.92
+  },
+  {
+   "word": "says",
+   "start": 407.92,
+   "end": 408.16
+  },
+  {
+   "word": "about",
+   "start": 408.16,
+   "end": 408.36
+  },
+  {
+   "word": "eighty.",
+   "start": 408.36,
+   "end": 409.02
+  },
+  {
+   "word": "The",
+   "start": 409.02,
+   "end": 409.28
+  },
+  {
+   "word": "Natural",
+   "start": 409.28,
+   "end": 409.5
+  },
+  {
+   "word": "History",
+   "start": 409.5,
+   "end": 409.8
+  },
+  {
+   "word": "Museum",
+   "start": 409.8,
+   "end": 410.16
+  },
+  {
+   "word": "in",
+   "start": 410.16,
+   "end": 410.34
+  },
+  {
+   "word": "London",
+   "start": 410.34,
+   "end": 410.56
+  },
+  {
+   "word": "says",
+   "start": 410.56,
+   "end": 410.86
+  },
+  {
+   "word": "up",
+   "start": 410.86,
+   "end": 411.06
+  },
+  {
+   "word": "to",
+   "start": 411.06,
+   "end": 411.22
+  },
+  {
+   "word": "seventy.",
+   "start": 411.22,
+   "end": 412.1
+  },
+  {
+   "word": "An",
+   "start": 412.1,
+   "end": 412.26
+  },
+  {
+   "word": "animal-physiology",
+   "start": 412.26,
+   "end": 412.94
+  },
+  {
+   "word": "text",
+   "start": 412.94,
+   "end": 413.36
+  },
+  {
+   "word": "says",
+   "start": 413.36,
+   "end": 413.7
+  },
+  {
+   "word": "ninety",
+   "start": 413.7,
+   "end": 414.04
+  },
+  {
+   "word": "or",
+   "start": 414.04,
+   "end": 414.24
+  },
+  {
+   "word": "more",
+   "start": 414.24,
+   "end": 414.42
+  },
+  {
+   "word": "is",
+   "start": 414.42,
+   "end": 414.56
+  },
+  {
+   "word": "possible.",
+   "start": 414.56,
+   "end": 414.9
+  },
+  {
+   "word": "Take",
+   "start": 415.42,
+   "end": 415.54
+  },
+  {
+   "word": "eighty.",
+   "start": 415.54,
+   "end": 415.928
+  },
+  {
+   "word": "Two",
+   "start": 415.928,
+   "end": 416.316
+  },
+  {
+   "word": "hundred",
+   "start": 416.316,
+   "end": 416.704
+  },
+  {
+   "word": "and",
+   "start": 416.704,
+   "end": 417.092
+  },
+  {
+   "word": "fifty,",
+   "start": 417.092,
+   "end": 417.48
+  },
+  {
+   "word": "divided",
+   "start": 417.48,
+   "end": 418.0
+  },
+  {
+   "word": "by",
+   "start": 418.0,
+   "end": 418.28
+  },
+  {
+   "word": "five",
+   "start": 418.28,
+   "end": 418.547
+  },
+  {
+   "word": "point",
+   "start": 418.547,
+   "end": 418.813
+  },
+  {
+   "word": "eight,",
+   "start": 418.813,
+   "end": 419.08
+  },
+  {
+   "word": "divided",
+   "start": 419.08,
+   "end": 419.44
+  },
+  {
+   "word": "by",
+   "start": 419.44,
+   "end": 419.7
+  },
+  {
+   "word": "point",
+   "start": 419.7,
+   "end": 420.16
+  },
+  {
+   "word": "eight.",
+   "start": 420.16,
+   "end": 420.62
+  },
+  {
+   "word": "About",
+   "start": 420.62,
+   "end": 420.78
+  },
+  {
+   "word": "fifty-four",
+   "start": 420.78,
+   "end": 421.24
+  },
+  {
+   "word": "litres",
+   "start": 421.24,
+   "end": 421.7
+  },
+  {
+   "word": "a",
+   "start": 421.7,
+   "end": 421.82
+  },
+  {
+   "word": "minute.",
+   "start": 421.82,
+   "end": 421.98
+  },
+  {
+   "word": "Not",
+   "start": 422.46,
+   "end": 422.7
+  },
+  {
+   "word": "one",
+   "start": 422.7,
+   "end": 423.284
+  },
+  {
+   "word": "hundred",
+   "start": 423.284,
+   "end": 423.868
+  },
+  {
+   "word": "and",
+   "start": 423.868,
+   "end": 424.452
+  },
+  {
+   "word": "seventy-two.",
+   "start": 424.452,
+   "end": 425.036
+  },
+  {
+   "word": "Two.",
+   "start": 425.036,
+   "end": 425.62
+  },
+  {
+   "word": "The",
+   "start": 425.62,
+   "end": 425.84
+  },
+  {
+   "word": "water",
+   "start": 425.84,
+   "end": 426.04
+  },
+  {
+   "word": "flows",
+   "start": 426.04,
+   "end": 426.28
+  },
+  {
+   "word": "one",
+   "start": 426.28,
+   "end": 426.56
+  },
+  {
+   "word": "way.",
+   "start": 426.56,
+   "end": 426.84
+  },
+  {
+   "word": "It",
+   "start": 427.14,
+   "end": 427.18
+  },
+  {
+   "word": "goes",
+   "start": 427.18,
+   "end": 427.32
+  },
+  {
+   "word": "in",
+   "start": 427.32,
+   "end": 427.48
+  },
+  {
+   "word": "the",
+   "start": 427.48,
+   "end": 427.58
+  },
+  {
+   "word": "mouth,",
+   "start": 427.58,
+   "end": 427.78
+  },
+  {
+   "word": "over",
+   "start": 427.96,
+   "end": 428.18
+  },
+  {
+   "word": "the",
+   "start": 428.18,
+   "end": 428.32
+  },
+  {
+   "word": "gills,",
+   "start": 428.32,
+   "end": 428.58
+  },
+  {
+   "word": "out",
+   "start": 428.78,
+   "end": 428.88
+  },
+  {
+   "word": "the",
+   "start": 428.88,
+   "end": 429.0
+  },
+  {
+   "word": "side.",
+   "start": 429.0,
+   "end": 429.22
+  },
+  {
+   "word": "No",
+   "start": 429.72,
+   "end": 429.92
+  },
+  {
+   "word": "dead",
+   "start": 429.92,
+   "end": 430.1
+  },
+  {
+   "word": "space.",
+   "start": 430.1,
+   "end": 430.34
+  },
+  {
+   "word": "No",
+   "start": 431.04,
+   "end": 431.3
+  },
+  {
+   "word": "stale",
+   "start": 431.3,
+   "end": 431.64
+  },
+  {
+   "word": "pool",
+   "start": 431.64,
+   "end": 431.94
+  },
+  {
+   "word": "in",
+   "start": 431.94,
+   "end": 432.18
+  },
+  {
+   "word": "the",
+   "start": 432.18,
+   "end": 432.3
+  },
+  {
+   "word": "airways.",
+   "start": 432.3,
+   "end": 432.6
+  },
+  {
+   "word": "A",
+   "start": 433.18,
+   "end": 433.38
+  },
+  {
+   "word": "physiology",
+   "start": 433.38,
+   "end": 433.68
+  },
+  {
+   "word": "text",
+   "start": 433.68,
+   "end": 434.12
+  },
+  {
+   "word": "says",
+   "start": 434.12,
+   "end": 434.4
+  },
+  {
+   "word": "fish",
+   "start": 434.4,
+   "end": 434.64
+  },
+  {
+   "word": "greatly",
+   "start": 434.64,
+   "end": 435.02
+  },
+  {
+   "word": "reduce",
+   "start": 435.02,
+   "end": 435.34
+  },
+  {
+   "word": "the",
+   "start": 435.34,
+   "end": 435.52
+  },
+  {
+   "word": "energy",
+   "start": 435.52,
+   "end": 435.82
+  },
+  {
+   "word": "cost",
+   "start": 435.82,
+   "end": 436.16
+  },
+  {
+   "word": "of",
+   "start": 436.16,
+   "end": 436.36
+  },
+  {
+   "word": "moving",
+   "start": 436.36,
+   "end": 436.6
+  },
+  {
+   "word": "water",
+   "start": 436.6,
+   "end": 436.94
+  },
+  {
+   "word": "by",
+   "start": 436.94,
+   "end": 437.3
+  },
+  {
+   "word": "keeping",
+   "start": 437.3,
+   "end": 437.54
+  },
+  {
+   "word": "that",
+   "start": 437.54,
+   "end": 437.76
+  },
+  {
+   "word": "flow",
+   "start": 437.76,
+   "end": 437.98
+  },
+  {
+   "word": "continuous",
+   "start": 437.98,
+   "end": 438.5
+  },
+  {
+   "word": "and",
+   "start": 438.5,
+   "end": 438.82
+  },
+  {
+   "word": "in",
+   "start": 438.82,
+   "end": 438.92
+  },
+  {
+   "word": "one",
+   "start": 438.92,
+   "end": 439.12
+  },
+  {
+   "word": "direction.",
+   "start": 439.12,
+   "end": 439.52
+  },
+  {
+   "word": "A",
+   "start": 440.48,
+   "end": 440.92
+  },
+  {
+   "word": "lung",
+   "start": 440.92,
+   "end": 441.1
+  },
+  {
+   "word": "does",
+   "start": 441.1,
+   "end": 441.4
+  },
+  {
+   "word": "the",
+   "start": 441.4,
+   "end": 441.62
+  },
+  {
+   "word": "opposite.",
+   "start": 441.62,
+   "end": 441.96
+  },
+  {
+   "word": "It",
+   "start": 442.52,
+   "end": 442.54
+  },
+  {
+   "word": "is",
+   "start": 442.54,
+   "end": 442.66
+  },
+  {
+   "word": "a",
+   "start": 442.66,
+   "end": 442.82
+  },
+  {
+   "word": "dead-end",
+   "start": 442.82,
+   "end": 443.35
+  },
+  {
+   "word": "sac.",
+   "start": 443.35,
+   "end": 443.88
+  },
+  {
+   "word": "The",
+   "start": 443.88,
+   "end": 443.94
+  },
+  {
+   "word": "same",
+   "start": 443.94,
+   "end": 444.12
+  },
+  {
+   "word": "pipe",
+   "start": 444.12,
+   "end": 444.32
+  },
+  {
+   "word": "in,",
+   "start": 444.32,
+   "end": 444.56
+  },
+  {
+   "word": "the",
+   "start": 444.88,
+   "end": 444.96
+  },
+  {
+   "word": "same",
+   "start": 444.96,
+   "end": 445.14
+  },
+  {
+   "word": "pipe",
+   "start": 445.14,
+   "end": 445.36
+  },
+  {
+   "word": "out.",
+   "start": 445.36,
+   "end": 445.58
+  },
+  {
+   "word": "So",
+   "start": 446.22,
+   "end": 446.32
+  },
+  {
+   "word": "there",
+   "start": 446.32,
+   "end": 446.64
+  },
+  {
+   "word": "is",
+   "start": 446.64,
+   "end": 446.78
+  },
+  {
+   "word": "a",
+   "start": 446.78,
+   "end": 446.9
+  },
+  {
+   "word": "first",
+   "start": 446.9,
+   "end": 447.08
+  },
+  {
+   "word": "way",
+   "start": 447.08,
+   "end": 447.32
+  },
+  {
+   "word": "to",
+   "start": 447.32,
+   "end": 447.46
+  },
+  {
+   "word": "make",
+   "start": 447.46,
+   "end": 447.6
+  },
+  {
+   "word": "her",
+   "start": 447.6,
+   "end": 447.78
+  },
+  {
+   "word": "breathing",
+   "start": 447.78,
+   "end": 448.02
+  },
+  {
+   "word": "work.",
+   "start": 448.02,
+   "end": 448.32
+  },
+  {
+   "word": "Change",
+   "start": 448.88,
+   "end": 449.06
+  },
+  {
+   "word": "her.",
+   "start": 449.06,
+   "end": 449.36
+  },
+  {
+   "word": "Give",
+   "start": 449.88,
+   "end": 449.98
+  },
+  {
+   "word": "her",
+   "start": 449.98,
+   "end": 450.16
+  },
+  {
+   "word": "gills.",
+   "start": 450.16,
+   "end": 450.48
+  },
+  {
+   "word": "Or",
+   "start": 450.96,
+   "end": 451.12
+  },
+  {
+   "word": "something",
+   "start": 451.12,
+   "end": 451.4
+  },
+  {
+   "word": "with",
+   "start": 451.4,
+   "end": 451.72
+  },
+  {
+   "word": "gills'",
+   "start": 451.72,
+   "end": 451.96
+  },
+  {
+   "word": "efficiency.",
+   "start": 451.96,
+   "end": 452.38
+  },
+  {
+   "word": "A",
+   "start": 452.86,
+   "end": 452.98
+  },
+  {
+   "word": "one-way",
+   "start": 452.98,
+   "end": 453.34
+  },
+  {
+   "word": "flow.",
+   "start": 453.34,
+   "end": 453.64
+  },
+  {
+   "word": "A",
+   "start": 453.98,
+   "end": 454.1
+  },
+  {
+   "word": "far",
+   "start": 454.1,
+   "end": 454.28
+  },
+  {
+   "word": "better",
+   "start": 454.28,
+   "end": 454.54
+  },
+  {
+   "word": "extraction.",
+   "start": 454.54,
+   "end": 455.08
+  },
+  {
+   "word": "That",
+   "start": 455.86,
+   "end": 456.02
+  },
+  {
+   "word": "is",
+   "start": 456.02,
+   "end": 456.14
+  },
+  {
+   "word": "a",
+   "start": 456.14,
+   "end": 456.32
+  },
+  {
+   "word": "different",
+   "start": 456.32,
+   "end": 456.6
+  },
+  {
+   "word": "animal.",
+   "start": 456.6,
+   "end": 456.94
+  },
+  {
+   "word": "Nothing",
+   "start": 457.5,
+   "end": 457.7
+  },
+  {
+   "word": "in",
+   "start": 457.7,
+   "end": 457.88
+  },
+  {
+   "word": "this",
+   "start": 457.88,
+   "end": 458.02
+  },
+  {
+   "word": "film",
+   "start": 458.02,
+   "end": 458.24
+  },
+  {
+   "word": "says",
+   "start": 458.24,
+   "end": 458.5
+  },
+  {
+   "word": "it",
+   "start": 458.5,
+   "end": 458.72
+  },
+  {
+   "word": "is",
+   "start": 458.72,
+   "end": 458.82
+  },
+  {
+   "word": "impossible.",
+   "start": 458.82,
+   "end": 459.24
+  },
+  {
+   "word": "It",
+   "start": 459.9,
+   "end": 460.02
+  },
+  {
+   "word": "is",
+   "start": 460.02,
+   "end": 460.1
+  },
+  {
+   "word": "not",
+   "start": 460.1,
+   "end": 460.26
+  },
+  {
+   "word": "a",
+   "start": 460.26,
+   "end": 460.4
+  },
+  {
+   "word": "lung",
+   "start": 460.4,
+   "end": 460.6
+  },
+  {
+   "word": "anymore.",
+   "start": 460.6,
+   "end": 461.0
+  },
+  {
+   "word": "Whether",
+   "start": 461.72,
+   "end": 461.86
+  },
+  {
+   "word": "any",
+   "start": 461.86,
+   "end": 462.1
+  },
+  {
+   "word": "human",
+   "start": 462.1,
+   "end": 462.44
+  },
+  {
+   "word": "body",
+   "start": 462.44,
+   "end": 462.78
+  },
+  {
+   "word": "could",
+   "start": 462.78,
+   "end": 462.98
+  },
+  {
+   "word": "be",
+   "start": 462.98,
+   "end": 463.12
+  },
+  {
+   "word": "rebuilt",
+   "start": 463.12,
+   "end": 463.48
+  },
+  {
+   "word": "that",
+   "start": 463.48,
+   "end": 463.72
+  },
+  {
+   "word": "way",
+   "start": 463.72,
+   "end": 464.02
+  },
+  {
+   "word": "is",
+   "start": 464.02,
+   "end": 464.42
+  },
+  {
+   "word": "not",
+   "start": 464.42,
+   "end": 464.64
+  },
+  {
+   "word": "known.",
+   "start": 464.64,
+   "end": 464.86
+  },
+  {
+   "word": "Duke",
+   "start": 465.74,
+   "end": 466.3
+  },
+  {
+   "word": "University,",
+   "start": 466.3,
+   "end": 467.0
+  },
+  {
+   "word": "early",
+   "start": 467.0,
+   "end": 467.4
+  },
+  {
+   "word": "nineteen-sixties.",
+   "start": 467.4,
+   "end": 468.7
+  },
+  {
+   "word": "According",
+   "start": 468.7,
+   "end": 469.2
+  },
+  {
+   "word": "to",
+   "start": 469.2,
+   "end": 469.42
+  },
+  {
+   "word": "a",
+   "start": 469.42,
+   "end": 469.5
+  },
+  {
+   "word": "Gizmodo",
+   "start": 469.5,
+   "end": 469.86
+  },
+  {
+   "word": "history,",
+   "start": 469.86,
+   "end": 470.22
+  },
+  {
+   "word": "Johannes",
+   "start": 470.62,
+   "end": 470.76
+  },
+  {
+   "word": "Kylstra's",
+   "start": 470.76,
+   "end": 471.38
+  },
+  {
+   "word": "team",
+   "start": 471.38,
+   "end": 471.6
+  },
+  {
+   "word": "trained",
+   "start": 471.6,
+   "end": 472.04
+  },
+  {
+   "word": "mice",
+   "start": 472.04,
+   "end": 472.32
+  },
+  {
+   "word": "to",
+   "start": 472.32,
+   "end": 472.54
+  },
+  {
+   "word": "breathe",
+   "start": 472.54,
+   "end": 472.74
+  },
+  {
+   "word": "saline",
+   "start": 472.74,
+   "end": 473.24
+  },
+  {
+   "word": "loaded",
+   "start": 473.24,
+   "end": 473.62
+  },
+  {
+   "word": "with",
+   "start": 473.62,
+   "end": 473.88
+  },
+  {
+   "word": "oxygen",
+   "start": 473.88,
+   "end": 474.38
+  },
+  {
+   "word": "under",
+   "start": 474.38,
+   "end": 474.78
+  },
+  {
+   "word": "a",
+   "start": 474.78,
+   "end": 474.92
+  },
+  {
+   "word": "pressure",
+   "start": 474.92,
+   "end": 475.16
+  },
+  {
+   "word": "of",
+   "start": 475.16,
+   "end": 475.3
+  },
+  {
+   "word": "a",
+   "start": 475.3,
+   "end": 475.46
+  },
+  {
+   "word": "hundred",
+   "start": 475.46,
+   "end": 475.62
+  },
+  {
+   "word": "and",
+   "start": 475.62,
+   "end": 475.78
+  },
+  {
+   "word": "sixty",
+   "start": 475.78,
+   "end": 475.94
+  },
+  {
+   "word": "atmospheres.",
+   "start": 475.94,
+   "end": 476.66
+  },
+  {
+   "word": "The",
+   "start": 477.18,
+   "end": 477.3
+  },
+  {
+   "word": "mice",
+   "start": 477.3,
+   "end": 477.48
+  },
+  {
+   "word": "died",
+   "start": 477.48,
+   "end": 477.74
+  },
+  {
+   "word": "minutes",
+   "start": 477.74,
+   "end": 478.02
+  },
+  {
+   "word": "later.",
+   "start": 478.02,
+   "end": 478.38
+  },
+  {
+   "word": "Carbon",
+   "start": 479.08,
+   "end": 479.08
+  },
+  {
+   "word": "dioxide",
+   "start": 479.08,
+   "end": 479.54
+  },
+  {
+   "word": "had",
+   "start": 479.54,
+   "end": 479.78
+  },
+  {
+   "word": "built",
+   "start": 479.78,
+   "end": 479.98
+  },
+  {
+   "word": "up.",
+   "start": 479.98,
+   "end": 480.5
+  },
+  {
+   "word": "Another",
+   "start": 480.86,
+   "end": 481.14
+  },
+  {
+   "word": "account",
+   "start": 481.14,
+   "end": 481.46
+  },
+  {
+   "word": "says",
+   "start": 481.46,
+   "end": 481.74
+  },
+  {
+   "word": "rodents",
+   "start": 481.74,
+   "end": 482.1
+  },
+  {
+   "word": "and",
+   "start": 482.1,
+   "end": 482.36
+  },
+  {
+   "word": "even",
+   "start": 482.36,
+   "end": 482.6
+  },
+  {
+   "word": "dogs",
+   "start": 482.6,
+   "end": 483.0
+  },
+  {
+   "word": "lasted",
+   "start": 483.0,
+   "end": 483.38
+  },
+  {
+   "word": "up",
+   "start": 483.38,
+   "end": 483.62
+  },
+  {
+   "word": "to",
+   "start": 483.62,
+   "end": 483.72
+  },
+  {
+   "word": "about",
+   "start": 483.72,
+   "end": 483.9
+  },
+  {
+   "word": "an",
+   "start": 483.9,
+   "end": 484.04
+  },
+  {
+   "word": "hour.",
+   "start": 484.04,
+   "end": 484.32
+  },
+  {
+   "word": "Accounts",
+   "start": 485.2,
+   "end": 485.2
+  },
+  {
+   "word": "differ",
+   "start": 485.2,
+   "end": 485.48
+  },
+  {
+   "word": "on",
+   "start": 485.48,
+   "end": 485.68
+  },
+  {
+   "word": "the",
+   "start": 485.68,
+   "end": 485.78
+  },
+  {
+   "word": "time.",
+   "start": 485.78,
+   "end": 486.02
+  },
+  {
+   "word": "They",
+   "start": 486.58,
+   "end": 486.68
+  },
+  {
+   "word": "agree",
+   "start": 486.68,
+   "end": 487.02
+  },
+  {
+   "word": "on",
+   "start": 487.02,
+   "end": 487.26
+  },
+  {
+   "word": "the",
+   "start": 487.26,
+   "end": 487.4
+  },
+  {
+   "word": "cause.",
+   "start": 487.4,
+   "end": 487.7
+  },
+  {
+   "word": "The",
+   "start": 488.48,
+   "end": 488.64
+  },
+  {
+   "word": "saline",
+   "start": 488.64,
+   "end": 488.98
+  },
+  {
+   "word": "delivered",
+   "start": 488.98,
+   "end": 489.32
+  },
+  {
+   "word": "enough",
+   "start": 489.32,
+   "end": 489.56
+  },
+  {
+   "word": "oxygen.",
+   "start": 489.56,
+   "end": 490.0
+  },
+  {
+   "word": "It",
+   "start": 490.48,
+   "end": 490.56
+  },
+  {
+   "word": "did",
+   "start": 490.56,
+   "end": 490.68
+  },
+  {
+   "word": "not",
+   "start": 490.68,
+   "end": 490.96
+  },
+  {
+   "word": "clear",
+   "start": 490.96,
+   "end": 491.2
+  },
+  {
+   "word": "the",
+   "start": 491.2,
+   "end": 491.38
+  },
+  {
+   "word": "carbon",
+   "start": 491.38,
+   "end": 491.64
+  },
+  {
+   "word": "dioxide",
+   "start": 491.64,
+   "end": 492.16
+  },
+  {
+   "word": "fast",
+   "start": 492.16,
+   "end": 492.44
+  },
+  {
+   "word": "enough.",
+   "start": 492.44,
+   "end": 492.76
+  },
+  {
+   "word": "The",
+   "start": 493.54,
+   "end": 494.1
+  },
+  {
+   "word": "same",
+   "start": 494.1,
+   "end": 494.38
+  },
+  {
+   "word": "fisheries",
+   "start": 494.38,
+   "end": 494.76
+  },
+  {
+   "word": "manual",
+   "start": 494.76,
+   "end": 495.18
+  },
+  {
+   "word": "says",
+   "start": 495.18,
+   "end": 495.52
+  },
+  {
+   "word": "carbon",
+   "start": 495.52,
+   "end": 495.88
+  },
+  {
+   "word": "dioxide",
+   "start": 495.88,
+   "end": 496.38
+  },
+  {
+   "word": "is",
+   "start": 496.38,
+   "end": 496.7
+  },
+  {
+   "word": "far",
+   "start": 496.7,
+   "end": 496.98
+  },
+  {
+   "word": "more",
+   "start": 496.98,
+   "end": 497.18
+  },
+  {
+   "word": "soluble",
+   "start": 497.18,
+   "end": 497.62
+  },
+  {
+   "word": "in",
+   "start": 497.62,
+   "end": 497.84
+  },
+  {
+   "word": "water",
+   "start": 497.84,
+   "end": 498.1
+  },
+  {
+   "word": "than",
+   "start": 498.1,
+   "end": 498.38
+  },
+  {
+   "word": "oxygen",
+   "start": 498.38,
+   "end": 498.72
+  },
+  {
+   "word": "is.",
+   "start": 498.72,
+   "end": 499.18
+  },
+  {
+   "word": "Which",
+   "start": 499.22,
+   "end": 499.54
+  },
+  {
+   "word": "is",
+   "start": 499.54,
+   "end": 499.68
+  },
+  {
+   "word": "one",
+   "start": 499.68,
+   "end": 499.86
+  },
+  {
+   "word": "reason",
+   "start": 499.86,
+   "end": 500.22
+  },
+  {
+   "word": "gills",
+   "start": 500.22,
+   "end": 500.5
+  },
+  {
+   "word": "shed",
+   "start": 500.5,
+   "end": 500.8
+  },
+  {
+   "word": "it",
+   "start": 500.8,
+   "end": 500.96
+  },
+  {
+   "word": "easily.",
+   "start": 500.96,
+   "end": 501.32
+  },
+  {
+   "word": "But",
+   "start": 502.2,
+   "end": 502.3
+  },
+  {
+   "word": "a",
+   "start": 502.3,
+   "end": 502.42
+  },
+  {
+   "word": "saline-filled",
+   "start": 502.42,
+   "end": 503.02
+  },
+  {
+   "word": "lung",
+   "start": 503.02,
+   "end": 503.36
+  },
+  {
+   "word": "is",
+   "start": 503.36,
+   "end": 503.64
+  },
+  {
+   "word": "not",
+   "start": 503.64,
+   "end": 503.86
+  },
+  {
+   "word": "a",
+   "start": 503.86,
+   "end": 504.0
+  },
+  {
+   "word": "gill.",
+   "start": 504.0,
+   "end": 504.22
+  },
+  {
+   "word": "Our",
+   "start": 504.84,
+   "end": 505.06
+  },
+  {
+   "word": "reading:",
+   "start": 505.06,
+   "end": 505.34
+  },
+  {
+   "word": "it",
+   "start": 505.98,
+   "end": 505.98
+  },
+  {
+   "word": "is",
+   "start": 505.98,
+   "end": 506.08
+  },
+  {
+   "word": "the",
+   "start": 506.08,
+   "end": 506.24
+  },
+  {
+   "word": "same",
+   "start": 506.24,
+   "end": 506.5
+  },
+  {
+   "word": "dead-end",
+   "start": 506.5,
+   "end": 506.9
+  },
+  {
+   "word": "sac,",
+   "start": 506.9,
+   "end": 507.3
+  },
+  {
+   "word": "filled",
+   "start": 507.3,
+   "end": 507.7
+  },
+  {
+   "word": "with",
+   "start": 507.7,
+   "end": 507.9
+  },
+  {
+   "word": "a",
+   "start": 507.9,
+   "end": 508.06
+  },
+  {
+   "word": "liquid",
+   "start": 508.06,
+   "end": 508.3
+  },
+  {
+   "word": "that",
+   "start": 508.3,
+   "end": 508.54
+  },
+  {
+   "word": "barely",
+   "start": 508.54,
+   "end": 508.8
+  },
+  {
+   "word": "moves.",
+   "start": 508.8,
+   "end": 509.14
+  },
+  {
+   "word": "The",
+   "start": 509.78,
+   "end": 509.9
+  },
+  {
+   "word": "sources",
+   "start": 509.9,
+   "end": 510.1
+  },
+  {
+   "word": "do",
+   "start": 510.1,
+   "end": 510.4
+  },
+  {
+   "word": "not",
+   "start": 510.4,
+   "end": 510.56
+  },
+  {
+   "word": "test",
+   "start": 510.56,
+   "end": 510.76
+  },
+  {
+   "word": "that.",
+   "start": 510.76,
+   "end": 511.22
+  },
+  {
+   "word": "Mid-nineteen-sixties.",
+   "start": 511.22,
+   "end": 514.1
+  },
+  {
+   "word": "Clark",
+   "start": 514.1,
+   "end": 514.18
+  },
+  {
+   "word": "and",
+   "start": 514.18,
+   "end": 514.4
+  },
+  {
+   "word": "Gollan.",
+   "start": 514.4,
+   "end": 515.32
+  },
+  {
+   "word": "They",
+   "start": 515.32,
+   "end": 515.46
+  },
+  {
+   "word": "switched",
+   "start": 515.46,
+   "end": 515.66
+  },
+  {
+   "word": "the",
+   "start": 515.66,
+   "end": 515.92
+  },
+  {
+   "word": "liquid.",
+   "start": 515.92,
+   "end": 516.18
+  },
+  {
+   "word": "Not",
+   "start": 516.56,
+   "end": 516.7
+  },
+  {
+   "word": "water.",
+   "start": 516.7,
+   "end": 517.0
+  },
+  {
+   "word": "A",
+   "start": 517.68,
+   "end": 517.84
+  },
+  {
+   "word": "perfluorocarbon.",
+   "start": 517.84,
+   "end": 518.82
+  },
+  {
+   "word": "A",
+   "start": 518.82,
+   "end": 519.36
+  },
+  {
+   "word": "fluid",
+   "start": 519.36,
+   "end": 519.58
+  },
+  {
+   "word": "that",
+   "start": 519.58,
+   "end": 519.92
+  },
+  {
+   "word": "dissolves",
+   "start": 519.92,
+   "end": 520.38
+  },
+  {
+   "word": "both",
+   "start": 520.38,
+   "end": 520.64
+  },
+  {
+   "word": "gases.",
+   "start": 520.64,
+   "end": 521.1
+  },
+  {
+   "word": "Gizmodo",
+   "start": 522.04,
+   "end": 522.38
+  },
+  {
+   "word": "says",
+   "start": 522.38,
+   "end": 522.58
+  },
+  {
+   "word": "their",
+   "start": 522.58,
+   "end": 522.82
+  },
+  {
+   "word": "mice",
+   "start": 522.82,
+   "end": 523.08
+  },
+  {
+   "word": "breathed",
+   "start": 523.08,
+   "end": 523.5
+  },
+  {
+   "word": "it",
+   "start": 523.5,
+   "end": 523.68
+  },
+  {
+   "word": "at",
+   "start": 523.68,
+   "end": 523.8
+  },
+  {
+   "word": "normal",
+   "start": 523.8,
+   "end": 524.12
+  },
+  {
+   "word": "pressure.",
+   "start": 524.12,
+   "end": 524.62
+  },
+  {
+   "word": "Rats",
+   "start": 525.22,
+   "end": 525.32
+  },
+  {
+   "word": "stayed",
+   "start": 525.32,
+   "end": 525.56
+  },
+  {
+   "word": "under",
+   "start": 525.56,
+   "end": 525.8
+  },
+  {
+   "word": "for",
+   "start": 525.8,
+   "end": 525.96
+  },
+  {
+   "word": "up",
+   "start": 525.96,
+   "end": 526.06
+  },
+  {
+   "word": "to",
+   "start": 526.06,
+   "end": 526.22
+  },
+  {
+   "word": "twenty",
+   "start": 526.22,
+   "end": 526.5
+  },
+  {
+   "word": "hours.",
+   "start": 526.5,
+   "end": 526.84
+  },
+  {
+   "word": "Cats,",
+   "start": 527.48,
+   "end": 527.5
+  },
+  {
+   "word": "for",
+   "start": 527.5,
+   "end": 527.84
+  },
+  {
+   "word": "weeks.",
+   "start": 527.84,
+   "end": 528.16
+  },
+  {
+   "word": "An",
+   "start": 528.9,
+   "end": 529.12
+  },
+  {
+   "word": "older",
+   "start": 529.12,
+   "end": 529.4
+  },
+  {
+   "word": "encyclopedia",
+   "start": 529.4,
+   "end": 529.94
+  },
+  {
+   "word": "mirror",
+   "start": 529.94,
+   "end": 530.36
+  },
+  {
+   "word": "adds",
+   "start": 530.36,
+   "end": 530.7
+  },
+  {
+   "word": "one",
+   "start": 530.7,
+   "end": 530.98
+  },
+  {
+   "word": "detail",
+   "start": 530.98,
+   "end": 531.42
+  },
+  {
+   "word": "that",
+   "start": 531.42,
+   "end": 531.62
+  },
+  {
+   "word": "matters.",
+   "start": 531.62,
+   "end": 531.98
+  },
+  {
+   "word": "The",
+   "start": 532.38,
+   "end": 532.66
+  },
+  {
+   "word": "colder",
+   "start": 532.66,
+   "end": 532.94
+  },
+  {
+   "word": "the",
+   "start": 532.94,
+   "end": 533.16
+  },
+  {
+   "word": "liquid,",
+   "start": 533.16,
+   "end": 533.46
+  },
+  {
+   "word": "the",
+   "start": 533.8,
+   "end": 533.94
+  },
+  {
+   "word": "lower",
+   "start": 533.94,
+   "end": 534.18
+  },
+  {
+   "word": "the",
+   "start": 534.18,
+   "end": 534.44
+  },
+  {
+   "word": "animal's",
+   "start": 534.44,
+   "end": 534.8
+  },
+  {
+   "word": "breathing",
+   "start": 534.8,
+   "end": 535.0
+  },
+  {
+   "word": "rate.",
+   "start": 535.0,
+   "end": 535.32
+  },
+  {
+   "word": "That",
+   "start": 536.1,
+   "end": 536.42
+  },
+  {
+   "word": "is",
+   "start": 536.42,
+   "end": 536.64
+  },
+  {
+   "word": "the",
+   "start": 536.64,
+   "end": 536.8
+  },
+  {
+   "word": "third",
+   "start": 536.8,
+   "end": 536.96
+  },
+  {
+   "word": "way,",
+   "start": 536.96,
+   "end": 537.22
+  },
+  {
+   "word": "and",
+   "start": 537.46,
+   "end": 537.64
+  },
+  {
+   "word": "we",
+   "start": 537.64,
+   "end": 537.78
+  },
+  {
+   "word": "will",
+   "start": 537.78,
+   "end": 537.92
+  },
+  {
+   "word": "come",
+   "start": 537.92,
+   "end": 538.04
+  },
+  {
+   "word": "back",
+   "start": 538.04,
+   "end": 538.2
+  },
+  {
+   "word": "to",
+   "start": 538.2,
+   "end": 538.36
+  },
+  {
+   "word": "it.",
+   "start": 538.36,
+   "end": 538.66
+  },
+  {
+   "word": "First,",
+   "start": 539.38,
+   "end": 539.6
+  },
+  {
+   "word": "the",
+   "start": 539.88,
+   "end": 539.96
+  },
+  {
+   "word": "cost.",
+   "start": 539.96,
+   "end": 540.24
+  },
+  {
+   "word": "Perfluorocarbons",
+   "start": 540.24,
+   "end": 541.68
+  },
+  {
+   "word": "are",
+   "start": 541.68,
+   "end": 541.9
+  },
+  {
+   "word": "denser",
+   "start": 541.9,
+   "end": 542.38
+  },
+  {
+   "word": "and",
+   "start": 542.38,
+   "end": 542.54
+  },
+  {
+   "word": "more",
+   "start": 542.54,
+   "end": 542.7
+  },
+  {
+   "word": "viscous",
+   "start": 542.7,
+   "end": 543.08
+  },
+  {
+   "word": "than",
+   "start": 543.08,
+   "end": 543.28
+  },
+  {
+   "word": "air.",
+   "start": 543.28,
+   "end": 543.5
+  },
+  {
+   "word": "That",
+   "start": 544.02,
+   "end": 544.22
+  },
+  {
+   "word": "raises",
+   "start": 544.22,
+   "end": 544.48
+  },
+  {
+   "word": "the",
+   "start": 544.48,
+   "end": 544.72
+  },
+  {
+   "word": "effort",
+   "start": 544.72,
+   "end": 544.92
+  },
+  {
+   "word": "of",
+   "start": 544.92,
+   "end": 545.12
+  },
+  {
+   "word": "breathing,",
+   "start": 545.12,
+   "end": 545.42
+  },
+  {
+   "word": "according",
+   "start": 545.84,
+   "end": 545.86
+  },
+  {
+   "word": "to",
+   "start": 545.86,
+   "end": 546.42
+  },
+  {
+   "word": "Wikipedia's",
+   "start": 546.42,
+   "end": 546.74
+  },
+  {
+   "word": "entry",
+   "start": 546.74,
+   "end": 546.94
+  },
+  {
+   "word": "on",
+   "start": 546.94,
+   "end": 547.2
+  },
+  {
+   "word": "liquid",
+   "start": 547.2,
+   "end": 547.42
+  },
+  {
+   "word": "breathing.",
+   "start": 547.42,
+   "end": 548.06
+  },
+  {
+   "word": "Mice",
+   "start": 549.14,
+   "end": 549.34
+  },
+  {
+   "word": "are",
+   "start": 549.34,
+   "end": 549.56
+  },
+  {
+   "word": "not",
+   "start": 549.56,
+   "end": 549.76
+  },
+  {
+   "word": "people.",
+   "start": 549.76,
+   "end": 550.14
+  },
+  {
+   "word": "A",
+   "start": 550.64,
+   "end": 550.8
+  },
+  {
+   "word": "mouse's",
+   "start": 550.8,
+   "end": 551.18
+  },
+  {
+   "word": "lung",
+   "start": 551.18,
+   "end": 551.46
+  },
+  {
+   "word": "is",
+   "start": 551.46,
+   "end": 551.78
+  },
+  {
+   "word": "tiny.",
+   "start": 551.78,
+   "end": 552.1
+  },
+  {
+   "word": "The",
+   "start": 552.62,
+   "end": 552.78
+  },
+  {
+   "word": "distance",
+   "start": 552.78,
+   "end": 553.06
+  },
+  {
+   "word": "is",
+   "start": 553.06,
+   "end": 553.36
+  },
+  {
+   "word": "short.",
+   "start": 553.36,
+   "end": 553.62
+  },
+  {
+   "word": "The",
+   "start": 554.04,
+   "end": 554.2
+  },
+  {
+   "word": "volume",
+   "start": 554.2,
+   "end": 554.5
+  },
+  {
+   "word": "is",
+   "start": 554.5,
+   "end": 554.7
+  },
+  {
+   "word": "small.",
+   "start": 554.7,
+   "end": 555.0
+  },
+  {
+   "word": "The",
+   "start": 555.62,
+   "end": 555.76
+  },
+  {
+   "word": "sources",
+   "start": 555.76,
+   "end": 555.98
+  },
+  {
+   "word": "here",
+   "start": 555.98,
+   "end": 556.38
+  },
+  {
+   "word": "do",
+   "start": 556.38,
+   "end": 556.58
+  },
+  {
+   "word": "not",
+   "start": 556.58,
+   "end": 556.78
+  },
+  {
+   "word": "say",
+   "start": 556.78,
+   "end": 557.04
+  },
+  {
+   "word": "whether",
+   "start": 557.04,
+   "end": 557.22
+  },
+  {
+   "word": "the",
+   "start": 557.22,
+   "end": 557.46
+  },
+  {
+   "word": "same",
+   "start": 557.46,
+   "end": 557.72
+  },
+  {
+   "word": "method",
+   "start": 557.72,
+   "end": 558.02
+  },
+  {
+   "word": "works",
+   "start": 558.02,
+   "end": 558.36
+  },
+  {
+   "word": "at",
+   "start": 558.36,
+   "end": 558.64
+  },
+  {
+   "word": "the",
+   "start": 558.64,
+   "end": 558.76
+  },
+  {
+   "word": "size",
+   "start": 558.76,
+   "end": 559.0
+  },
+  {
+   "word": "of",
+   "start": 559.0,
+   "end": 559.16
+  },
+  {
+   "word": "an",
+   "start": 559.16,
+   "end": 559.24
+  },
+  {
+   "word": "adult.",
+   "start": 559.24,
+   "end": 559.56
+  },
+  {
+   "word": "That",
+   "start": 560.12,
+   "end": 560.32
+  },
+  {
+   "word": "has",
+   "start": 560.32,
+   "end": 560.58
+  },
+  {
+   "word": "not",
+   "start": 560.58,
+   "end": 560.8
+  },
+  {
+   "word": "been",
+   "start": 560.8,
+   "end": 561.0
+  },
+  {
+   "word": "shown.",
+   "start": 561.0,
+   "end": 561.26
+  },
+  {
+   "word": "Look",
+   "start": 562.56,
+   "end": 562.74
+  },
+  {
+   "word": "at",
+   "start": 562.74,
+   "end": 562.88
+  },
+  {
+   "word": "what",
+   "start": 562.88,
+   "end": 563.02
+  },
+  {
+   "word": "the",
+   "start": 563.02,
+   "end": 563.16
+  },
+  {
+   "word": "cold",
+   "start": 563.16,
+   "end": 563.46
+  },
+  {
+   "word": "did",
+   "start": 563.46,
+   "end": 563.74
+  },
+  {
+   "word": "for",
+   "start": 563.74,
+   "end": 563.98
+  },
+  {
+   "word": "the",
+   "start": 563.98,
+   "end": 564.1
+  },
+  {
+   "word": "animals.",
+   "start": 564.1,
+   "end": 564.56
+  },
+  {
+   "word": "It",
+   "start": 565.2,
+   "end": 565.34
+  },
+  {
+   "word": "lowered",
+   "start": 565.34,
+   "end": 565.68
+  },
+  {
+   "word": "their",
+   "start": 565.68,
+   "end": 565.92
+  },
+  {
+   "word": "breathing",
+   "start": 565.92,
+   "end": 566.2
+  },
+  {
+   "word": "rate.",
+   "start": 566.2,
+   "end": 566.48
+  },
+  {
+   "word": "That",
+   "start": 567.08,
+   "end": 567.24
+  },
+  {
+   "word": "is",
+   "start": 567.24,
+   "end": 567.36
+  },
+  {
+   "word": "a",
+   "start": 567.36,
+   "end": 567.52
+  },
+  {
+   "word": "fall",
+   "start": 567.52,
+   "end": 567.72
+  },
+  {
+   "word": "in",
+   "start": 567.72,
+   "end": 567.92
+  },
+  {
+   "word": "demand.",
+   "start": 567.92,
+   "end": 568.26
+  },
+  {
+   "word": "Demand",
+   "start": 569.22,
+   "end": 569.24
+  },
+  {
+   "word": "is",
+   "start": 569.24,
+   "end": 569.5
+  },
+  {
+   "word": "the",
+   "start": 569.5,
+   "end": 569.64
+  },
+  {
+   "word": "other",
+   "start": 569.64,
+   "end": 569.92
+  },
+  {
+   "word": "half",
+   "start": 569.92,
+   "end": 570.16
+  },
+  {
+   "word": "of",
+   "start": 570.16,
+   "end": 570.32
+  },
+  {
+   "word": "the",
+   "start": 570.32,
+   "end": 570.48
+  },
+  {
+   "word": "sum.",
+   "start": 570.48,
+   "end": 570.64
+  },
+  {
+   "word": "If",
+   "start": 571.36,
+   "end": 571.54
+  },
+  {
+   "word": "the",
+   "start": 571.54,
+   "end": 571.68
+  },
+  {
+   "word": "body",
+   "start": 571.68,
+   "end": 571.9
+  },
+  {
+   "word": "needed",
+   "start": 571.9,
+   "end": 572.16
+  },
+  {
+   "word": "less",
+   "start": 572.16,
+   "end": 572.46
+  },
+  {
+   "word": "oxygen,",
+   "start": 572.46,
+   "end": 573.0
+  },
+  {
+   "word": "the",
+   "start": 573.0,
+   "end": 573.54
+  },
+  {
+   "word": "two",
+   "start": 573.54,
+   "end": 573.645
+  },
+  {
+   "word": "hundred",
+   "start": 573.645,
+   "end": 573.75
+  },
+  {
+   "word": "and",
+   "start": 573.75,
+   "end": 573.855
+  },
+  {
+   "word": "fifty",
+   "start": 573.855,
+   "end": 573.96
+  },
+  {
+   "word": "would",
+   "start": 573.96,
+   "end": 574.58
+  },
+  {
+   "word": "fall,",
+   "start": 574.58,
+   "end": 574.94
+  },
+  {
+   "word": "and",
+   "start": 574.94,
+   "end": 575.56
+  },
+  {
+   "word": "so",
+   "start": 575.56,
+   "end": 575.84
+  },
+  {
+   "word": "would",
+   "start": 575.84,
+   "end": 576.02
+  },
+  {
+   "word": "the",
+   "start": 576.02,
+   "end": 576.14
+  },
+  {
+   "word": "litres.",
+   "start": 576.14,
+   "end": 577.44
+  },
+  {
+   "word": "For",
+   "start": 577.44,
+   "end": 577.52
+  },
+  {
+   "word": "a",
+   "start": 577.52,
+   "end": 577.57
+  },
+  {
+   "word": "human,",
+   "start": 577.52,
+   "end": 577.88
+  },
+  {
+   "word": "the",
+   "start": 578.4,
+   "end": 578.48
+  },
+  {
+   "word": "cold",
+   "start": 578.48,
+   "end": 578.72
+  },
+  {
+   "word": "is",
+   "start": 578.72,
+   "end": 578.86
+  },
+  {
+   "word": "not",
+   "start": 578.86,
+   "end": 579.04
+  },
+  {
+   "word": "kind.",
+   "start": 579.04,
+   "end": 579.4
+  },
+  {
+   "word": "A",
+   "start": 580.44,
+   "end": 580.46
+  },
+  {
+   "word": "boating-safety",
+   "start": 580.46,
+   "end": 581.06
+  },
+  {
+   "word": "guide",
+   "start": 581.06,
+   "end": 581.38
+  },
+  {
+   "word": "says",
+   "start": 581.38,
+   "end": 581.66
+  },
+  {
+   "word": "water",
+   "start": 581.66,
+   "end": 581.94
+  },
+  {
+   "word": "draws",
+   "start": 581.94,
+   "end": 582.38
+  },
+  {
+   "word": "heat",
+   "start": 582.38,
+   "end": 582.66
+  },
+  {
+   "word": "from",
+   "start": 582.66,
+   "end": 582.86
+  },
+  {
+   "word": "the",
+   "start": 582.86,
+   "end": 583.0
+  },
+  {
+   "word": "body",
+   "start": 583.0,
+   "end": 583.28
+  },
+  {
+   "word": "about",
+   "start": 583.28,
+   "end": 583.58
+  },
+  {
+   "word": "twenty-five",
+   "start": 583.58,
+   "end": 584.3
+  },
+  {
+   "word": "times",
+   "start": 584.3,
+   "end": 584.72
+  },
+  {
+   "word": "faster",
+   "start": 584.72,
+   "end": 585.2
+  },
+  {
+   "word": "than",
+   "start": 585.2,
+   "end": 585.38
+  },
+  {
+   "word": "air",
+   "start": 585.38,
+   "end": 585.72
+  },
+  {
+   "word": "at",
+   "start": 585.72,
+   "end": 585.94
+  },
+  {
+   "word": "the",
+   "start": 585.94,
+   "end": 586.06
+  },
+  {
+   "word": "same",
+   "start": 586.06,
+   "end": 586.24
+  },
+  {
+   "word": "temperature.",
+   "start": 586.24,
+   "end": 586.68
+  },
+  {
+   "word": "Other",
+   "start": 587.34,
+   "end": 587.68
+  },
+  {
+   "word": "sources",
+   "start": 587.68,
+   "end": 588.08
+  },
+  {
+   "word": "give",
+   "start": 588.08,
+   "end": 588.4
+  },
+  {
+   "word": "four,",
+   "start": 588.4,
+   "end": 589.1
+  },
+  {
+   "word": "twenty,",
+   "start": 589.1,
+   "end": 589.8
+  },
+  {
+   "word": "and",
+   "start": 589.8,
+   "end": 589.98
+  },
+  {
+   "word": "thirty-two.",
+   "start": 589.98,
+   "end": 591.1
+  },
+  {
+   "word": "They",
+   "start": 591.1,
+   "end": 591.34
+  },
+  {
+   "word": "all",
+   "start": 591.34,
+   "end": 591.52
+  },
+  {
+   "word": "say",
+   "start": 591.52,
+   "end": 591.72
+  },
+  {
+   "word": "faster.",
+   "start": 591.72,
+   "end": 592.08
+  },
+  {
+   "word": "The",
+   "start": 593.14,
+   "end": 593.2
+  },
+  {
+   "word": "first",
+   "start": 593.2,
+   "end": 593.44
+  },
+  {
+   "word": "danger",
+   "start": 593.44,
+   "end": 593.82
+  },
+  {
+   "word": "is",
+   "start": 593.82,
+   "end": 594.08
+  },
+  {
+   "word": "not",
+   "start": 594.08,
+   "end": 594.32
+  },
+  {
+   "word": "hypothermia.",
+   "start": 594.32,
+   "end": 594.96
+  },
+  {
+   "word": "It",
+   "start": 595.4,
+   "end": 595.58
+  },
+  {
+   "word": "is",
+   "start": 595.58,
+   "end": 595.72
+  },
+  {
+   "word": "cold",
+   "start": 595.72,
+   "end": 595.98
+  },
+  {
+   "word": "shock.",
+   "start": 595.98,
+   "end": 596.3
+  },
+  {
+   "word": "Sudden",
+   "start": 597.36,
+   "end": 597.46
+  },
+  {
+   "word": "immersion",
+   "start": 597.46,
+   "end": 597.84
+  },
+  {
+   "word": "makes",
+   "start": 597.84,
+   "end": 598.12
+  },
+  {
+   "word": "people",
+   "start": 598.12,
+   "end": 598.44
+  },
+  {
+   "word": "gasp.",
+   "start": 598.44,
+   "end": 598.82
+  },
+  {
+   "word": "Another",
+   "start": 599.56,
+   "end": 599.86
+  },
+  {
+   "word": "guide",
+   "start": 599.86,
+   "end": 600.12
+  },
+  {
+   "word": "says",
+   "start": 600.12,
+   "end": 600.36
+  },
+  {
+   "word": "water",
+   "start": 600.36,
+   "end": 600.68
+  },
+  {
+   "word": "inhaled",
+   "start": 600.68,
+   "end": 601.26
+  },
+  {
+   "word": "in",
+   "start": 601.26,
+   "end": 601.46
+  },
+  {
+   "word": "that",
+   "start": 601.46,
+   "end": 601.66
+  },
+  {
+   "word": "gasp",
+   "start": 601.66,
+   "end": 602.04
+  },
+  {
+   "word": "can",
+   "start": 602.04,
+   "end": 602.46
+  },
+  {
+   "word": "cause",
+   "start": 602.46,
+   "end": 602.72
+  },
+  {
+   "word": "unconsciousness",
+   "start": 602.72,
+   "end": 603.58
+  },
+  {
+   "word": "within",
+   "start": 603.58,
+   "end": 603.78
+  },
+  {
+   "word": "minutes.",
+   "start": 603.78,
+   "end": 604.22
+  },
+  {
+   "word": "Hands",
+   "start": 605.3,
+   "end": 605.3
+  },
+  {
+   "word": "and",
+   "start": 605.3,
+   "end": 605.48
+  },
+  {
+   "word": "legs",
+   "start": 605.48,
+   "end": 605.68
+  },
+  {
+   "word": "go",
+   "start": 605.68,
+   "end": 605.94
+  },
+  {
+   "word": "numb.",
+   "start": 605.94,
+   "end": 606.2
+  },
+  {
+   "word": "Within",
+   "start": 606.2,
+   "end": 607.0
+  },
+  {
+   "word": "minutes,",
+   "start": 607.0,
+   "end": 607.38
+  },
+  {
+   "word": "according",
+   "start": 607.72,
+   "end": 607.74
+  },
+  {
+   "word": "to",
+   "start": 607.74,
+   "end": 607.96
+  },
+  {
+   "word": "a",
+   "start": 607.96,
+   "end": 608.06
+  },
+  {
+   "word": "New",
+   "start": 608.06,
+   "end": 608.16
+  },
+  {
+   "word": "York",
+   "start": 608.16,
+   "end": 608.36
+  },
+  {
+   "word": "state",
+   "start": 608.36,
+   "end": 608.64
+  },
+  {
+   "word": "boating",
+   "start": 608.64,
+   "end": 608.92
+  },
+  {
+   "word": "guide.",
+   "start": 608.92,
+   "end": 609.2
+  },
+  {
+   "word": "Hypothermia",
+   "start": 610.14,
+   "end": 610.54
+  },
+  {
+   "word": "comes",
+   "start": 610.54,
+   "end": 610.74
+  },
+  {
+   "word": "later.",
+   "start": 610.74,
+   "end": 611.1
+  },
+  {
+   "word": "One",
+   "start": 611.92,
+   "end": 612.08
+  },
+  {
+   "word": "expert",
+   "start": 612.08,
+   "end": 612.44
+  },
+  {
+   "word": "average",
+   "start": 612.44,
+   "end": 612.64
+  },
+  {
+   "word": "is",
+   "start": 612.64,
+   "end": 612.84
+  },
+  {
+   "word": "about",
+   "start": 612.84,
+   "end": 613.1
+  },
+  {
+   "word": "an",
+   "start": 613.1,
+   "end": 613.28
+  },
+  {
+   "word": "hour,",
+   "start": 613.28,
+   "end": 613.62
+  },
+  {
+   "word": "depending",
+   "start": 614.02,
+   "end": 614.22
+  },
+  {
+   "word": "on",
+   "start": 614.22,
+   "end": 614.48
+  },
+  {
+   "word": "temperature,",
+   "start": 614.48,
+   "end": 614.98
+  },
+  {
+   "word": "clothing",
+   "start": 615.26,
+   "end": 615.56
+  },
+  {
+   "word": "and",
+   "start": 615.78,
+   "end": 615.88
+  },
+  {
+   "word": "body",
+   "start": 615.88,
+   "end": 616.14
+  },
+  {
+   "word": "type.",
+   "start": 616.14,
+   "end": 616.44
+  },
+  {
+   "word": "So",
+   "start": 617.06,
+   "end": 617.38
+  },
+  {
+   "word": "the",
+   "start": 617.38,
+   "end": 617.64
+  },
+  {
+   "word": "cold",
+   "start": 617.64,
+   "end": 617.88
+  },
+  {
+   "word": "that",
+   "start": 617.88,
+   "end": 618.1
+  },
+  {
+   "word": "helped",
+   "start": 618.1,
+   "end": 618.3
+  },
+  {
+   "word": "the",
+   "start": 618.3,
+   "end": 618.46
+  },
+  {
+   "word": "rats",
+   "start": 618.46,
+   "end": 618.74
+  },
+  {
+   "word": "would",
+   "start": 618.74,
+   "end": 619.22
+  },
+  {
+   "word": "not",
+   "start": 619.22,
+   "end": 619.42
+  },
+  {
+   "word": "help",
+   "start": 619.42,
+   "end": 619.68
+  },
+  {
+   "word": "her.",
+   "start": 619.68,
+   "end": 619.96
+  },
+  {
+   "word": "Or",
+   "start": 620.48,
+   "end": 620.78
+  },
+  {
+   "word": "not",
+   "start": 620.78,
+   "end": 621.18
+  },
+  {
+   "word": "for",
+   "start": 621.18,
+   "end": 621.34
+  },
+  {
+   "word": "long.",
+   "start": 621.34,
+   "end": 621.6
+  },
+  {
+   "word": "Whether",
+   "start": 622.46,
+   "end": 622.66
+  },
+  {
+   "word": "a",
+   "start": 622.66,
+   "end": 622.86
+  },
+  {
+   "word": "human",
+   "start": 622.86,
+   "end": 623.06
+  },
+  {
+   "word": "could",
+   "start": 623.06,
+   "end": 623.28
+  },
+  {
+   "word": "be",
+   "start": 623.28,
+   "end": 623.4
+  },
+  {
+   "word": "chilled",
+   "start": 623.4,
+   "end": 623.7
+  },
+  {
+   "word": "safely",
+   "start": 623.7,
+   "end": 624.1
+  },
+  {
+   "word": "enough",
+   "start": 624.1,
+   "end": 624.4
+  },
+  {
+   "word": "to",
+   "start": 624.4,
+   "end": 624.6
+  },
+  {
+   "word": "cut",
+   "start": 624.6,
+   "end": 624.78
+  },
+  {
+   "word": "demand,",
+   "start": 624.78,
+   "end": 625.16
+  },
+  {
+   "word": "while",
+   "start": 625.16,
+   "end": 625.92
+  },
+  {
+   "word": "breathing",
+   "start": 625.92,
+   "end": 626.28
+  },
+  {
+   "word": "liquid,",
+   "start": 626.28,
+   "end": 626.64
+  },
+  {
+   "word": "has",
+   "start": 626.64,
+   "end": 627.2
+  },
+  {
+   "word": "not",
+   "start": 627.2,
+   "end": 627.46
+  },
+  {
+   "word": "been",
+   "start": 627.46,
+   "end": 627.66
+  },
+  {
+   "word": "shown",
+   "start": 627.66,
+   "end": 627.92
+  },
+  {
+   "word": "in",
+   "start": 627.92,
+   "end": 628.08
+  },
+  {
+   "word": "the",
+   "start": 628.08,
+   "end": 628.18
+  },
+  {
+   "word": "sources",
+   "start": 628.18,
+   "end": 628.42
+  },
+  {
+   "word": "we",
+   "start": 628.42,
+   "end": 628.66
+  },
+  {
+   "word": "found.",
+   "start": 628.66,
+   "end": 628.94
+  },
+  {
+   "word": "Philadelphia,",
+   "start": 630.72,
+   "end": 631.3
+  },
+  {
+   "word": "nineteen",
+   "start": 631.3,
+   "end": 632.05
+  },
+  {
+   "word": "eighty-nine.",
+   "start": 632.05,
+   "end": 632.8
+  },
+  {
+   "word": "Three",
+   "start": 632.8,
+   "end": 632.96
+  },
+  {
+   "word": "very",
+   "start": 632.96,
+   "end": 633.44
+  },
+  {
+   "word": "premature",
+   "start": 633.44,
+   "end": 633.96
+  },
+  {
+   "word": "babies.",
+   "start": 633.96,
+   "end": 634.38
+  },
+  {
+   "word": "Twenty-eight,",
+   "start": 634.38,
+   "end": 635.26
+  },
+  {
+   "word": "twenty-four",
+   "start": 635.26,
+   "end": 636.14
+  },
+  {
+   "word": "and",
+   "start": 636.14,
+   "end": 636.22
+  },
+  {
+   "word": "twenty-three",
+   "start": 636.22,
+   "end": 636.7
+  },
+  {
+   "word": "weeks",
+   "start": 636.7,
+   "end": 636.98
+  },
+  {
+   "word": "of",
+   "start": 636.98,
+   "end": 637.24
+  },
+  {
+   "word": "gestation.",
+   "start": 637.24,
+   "end": 637.6
+  },
+  {
+   "word": "Doctors",
+   "start": 638.44,
+   "end": 638.68
+  },
+  {
+   "word": "at",
+   "start": 638.68,
+   "end": 638.98
+  },
+  {
+   "word": "Jefferson",
+   "start": 638.98,
+   "end": 639.28
+  },
+  {
+   "word": "Medical",
+   "start": 639.28,
+   "end": 639.58
+  },
+  {
+   "word": "College,",
+   "start": 639.58,
+   "end": 640.12
+  },
+  {
+   "word": "led",
+   "start": 640.3,
+   "end": 640.4
+  },
+  {
+   "word": "by",
+   "start": 640.4,
+   "end": 640.66
+  },
+  {
+   "word": "Dr.",
+   "start": 640.66,
+   "end": 640.88
+  },
+  {
+   "word": "J.",
+   "start": 641.08,
+   "end": 641.1
+  },
+  {
+   "word": "S.",
+   "start": 641.1,
+   "end": 641.28
+  },
+  {
+   "word": "Greenspan,",
+   "start": 641.44,
+   "end": 641.8
+  },
+  {
+   "word": "tried",
+   "start": 642.06,
+   "end": 642.4
+  },
+  {
+   "word": "perfluorocarbon",
+   "start": 642.4,
+   "end": 643.22
+  },
+  {
+   "word": "in",
+   "start": 643.22,
+   "end": 643.46
+  },
+  {
+   "word": "their",
+   "start": 643.46,
+   "end": 643.6
+  },
+  {
+   "word": "lungs.",
+   "start": 643.6,
+   "end": 643.86
+  },
+  {
+   "word": "A",
+   "start": 644.32,
+   "end": 644.54
+  },
+  {
+   "word": "review",
+   "start": 644.54,
+   "end": 644.74
+  },
+  {
+   "word": "reports",
+   "start": 644.74,
+   "end": 645.14
+  },
+  {
+   "word": "that",
+   "start": 645.14,
+   "end": 645.44
+  },
+  {
+   "word": "their",
+   "start": 645.44,
+   "end": 645.6
+  },
+  {
+   "word": "lung",
+   "start": 645.6,
+   "end": 645.8
+  },
+  {
+   "word": "compliance",
+   "start": 645.8,
+   "end": 646.36
+  },
+  {
+   "word": "improved.",
+   "start": 646.36,
+   "end": 646.86
+  },
+  {
+   "word": "The",
+   "start": 647.38,
+   "end": 647.52
+  },
+  {
+   "word": "paper",
+   "start": 647.52,
+   "end": 647.72
+  },
+  {
+   "word": "appeared",
+   "start": 647.72,
+   "end": 648.06
+  },
+  {
+   "word": "in",
+   "start": 648.06,
+   "end": 648.34
+  },
+  {
+   "word": "the",
+   "start": 648.34,
+   "end": 648.48
+  },
+  {
+   "word": "Journal",
+   "start": 648.48,
+   "end": 648.68
+  },
+  {
+   "word": "of",
+   "start": 648.68,
+   "end": 648.9
+  },
+  {
+   "word": "Pediatrics",
+   "start": 648.9,
+   "end": 649.3
+  },
+  {
+   "word": "in",
+   "start": 649.3,
+   "end": 649.7
+  },
+  {
+   "word": "nineteen",
+   "start": 649.7,
+   "end": 650.36
+  },
+  {
+   "word": "ninety.",
+   "start": 650.36,
+   "end": 651.02
+  },
+  {
+   "word": "Note",
+   "start": 651.02,
+   "end": 651.22
+  },
+  {
+   "word": "what",
+   "start": 651.22,
+   "end": 651.36
+  },
+  {
+   "word": "it",
+   "start": 651.36,
+   "end": 651.44
+  },
+  {
+   "word": "was.",
+   "start": 651.44,
+   "end": 651.78
+  },
+  {
+   "word": "Partial",
+   "start": 652.34,
+   "end": 652.58
+  },
+  {
+   "word": "liquid",
+   "start": 652.58,
+   "end": 652.92
+  },
+  {
+   "word": "ventilation.",
+   "start": 652.92,
+   "end": 653.4
+  },
+  {
+   "word": "The",
+   "start": 654.0,
+   "end": 654.1
+  },
+  {
+   "word": "lungs",
+   "start": 654.1,
+   "end": 654.32
+  },
+  {
+   "word": "were",
+   "start": 654.32,
+   "end": 654.52
+  },
+  {
+   "word": "filled",
+   "start": 654.52,
+   "end": 654.78
+  },
+  {
+   "word": "with",
+   "start": 654.78,
+   "end": 654.98
+  },
+  {
+   "word": "the",
+   "start": 654.98,
+   "end": 655.12
+  },
+  {
+   "word": "liquid,",
+   "start": 655.12,
+   "end": 655.36
+  },
+  {
+   "word": "and",
+   "start": 655.36,
+   "end": 655.86
+  },
+  {
+   "word": "a",
+   "start": 655.86,
+   "end": 655.98
+  },
+  {
+   "word": "ventilator",
+   "start": 655.98,
+   "end": 656.42
+  },
+  {
+   "word": "still",
+   "start": 656.42,
+   "end": 656.66
+  },
+  {
+   "word": "pushed",
+   "start": 656.66,
+   "end": 656.94
+  },
+  {
+   "word": "gas",
+   "start": 656.94,
+   "end": 657.26
+  },
+  {
+   "word": "through",
+   "start": 657.26,
+   "end": 657.54
+  },
+  {
+   "word": "it.",
+   "start": 657.54,
+   "end": 657.78
+  },
+  {
+   "word": "Not",
+   "start": 658.08,
+   "end": 658.28
+  },
+  {
+   "word": "a",
+   "start": 658.28,
+   "end": 658.4
+  },
+  {
+   "word": "baby",
+   "start": 658.4,
+   "end": 658.56
+  },
+  {
+   "word": "breathing",
+   "start": 658.56,
+   "end": 659.02
+  },
+  {
+   "word": "liquid",
+   "start": 659.02,
+   "end": 659.42
+  },
+  {
+   "word": "alone.",
+   "start": 659.42,
+   "end": 659.8
+  },
+  {
+   "word": "Nineteen",
+   "start": 659.8,
+   "end": 661.31
+  },
+  {
+   "word": "ninety-six.",
+   "start": 661.31,
+   "end": 662.82
+  },
+  {
+   "word": "The",
+   "start": 662.82,
+   "end": 662.82
+  },
+  {
+   "word": "LiquiVent",
+   "start": 662.82,
+   "end": 663.26
+  },
+  {
+   "word": "study",
+   "start": 663.26,
+   "end": 663.6
+  },
+  {
+   "word": "group",
+   "start": 663.6,
+   "end": 663.8
+  },
+  {
+   "word": "reported",
+   "start": 663.8,
+   "end": 664.24
+  },
+  {
+   "word": "thirteen",
+   "start": 664.24,
+   "end": 664.74
+  },
+  {
+   "word": "infants",
+   "start": 664.74,
+   "end": 665.2
+  },
+  {
+   "word": "with",
+   "start": 665.2,
+   "end": 665.44
+  },
+  {
+   "word": "severe",
+   "start": 665.44,
+   "end": 665.86
+  },
+  {
+   "word": "respiratory",
+   "start": 665.86,
+   "end": 666.4
+  },
+  {
+   "word": "distress.",
+   "start": 666.4,
+   "end": 666.96
+  },
+  {
+   "word": "In",
+   "start": 667.6,
+   "end": 667.74
+  },
+  {
+   "word": "the",
+   "start": 667.74,
+   "end": 667.84
+  },
+  {
+   "word": "New",
+   "start": 667.84,
+   "end": 667.94
+  },
+  {
+   "word": "England",
+   "start": 667.94,
+   "end": 668.24
+  },
+  {
+   "word": "Journal",
+   "start": 668.24,
+   "end": 668.48
+  },
+  {
+   "word": "of",
+   "start": 668.48,
+   "end": 668.68
+  },
+  {
+   "word": "Medicine,",
+   "start": 668.68,
+   "end": 669.1
+  },
+  {
+   "word": "they",
+   "start": 669.74,
+   "end": 669.76
+  },
+  {
+   "word": "say",
+   "start": 669.76,
+   "end": 669.92
+  },
+  {
+   "word": "that",
+   "start": 669.92,
+   "end": 670.06
+  },
+  {
+   "word": "within",
+   "start": 670.06,
+   "end": 670.22
+  },
+  {
+   "word": "an",
+   "start": 670.22,
+   "end": 670.46
+  },
+  {
+   "word": "hour",
+   "start": 670.46,
+   "end": 670.68
+  },
+  {
+   "word": "of",
+   "start": 670.68,
+   "end": 670.82
+  },
+  {
+   "word": "the",
+   "start": 670.82,
+   "end": 670.96
+  },
+  {
+   "word": "treatment,",
+   "start": 670.96,
+   "end": 671.32
+  },
+  {
+   "word": "arterial",
+   "start": 671.68,
+   "end": 672.16
+  },
+  {
+   "word": "oxygen",
+   "start": 672.16,
+   "end": 672.54
+  },
+  {
+   "word": "tension",
+   "start": 672.54,
+   "end": 672.94
+  },
+  {
+   "word": "rose",
+   "start": 672.94,
+   "end": 673.28
+  },
+  {
+   "word": "by",
+   "start": 673.28,
+   "end": 673.54
+  },
+  {
+   "word": "a",
+   "start": 673.54,
+   "end": 673.872
+  },
+  {
+   "word": "hundred",
+   "start": 673.872,
+   "end": 674.204
+  },
+  {
+   "word": "and",
+   "start": 674.204,
+   "end": 674.536
+  },
+  {
+   "word": "thirty-eight",
+   "start": 674.536,
+   "end": 674.868
+  },
+  {
+   "word": "percent.",
+   "start": 674.868,
+   "end": 675.2
+  },
+  {
+   "word": "Compliance",
+   "start": 675.2,
+   "end": 675.98
+  },
+  {
+   "word": "rose",
+   "start": 675.98,
+   "end": 676.32
+  },
+  {
+   "word": "by",
+   "start": 676.32,
+   "end": 676.52
+  },
+  {
+   "word": "sixty-one.",
+   "start": 676.52,
+   "end": 677.72
+  },
+  {
+   "word": "No",
+   "start": 677.72,
+   "end": 678.04
+  },
+  {
+   "word": "adverse",
+   "start": 678.04,
+   "end": 678.36
+  },
+  {
+   "word": "events",
+   "start": 678.36,
+   "end": 678.7
+  },
+  {
+   "word": "were",
+   "start": 678.7,
+   "end": 678.92
+  },
+  {
+   "word": "clearly",
+   "start": 678.92,
+   "end": 679.32
+  },
+  {
+   "word": "attributable",
+   "start": 679.32,
+   "end": 679.68
+  },
+  {
+   "word": "to",
+   "start": 679.68,
+   "end": 680.0
+  },
+  {
+   "word": "it.",
+   "start": 680.0,
+   "end": 680.24
+  },
+  {
+   "word": "That",
+   "start": 680.78,
+   "end": 681.06
+  },
+  {
+   "word": "is",
+   "start": 681.06,
+   "end": 682.06
+  },
+  {
+   "word": "the",
+   "start": 682.06,
+   "end": 682.24
+  },
+  {
+   "word": "best",
+   "start": 682.24,
+   "end": 682.52
+  },
+  {
+   "word": "result",
+   "start": 682.52,
+   "end": 682.88
+  },
+  {
+   "word": "in",
+   "start": 682.88,
+   "end": 683.06
+  },
+  {
+   "word": "this",
+   "start": 683.06,
+   "end": 683.22
+  },
+  {
+   "word": "film.",
+   "start": 683.22,
+   "end": 683.46
+  },
+  {
+   "word": "Then",
+   "start": 684.48,
+   "end": 684.58
+  },
+  {
+   "word": "the",
+   "start": 684.58,
+   "end": 684.68
+  },
+  {
+   "word": "footnote.",
+   "start": 684.68,
+   "end": 684.96
+  },
+  {
+   "word": "Other",
+   "start": 686.02,
+   "end": 686.12
+  },
+  {
+   "word": "clinical",
+   "start": 686.12,
+   "end": 686.46
+  },
+  {
+   "word": "trials,",
+   "start": 686.46,
+   "end": 687.0
+  },
+  {
+   "word": "a",
+   "start": 687.08,
+   "end": 687.2
+  },
+  {
+   "word": "review",
+   "start": 687.2,
+   "end": 687.42
+  },
+  {
+   "word": "notes,",
+   "start": 687.42,
+   "end": 688.14
+  },
+  {
+   "word": "failed",
+   "start": 688.14,
+   "end": 688.28
+  },
+  {
+   "word": "to",
+   "start": 688.28,
+   "end": 688.5
+  },
+  {
+   "word": "show",
+   "start": 688.5,
+   "end": 688.68
+  },
+  {
+   "word": "that",
+   "start": 688.68,
+   "end": 688.86
+  },
+  {
+   "word": "partial",
+   "start": 688.86,
+   "end": 689.22
+  },
+  {
+   "word": "liquid",
+   "start": 689.22,
+   "end": 689.56
+  },
+  {
+   "word": "ventilation",
+   "start": 689.56,
+   "end": 690.06
+  },
+  {
+   "word": "reduced",
+   "start": 690.06,
+   "end": 690.58
+  },
+  {
+   "word": "illness",
+   "start": 690.58,
+   "end": 691.0
+  },
+  {
+   "word": "in",
+   "start": 691.0,
+   "end": 691.18
+  },
+  {
+   "word": "acute",
+   "start": 691.18,
+   "end": 691.5
+  },
+  {
+   "word": "respiratory",
+   "start": 691.5,
+   "end": 691.94
+  },
+  {
+   "word": "failure.",
+   "start": 691.94,
+   "end": 692.48
+  },
+  {
+   "word": "It",
+   "start": 693.26,
+   "end": 693.44
+  },
+  {
+   "word": "is",
+   "start": 693.44,
+   "end": 693.54
+  },
+  {
+   "word": "not",
+   "start": 693.54,
+   "end": 693.7
+  },
+  {
+   "word": "a",
+   "start": 693.7,
+   "end": 693.84
+  },
+  {
+   "word": "lake,",
+   "start": 693.84,
+   "end": 694.06
+  },
+  {
+   "word": "and",
+   "start": 694.72,
+   "end": 694.84
+  },
+  {
+   "word": "it",
+   "start": 694.84,
+   "end": 694.94
+  },
+  {
+   "word": "is",
+   "start": 694.94,
+   "end": 695.06
+  },
+  {
+   "word": "not",
+   "start": 695.06,
+   "end": 695.26
+  },
+  {
+   "word": "an",
+   "start": 695.26,
+   "end": 695.38
+  },
+  {
+   "word": "adult",
+   "start": 695.38,
+   "end": 695.64
+  },
+  {
+   "word": "swimmer.",
+   "start": 695.64,
+   "end": 696.06
+  },
+  {
+   "word": "A",
+   "start": 696.56,
+   "end": 696.72
+  },
+  {
+   "word": "premature",
+   "start": 696.72,
+   "end": 697.1
+  },
+  {
+   "word": "lung",
+   "start": 697.1,
+   "end": 697.42
+  },
+  {
+   "word": "is",
+   "start": 697.42,
+   "end": 697.6
+  },
+  {
+   "word": "not",
+   "start": 697.6,
+   "end": 697.76
+  },
+  {
+   "word": "a",
+   "start": 697.76,
+   "end": 697.88
+  },
+  {
+   "word": "healthy",
+   "start": 697.88,
+   "end": 698.12
+  },
+  {
+   "word": "one,",
+   "start": 698.12,
+   "end": 698.36
+  },
+  {
+   "word": "and",
+   "start": 698.76,
+   "end": 698.94
+  },
+  {
+   "word": "a",
+   "start": 698.94,
+   "end": 699.04
+  },
+  {
+   "word": "controlled",
+   "start": 699.04,
+   "end": 699.4
+  },
+  {
+   "word": "ward",
+   "start": 699.4,
+   "end": 699.72
+  },
+  {
+   "word": "is",
+   "start": 699.72,
+   "end": 699.94
+  },
+  {
+   "word": "not",
+   "start": 699.94,
+   "end": 700.18
+  },
+  {
+   "word": "open",
+   "start": 700.18,
+   "end": 700.46
+  },
+  {
+   "word": "water.",
+   "start": 700.46,
+   "end": 700.76
+  },
+  {
+   "word": "Whether",
+   "start": 701.54,
+   "end": 701.74
+  },
+  {
+   "word": "a",
+   "start": 701.74,
+   "end": 701.94
+  },
+  {
+   "word": "healthy",
+   "start": 701.94,
+   "end": 702.18
+  },
+  {
+   "word": "adult",
+   "start": 702.18,
+   "end": 702.52
+  },
+  {
+   "word": "could",
+   "start": 702.52,
+   "end": 702.74
+  },
+  {
+   "word": "breathe",
+   "start": 702.74,
+   "end": 702.98
+  },
+  {
+   "word": "liquid",
+   "start": 702.98,
+   "end": 703.3
+  },
+  {
+   "word": "for",
+   "start": 703.3,
+   "end": 703.54
+  },
+  {
+   "word": "hours",
+   "start": 703.54,
+   "end": 703.88
+  },
+  {
+   "word": "has",
+   "start": 703.88,
+   "end": 704.14
+  },
+  {
+   "word": "not",
+   "start": 704.14,
+   "end": 704.4
+  },
+  {
+   "word": "been",
+   "start": 704.4,
+   "end": 704.56
+  },
+  {
+   "word": "established.",
+   "start": 704.56,
+   "end": 705.04
+  },
+  {
+   "word": "Now",
+   "start": 705.96,
+   "end": 706.48
+  },
+  {
+   "word": "take",
+   "start": 706.62,
+   "end": 706.74
+  },
+  {
+   "word": "her",
+   "start": 706.74,
+   "end": 706.9
+  },
+  {
+   "word": "down.",
+   "start": 706.9,
+   "end": 707.14
+  },
+  {
+   "word": "Pressure",
+   "start": 707.94,
+   "end": 707.94
+  },
+  {
+   "word": "rises",
+   "start": 707.94,
+   "end": 708.38
+  },
+  {
+   "word": "about",
+   "start": 708.38,
+   "end": 708.64
+  },
+  {
+   "word": "one",
+   "start": 708.64,
+   "end": 708.98
+  },
+  {
+   "word": "atmosphere",
+   "start": 708.98,
+   "end": 709.42
+  },
+  {
+   "word": "for",
+   "start": 709.42,
+   "end": 709.66
+  },
+  {
+   "word": "every",
+   "start": 709.66,
+   "end": 709.86
+  },
+  {
+   "word": "ten",
+   "start": 709.86,
+   "end": 710.14
+  },
+  {
+   "word": "metres",
+   "start": 710.14,
+   "end": 710.42
+  },
+  {
+   "word": "of",
+   "start": 710.42,
+   "end": 710.7
+  },
+  {
+   "word": "seawater.",
+   "start": 710.7,
+   "end": 711.16
+  },
+  {
+   "word": "That",
+   "start": 711.62,
+   "end": 711.82
+  },
+  {
+   "word": "figure",
+   "start": 711.82,
+   "end": 711.98
+  },
+  {
+   "word": "is",
+   "start": 711.98,
+   "end": 712.22
+  },
+  {
+   "word": "consistent",
+   "start": 712.22,
+   "end": 712.66
+  },
+  {
+   "word": "across",
+   "start": 712.66,
+   "end": 713.02
+  },
+  {
+   "word": "diving",
+   "start": 713.02,
+   "end": 713.36
+  },
+  {
+   "word": "sources.",
+   "start": 713.36,
+   "end": 713.76
+  },
+  {
+   "word": "At",
+   "start": 714.36,
+   "end": 714.52
+  },
+  {
+   "word": "thirty",
+   "start": 714.52,
+   "end": 714.82
+  },
+  {
+   "word": "metres,",
+   "start": 714.82,
+   "end": 715.12
+  },
+  {
+   "word": "four",
+   "start": 715.12,
+   "end": 715.42
+  },
+  {
+   "word": "atmospheres",
+   "start": 715.42,
+   "end": 715.9
+  },
+  {
+   "word": "in",
+   "start": 715.9,
+   "end": 716.02
+  },
+  {
+   "word": "total.",
+   "start": 716.02,
+   "end": 716.26
+  },
+  {
+   "word": "Our",
+   "start": 717.02,
+   "end": 717.12
+  },
+  {
+   "word": "sum.",
+   "start": 717.12,
+   "end": 717.3
+  },
+  {
+   "word": "Divers",
+   "start": 718.38,
+   "end": 718.48
+  },
+  {
+   "word": "on",
+   "start": 718.48,
+   "end": 718.7
+  },
+  {
+   "word": "air",
+   "start": 718.7,
+   "end": 719.06
+  },
+  {
+   "word": "meet",
+   "start": 719.06,
+   "end": 719.32
+  },
+  {
+   "word": "two",
+   "start": 719.32,
+   "end": 719.64
+  },
+  {
+   "word": "problems",
+   "start": 719.64,
+   "end": 720.0
+  },
+  {
+   "word": "there.",
+   "start": 720.0,
+   "end": 720.26
+  },
+  {
+   "word": "One",
+   "start": 720.76,
+   "end": 721.0
+  },
+  {
+   "word": "is",
+   "start": 721.0,
+   "end": 721.2
+  },
+  {
+   "word": "the",
+   "start": 721.2,
+   "end": 721.32
+  },
+  {
+   "word": "gas",
+   "start": 721.32,
+   "end": 721.54
+  },
+  {
+   "word": "itself.",
+   "start": 721.54,
+   "end": 721.86
+  },
+  {
+   "word": "A",
+   "start": 722.38,
+   "end": 722.58
+  },
+  {
+   "word": "training",
+   "start": 722.58,
+   "end": 722.8
+  },
+  {
+   "word": "article",
+   "start": 722.8,
+   "end": 723.08
+  },
+  {
+   "word": "says",
+   "start": 723.08,
+   "end": 723.4
+  },
+  {
+   "word": "the",
+   "start": 723.4,
+   "end": 723.56
+  },
+  {
+   "word": "effects",
+   "start": 723.56,
+   "end": 723.82
+  },
+  {
+   "word": "of",
+   "start": 723.82,
+   "end": 724.0
+  },
+  {
+   "word": "inert-gas",
+   "start": 724.0,
+   "end": 724.58
+  },
+  {
+   "word": "narcosis",
+   "start": 724.58,
+   "end": 725.14
+  },
+  {
+   "word": "are",
+   "start": 725.14,
+   "end": 725.36
+  },
+  {
+   "word": "second",
+   "start": 725.36,
+   "end": 725.68
+  },
+  {
+   "word": "only",
+   "start": 725.68,
+   "end": 726.14
+  },
+  {
+   "word": "to",
+   "start": 726.14,
+   "end": 726.4
+  },
+  {
+   "word": "oxygen",
+   "start": 726.4,
+   "end": 726.8
+  },
+  {
+   "word": "toxicity",
+   "start": 726.8,
+   "end": 727.3
+  },
+  {
+   "word": "in",
+   "start": 727.3,
+   "end": 727.7
+  },
+  {
+   "word": "hazard",
+   "start": 727.7,
+   "end": 728.0
+  },
+  {
+   "word": "for",
+   "start": 728.0,
+   "end": 728.34
+  },
+  {
+   "word": "an",
+   "start": 728.34,
+   "end": 728.44
+  },
+  {
+   "word": "air",
+   "start": 728.44,
+   "end": 728.64
+  },
+  {
+   "word": "diver.",
+   "start": 728.64,
+   "end": 728.88
+  },
+  {
+   "word": "The",
+   "start": 729.64,
+   "end": 729.88
+  },
+  {
+   "word": "other",
+   "start": 729.88,
+   "end": 730.06
+  },
+  {
+   "word": "is",
+   "start": 730.06,
+   "end": 730.32
+  },
+  {
+   "word": "the",
+   "start": 730.32,
+   "end": 730.46
+  },
+  {
+   "word": "bends.",
+   "start": 730.46,
+   "end": 730.66
+  },
+  {
+   "word": "The",
+   "start": 731.34,
+   "end": 731.5
+  },
+  {
+   "word": "extra",
+   "start": 731.5,
+   "end": 731.72
+  },
+  {
+   "word": "pressure",
+   "start": 731.72,
+   "end": 732.06
+  },
+  {
+   "word": "drives",
+   "start": 732.06,
+   "end": 732.36
+  },
+  {
+   "word": "more",
+   "start": 732.36,
+   "end": 732.6
+  },
+  {
+   "word": "nitrogen",
+   "start": 732.6,
+   "end": 733.0
+  },
+  {
+   "word": "into",
+   "start": 733.0,
+   "end": 733.34
+  },
+  {
+   "word": "the",
+   "start": 733.34,
+   "end": 733.48
+  },
+  {
+   "word": "blood.",
+   "start": 733.48,
+   "end": 733.7
+  },
+  {
+   "word": "Come",
+   "start": 733.7,
+   "end": 734.5
+  },
+  {
+   "word": "up",
+   "start": 734.5,
+   "end": 734.64
+  },
+  {
+   "word": "too",
+   "start": 734.64,
+   "end": 734.78
+  },
+  {
+   "word": "fast",
+   "start": 734.78,
+   "end": 735.12
+  },
+  {
+   "word": "and",
+   "start": 735.12,
+   "end": 735.34
+  },
+  {
+   "word": "it",
+   "start": 735.34,
+   "end": 735.44
+  },
+  {
+   "word": "comes",
+   "start": 735.44,
+   "end": 735.58
+  },
+  {
+   "word": "out",
+   "start": 735.58,
+   "end": 735.74
+  },
+  {
+   "word": "as",
+   "start": 735.74,
+   "end": 735.88
+  },
+  {
+   "word": "bubbles.",
+   "start": 735.88,
+   "end": 736.18
+  },
+  {
+   "word": "Joint",
+   "start": 737.12,
+   "end": 737.12
+  },
+  {
+   "word": "pain.",
+   "start": 737.12,
+   "end": 737.44
+  },
+  {
+   "word": "In",
+   "start": 737.76,
+   "end": 737.84
+  },
+  {
+   "word": "severe",
+   "start": 737.84,
+   "end": 738.14
+  },
+  {
+   "word": "cases,",
+   "start": 738.14,
+   "end": 738.54
+  },
+  {
+   "word": "stroke",
+   "start": 738.88,
+   "end": 739.26
+  },
+  {
+   "word": "or",
+   "start": 739.26,
+   "end": 739.54
+  },
+  {
+   "word": "paralysis.",
+   "start": 739.54,
+   "end": 740.02
+  },
+  {
+   "word": "The",
+   "start": 741.02,
+   "end": 741.1
+  },
+  {
+   "word": "standard",
+   "start": 741.1,
+   "end": 741.38
+  },
+  {
+   "word": "advice",
+   "start": 741.38,
+   "end": 741.78
+  },
+  {
+   "word": "is",
+   "start": 741.78,
+   "end": 742.0
+  },
+  {
+   "word": "an",
+   "start": 742.0,
+   "end": 742.12
+  },
+  {
+   "word": "ascent",
+   "start": 742.12,
+   "end": 742.4
+  },
+  {
+   "word": "of",
+   "start": 742.4,
+   "end": 742.6
+  },
+  {
+   "word": "about",
+   "start": 742.6,
+   "end": 742.8
+  },
+  {
+   "word": "ten",
+   "start": 742.8,
+   "end": 743.08
+  },
+  {
+   "word": "metres",
+   "start": 743.08,
+   "end": 743.36
+  },
+  {
+   "word": "a",
+   "start": 743.36,
+   "end": 743.6
+  },
+  {
+   "word": "minute",
+   "start": 743.6,
+   "end": 743.74
+  },
+  {
+   "word": "or",
+   "start": 743.74,
+   "end": 744.0
+  },
+  {
+   "word": "slower.",
+   "start": 744.0,
+   "end": 744.34
+  },
+  {
+   "word": "Oxygen",
+   "start": 745.26,
+   "end": 745.56
+  },
+  {
+   "word": "is",
+   "start": 745.56,
+   "end": 745.68
+  },
+  {
+   "word": "the",
+   "start": 745.68,
+   "end": 745.82
+  },
+  {
+   "word": "third.",
+   "start": 745.82,
+   "end": 746.06
+  },
+  {
+   "word": "Dive",
+   "start": 747.04,
+   "end": 747.04
+  },
+  {
+   "word": "rules",
+   "start": 747.04,
+   "end": 747.24
+  },
+  {
+   "word": "cap",
+   "start": 747.24,
+   "end": 747.48
+  },
+  {
+   "word": "its",
+   "start": 747.48,
+   "end": 747.7
+  },
+  {
+   "word": "pressure.",
+   "start": 747.7,
+   "end": 747.98
+  },
+  {
+   "word": "The",
+   "start": 748.8,
+   "end": 748.92
+  },
+  {
+   "word": "U.S.",
+   "start": 748.92,
+   "end": 749.4
+  },
+  {
+   "word": "Environmental",
+   "start": 749.4,
+   "end": 749.52
+  },
+  {
+   "word": "Protection",
+   "start": 749.52,
+   "end": 750.04
+  },
+  {
+   "word": "Agency's",
+   "start": 750.04,
+   "end": 750.7
+  },
+  {
+   "word": "regional",
+   "start": 750.7,
+   "end": 750.98
+  },
+  {
+   "word": "dive",
+   "start": 750.98,
+   "end": 751.26
+  },
+  {
+   "word": "plan",
+   "start": 751.26,
+   "end": 751.52
+  },
+  {
+   "word": "says",
+   "start": 751.52,
+   "end": 751.84
+  },
+  {
+   "word": "nitrox",
+   "start": 751.84,
+   "end": 752.3
+  },
+  {
+   "word": "diving",
+   "start": 752.3,
+   "end": 752.66
+  },
+  {
+   "word": "is",
+   "start": 752.66,
+   "end": 752.86
+  },
+  {
+   "word": "generally",
+   "start": 752.86,
+   "end": 753.22
+  },
+  {
+   "word": "limited",
+   "start": 753.22,
+   "end": 753.64
+  },
+  {
+   "word": "to",
+   "start": 753.64,
+   "end": 753.9
+  },
+  {
+   "word": "one",
+   "start": 753.9,
+   "end": 754.127
+  },
+  {
+   "word": "point",
+   "start": 754.127,
+   "end": 754.353
+  },
+  {
+   "word": "four",
+   "start": 754.353,
+   "end": 754.58
+  },
+  {
+   "word": "atmospheres.",
+   "start": 754.58,
+   "end": 755.16
+  },
+  {
+   "word": "A",
+   "start": 755.8,
+   "end": 755.96
+  },
+  {
+   "word": "quoted",
+   "start": 755.96,
+   "end": 756.18
+  },
+  {
+   "word": "NOAA",
+   "start": 756.18,
+   "end": 756.46
+  },
+  {
+   "word": "manual",
+   "start": 756.78,
+   "end": 757.14
+  },
+  {
+   "word": "says",
+   "start": 757.14,
+   "end": 757.34
+  },
+  {
+   "word": "one",
+   "start": 757.34,
+   "end": 757.873
+  },
+  {
+   "word": "point",
+   "start": 757.873,
+   "end": 758.407
+  },
+  {
+   "word": "six.",
+   "start": 758.407,
+   "end": 758.94
+  },
+  {
+   "word": "Air",
+   "start": 758.94,
+   "end": 759.14
+  },
+  {
+   "word": "is",
+   "start": 759.14,
+   "end": 759.28
+  },
+  {
+   "word": "twenty-one",
+   "start": 759.28,
+   "end": 759.59
+  },
+  {
+   "word": "percent",
+   "start": 759.59,
+   "end": 759.9
+  },
+  {
+   "word": "oxygen.",
+   "start": 759.9,
+   "end": 760.34
+  },
+  {
+   "word": "Multiply",
+   "start": 760.96,
+   "end": 761.22
+  },
+  {
+   "word": "by",
+   "start": 761.22,
+   "end": 761.38
+  },
+  {
+   "word": "the",
+   "start": 761.38,
+   "end": 761.48
+  },
+  {
+   "word": "pressure.",
+   "start": 761.48,
+   "end": 761.72
+  },
+  {
+   "word": "About",
+   "start": 762.26,
+   "end": 762.7
+  },
+  {
+   "word": "sixty",
+   "start": 762.7,
+   "end": 762.99
+  },
+  {
+   "word": "metres",
+   "start": 762.99,
+   "end": 763.28
+  },
+  {
+   "word": "on",
+   "start": 763.28,
+   "end": 763.56
+  },
+  {
+   "word": "air,",
+   "start": 763.56,
+   "end": 763.8
+  },
+  {
+   "word": "and",
+   "start": 763.8,
+   "end": 764.0
+  },
+  {
+   "word": "the",
+   "start": 764.0,
+   "end": 764.12
+  },
+  {
+   "word": "limit",
+   "start": 764.12,
+   "end": 764.26
+  },
+  {
+   "word": "is",
+   "start": 764.26,
+   "end": 764.42
+  },
+  {
+   "word": "reached.",
+   "start": 764.42,
+   "end": 764.7
+  },
+  {
+   "word": "Our",
+   "start": 765.32,
+   "end": 765.5
+  },
+  {
+   "word": "arithmetic,",
+   "start": 765.5,
+   "end": 765.88
+  },
+  {
+   "word": "at",
+   "start": 765.88,
+   "end": 766.22
+  },
+  {
+   "word": "four",
+   "start": 766.22,
+   "end": 766.46
+  },
+  {
+   "word": "atmospheres",
+   "start": 766.46,
+   "end": 766.9
+  },
+  {
+   "word": "per",
+   "start": 766.9,
+   "end": 767.1
+  },
+  {
+   "word": "thirty.",
+   "start": 767.1,
+   "end": 768.24
+  },
+  {
+   "word": "But",
+   "start": 768.24,
+   "end": 768.5
+  },
+  {
+   "word": "she",
+   "start": 768.5,
+   "end": 768.64
+  },
+  {
+   "word": "is",
+   "start": 768.64,
+   "end": 768.8
+  },
+  {
+   "word": "not",
+   "start": 768.8,
+   "end": 769.0
+  },
+  {
+   "word": "breathing",
+   "start": 769.0,
+   "end": 769.3
+  },
+  {
+   "word": "air.",
+   "start": 769.3,
+   "end": 769.64
+  },
+  {
+   "word": "What",
+   "start": 770.46,
+   "end": 770.64
+  },
+  {
+   "word": "would",
+   "start": 770.64,
+   "end": 770.78
+  },
+  {
+   "word": "pressure",
+   "start": 770.78,
+   "end": 771.02
+  },
+  {
+   "word": "do",
+   "start": 771.02,
+   "end": 771.24
+  },
+  {
+   "word": "to",
+   "start": 771.24,
+   "end": 771.38
+  },
+  {
+   "word": "someone",
+   "start": 771.38,
+   "end": 771.62
+  },
+  {
+   "word": "breathing",
+   "start": 771.62,
+   "end": 771.88
+  },
+  {
+   "word": "water?",
+   "start": 771.88,
+   "end": 772.24
+  },
+  {
+   "word": "Would",
+   "start": 772.98,
+   "end": 773.12
+  },
+  {
+   "word": "nitrogen",
+   "start": 773.12,
+   "end": 773.58
+  },
+  {
+   "word": "dissolve",
+   "start": 773.58,
+   "end": 774.0
+  },
+  {
+   "word": "into",
+   "start": 774.0,
+   "end": 774.22
+  },
+  {
+   "word": "her",
+   "start": 774.22,
+   "end": 774.36
+  },
+  {
+   "word": "blood?",
+   "start": 774.36,
+   "end": 774.58
+  },
+  {
+   "word": "Would",
+   "start": 775.2,
+   "end": 775.3
+  },
+  {
+   "word": "it",
+   "start": 775.3,
+   "end": 775.42
+  },
+  {
+   "word": "bubble",
+   "start": 775.42,
+   "end": 775.58
+  },
+  {
+   "word": "on",
+   "start": 775.58,
+   "end": 775.82
+  },
+  {
+   "word": "the",
+   "start": 775.82,
+   "end": 775.9
+  },
+  {
+   "word": "way",
+   "start": 775.9,
+   "end": 776.04
+  },
+  {
+   "word": "up?",
+   "start": 776.04,
+   "end": 776.24
+  },
+  {
+   "word": "That",
+   "start": 776.88,
+   "end": 777.32
+  },
+  {
+   "word": "has",
+   "start": 777.32,
+   "end": 777.42
+  },
+  {
+   "word": "not",
+   "start": 777.42,
+   "end": 777.54
+  },
+  {
+   "word": "been",
+   "start": 777.54,
+   "end": 777.68
+  },
+  {
+   "word": "published,",
+   "start": 777.68,
+   "end": 778.02
+  },
+  {
+   "word": "as",
+   "start": 778.22,
+   "end": 778.34
+  },
+  {
+   "word": "far",
+   "start": 778.34,
+   "end": 778.48
+  },
+  {
+   "word": "as",
+   "start": 778.48,
+   "end": 778.58
+  },
+  {
+   "word": "we",
+   "start": 778.58,
+   "end": 778.68
+  },
+  {
+   "word": "could",
+   "start": 778.68,
+   "end": 778.8
+  },
+  {
+   "word": "find.",
+   "start": 778.8,
+   "end": 778.96
+  },
+  {
+   "word": "It",
+   "start": 779.6,
+   "end": 779.82
+  },
+  {
+   "word": "is",
+   "start": 779.82,
+   "end": 779.94
+  },
+  {
+   "word": "unclear",
+   "start": 779.94,
+   "end": 780.26
+  },
+  {
+   "word": "what",
+   "start": 780.26,
+   "end": 780.48
+  },
+  {
+   "word": "the",
+   "start": 780.48,
+   "end": 780.6
+  },
+  {
+   "word": "answer",
+   "start": 780.6,
+   "end": 780.76
+  },
+  {
+   "word": "would",
+   "start": 780.76,
+   "end": 780.94
+  },
+  {
+   "word": "be.",
+   "start": 780.94,
+   "end": 781.14
+  },
+  {
+   "word": "Here",
+   "start": 781.88,
+   "end": 782.32
+  },
+  {
+   "word": "is",
+   "start": 782.32,
+   "end": 782.5
+  },
+  {
+   "word": "where",
+   "start": 782.5,
+   "end": 782.64
+  },
+  {
+   "word": "it",
+   "start": 782.64,
+   "end": 782.74
+  },
+  {
+   "word": "stands",
+   "start": 782.74,
+   "end": 783.1
+  },
+  {
+   "word": "on",
+   "start": 783.1,
+   "end": 783.38
+  },
+  {
+   "word": "Monday,",
+   "start": 783.38,
+   "end": 783.68
+  },
+  {
+   "word": "the",
+   "start": 783.94,
+   "end": 783.98
+  },
+  {
+   "word": "twenty-sixth",
+   "start": 783.98,
+   "end": 784.62
+  },
+  {
+   "word": "of",
+   "start": 784.62,
+   "end": 784.7
+  },
+  {
+   "word": "October,",
+   "start": 784.7,
+   "end": 785.08
+  },
+  {
+   "word": "twenty",
+   "start": 785.08,
+   "end": 785.87
+  },
+  {
+   "word": "twenty-six.",
+   "start": 785.87,
+   "end": 786.66
+  },
+  {
+   "word": "What",
+   "start": 786.66,
+   "end": 786.82
+  },
+  {
+   "word": "is",
+   "start": 786.82,
+   "end": 786.96
+  },
+  {
+   "word": "known.",
+   "start": 786.96,
+   "end": 787.18
+  },
+  {
+   "word": "Water",
+   "start": 787.66,
+   "end": 788.08
+  },
+  {
+   "word": "holds",
+   "start": 788.08,
+   "end": 788.44
+  },
+  {
+   "word": "about",
+   "start": 788.44,
+   "end": 788.68
+  },
+  {
+   "word": "thirty-six",
+   "start": 788.68,
+   "end": 789.1
+  },
+  {
+   "word": "times",
+   "start": 789.1,
+   "end": 789.5
+  },
+  {
+   "word": "less",
+   "start": 789.5,
+   "end": 789.76
+  },
+  {
+   "word": "oxygen",
+   "start": 789.76,
+   "end": 790.2
+  },
+  {
+   "word": "than",
+   "start": 790.2,
+   "end": 790.5
+  },
+  {
+   "word": "air.",
+   "start": 790.5,
+   "end": 790.8
+  },
+  {
+   "word": "A",
+   "start": 790.8,
+   "end": 791.3
+  },
+  {
+   "word": "resting",
+   "start": 791.3,
+   "end": 791.8
+  },
+  {
+   "word": "adult",
+   "start": 791.8,
+   "end": 792.04
+  },
+  {
+   "word": "needs",
+   "start": 792.04,
+   "end": 792.3
+  },
+  {
+   "word": "about",
+   "start": 792.3,
+   "end": 792.58
+  },
+  {
+   "word": "two",
+   "start": 792.58,
+   "end": 792.932
+  },
+  {
+   "word": "hundred",
+   "start": 792.932,
+   "end": 793.284
+  },
+  {
+   "word": "and",
+   "start": 793.284,
+   "end": 793.636
+  },
+  {
+   "word": "fifty",
+   "start": 793.636,
+   "end": 793.988
+  },
+  {
+   "word": "millilitres",
+   "start": 793.988,
+   "end": 794.34
+  },
+  {
+   "word": "a",
+   "start": 794.34,
+   "end": 794.48
+  },
+  {
+   "word": "minute.",
+   "start": 794.48,
+   "end": 794.66
+  },
+  {
+   "word": "Even",
+   "start": 795.24,
+   "end": 795.46
+  },
+  {
+   "word": "with",
+   "start": 795.46,
+   "end": 795.64
+  },
+  {
+   "word": "generous",
+   "start": 795.64,
+   "end": 796.04
+  },
+  {
+   "word": "extraction,",
+   "start": 796.04,
+   "end": 796.64
+  },
+  {
+   "word": "that",
+   "start": 797.0,
+   "end": 797.08
+  },
+  {
+   "word": "is",
+   "start": 797.08,
+   "end": 797.26
+  },
+  {
+   "word": "a",
+   "start": 797.26,
+   "end": 797.6
+  },
+  {
+   "word": "hundred",
+   "start": 797.6,
+   "end": 797.94
+  },
+  {
+   "word": "and",
+   "start": 797.94,
+   "end": 798.28
+  },
+  {
+   "word": "seventy-two",
+   "start": 798.28,
+   "end": 798.62
+  },
+  {
+   "word": "litres",
+   "start": 798.62,
+   "end": 798.96
+  },
+  {
+   "word": "of",
+   "start": 798.96,
+   "end": 799.1
+  },
+  {
+   "word": "water",
+   "start": 799.1,
+   "end": 799.28
+  },
+  {
+   "word": "a",
+   "start": 799.28,
+   "end": 799.5
+  },
+  {
+   "word": "minute,",
+   "start": 799.5,
+   "end": 799.68
+  },
+  {
+   "word": "and",
+   "start": 799.68,
+   "end": 800.26
+  },
+  {
+   "word": "nearly",
+   "start": 800.26,
+   "end": 800.58
+  },
+  {
+   "word": "five",
+   "start": 800.58,
+   "end": 800.89
+  },
+  {
+   "word": "hundred",
+   "start": 800.89,
+   "end": 801.2
+  },
+  {
+   "word": "breaths.",
+   "start": 801.2,
+   "end": 801.7
+  },
+  {
+   "word": "Fish",
+   "start": 802.42,
+   "end": 802.64
+  },
+  {
+   "word": "do",
+   "start": 802.64,
+   "end": 802.86
+  },
+  {
+   "word": "it",
+   "start": 802.86,
+   "end": 803.0
+  },
+  {
+   "word": "with",
+   "start": 803.0,
+   "end": 803.14
+  },
+  {
+   "word": "one-way",
+   "start": 803.14,
+   "end": 803.54
+  },
+  {
+   "word": "flow",
+   "start": 803.54,
+   "end": 803.74
+  },
+  {
+   "word": "and",
+   "start": 803.74,
+   "end": 803.96
+  },
+  {
+   "word": "gills,",
+   "start": 803.96,
+   "end": 804.26
+  },
+  {
+   "word": "at",
+   "start": 804.26,
+   "end": 804.84
+  },
+  {
+   "word": "about",
+   "start": 804.84,
+   "end": 805.08
+  },
+  {
+   "word": "fifty-four.",
+   "start": 805.08,
+   "end": 806.24
+  },
+  {
+   "word": "Mice",
+   "start": 806.24,
+   "end": 806.5
+  },
+  {
+   "word": "and",
+   "start": 806.5,
+   "end": 806.68
+  },
+  {
+   "word": "rats",
+   "start": 806.68,
+   "end": 806.92
+  },
+  {
+   "word": "have",
+   "start": 806.92,
+   "end": 807.14
+  },
+  {
+   "word": "breathed",
+   "start": 807.14,
+   "end": 807.42
+  },
+  {
+   "word": "liquid.",
+   "start": 807.42,
+   "end": 807.82
+  },
+  {
+   "word": "Premature",
+   "start": 808.44,
+   "end": 808.68
+  },
+  {
+   "word": "infants",
+   "start": 808.68,
+   "end": 809.16
+  },
+  {
+   "word": "have",
+   "start": 809.16,
+   "end": 809.4
+  },
+  {
+   "word": "had",
+   "start": 809.4,
+   "end": 809.58
+  },
+  {
+   "word": "partial",
+   "start": 809.58,
+   "end": 809.9
+  },
+  {
+   "word": "liquid",
+   "start": 809.9,
+   "end": 810.22
+  },
+  {
+   "word": "ventilation.",
+   "start": 810.22,
+   "end": 810.8
+  },
+  {
+   "word": "What",
+   "start": 811.42,
+   "end": 811.58
+  },
+  {
+   "word": "is",
+   "start": 811.58,
+   "end": 811.72
+  },
+  {
+   "word": "not",
+   "start": 811.72,
+   "end": 811.94
+  },
+  {
+   "word": "known.",
+   "start": 811.94,
+   "end": 812.2
+  },
+  {
+   "word": "How",
+   "start": 812.2,
+   "end": 812.96
+  },
+  {
+   "word": "a",
+   "start": 812.96,
+   "end": 813.12
+  },
+  {
+   "word": "healthy",
+   "start": 813.12,
+   "end": 813.36
+  },
+  {
+   "word": "adult",
+   "start": 813.36,
+   "end": 813.7
+  },
+  {
+   "word": "would",
+   "start": 813.7,
+   "end": 813.92
+  },
+  {
+   "word": "fare",
+   "start": 813.92,
+   "end": 814.22
+  },
+  {
+   "word": "breathing",
+   "start": 814.22,
+   "end": 814.7
+  },
+  {
+   "word": "liquid",
+   "start": 814.7,
+   "end": 815.02
+  },
+  {
+   "word": "for",
+   "start": 815.02,
+   "end": 815.26
+  },
+  {
+   "word": "hours.",
+   "start": 815.26,
+   "end": 815.64
+  },
+  {
+   "word": "How",
+   "start": 816.2,
+   "end": 816.4
+  },
+  {
+   "word": "much",
+   "start": 816.4,
+   "end": 816.54
+  },
+  {
+   "word": "a",
+   "start": 816.54,
+   "end": 816.66
+  },
+  {
+   "word": "human",
+   "start": 816.66,
+   "end": 816.86
+  },
+  {
+   "word": "lung",
+   "start": 816.86,
+   "end": 817.16
+  },
+  {
+   "word": "could",
+   "start": 817.16,
+   "end": 817.4
+  },
+  {
+   "word": "really",
+   "start": 817.4,
+   "end": 817.76
+  },
+  {
+   "word": "extract.",
+   "start": 817.76,
+   "end": 818.24
+  },
+  {
+   "word": "What",
+   "start": 818.78,
+   "end": 819.04
+  },
+  {
+   "word": "pressure",
+   "start": 819.04,
+   "end": 819.36
+  },
+  {
+   "word": "would",
+   "start": 819.36,
+   "end": 819.6
+  },
+  {
+   "word": "do",
+   "start": 819.6,
+   "end": 819.78
+  },
+  {
+   "word": "to",
+   "start": 819.78,
+   "end": 819.94
+  },
+  {
+   "word": "someone",
+   "start": 819.94,
+   "end": 820.22
+  },
+  {
+   "word": "breathing",
+   "start": 820.22,
+   "end": 820.58
+  },
+  {
+   "word": "water.",
+   "start": 820.58,
+   "end": 821.04
+  },
+  {
+   "word": "Where",
+   "start": 821.76,
+   "end": 821.94
+  },
+  {
+   "word": "the",
+   "start": 821.94,
+   "end": 822.1
+  },
+  {
+   "word": "answers",
+   "start": 822.1,
+   "end": 822.28
+  },
+  {
+   "word": "sit.",
+   "start": 822.28,
+   "end": 822.68
+  },
+  {
+   "word": "In",
+   "start": 823.3,
+   "end": 823.38
+  },
+  {
+   "word": "primary",
+   "start": 823.38,
+   "end": 823.66
+  },
+  {
+   "word": "papers",
+   "start": 823.66,
+   "end": 824.06
+  },
+  {
+   "word": "we",
+   "start": 824.06,
+   "end": 824.28
+  },
+  {
+   "word": "did",
+   "start": 824.28,
+   "end": 824.44
+  },
+  {
+   "word": "not",
+   "start": 824.44,
+   "end": 824.64
+  },
+  {
+   "word": "read.",
+   "start": 824.64,
+   "end": 824.88
+  },
+  {
+   "word": "The",
+   "start": 825.42,
+   "end": 825.62
+  },
+  {
+   "word": "Kylstra",
+   "start": 825.62,
+   "end": 825.92
+  },
+  {
+   "word": "and",
+   "start": 825.92,
+   "end": 826.08
+  },
+  {
+   "word": "Clark",
+   "start": 826.08,
+   "end": 826.28
+  },
+  {
+   "word": "papers.",
+   "start": 826.28,
+   "end": 826.62
+  },
+  {
+   "word": "The",
+   "start": 827.08,
+   "end": 827.22
+  },
+  {
+   "word": "Greenspan",
+   "start": 827.22,
+   "end": 827.64
+  },
+  {
+   "word": "paper.",
+   "start": 827.64,
+   "end": 827.96
+  },
+  {
+   "word": "The",
+   "start": 828.44,
+   "end": 828.56
+  },
+  {
+   "word": "LiquiVent",
+   "start": 828.56,
+   "end": 829.02
+  },
+  {
+   "word": "trial.",
+   "start": 829.02,
+   "end": 829.3
+  },
+  {
+   "word": "Textbooks",
+   "start": 830.1,
+   "end": 830.36
+  },
+  {
+   "word": "on",
+   "start": 830.36,
+   "end": 830.76
+  },
+  {
+   "word": "gill",
+   "start": 830.76,
+   "end": 830.96
+  },
+  {
+   "word": "physiology.",
+   "start": 830.96,
+   "end": 831.66
+  },
+  {
+   "word": "Naval",
+   "start": 832.38,
+   "end": 832.52
+  },
+  {
+   "word": "diving",
+   "start": 832.52,
+   "end": 832.8
+  },
+  {
+   "word": "research.",
+   "start": 832.8,
+   "end": 833.26
+  },
+  {
+   "word": "This",
+   "start": 834.5,
+   "end": 834.76
+  },
+  {
+   "word": "is",
+   "start": 834.76,
+   "end": 834.96
+  },
+  {
+   "word": "a",
+   "start": 834.96,
+   "end": 835.08
+  },
+  {
+   "word": "calculation.",
+   "start": 835.08,
+   "end": 835.54
+  },
+  {
+   "word": "Not",
+   "start": 835.96,
+   "end": 836.16
+  },
+  {
+   "word": "a",
+   "start": 836.16,
+   "end": 836.28
+  },
+  {
+   "word": "finding.",
+   "start": 836.28,
+   "end": 836.48
+  },
+  {
+   "word": "Two",
+   "start": 837.6,
+   "end": 837.84
+  },
+  {
+   "word": "metres",
+   "start": 837.84,
+   "end": 838.08
+  },
+  {
+   "word": "under",
+   "start": 838.08,
+   "end": 838.44
+  },
+  {
+   "word": "a",
+   "start": 838.44,
+   "end": 838.6
+  },
+  {
+   "word": "lake.",
+   "start": 838.6,
+   "end": 838.8
+  },
+  {
+   "word": "A",
+   "start": 839.18,
+   "end": 839.32
+  },
+  {
+   "word": "person,",
+   "start": 839.32,
+   "end": 839.68
+  },
+  {
+   "word": "breathing.",
+   "start": 840.12,
+   "end": 840.52
+  },
+  {
+   "word": "Six",
+   "start": 840.52,
+   "end": 841.03
+  },
+  {
+   "word": "litres",
+   "start": 841.03,
+   "end": 841.54
+  },
+  {
+   "word": "a",
+   "start": 841.54,
+   "end": 841.68
+  },
+  {
+   "word": "minute",
+   "start": 841.68,
+   "end": 841.8
+  },
+  {
+   "word": "of",
+   "start": 841.8,
+   "end": 842.08
+  },
+  {
+   "word": "air.",
+   "start": 842.08,
+   "end": 842.42
+  },
+  {
+   "word": "A",
+   "start": 842.42,
+   "end": 842.675
+  },
+  {
+   "word": "hundred",
+   "start": 842.675,
+   "end": 842.93
+  },
+  {
+   "word": "and",
+   "start": 842.93,
+   "end": 843.185
+  },
+  {
+   "word": "seventy-two",
+   "start": 843.185,
+   "end": 843.44
+  },
+  {
+   "word": "of",
+   "start": 843.44,
+   "end": 843.98
+  },
+  {
+   "word": "water.",
+   "start": 843.98,
+   "end": 844.32
+  },
+  {
+   "word": "The",
+   "start": 844.82,
+   "end": 844.9
+  },
+  {
+   "word": "lungs",
+   "start": 844.9,
+   "end": 845.22
+  },
+  {
+   "word": "were",
+   "start": 845.22,
+   "end": 845.32
+  },
+  {
+   "word": "built",
+   "start": 845.32,
+   "end": 845.58
+  },
+  {
+   "word": "for",
+   "start": 845.58,
+   "end": 845.8
+  },
+  {
+   "word": "the",
+   "start": 845.8,
+   "end": 845.92
+  },
+  {
+   "word": "first.",
+   "start": 845.92,
+   "end": 846.14
+  }
+ ]
+}

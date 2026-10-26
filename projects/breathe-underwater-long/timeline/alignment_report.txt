@@ -1,0 +1,150 @@
+00:00.64  replace  script: metres  |  heard: meters
+00:01.76  replace  script: A pier  |  heard: appear
+00:03.74  replace  script: clay-white  |  heard: clay white
+00:35.30  replace  script: Two hundred and fifty.  |  heard: 250.
+00:41.80  replace  script: litre  |  heard: liter
+00:42.84  replace  script: litre  |  heard: liter
+00:52.66  replace  script: nineteen-sixties,  |  heard: 1960s.
+00:57.76  replace  script: pier  |  heard: peer
+01:30.62  replace  script: two hundred and fifty millilitres  |  heard: 250 milliliters
+01:36.58  replace  script: exam-prep  |  heard: exam prep
+01:38.14  replace  script: three and a half millilitres  |  heard: 3 .5 milliliters
+01:40.72  replace  script: seventy-kilogram  |  heard: 70 kilogram
+01:42.48  replace  script: two hundred and forty-five. Two hundred and fifty.  |  heard: 245, 250.
+01:48.28  replace  script: litre  |  heard: liter
+01:49.26  replace  script: twenty point nine percent  |  heard: 20 .9 %
+01:54.78  replace  script: two hundred and nine millilitres  |  heard: 209 milliliters
+01:56.16  replace  script: litre.  |  heard: liter.
+01:59.36  replace  script: litres  |  heard: liters
+02:04.58  replace  script: litres  |  heard: liters
+02:05.56  replace  script: Two hundred and fifty millilitres  |  heard: 250 milliliters
+02:19.66  replace  script: dissolved-oxygen  |  heard: dissolved oxygen
+02:21.48  replace  script: air-saturated  |  heard: air saturated
+02:22.78  replace  script: twenty-five  |  heard: 25
+02:24.46  replace  script: eight point three  |  heard: 8 .3
+02:26.96  replace  script: litre.  |  heard: liter.
+02:29.08  replace  script: five point eight millilitres.  |  heard: 5 .8 milliliters,
+02:34.96  replace  script: Two hundred and nine  |  heard: 209
+02:36.40  replace  script: Five point eight  |  heard: 5 .8
+02:38.34  replace  script: thirty-six  |  heard: 36
+02:50.42  replace  script: two hundred and fifty  |  heard: 250
+02:51.68  replace  script: five point eight  |  heard: 5 .8
+02:52.82  replace  script: forty-three litres  |  heard: 43 liters
+03:00.04  replace  script: An arXiv  |  heard: In archive
+03:03.82  replace  script: sixteen  |  heard: 16
+03:04.40  replace  script: eighteen  |  heard: 18
+03:06.94  replace  script: twenty-one.  |  heard: 18 to 18 percent oxygen. When the air going in is 21,
+03:20.26  replace  script: Two hundred and fifty,  |  heard: 250
+03:21.26  replace  script: five point eight,  |  heard: 5 .8
+03:24.40  replace  script: One hundred and seventy-two litres  |  heard: 172 liters
+03:28.32  replace  script: three hundred.  |  heard: 300.
+03:37.40  replace  script: a hundred and forty litres  |  heard: 140 liters
+03:40.64  replace  script: a hundred  |  heard: 100
+03:41.46  replace  script: a hundred and eighty.  |  heard: 180.
+03:43.38  replace  script: a hundred. Seventy  |  heard: 100. 70
+03:44.64  replace  script: a hundred and twenty.  |  heard: 120.
+03:54.62  replace  script: there is  |  heard: there's
+03:56.70  replace  script: eight hundred  |  heard: 800
+04:00.80  replace  script: eight hundred and thirty,  |  heard: 830,
+04:03.88  replace  script: One litre  |  heard: 1 liter
+04:05.10  replace  script: one  |  heard: 1
+04:06.46  replace  script: A hundred and seventy-two litres  |  heard: 172 liters
+04:08.32  replace  script: a hundred and seventy-two  |  heard: 172
+04:22.16  replace  script: a hundred and fifty millilitres,  |  heard: 150 milliliters,
+04:24.96  replace  script: five hundred.  |  heard: 500.
+04:30.36  replace  script: outbreath  |  heard: out breath
+04:42.54  replace  script: Five hundred millilitres  |  heard: 500 milliliters
+04:44.10  replace  script: A hundred and fifty  |  heard: 150
+04:45.92  replace  script: Three hundred and fifty  |  heard: 350
+04:48.50  replace  script: a hundred and seventy-two litres  |  heard: 172 liters
+04:52.10  replace  script: five hundred  |  heard: 500
+04:58.44  replace  script: six litres,  |  heard: 6 liters,
+05:01.28  replace  script: four point six  |  heard: 4 .6
+05:02.42  replace  script: four point eight,  |  heard: 4 .8,
+05:06.92  replace  script: forty  |  heard: 40
+05:11.44  delete   script: Our  |  heard: —
+05:26.10  replace  script: ten  |  heard: 10
+05:26.64  replace  script: twenty percent  |  heard: 20 %
+05:37.14  replace  script: ten  |  heard: 10
+05:37.58  replace  script: fifteen.  |  heard: 15.
+05:43.96  replace  script: two  |  heard: 2
+05:44.42  replace  script: four millilitres  |  heard: 4 milliliters
+06:01.80  replace  script: teaching  |  heard: teachings
+06:03.74  replace  script: injure  |  heard: injured
+06:29.48  replace  script: One.  |  heard: 1.
+06:34.16  replace  script: oxygen-rich  |  heard: oxygen -rich
+06:35.82  replace  script: oxygen-rich  |  heard: oxygen -rich
+06:45.00  replace  script: eighty-five percent  |  heard: 85 %
+06:48.36  replace  script: eighty.  |  heard: 80.
+06:51.22  replace  script: seventy.  |  heard: 70.
+06:52.26  replace  script: animal-physiology  |  heard: animal physiology
+06:53.70  replace  script: ninety  |  heard: 90
+06:55.54  replace  script: eighty. Two hundred and fifty,  |  heard: 80. 250
+06:58.28  replace  script: five point eight,  |  heard: 5 .8
+06:59.70  replace  script: point eight.  |  heard: 0 .8,
+07:00.78  replace  script: fifty-four litres  |  heard: 54 liters
+07:02.70  replace  script: one hundred and seventy-two. Two.  |  heard: 172. 2.
+07:22.82  replace  script: dead-end sac.  |  heard: dead -end sack.
+07:31.72  replace  script: gills'  |  heard: gills
+07:32.98  replace  script: one-way  |  heard: one -way
+07:44.86  insert   script: —  |  heard: 1.
+07:47.40  replace  script: nineteen-sixties.  |  heard: 1960s
+07:50.76  replace  script: Kylstra's  |  heard: Kielstra's
+07:55.30  replace  script: a hundred and sixty  |  heard: 160
+08:22.42  replace  script: saline-filled  |  heard: saline -filled
+08:26.50  replace  script: dead-end sac,  |  heard: dead -end sack
+08:32.56  replace  script: Mid-nineteen-sixties.  |  heard: Mid -1960s.
+08:34.40  replace  script: Gollan.  |  heard: Golan.
+08:46.22  replace  script: twenty  |  heard: 20
+09:01.16  replace  script: Perfluorocarbons  |  heard: Profluorocarbons
+09:23.16  replace  script: cold  |  heard: coal
+09:33.54  replace  script: two hundred and fifty  |  heard: 250
+09:36.14  replace  script: litres.  |  heard: leaders.
+09:37.52  delete   script: a  |  heard: —
+09:40.46  replace  script: boating-safety  |  heard: boating safety
+09:43.58  replace  script: twenty-five  |  heard: 25
+09:48.40  replace  script: four, twenty,  |  heard: 4, 20,
+09:49.98  replace  script: thirty-two.  |  heard: 32.
+10:12.44  replace  script: average is  |  heard: averages
+10:31.30  replace  script: nineteen eighty-nine.  |  heard: 1989.
+10:34.76  replace  script: Twenty-eight, twenty-four  |  heard: 28, 24,
+10:36.22  replace  script: twenty-three  |  heard: 23
+10:49.70  replace  script: nineteen ninety.  |  heard: 1990.
+10:54.98  replace  script: the  |  heard: a
+11:01.24  replace  script: Nineteen ninety-six.  |  heard: 1996.
+11:02.82  replace  script: LiquiVent  |  heard: liquid vent
+11:04.24  replace  script: thirteen  |  heard: 13
+11:13.54  replace  script: a hundred and thirty-eight percent.  |  heard: 138%.
+11:16.52  replace  script: sixty-one.  |  heard: 61%.
+11:27.42  replace  script: notes,  |  heard: note,
+11:31.00  replace  script: in  |  heard: and
+11:48.64  replace  script: one  |  heard: 1
+11:49.86  replace  script: ten metres  |  heard: 10 meters
+11:54.52  replace  script: thirty metres, four  |  heard: 30 meters, 4
+12:04.00  replace  script: inert-gas  |  heard: inert gas
+12:22.80  replace  script: ten metres  |  heard: 10 meters
+12:28.92  replace  script: U.S.  |  heard: U .S.
+12:33.90  replace  script: one point four  |  heard: 1 .4
+12:36.46  insert   script: —  |  heard: prime
+12:37.34  replace  script: one point six.  |  heard: 1 .6.
+12:39.28  replace  script: twenty-one percent  |  heard: 21 %
+12:41.72  insert   script: —  |  heard: water.
+12:42.70  replace  script: sixty metres  |  heard: 60 meters
+12:46.22  replace  script: four  |  heard: 4
+12:47.10  replace  script: thirty.  |  heard: 30.
+13:03.98  replace  script: twenty-sixth  |  heard: 26th
+13:05.28  replace  script: twenty twenty-six.  |  heard: 2026.
+13:07.18  insert   script: —  |  heard: 1.
+13:08.68  replace  script: thirty-six  |  heard: 36
+13:11.58  replace  script: A resting  |  heard: Arresting
+13:12.58  replace  script: two hundred and fifty millilitres  |  heard: 250 milliliters
+13:17.26  replace  script: a hundred and seventy-two litres  |  heard: 172 liters
+13:20.58  replace  script: five hundred  |  heard: 500
+13:23.14  replace  script: one-way  |  heard: one -way
+13:25.08  replace  script: fifty-four.  |  heard: 54.
+13:45.62  replace  script: Kylstra  |  heard: Kilstra
+13:48.56  replace  script: LiquiVent  |  heard: Liquavent
+13:57.84  replace  script: metres  |  heard: meters
+14:00.52  replace  script: Six litres  |  heard: 6 liters
+14:02.84  replace  script: A hundred and seventy-two  |  heard: 172
+14:04.90  replace  script: lungs  |  heard: longs
