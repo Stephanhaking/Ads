@@ -1,0 +1,1506 @@
+[
+ {
+  "i": 0,
+  "start": 0.0,
+  "speechStart": 0.0,
+  "speechEnd": 1.76,
+  "text": "Two metres under a lake.",
+  "end": 1.64
+ },
+ {
+  "i": 1,
+  "start": 1.64,
+  "speechStart": 1.76,
+  "speechEnd": 9.62,
+  "text": "A pier above, a clay-white shape below. One person. Eyes open. Mouth open.",
+  "end": 10.54
+ },
+ {
+  "i": 2,
+  "start": 10.54,
+  "speechStart": 10.66,
+  "speechEnd": 17.42,
+  "text": "In the corner of the frame, a stopwatch starts. Ten seconds. Thirty. A minute.",
+  "end": 18.5
+ },
+ {
+  "i": 3,
+  "start": 18.5,
+  "speechStart": 18.62,
+  "speechEnd": 24.94,
+  "text": "She is not holding her breath. She is breathing. The water goes in. Something comes out.",
+  "end": 25.64
+ },
+ {
+  "i": 4,
+  "start": 25.64,
+  "speechStart": 25.76,
+  "speechEnd": 32.7,
+  "text": "Her chest rises and falls like anyone's on dry land. Nobody on the pier knows how. The answer is not in her lungs.",
+  "end": 33.42
+ },
+ {
+  "i": 5,
+  "start": 33.42,
+  "speechStart": 33.54,
+  "speechEnd": 34.34,
+  "text": "It is in a number.",
+  "end": 34.22
+ },
+ {
+  "i": 6,
+  "start": 34.22,
+  "speechStart": 34.34,
+  "speechEnd": 40.94,
+  "text": "Two hundred and fifty. This is the story of one rule. A person who can breathe water.",
+  "end": 41.4
+ },
+ {
+  "i": 7,
+  "start": 41.4,
+  "speechStart": 41.52,
+  "speechEnd": 45.16,
+  "text": "Of a litre of air and a litre of lake. And the gap between them.",
+  "end": 45.52
+ },
+ {
+  "i": 8,
+  "start": 45.52,
+  "speechStart": 45.64,
+  "speechEnd": 48.22,
+  "text": "Of a fish that solves the problem with a plumbing trick.",
+  "end": 48.54
+ },
+ {
+  "i": 9,
+  "start": 48.54,
+  "speechStart": 48.66,
+  "speechEnd": 50.62,
+  "text": "And a lung that was never built for it.",
+  "end": 50.74
+ },
+ {
+  "i": 10,
+  "start": 50.74,
+  "speechStart": 50.86,
+  "speechEnd": 56.28,
+  "text": "Of mice in a tank in the nineteen-sixties, and premature babies in a hospital in Philadelphia.",
+  "end": 56.16
+ },
+ {
+  "i": 11,
+  "start": 56.16,
+  "speechStart": 56.28,
+  "speechEnd": 60.74,
+  "text": "And an empty pier at dusk. Could a human really do it?",
+  "end": 61.28
+ },
+ {
+  "i": 12,
+  "start": 61.28,
+  "speechStart": 61.4,
+  "speechEnd": 63.54,
+  "text": "And what would it cost her, minute by minute?",
+  "end": 64.22
+ },
+ {
+  "i": 13,
+  "start": 64.22,
+  "speechStart": 64.34,
+  "speechEnd": 70.14,
+  "text": "This film is built on physiology textbooks, diving manuals, clinical reviews and old laboratory reports.",
+  "end": 70.7
+ },
+ {
+  "i": 14,
+  "start": 70.7,
+  "speechStart": 70.82,
+  "speechEnd": 74.44,
+  "text": "It is a calculation, not a prediction. And the unknowns are many.",
+  "end": 75.1
+ },
+ {
+  "i": 15,
+  "start": 75.1,
+  "speechStart": 75.22,
+  "speechEnd": 78.56,
+  "text": "Every number comes from a named source, or from arithmetic we show.",
+  "end": 79.04
+ },
+ {
+  "i": 16,
+  "start": 79.04,
+  "speechStart": 79.16,
+  "speechEnd": 86.18,
+  "text": "Where the sources disagree, we say so. Start with the number. Then the water. Then the fish. Then the liquid.",
+  "end": 86.96
+ },
+ {
+  "i": 17,
+  "start": 86.96,
+  "speechStart": 87.08,
+  "speechEnd": 88.7,
+  "text": "First, what a body needs.",
+  "end": 89.24
+ },
+ {
+  "i": 18,
+  "start": 89.24,
+  "speechStart": 89.36,
+  "speechEnd": 92.94,
+  "text": "At rest, an adult uses about two hundred and fifty millilitres of oxygen a minute.",
+  "end": 93.34
+ },
+ {
+  "i": 19,
+  "start": 93.34,
+  "speechStart": 93.46,
+  "speechEnd": 95.5,
+  "text": "That is the figure in standard physiology teaching.",
+  "end": 95.94
+ },
+ {
+  "i": 20,
+  "start": 95.94,
+  "speechStart": 96.06,
+  "speechEnd": 101.62,
+  "text": "One medical exam-prep page gets there from three and a half millilitres per kilogram, for a seventy-kilogram adult.",
+  "end": 102.16
+ },
+ {
+  "i": 21,
+  "start": 102.16,
+  "speechStart": 102.28,
+  "speechEnd": 107.6,
+  "text": "About two hundred and forty-five. Two hundred and fifty. Hold on to that. In air, it is easy to supply.",
+  "end": 107.94
+ },
+ {
+  "i": 22,
+  "start": 107.94,
+  "speechStart": 108.06,
+  "speechEnd": 113.82,
+  "text": "A litre of dry air is about twenty point nine percent oxygen, according to the United Nations food agency's fisheries manual.",
+  "end": 114.3
+ },
+ {
+  "i": 23,
+  "start": 114.3,
+  "speechStart": 114.42,
+  "speechEnd": 117.3,
+  "text": "That is about two hundred and nine millilitres in every litre.",
+  "end": 117.18
+ },
+ {
+  "i": 24,
+  "start": 117.18,
+  "speechStart": 117.3,
+  "speechEnd": 123.74,
+  "text": "Resting breathing moves about five to eight litres of air a minute, according to the standard reference on minute ventilation. Call it six.",
+  "end": 124.24
+ },
+ {
+  "i": 25,
+  "start": 124.24,
+  "speechStart": 124.36,
+  "speechEnd": 125.1,
+  "text": "Six litres of air.",
+  "end": 124.98
+ },
+ {
+  "i": 26,
+  "start": 124.98,
+  "speechStart": 125.1,
+  "speechEnd": 127.0,
+  "text": "Two hundred and fifty millilitres of oxygen.",
+  "end": 127.38
+ },
+ {
+  "i": 27,
+  "start": 127.38,
+  "speechStart": 127.5,
+  "speechEnd": 129.16,
+  "text": "A comfortable, quiet job.",
+  "end": 130.24
+ },
+ {
+  "i": 28,
+  "start": 130.24,
+  "speechStart": 130.36,
+  "speechEnd": 136.22,
+  "text": "That is the deal the lungs were built around. Now change the fluid. Water holds oxygen too.",
+  "end": 136.56
+ },
+ {
+  "i": 29,
+  "start": 136.56,
+  "speechStart": 136.68,
+  "speechEnd": 138.12,
+  "text": "Not much, says the sensor maker.",
+  "end": 138.48
+ },
+ {
+  "i": 30,
+  "start": 138.48,
+  "speechStart": 138.6,
+  "speechEnd": 143.28,
+  "text": "A manufacturer of dissolved-oxygen sensors says air-saturated water at twenty-five",
+  "end": 143.16
+ },
+ {
+  "i": 31,
+  "start": 143.16,
+  "speechStart": 143.28,
+  "speechEnd": 147.88,
+  "text": "degrees holds about eight point three milligrams of oxygen per litre.",
+  "end": 147.76
+ },
+ {
+  "i": 32,
+  "start": 147.76,
+  "speechStart": 147.88,
+  "speechEnd": 151.02,
+  "text": "Convert that, and it is about five point eight millilitres.",
+  "end": 150.9
+ },
+ {
+  "i": 33,
+  "start": 150.9,
+  "speechStart": 151.02,
+  "speechEnd": 153.94,
+  "text": "Our conversion, using a standard value for oxygen's density.",
+  "end": 153.82
+ },
+ {
+  "i": 34,
+  "start": 153.82,
+  "speechStart": 153.94,
+  "speechEnd": 155.94,
+  "text": "Two hundred and nine in air.",
+  "end": 155.82
+ },
+ {
+  "i": 35,
+  "start": 155.82,
+  "speechStart": 155.94,
+  "speechEnd": 162.64,
+  "text": "Five point eight in water. About thirty-six times less. Colder water holds more. Warm water holds less.",
+  "end": 162.78
+ },
+ {
+  "i": 36,
+  "start": 162.78,
+  "speechStart": 162.9,
+  "speechEnd": 164.66,
+  "text": "But the order of magnitude stays.",
+  "end": 165.54
+ },
+ {
+  "i": 37,
+  "start": 165.54,
+  "speechStart": 165.66,
+  "speechEnd": 167.44,
+  "text": "So how much water does she need?",
+  "end": 167.88
+ },
+ {
+  "i": 38,
+  "start": 167.88,
+  "speechStart": 168.0,
+  "speechEnd": 174.04,
+  "text": "If her lungs took every last molecule, two hundred and fifty divided by five point eight is forty-three litres a minute.",
+  "end": 174.48
+ },
+ {
+  "i": 39,
+  "start": 174.48,
+  "speechStart": 174.6,
+  "speechEnd": 179.22,
+  "text": "That is the floor. Physics will not let it go lower. But lungs do not take every molecule.",
+  "end": 179.1
+ },
+ {
+  "i": 40,
+  "start": 179.1,
+  "speechStart": 179.22,
+  "speechEnd": 185.54,
+  "text": "An arXiv paper on lung ventilation in mammals reports that exhaled air is sixteen to eighteen percent oxygen,",
+  "end": 185.86
+ },
+ {
+  "i": 41,
+  "start": 185.86,
+  "speechStart": 185.98,
+  "speechEnd": 192.08,
+  "text": "when the air going in is twenty-one. A drop of three to five points.",
+  "end": 192.36
+ },
+ {
+  "i": 42,
+  "start": 192.36,
+  "speechStart": 192.48,
+  "speechEnd": 198.32,
+  "text": "That is roughly a seventh to a quarter of what comes in. Our arithmetic. Take the generous end. A quarter.",
+  "end": 198.2
+ },
+ {
+  "i": 43,
+  "start": 198.2,
+  "speechStart": 198.32,
+  "speechEnd": 203.74,
+  "text": "Two hundred and fifty, divided by five point eight, divided by a quarter.",
+  "end": 203.62
+ },
+ {
+  "i": 44,
+  "start": 203.62,
+  "speechStart": 203.74,
+  "speechEnd": 206.18,
+  "text": "One hundred and seventy-two litres a minute.",
+  "end": 206.52
+ },
+ {
+  "i": 45,
+  "start": 206.52,
+  "speechStart": 206.64,
+  "speechEnd": 211.58,
+  "text": "At the stingy end, it is more than three hundred. How much can a person breathe?",
+  "end": 212.0
+ },
+ {
+  "i": 46,
+  "start": 212.0,
+  "speechStart": 212.12,
+  "speechEnd": 217.856,
+  "text": "A physiology module at Monash University gives a mean maximum voluntary ventilation of about a hundred",
+  "end": 217.736
+ },
+ {
+  "i": 47,
+  "start": 217.736,
+  "speechStart": 217.856,
+  "speechEnd": 219.84,
+  "text": "and forty litres a minute for healthy young men.",
+  "end": 220.2
+ },
+ {
+  "i": 48,
+  "start": 220.2,
+  "speechStart": 220.32,
+  "speechEnd": 224.06,
+  "text": "Range, a hundred to a hundred and eighty. For women, about a hundred.",
+  "end": 223.94
+ },
+ {
+  "i": 49,
+  "start": 223.94,
+  "speechStart": 224.06,
+  "speechEnd": 225.88,
+  "text": "Seventy to a hundred and twenty.",
+  "end": 225.76
+ },
+ {
+  "i": 50,
+  "start": 225.76,
+  "speechStart": 225.88,
+  "speechEnd": 232.96,
+  "text": "That is a short test, the module says, with the subject trying as hard as possible. Her resting need is higher than that. At rest.",
+  "end": 234.18
+ },
+ {
+  "i": 51,
+  "start": 234.18,
+  "speechStart": 234.3,
+  "speechEnd": 235.8,
+  "text": "Then there is what water is.",
+  "end": 236.1
+ },
+ {
+  "i": 52,
+  "start": 236.1,
+  "speechStart": 236.22,
+  "speechEnd": 238.58,
+  "text": "It is about eight hundred times denser than air.",
+  "end": 239.14
+ },
+ {
+  "i": 53,
+  "start": 239.14,
+  "speechStart": 239.26,
+  "speechEnd": 243.04,
+  "text": "Course notes give a ratio of about eight hundred and thirty, a flashcard set says.",
+  "end": 242.92
+ },
+ {
+  "i": 54,
+  "start": 242.92,
+  "speechStart": 243.04,
+  "speechEnd": 245.9,
+  "text": "One litre of water weighs one kilogram.",
+  "end": 245.78
+ },
+ {
+  "i": 55,
+  "start": 245.78,
+  "speechStart": 245.9,
+  "speechEnd": 252.36,
+  "text": "A hundred and seventy-two litres a minute is a hundred and seventy-two kilograms. Through the throat. Every minute.",
+  "end": 252.7
+ },
+ {
+  "i": 56,
+  "start": 252.7,
+  "speechStart": 252.82,
+  "speechEnd": 253.54,
+  "text": "While resting.",
+  "end": 254.4
+ },
+ {
+  "i": 57,
+  "start": 254.4,
+  "speechStart": 254.52,
+  "speechEnd": 256.24,
+  "text": "And the lung has a second problem.",
+  "end": 256.6
+ },
+ {
+  "i": 58,
+  "start": 256.6,
+  "speechStart": 256.72,
+  "speechEnd": 258.6,
+  "text": "It breathes in and out through the same pipes.",
+  "end": 259.24
+ },
+ {
+  "i": 59,
+  "start": 259.24,
+  "speechStart": 259.36,
+  "speechEnd": 265.96,
+  "text": "A textbook puts the anatomical dead space at about a hundred and fifty millilitres, out of a resting breath of five hundred.",
+  "end": 265.84
+ },
+ {
+  "i": 60,
+  "start": 265.84,
+  "speechStart": 265.96,
+  "speechEnd": 268.3,
+  "text": "That is the volume of the airways themselves.",
+  "end": 268.92
+ },
+ {
+  "i": 61,
+  "start": 268.92,
+  "speechStart": 269.04,
+  "speechEnd": 275.04,
+  "text": "Whatever sits there at the end of an outbreath is stale. The next breath mixes with it. In air, that costs a little.",
+  "end": 275.44
+ },
+ {
+  "i": 62,
+  "start": 275.44,
+  "speechStart": 275.56,
+  "speechEnd": 281.98,
+  "text": "The textbook says it leaves the oxygen pressure in the lung lower than in the air outside. In water, count it.",
+  "end": 281.86
+ },
+ {
+  "i": 63,
+  "start": 281.86,
+  "speechStart": 281.98,
+  "speechEnd": 283.68,
+  "text": "Five hundred millilitres in.",
+  "end": 283.56
+ },
+ {
+  "i": 64,
+  "start": 283.56,
+  "speechStart": 283.68,
+  "speechEnd": 285.34,
+  "text": "A hundred and fifty of it stale.",
+  "end": 285.22
+ },
+ {
+  "i": 65,
+  "start": 285.22,
+  "speechStart": 285.34,
+  "speechEnd": 287.72,
+  "text": "Three hundred and fifty reach the air sacs.",
+  "end": 287.96
+ },
+ {
+  "i": 66,
+  "start": 287.96,
+  "speechStart": 288.08,
+  "speechEnd": 293.68,
+  "text": "To move a hundred and seventy-two litres of fresh water through them, that is nearly five hundred breaths a minute.",
+  "end": 294.68
+ },
+ {
+  "i": 67,
+  "start": 294.68,
+  "speechStart": 294.8,
+  "speechEnd": 296.62,
+  "text": "Or take the biggest breath she has.",
+  "end": 297.04
+ },
+ {
+  "i": 68,
+  "start": 297.04,
+  "speechStart": 297.16,
+  "speechEnd": 304.1,
+  "text": "Total lung capacity is about six litres, and the usual vital capacity is four point six to four point eight, depending on the source.",
+  "end": 303.98
+ },
+ {
+  "i": 69,
+  "start": 303.98,
+  "speechStart": 304.1,
+  "speechEnd": 307.76,
+  "text": "A full breath every time. Nearly forty a minute.",
+  "end": 308.22
+ },
+ {
+  "i": 70,
+  "start": 308.22,
+  "speechStart": 308.34,
+  "speechEnd": 313.8,
+  "text": "Each one about four and a half kilograms of lake. Our arithmetic. Neither is a pace a person holds.",
+  "end": 314.22
+ },
+ {
+  "i": 71,
+  "start": 314.22,
+  "speechStart": 314.34,
+  "speechEnd": 320.4,
+  "text": "No source we read says anyone has. All this is hypothetical. Here is what happens in the real world.",
+  "end": 320.68
+ },
+ {
+  "i": 72,
+  "start": 320.68,
+  "speechStart": 320.8,
+  "speechEnd": 325.0,
+  "text": "When someone inhales water, a clinical update on drowning describes two paths.",
+  "end": 325.5
+ },
+ {
+  "i": 73,
+  "start": 325.5,
+  "speechStart": 325.62,
+  "speechEnd": 329.96,
+  "text": "In roughly ten to twenty percent of victims, the throat clamps shut. Laryngospasm.",
+  "end": 330.42
+ },
+ {
+  "i": 74,
+  "start": 330.42,
+  "speechStart": 330.54,
+  "speechEnd": 334.6,
+  "text": "The airway closes and the person asphyxiates, with little water reaching the lungs.",
+  "end": 335.46
+ },
+ {
+  "i": 75,
+  "start": 335.46,
+  "speechStart": 335.58,
+  "speechEnd": 338.88,
+  "text": "Another source puts it lower, under ten to fifteen.",
+  "end": 338.76
+ },
+ {
+  "i": 76,
+  "start": 338.76,
+  "speechStart": 338.88,
+  "speechEnd": 341.82,
+  "text": "In most, the throat relaxes and water goes in.",
+  "end": 342.5
+ },
+ {
+  "i": 77,
+  "start": 342.5,
+  "speechStart": 342.62,
+  "speechEnd": 349.22,
+  "text": "Victims typically aspirate about two to four millilitres per kilogram, according to the same reviews. A small volume.",
+  "end": 349.68
+ },
+ {
+  "i": 78,
+  "start": 349.68,
+  "speechStart": 349.8,
+  "speechEnd": 350.62,
+  "text": "But it does damage.",
+  "end": 351.28
+ },
+ {
+  "i": 79,
+  "start": 351.28,
+  "speechStart": 351.4,
+  "speechEnd": 358.5,
+  "text": "The lungs line their air sacs with a thin film called surfactant. It keeps them open. Water disrupts it. The sacs collapse.",
+  "end": 359.22
+ },
+ {
+  "i": 80,
+  "start": 359.22,
+  "speechStart": 359.34,
+  "speechEnd": 360.64,
+  "text": "Oxygen can no longer cross.",
+  "end": 361.12
+ },
+ {
+  "i": 81,
+  "start": 361.12,
+  "speechStart": 361.24,
+  "speechEnd": 364.94,
+  "text": "Older teaching said fresh water and salt water injure the lungs differently.",
+  "end": 365.56
+ },
+ {
+  "i": 82,
+  "start": 365.56,
+  "speechStart": 365.68,
+  "speechEnd": 370.04,
+  "text": "Current clinical sources say the practical difference is minor. The result is the same chain.",
+  "end": 370.7
+ },
+ {
+  "i": 83,
+  "start": 370.7,
+  "speechStart": 370.82,
+  "speechEnd": 375.06,
+  "text": "Collapse, falling oxygen, rising carbon dioxide, and then the heart.",
+  "end": 375.94
+ },
+ {
+  "i": 84,
+  "start": 375.94,
+  "speechStart": 376.06,
+  "speechEnd": 379.94,
+  "text": "So our hero's lungs would need two things. A way to avoid the damage.",
+  "end": 380.4
+ },
+ {
+  "i": 85,
+  "start": 380.4,
+  "speechStart": 380.52,
+  "speechEnd": 387.54,
+  "text": "And a way to move far more water than any lung has moved. Remember the second. Fish do it. Every minute.",
+  "end": 388.1
+ },
+ {
+  "i": 86,
+  "start": 388.1,
+  "speechStart": 388.22,
+  "speechEnd": 390.9,
+  "text": "How? Two tricks. One.",
+  "end": 390.78
+ },
+ {
+  "i": 87,
+  "start": 390.78,
+  "speechStart": 390.9,
+  "speechEnd": 393.38,
+  "text": "Their gills run blood and water in opposite directions.",
+  "end": 393.82
+ },
+ {
+  "i": 88,
+  "start": 393.82,
+  "speechStart": 393.94,
+  "speechEnd": 398.44,
+  "text": "The most oxygen-rich blood meets the most oxygen-rich water. The least meets the least.",
+  "end": 398.94
+ },
+ {
+  "i": 89,
+  "start": 398.94,
+  "speechStart": 399.06,
+  "speechEnd": 403.42,
+  "text": "Diffusion keeps working along the whole surface. How well does it work? Sources differ.",
+  "end": 403.92
+ },
+ {
+  "i": 90,
+  "start": 403.92,
+  "speechStart": 404.04,
+  "speechEnd": 406.82,
+  "text": "A textbook says up to eighty-five percent of the oxygen in the water.",
+  "end": 407.18
+ },
+ {
+  "i": 91,
+  "start": 407.18,
+  "speechStart": 407.3,
+  "speechEnd": 409.02,
+  "text": "A school resource says about eighty.",
+  "end": 408.9
+ },
+ {
+  "i": 92,
+  "start": 408.9,
+  "speechStart": 409.02,
+  "speechEnd": 412.1,
+  "text": "The Natural History Museum in London says up to seventy.",
+  "end": 411.98
+ },
+ {
+  "i": 93,
+  "start": 411.98,
+  "speechStart": 412.1,
+  "speechEnd": 415.928,
+  "text": "An animal-physiology text says ninety or more is possible. Take eighty.",
+  "end": 415.808
+ },
+ {
+  "i": 94,
+  "start": 415.808,
+  "speechStart": 415.928,
+  "speechEnd": 421.98,
+  "text": "Two hundred and fifty, divided by five point eight, divided by point eight. About fifty-four litres a minute.",
+  "end": 422.34
+ },
+ {
+  "i": 95,
+  "start": 422.34,
+  "speechStart": 422.46,
+  "speechEnd": 426.84,
+  "text": "Not one hundred and seventy-two. Two. The water flows one way.",
+  "end": 427.02
+ },
+ {
+  "i": 96,
+  "start": 427.02,
+  "speechStart": 427.14,
+  "speechEnd": 432.6,
+  "text": "It goes in the mouth, over the gills, out the side. No dead space. No stale pool in the airways.",
+  "end": 433.06
+ },
+ {
+  "i": 97,
+  "start": 433.06,
+  "speechStart": 433.18,
+  "speechEnd": 439.52,
+  "text": "A physiology text says fish greatly reduce the energy cost of moving water by keeping that flow continuous and in one direction.",
+  "end": 440.36
+ },
+ {
+  "i": 98,
+  "start": 440.36,
+  "speechStart": 440.48,
+  "speechEnd": 443.88,
+  "text": "A lung does the opposite. It is a dead-end sac.",
+  "end": 443.76
+ },
+ {
+  "i": 99,
+  "start": 443.76,
+  "speechStart": 443.88,
+  "speechEnd": 445.58,
+  "text": "The same pipe in, the same pipe out.",
+  "end": 446.1
+ },
+ {
+  "i": 100,
+  "start": 446.1,
+  "speechStart": 446.22,
+  "speechEnd": 453.64,
+  "text": "So there is a first way to make her breathing work. Change her. Give her gills. Or something with gills' efficiency. A one-way flow.",
+  "end": 453.86
+ },
+ {
+  "i": 101,
+  "start": 453.86,
+  "speechStart": 453.98,
+  "speechEnd": 456.94,
+  "text": "A far better extraction. That is a different animal.",
+  "end": 457.38
+ },
+ {
+  "i": 102,
+  "start": 457.38,
+  "speechStart": 457.5,
+  "speechEnd": 461.0,
+  "text": "Nothing in this film says it is impossible. It is not a lung anymore.",
+  "end": 461.6
+ },
+ {
+  "i": 103,
+  "start": 461.6,
+  "speechStart": 461.72,
+  "speechEnd": 464.86,
+  "text": "Whether any human body could be rebuilt that way is not known.",
+  "end": 465.62
+ },
+ {
+  "i": 104,
+  "start": 465.62,
+  "speechStart": 465.74,
+  "speechEnd": 470.22,
+  "text": "Duke University, early nineteen-sixties. According to a Gizmodo history,",
+  "end": 470.5
+ },
+ {
+  "i": 105,
+  "start": 470.5,
+  "speechStart": 470.62,
+  "speechEnd": 476.66,
+  "text": "Johannes Kylstra's team trained mice to breathe saline loaded with oxygen under a pressure of a hundred and sixty atmospheres.",
+  "end": 477.06
+ },
+ {
+  "i": 106,
+  "start": 477.06,
+  "speechStart": 477.18,
+  "speechEnd": 480.5,
+  "text": "The mice died minutes later. Carbon dioxide had built up.",
+  "end": 480.74
+ },
+ {
+  "i": 107,
+  "start": 480.74,
+  "speechStart": 480.86,
+  "speechEnd": 487.7,
+  "text": "Another account says rodents and even dogs lasted up to about an hour. Accounts differ on the time. They agree on the cause.",
+  "end": 488.36
+ },
+ {
+  "i": 108,
+  "start": 488.36,
+  "speechStart": 488.48,
+  "speechEnd": 490.0,
+  "text": "The saline delivered enough oxygen.",
+  "end": 490.36
+ },
+ {
+  "i": 109,
+  "start": 490.36,
+  "speechStart": 490.48,
+  "speechEnd": 492.76,
+  "text": "It did not clear the carbon dioxide fast enough.",
+  "end": 493.42
+ },
+ {
+  "i": 110,
+  "start": 493.42,
+  "speechStart": 493.54,
+  "speechEnd": 499.18,
+  "text": "The same fisheries manual says carbon dioxide is far more soluble in water than oxygen is.",
+  "end": 499.1
+ },
+ {
+  "i": 111,
+  "start": 499.1,
+  "speechStart": 499.22,
+  "speechEnd": 501.32,
+  "text": "Which is one reason gills shed it easily.",
+  "end": 502.08
+ },
+ {
+  "i": 112,
+  "start": 502.08,
+  "speechStart": 502.2,
+  "speechEnd": 505.34,
+  "text": "But a saline-filled lung is not a gill. Our reading:",
+  "end": 505.86
+ },
+ {
+  "i": 113,
+  "start": 505.86,
+  "speechStart": 505.98,
+  "speechEnd": 511.22,
+  "text": "it is the same dead-end sac, filled with a liquid that barely moves. The sources do not test that.",
+  "end": 511.1
+ },
+ {
+  "i": 114,
+  "start": 511.1,
+  "speechStart": 511.22,
+  "speechEnd": 518.82,
+  "text": "Mid-nineteen-sixties. Clark and Gollan. They switched the liquid. Not water. A perfluorocarbon.",
+  "end": 518.7
+ },
+ {
+  "i": 115,
+  "start": 518.7,
+  "speechStart": 518.82,
+  "speechEnd": 521.1,
+  "text": "A fluid that dissolves both gases.",
+  "end": 521.92
+ },
+ {
+  "i": 116,
+  "start": 521.92,
+  "speechStart": 522.04,
+  "speechEnd": 524.62,
+  "text": "Gizmodo says their mice breathed it at normal pressure.",
+  "end": 525.1
+ },
+ {
+  "i": 117,
+  "start": 525.1,
+  "speechStart": 525.22,
+  "speechEnd": 528.16,
+  "text": "Rats stayed under for up to twenty hours. Cats, for weeks.",
+  "end": 528.78
+ },
+ {
+  "i": 118,
+  "start": 528.78,
+  "speechStart": 528.9,
+  "speechEnd": 531.98,
+  "text": "An older encyclopedia mirror adds one detail that matters.",
+  "end": 532.26
+ },
+ {
+  "i": 119,
+  "start": 532.26,
+  "speechStart": 532.38,
+  "speechEnd": 535.32,
+  "text": "The colder the liquid, the lower the animal's breathing rate.",
+  "end": 535.98
+ },
+ {
+  "i": 120,
+  "start": 535.98,
+  "speechStart": 536.1,
+  "speechEnd": 540.24,
+  "text": "That is the third way, and we will come back to it. First, the cost.",
+  "end": 540.12
+ },
+ {
+  "i": 121,
+  "start": 540.12,
+  "speechStart": 540.24,
+  "speechEnd": 543.5,
+  "text": "Perfluorocarbons are denser and more viscous than air.",
+  "end": 543.9
+ },
+ {
+  "i": 122,
+  "start": 543.9,
+  "speechStart": 544.02,
+  "speechEnd": 550.14,
+  "text": "That raises the effort of breathing, according to Wikipedia's entry on liquid breathing. Mice are not people.",
+  "end": 550.52
+ },
+ {
+  "i": 123,
+  "start": 550.52,
+  "speechStart": 550.64,
+  "speechEnd": 555.0,
+  "text": "A mouse's lung is tiny. The distance is short. The volume is small.",
+  "end": 555.5
+ },
+ {
+  "i": 124,
+  "start": 555.5,
+  "speechStart": 555.62,
+  "speechEnd": 561.26,
+  "text": "The sources here do not say whether the same method works at the size of an adult. That has not been shown.",
+  "end": 562.44
+ },
+ {
+  "i": 125,
+  "start": 562.44,
+  "speechStart": 562.56,
+  "speechEnd": 568.26,
+  "text": "Look at what the cold did for the animals. It lowered their breathing rate. That is a fall in demand.",
+  "end": 569.1
+ },
+ {
+  "i": 126,
+  "start": 569.1,
+  "speechStart": 569.22,
+  "speechEnd": 570.64,
+  "text": "Demand is the other half of the sum.",
+  "end": 571.24
+ },
+ {
+  "i": 127,
+  "start": 571.24,
+  "speechStart": 571.36,
+  "speechEnd": 577.44,
+  "text": "If the body needed less oxygen, the two hundred and fifty would fall, and so would the litres.",
+  "end": 577.32
+ },
+ {
+  "i": 128,
+  "start": 577.32,
+  "speechStart": 577.44,
+  "speechEnd": 579.4,
+  "text": "For a human, the cold is not kind.",
+  "end": 580.32
+ },
+ {
+  "i": 129,
+  "start": 580.32,
+  "speechStart": 580.44,
+  "speechEnd": 586.68,
+  "text": "A boating-safety guide says water draws heat from the body about twenty-five times faster than air at the same temperature.",
+  "end": 587.22
+ },
+ {
+  "i": 130,
+  "start": 587.22,
+  "speechStart": 587.34,
+  "speechEnd": 592.08,
+  "text": "Other sources give four, twenty, and thirty-two. They all say faster.",
+  "end": 593.02
+ },
+ {
+  "i": 131,
+  "start": 593.02,
+  "speechStart": 593.14,
+  "speechEnd": 598.82,
+  "text": "The first danger is not hypothermia. It is cold shock. Sudden immersion makes people gasp.",
+  "end": 599.44
+ },
+ {
+  "i": 132,
+  "start": 599.44,
+  "speechStart": 599.56,
+  "speechEnd": 606.2,
+  "text": "Another guide says water inhaled in that gasp can cause unconsciousness within minutes. Hands and legs go numb.",
+  "end": 606.08
+ },
+ {
+  "i": 133,
+  "start": 606.08,
+  "speechStart": 606.2,
+  "speechEnd": 611.1,
+  "text": "Within minutes, according to a New York state boating guide. Hypothermia comes later.",
+  "end": 611.8
+ },
+ {
+  "i": 134,
+  "start": 611.8,
+  "speechStart": 611.92,
+  "speechEnd": 616.44,
+  "text": "One expert average is about an hour, depending on temperature, clothing and body type.",
+  "end": 616.94
+ },
+ {
+  "i": 135,
+  "start": 616.94,
+  "speechStart": 617.06,
+  "speechEnd": 621.6,
+  "text": "So the cold that helped the rats would not help her. Or not for long.",
+  "end": 622.34
+ },
+ {
+  "i": 136,
+  "start": 622.34,
+  "speechStart": 622.46,
+  "speechEnd": 628.94,
+  "text": "Whether a human could be chilled safely enough to cut demand, while breathing liquid, has not been shown in the sources we found.",
+  "end": 630.6
+ },
+ {
+  "i": 137,
+  "start": 630.6,
+  "speechStart": 630.72,
+  "speechEnd": 634.38,
+  "text": "Philadelphia, nineteen eighty-nine. Three very premature babies.",
+  "end": 634.26
+ },
+ {
+  "i": 138,
+  "start": 634.26,
+  "speechStart": 634.38,
+  "speechEnd": 637.6,
+  "text": "Twenty-eight, twenty-four and twenty-three weeks of gestation.",
+  "end": 638.32
+ },
+ {
+  "i": 139,
+  "start": 638.32,
+  "speechStart": 638.44,
+  "speechEnd": 641.28,
+  "text": "Doctors at Jefferson Medical College, led by Dr. J. S.",
+  "end": 641.32
+ },
+ {
+  "i": 140,
+  "start": 641.32,
+  "speechStart": 641.44,
+  "speechEnd": 643.86,
+  "text": "Greenspan, tried perfluorocarbon in their lungs.",
+  "end": 644.2
+ },
+ {
+  "i": 141,
+  "start": 644.2,
+  "speechStart": 644.32,
+  "speechEnd": 646.86,
+  "text": "A review reports that their lung compliance improved.",
+  "end": 647.26
+ },
+ {
+  "i": 142,
+  "start": 647.26,
+  "speechStart": 647.38,
+  "speechEnd": 653.4,
+  "text": "The paper appeared in the Journal of Pediatrics in nineteen ninety. Note what it was. Partial liquid ventilation.",
+  "end": 653.88
+ },
+ {
+  "i": 143,
+  "start": 653.88,
+  "speechStart": 654.0,
+  "speechEnd": 657.78,
+  "text": "The lungs were filled with the liquid, and a ventilator still pushed gas through it.",
+  "end": 657.96
+ },
+ {
+  "i": 144,
+  "start": 657.96,
+  "speechStart": 658.08,
+  "speechEnd": 659.8,
+  "text": "Not a baby breathing liquid alone.",
+  "end": 659.68
+ },
+ {
+  "i": 145,
+  "start": 659.68,
+  "speechStart": 659.8,
+  "speechEnd": 662.82,
+  "text": "Nineteen ninety-six.",
+  "end": 662.7
+ },
+ {
+  "i": 146,
+  "start": 662.7,
+  "speechStart": 662.82,
+  "speechEnd": 666.96,
+  "text": "The LiquiVent study group reported thirteen infants with severe respiratory distress.",
+  "end": 667.48
+ },
+ {
+  "i": 147,
+  "start": 667.48,
+  "speechStart": 667.6,
+  "speechEnd": 671.32,
+  "text": "In the New England Journal of Medicine, they say that within an hour of the treatment,",
+  "end": 671.56
+ },
+ {
+  "i": 148,
+  "start": 671.56,
+  "speechStart": 671.68,
+  "speechEnd": 675.2,
+  "text": "arterial oxygen tension rose by a hundred and thirty-eight percent.",
+  "end": 675.08
+ },
+ {
+  "i": 149,
+  "start": 675.08,
+  "speechStart": 675.2,
+  "speechEnd": 677.72,
+  "text": "Compliance rose by sixty-one.",
+  "end": 677.6
+ },
+ {
+  "i": 150,
+  "start": 677.6,
+  "speechStart": 677.72,
+  "speechEnd": 680.24,
+  "text": "No adverse events were clearly attributable to it.",
+  "end": 680.66
+ },
+ {
+  "i": 151,
+  "start": 680.66,
+  "speechStart": 680.78,
+  "speechEnd": 684.96,
+  "text": "That is the best result in this film. Then the footnote.",
+  "end": 685.9
+ },
+ {
+  "i": 152,
+  "start": 685.9,
+  "speechStart": 686.02,
+  "speechEnd": 692.48,
+  "text": "Other clinical trials, a review notes, failed to show that partial liquid ventilation reduced illness in acute respiratory failure.",
+  "end": 693.14
+ },
+ {
+  "i": 153,
+  "start": 693.14,
+  "speechStart": 693.26,
+  "speechEnd": 696.06,
+  "text": "It is not a lake, and it is not an adult swimmer.",
+  "end": 696.44
+ },
+ {
+  "i": 154,
+  "start": 696.44,
+  "speechStart": 696.56,
+  "speechEnd": 700.76,
+  "text": "A premature lung is not a healthy one, and a controlled ward is not open water.",
+  "end": 701.42
+ },
+ {
+  "i": 155,
+  "start": 701.42,
+  "speechStart": 701.54,
+  "speechEnd": 707.14,
+  "text": "Whether a healthy adult could breathe liquid for hours has not been established. Now take her down.",
+  "end": 707.82
+ },
+ {
+  "i": 156,
+  "start": 707.82,
+  "speechStart": 707.94,
+  "speechEnd": 711.16,
+  "text": "Pressure rises about one atmosphere for every ten metres of seawater.",
+  "end": 711.5
+ },
+ {
+  "i": 157,
+  "start": 711.5,
+  "speechStart": 711.62,
+  "speechEnd": 713.76,
+  "text": "That figure is consistent across diving sources.",
+  "end": 714.24
+ },
+ {
+  "i": 158,
+  "start": 714.24,
+  "speechStart": 714.36,
+  "speechEnd": 717.3,
+  "text": "At thirty metres, four atmospheres in total. Our sum.",
+  "end": 718.26
+ },
+ {
+  "i": 159,
+  "start": 718.26,
+  "speechStart": 718.38,
+  "speechEnd": 721.86,
+  "text": "Divers on air meet two problems there. One is the gas itself.",
+  "end": 722.26
+ },
+ {
+  "i": 160,
+  "start": 722.26,
+  "speechStart": 722.38,
+  "speechEnd": 728.88,
+  "text": "A training article says the effects of inert-gas narcosis are second only to oxygen toxicity in hazard for an air diver.",
+  "end": 729.52
+ },
+ {
+  "i": 161,
+  "start": 729.52,
+  "speechStart": 729.64,
+  "speechEnd": 730.66,
+  "text": "The other is the bends.",
+  "end": 731.22
+ },
+ {
+  "i": 162,
+  "start": 731.22,
+  "speechStart": 731.34,
+  "speechEnd": 733.7,
+  "text": "The extra pressure drives more nitrogen into the blood.",
+  "end": 733.58
+ },
+ {
+  "i": 163,
+  "start": 733.58,
+  "speechStart": 733.7,
+  "speechEnd": 737.44,
+  "text": "Come up too fast and it comes out as bubbles. Joint pain.",
+  "end": 737.64
+ },
+ {
+  "i": 164,
+  "start": 737.64,
+  "speechStart": 737.76,
+  "speechEnd": 740.02,
+  "text": "In severe cases, stroke or paralysis.",
+  "end": 740.9
+ },
+ {
+  "i": 165,
+  "start": 740.9,
+  "speechStart": 741.02,
+  "speechEnd": 747.98,
+  "text": "The standard advice is an ascent of about ten metres a minute or slower. Oxygen is the third. Dive rules cap its pressure.",
+  "end": 748.68
+ },
+ {
+  "i": 166,
+  "start": 748.68,
+  "speechStart": 748.8,
+  "speechEnd": 749.4,
+  "text": "The U.S.",
+  "end": 749.28
+ },
+ {
+  "i": 167,
+  "start": 749.28,
+  "speechStart": 749.4,
+  "speechEnd": 755.16,
+  "text": "Environmental Protection Agency's regional dive plan says nitrox diving is generally limited to one point four atmospheres.",
+  "end": 755.68
+ },
+ {
+  "i": 168,
+  "start": 755.68,
+  "speechStart": 755.8,
+  "speechEnd": 761.72,
+  "text": "A quoted NOAA manual says one point six. Air is twenty-one percent oxygen. Multiply by the pressure.",
+  "end": 762.14
+ },
+ {
+  "i": 169,
+  "start": 762.14,
+  "speechStart": 762.26,
+  "speechEnd": 764.7,
+  "text": "About sixty metres on air, and the limit is reached.",
+  "end": 765.2
+ },
+ {
+  "i": 170,
+  "start": 765.2,
+  "speechStart": 765.32,
+  "speechEnd": 769.64,
+  "text": "Our arithmetic, at four atmospheres per thirty. But she is not breathing air.",
+  "end": 770.34
+ },
+ {
+  "i": 171,
+  "start": 770.34,
+  "speechStart": 770.46,
+  "speechEnd": 772.24,
+  "text": "What would pressure do to someone breathing water?",
+  "end": 772.86
+ },
+ {
+  "i": 172,
+  "start": 772.86,
+  "speechStart": 772.98,
+  "speechEnd": 776.24,
+  "text": "Would nitrogen dissolve into her blood? Would it bubble on the way up?",
+  "end": 776.76
+ },
+ {
+  "i": 173,
+  "start": 776.76,
+  "speechStart": 776.88,
+  "speechEnd": 781.14,
+  "text": "That has not been published, as far as we could find. It is unclear what the answer would be.",
+  "end": 781.76
+ },
+ {
+  "i": 174,
+  "start": 781.76,
+  "speechStart": 781.88,
+  "speechEnd": 787.18,
+  "text": "Here is where it stands on Monday, the twenty-sixth of October, twenty twenty-six. What is known.",
+  "end": 787.54
+ },
+ {
+  "i": 175,
+  "start": 787.54,
+  "speechStart": 787.66,
+  "speechEnd": 790.8,
+  "text": "Water holds about thirty-six times less oxygen than air.",
+  "end": 790.68
+ },
+ {
+  "i": 176,
+  "start": 790.68,
+  "speechStart": 790.8,
+  "speechEnd": 794.66,
+  "text": "A resting adult needs about two hundred and fifty millilitres a minute.",
+  "end": 795.12
+ },
+ {
+  "i": 177,
+  "start": 795.12,
+  "speechStart": 795.24,
+  "speechEnd": 801.7,
+  "text": "Even with generous extraction, that is a hundred and seventy-two litres of water a minute, and nearly five hundred breaths.",
+  "end": 802.3
+ },
+ {
+  "i": 178,
+  "start": 802.3,
+  "speechStart": 802.42,
+  "speechEnd": 807.82,
+  "text": "Fish do it with one-way flow and gills, at about fifty-four. Mice and rats have breathed liquid.",
+  "end": 808.32
+ },
+ {
+  "i": 179,
+  "start": 808.32,
+  "speechStart": 808.44,
+  "speechEnd": 812.2,
+  "text": "Premature infants have had partial liquid ventilation. What is not known.",
+  "end": 812.08
+ },
+ {
+  "i": 180,
+  "start": 812.08,
+  "speechStart": 812.2,
+  "speechEnd": 815.64,
+  "text": "How a healthy adult would fare breathing liquid for hours.",
+  "end": 816.08
+ },
+ {
+  "i": 181,
+  "start": 816.08,
+  "speechStart": 816.2,
+  "speechEnd": 818.24,
+  "text": "How much a human lung could really extract.",
+  "end": 818.66
+ },
+ {
+  "i": 182,
+  "start": 818.66,
+  "speechStart": 818.78,
+  "speechEnd": 824.88,
+  "text": "What pressure would do to someone breathing water. Where the answers sit. In primary papers we did not read.",
+  "end": 825.3
+ },
+ {
+  "i": 183,
+  "start": 825.3,
+  "speechStart": 825.42,
+  "speechEnd": 831.66,
+  "text": "The Kylstra and Clark papers. The Greenspan paper. The LiquiVent trial. Textbooks on gill physiology.",
+  "end": 832.26
+ },
+ {
+  "i": 184,
+  "start": 832.26,
+  "speechStart": 832.38,
+  "speechEnd": 838.8,
+  "text": "Naval diving research. This is a calculation. Not a finding. Two metres under a lake.",
+  "end": 839.06
+ },
+ {
+  "i": 185,
+  "start": 839.06,
+  "speechStart": 839.18,
+  "speechEnd": 840.52,
+  "text": "A person, breathing.",
+  "end": 840.4
+ },
+ {
+  "i": 186,
+  "start": 840.4,
+  "speechStart": 840.52,
+  "speechEnd": 842.42,
+  "text": "Six litres a minute of air.",
+  "end": 842.3
+ },
+ {
+  "i": 187,
+  "start": 842.3,
+  "speechStart": 842.42,
+  "speechEnd": 846.14,
+  "text": "A hundred and seventy-two of water. The lungs were built for the first.",
+  "end": 847.74
+ }
+]
