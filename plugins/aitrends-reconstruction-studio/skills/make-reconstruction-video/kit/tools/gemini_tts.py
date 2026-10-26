@@ -129,6 +129,11 @@ def run(a, sample):
     pcm = b""; gap = b"\x00\x00" * int(RATE * a.gap)
     for i, ch in enumerate(chunks):
         print(f"chunk {i + 1}/{len(chunks)}: {len(ch)} chars", flush=True)
+        import hashlib
+        cdir = os.path.join(P, "audio", "chunks"); os.makedirs(cdir, exist_ok=True)
+        cf = os.path.join(cdir, hashlib.sha1((a.voice + STYLE + ch).encode()).hexdigest()[:16] + ".pcm")
+        if os.path.exists(cf) and not sample:
+            part = open(cf, "rb").read(); pcm += part + (gap if i + 1 < len(chunks) else b""); print("  (cached)", flush=True); continue
         for attempt in range(3):
             part = synth(keys, state, models, a.voice, ch)
             why = check_chunk(part, ch) if a.verify else ""
@@ -136,6 +141,7 @@ def run(a, sample):
             print(f"  retry {attempt + 1}: {why}", flush=True); time.sleep(a.sleep)
         else:
             print("  WARNING: chunk still flagged after 3 tries: " + why, flush=True)
+        if not why and not sample: open(cf, "wb").write(part)
         pcm += part + (gap if i + 1 < len(chunks) else b"")
         if i + 1 < len(chunks): time.sleep(a.sleep)
     out = a.out or os.path.join(P, "audio", "sample.wav" if sample else "voiceover_raw.wav")
