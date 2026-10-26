@@ -20,8 +20,11 @@ DEFAULT_MODEL = "gemini-3.8-flash-tts"
 FALLBACK_MODELS = ["gemini-3.1-flash-tts-preview", "gemini-2.5-flash-preview-tts"]
 DEFAULT_VOICE = "Charon"
 RATE = 24000  # the API returns raw 16-bit mono PCM at 24 kHz
-STYLE = ("Read this as a calm investigative documentary narrator at a brisk, confident pace of about 170 words per minute. "
-         "Keep pauses between sentences under half a second. No drama. Say only the text after the colon: ")
+# The style goes in "director's notes" ahead of a TRANSCRIPT header. A plain spoken-style prefix ("Read this as ... Say only the
+# text after the colon:") was READ ALOUD by the model in nearly every chunk; this format was not (verified with Whisper).
+# systemInstruction is rejected by the TTS models ("Developer instruction is not enabled").
+STYLE = ("# DIRECTOR'S NOTES\nStyle: calm, steady, brisk investigative documentary narrator. No drama. "
+         "Pace: natural, about 160 words per minute, short pauses at full stops.\n\n# TRANSCRIPT\n")
 VOICES = {  # Gemini prebuilt voices (descriptions from Google's docs; check the live list)
     "Charon": "informative", "Orus": "firm", "Kore": "firm", "Algenib": "gravelly", "Rasalgethi": "informative",
     "Sadaltager": "knowledgeable", "Iapetus": "clear", "Gacrux": "mature", "Schedar": "even", "Umbriel": "easy-going",
@@ -114,7 +117,7 @@ def run(a, sample):
     n = len(text.split())
     with open(os.path.join(os.path.dirname(os.path.abspath(out)), "voice_settings.md"), "w", encoding="utf-8") as f:
         f.write(f"# Voice settings\n\n- engine: Gemini API TTS\n- model: {state['model']}\n- voice: {a.voice} ({VOICES.get(a.voice, 'custom')})\n"
-                f"- style prompt: {STYLE.strip()}\n- chunks: {len(chunks)} (max {a.max_chars} chars), gap {a.gap}s\n- keys available: {len(keys)} (never recorded)\n"
+                f"- style prompt: {STYLE.strip()!r}\n- chunks: {len(chunks)} (max {a.max_chars} chars), gap {a.gap}s\n- keys available: {len(keys)} (never recorded)\n"
                 f"- raw file: {out} ({dur:.2f} s), {n} words -> {n / (dur / 60):.0f} wpm\n- generated: {time.strftime('%Y-%m-%d %H:%M')}\n")
     print(f"voiceover (raw): {out}  {dur:.2f}s  {n / (dur / 60):.0f} wpm — next: tools/pauses.py (ask the user first), then tools/transcribe.py")
 

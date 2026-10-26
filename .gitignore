@@ -6,3 +6,5 @@ projects/*/audio/*.m4b
 projects/*/build/
 __pycache__/
 projects/*/audio/*.mp3
+projects/*/audio/old_with_spoken_prompt/
+projects/*/timeline_old_bad/
