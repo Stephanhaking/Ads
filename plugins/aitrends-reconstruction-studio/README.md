@@ -36,6 +36,7 @@ Every frame is drawn in code (Three.js sets and mannequins, HTML evidence cards,
 | `compose-music` | The film's original score: compose, change ("darker here", "silence under that line"), render |
 | `setup-studio` | Install or check everything; a rendered self-test |
 | `make-ad-video` | Short-form ad or product explainer using the same engine (added in this repo) |
+| `make-superhero-video` | Superhero "what if" videos explained with real physics (added in this repo) |
 
 Just ask in plain words, e.g. "Find a trending story and make a reconstruction video", "Make a 60-second short about this article: <link>", or "Here's my script, use my ElevenLabs voice".
 
