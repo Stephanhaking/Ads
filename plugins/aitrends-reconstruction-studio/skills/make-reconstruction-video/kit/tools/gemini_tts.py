@@ -25,6 +25,9 @@ RATE = 24000  # the API returns raw 16-bit mono PCM at 24 kHz
 # systemInstruction is rejected by the TTS models ("Developer instruction is not enabled").
 STYLE = ("# DIRECTOR'S NOTES\nStyle: calm, steady, brisk investigative documentary narrator. No drama. "
          "Pace: natural, about 145 words per minute, short pauses at full stops.\n\n# TRANSCRIPT\n")
+STYLES = {"documentary": None, "story": ("# DIRECTOR'S NOTES\nStyle: an energetic, warm, conversational young storyteller talking straight to the viewer. "
+    "Playful in the funny moments, tense and quieter in the dangerous ones, quick dialogue lines voiced lightly. "
+    "Pace: lively, about 165 words per minute, short natural pauses.\n\n# TRANSCRIPT\n")}
 VOICES = {  # Gemini prebuilt voices (descriptions from Google's docs; check the live list)
     "Charon": "informative", "Orus": "firm", "Kore": "firm", "Algenib": "gravelly", "Rasalgethi": "informative",
     "Sadaltager": "knowledgeable", "Iapetus": "clear", "Gacrux": "mature", "Schedar": "even", "Umbriel": "easy-going",
@@ -55,7 +58,8 @@ def split_chunks(text, max_chars):
     return out
 
 
-def synth(keys, state, models, voice, text, style=STYLE):
+def synth(keys, state, models, voice, text, style=None):
+    style = style or STYLE
     """Return raw PCM bytes. Rotates keys on 429/403/5xx and falls back to the next model; never prints a key."""
     body = {"contents": [{"parts": [{"text": style + text}]}],
             "generationConfig": {"responseModalities": ["AUDIO"],
@@ -131,11 +135,11 @@ def run(a, sample):
         print(f"chunk {i + 1}/{len(chunks)}: {len(ch)} chars", flush=True)
         import hashlib
         cdir = os.path.join(P, "audio", "chunks"); os.makedirs(cdir, exist_ok=True)
-        cf = os.path.join(cdir, hashlib.sha1((a.voice + STYLE + ch).encode()).hexdigest()[:16] + ".pcm")
+        cf = os.path.join(cdir, hashlib.sha1((a.voice + (STYLES.get(a.style) or STYLE) + ch).encode()).hexdigest()[:16] + ".pcm")
         if os.path.exists(cf) and not sample:
             part = open(cf, "rb").read(); pcm += part + (gap if i + 1 < len(chunks) else b""); print("  (cached)", flush=True); continue
         for attempt in range(3):
-            part = synth(keys, state, models, a.voice, ch)
+            part = synth(keys, state, models, a.voice, ch, STYLES.get(a.style, STYLE))
             why = check_chunk(part, ch) if a.verify else ""
             if not why: break
             print(f"  retry {attempt + 1}: {why}", flush=True); time.sleep(a.sleep)
@@ -165,7 +169,7 @@ def main():
         p.add_argument("--project", required=True); p.add_argument("--voice", default=DEFAULT_VOICE); p.add_argument("--model", default=DEFAULT_MODEL)
         p.add_argument("-o", "--out"); p.add_argument("--max-chars", type=int, default=1400); p.add_argument("--gap", type=float, default=0.5)
         p.add_argument("--sleep", type=float, default=7.0, help="seconds between requests (free tier: 10 requests/minute)")
-        p.add_argument("--no-verify", dest="verify", action="store_false", help="skip the per-chunk Whisper check"); p.add_argument("--chars", type=int, default=400); p.add_argument("--text", help="sample only: neutral test text (allowed before approval)")
+        p.add_argument("--style", default="documentary", choices=list(STYLES)); p.add_argument("--no-verify", dest="verify", action="store_false", help="skip the per-chunk Whisper check"); p.add_argument("--chars", type=int, default=400); p.add_argument("--text", help="sample only: neutral test text (allowed before approval)")
     a = ap.parse_args()
     if a.cmd == "voices":
         for v, d in VOICES.items(): print(f"{v:12s} {d}")

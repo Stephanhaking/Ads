@@ -59,3 +59,20 @@ Use the house voice from `write-script/references/script-style.md`: short senten
 2. `python tools/new_project.py --name <slug> --title "<Title>" --format long|short --look clay [--captions]`.
 3. Fill `research/physics.md`, `unknowns.md`, `reconstruction_brief.md` (scene sizes and positions).
 4. Script with approval gate, then voiceover, pauses, Whisper, shot plan, build, score (tension for the failure moment, wonder in a major or modal key for the setup), preview, final render.
+
+## Story style (default for this niche; replaces the documentary voice)
+Learned from a top "What if" channel's script (user-supplied example, 2026-10-26). The plugin's documentary rules
+(no "you", no CTA, sources read aloud) do NOT apply in this style; the honesty rules still do.
+- **Second person, present tense.** "You trip at the end of the pier..." The viewer is the hero.
+- **A story arc in 6-8 minutes (about 1,000-1,300 words at ~165 wpm):** the discovery (funny, physical), learning the rules
+  (each rule = one real fact, shown as a consequence), the cost (tired, cold, lonely), a danger that nearly kills you,
+  a save where the power matters, the aftermath (a friend, the ground feels good), a hook for the next episode.
+- **Real facts hidden inside the story**: numbers said casually ("about two hundred and fifty millilitres a minute"),
+  no "according to" in the narration; every fact still lives in `research/physics.md` and the description lists sources.
+  If something is unknown, the story says so plainly ("Honestly? Nobody knows.").
+- **Dialogue and humour**: short lines from a friend, a parent, an official; one-word reactions; self-deprecating jokes.
+- **Ending**: a short real-science coda ("But could a human really...?") with 2-3 true milestones, then a question to
+  the viewer for the comments and a subscribe line. Never copy another channel's catch-phrases or characters.
+- **Visuals**: the hero is the same 2D stickman throughout (outfit fixed), other characters recurring; 3D environments only,
+  all props drawn in 2D (lib/props2d.js); numbers appear as big friendly stat cards on the beat they are said.
+- **Voice**: an energetic, warm, conversational storyteller (Gemini TTS: director's notes, not a spoken prefix).
