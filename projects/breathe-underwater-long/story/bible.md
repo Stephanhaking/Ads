@@ -59,3 +59,12 @@ Anatomy schematic; swimmer hypothetical; lab and ward reconstructed from descrip
 
 ## Look decision (user, 2026-10-26)
 Lake in colour `dusk` (opening, ending); the rest of the film in clay. Pier and swimmer improved: pier with plank gaps, posts, cross-braces, railing and two lit lamps, pine silhouettes on the bank; swimmer in a relaxed float pose with a slow breathing blend and a cool fill light (scenes/lib/swimmer.js).
+
+## Style decision (user, 2026-10-26, final)
+Hybrid look approved: 3D environments (Three.js sets such as the dusk lake) with 2D clothed-stickman characters composited on top
+(`projects/breathe-underwater-long-3d/scenes/lib/char2d.js`): black round head, white oval eyes and mouth with expressions,
+two-tone clothes (tops, hoods, shorts or trousers, shoes), ponytail and caps available, rim light matching the scene.
+Characters always face the camera. Rejected along the way: clay mannequins (3D), primitive 3D stickman, pure 2D scenes.
+The build continues in `projects/breathe-underwater-long-3d/`.
+Open item: the narration says "a clay-white shape"; it no longer matches the black stickman and needs a script change,
+the user's approval and a re-voiced chunk.
