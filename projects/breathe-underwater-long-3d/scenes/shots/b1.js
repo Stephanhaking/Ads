@@ -54,7 +54,10 @@ function torso(W, S, t, info, o) {
   S.airway.color.set(new THREE.Color('#4a8cff').lerp(new THREE.Color('#7d8088'), stale));
   S.airway.emissive?.set('#2f6fdb'); S.airway.emissiveIntensity = 0.35 * glow;
   const br = 1 + (o.bigBreath ? 0.28 * ease.inOut(clamp((t - 0.3) / 1.6)) : 0.04 * Math.sin((info.start + t) * 1.4));
-  S.sacs.forEach((s) => s.scale.setScalar(br));
+  // collapse: sacs shrink one by one from the phrase on; collapsed: already shrunk
+  const ca = o.collapse ? info.w(o.collapse, 1) : null;
+  S.sacs.forEach((s, i) => { let k = 1; if (o.collapsed) k = 0.55; else if (ca != null) k = 1 - 0.45 * ease.inOut(clamp((t - ca - (i % 12) * 0.25) / 0.8)); s.scale.setScalar(br * k); });
+  S.sac.color.set(o.saline ? '#bfe3ef' : '#e3e1dc');
 }
 function torsoShot(id, o) {
   registerShot(id, {
@@ -157,3 +160,5 @@ cards({
   s054: { kind: 'statement', text: '≈ 830 times denser', sub: 'course notes, via a flashcard set' },
   s069: { kind: 'list', kicker: 'Lung volumes', items: [{ title: 'Total lung capacity', sub: 'about 6 litres' }, { title: 'Vital capacity', sub: '4.6-4.8 litres (sources differ)' }], times: ['Total', 'vital'], who: 'her', pose: 'present', side: 'right' },
 });
+
+export { torsoShot, roomShot, plate, tag };
