@@ -1,6 +1,7 @@
 // Set: a generic lake with a wooden pier at dusk (colour look). Water surface at y=0, lake bed at y=-6, pier along +X from shore.
 // Hypothetical place, not a real location. The swimmer floats upright at about 2 m depth beside the pier posts.
 import { registerSet, K, THREE } from '/engine/api.js';
+import { stickman, S_FLOAT, S_STAND } from '../lib/stick3d.js';
 
 registerSet('lake', async (W) => {
   W.shadowArea([-2, -2, 2], 22);
@@ -25,17 +26,17 @@ registerSet('lake', async (W) => {
   for (const x of [-6, -18]) { const l = K.lamp({ h: 3.4, on: true, color: '#2a2018', light: '#ffd9a0' }); l.position.set(x, 1.15, 1.7); W.add(l); }
   // trees on the bank as soft silhouettes
   W.add(K.forest({ center: [-90, 0], rMax: 80, from: 90, to: 270, count: 260, farMax: 0, farCount: 0, palette: 'pine', conifers: 0.7, seed: 11 }));
-  // swimmer: clay mannequin in a relaxed float, accent ring; shots call floatSwimmer() every frame
-  const sw = K.mannequin({ style: 'clay', pose: 'stand', height: 1.7 });
-  sw.scale.setScalar(1.15); sw.position.set(-5, -3.1, 4); W.add(sw);
+  // swimmer: 3D stickman (black, white eyes, warm outline), floating; shots call floatSwimmer() every frame
+  const sw = stickman({ scale: 1.15, pose: S_FLOAT, mouthOpen: true }); sw.position.set(-5, -3.1, 4); W.add(sw);
   const ring = K.ring({ radius: 1.15, color: '#4a8cff' }); ring.position.set(-5, -4.6, 4); W.add(ring);
   // soft cool fill from the surface so the swimmer reads against the dark water (no shadow)
   const fill = new THREE.PointLight('#a8d4ff', 55, 16, 1.6); fill.position.set(-3, -0.6, 7); W.add(fill);
   // two onlookers at the end of the pier (hi-vis-free, plain clothes), looking down at the water
   const pierFolk = [];
   for (const [x, z, yaw, col] of [[-5.6, 0.7, 2.6, '#c75b39'], [-5.2, -0.6, 2.2, '#3f6db3']]) {
-    const m = K.mannequin({ style: 'clay', pose: 'stand', height: 1.72, outfit: { shirt: col } });
-    m.standAt(x, z, 0); m.position.y += 1.17; m.rotation.y = yaw; m.setPose({ head: [28, 0, 0], shL: [4, 7, 0], shR: [4, 7, 0], elL: 10, elR: 10, spine: [10, 0, 0] }); W.add(m); pierFolk.push(m);
+    const pose = col === '#c75b39' ? { ...S_STAND, aL: [22, 14], aR: [70, 60], fwdA: [0, 55], lL: [12, 4], lR: [12, 4], head: [24, 0], lean: 8 } : { ...S_STAND, aL: [26, 60], aR: [26, 60], fwdA: [20, 20], lL: [10, 4], lR: [10, 4], head: [20, 0], lean: 6 };
+    const m = stickman({ scale: 0.95, pose, rim: '#ffb070' });
+    m.position.set(x, 1.17 + 0.78 * 0.95, z); m.rotation.y = yaw; W.add(m); pierFolk.push(m);
   }
   return { sw, ring, pierFolk };
 });

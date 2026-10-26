@@ -3,7 +3,7 @@ import { registerShot, THREE, ease, clamp, cam, prog } from '/engine/api.js';
 import { floatSwimmer } from '../lib/swimmer.js';
 const LOOK = { base: 'dusk', fog: { color: '#2c5560', density: 0.012 } };
 const BASE = [-5, -3.1, 4, 0.5];
-const head = (S) => { const v = new THREE.Vector3(); S.sw.joints?.head ? S.sw.joints.head.getWorldPosition(v) : v.set(S.sw.position.x, S.sw.position.y + 0.85, S.sw.position.z); return v; };
+const head = (S) => S.sw.headWorld(new THREE.Vector3());
 const tick = (S, t, info) => { floatSwimmer(S.sw, BASE, info.start + t); S.ring.position.set(S.sw.position.x, -4.6, S.sw.position.z); };
 
 registerShot('s002', {
@@ -47,7 +47,7 @@ registerShot('s004', {
       const far = mouth.clone().add(new THREE.Vector3(0.55, 0.08 * Math.sin(i * 1.7), 0.45));
       p.position.lerpVectors(out ? mouth : far, out ? far : mouth, ph);
     });
-    cam.dolly(W.camera, t, [[0, { pos: [h.x + 1.6, h.y + 0.05, h.z + 0.4], look: [h.x, h.y - 0.05, h.z], fov: 34 }], [info.dur, { pos: [h.x + 1.25, h.y + 0.08, h.z + 0.9], look: [h.x, h.y - 0.08, h.z], fov: 34 }, ease.inOut]]);
+    cam.dolly(W.camera, t, [[0, { pos: [h.x + 2.4, h.y + 0.15, h.z + 1.4], look: [h.x + 0.3, h.y - 0.1, h.z], fov: 34 }], [info.dur, { pos: [h.x + 2.0, h.y + 0.15, h.z + 1.8], look: [h.x + 0.3, h.y - 0.1, h.z], fov: 34 }, ease.inOut]]);
   },
 });
 
