@@ -56,3 +56,6 @@ Anatomy schematic; swimmer hypothetical; lab and ward reconstructed from descrip
 - 66 cards (35 %) is above the style target of 15-25 %; the long card runs were broken with 3D slab versions.
 - No GPU here: renders are sheets and previews only; the final render runs on the user's PC.
 - The film runs 14 min 7 s at 167 wpm, a little above the 135-165 target.
+
+## Look decision (user, 2026-10-26)
+Lake in colour `dusk` (opening, ending); the rest of the film in clay. Pier and swimmer improved: pier with plank gaps, posts, cross-braces, railing and two lit lamps, pine silhouettes on the bank; swimmer in a relaxed float pose with a slow breathing blend and a cool fill light (scenes/lib/swimmer.js).
