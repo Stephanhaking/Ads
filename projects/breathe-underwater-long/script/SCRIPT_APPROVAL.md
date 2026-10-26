@@ -1,7 +1,7 @@
 # Script approval
 
-- version: script_v01.md
-- approved: 2026-10-26 08:09
-- user said: "aprovo, se as fontes divergem e alguém reclamar é só mencionar depois"
-- script_final.txt sha256: 9758e4939983ee2716accbe069d02b6080a7a5293d53bbf1be2c9940239232e4
-- words: 2360
+- version: script_long_v02.md
+- approved: 2026-10-26 17:57
+- user said: "por mi fazias tudo kkk, n sei se ainda existe necessidade de fases (autorização geral; troca da frase 'a clay-white shape' por 'a girl in a red T-shirt')"
+- script_final.txt sha256: ed90c9b7a2e0aea2c7705ab2b0f979f287192e9533c9abc262c12d39527ced1a
+- words: 2363

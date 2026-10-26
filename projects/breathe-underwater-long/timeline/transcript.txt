@@ -1,312 +1,312 @@
-[00:00.00 -> 00:01.76] Two metres under a lake.
-[00:01.76 -> 00:04.88] A pier above, a clay-white shape below.
-[00:06.04 -> 00:06.48] One person.
-[00:07.42 -> 00:08.16] Eyes open.
-[00:09.08 -> 00:09.62] Mouth open.
-[00:10.66 -> 00:12.74] In the corner of the frame, a stopwatch starts.
-[00:13.98 -> 00:14.54] Ten seconds.
-[00:15.62 -> 00:16.02] Thirty.
-[00:17.10 -> 00:17.42] A minute.
-[00:18.62 -> 00:19.62] She is not holding her breath.
-[00:20.70 -> 00:21.40] She is breathing.
-[00:22.68 -> 00:23.54] The water goes in.
-[00:24.10 -> 00:24.94] Something comes out.
-[00:25.76 -> 00:28.64] Her chest rises and falls like anyone's on dry land.
-[00:29.58 -> 00:30.74] Nobody on the pier knows how.
-[00:31.48 -> 00:32.70] The answer is not in her lungs.
-[00:33.54 -> 00:34.34] It is in a number.
-[00:34.34 -> 00:37.34] Two hundred and fifty.
-[00:37.34 -> 00:38.94] This is the story of one rule.
-[00:39.44 -> 00:40.94] A person who can breathe water.
-[00:41.52 -> 00:43.42] Of a litre of air and a litre of lake.
-[00:44.02 -> 00:45.16] And the gap between them.
-[00:45.64 -> 00:48.22] Of a fish that solves the problem with a plumbing trick.
-[00:48.66 -> 00:50.62] And a lung that was never built for it.
-[00:50.86 -> 00:56.28] Of mice in a tank in the nineteen-sixties, and premature babies in a hospital in Philadelphia.
-[00:56.28 -> 00:58.74] And an empty pier at dusk.
-[00:59.66 -> 01:00.74] Could a human really do it?
-[01:01.40 -> 01:03.54] And what would it cost her, minute by minute?
-[01:04.34 -> 01:10.14] This film is built on physiology textbooks, diving manuals, clinical reviews and old laboratory reports.
-[01:10.82 -> 01:12.78] It is a calculation, not a prediction.
-[01:13.48 -> 01:14.44] And the unknowns are many.
-[01:15.22 -> 01:18.56] Every number comes from a named source, or from arithmetic we show.
-[01:19.16 -> 01:21.12] Where the sources disagree, we say so.
-[01:21.88 -> 01:22.54] Start with the number.
-[01:23.06 -> 01:23.76] Then the water.
-[01:24.58 -> 01:24.96] Then the fish.
-[01:25.80 -> 01:26.18] Then the liquid.
-[01:27.08 -> 01:28.70] First, what a body needs.
-[01:29.36 -> 01:32.94] At rest, an adult uses about two hundred and fifty millilitres of oxygen a minute.
-[01:33.46 -> 01:35.50] That is the figure in standard physiology teaching.
-[01:36.06 -> 01:41.62] One medical exam-prep page gets there from three and a half millilitres per kilogram, for a seventy-kilogram adult.
-[01:42.28 -> 01:43.73] About two hundred and forty-five.
-[01:43.73 -> 01:44.98] Two hundred and fifty.
-[01:44.98 -> 01:45.56] Hold on to that.
-[01:46.24 -> 01:47.60] In air, it is easy to supply.
-[01:48.06 -> 01:53.82] A litre of dry air is about twenty point nine percent oxygen, according to the United Nations food agency's fisheries manual.
-[01:54.42 -> 01:57.30] That is about two hundred and nine millilitres in every litre.
-[01:57.30 -> 02:02.60] Resting breathing moves about five to eight litres of air a minute, according to the standard reference on minute ventilation.
-[02:03.28 -> 02:03.74] Call it six.
-[02:04.36 -> 02:05.10] Six litres of air.
-[02:05.10 -> 02:07.00] Two hundred and fifty millilitres of oxygen.
-[02:07.50 -> 02:09.16] A comfortable, quiet job.
-[02:10.36 -> 02:12.50] That is the deal the lungs were built around.
-[02:13.00 -> 02:13.90] Now change the fluid.
-[02:15.20 -> 02:16.22] Water holds oxygen too.
-[02:16.68 -> 02:18.12] Not much, says the sensor maker.
-[02:18.60 -> 02:27.88] A manufacturer of dissolved-oxygen sensors says air-saturated water at twenty-five degrees holds about eight point three milligrams of oxygen per litre.
-[02:27.88 -> 02:31.02] Convert that, and it is about five point eight millilitres.
-[02:31.02 -> 02:33.94] Our conversion, using a standard value for oxygen's density.
-[02:33.94 -> 02:35.94] Two hundred and nine in air.
-[02:35.94 -> 02:37.62] Five point eight in water.
-[02:38.12 -> 02:39.70] About thirty-six times less.
-[02:40.42 -> 02:41.34] Colder water holds more.
-[02:41.74 -> 02:42.64] Warm water holds less.
-[02:42.90 -> 02:44.66] But the order of magnitude stays.
-[02:45.66 -> 02:47.44] So how much water does she need?
-[02:48.00 -> 02:54.04] If her lungs took every last molecule, two hundred and fifty divided by five point eight is forty-three litres a minute.
-[02:54.60 -> 02:55.56] That is the floor.
-[02:56.10 -> 02:57.20] Physics will not let it go lower.
-[02:57.74 -> 02:59.22] But lungs do not take every molecule.
-[02:59.22 -> 03:10.66] An arXiv paper on lung ventilation in mammals reports that exhaled air is sixteen to eighteen percent oxygen, when the air going in is twenty-one.
-[03:10.66 -> 03:12.08] A drop of three to five points.
-[03:12.48 -> 03:14.86] That is roughly a seventh to a quarter of what comes in.
-[03:14.86 -> 03:16.00] Our arithmetic.
-[03:16.74 -> 03:17.74] Take the generous end.
-[03:17.98 -> 03:18.32] A quarter.
-[03:18.32 -> 03:23.74] Two hundred and fifty, divided by five point eight, divided by a quarter.
-[03:23.74 -> 03:26.18] One hundred and seventy-two litres a minute.
-[03:26.64 -> 03:30.10] At the stingy end, it is more than three hundred.
-[03:30.10 -> 03:31.58] How much can a person breathe?
-[03:32.12 -> 03:39.84] A physiology module at Monash University gives a mean maximum voluntary ventilation of about a hundred and forty litres a minute for healthy young men.
-[03:40.32 -> 03:42.58] Range, a hundred to a hundred and eighty.
-[03:42.58 -> 03:44.06] For women, about a hundred.
-[03:44.06 -> 03:45.88] Seventy to a hundred and twenty.
-[03:45.88 -> 03:49.88] That is a short test, the module says, with the subject trying as hard as possible.
-[03:50.50 -> 03:52.08] Her resting need is higher than that.
-[03:52.50 -> 03:52.96] At rest.
-[03:54.30 -> 03:55.80] Then there is what water is.
-[03:56.22 -> 03:58.58] It is about eight hundred times denser than air.
-[03:59.26 -> 04:03.04] Course notes give a ratio of about eight hundred and thirty, a flashcard set says.
-[04:03.04 -> 04:05.90] One litre of water weighs one kilogram.
-[04:05.90 -> 04:09.74] A hundred and seventy-two litres a minute is a hundred and seventy-two kilograms.
-[04:10.36 -> 04:11.06] Through the throat.
-[04:11.66 -> 04:12.36] Every minute.
-[04:12.82 -> 04:13.54] While resting.
-[04:14.52 -> 04:16.24] And the lung has a second problem.
-[04:16.72 -> 04:18.60] It breathes in and out through the same pipes.
-[04:19.36 -> 04:25.96] A textbook puts the anatomical dead space at about a hundred and fifty millilitres, out of a resting breath of five hundred.
-[04:25.96 -> 04:28.30] That is the volume of the airways themselves.
-[04:29.04 -> 04:31.26] Whatever sits there at the end of an outbreath is stale.
-[04:31.86 -> 04:33.24] The next breath mixes with it.
-[04:33.66 -> 04:35.04] In air, that costs a little.
-[04:35.56 -> 04:39.84] The textbook says it leaves the oxygen pressure in the lung lower than in the air outside.
-[04:40.60 -> 04:41.98] In water, count it.
-[04:41.98 -> 04:43.68] Five hundred millilitres in.
-[04:43.68 -> 04:45.34] A hundred and fifty of it stale.
-[04:45.34 -> 04:47.72] Three hundred and fifty reach the air sacs.
-[04:48.08 -> 04:53.68] To move a hundred and seventy-two litres of fresh water through them, that is nearly five hundred breaths a minute.
-[04:54.80 -> 04:56.62] Or take the biggest breath she has.
-[04:57.16 -> 05:04.10] Total lung capacity is about six litres, and the usual vital capacity is four point six to four point eight, depending on the source.
-[05:04.10 -> 05:06.18] A full breath every time.
-[05:06.74 -> 05:07.76] Nearly forty a minute.
-[05:08.34 -> 05:10.54] Each one about four and a half kilograms of lake.
-[05:10.54 -> 05:11.72] Our arithmetic.
-[05:12.36 -> 05:13.80] Neither is a pace a person holds.
-[05:14.34 -> 05:16.00] No source we read says anyone has.
-[05:16.88 -> 05:18.26] All this is hypothetical.
-[05:18.92 -> 05:20.40] Here is what happens in the real world.
-[05:20.80 -> 05:25.00] When someone inhales water, a clinical update on drowning describes two paths.
-[05:25.62 -> 05:28.90] In roughly ten to twenty percent of victims, the throat clamps shut.
-[05:29.42 -> 05:29.96] Laryngospasm.
-[05:30.54 -> 05:34.60] The airway closes and the person asphyxiates, with little water reaching the lungs.
-[05:35.58 -> 05:38.88] Another source puts it lower, under ten to fifteen.
-[05:38.88 -> 05:41.82] In most, the throat relaxes and water goes in.
-[05:42.62 -> 05:47.64] Victims typically aspirate about two to four millilitres per kilogram, according to the same reviews.
-[05:48.42 -> 05:49.22] A small volume.
-[05:49.80 -> 05:50.62] But it does damage.
-[05:51.40 -> 05:54.50] The lungs line their air sacs with a thin film called surfactant.
-[05:54.94 -> 05:55.70] It keeps them open.
-[05:56.58 -> 05:57.40] Water disrupts it.
-[05:57.72 -> 05:58.50] The sacs collapse.
-[05:59.34 -> 06:00.64] Oxygen can no longer cross.
-[06:01.24 -> 06:04.94] Older teaching said fresh water and salt water injure the lungs differently.
-[06:05.68 -> 06:07.96] Current clinical sources say the practical difference is minor.
-[06:08.66 -> 06:10.04] The result is the same chain.
-[06:10.82 -> 06:15.06] Collapse, falling oxygen, rising carbon dioxide, and then the heart.
-[06:16.06 -> 06:18.12] So our hero's lungs would need two things.
-[06:18.82 -> 06:19.94] A way to avoid the damage.
-[06:20.52 -> 06:23.22] And a way to move far more water than any lung has moved.
-[06:23.78 -> 06:24.36] Remember the second.
-[06:25.80 -> 06:26.64] Fish do it.
-[06:27.06 -> 06:27.54] Every minute.
-[06:28.22 -> 06:28.40] How?
-[06:29.12 -> 06:29.48] Two tricks.
-[06:29.48 -> 06:30.90] One.
-[06:30.90 -> 06:33.38] Their gills run blood and water in opposite directions.
-[06:33.94 -> 06:36.80] The most oxygen-rich blood meets the most oxygen-rich water.
-[06:37.28 -> 06:38.44] The least meets the least.
-[06:39.06 -> 06:40.88] Diffusion keeps working along the whole surface.
-[06:41.68 -> 06:42.32] How well does it work?
-[06:43.10 -> 06:43.42] Sources differ.
-[06:44.04 -> 06:46.82] A textbook says up to eighty-five percent of the oxygen in the water.
-[06:47.30 -> 06:49.02] A school resource says about eighty.
-[06:49.02 -> 06:52.10] The Natural History Museum in London says up to seventy.
-[06:52.10 -> 06:54.90] An animal-physiology text says ninety or more is possible.
-[06:55.42 -> 06:55.93] Take eighty.
-[06:55.93 -> 07:00.62] Two hundred and fifty, divided by five point eight, divided by point eight.
-[07:00.62 -> 07:01.98] About fifty-four litres a minute.
-[07:02.46 -> 07:05.04] Not one hundred and seventy-two.
-[07:05.04 -> 07:05.62] Two.
-[07:05.62 -> 07:06.84] The water flows one way.
-[07:07.14 -> 07:09.22] It goes in the mouth, over the gills, out the side.
-[07:09.72 -> 07:10.34] No dead space.
-[07:11.04 -> 07:12.60] No stale pool in the airways.
-[07:13.18 -> 07:19.52] A physiology text says fish greatly reduce the energy cost of moving water by keeping that flow continuous and in one direction.
-[07:20.48 -> 07:21.96] A lung does the opposite.
-[07:22.52 -> 07:23.88] It is a dead-end sac.
-[07:23.88 -> 07:25.58] The same pipe in, the same pipe out.
-[07:26.22 -> 07:28.32] So there is a first way to make her breathing work.
-[07:28.88 -> 07:29.36] Change her.
-[07:29.88 -> 07:30.48] Give her gills.
-[07:30.96 -> 07:32.38] Or something with gills' efficiency.
-[07:32.86 -> 07:33.64] A one-way flow.
-[07:33.98 -> 07:35.08] A far better extraction.
-[07:35.86 -> 07:36.94] That is a different animal.
-[07:37.50 -> 07:39.24] Nothing in this film says it is impossible.
-[07:39.90 -> 07:41.00] It is not a lung anymore.
-[07:41.72 -> 07:44.86] Whether any human body could be rebuilt that way is not known.
-[07:45.74 -> 07:48.70] Duke University, early nineteen-sixties.
-[07:48.70 -> 07:56.66] According to a Gizmodo history, Johannes Kylstra's team trained mice to breathe saline loaded with oxygen under a pressure of a hundred and sixty atmospheres.
-[07:57.18 -> 07:58.38] The mice died minutes later.
-[07:59.08 -> 08:00.50] Carbon dioxide had built up.
-[08:00.86 -> 08:04.32] Another account says rodents and even dogs lasted up to about an hour.
-[08:05.20 -> 08:06.02] Accounts differ on the time.
-[08:06.58 -> 08:07.70] They agree on the cause.
-[08:08.48 -> 08:10.00] The saline delivered enough oxygen.
-[08:10.48 -> 08:12.76] It did not clear the carbon dioxide fast enough.
-[08:13.54 -> 08:19.18] The same fisheries manual says carbon dioxide is far more soluble in water than oxygen is.
-[08:19.22 -> 08:21.32] Which is one reason gills shed it easily.
-[08:22.20 -> 08:24.22] But a saline-filled lung is not a gill.
-[08:24.84 -> 08:29.14] Our reading: it is the same dead-end sac, filled with a liquid that barely moves.
-[08:29.78 -> 08:31.22] The sources do not test that.
-[08:31.22 -> 08:34.10] Mid-nineteen-sixties.
-[08:34.10 -> 08:35.32] Clark and Gollan.
-[08:35.32 -> 08:36.18] They switched the liquid.
-[08:36.56 -> 08:37.00] Not water.
-[08:37.68 -> 08:38.82] A perfluorocarbon.
-[08:38.82 -> 08:41.10] A fluid that dissolves both gases.
-[08:42.04 -> 08:44.62] Gizmodo says their mice breathed it at normal pressure.
-[08:45.22 -> 08:46.84] Rats stayed under for up to twenty hours.
-[08:47.48 -> 08:48.16] Cats, for weeks.
-[08:48.90 -> 08:51.98] An older encyclopedia mirror adds one detail that matters.
-[08:52.38 -> 08:55.32] The colder the liquid, the lower the animal's breathing rate.
-[08:56.10 -> 08:58.66] That is the third way, and we will come back to it.
-[08:59.38 -> 09:00.24] First, the cost.
-[09:00.24 -> 09:03.50] Perfluorocarbons are denser and more viscous than air.
-[09:04.02 -> 09:08.06] That raises the effort of breathing, according to Wikipedia's entry on liquid breathing.
-[09:09.14 -> 09:10.14] Mice are not people.
-[09:10.64 -> 09:12.10] A mouse's lung is tiny.
-[09:12.62 -> 09:13.62] The distance is short.
-[09:14.04 -> 09:15.00] The volume is small.
-[09:15.62 -> 09:19.56] The sources here do not say whether the same method works at the size of an adult.
-[09:20.12 -> 09:21.26] That has not been shown.
-[09:22.56 -> 09:24.56] Look at what the cold did for the animals.
-[09:25.20 -> 09:26.48] It lowered their breathing rate.
-[09:27.08 -> 09:28.26] That is a fall in demand.
-[09:29.22 -> 09:30.64] Demand is the other half of the sum.
-[09:31.36 -> 09:37.44] If the body needed less oxygen, the two hundred and fifty would fall, and so would the litres.
-[09:37.44 -> 09:39.40] For a human, the cold is not kind.
-[09:40.44 -> 09:46.68] A boating-safety guide says water draws heat from the body about twenty-five times faster than air at the same temperature.
-[09:47.34 -> 09:51.10] Other sources give four, twenty, and thirty-two.
-[09:51.10 -> 09:52.08] They all say faster.
-[09:53.14 -> 09:54.96] The first danger is not hypothermia.
-[09:55.40 -> 09:56.30] It is cold shock.
-[09:57.36 -> 09:58.82] Sudden immersion makes people gasp.
-[09:59.56 -> 10:04.22] Another guide says water inhaled in that gasp can cause unconsciousness within minutes.
-[10:05.30 -> 10:06.20] Hands and legs go numb.
-[10:06.20 -> 10:09.20] Within minutes, according to a New York state boating guide.
-[10:10.14 -> 10:11.10] Hypothermia comes later.
-[10:11.92 -> 10:16.44] One expert average is about an hour, depending on temperature, clothing and body type.
-[10:17.06 -> 10:19.96] So the cold that helped the rats would not help her.
-[10:20.48 -> 10:21.60] Or not for long.
-[10:22.46 -> 10:28.94] Whether a human could be chilled safely enough to cut demand, while breathing liquid, has not been shown in the sources we found.
-[10:30.72 -> 10:32.80] Philadelphia, nineteen eighty-nine.
-[10:32.80 -> 10:34.38] Three very premature babies.
-[10:34.38 -> 10:37.60] Twenty-eight, twenty-four and twenty-three weeks of gestation.
-[10:38.44 -> 10:40.88] Doctors at Jefferson Medical College, led by Dr.
-[10:41.08 -> 10:41.10] J.
-[10:41.10 -> 10:41.28] S.
-[10:41.44 -> 10:43.86] Greenspan, tried perfluorocarbon in their lungs.
-[10:44.32 -> 10:46.86] A review reports that their lung compliance improved.
-[10:47.38 -> 10:51.02] The paper appeared in the Journal of Pediatrics in nineteen ninety.
-[10:51.02 -> 10:51.78] Note what it was.
-[10:52.34 -> 10:53.40] Partial liquid ventilation.
-[10:54.00 -> 10:57.78] The lungs were filled with the liquid, and a ventilator still pushed gas through it.
-[10:58.08 -> 10:59.80] Not a baby breathing liquid alone.
-[10:59.80 -> 11:02.82] Nineteen ninety-six.
-[11:02.82 -> 11:06.96] The LiquiVent study group reported thirteen infants with severe respiratory distress.
-[11:07.60 -> 11:15.20] In the New England Journal of Medicine, they say that within an hour of the treatment, arterial oxygen tension rose by a hundred and thirty-eight percent.
-[11:15.20 -> 11:17.72] Compliance rose by sixty-one.
-[11:17.72 -> 11:20.24] No adverse events were clearly attributable to it.
-[11:20.78 -> 11:23.46] That is the best result in this film.
-[11:24.48 -> 11:24.96] Then the footnote.
-[11:26.02 -> 11:32.48] Other clinical trials, a review notes, failed to show that partial liquid ventilation reduced illness in acute respiratory failure.
-[11:33.26 -> 11:36.06] It is not a lake, and it is not an adult swimmer.
-[11:36.56 -> 11:40.76] A premature lung is not a healthy one, and a controlled ward is not open water.
-[11:41.54 -> 11:45.04] Whether a healthy adult could breathe liquid for hours has not been established.
-[11:45.96 -> 11:47.14] Now take her down.
-[11:47.94 -> 11:51.16] Pressure rises about one atmosphere for every ten metres of seawater.
-[11:51.62 -> 11:53.76] That figure is consistent across diving sources.
-[11:54.36 -> 11:56.26] At thirty metres, four atmospheres in total.
-[11:57.02 -> 11:57.30] Our sum.
-[11:58.38 -> 12:00.26] Divers on air meet two problems there.
-[12:00.76 -> 12:01.86] One is the gas itself.
-[12:02.38 -> 12:08.88] A training article says the effects of inert-gas narcosis are second only to oxygen toxicity in hazard for an air diver.
-[12:09.64 -> 12:10.66] The other is the bends.
-[12:11.34 -> 12:13.70] The extra pressure drives more nitrogen into the blood.
-[12:13.70 -> 12:16.18] Come up too fast and it comes out as bubbles.
-[12:17.12 -> 12:17.44] Joint pain.
-[12:17.76 -> 12:20.02] In severe cases, stroke or paralysis.
-[12:21.02 -> 12:24.34] The standard advice is an ascent of about ten metres a minute or slower.
-[12:25.26 -> 12:26.06] Oxygen is the third.
-[12:27.04 -> 12:27.98] Dive rules cap its pressure.
-[12:28.80 -> 12:29.40] The U.S.
-[12:29.40 -> 12:35.16] Environmental Protection Agency's regional dive plan says nitrox diving is generally limited to one point four atmospheres.
-[12:35.80 -> 12:38.94] A quoted NOAA manual says one point six.
-[12:38.94 -> 12:40.34] Air is twenty-one percent oxygen.
-[12:40.96 -> 12:41.72] Multiply by the pressure.
-[12:42.26 -> 12:44.70] About sixty metres on air, and the limit is reached.
-[12:45.32 -> 12:48.24] Our arithmetic, at four atmospheres per thirty.
-[12:48.24 -> 12:49.64] But she is not breathing air.
-[12:50.46 -> 12:52.24] What would pressure do to someone breathing water?
-[12:52.98 -> 12:54.58] Would nitrogen dissolve into her blood?
-[12:55.20 -> 12:56.24] Would it bubble on the way up?
-[12:56.88 -> 12:58.96] That has not been published, as far as we could find.
-[12:59.60 -> 13:01.14] It is unclear what the answer would be.
-[13:01.88 -> 13:06.66] Here is where it stands on Monday, the twenty-sixth of October, twenty twenty-six.
-[13:06.66 -> 13:07.18] What is known.
-[13:07.66 -> 13:10.80] Water holds about thirty-six times less oxygen than air.
-[13:10.80 -> 13:14.66] A resting adult needs about two hundred and fifty millilitres a minute.
-[13:15.24 -> 13:21.70] Even with generous extraction, that is a hundred and seventy-two litres of water a minute, and nearly five hundred breaths.
-[13:22.42 -> 13:26.24] Fish do it with one-way flow and gills, at about fifty-four.
-[13:26.24 -> 13:27.82] Mice and rats have breathed liquid.
-[13:28.44 -> 13:30.80] Premature infants have had partial liquid ventilation.
-[13:31.42 -> 13:32.20] What is not known.
-[13:32.20 -> 13:35.64] How a healthy adult would fare breathing liquid for hours.
-[13:36.20 -> 13:38.24] How much a human lung could really extract.
-[13:38.78 -> 13:41.04] What pressure would do to someone breathing water.
-[13:41.76 -> 13:42.68] Where the answers sit.
-[13:43.30 -> 13:44.88] In primary papers we did not read.
-[13:45.42 -> 13:46.62] The Kylstra and Clark papers.
-[13:47.08 -> 13:47.96] The Greenspan paper.
-[13:48.44 -> 13:49.30] The LiquiVent trial.
-[13:50.10 -> 13:51.66] Textbooks on gill physiology.
-[13:52.38 -> 13:53.26] Naval diving research.
-[13:54.50 -> 13:55.54] This is a calculation.
-[13:55.96 -> 13:56.48] Not a finding.
-[13:57.60 -> 13:58.80] Two metres under a lake.
-[13:59.18 -> 14:00.52] A person, breathing.
-[14:00.52 -> 14:02.42] Six litres a minute of air.
-[14:02.42 -> 14:04.32] A hundred and seventy-two of water.
-[14:04.82 -> 14:06.14] The lungs were built for the first.
+[00:00.00 -> 00:01.36] Two metres under a lake.
+[00:01.72 -> 00:04.36] A pier above, a girl in a red T-shirt below.
+[00:04.82 -> 00:05.36] One person.
+[00:05.74 -> 00:06.22] Eyes open.
+[00:06.70 -> 00:07.12] Mouth open.
+[00:07.56 -> 00:09.66] In the corner of the frame, a stopwatch starts.
+[00:09.66 -> 00:10.88] Ten seconds.
+[00:10.88 -> 00:12.16] Thirty.
+[00:12.16 -> 00:12.50] A minute.
+[00:13.08 -> 00:14.32] She is not holding her breath.
+[00:14.72 -> 00:15.50] She is breathing.
+[00:16.08 -> 00:16.90] The water goes in.
+[00:17.28 -> 00:18.04] Something comes out.
+[00:18.44 -> 00:21.60] Her chest rises and falls like anyone's on dry land.
+[00:22.20 -> 00:23.80] Nobody on the pier knows how.
+[00:24.32 -> 00:25.70] The answer is not in her lungs.
+[00:26.16 -> 00:26.80] It is in a number.
+[00:26.80 -> 00:28.44] Two hundred and fifty.
+[00:29.32 -> 00:31.34] This is the story of one rule.
+[00:31.84 -> 00:33.30] A person who can breathe water.
+[00:33.88 -> 00:35.78] Of a litre of air and a litre of lake.
+[00:36.42 -> 00:37.46] And the gap between them.
+[00:38.08 -> 00:40.60] Of a fish that solves the problem with a plumbing trick.
+[00:40.60 -> 00:42.94] And a lung that was never built for it.
+[00:43.26 -> 00:48.56] Of mice in a tank in the nineteen-sixties, and premature babies in a hospital in Philadelphia.
+[00:49.60 -> 00:51.04] And an empty pier at dusk.
+[00:51.96 -> 00:53.08] Could a human really do it?
+[00:53.72 -> 00:55.88] And what would it cost her, minute by minute?
+[00:56.70 -> 01:02.48] This film is built on physiology textbooks, diving manuals, clinical reviews and old laboratory reports.
+[01:03.12 -> 01:05.14] It is a calculation, not a prediction.
+[01:05.86 -> 01:06.80] And the unknowns are many.
+[01:07.54 -> 01:10.90] Every number comes from a named source, or from arithmetic we show.
+[01:11.52 -> 01:13.44] Where the sources disagree, we say so.
+[01:14.22 -> 01:14.92] Start with the number.
+[01:15.58 -> 01:16.08] Then the water.
+[01:16.90 -> 01:17.30] Then the fish.
+[01:18.08 -> 01:18.50] Then the liquid.
+[01:19.42 -> 01:21.08] First, what a body needs.
+[01:21.72 -> 01:25.28] At rest, an adult uses about two hundred and fifty millilitres of oxygen a minute.
+[01:25.80 -> 01:27.86] That is the figure in standard physiology teaching.
+[01:28.42 -> 01:33.98] One medical exam-prep page gets there from three and a half millilitres per kilogram, for a seventy-kilogram adult.
+[01:34.60 -> 01:36.09] About two hundred and forty-five.
+[01:36.09 -> 01:37.34] Two hundred and fifty.
+[01:37.34 -> 01:37.94] Hold on to that.
+[01:38.58 -> 01:39.96] In air, it is easy to supply.
+[01:40.42 -> 01:46.14] A litre of dry air is about twenty point nine percent oxygen, according to the United Nations food agency's fisheries manual.
+[01:46.72 -> 01:49.68] That is about two hundred and nine millilitres in every litre.
+[01:49.68 -> 01:54.96] Resting breathing moves about five to eight litres of air a minute, according to the standard reference on minute ventilation.
+[01:55.64 -> 01:56.10] Call it six.
+[01:56.72 -> 01:57.46] Six litres of air.
+[01:57.46 -> 01:59.36] Two hundred and fifty millilitres of oxygen.
+[01:59.82 -> 02:01.48] A comfortable, quiet job.
+[02:02.68 -> 02:04.84] That is the deal the lungs were built around.
+[02:05.34 -> 02:06.24] Now change the fluid.
+[02:07.44 -> 02:08.56] Water holds oxygen too.
+[02:09.04 -> 02:10.48] Not much, says the sensor maker.
+[02:10.94 -> 02:20.24] A manufacturer of dissolved-oxygen sensors says air-saturated water at twenty-five degrees holds about eight point three milligrams of oxygen per litre.
+[02:20.24 -> 02:23.46] Convert that, and it is about five point eight millilitres.
+[02:23.46 -> 02:26.30] Our conversion, using a standard value for oxygen's density.
+[02:26.30 -> 02:28.30] Two hundred and nine in air.
+[02:28.30 -> 02:29.98] Five point eight in water.
+[02:30.48 -> 02:32.06] About thirty-six times less.
+[02:32.78 -> 02:33.70] Colder water holds more.
+[02:34.10 -> 02:35.00] Warm water holds less.
+[02:35.26 -> 02:37.02] But the order of magnitude stays.
+[02:38.02 -> 02:39.80] So how much water does she need?
+[02:40.50 -> 02:46.36] If her lungs took every last molecule, two hundred and fifty divided by five point eight is forty-three litres a minute.
+[02:46.96 -> 02:47.90] That is the floor.
+[02:48.42 -> 02:49.52] Physics will not let it go lower.
+[02:50.10 -> 02:51.58] But lungs do not take every molecule.
+[02:51.58 -> 03:02.96] An arXiv paper on lung ventilation in mammals reports that exhaled air is sixteen to eighteen percent oxygen, when the air going in is twenty-one.
+[03:02.96 -> 03:04.42] A drop of three to five points.
+[03:04.42 -> 03:07.28] That is roughly a seventh to a quarter of what comes in.
+[03:07.82 -> 03:08.30] Our arithmetic.
+[03:09.08 -> 03:09.92] Take the generous end.
+[03:10.38 -> 03:10.68] A quarter.
+[03:10.68 -> 03:16.08] Two hundred and fifty, divided by five point eight, divided by a quarter.
+[03:16.08 -> 03:18.50] One hundred and seventy-two litres a minute.
+[03:18.92 -> 03:22.44] At the stingy end, it is more than three hundred.
+[03:22.44 -> 03:23.94] How much can a person breathe?
+[03:24.50 -> 03:32.44] A physiology module at Monash University gives a mean maximum voluntary ventilation of about a hundred and forty litres a minute for healthy young men.
+[03:32.74 -> 03:34.82] Range, a hundred to a hundred and eighty.
+[03:34.82 -> 03:36.42] For women, about a hundred.
+[03:36.42 -> 03:38.28] Seventy to a hundred and twenty.
+[03:38.28 -> 03:42.24] That is a short test, the module says, with the subject trying as hard as possible.
+[03:42.90 -> 03:44.44] Her resting need is higher than that.
+[03:44.86 -> 03:45.32] At rest.
+[03:46.72 -> 03:48.14] Then there is what water is.
+[03:48.56 -> 03:50.92] It is about eight hundred times denser than air.
+[03:51.58 -> 03:55.44] Course notes give a ratio of about eight hundred and thirty, a flashcard set says.
+[03:55.44 -> 03:58.26] One litre of water weighs one kilogram.
+[03:58.26 -> 04:02.10] A hundred and seventy-two litres a minute is a hundred and seventy-two kilograms.
+[04:02.70 -> 04:03.42] Through the throat.
+[04:04.06 -> 04:04.72] Every minute.
+[04:05.18 -> 04:05.90] While resting.
+[04:06.92 -> 04:08.60] And the lung has a second problem.
+[04:09.08 -> 04:10.96] It breathes in and out through the same pipes.
+[04:11.72 -> 04:18.30] A textbook puts the anatomical dead space at about a hundred and fifty millilitres, out of a resting breath of five hundred.
+[04:18.30 -> 04:20.66] That is the volume of the airways themselves.
+[04:21.40 -> 04:23.62] Whatever sits there at the end of an outbreath is stale.
+[04:24.22 -> 04:25.62] The next breath mixes with it.
+[04:26.02 -> 04:27.40] In air, that costs a little.
+[04:27.92 -> 04:32.20] The textbook says it leaves the oxygen pressure in the lung lower than in the air outside.
+[04:32.94 -> 04:34.34] In water, count it.
+[04:34.34 -> 04:36.06] Five hundred millilitres in.
+[04:36.06 -> 04:37.70] A hundred and fifty of it stale.
+[04:37.70 -> 04:40.04] Three hundred and fifty reach the air sacs.
+[04:40.44 -> 04:46.04] To move a hundred and seventy-two litres of fresh water through them, that is nearly five hundred breaths a minute.
+[04:47.16 -> 04:48.98] Or take the biggest breath she has.
+[04:49.52 -> 04:56.44] Total lung capacity is about six litres, and the usual vital capacity is four point six to four point eight, depending on the source.
+[04:56.44 -> 04:58.54] A full breath every time.
+[04:59.10 -> 05:00.12] Nearly forty a minute.
+[05:00.70 -> 05:02.88] Each one about four and a half kilograms of lake.
+[05:02.88 -> 05:04.08] Our arithmetic.
+[05:04.72 -> 05:06.14] Neither is a pace a person holds.
+[05:06.68 -> 05:08.36] No source we read says anyone has.
+[05:09.22 -> 05:10.62] All this is hypothetical.
+[05:10.62 -> 05:12.74] Here is what happens in the real world.
+[05:13.16 -> 05:17.34] When someone inhales water, a clinical update on drowning describes two paths.
+[05:17.98 -> 05:21.26] In roughly ten to twenty percent of victims, the throat clamps shut.
+[05:21.78 -> 05:22.32] Laryngospasm.
+[05:22.88 -> 05:26.96] The airway closes and the person asphyxiates, with little water reaching the lungs.
+[05:27.94 -> 05:31.24] Another source puts it lower, under ten to fifteen.
+[05:31.24 -> 05:34.16] In most, the throat relaxes and water goes in.
+[05:34.98 -> 05:40.00] Victims typically aspirate about two to four millilitres per kilogram, according to the same reviews.
+[05:40.78 -> 05:41.56] A small volume.
+[05:42.16 -> 05:42.98] But it does damage.
+[05:43.74 -> 05:46.86] The lungs line their air sacs with a thin film called surfactant.
+[05:47.30 -> 05:48.04] It keeps them open.
+[05:48.74 -> 05:49.74] Water disrupts it.
+[05:50.06 -> 05:50.84] The sacs collapse.
+[05:51.72 -> 05:52.98] Oxygen can no longer cross.
+[05:53.60 -> 05:57.28] Older teaching said fresh water and salt water injure the lungs differently.
+[05:58.04 -> 06:00.32] Current clinical sources say the practical difference is minor.
+[06:01.02 -> 06:02.38] The result is the same chain.
+[06:03.18 -> 06:07.42] Collapse, falling oxygen, rising carbon dioxide, and then the heart.
+[06:08.42 -> 06:10.48] So our hero's lungs would need two things.
+[06:11.18 -> 06:12.28] A way to avoid the damage.
+[06:12.28 -> 06:15.58] And a way to move far more water than any lung has moved.
+[06:16.14 -> 06:16.76] Remember the second.
+[06:18.18 -> 06:19.04] Fish do it.
+[06:19.40 -> 06:19.92] Every minute.
+[06:20.60 -> 06:20.78] How?
+[06:21.26 -> 06:21.86] Two tricks.
+[06:21.86 -> 06:23.26] One.
+[06:23.26 -> 06:25.72] Their gills run blood and water in opposite directions.
+[06:26.30 -> 06:29.18] The most oxygen-rich blood meets the most oxygen-rich water.
+[06:29.64 -> 06:30.82] The least meets the least.
+[06:31.30 -> 06:33.24] Diffusion keeps working along the whole surface.
+[06:33.94 -> 06:34.68] How well does it work?
+[06:35.32 -> 06:35.76] Sources differ.
+[06:36.28 -> 06:39.18] A textbook says up to eighty-five percent of the oxygen in the water.
+[06:39.62 -> 06:41.60] A school resource says about eighty.
+[06:41.60 -> 06:44.48] The Natural History Museum in London says up to seventy.
+[06:44.48 -> 06:47.28] An animal-physiology text says ninety or more is possible.
+[06:47.78 -> 06:48.28] Take eighty.
+[06:48.28 -> 06:52.96] Two hundred and fifty, divided by five point eight, divided by point eight.
+[06:52.96 -> 06:54.34] About fifty-four litres a minute.
+[06:54.76 -> 06:57.46] Not one hundred and seventy-two.
+[06:57.46 -> 06:58.06] Two.
+[06:58.06 -> 06:59.18] The water flows one way.
+[06:59.44 -> 07:01.58] It goes in the mouth, over the gills, out the side.
+[07:02.06 -> 07:02.70] No dead space.
+[07:03.40 -> 07:04.96] No stale pool in the airways.
+[07:05.54 -> 07:11.88] A physiology text says fish greatly reduce the energy cost of moving water by keeping that flow continuous and in one direction.
+[07:13.30 -> 07:14.30] A lung does the opposite.
+[07:14.86 -> 07:16.22] It is a dead-end sac.
+[07:16.22 -> 07:17.92] The same pipe in, the same pipe out.
+[07:18.48 -> 07:20.64] So there is a first way to make her breathing work.
+[07:21.24 -> 07:21.72] Change her.
+[07:22.22 -> 07:22.84] Give her gills.
+[07:23.28 -> 07:24.72] Or something with gills' efficiency.
+[07:25.20 -> 07:26.00] A one-way flow.
+[07:26.34 -> 07:27.40] A far better extraction.
+[07:28.16 -> 07:29.32] That is a different animal.
+[07:29.84 -> 07:31.58] Nothing in this film says it is impossible.
+[07:32.24 -> 07:33.36] It is not a lung anymore.
+[07:34.04 -> 07:37.20] Whether any human body could be rebuilt that way is not known.
+[07:38.10 -> 07:41.08] Duke University, early nineteen-sixties.
+[07:41.08 -> 07:49.04] According to a Gizmodo history, Johannes Kylstra's team trained mice to breathe saline loaded with oxygen under a pressure of a hundred and sixty atmospheres.
+[07:49.52 -> 07:50.74] The mice died minutes later.
+[07:51.44 -> 07:52.84] Carbon dioxide had built up.
+[07:53.20 -> 07:56.68] Another account says rodents and even dogs lasted up to about an hour.
+[07:57.56 -> 07:58.38] Accounts differ on the time.
+[07:58.94 -> 08:00.06] They agree on the cause.
+[08:00.84 -> 08:02.36] The saline delivered enough oxygen.
+[08:02.80 -> 08:05.10] It did not clear the carbon dioxide fast enough.
+[08:05.90 -> 08:11.52] The same fisheries manual says carbon dioxide is far more soluble in water than oxygen is.
+[08:11.72 -> 08:13.68] Which is one reason gills shed it easily.
+[08:14.56 -> 08:16.58] But a saline-filled lung is not a gill.
+[08:17.20 -> 08:21.50] Our reading: it is the same dead-end sac, filled with a liquid that barely moves.
+[08:22.14 -> 08:23.58] The sources do not test that.
+[08:23.58 -> 08:26.02] Mid-nineteen-sixties.
+[08:26.02 -> 08:27.58] Clark and Gollan.
+[08:27.58 -> 08:28.54] They switched the liquid.
+[08:28.90 -> 08:29.40] Not water.
+[08:30.04 -> 08:31.16] A perfluorocarbon.
+[08:31.60 -> 08:33.42] A fluid that dissolves both gases.
+[08:34.24 -> 08:36.96] Gizmodo says their mice breathed it at normal pressure.
+[08:37.56 -> 08:39.20] Rats stayed under for up to twenty hours.
+[08:39.80 -> 08:40.50] Cats, for weeks.
+[08:41.36 -> 08:44.30] An older encyclopedia mirror adds one detail that matters.
+[08:44.92 -> 08:47.66] The colder the liquid, the lower the animal's breathing rate.
+[08:48.50 -> 08:51.08] That is the third way, and we will come back to it.
+[08:51.74 -> 08:52.60] First, the cost.
+[08:52.60 -> 08:55.84] Perfluorocarbons are denser and more viscous than air.
+[08:56.42 -> 09:00.12] That raises the effort of breathing, according to Wikipedia's entry on liquid breathing.
+[09:01.16 -> 09:02.52] Mice are not people.
+[09:03.16 -> 09:04.46] A mouse's lung is tiny.
+[09:05.00 -> 09:05.98] The distance is short.
+[09:06.42 -> 09:07.36] The volume is small.
+[09:07.98 -> 09:11.94] The sources here do not say whether the same method works at the size of an adult.
+[09:12.48 -> 09:13.62] That has not been shown.
+[09:14.92 -> 09:16.92] Look at what the cold did for the animals.
+[09:17.54 -> 09:18.84] It lowered their breathing rate.
+[09:19.46 -> 09:20.60] That is a fall in demand.
+[09:21.60 -> 09:23.00] Demand is the other half of the sum.
+[09:23.72 -> 09:29.74] If the body needed less oxygen, the two hundred and fifty would fall, and so would the litres.
+[09:29.74 -> 09:31.74] For a human, the cold is not kind.
+[09:32.78 -> 09:39.04] A boating-safety guide says water draws heat from the body about twenty-five times faster than air at the same temperature.
+[09:39.76 -> 09:43.46] Other sources give four, twenty, and thirty-two.
+[09:43.46 -> 09:44.44] They all say faster.
+[09:45.48 -> 09:47.32] The first danger is not hypothermia.
+[09:47.78 -> 09:48.66] It is cold shock.
+[09:49.70 -> 09:51.16] Sudden immersion makes people gasp.
+[09:51.92 -> 09:56.58] Another guide says water inhaled in that gasp can cause unconsciousness within minutes.
+[09:57.64 -> 09:58.56] Hands and legs go numb.
+[09:58.56 -> 10:01.58] Within minutes, according to a New York state boating guide.
+[10:02.48 -> 10:03.46] Hypothermia comes later.
+[10:04.30 -> 10:08.78] One expert average is about an hour, depending on temperature, clothing and body type.
+[10:09.42 -> 10:12.32] So the cold that helped the rats would not help her.
+[10:12.88 -> 10:13.96] Or not for long.
+[10:14.82 -> 10:21.28] Whether a human could be chilled safely enough to cut demand, while breathing liquid, has not been shown in the sources we found.
+[10:23.06 -> 10:25.14] Philadelphia, nineteen eighty-nine.
+[10:25.14 -> 10:26.74] Three very premature babies.
+[10:26.74 -> 10:29.96] Twenty-eight, twenty-four and twenty-three weeks of gestation.
+[10:30.70 -> 10:33.24] Doctors at Jefferson Medical College, led by Dr.
+[10:33.24 -> 10:33.41] J.
+[10:33.41 -> 10:33.58] S.
+[10:33.58 -> 10:36.22] Greenspan, tried perfluorocarbon in their lungs.
+[10:36.70 -> 10:39.20] A review reports that their lung compliance improved.
+[10:39.72 -> 10:43.38] The paper appeared in the Journal of Pediatrics in nineteen ninety.
+[10:43.38 -> 10:44.12] Note what it was.
+[10:44.70 -> 10:45.78] Partial liquid ventilation.
+[10:46.36 -> 10:50.18] The lungs were filled with the liquid, and a ventilator still pushed gas through it.
+[10:50.44 -> 10:52.22] Not a baby breathing liquid alone.
+[10:52.22 -> 10:55.16] Nineteen ninety-six.
+[10:55.16 -> 10:59.30] The LiquiVent study group reported thirteen infants with severe respiratory distress.
+[11:00.02 -> 11:07.52] In the New England Journal of Medicine, they say that within an hour of the treatment, arterial oxygen tension rose by a hundred and thirty-eight percent.
+[11:07.52 -> 11:10.08] Compliance rose by sixty-one.
+[11:10.08 -> 11:12.60] No adverse events were clearly attributable to it.
+[11:13.06 -> 11:15.88] That is the best result in this film.
+[11:16.84 -> 11:17.32] Then the footnote.
+[11:18.44 -> 11:24.84] Other clinical trials, a review notes, failed to show that partial liquid ventilation reduced illness in acute respiratory failure.
+[11:25.56 -> 11:28.48] It is not a lake, and it is not an adult swimmer.
+[11:28.90 -> 11:33.16] A premature lung is not a healthy one, and a controlled ward is not open water.
+[11:33.88 -> 11:37.42] Whether a healthy adult could breathe liquid for hours has not been established.
+[11:38.42 -> 11:39.50] Now take her down.
+[11:40.22 -> 11:43.52] Pressure rises about one atmosphere for every ten metres of seawater.
+[11:44.08 -> 11:46.10] That figure is consistent across diving sources.
+[11:46.68 -> 11:48.62] At thirty metres, four atmospheres in total.
+[11:49.32 -> 11:49.66] Our sum.
+[11:50.74 -> 11:52.62] Divers on air meet two problems there.
+[11:53.22 -> 11:54.22] One is the gas itself.
+[11:54.74 -> 12:01.24] A training article says the effects of inert-gas narcosis are second only to oxygen toxicity in hazard for an air diver.
+[12:02.02 -> 12:03.04] The other is the bends.
+[12:03.74 -> 12:06.06] The extra pressure drives more nitrogen into the blood.
+[12:06.68 -> 12:08.46] Come up too fast and it comes out as bubbles.
+[12:09.36 -> 12:09.80] Joint pain.
+[12:09.80 -> 12:12.36] In severe cases, stroke or paralysis.
+[12:13.38 -> 12:16.70] The standard advice is an ascent of about ten metres a minute or slower.
+[12:17.62 -> 12:18.42] Oxygen is the third.
+[12:19.40 -> 12:20.32] Dive rules cap its pressure.
+[12:21.20 -> 12:21.50] The U.S.
+[12:21.50 -> 12:27.52] Environmental Protection Agency's regional dive plan says nitrox diving is generally limited to one point four atmospheres.
+[12:28.08 -> 12:31.38] A quoted NOAA manual says one point six.
+[12:31.38 -> 12:32.70] Air is twenty-one percent oxygen.
+[12:33.32 -> 12:34.10] Multiply by the pressure.
+[12:34.86 -> 12:37.06] About sixty metres on air, and the limit is reached.
+[12:37.68 -> 12:40.70] Our arithmetic, at four atmospheres per thirty.
+[12:40.70 -> 12:42.02] But she is not breathing air.
+[12:42.90 -> 12:44.62] What would pressure do to someone breathing water?
+[12:45.34 -> 12:46.94] Would nitrogen dissolve into her blood?
+[12:47.56 -> 12:48.60] Would it bubble on the way up?
+[12:49.24 -> 12:51.32] That has not been published, as far as we could find.
+[12:51.98 -> 12:53.54] It is unclear what the answer would be.
+[12:54.22 -> 12:59.02] Here is where it stands on Monday, the twenty-sixth of October, twenty twenty-six.
+[12:59.02 -> 12:59.52] What is known.
+[13:00.28 -> 13:03.18] Water holds about thirty-six times less oxygen than air.
+[13:03.18 -> 13:07.04] A resting adult needs about two hundred and fifty millilitres a minute.
+[13:07.62 -> 13:14.06] Even with generous extraction, that is a hundred and seventy-two litres of water a minute, and nearly five hundred breaths.
+[13:14.70 -> 13:18.62] Fish do it with one-way flow and gills, at about fifty-four.
+[13:18.62 -> 13:20.18] Mice and rats have breathed liquid.
+[13:20.98 -> 13:23.16] Premature infants have had partial liquid ventilation.
+[13:23.74 -> 13:24.54] What is not known.
+[13:25.10 -> 13:30.80] How a healthy adult would fare breathing liquid for hours.
+[13:30.80 -> 13:30.83] How much a human lung could really extract.
+[13:30.78 -> 13:33.44] What pressure would do to someone breathing water.
+[13:34.12 -> 13:35.02] Where the answers sit.
+[13:35.50 -> 13:37.24] In primary papers we did not read.
+[13:37.84 -> 13:38.98] The Kylstra and Clark papers.
+[13:39.50 -> 13:40.32] The Greenspan paper.
+[13:40.82 -> 13:41.68] The LiquiVent trial.
+[13:42.42 -> 13:43.98] Textbooks on gill physiology.
+[13:44.66 -> 13:45.60] Naval diving research.
+[13:46.92 -> 13:47.90] This is a calculation.
+[13:48.36 -> 13:48.86] Not a finding.
+[13:49.92 -> 13:51.16] Two metres under a lake.
+[13:51.52 -> 13:52.78] A person, breathing.
+[13:53.40 -> 13:54.72] Six litres a minute of air.
+[13:54.72 -> 13:56.66] A hundred and seventy-two of water.
+[13:57.14 -> 13:58.48] The lungs were built for the first.
