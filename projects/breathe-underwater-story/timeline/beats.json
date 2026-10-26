@@ -1,0 +1,706 @@
+[
+ {
+  "i": 0,
+  "start": 0.0,
+  "speechStart": 0.0,
+  "speechEnd": 4.56,
+  "text": "You trip on the last plank of the pier and go straight into the lake. Cold.",
+  "end": 5.32
+ },
+ {
+  "i": 1,
+  "start": 5.32,
+  "speechStart": 5.44,
+  "speechEnd": 5.56,
+  "text": "Dark.",
+  "end": 6.12
+ },
+ {
+  "i": 2,
+  "start": 6.12,
+  "speechStart": 6.24,
+  "speechEnd": 8.82,
+  "text": "You open your mouth to scream, and water rushes in.",
+  "end": 9.46
+ },
+ {
+  "i": 3,
+  "start": 9.46,
+  "speechStart": 9.58,
+  "speechEnd": 13.72,
+  "text": "And nothing happens. You don't choke. You don't cough.",
+  "end": 14.16
+ },
+ {
+  "i": 4,
+  "start": 14.16,
+  "speechStart": 14.28,
+  "speechEnd": 19.02,
+  "text": "You just breathe. In. Out. Like the lake is air.",
+  "end": 19.84
+ },
+ {
+  "i": 5,
+  "start": 19.84,
+  "speechStart": 19.96,
+  "speechEnd": 22.04,
+  "text": "Two metres down, you're standing on the bottom.",
+  "end": 22.66
+ },
+ {
+  "i": 6,
+  "start": 22.66,
+  "speechStart": 22.78,
+  "speechEnd": 27.18,
+  "text": "Up on the pier, your friend is losing it. She's been under for a minute! Two minutes! Three!",
+  "end": 27.06
+ },
+ {
+  "i": 7,
+  "start": 27.06,
+  "speechStart": 27.18,
+  "speechEnd": 30.42,
+  "text": "You wave. He does not wave back.",
+  "end": 31.04
+ },
+ {
+  "i": 8,
+  "start": 31.04,
+  "speechStart": 31.16,
+  "speechEnd": 35.52,
+  "text": "So what if you could breathe underwater? Not with gills. With your own lungs.",
+  "end": 36.14
+ },
+ {
+  "i": 9,
+  "start": 36.14,
+  "speechStart": 36.26,
+  "speechEnd": 37.66,
+  "text": "Here's how it would actually work.",
+  "end": 38.92
+ },
+ {
+  "i": 10,
+  "start": 38.92,
+  "speechStart": 39.04,
+  "speechEnd": 43.68,
+  "text": "Night one, you test it in the bathtub. Your mum knocks. Why is it so quiet in there? Bubbles.",
+  "end": 44.2
+ },
+ {
+  "i": 11,
+  "start": 44.2,
+  "speechStart": 44.32,
+  "speechEnd": 44.6,
+  "text": "Fine!",
+  "end": 45.2
+ },
+ {
+  "i": 12,
+  "start": 45.2,
+  "speechStart": 45.32,
+  "speechEnd": 46.78,
+  "text": "And here's what nobody tells you.",
+  "end": 47.0
+ },
+ {
+  "i": 13,
+  "start": 47.0,
+  "speechStart": 47.12,
+  "speechEnd": 49.86,
+  "text": "A litre of air holds about two hundred and nine millilitres of oxygen.",
+  "end": 50.06
+ },
+ {
+  "i": 14,
+  "start": 50.06,
+  "speechStart": 50.18,
+  "speechEnd": 52.42,
+  "text": "A litre of water holds about six.",
+  "end": 52.96
+ },
+ {
+  "i": 15,
+  "start": 52.96,
+  "speechStart": 53.08,
+  "speechEnd": 56.82,
+  "text": "Water carries roughly thirty-six times less. Your body doesn't care.",
+  "end": 57.04
+ },
+ {
+  "i": 16,
+  "start": 57.04,
+  "speechStart": 57.16,
+  "speechEnd": 61.46,
+  "text": "Sitting still, it burns about two hundred and fifty millilitres of oxygen every minute.",
+  "end": 61.74
+ },
+ {
+  "i": 17,
+  "start": 61.74,
+  "speechStart": 61.86,
+  "speechEnd": 64.1,
+  "text": "On land, that's about six litres of air.",
+  "end": 63.98
+ },
+ {
+  "i": 18,
+  "start": 63.98,
+  "speechStart": 64.1,
+  "speechEnd": 66.46,
+  "text": "Underwater it's a different story.",
+  "end": 66.92
+ },
+ {
+  "i": 19,
+  "start": 66.92,
+  "speechStart": 67.04,
+  "speechEnd": 69.9,
+  "text": "Your lungs only grab about a quarter of what goes in, at best.",
+  "end": 70.28
+ },
+ {
+  "i": 20,
+  "start": 70.28,
+  "speechStart": 70.4,
+  "speechEnd": 74.2,
+  "text": "So you'd need about one hundred and seventy-two litres of water. Every minute.",
+  "end": 74.38
+ },
+ {
+  "i": 21,
+  "start": 74.38,
+  "speechStart": 74.5,
+  "speechEnd": 75.42,
+  "text": "While doing nothing.",
+  "end": 75.88
+ },
+ {
+  "i": 22,
+  "start": 75.88,
+  "speechStart": 76.0,
+  "speechEnd": 80.38,
+  "text": "That's seventeen big buckets of water, through your chest, every single minute.",
+  "end": 80.76
+ },
+ {
+  "i": 23,
+  "start": 80.76,
+  "speechStart": 80.88,
+  "speechEnd": 83.3,
+  "text": "And water is about eight hundred times denser than air.",
+  "end": 83.18
+ },
+ {
+  "i": 24,
+  "start": 83.18,
+  "speechStart": 83.3,
+  "speechEnd": 87.22,
+  "text": "Each breath isn't a breath. It's a workout.",
+  "end": 87.1
+ },
+ {
+  "i": 25,
+  "start": 87.1,
+  "speechStart": 87.22,
+  "speechEnd": 90.18,
+  "text": "A hundred and seventy-two kilos through your throat.",
+  "end": 90.06
+ },
+ {
+  "i": 26,
+  "start": 90.06,
+  "speechStart": 90.18,
+  "speechEnd": 91.8,
+  "text": "Every minute.",
+  "end": 91.68
+ },
+ {
+  "i": 27,
+  "start": 91.68,
+  "speechStart": 91.8,
+  "speechEnd": 95.508,
+  "text": "Healthy young men going all out in a breathing test manage about a hundred",
+  "end": 95.388
+ },
+ {
+  "i": 28,
+  "start": 95.388,
+  "speechStart": 95.508,
+  "speechEnd": 98.02,
+  "text": "and forty litres a minute, and only for a short test.",
+  "end": 97.9
+ },
+ {
+  "i": 29,
+  "start": 97.9,
+  "speechStart": 98.02,
+  "speechEnd": 100.64,
+  "text": "You need more than that just to sit still.",
+  "end": 100.52
+ },
+ {
+  "i": 30,
+  "start": 100.52,
+  "speechStart": 100.64,
+  "speechEnd": 103.1,
+  "text": "So after ten minutes on the bottom of the lake,",
+  "end": 102.98
+ },
+ {
+  "i": 31,
+  "start": 102.98,
+  "speechStart": 103.1,
+  "speechEnd": 105.76,
+  "text": "your arms are heavy and your head is buzzing.",
+  "end": 105.64
+ },
+ {
+  "i": 32,
+  "start": 105.64,
+  "speechStart": 105.76,
+  "speechEnd": 108.62,
+  "text": "You come up gasping, and for once,",
+  "end": 108.5
+ },
+ {
+  "i": 33,
+  "start": 108.5,
+  "speechStart": 108.62,
+  "speechEnd": 113.28,
+  "text": "the air feels amazing. So you study the experts.",
+  "end": 113.58
+ },
+ {
+  "i": 34,
+  "start": 113.58,
+  "speechStart": 113.7,
+  "speechEnd": 115.92,
+  "text": "A trout drifts past you, totally relaxed.",
+  "end": 115.8
+ },
+ {
+  "i": 35,
+  "start": 115.8,
+  "speechStart": 115.92,
+  "speechEnd": 118.5,
+  "text": "Show-off. Fish don't breathe in and out.",
+  "end": 118.64
+ },
+ {
+  "i": 36,
+  "start": 118.64,
+  "speechStart": 118.76,
+  "speechEnd": 122.86,
+  "text": "Water goes in the mouth, over the gills, and out the sides. One way. Never stopping.",
+  "end": 123.24
+ },
+ {
+  "i": 37,
+  "start": 123.24,
+  "speechStart": 123.36,
+  "speechEnd": 126.34,
+  "text": "And inside the gills, the blood runs the opposite way to the water,",
+  "end": 126.22
+ },
+ {
+  "i": 38,
+  "start": 126.22,
+  "speechStart": 126.34,
+  "speechEnd": 128.52,
+  "text": "so it keeps grabbing oxygen the whole way along.",
+  "end": 128.94
+ },
+ {
+  "i": 39,
+  "start": 128.94,
+  "speechStart": 129.06,
+  "speechEnd": 133.98,
+  "text": "Some textbooks say a fish can pull out up to eighty-five percent of it. Your lungs are a dead end.",
+  "end": 134.2
+ },
+ {
+  "i": 40,
+  "start": 134.2,
+  "speechStart": 134.32,
+  "speechEnd": 135.76,
+  "text": "Same pipe in, same pipe out.",
+  "end": 135.94
+ },
+ {
+  "i": 41,
+  "start": 135.94,
+  "speechStart": 136.06,
+  "speechEnd": 140.52,
+  "text": "Every breath, the old water sitting in your airways mixes with the new. So you learn to cheat.",
+  "end": 140.8
+ },
+ {
+  "i": 42,
+  "start": 140.8,
+  "speechStart": 140.92,
+  "speechEnd": 141.66,
+  "text": "No more big gulps.",
+  "end": 141.86
+ },
+ {
+  "i": 43,
+  "start": 141.86,
+  "speechStart": 141.98,
+  "speechEnd": 146.3,
+  "text": "You swim slowly with your mouth open, like the trout, always moving. It's not perfect.",
+  "end": 146.34
+ },
+ {
+  "i": 44,
+  "start": 146.34,
+  "speechStart": 146.46,
+  "speechEnd": 149.98,
+  "text": "But now you can stay down for an hour. Your friend calls it your fish face.",
+  "end": 151.1
+ },
+ {
+  "i": 45,
+  "start": 151.1,
+  "speechStart": 151.22,
+  "speechEnd": 152.52,
+  "text": "Then autumn comes.",
+  "end": 152.86
+ },
+ {
+  "i": 46,
+  "start": 152.86,
+  "speechStart": 152.98,
+  "speechEnd": 157.8,
+  "text": "The first time you jump in after summer, your body gasps on its own. That's cold shock.",
+  "end": 157.96
+ },
+ {
+  "i": 47,
+  "start": 157.96,
+  "speechStart": 158.08,
+  "speechEnd": 160.26,
+  "text": "And water pulls heat out of you fast.",
+  "end": 160.56
+ },
+ {
+  "i": 48,
+  "start": 160.56,
+  "speechStart": 160.68,
+  "speechEnd": 163.82,
+  "text": "About twenty-five times faster than air, one safety guide says.",
+  "end": 164.08
+ },
+ {
+  "i": 49,
+  "start": 164.08,
+  "speechStart": 164.2,
+  "speechEnd": 167.88,
+  "text": "Other sources say anywhere from four to thirty-two. Either way, faster.",
+  "end": 168.58
+ },
+ {
+  "i": 50,
+  "start": 168.58,
+  "speechStart": 168.7,
+  "speechEnd": 170.26,
+  "text": "Your hands go numb in minutes.",
+  "end": 170.58
+ },
+ {
+  "i": 51,
+  "start": 170.58,
+  "speechStart": 170.7,
+  "speechEnd": 174.22,
+  "text": "And every breath is cold lake water, straight into your chest.",
+  "end": 174.68
+ },
+ {
+  "i": 52,
+  "start": 174.68,
+  "speechStart": 174.8,
+  "speechEnd": 178.78,
+  "text": "So you buy a wetsuit. Your friend says you look like a seal. He's not wrong.",
+  "end": 179.96
+ },
+ {
+  "i": 53,
+  "start": 179.96,
+  "speechStart": 180.08,
+  "speechEnd": 181.16,
+  "text": "Then you get curious.",
+  "end": 181.52
+ },
+ {
+  "i": 54,
+  "start": 181.52,
+  "speechStart": 181.64,
+  "speechEnd": 183.06,
+  "text": "How deep can you go?",
+  "end": 183.74
+ },
+ {
+  "i": 55,
+  "start": 183.74,
+  "speechStart": 183.86,
+  "speechEnd": 187.18,
+  "text": "Every ten metres, the water squeezes you with one more atmosphere.",
+  "end": 187.44
+ },
+ {
+  "i": 56,
+  "start": 187.44,
+  "speechStart": 187.56,
+  "speechEnd": 190.66,
+  "text": "At thirty metres, that's four times what you feel at the surface.",
+  "end": 191.16
+ },
+ {
+  "i": 57,
+  "start": 191.16,
+  "speechStart": 191.28,
+  "speechEnd": 194.46,
+  "text": "Divers breathing air down here face a danger called narcosis,",
+  "end": 194.52
+ },
+ {
+  "i": 58,
+  "start": 194.52,
+  "speechStart": 194.64,
+  "speechEnd": 196.2,
+  "text": "one of the biggest risks in diving.",
+  "end": 196.68
+ },
+ {
+  "i": 59,
+  "start": 196.68,
+  "speechStart": 196.8,
+  "speechEnd": 200.14,
+  "text": "And if they come up too fast, bubbles form in their blood. The bends.",
+  "end": 200.62
+ },
+ {
+  "i": 60,
+  "start": 200.62,
+  "speechStart": 200.74,
+  "speechEnd": 205.72,
+  "text": "But you're not breathing air. You're breathing water. Would that happen to you?",
+  "end": 206.38
+ },
+ {
+  "i": 61,
+  "start": 206.38,
+  "speechStart": 206.5,
+  "speechEnd": 210.34,
+  "text": "Honestly? Nobody knows. Nobody has ever tested it.",
+  "end": 210.86
+ },
+ {
+  "i": 62,
+  "start": 210.86,
+  "speechStart": 210.98,
+  "speechEnd": 212.34,
+  "text": "You decide not to be the first.",
+  "end": 213.38
+ },
+ {
+  "i": 63,
+  "start": 213.38,
+  "speechStart": 213.5,
+  "speechEnd": 217.02,
+  "text": "Then one morning in January, you hear it before you see it.",
+  "end": 216.94
+ },
+ {
+  "i": 64,
+  "start": 216.94,
+  "speechStart": 217.06,
+  "speechEnd": 218.88,
+  "text": "A crack, like a branch snapping.",
+  "end": 219.24
+ },
+ {
+  "i": 65,
+  "start": 219.24,
+  "speechStart": 219.36,
+  "speechEnd": 223.96,
+  "text": "Your little cousin, out on the ice where the signs say don't. And then he's gone.",
+  "end": 224.46
+ },
+ {
+  "i": 66,
+  "start": 224.46,
+  "speechStart": 224.58,
+  "speechEnd": 225.1,
+  "text": "You don't think.",
+  "end": 225.16
+ },
+ {
+  "i": 67,
+  "start": 225.16,
+  "speechStart": 225.28,
+  "speechEnd": 229.92,
+  "text": "You run, you jump, you're under the ice. It's black down here. Freezing.",
+  "end": 230.74
+ },
+ {
+  "i": 68,
+  "start": 230.74,
+  "speechStart": 230.86,
+  "speechEnd": 235.06,
+  "text": "He's a few metres away, kicking, gasping. That's the cold shock. You grab his jacket.",
+  "end": 235.2
+ },
+ {
+  "i": 69,
+  "start": 235.2,
+  "speechStart": 235.32,
+  "speechEnd": 236.2,
+  "text": "You can't see the hole.",
+  "end": 236.24
+ },
+ {
+  "i": 70,
+  "start": 236.24,
+  "speechStart": 236.36,
+  "speechEnd": 241.06,
+  "text": "Up is ice, ice, ice. Then you see it. A grey circle of light.",
+  "end": 241.56
+ },
+ {
+  "i": 71,
+  "start": 241.56,
+  "speechStart": 241.68,
+  "speechEnd": 245.88,
+  "text": "You swim, and you push, and he's out. Six minutes. That's how long they say you were under.",
+  "end": 246.18
+ },
+ {
+  "i": 72,
+  "start": 246.18,
+  "speechStart": 246.3,
+  "speechEnd": 250.64,
+  "text": "The paramedics wrap him in a silver blanket. He's shaking, but he's talking. He's going to be fine.",
+  "end": 251.28
+ },
+ {
+  "i": 73,
+  "start": 251.28,
+  "speechStart": 251.4,
+  "speechEnd": 252.56,
+  "text": "Your friend stares at you.",
+  "end": 252.86
+ },
+ {
+  "i": 74,
+  "start": 252.86,
+  "speechStart": 252.98,
+  "speechEnd": 258.18,
+  "text": "How were you down there for six minutes? I held my breath. Liar.",
+  "end": 259.2
+ },
+ {
+  "i": 75,
+  "start": 259.2,
+  "speechStart": 259.32,
+  "speechEnd": 263.02,
+  "text": "That night, your phone buzzes. Unknown number. We saw what you did under the ice.",
+  "end": 263.16
+ },
+ {
+  "i": 76,
+  "start": 263.16,
+  "speechStart": 263.28,
+  "speechEnd": 264.24,
+  "text": "You're not the only one.",
+  "end": 265.1
+ },
+ {
+  "i": 77,
+  "start": 265.1,
+  "speechStart": 265.22,
+  "speechEnd": 268.98,
+  "text": "But could a human really breathe liquid? Scientists have tried.",
+  "end": 269.26
+ },
+ {
+  "i": 78,
+  "start": 269.26,
+  "speechStart": 269.38,
+  "speechEnd": 273.0,
+  "text": "In the nineteen-sixties, mice in a lab breathed liquid packed with oxygen.",
+  "end": 273.34
+ },
+ {
+  "i": 79,
+  "start": 273.34,
+  "speechStart": 273.46,
+  "speechEnd": 274.5,
+  "text": "In nineteen eighty-nine,",
+  "end": 274.38
+ },
+ {
+  "i": 80,
+  "start": 274.38,
+  "speechStart": 274.5,
+  "speechEnd": 276.84,
+  "text": "doctors in Philadelphia put a special liquid into the",
+  "end": 276.72
+ },
+ {
+  "i": 81,
+  "start": 276.72,
+  "speechStart": 276.84,
+  "speechEnd": 281.04,
+  "text": "lungs of three tiny premature babies, with a ventilator still helping.",
+  "end": 281.4
+ },
+ {
+  "i": 82,
+  "start": 281.4,
+  "speechStart": 281.52,
+  "speechEnd": 283.34,
+  "text": "Their lungs got easier to inflate.",
+  "end": 283.8
+ },
+ {
+  "i": 83,
+  "start": 283.8,
+  "speechStart": 283.92,
+  "speechEnd": 288.26,
+  "text": "In nineteen ninety-six, a study of thirteen babies saw their blood oxygen jump by a hundred",
+  "end": 288.14
+ },
+ {
+  "i": 84,
+  "start": 288.14,
+  "speechStart": 288.26,
+  "speechEnd": 291.74,
+  "text": "and thirty-eight percent within an hour. Not breathing underwater.",
+  "end": 292.04
+ },
+ {
+  "i": 85,
+  "start": 292.04,
+  "speechStart": 292.16,
+  "speechEnd": 294.82,
+  "text": "But the first time a liquid helped humans breathe.",
+  "end": 295.34
+ },
+ {
+  "i": 86,
+  "start": 295.34,
+  "speechStart": 295.46,
+  "speechEnd": 298.84,
+  "text": "So where's the first place you'd go if you could breathe underwater? Tell us in the comments.",
+  "end": 299.16
+ },
+ {
+  "i": 87,
+  "start": 299.16,
+  "speechStart": 299.28,
+  "speechEnd": 302.06,
+  "text": "And subscribe, because next time, you find out who sent that message.",
+  "end": 303.66
+ }
+]

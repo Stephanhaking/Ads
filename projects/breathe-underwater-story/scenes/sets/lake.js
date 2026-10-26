@@ -5,10 +5,10 @@ import { stickman, S_FLOAT, S_STAND } from '../lib/stick3d.js';
 
 registerSet('lake', async (W) => {
   W.shadowArea([-2, -2, 2], 22);
-  const bed = K.ground({ color: '#45605b', size: 900 }); bed.position.y = -6; W.add(bed);
+  const bed = K.ground({ color: '#45605b', size: 900 }); bed.position.y = -2.4; W.add(bed); // story: a shallow lake, about 2 m deep by the pier
   // a few rocks on the bed
   const rockM = K.mat('#5b6e69', { rough: 1 });
-  for (let i = 0; i < 14; i++) { const a = i * 2.4, r = 6 + (i * 5.3) % 20; const s = K.sphere(0.6 + (i % 4) * 0.35, rockM, [Math.cos(a) * r - 4, -6, Math.sin(a) * r]); s.scale.y = 0.55; W.add(s); }
+  for (let i = 0; i < 14; i++) { const a = i * 2.4, r = 6 + (i * 5.3) % 20; const s = K.sphere(0.6 + (i % 4) * 0.35, rockM, [Math.cos(a) * r - 4, -2.4, Math.sin(a) * r]); s.scale.y = 0.55; W.add(s); }
   // water surface, seen from above and below
   const surf = new THREE.Mesh(new THREE.PlaneGeometry(900, 900), K.mat('#7db0c4', { opacity: 0.5, side: 'double', rough: 0.15 }));
   surf.rotation.x = -Math.PI / 2; surf.receiveShadow = false; W.add(surf);

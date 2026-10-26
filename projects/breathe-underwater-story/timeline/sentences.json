@@ -1,0 +1,800 @@
+[
+ {
+  "i": 0,
+  "start": 0.0,
+  "end": 3.88,
+  "text": "You trip on the last plank of the pier and go straight into the lake."
+ },
+ {
+  "i": 1,
+  "start": 4.48,
+  "end": 4.56,
+  "text": "Cold."
+ },
+ {
+  "i": 2,
+  "start": 5.44,
+  "end": 5.56,
+  "text": "Dark."
+ },
+ {
+  "i": 3,
+  "start": 6.24,
+  "end": 8.82,
+  "text": "You open your mouth to scream, and water rushes in."
+ },
+ {
+  "i": 4,
+  "start": 9.58,
+  "end": 11.14,
+  "text": "And nothing happens."
+ },
+ {
+  "i": 5,
+  "start": 11.9,
+  "end": 12.56,
+  "text": "You don't choke."
+ },
+ {
+  "i": 6,
+  "start": 13.08,
+  "end": 13.72,
+  "text": "You don't cough."
+ },
+ {
+  "i": 7,
+  "start": 14.28,
+  "end": 14.96,
+  "text": "You just breathe."
+ },
+ {
+  "i": 8,
+  "start": 16.04,
+  "end": 16.04,
+  "text": "In."
+ },
+ {
+  "i": 9,
+  "start": 16.84,
+  "end": 17.22,
+  "text": "Out."
+ },
+ {
+  "i": 10,
+  "start": 17.92,
+  "end": 19.02,
+  "text": "Like the lake is air."
+ },
+ {
+  "i": 11,
+  "start": 19.96,
+  "end": 22.04,
+  "text": "Two metres down, you're standing on the bottom."
+ },
+ {
+  "i": 12,
+  "start": 22.78,
+  "end": 24.74,
+  "text": "Up on the pier, your friend is losing it."
+ },
+ {
+  "i": 13,
+  "start": 24.94,
+  "end": 25.86,
+  "text": "She's been under for a minute!"
+ },
+ {
+  "i": 14,
+  "start": 26.24,
+  "end": 26.66,
+  "text": "Two minutes!"
+ },
+ {
+  "i": 15,
+  "start": 26.9,
+  "end": 27.18,
+  "text": "Three!"
+ },
+ {
+  "i": 16,
+  "start": 27.18,
+  "end": 28.36,
+  "text": "You wave."
+ },
+ {
+  "i": 17,
+  "start": 29.16,
+  "end": 30.42,
+  "text": "He does not wave back."
+ },
+ {
+  "i": 18,
+  "start": 31.16,
+  "end": 32.94,
+  "text": "So what if you could breathe underwater?"
+ },
+ {
+  "i": 19,
+  "start": 33.7,
+  "end": 34.26,
+  "text": "Not with gills."
+ },
+ {
+  "i": 20,
+  "start": 34.4,
+  "end": 35.52,
+  "text": "With your own lungs."
+ },
+ {
+  "i": 21,
+  "start": 36.26,
+  "end": 37.66,
+  "text": "Here's how it would actually work."
+ },
+ {
+  "i": 22,
+  "start": 39.04,
+  "end": 40.68,
+  "text": "Night one, you test it in the bathtub."
+ },
+ {
+  "i": 23,
+  "start": 41.08,
+  "end": 41.6,
+  "text": "Your mum knocks."
+ },
+ {
+  "i": 24,
+  "start": 42.02,
+  "end": 43.12,
+  "text": "Why is it so quiet in there?"
+ },
+ {
+  "i": 25,
+  "start": 43.42,
+  "end": 43.68,
+  "text": "Bubbles."
+ },
+ {
+  "i": 26,
+  "start": 44.32,
+  "end": 44.6,
+  "text": "Fine!"
+ },
+ {
+  "i": 27,
+  "start": 45.32,
+  "end": 46.78,
+  "text": "And here's what nobody tells you."
+ },
+ {
+  "i": 28,
+  "start": 47.12,
+  "end": 49.86,
+  "text": "A litre of air holds about two hundred and nine millilitres of oxygen."
+ },
+ {
+  "i": 29,
+  "start": 50.18,
+  "end": 52.42,
+  "text": "A litre of water holds about six."
+ },
+ {
+  "i": 30,
+  "start": 53.08,
+  "end": 55.36,
+  "text": "Water carries roughly thirty-six times less."
+ },
+ {
+  "i": 31,
+  "start": 55.96,
+  "end": 56.82,
+  "text": "Your body doesn't care."
+ },
+ {
+  "i": 32,
+  "start": 57.16,
+  "end": 61.46,
+  "text": "Sitting still, it burns about two hundred and fifty millilitres of oxygen every minute."
+ },
+ {
+  "i": 33,
+  "start": 61.86,
+  "end": 64.1,
+  "text": "On land, that's about six litres of air."
+ },
+ {
+  "i": 34,
+  "start": 64.1,
+  "end": 66.46,
+  "text": "Underwater it's a different story."
+ },
+ {
+  "i": 35,
+  "start": 67.04,
+  "end": 69.9,
+  "text": "Your lungs only grab about a quarter of what goes in, at best."
+ },
+ {
+  "i": 36,
+  "start": 70.4,
+  "end": 72.9,
+  "text": "So you'd need about one hundred and seventy-two litres of water."
+ },
+ {
+  "i": 37,
+  "start": 73.36,
+  "end": 74.2,
+  "text": "Every minute."
+ },
+ {
+  "i": 38,
+  "start": 74.5,
+  "end": 75.42,
+  "text": "While doing nothing."
+ },
+ {
+  "i": 39,
+  "start": 76.0,
+  "end": 80.38,
+  "text": "That's seventeen big buckets of water, through your chest, every single minute."
+ },
+ {
+  "i": 40,
+  "start": 80.88,
+  "end": 83.3,
+  "text": "And water is about eight hundred times denser than air."
+ },
+ {
+  "i": 41,
+  "start": 83.3,
+  "end": 86.06,
+  "text": "Each breath isn't a breath."
+ },
+ {
+  "i": 42,
+  "start": 86.06,
+  "end": 87.22,
+  "text": "It's a workout."
+ },
+ {
+  "i": 43,
+  "start": 87.22,
+  "end": 90.18,
+  "text": "A hundred and seventy-two kilos through your throat."
+ },
+ {
+  "i": 44,
+  "start": 90.18,
+  "end": 91.8,
+  "text": "Every minute."
+ },
+ {
+  "i": 45,
+  "start": 91.8,
+  "end": 98.02,
+  "text": "Healthy young men going all out in a breathing test manage about a hundred and forty litres a minute, and only for a short test."
+ },
+ {
+  "i": 46,
+  "start": 98.02,
+  "end": 100.64,
+  "text": "You need more than that just to sit still."
+ },
+ {
+  "i": 47,
+  "start": 100.64,
+  "end": 105.76,
+  "text": "So after ten minutes on the bottom of the lake, your arms are heavy and your head is buzzing."
+ },
+ {
+  "i": 48,
+  "start": 105.76,
+  "end": 110.54,
+  "text": "You come up gasping, and for once, the air feels amazing."
+ },
+ {
+  "i": 49,
+  "start": 111.98,
+  "end": 113.28,
+  "text": "So you study the experts."
+ },
+ {
+  "i": 50,
+  "start": 113.7,
+  "end": 115.92,
+  "text": "A trout drifts past you, totally relaxed."
+ },
+ {
+  "i": 51,
+  "start": 115.92,
+  "end": 117.4,
+  "text": "Show-off."
+ },
+ {
+  "i": 52,
+  "start": 117.4,
+  "end": 118.5,
+  "text": "Fish don't breathe in and out."
+ },
+ {
+  "i": 53,
+  "start": 118.76,
+  "end": 121.06,
+  "text": "Water goes in the mouth, over the gills, and out the sides."
+ },
+ {
+  "i": 54,
+  "start": 121.44,
+  "end": 121.94,
+  "text": "One way."
+ },
+ {
+  "i": 55,
+  "start": 122.36,
+  "end": 122.86,
+  "text": "Never stopping."
+ },
+ {
+  "i": 56,
+  "start": 123.36,
+  "end": 128.52,
+  "text": "And inside the gills, the blood runs the opposite way to the water, so it keeps grabbing oxygen the whole way along."
+ },
+ {
+  "i": 57,
+  "start": 129.06,
+  "end": 132.1,
+  "text": "Some textbooks say a fish can pull out up to eighty-five percent of it."
+ },
+ {
+  "i": 58,
+  "start": 132.74,
+  "end": 133.98,
+  "text": "Your lungs are a dead end."
+ },
+ {
+  "i": 59,
+  "start": 134.32,
+  "end": 135.76,
+  "text": "Same pipe in, same pipe out."
+ },
+ {
+  "i": 60,
+  "start": 136.06,
+  "end": 139.1,
+  "text": "Every breath, the old water sitting in your airways mixes with the new."
+ },
+ {
+  "i": 61,
+  "start": 139.62,
+  "end": 140.52,
+  "text": "So you learn to cheat."
+ },
+ {
+  "i": 62,
+  "start": 140.92,
+  "end": 141.66,
+  "text": "No more big gulps."
+ },
+ {
+  "i": 63,
+  "start": 141.98,
+  "end": 145.22,
+  "text": "You swim slowly with your mouth open, like the trout, always moving."
+ },
+ {
+  "i": 64,
+  "start": 145.56,
+  "end": 146.3,
+  "text": "It's not perfect."
+ },
+ {
+  "i": 65,
+  "start": 146.46,
+  "end": 148.46,
+  "text": "But now you can stay down for an hour."
+ },
+ {
+  "i": 66,
+  "start": 148.94,
+  "end": 149.98,
+  "text": "Your friend calls it your fish face."
+ },
+ {
+  "i": 67,
+  "start": 151.22,
+  "end": 152.52,
+  "text": "Then autumn comes."
+ },
+ {
+  "i": 68,
+  "start": 152.98,
+  "end": 156.58,
+  "text": "The first time you jump in after summer, your body gasps on its own."
+ },
+ {
+  "i": 69,
+  "start": 157.06,
+  "end": 157.8,
+  "text": "That's cold shock."
+ },
+ {
+  "i": 70,
+  "start": 158.08,
+  "end": 160.26,
+  "text": "And water pulls heat out of you fast."
+ },
+ {
+  "i": 71,
+  "start": 160.68,
+  "end": 163.82,
+  "text": "About twenty-five times faster than air, one safety guide says."
+ },
+ {
+  "i": 72,
+  "start": 164.2,
+  "end": 167.0,
+  "text": "Other sources say anywhere from four to thirty-two."
+ },
+ {
+  "i": 73,
+  "start": 167.0,
+  "end": 167.88,
+  "text": "Either way, faster."
+ },
+ {
+  "i": 74,
+  "start": 168.7,
+  "end": 170.26,
+  "text": "Your hands go numb in minutes."
+ },
+ {
+  "i": 75,
+  "start": 170.7,
+  "end": 174.22,
+  "text": "And every breath is cold lake water, straight into your chest."
+ },
+ {
+  "i": 76,
+  "start": 174.8,
+  "end": 175.78,
+  "text": "So you buy a wetsuit."
+ },
+ {
+  "i": 77,
+  "start": 176.26,
+  "end": 177.48,
+  "text": "Your friend says you look like a seal."
+ },
+ {
+  "i": 78,
+  "start": 178.14,
+  "end": 178.78,
+  "text": "He's not wrong."
+ },
+ {
+  "i": 79,
+  "start": 180.08,
+  "end": 181.16,
+  "text": "Then you get curious."
+ },
+ {
+  "i": 80,
+  "start": 181.64,
+  "end": 183.06,
+  "text": "How deep can you go?"
+ },
+ {
+  "i": 81,
+  "start": 183.86,
+  "end": 187.18,
+  "text": "Every ten metres, the water squeezes you with one more atmosphere."
+ },
+ {
+  "i": 82,
+  "start": 187.56,
+  "end": 190.66,
+  "text": "At thirty metres, that's four times what you feel at the surface."
+ },
+ {
+  "i": 83,
+  "start": 191.28,
+  "end": 196.2,
+  "text": "Divers breathing air down here face a danger called narcosis, one of the biggest risks in diving."
+ },
+ {
+  "i": 84,
+  "start": 196.8,
+  "end": 199.28,
+  "text": "And if they come up too fast, bubbles form in their blood."
+ },
+ {
+  "i": 85,
+  "start": 199.7,
+  "end": 200.14,
+  "text": "The bends."
+ },
+ {
+  "i": 86,
+  "start": 200.74,
+  "end": 202.44,
+  "text": "But you're not breathing air."
+ },
+ {
+  "i": 87,
+  "start": 203.08,
+  "end": 203.96,
+  "text": "You're breathing water."
+ },
+ {
+  "i": 88,
+  "start": 204.78,
+  "end": 205.72,
+  "text": "Would that happen to you?"
+ },
+ {
+  "i": 89,
+  "start": 206.5,
+  "end": 207.02,
+  "text": "Honestly?"
+ },
+ {
+  "i": 90,
+  "start": 207.68,
+  "end": 208.26,
+  "text": "Nobody knows."
+ },
+ {
+  "i": 91,
+  "start": 208.98,
+  "end": 210.34,
+  "text": "Nobody has ever tested it."
+ },
+ {
+  "i": 92,
+  "start": 210.98,
+  "end": 212.34,
+  "text": "You decide not to be the first."
+ },
+ {
+  "i": 93,
+  "start": 213.5,
+  "end": 217.02,
+  "text": "Then one morning in January, you hear it before you see it."
+ },
+ {
+  "i": 94,
+  "start": 217.06,
+  "end": 218.88,
+  "text": "A crack, like a branch snapping."
+ },
+ {
+  "i": 95,
+  "start": 219.36,
+  "end": 222.98,
+  "text": "Your little cousin, out on the ice where the signs say don't."
+ },
+ {
+  "i": 96,
+  "start": 223.48,
+  "end": 223.96,
+  "text": "And then he's gone."
+ },
+ {
+  "i": 97,
+  "start": 224.58,
+  "end": 225.1,
+  "text": "You don't think."
+ },
+ {
+  "i": 98,
+  "start": 225.28,
+  "end": 227.34,
+  "text": "You run, you jump, you're under the ice."
+ },
+ {
+  "i": 99,
+  "start": 228.08,
+  "end": 229.42,
+  "text": "It's black down here."
+ },
+ {
+  "i": 100,
+  "start": 229.74,
+  "end": 229.92,
+  "text": "Freezing."
+ },
+ {
+  "i": 101,
+  "start": 230.86,
+  "end": 232.84,
+  "text": "He's a few metres away, kicking, gasping."
+ },
+ {
+  "i": 102,
+  "start": 232.96,
+  "end": 233.82,
+  "text": "That's the cold shock."
+ },
+ {
+  "i": 103,
+  "start": 234.26,
+  "end": 235.06,
+  "text": "You grab his jacket."
+ },
+ {
+  "i": 104,
+  "start": 235.32,
+  "end": 236.2,
+  "text": "You can't see the hole."
+ },
+ {
+  "i": 105,
+  "start": 236.36,
+  "end": 237.78,
+  "text": "Up is ice, ice, ice."
+ },
+ {
+  "i": 106,
+  "start": 238.5,
+  "end": 239.36,
+  "text": "Then you see it."
+ },
+ {
+  "i": 107,
+  "start": 239.68,
+  "end": 241.06,
+  "text": "A grey circle of light."
+ },
+ {
+  "i": 108,
+  "start": 241.68,
+  "end": 243.1,
+  "text": "You swim, and you push, and he's out."
+ },
+ {
+  "i": 109,
+  "start": 243.62,
+  "end": 244.08,
+  "text": "Six minutes."
+ },
+ {
+  "i": 110,
+  "start": 244.6,
+  "end": 245.88,
+  "text": "That's how long they say you were under."
+ },
+ {
+  "i": 111,
+  "start": 246.3,
+  "end": 248.14,
+  "text": "The paramedics wrap him in a silver blanket."
+ },
+ {
+  "i": 112,
+  "start": 248.32,
+  "end": 249.46,
+  "text": "He's shaking, but he's talking."
+ },
+ {
+  "i": 113,
+  "start": 249.92,
+  "end": 250.64,
+  "text": "He's going to be fine."
+ },
+ {
+  "i": 114,
+  "start": 251.4,
+  "end": 252.56,
+  "text": "Your friend stares at you."
+ },
+ {
+  "i": 115,
+  "start": 252.98,
+  "end": 254.72,
+  "text": "How were you down there for six minutes?"
+ },
+ {
+  "i": 116,
+  "start": 255.56,
+  "end": 256.44,
+  "text": "I held my breath."
+ },
+ {
+  "i": 117,
+  "start": 257.7,
+  "end": 258.18,
+  "text": "Liar."
+ },
+ {
+  "i": 118,
+  "start": 259.32,
+  "end": 260.72,
+  "text": "That night, your phone buzzes."
+ },
+ {
+  "i": 119,
+  "start": 261.0,
+  "end": 261.66,
+  "text": "Unknown number."
+ },
+ {
+  "i": 120,
+  "start": 261.8,
+  "end": 263.02,
+  "text": "We saw what you did under the ice."
+ },
+ {
+  "i": 121,
+  "start": 263.28,
+  "end": 264.24,
+  "text": "You're not the only one."
+ },
+ {
+  "i": 122,
+  "start": 265.22,
+  "end": 267.66,
+  "text": "But could a human really breathe liquid?"
+ },
+ {
+  "i": 123,
+  "start": 268.14,
+  "end": 268.98,
+  "text": "Scientists have tried."
+ },
+ {
+  "i": 124,
+  "start": 269.38,
+  "end": 273.0,
+  "text": "In the nineteen-sixties, mice in a lab breathed liquid packed with oxygen."
+ },
+ {
+  "i": 125,
+  "start": 273.46,
+  "end": 281.04,
+  "text": "In nineteen eighty-nine, doctors in Philadelphia put a special liquid into the lungs of three tiny premature babies, with a ventilator still helping."
+ },
+ {
+  "i": 126,
+  "start": 281.52,
+  "end": 283.34,
+  "text": "Their lungs got easier to inflate."
+ },
+ {
+  "i": 127,
+  "start": 283.92,
+  "end": 289.94,
+  "text": "In nineteen ninety-six, a study of thirteen babies saw their blood oxygen jump by a hundred and thirty-eight percent within an hour."
+ },
+ {
+  "i": 128,
+  "start": 290.68,
+  "end": 291.74,
+  "text": "Not breathing underwater."
+ },
+ {
+  "i": 129,
+  "start": 292.16,
+  "end": 294.82,
+  "text": "But the first time a liquid helped humans breathe."
+ },
+ {
+  "i": 130,
+  "start": 295.46,
+  "end": 297.86,
+  "text": "So where's the first place you'd go if you could breathe underwater?"
+ },
+ {
+  "i": 131,
+  "start": 298.24,
+  "end": 298.84,
+  "text": "Tell us in the comments."
+ },
+ {
+  "i": 132,
+  "start": 299.28,
+  "end": 302.06,
+  "text": "And subscribe, because next time, you find out who sent that message."
+ }
+]

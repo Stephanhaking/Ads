@@ -1,0 +1,33 @@
+00:20.24  replace  script: metres  |  heard: meters
+00:41.18  replace  script: mum  |  heard: mom
+00:47.22  replace  script: litre  |  heard: liter
+00:48.18  replace  script: two hundred and nine millilitres  |  heard: 209 milliliters
+00:50.32  replace  script: litre  |  heard: liter
+00:54.04  replace  script: thirty-six  |  heard: 36
+00:55.36  insert   script: —  |  heard: Yes.
+00:58.34  replace  script: two hundred and fifty millilitres  |  heard: 250 milliliters
+01:03.06  replace  script: six litres  |  heard: 6 liters
+01:04.66  replace  script: Underwater  |  heard: Under water,
+01:11.18  replace  script: one hundred and seventy-two litres  |  heard: 172 liters
+01:16.38  replace  script: seventeen  |  heard: 17
+01:21.62  replace  script: eight hundred  |  heard: 800
+01:27.22  replace  script: A hundred and seventy-two  |  heard: 172
+01:35.06  replace  script: a hundred and forty litres  |  heard: 140 liters
+01:41.74  replace  script: ten  |  heard: 10
+01:56.20  replace  script: Show-off.  |  heard: show off.
+02:10.86  replace  script: eighty-five percent  |  heard: 85 %
+02:12.96  replace  script: lungs  |  heard: longs
+02:40.82  replace  script: twenty-five  |  heard: 25
+02:45.68  replace  script: four  |  heard: 4
+02:46.14  replace  script: thirty-two.  |  heard: 32.
+03:04.18  replace  script: ten metres,  |  heard: 10 meters,
+03:07.84  replace  script: thirty metres,  |  heard: 30 meters,
+03:51.34  replace  script: metres  |  heard: meters
+03:59.84  replace  script: grey  |  heard: gray
+04:10.12  replace  script: going to  |  heard: gonna
+04:29.58  replace  script: nineteen-sixties,  |  heard: 1960s,
+04:33.60  replace  script: nineteen eighty-nine,  |  heard: 1989,
+04:35.38  insert   script: —  |  heard: Sophia
+04:44.02  replace  script: nineteen ninety-six,  |  heard: 1996,
+04:45.38  replace  script: thirteen  |  heard: 13
+04:47.70  replace  script: a hundred and thirty-eight percent  |  heard: 138 %

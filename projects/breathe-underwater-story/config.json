@@ -7,7 +7,7 @@
  "look": "clay",
  "quality": "standard",
  "voiceover": "audio/voiceover.wav",
- "duration": 839.17,
+ "duration": 302.599,
  "captions": false,
  "fadeIn": 0.4,
  "fadeOut": 1.0,
@@ -32,6 +32,7 @@
  "voice": {
   "engine": "gemini",
   "voice": "Puck",
-  "style": "story"
+  "style": "story",
+  "pauses": "documentary"
  }
 }

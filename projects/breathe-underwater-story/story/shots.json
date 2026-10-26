@@ -1,0 +1,1239 @@
+{
+ "title": "What If You Could Breathe Underwater?",
+ "duration": 303.66,
+ "shots": [
+  {
+   "id": "s001",
+   "start": 0.0,
+   "end": 5.32,
+   "line": "You trip on the last plank of the pier and go straight into the lake. Cold.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s002",
+   "start": 5.32,
+   "end": 6.12,
+   "line": "Dark.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s003",
+   "start": 6.12,
+   "end": 9.46,
+   "line": "You open your mouth to scream, and water rushes in.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s004",
+   "start": 9.46,
+   "end": 14.16,
+   "line": "And nothing happens. You don't choke. You don't cough.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s005",
+   "start": 14.16,
+   "end": 19.84,
+   "line": "You just breathe. In. Out. Like the lake is air.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s006",
+   "start": 19.84,
+   "end": 22.66,
+   "line": "Two metres down, you're standing on the bottom.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s007",
+   "start": 22.66,
+   "end": 27.06,
+   "line": "Up on the pier, your friend is losing it. She's been under for a minute! Two minutes! Three!",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s008",
+   "start": 27.06,
+   "end": 31.04,
+   "line": "You wave. He does not wave back.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s009",
+   "start": 31.04,
+   "end": 36.14,
+   "line": "So what if you could breathe underwater? Not with gills. With your own lungs.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s010",
+   "start": 36.14,
+   "end": 38.92,
+   "line": "Here's how it would actually work.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s011",
+   "start": 38.92,
+   "end": 44.2,
+   "line": "Night one, you test it in the bathtub. Your mum knocks. Why is it so quiet in there? Bubbles.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s012",
+   "start": 44.2,
+   "end": 45.2,
+   "line": "Fine!",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s013",
+   "start": 45.2,
+   "end": 47.0,
+   "line": "And here's what nobody tells you.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s014",
+   "start": 47.0,
+   "end": 50.06,
+   "line": "A litre of air holds about two hundred and nine millilitres of oxygen.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s015",
+   "start": 50.06,
+   "end": 52.96,
+   "line": "A litre of water holds about six.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s016",
+   "start": 52.96,
+   "end": 57.04,
+   "line": "Water carries roughly thirty-six times less. Your body doesn't care.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s017",
+   "start": 57.04,
+   "end": 61.74,
+   "line": "Sitting still, it burns about two hundred and fifty millilitres of oxygen every minute.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s018",
+   "start": 61.74,
+   "end": 63.98,
+   "line": "On land, that's about six litres of air.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s019",
+   "start": 63.98,
+   "end": 66.92,
+   "line": "Underwater it's a different story.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s020",
+   "start": 66.92,
+   "end": 70.28,
+   "line": "Your lungs only grab about a quarter of what goes in, at best.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s021",
+   "start": 70.28,
+   "end": 74.38,
+   "line": "So you'd need about one hundred and seventy-two litres of water. Every minute.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s022",
+   "start": 74.38,
+   "end": 75.88,
+   "line": "While doing nothing.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s023",
+   "start": 75.88,
+   "end": 80.76,
+   "line": "That's seventeen big buckets of water, through your chest, every single minute.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s024",
+   "start": 80.76,
+   "end": 83.18,
+   "line": "And water is about eight hundred times denser than air.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s025",
+   "start": 83.18,
+   "end": 87.1,
+   "line": "Each breath isn't a breath. It's a workout.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s026",
+   "start": 87.1,
+   "end": 90.06,
+   "line": "A hundred and seventy-two kilos through your throat.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s027",
+   "start": 90.06,
+   "end": 91.68,
+   "line": "Every minute.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s028",
+   "start": 91.68,
+   "end": 95.388,
+   "line": "Healthy young men going all out in a breathing test manage about a hundred",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s029",
+   "start": 95.388,
+   "end": 97.9,
+   "line": "and forty litres a minute, and only for a short test.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s030",
+   "start": 97.9,
+   "end": 100.52,
+   "line": "You need more than that just to sit still.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s031",
+   "start": 100.52,
+   "end": 102.98,
+   "line": "So after ten minutes on the bottom of the lake,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s032",
+   "start": 102.98,
+   "end": 105.64,
+   "line": "your arms are heavy and your head is buzzing.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s033",
+   "start": 105.64,
+   "end": 108.5,
+   "line": "You come up gasping, and for once,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s034",
+   "start": 108.5,
+   "end": 113.58,
+   "line": "the air feels amazing. So you study the experts.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s035",
+   "start": 113.58,
+   "end": 115.8,
+   "line": "A trout drifts past you, totally relaxed.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s036",
+   "start": 115.8,
+   "end": 118.64,
+   "line": "Show-off. Fish don't breathe in and out.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s037",
+   "start": 118.64,
+   "end": 123.24,
+   "line": "Water goes in the mouth, over the gills, and out the sides. One way. Never stopping.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s038",
+   "start": 123.24,
+   "end": 126.22,
+   "line": "And inside the gills, the blood runs the opposite way to the water,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s039",
+   "start": 126.22,
+   "end": 128.94,
+   "line": "so it keeps grabbing oxygen the whole way along.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s040",
+   "start": 128.94,
+   "end": 134.2,
+   "line": "Some textbooks say a fish can pull out up to eighty-five percent of it. Your lungs are a dead end.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s041",
+   "start": 134.2,
+   "end": 135.94,
+   "line": "Same pipe in, same pipe out.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s042",
+   "start": 135.94,
+   "end": 140.8,
+   "line": "Every breath, the old water sitting in your airways mixes with the new. So you learn to cheat.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s043",
+   "start": 140.8,
+   "end": 141.86,
+   "line": "No more big gulps.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s044",
+   "start": 141.86,
+   "end": 146.34,
+   "line": "You swim slowly with your mouth open, like the trout, always moving. It's not perfect.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s045",
+   "start": 146.34,
+   "end": 151.1,
+   "line": "But now you can stay down for an hour. Your friend calls it your fish face.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s046",
+   "start": 151.1,
+   "end": 152.86,
+   "line": "Then autumn comes.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s047",
+   "start": 152.86,
+   "end": 157.96,
+   "line": "The first time you jump in after summer, your body gasps on its own. That's cold shock.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s048",
+   "start": 157.96,
+   "end": 160.56,
+   "line": "And water pulls heat out of you fast.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s049",
+   "start": 160.56,
+   "end": 164.08,
+   "line": "About twenty-five times faster than air, one safety guide says.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s050",
+   "start": 164.08,
+   "end": 168.58,
+   "line": "Other sources say anywhere from four to thirty-two. Either way, faster.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s051",
+   "start": 168.58,
+   "end": 170.58,
+   "line": "Your hands go numb in minutes.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s052",
+   "start": 170.58,
+   "end": 174.68,
+   "line": "And every breath is cold lake water, straight into your chest.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s053",
+   "start": 174.68,
+   "end": 179.96,
+   "line": "So you buy a wetsuit. Your friend says you look like a seal. He's not wrong.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s054",
+   "start": 179.96,
+   "end": 181.52,
+   "line": "Then you get curious.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s055",
+   "start": 181.52,
+   "end": 183.74,
+   "line": "How deep can you go?",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s056",
+   "start": 183.74,
+   "end": 187.44,
+   "line": "Every ten metres, the water squeezes you with one more atmosphere.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s057",
+   "start": 187.44,
+   "end": 191.16,
+   "line": "At thirty metres, that's four times what you feel at the surface.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s058",
+   "start": 191.16,
+   "end": 194.52,
+   "line": "Divers breathing air down here face a danger called narcosis,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s059",
+   "start": 194.52,
+   "end": 196.68,
+   "line": "one of the biggest risks in diving.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s060",
+   "start": 196.68,
+   "end": 200.62,
+   "line": "And if they come up too fast, bubbles form in their blood. The bends.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s061",
+   "start": 200.62,
+   "end": 206.38,
+   "line": "But you're not breathing air. You're breathing water. Would that happen to you?",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s062",
+   "start": 206.38,
+   "end": 210.86,
+   "line": "Honestly? Nobody knows. Nobody has ever tested it.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s063",
+   "start": 210.86,
+   "end": 213.38,
+   "line": "You decide not to be the first.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s064",
+   "start": 213.38,
+   "end": 216.94,
+   "line": "Then one morning in January, you hear it before you see it.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s065",
+   "start": 216.94,
+   "end": 219.24,
+   "line": "A crack, like a branch snapping.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s066",
+   "start": 219.24,
+   "end": 224.46,
+   "line": "Your little cousin, out on the ice where the signs say don't. And then he's gone.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s067",
+   "start": 224.46,
+   "end": 225.16,
+   "line": "You don't think.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s068",
+   "start": 225.16,
+   "end": 230.74,
+   "line": "You run, you jump, you're under the ice. It's black down here. Freezing.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s069",
+   "start": 230.74,
+   "end": 235.2,
+   "line": "He's a few metres away, kicking, gasping. That's the cold shock. You grab his jacket.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s070",
+   "start": 235.2,
+   "end": 236.24,
+   "line": "You can't see the hole.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s071",
+   "start": 236.24,
+   "end": 241.56,
+   "line": "Up is ice, ice, ice. Then you see it. A grey circle of light.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s072",
+   "start": 241.56,
+   "end": 246.18,
+   "line": "You swim, and you push, and he's out. Six minutes. That's how long they say you were under.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s073",
+   "start": 246.18,
+   "end": 251.28,
+   "line": "The paramedics wrap him in a silver blanket. He's shaking, but he's talking. He's going to be fine.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s074",
+   "start": 251.28,
+   "end": 252.86,
+   "line": "Your friend stares at you.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s075",
+   "start": 252.86,
+   "end": 259.2,
+   "line": "How were you down there for six minutes? I held my breath. Liar.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s076",
+   "start": 259.2,
+   "end": 263.16,
+   "line": "That night, your phone buzzes. Unknown number. We saw what you did under the ice.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s077",
+   "start": 263.16,
+   "end": 265.1,
+   "line": "You're not the only one.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s078",
+   "start": 265.1,
+   "end": 269.26,
+   "line": "But could a human really breathe liquid? Scientists have tried.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s079",
+   "start": 269.26,
+   "end": 273.34,
+   "line": "In the nineteen-sixties, mice in a lab breathed liquid packed with oxygen.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s080",
+   "start": 273.34,
+   "end": 274.38,
+   "line": "In nineteen eighty-nine,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s081",
+   "start": 274.38,
+   "end": 276.72,
+   "line": "doctors in Philadelphia put a special liquid into the",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s082",
+   "start": 276.72,
+   "end": 281.4,
+   "line": "lungs of three tiny premature babies, with a ventilator still helping.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s083",
+   "start": 281.4,
+   "end": 283.8,
+   "line": "Their lungs got easier to inflate.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s084",
+   "start": 283.8,
+   "end": 288.14,
+   "line": "In nineteen ninety-six, a study of thirteen babies saw their blood oxygen jump by a hundred",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s085",
+   "start": 288.14,
+   "end": 292.04,
+   "line": "and thirty-eight percent within an hour. Not breathing underwater.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s086",
+   "start": 292.04,
+   "end": 295.34,
+   "line": "But the first time a liquid helped humans breathe.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s087",
+   "start": 295.34,
+   "end": 299.16,
+   "line": "So where's the first place you'd go if you could breathe underwater? Tell us in the comments.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s088",
+   "start": 299.16,
+   "end": 303.66,
+   "line": "And subscribe, because next time, you find out who sent that message.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  }
+ ],
+ "music": []
+}
