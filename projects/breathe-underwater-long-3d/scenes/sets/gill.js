@@ -3,8 +3,12 @@
 import { registerSet, K, THREE } from '/engine/api.js';
 
 registerSet('gill', async (W) => {
-  W.shadowArea([0, 0.6, 0], 3); W.noFog();
-  W.add(K.cyl(2.6, 2.6, 0.06, K.mat('#1f2226', { rough: 0.8 }), [0, -0.03, 0], null, 64));
+  W.shadowArea([0, 0.6, 0], 4); W.fogScale(0.4);
+  // underwater environment: sandy bed, rocks, weed; the fish and diagrams are drawn in 2D by the shots
+  W.add(K.ground({ color: '#c8b48a', size: 200 }));
+  for (let i = 0; i < 18; i++) { const r = K.sphere(0.3 + (i % 4) * 0.2, K.mat('#6f7d74', { rough: 1 }), [((i * 37) % 16) - 8, 0, -2 - ((i * 23) % 8)], 12); r.scale.y = 0.6; W.add(r); }
+  for (let i = 0; i < 26; i++) { const h = 0.8 + (i % 5) * 0.4; W.add(K.mesh(K.capsuleBetween([((i * 53) % 18) - 9, 0, -3 - ((i * 31) % 6)], [((i * 53) % 18) - 9 + Math.sin(i) * 0.3, h, -3 - ((i * 31) % 6)], 0.05), K.mat('#4f8a5b', { rough: 0.8 }))); }
+  const fill = new THREE.PointLight('#bfe8ff', 30, 10, 1.5); fill.position.set(1, 3, 3); W.add(fill);
   // trout body: a lathe around the x axis
   const prof = [[0, -1.1], [0.1, -1.0], [0.2, -0.75], [0.27, -0.35], [0.3, 0.0], [0.27, 0.4], [0.2, 0.75], [0.1, 0.98], [0, 1.05]].map(([r, x]) => new THREE.Vector2(r, x));
   const fish = new THREE.Group(); fish.position.set(0, 0.75, 0);
@@ -29,5 +33,6 @@ registerSet('gill', async (W) => {
   // one-way water path: dots that travel mouth -> gills -> out of the gill slit
   const path = new THREE.CatmullRomCurve3([new THREE.Vector3(1.6, 0.78, 0), new THREE.Vector3(1.05, 0.76, 0), new THREE.Vector3(0.65, 0.75, 0.05), new THREE.Vector3(0.5, 0.72, 0.3), new THREE.Vector3(0.3, 0.7, 0.75)]);
   const dots = []; for (let i = 0; i < 24; i++) { const d = K.sphere(0.022, K.glowMat('#9fe0ff', 1.6), [0, 0, 0], 8); d.visible = false; W.add(d); dots.push(d); }
+  fish.visible = false; arch.visible = false; dots.forEach((d) => (d.visible = false));
   return { fish, gillArc, arch, flowW, flowB, path, dots };
 });

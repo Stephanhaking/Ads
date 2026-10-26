@@ -28,7 +28,7 @@ registerSet('lake', async (W) => {
   W.add(K.forest({ center: [-90, 0], rMax: 80, from: 90, to: 270, count: 260, farMax: 0, farCount: 0, palette: 'pine', conifers: 0.7, seed: 11 }));
   // swimmer: 3D stickman (black, white eyes, warm outline), floating; shots call floatSwimmer() every frame
   const sw = stickman({ scale: 1.15, pose: S_FLOAT, face: 'open', rim: '#a8e4ff', outfit: { top: '#e2553f', sleeves: 'short', bottom: '#1f2a44', bottomLen: 'shorts', hair: 'ponytail' } }); sw.position.set(-5, -3.1, 4); W.add(sw);
-  const ring = K.ring({ radius: 1.15, color: '#4a8cff' }); ring.position.set(-5, -4.6, 4); W.add(ring);
+  const ring = K.ring({ radius: 1.15, color: '#4a8cff' }); ring.position.set(-5, -4.6, 4); ring.visible = false; W.add(ring);
   // soft cool fill from the surface so the swimmer reads against the dark water (no shadow)
   const fill = new THREE.PointLight('#a8d4ff', 55, 16, 1.6); fill.position.set(-3, -0.6, 7); W.add(fill);
   // two onlookers at the end of the pier (hi-vis-free, plain clothes), looking down at the water

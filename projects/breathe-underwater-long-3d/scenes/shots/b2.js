@@ -4,6 +4,8 @@ import { place, breathe, P_STAND, P_PRESENT, P_THINK, P_SHRUG, P_POINT, P_SHIVER
 import { cards } from '../lib/cards.js';
 import { torsoShot, roomShot, plate, tag } from './b1.js';
 import { floatSwimmer } from '../lib/swimmer.js';
+import { proj } from '../lib/stage.js';
+import * as P2 from '../lib/props2d.js';
 const V = (...a) => new THREE.Vector3(...a);
 
 // ---------------------------------------------------------------- torso (schematic, no victim shown)
@@ -30,7 +32,7 @@ roomShot('s095', { cam: 'buckets', show: [], buckets: [172, 54, 'fifty-four'], a
 
 // ---------------------------------------------------------------- gill
 function gillShot(id, o) {
-  registerShot(id, { set: 'gill', look: 'studio', badge: 'SIMULATION',
+  registerShot(id, { set: 'gill', look: { base: 'day', sky: { type: 'flat', color: '#2f7f92' }, bg: '#2f7f92', fog: { color: '#2f7f92', density: 0.05 } }, badge: 'SIMULATION',
     update(W, S, t, info) {
       S.arch.visible = !!o.arch; S.fish.visible = o.fish !== false;
       S.fish.rotation.y = o.fishYaw ?? (-0.35 + 0.2 * ease.inOut(clamp(t / info.dur)));
@@ -41,17 +43,25 @@ function gillShot(id, o) {
       S.dots.forEach((d, i) => { d.visible = !!o.path; if (o.path) d.position.copy(S.path.getPoint(((t * 0.35 + i / S.dots.length) % 1))); });
       const c = o.cam || { pos: [0.6, 1.1, 3.2], look: [0, 0.75, 0], fov: 34 };
       cam.dolly(W.camera, t, [[0, c], [info.dur, { ...c, pos: c.pos.map((v, i) => v + (c.look[i] - v) * 0.12) }, ease.inOut]]);
+      S._g = { arch: S.arch.visible, fish: S.fish.visible, path: !!o.path }; S.arch.visible = S.fish.visible = false; S.dots.forEach((d) => (d.visible = false));
     },
-    ui(U, t, info, S, st) { o.ui?.(U, t, info, S, st); } });
+    ui(U, t, info, S, st) {
+      let g = ''; const tt = info.start + t;
+      if (S._g.fish) { const q = proj(st, [0, 0.75, 0]); g += P2.fish(q.x, q.y, 2.15 * q.ppm, { gill: true, t: tt }); }
+      if (S._g.path) S.dots.forEach((d) => { const q = proj(st, d.position); if (q.ok) g += `<circle cx="${q.x.toFixed(1)}" cy="${q.y.toFixed(1)}" r="${(0.03 * q.ppm).toFixed(1)}" fill="#bfeaff" stroke="#1b1410" stroke-width="2"/>`; });
+      U.svg('gfish', g, { z: 3 });
+      if (S._g.arch) U.svg('garch', P2.gills(960, 600, 1100, tt), { z: 4 });
+      o.ui?.(U, t, info, S, st);
+    } });
 }
 const ARCH = { pos: [0.2, 1.4, 4.6], look: [0, 0.7, 0.8], fov: 34 };
 gillShot('s087', { ui: (U, t, info) => U.list({ kicker: 'Two tricks', items: [{ title: 'One: opposed flow' }, { title: 'Two: one-way water' }], numbered: false }, { times: [info.w('One', 1.4), 99], pos: 'tl' }) });
-gillShot('s088', { arch: true, cam: ARCH, ui: (U, t, info) => { U.pin(V(-0.4, 0.35, 1.0), 'WATER →', { style: 'tag', at: 0.4, dir: 'left', leader: 50, key: 'w' }); U.pin(V(0.5, 0.3, 0.85), '← BLOOD', { style: 'tag', at: 0.9, dir: 'right', leader: 50, key: 'b' }); } });
-gillShot('s089', { arch: true, cam: { pos: [-0.6, 1.1, 3.4], look: [0, 0.6, 0.9], fov: 34 }, ui: (U, t, info) => U.statement('Richest blood meets richest water.', { at: 0.4, pos: { x: 960, y: 140, ax: 0.5, ay: 0 } }) });
-gillShot('s090', { arch: true, cam: ARCH, ui: (U, t, info) => U.pin(V(0, 0.95, 0.9), 'SOURCES DIFFER: 70-90 %', { style: 'tag', at: info.w('Sources differ', 3.6), dir: 'right', leader: 60 }) });
+gillShot('s088', { arch: true, cam: ARCH, ui: (U, t, info) => U.title({ title: 'Opposite directions', kicker: 'Trick one' }, { at: 0.2 }) });
+gillShot('s089', { arch: true, cam: { pos: [-0.6, 1.1, 3.4], look: [0, 0.6, 0.9], fov: 34 }, ui: (U, t, info) => U.statement('Richest blood meets richest water.', { at: 0.4, pos: { x: 960, y: 960, ax: 0.5, ay: 1 } }) });
+gillShot('s090', { arch: true, cam: ARCH, ui: (U, t, info) => U.statement('Sources differ: 70-90 %', { at: info.w('Sources differ', 3.6), pos: { x: 960, y: 960, ax: 0.5, ay: 1 } }) });
 gillShot('s096', { path: true, cam: { pos: [1.6, 1.4, 2.6], look: [0.6, 0.75, 0], fov: 34 }, ui: (U, t, info) => U.pin(V(1.3, 0.85, 0), 'ONE WAY', { style: 'tag', at: info.w('one way', 2.8), dir: 'right', leader: 60 }) });
 gillShot('s097', { path: true, cam: { pos: [1.2, 1.6, 2.2], look: [0.5, 0.75, 0.2], fov: 36 }, ui: (U, t, info) => { U.pin(V(1.4, 0.8, 0), 'IN THE MOUTH', { style: 'tag', at: 0.3, dir: 'up', leader: 40, key: 'a' }); U.pin(V(0.35, 0.72, 0.7), 'OUT THE SIDE', { style: 'tag', at: info.w('out the side', 1.8), dir: 'right', leader: 50, key: 'b' }); U.statement('No dead space.', { at: info.w('No dead space', 3), pos: { x: 960, y: 900, ax: 0.5, ay: 1 } }); } });
-gillShot('s112', { arch: true, cam: ARCH, ui: (U, t, info) => U.pin(V(0.3, 0.2, 1.0), 'CO2 LEAVES EASILY', { style: 'tag', at: 0.4, dir: 'right', leader: 60 }) });
+gillShot('s112', { arch: true, cam: ARCH, ui: (U, t, info) => U.statement('CO2 leaves easily', { at: 0.4, pos: { x: 960, y: 960, ax: 0.5, ay: 1 } }) });
 
 // ---------------------------------------------------------------- lab
 const LCAM = { wide: { pos: [0.4, 2.3, 4.6], look: [0, 1.4, -1.4], fov: 40 }, chamber: { pos: [-1.0, 1.9, 1.0], look: [-1.8, 1.7, -1.4], fov: 36 },
@@ -73,15 +83,28 @@ function labShot(id, o) {
       S.o2.forEach((d, i) => { d.visible = !!o.o2; if (o.o2) { const ph = (t * 0.4 + i / 30) % 1; d.position.set(0.2 + Math.cos(i * 2.1) * 0.6 * (1 - ph), 1.5 - ph * 0.3, -1.5 + Math.sin(i * 2.1) * 0.4 * (1 - ph)); } });
       S.co2.forEach((d, i) => { const n = o.co2 ? Math.round(30 * clamp((t - info.w(o.co2, 0.3)) / 2.5)) : 0; d.visible = i < n; if (d.visible) d.position.set(0.2 + Math.cos(i * 1.7) * 0.32, 1.12 + (i % 6) * 0.06, -1.5 + Math.sin(i * 1.7) * 0.2); });
       W.sun && (W.sun.intensity = o.dim ? 0.3 : W.look.sun.intensity);
+      S._l = { atm, cold, pfc: !!o.pfc, mice: !o.noMice, lungs: !!o.lungs, o2: !!o.o2, co2: S.co2.filter((d) => d.visible).length };
+      S.props.flat().forEach((p) => (p.visible = false)); S.o2.forEach((d) => (d.visible = false)); S.co2.forEach((d) => (d.visible = false));
     },
     ui(U, t, info, S, st) {
+      const L = S._l, tt = info.start + t; let g = '';
+      const at = (p) => proj(st, p);
+      let q = at([-2.2, 1.0, -1.6]); if (q.ok) g += P2.chamber(q.x, q.y, 1.4 * q.ppm);
+      const qd = at([-1.25, 2.2, -1.25]), qp = at([-1.25, 1.5, -1.4]); if (qd.ok) g += `<line x1="${qd.x.toFixed(1)}" y1="${qd.y.toFixed(1)}" x2="${qp.x.toFixed(1)}" y2="${qp.y.toFixed(1)}" stroke="#1b1410" stroke-width="${(0.05 * qd.ppm).toFixed(1)}"/>` + P2.gauge(qd.x, qd.y, 0.24 * qd.ppm, L.atm);
+      q = at([0.2, 1.0, -1.5]); if (q.ok) g += P2.tank(q.x, q.y, 1.0 * q.ppm, { pfc: L.pfc, mice: L.mice, co2: L.co2, t: tt });
+      q = at([1.5, 1.0, -1.6]); if (q.ok) g += P2.jar(q.x, q.y, 0.5 * q.ppm, { water: true });
+      q = at([2.2, 1.0, -1.6]); if (q.ok) g += P2.flask(q.x, q.y, 0.62 * q.ppm, L.pfc ? '#f2efe2' : '#f2efe2');
+      q = at([2.8, 1.0, -1.7]); if (q.ok) g += P2.thermometer(q.x, q.y, 1.3 * q.ppm, 0.85 - 0.6 * L.cold);
+      if (L.lungs) { q = at([-0.85, 1.0, -1.1]); g += P2.lungPair(q.x, q.y, 0.6 * q.ppm); q = at([0.15, 1.0, -1.1]); g += P2.lungPair(q.x, q.y, 0.1 * q.ppm); }
+      if (L.o2) S.o2.forEach((d) => { const r = at(d.position); g += `<circle cx="${r.x.toFixed(1)}" cy="${r.y.toFixed(1)}" r="${(0.03 * r.ppm).toFixed(1)}" fill="#7fd0ff" stroke="#1b1410" stroke-width="2"/>`; });
+      U.svg('labprops', g, { z: 3 });
       for (const [k, who, at, pose, face, flip] of o.people || []) place(U, st, k, at, 1.75, pose, who, { face, flip, rim: '#fff1d6', look: flip ? -0.6 : 0.6 });
       o.ui?.(U, t, info, S, st);
     } });
 }
 const SCI = [['sciA', 'scientist', [-2.0, 0, -0.7], P_POINT, 'neutral', false], ['sciB', 'scientist', [2.3, 0, -0.6], P_THINK, 'neutral', true]];
 labShot('s105', { cam: 'wide', people: SCI, ui: (U, t, info) => U.timeStack({ date: 'Early 1960s', time: 'Duke University', place: 'per a Gizmodo history' }, { at: 0.4 }) });
-labShot('s106', { cam: 'chamber', atm: [0, 160, 'hundred and sixty'], ui: (U, t, info, S) => U.pin(S.dial.getWorldPosition(V()), '160 ATMOSPHERES', { style: 'tag', at: info.w('hundred and sixty', 4), dir: 'right', leader: 60 }) });
+labShot('s106', { cam: 'chamber', atm: [0, 160, 'hundred and sixty'], ui: (U, t, info, S) => U.pin(V(-1.25, 2.5, -1.25), '160 ATMOSPHERES', { style: 'tag', at: info.w('hundred and sixty', 4), dir: 'right', leader: 60 }) });
 labShot('s107', { cam: 'tank', noMice: true, dim: true, co2: 'Carbon', atm: 160, ui: (U, t, info) => U.statement('Carbon dioxide had built up.', { at: info.w('Carbon', 1.6), pos: { x: 960, y: 140, ax: 0.5, ay: 0 } }) });
 labShot('s109', { cam: 'tank', o2: true, atm: 160, ui: (U) => U.pin(V(0.2, 1.75, -1.5), 'ENOUGH OXYGEN', { style: 'tag', at: 0.2, dir: 'right', leader: 60 }) });
 labShot('s110', { cam: 'tank', co2: 'did not', atm: 160, ui: (U, t, info) => U.pin(V(0.2, 1.5, -1.3), 'CO2 NOT CLEARED', { style: 'tag', at: info.w('carbon', 1), dir: 'right', leader: 60 }) });

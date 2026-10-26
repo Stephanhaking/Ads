@@ -4,6 +4,8 @@ import { registerShot, THREE, ease, clamp, cam, prog } from '/engine/api.js';
 import { place, breathe, P_STAND, P_PRESENT, P_THINK, P_SHRUG, P_POINT, P_FLOAT } from '../lib/people.js';
 import { cards } from '../lib/cards.js';
 import { drawSwimmer } from './s002.js';
+import { proj } from '../lib/stage.js';
+import * as P2 from '../lib/props2d.js';
 import { floatSwimmer } from '../lib/swimmer.js';
 
 const lerp = (a, b, k) => a + (b - a) * k;
@@ -32,13 +34,27 @@ function room(W, S, t, info, o) {
   // bars: values in the same unit, max 200 -> 1.8 m
   S.bars.forEach((b, i) => { const v = o.bars?.[i]; b.visible = v != null; if (v != null) b.scale.y = Math.max(0.01, (v / (o.barMax || 200)) * 1.8 * ease.out(clamp((t - info.w(o.barAt?.[i], 0.3 + i * 0.5)) / 1.0))); });
   // oxygen dots glow in the air jar
-  S.airDots.forEach((d, i) => (d.visible = !o.dots || i < Math.round(lerp(0, 60, clamp((t - info.w(o.dots, 0.3)) / 1.4)))));
+  const nd = !o.dots ? 34 : Math.round(lerp(0, 34, clamp((t - info.w(o.dots, 0.3)) / 1.4)));
+  S._p = { air: S.jarAir.visible, water: S.jarWater.visible, dots: nd, buckets: S.buckets.count, crates: S.scale.visible ? cr : -1, bars: S.bars.map((b) => (b.visible ? b.scale.y : 0)) };
+  S.jarAir.visible = S.jarWater.visible = S.scale.visible = false; S.buckets.count = 0; S.bars.forEach((b) => (b.visible = false));
+}
+// draw the room props in 2D at their 3D positions (far to near)
+const BARC = ['#4a8cff', '#e2553f', '#e0b44a', '#4f8a5b'];
+function roomProps(U, st, p) {
+  let g = '';
+  if (p.buckets) { const items = []; for (let i = 0; i < p.buckets; i++) items.push([-2.6 + (i % 20) * 0.28, 0, 1.2 + Math.floor(i / 20) * 0.3]); items.sort((a, b) => a[2] - b[2]); for (const w of items) { const q = proj(st, w); if (q.ok) g += P2.bucket(q.x, q.y, 0.26 * q.ppm); } }
+  p.bars.forEach((hm, i) => { if (!hm) return; const q = proj(st, [-1.05 + i * 0.7, 0.99, 0]), q2 = proj(st, [-1.05 + i * 0.7, 0.99 + hm, 0]); if (q.ok) g += P2.bar(q.x, q.y, 0.36 * q.ppm, q.y - q2.y, BARC[i]); });
+  if (p.air) { const q = proj(st, [-0.6, 0.99, 0.05]); if (q.ok) g += P2.jar(q.x, q.y, 0.68 * q.ppm, { dots: p.dots, label: 'AIR' }); }
+  if (p.water) { const q = proj(st, [0.6, 0.99, 0.05]); if (q.ok) g += P2.jar(q.x, q.y, 0.68 * q.ppm, { water: true, dots: 2, label: 'LAKE' }); }
+  if (p.crates >= 0) { const q = proj(st, [2.6, 0, 1.2]); if (q.ok) g += P2.scale(q.x, q.y, (1.0 * q.ppm / 280) * 300, { crates: p.crates, k: p.crates / 6 }); }
+  U.svg('props', g, { z: 3 });
 }
 function roomShot(id, o) {
   registerShot(id, {
     set: 'room', look: 'golden', badge: false,
     update(W, S, t, info) { room(W, S, t, info, o); },
     ui(U, t, info, S, st) {
+      if (S._p) roomProps(U, st, S._p);
       if (o.who !== false) place(U, st, 'her', o.at || [1.95, 0, 0.95], 1.7, breathe(o.pose || P_PRESENT, { ...(o.pose || P_PRESENT), lean: (o.pose || P_PRESENT).lean + 2 }, info.start + t), 'her', { face: o.face || 'smile', flip: true, look: -0.6, rim: '#ffd29a' });
       o.ui?.(U, t, info, S, st);
     },
@@ -58,12 +74,14 @@ function torso(W, S, t, info, o) {
   const ca = o.collapse ? info.w(o.collapse, 1) : null;
   S.sacs.forEach((s, i) => { let k = 1; if (o.collapsed) k = 0.55; else if (ca != null) k = 1 - 0.45 * ease.inOut(clamp((t - ca - (i % 12) * 0.25) / 0.8)); s.scale.setScalar(br * k); });
   S.sac.color.set(o.saline ? '#bfe3ef' : '#e3e1dc');
+  S._t2 = { stale: stale > 0.5, glow: glow * 0.8, saline: !!o.saline, k: S.sacs.map((m) => m.scale.x) };
 }
 function torsoShot(id, o) {
   registerShot(id, {
-    set: 'torso', look: 'clay', badge: 'SIMULATION',
+    set: 'torso', look: 'golden', badge: 'SIMULATION',
     update(W, S, t, info) { torso(W, S, t, info, o); },
     ui(U, t, info, S, st) {
+      if (S._t2) { const segs = S.segs.map((g) => { const a = proj(st, g.a), b = proj(st, g.b); return { a: [a.x, a.y], b: [b.x, b.y], w: 2 * g.r * a.ppm }; }); const sacs = S.sacPts.map((c, i) => { const q = proj(st, c.c); return { c: [q.x, q.y], r: c.r * q.ppm * S._t2.k[i] }; }); U.svg('tree', P2.lungs(segs, sacs, S._t2), { z: 3 }); }
       if (o.who !== false) place(U, st, 'her', [2.35, 0, 0.9], 1.7, breathe(o.pose || P_PRESENT, { ...(o.pose || P_PRESENT), lean: 3 }, info.start + t), 'her', { face: o.face || 'neutral', flip: true, look: -0.7, rim: '#ffd29a' });
       o.ui?.(U, t, info, S, st);
     },
@@ -85,10 +103,10 @@ registerShot('s038', { set: 'lake', look: 'dusk',
   ui(U, t, info, S, st) { place(U, st, 'her', [-5.4, 1.2, 0.6], 1.7, P_THINK, 'her', { face: 'worried', rim: '#ffc890', look: -0.5 }); U.pin(new THREE.Vector3(-5.4, 3.3, 0.6), 'HOW MUCH WATER?', { style: 'tag', at: 0.4, dir: 'right', leader: 70 }); } });
 
 // ---------------------------------------------------------------- gill teaser
-registerShot('s009', { set: 'gill', look: 'studio', badge: 'SIMULATION',
+registerShot('s009', { set: 'gill', look: { base: 'day', sky: { type: 'flat', color: '#2f7f92' }, bg: '#2f7f92', fog: { color: '#2f7f92', density: 0.05 } }, badge: 'SIMULATION',
   update(W, S, t, info) { S.arch.visible = false; S.dots.forEach((d) => (d.visible = false)); S.fish.rotation.y = -0.5 + 0.35 * ease.inOut(clamp(t / info.dur)); S.gillArc.scale.setScalar(1 + 0.08 * Math.sin(t * 6));
     cam.dolly(W.camera, t, [[0, { pos: [0.6, 1.1, 3.2], look: [0, 0.75, 0], fov: 34 }], [info.dur, { pos: [0.6, 1.0, 2.7], look: [0.2, 0.75, 0], fov: 34 }]]); },
-  ui(U, t, info, S) { U.pin(S.gillArc.getWorldPosition(new THREE.Vector3()), 'GILLS', { style: 'tag', at: info.w('plumbing', 1.2), dir: 'right', leader: 80 }); } });
+  ui(U, t, info, S, st) { const q = proj(st, [0, 0.75, 0]); U.svg('fish', P2.fish(q.x, q.y, 2.15 * q.ppm, { gill: true, t: info.start + t }), { z: 3 }); U.pin(S.gillArc.getWorldPosition(new THREE.Vector3()), 'GILLS', { style: 'tag', at: info.w('plumbing', 1.2), dir: 'right', leader: 80 }); } });
 
 // ---------------------------------------------------------------- torso shots
 torsoShot('s010', { from: -40, to: 40, glow: 'never', ui: (U, t, info, S) => tag(U, S, 'tr', [0.1, 2.7, 0], 'NEVER BUILT FOR WATER', info.w('never', 0.6)) });
