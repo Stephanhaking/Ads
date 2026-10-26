@@ -1,3 +1,7 @@
 node_modules/
 build/
 soundfonts/
+projects/*/audio/*.wav
+projects/*/audio/*.m4b
+projects/*/build/
+__pycache__/
