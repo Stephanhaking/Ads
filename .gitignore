@@ -5,3 +5,4 @@ projects/*/audio/*.wav
 projects/*/audio/*.m4b
 projects/*/build/
 __pycache__/
+projects/*/audio/*.mp3
