@@ -27,7 +27,7 @@ registerSet('lake', async (W) => {
   // trees on the bank as soft silhouettes
   W.add(K.forest({ center: [-90, 0], rMax: 80, from: 90, to: 270, count: 260, farMax: 0, farCount: 0, palette: 'pine', conifers: 0.7, seed: 11 }));
   // swimmer: 3D stickman (black, white eyes, warm outline), floating; shots call floatSwimmer() every frame
-  const sw = stickman({ scale: 1.15, pose: S_FLOAT, mouthOpen: true }); sw.position.set(-5, -3.1, 4); W.add(sw);
+  const sw = stickman({ scale: 1.15, pose: S_FLOAT, face: 'open', rim: '#a8e4ff', outfit: { top: '#e2553f', sleeves: 'short', bottom: '#1f2a44', bottomLen: 'shorts', hair: 'ponytail' } }); sw.position.set(-5, -3.1, 4); W.add(sw);
   const ring = K.ring({ radius: 1.15, color: '#4a8cff' }); ring.position.set(-5, -4.6, 4); W.add(ring);
   // soft cool fill from the surface so the swimmer reads against the dark water (no shadow)
   const fill = new THREE.PointLight('#a8d4ff', 55, 16, 1.6); fill.position.set(-3, -0.6, 7); W.add(fill);
@@ -35,7 +35,7 @@ registerSet('lake', async (W) => {
   const pierFolk = [];
   for (const [x, z, yaw, col] of [[-5.6, 0.7, 2.6, '#c75b39'], [-5.2, -0.6, 2.2, '#3f6db3']]) {
     const pose = col === '#c75b39' ? { ...S_STAND, aL: [22, 14], aR: [70, 60], fwdA: [0, 55], lL: [12, 4], lR: [12, 4], head: [24, 0], lean: 8 } : { ...S_STAND, aL: [26, 60], aR: [26, 60], fwdA: [20, 20], lL: [10, 4], lR: [10, 4], head: [20, 0], lean: 6 };
-    const m = stickman({ scale: 0.95, pose, rim: '#ffb070' });
+    const m = stickman({ scale: 0.95, pose, face: 'open', rim: '#ffc890', outfit: col === '#c75b39' ? { top: '#d9452f', sleeves: 'long', hood: true, bottom: '#2a2d3a', shoes: '#f2f2f2' } : { top: '#e8c547', sleeves: 'short', bottom: '#3a4f7a', cap: '#2f6fdb', shoes: '#7a4a2a' } });
     m.position.set(x, 1.17 + 0.78 * 0.95, z); m.rotation.y = yaw; W.add(m); pierFolk.push(m);
   }
   return { sw, ring, pierFolk };
