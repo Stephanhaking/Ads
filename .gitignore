@@ -8,3 +8,5 @@ __pycache__/
 projects/*/audio/*.mp3
 projects/*/audio/old_with_spoken_prompt/
 projects/*/timeline_old_bad/
+projects/*/audio/old2/
+projects/*/timeline_old2/

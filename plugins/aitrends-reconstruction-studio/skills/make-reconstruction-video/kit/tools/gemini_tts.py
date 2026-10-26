@@ -24,7 +24,7 @@ RATE = 24000  # the API returns raw 16-bit mono PCM at 24 kHz
 # text after the colon:") was READ ALOUD by the model in nearly every chunk; this format was not (verified with Whisper).
 # systemInstruction is rejected by the TTS models ("Developer instruction is not enabled").
 STYLE = ("# DIRECTOR'S NOTES\nStyle: calm, steady, brisk investigative documentary narrator. No drama. "
-         "Pace: natural, about 160 words per minute, short pauses at full stops.\n\n# TRANSCRIPT\n")
+         "Pace: natural, about 145 words per minute, short pauses at full stops.\n\n# TRANSCRIPT\n")
 VOICES = {  # Gemini prebuilt voices (descriptions from Google's docs; check the live list)
     "Charon": "informative", "Orus": "firm", "Kore": "firm", "Algenib": "gravelly", "Rasalgethi": "informative",
     "Sadaltager": "knowledgeable", "Iapetus": "clear", "Gacrux": "mature", "Schedar": "even", "Umbriel": "easy-going",
@@ -85,6 +85,27 @@ def synth(keys, state, models, voice, text, style=STYLE):
     sys.exit("Gemini TTS failed: " + last)
 
 
+LEAK = re.compile(r"director|transcript|narrator|investigative documentary|words per minute|short pauses|steady, brisk", re.I)
+_WM = None
+
+
+def check_chunk(pcm, text):
+    """Whisper-check one chunk. Returns '' if fine, else the reason. Skipped (returns '') if faster-whisper is unavailable."""
+    global _WM
+    try:
+        from faster_whisper import WhisperModel
+        from common import load_audio
+    except Exception:
+        return ""
+    if _WM is None: _WM = WhisperModel("small", device="cpu", compute_type="int8")
+    tmp = tempfile.mktemp(suffix=".wav"); write_wav(pcm, tmp)
+    segs, _ = _WM.transcribe(load_audio(tmp, 16000), language="en"); heard = " ".join(x.text.strip() for x in segs); os.remove(tmp)
+    if LEAK.search(heard) and not LEAK.search(text): return "style instruction spoken: " + heard[:80]
+    dur = len(pcm) / 2 / RATE; w = max(1, len(text.split())); spw = dur / w
+    if not 0.26 <= spw <= 0.55: return f"odd pace ({60 / spw:.0f} wpm, {dur:.1f}s for {w} words)"
+    return ""
+
+
 def write_wav(pcm, out):
     os.makedirs(os.path.dirname(os.path.abspath(out)), exist_ok=True)
     tmp = tempfile.mktemp(suffix=".pcm"); open(tmp, "wb").write(pcm)
@@ -108,7 +129,14 @@ def run(a, sample):
     pcm = b""; gap = b"\x00\x00" * int(RATE * a.gap)
     for i, ch in enumerate(chunks):
         print(f"chunk {i + 1}/{len(chunks)}: {len(ch)} chars", flush=True)
-        pcm += synth(keys, state, models, a.voice, ch) + (gap if i + 1 < len(chunks) else b"")
+        for attempt in range(3):
+            part = synth(keys, state, models, a.voice, ch)
+            why = check_chunk(part, ch) if a.verify else ""
+            if not why: break
+            print(f"  retry {attempt + 1}: {why}", flush=True); time.sleep(a.sleep)
+        else:
+            print("  WARNING: chunk still flagged after 3 tries: " + why, flush=True)
+        pcm += part + (gap if i + 1 < len(chunks) else b"")
         if i + 1 < len(chunks): time.sleep(a.sleep)
     out = a.out or os.path.join(P, "audio", "sample.wav" if sample else "voiceover_raw.wav")
     dur = write_wav(pcm, out)
@@ -131,7 +159,7 @@ def main():
         p.add_argument("--project", required=True); p.add_argument("--voice", default=DEFAULT_VOICE); p.add_argument("--model", default=DEFAULT_MODEL)
         p.add_argument("-o", "--out"); p.add_argument("--max-chars", type=int, default=1400); p.add_argument("--gap", type=float, default=0.5)
         p.add_argument("--sleep", type=float, default=7.0, help="seconds between requests (free tier: 10 requests/minute)")
-        p.add_argument("--chars", type=int, default=400); p.add_argument("--text", help="sample only: neutral test text (allowed before approval)")
+        p.add_argument("--no-verify", dest="verify", action="store_false", help="skip the per-chunk Whisper check"); p.add_argument("--chars", type=int, default=400); p.add_argument("--text", help="sample only: neutral test text (allowed before approval)")
     a = ap.parse_args()
     if a.cmd == "voices":
         for v, d in VOICES.items(): print(f"{v:12s} {d}")
