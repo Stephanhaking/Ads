@@ -357,3 +357,47 @@ export function wingsuit(x, y, w, col = '#e2553f', a = 0) {
 export function jetFlame(x, y, L, t = 0, a = 160) { const k = 0.85 + 0.15 * Math.sin(t * 40 + x); return `<g transform="rotate(${f(a)} ${f(x)} ${f(y)})"><path d="M ${f(x - L * 0.12)} ${f(y)} Q ${f(x)} ${f(y + L * k)} ${f(x + L * 0.12)} ${f(y)} Z" fill="#ffb24a" opacity="0.9"/><path d="M ${f(x - L * 0.06)} ${f(y)} Q ${f(x)} ${f(y + L * 0.6 * k)} ${f(x + L * 0.06)} ${f(y)} Z" fill="#fff4c8"/></g>`; }
 // big telescope (pivot x, y; length L; angle in degrees from horizontal)
 export function telescope(x, y, L, a = 35) { return `<g transform="rotate(${f(-a)} ${f(x)} ${f(y)})">${rr(x - L * 0.2, y - L * 0.08, L, L * 0.16, L * 0.05, '#e9e4da', `stroke="${OUT}" stroke-width="5"`)}${rr(x + L * 0.75, y - L * 0.1, L * 0.08, L * 0.2, 6, '#2f3e52', `stroke="${OUT}" stroke-width="4"`)}</g>` + `<path d="M ${f(x - L * 0.15)} ${f(y + L * 0.7)} L ${f(x)} ${f(y)} L ${f(x + L * 0.15)} ${f(y + L * 0.7)}" fill="none" stroke="${OUT}" stroke-width="${f(L * 0.03)}"/>`; }
+
+// ---- move-minds props
+// side-view car (bottom-centre x, y; length L); o.col body colour, o.rust adds rust patches, o.glow a telekinesis glow
+export function car2d(x, y, L, o = {}) {
+  const h = L * 0.36, c = o.col || '#4f6f7a'; let g = '';
+  if (o.glow) g += `<ellipse cx="${f(x)}" cy="${f(y - h * 0.5)}" rx="${f(L * 0.62)}" ry="${f(h * 0.85)}" fill="#b98aff" opacity="${f(0.22 * o.glow)}"/><ellipse cx="${f(x)}" cy="${f(y - h * 0.5)}" rx="${f(L * 0.56)}" ry="${f(h * 0.72)}" fill="none" stroke="#c9a2ff" stroke-width="${f(L * 0.012)}" opacity="${f(0.7 * o.glow)}"/>`;
+  g += `<path d="M ${f(x - L * 0.5)} ${f(y - h * 0.18)} L ${f(x - L * 0.5)} ${f(y - h * 0.5)} Q ${f(x - L * 0.48)} ${f(y - h * 0.58)} ${f(x - L * 0.36)} ${f(y - h * 0.6)} L ${f(x - L * 0.22)} ${f(y - h * 0.62)} L ${f(x - L * 0.1)} ${f(y - h * 0.98)} L ${f(x + L * 0.2)} ${f(y - h * 0.98)} L ${f(x + L * 0.32)} ${f(y - h * 0.62)} L ${f(x + L * 0.46)} ${f(y - h * 0.58)} Q ${f(x + L * 0.5)} ${f(y - h * 0.5)} ${f(x + L * 0.5)} ${f(y - h * 0.18)} Z" fill="${c}" stroke="${OUT}" stroke-width="${f(Math.max(2, L * 0.012))}" stroke-linejoin="round"/>`;
+  g += `<path d="M ${f(x - L * 0.17)} ${f(y - h * 0.64)} L ${f(x - L * 0.08)} ${f(y - h * 0.9)} L ${f(x + L * 0.04)} ${f(y - h * 0.9)} L ${f(x + L * 0.04)} ${f(y - h * 0.64)} Z M ${f(x + L * 0.08)} ${f(y - h * 0.64)} L ${f(x + L * 0.08)} ${f(y - h * 0.9)} L ${f(x + L * 0.18)} ${f(y - h * 0.9)} L ${f(x + L * 0.27)} ${f(y - h * 0.64)} Z" fill="#3a4b5e" stroke="${OUT}" stroke-width="${f(Math.max(1.5, L * 0.008))}"/>`;
+  if (o.rust) g += `<circle cx="${f(x - L * 0.3)}" cy="${f(y - h * 0.35)}" r="${f(h * 0.12)}" fill="#8a4a2a" opacity="0.7"/><circle cx="${f(x + L * 0.35)}" cy="${f(y - h * 0.4)}" r="${f(h * 0.09)}" fill="#8a4a2a" opacity="0.7"/>`;
+  for (const wx of [-0.3, 0.3]) g += `<circle cx="${f(x + wx * L)}" cy="${f(y - h * 0.17)}" r="${f(h * 0.19)}" fill="#22242a" stroke="${OUT}" stroke-width="${f(Math.max(2, L * 0.01))}"/><circle cx="${f(x + wx * L)}" cy="${f(y - h * 0.17)}" r="${f(h * 0.08)}" fill="#9aa3ad"/>`;
+  return g;
+}
+// a small frog seen from the side, legs dangling (centre x, y; length L)
+export function frog(x, y, L, t = 0) {
+  const k = Math.sin(t * 3) * 0.1; let g = `<g transform="rotate(${f(k * 20)} ${f(x)} ${f(y)})">`;
+  for (const s of [-1, 1]) g += `<path d="M ${f(x - L * 0.25)} ${f(y + L * 0.1)} L ${f(x - L * 0.4 + s * L * 0.05)} ${f(y + L * 0.45)} L ${f(x - L * 0.3 + s * L * 0.08)} ${f(y + L * 0.7)}" fill="none" stroke="#4f9a3a" stroke-width="${f(L * 0.08)}" stroke-linecap="round"/><path d="M ${f(x + L * 0.2)} ${f(y + L * 0.12)} L ${f(x + L * 0.25 + s * L * 0.04)} ${f(y + L * 0.4)}" fill="none" stroke="#4f9a3a" stroke-width="${f(L * 0.07)}" stroke-linecap="round"/>`;
+  g += `<ellipse cx="${f(x)}" cy="${f(y)}" rx="${f(L * 0.42)}" ry="${f(L * 0.24)}" fill="#6cc04a" stroke="${OUT}" stroke-width="${f(L * 0.03)}"/><ellipse cx="${f(x)}" cy="${f(y + L * 0.08)}" rx="${f(L * 0.3)}" ry="${f(L * 0.12)}" fill="#d8f0a8"/>`;
+  g += `<circle cx="${f(x + L * 0.28)}" cy="${f(y - L * 0.2)}" r="${f(L * 0.1)}" fill="#fff" stroke="${OUT}" stroke-width="${f(L * 0.025)}"/><circle cx="${f(x + L * 0.31)}" cy="${f(y - L * 0.2)}" r="${f(L * 0.05)}" fill="#111"/>`;
+  g += `<path d="M ${f(x + L * 0.2)} ${f(y + L * 0.02)} Q ${f(x + L * 0.32)} ${f(y + L * 0.08)} ${f(x + L * 0.4)} ${f(y - L * 0.02)}" fill="none" stroke="${OUT}" stroke-width="${f(L * 0.02)}"/>`;
+  return g + '</g>';
+}
+// a robot arm on a base (base bottom-centre x, y; size s px ~ arm length), a1/a2 joint angles in degrees, holding a cup at the end if o.cup
+export function robotArm(x, y, s, a1 = -60, a2 = 70, o = {}) {
+  const rad = (d) => (d * Math.PI) / 180, j1 = [x, y - s * 0.22], e = [j1[0] + Math.cos(rad(a1)) * s * 0.5, j1[1] + Math.sin(rad(a1)) * s * 0.5], hnd = [e[0] + Math.cos(rad(a1 + a2)) * s * 0.45, e[1] + Math.sin(rad(a1 + a2)) * s * 0.45];
+  const seg = (a, b, w) => `<line x1="${f(a[0])}" y1="${f(a[1])}" x2="${f(b[0])}" y2="${f(b[1])}" stroke="${OUT}" stroke-width="${f(w + 8)}" stroke-linecap="round"/><line x1="${f(a[0])}" y1="${f(a[1])}" x2="${f(b[0])}" y2="${f(b[1])}" stroke="#d9dee3" stroke-width="${f(w)}" stroke-linecap="round"/>`;
+  let g = rr(x - s * 0.14, y - s * 0.22, s * 0.28, s * 0.22, 8, '#3a3f46', `stroke="${OUT}" stroke-width="4"`) + seg(j1, e, s * 0.1) + seg(e, hnd, s * 0.08);
+  for (const p of [j1, e]) g += `<circle cx="${f(p[0])}" cy="${f(p[1])}" r="${f(s * 0.07)}" fill="#2f6fdb" stroke="${OUT}" stroke-width="4"/>`;
+  g += `<path d="M ${f(hnd[0] - s * 0.06)} ${f(hnd[1] - s * 0.05)} L ${f(hnd[0] - s * 0.06)} ${f(hnd[1] + s * 0.06)} M ${f(hnd[0] + s * 0.06)} ${f(hnd[1] - s * 0.05)} L ${f(hnd[0] + s * 0.06)} ${f(hnd[1] + s * 0.06)}" stroke="${OUT}" stroke-width="${f(s * 0.025)}" stroke-linecap="round"/>`;
+  if (o.cup) g += cup(hnd[0], hnd[1] + s * 0.08, s * 0.14, o.steam ?? 0);
+  return g;
+}
+export function cup(x, y, h, t = 0) {
+  const w = h * 0.8; let g = `<path d="M ${f(x - w / 2)} ${f(y - h)} L ${f(x + w / 2)} ${f(y - h)} L ${f(x + w * 0.4)} ${f(y)} L ${f(x - w * 0.4)} ${f(y)} Z" fill="#f4f1ea" stroke="${OUT}" stroke-width="3"/><path d="M ${f(x + w / 2)} ${f(y - h * 0.8)} q ${f(w * 0.35)} ${f(h * 0.2)} 0 ${f(h * 0.5)}" fill="none" stroke="${OUT}" stroke-width="3"/><rect x="${f(x - w / 2 + 3)}" y="${f(y - h + 2)}" width="${f(w - 6)}" height="${f(h * 0.12)}" fill="#6a3a1a"/>`;
+  if (t) for (let i = 0; i < 3; i++) g += `<path d="M ${f(x - w * 0.2 + i * w * 0.2)} ${f(y - h * 1.1)} q ${f(-w * 0.15)} ${f(-h * 0.3)} 0 ${f(-h * 0.6)} q ${f(w * 0.15)} ${f(-h * 0.3)} 0 ${f(-h * 0.6)}" fill="none" stroke="#fff" stroke-width="3" opacity="${f(0.5 + 0.3 * Math.sin(t * 3 + i))}"/>`;
+  return g;
+}
+// a wheelchair, side view (bottom-centre x, y; height h of the seat back)
+export function wheelchair(x, y, h) {
+  const r = h * 0.42; return `<circle cx="${f(x - h * 0.1)}" cy="${f(y - r)}" r="${f(r)}" fill="none" stroke="#2a2d33" stroke-width="${f(h * 0.06)}"/><circle cx="${f(x - h * 0.1)}" cy="${f(y - r)}" r="${f(r * 0.85)}" fill="none" stroke="#9aa3ad" stroke-width="${f(h * 0.02)}"/><circle cx="${f(x + h * 0.42)}" cy="${f(y - h * 0.08)}" r="${f(h * 0.08)}" fill="#2a2d33"/><path d="M ${f(x - h * 0.35)} ${f(y - h)} L ${f(x - h * 0.3)} ${f(y - h * 0.45)} L ${f(x + h * 0.32)} ${f(y - h * 0.45)} L ${f(x + h * 0.42)} ${f(y - h * 0.16)}" fill="none" stroke="#2a2d33" stroke-width="${f(h * 0.05)}" stroke-linejoin="round"/>`;
+}
+// over-ear headphones drawn on a character's head (c = person result)
+export function headphones(c, col = '#e2553f') { const [hx, hy] = c.head, R = c.R; return `<path d="M ${f(hx - R * 1.05)} ${f(hy)} Q ${f(hx)} ${f(hy - R * 1.9)} ${f(hx + R * 1.05)} ${f(hy)}" fill="none" stroke="#22242a" stroke-width="${f(R * 0.16)}"/>` + [-1, 1].map((s) => `<rect x="${f(hx + s * R * 1.02 - R * 0.2)}" y="${f(hy - R * 0.3)}" width="${f(R * 0.4)}" height="${f(R * 0.62)}" rx="${f(R * 0.14)}" fill="${col}" stroke="${OUT}" stroke-width="${f(R * 0.06)}"/>`).join(''); }
+// a flat skipping stone (centre x, y; length L)
+export function stone(x, y, L) { return `<ellipse cx="${f(x)}" cy="${f(y)}" rx="${f(L / 2)}" ry="${f(L * 0.16)}" fill="#8a8580" stroke="${OUT}" stroke-width="2"/>`; }

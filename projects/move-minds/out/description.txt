@@ -1,0 +1,26 @@
+What If You Could Move Things With Your Mind?
+
+In the scrapyard behind the station, a boy with headphones lifts one finger and the car under him floats. Ravi can move things without touching them. This story looks at what telekinesis would really cost: the energy bill, why every push pushes back, and the real ways humans already move things without touching them, from a floating frog to laser tweezers and a robot arm controlled by thought.
+
+The story (and Ravi's power) is fiction. The science is real (sources below).
+
+CHAPTERS
+0:00 The scrapyard
+0:23 The bill
+0:52 Every push pushes back
+1:09 Real telekinesis
+1:52 With your mind, for real
+2:17 The star
+2:38 Your turn
+
+THE SCIENCE AND WHERE IT COMES FROM
+- Lifting a 1,500 kg car 2 m takes about 30,000 J (mass x gravity x height: our calculation)
+- The human brain runs on about 20 W, roughly a fifth of the body's power at rest (The Physics Factbook); at 20 W, 30,000 J takes about 25 minutes (our calculation)
+- Newton's third law: every force comes with an equal and opposite force
+- 1997, Nijmegen: Andre Geim levitated a small live frog in a 16-tesla magnet (diamagnetic levitation); Berry & Geim, European Journal of Physics, 1997; Ig Nobel Prize 2000; Geim shared the 2010 Nobel Prize in Physics for graphene, the only person to win both
+- Arthur Ashkin invented optical tweezers (1986) and used them to hold living bacteria (1987); half of the 2018 Nobel Prize in Physics, at 96 (nobelprize.org)
+- May 2012, Nature (BrainGate2): Cathy Hutchinson, paralysed by a brainstem stroke, controlled a robot arm through a 96-electrode brain implant and drank coffee on her own for the first time in about 15 years (NPR; CBC; NBC News)
+
+These figures come from secondary sources and search summaries; not every original paper was read. If you spot an error, tell us in the comments.
+
+What's the first thing you'd move? Subscribe: next time, you meet the strongest person in the group.

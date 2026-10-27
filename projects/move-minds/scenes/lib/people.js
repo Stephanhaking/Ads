@@ -36,6 +36,9 @@ export const CAST = {
   nia: { top: '#f4f4f0', top2: '#d9d9d2', sleeves: 'long', bottom: '#2f3e52', shoes: '#e2553f', hair: 'ponytail' },
   kaiOpen: { top: '#2a2c33', top2: '#1b1d22', sleeves: 'long', bottom: '#1b1d22', shoes: '#0f1013' },
   heroHoodie: { top: '#6f8fbf', sleeves: 'long', hood: true, bottom: '#1f2a44', shoes: '#f2f2f2', hair: 'ponytail' },
+  ravi: { top: '#3a8f7a', top2: '#2c6e5e', sleeves: 'long', hood: true, bottom: '#2a2d3a', shoes: '#f2f2f2' },
+  bo: { top: '#3f6db3', top2: '#2f5a9a', sleeves: 'short', bottom: '#3f6db3', shoes: '#e0b44a', hair: 'ponytail' },
+  cathy: { top: '#c86a8a', top2: '#a8506e', sleeves: 'long', bottom: '#3a3f4a', hair: 'ponytail', shoes: '#22242a' },
   heroWinter: { top: '#e2553f', sleeves: 'long', hood: true, bottom: '#1f2a44', hair: 'ponytail', shoes: '#f2f2f2' },
 };
 
