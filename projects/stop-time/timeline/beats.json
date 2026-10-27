@@ -1,0 +1,650 @@
+[
+ {
+  "i": 0,
+  "start": 0.0,
+  "speechStart": 0.0,
+  "speechEnd": 1.64,
+  "text": "Dodgeball. Last one standing.",
+  "end": 2.1
+ },
+ {
+  "i": 1,
+  "start": 2.1,
+  "speechStart": 2.22,
+  "speechEnd": 6.44,
+  "text": "Your friend winds up and throws, hard, straight at your face. You flinch.",
+  "end": 7.02
+ },
+ {
+  "i": 2,
+  "start": 7.02,
+  "speechStart": 7.14,
+  "speechEnd": 12.4,
+  "text": "You squeeze your eyes shut and think one word. Stop. And everything does.",
+  "end": 12.98
+ },
+ {
+  "i": 3,
+  "start": 12.98,
+  "speechStart": 13.1,
+  "speechEnd": 16.06,
+  "text": "The ball is hanging in the air, ten centimetres from your nose.",
+  "end": 16.9
+ },
+ {
+  "i": 4,
+  "start": 16.9,
+  "speechStart": 17.02,
+  "speechEnd": 19.62,
+  "text": "Your friend is frozen mid-laugh.",
+  "end": 19.5
+ },
+ {
+  "i": 5,
+  "start": 19.5,
+  "speechStart": 19.62,
+  "speechEnd": 22.4,
+  "text": "A kid in the stands is frozen mid-sneeze.",
+  "end": 22.28
+ },
+ {
+  "i": 6,
+  "start": 22.28,
+  "speechStart": 22.4,
+  "speechEnd": 25.28,
+  "text": "And it is completely, perfectly silent.",
+  "end": 26.08
+ },
+ {
+  "i": 7,
+  "start": 26.08,
+  "speechStart": 26.2,
+  "speechEnd": 27.94,
+  "text": "So what if you could stop time?",
+  "end": 27.82
+ },
+ {
+  "i": 8,
+  "start": 27.82,
+  "speechStart": 27.94,
+  "speechEnd": 30.32,
+  "text": "Not slow it down. Stop it.",
+  "end": 30.44
+ },
+ {
+  "i": 9,
+  "start": 30.44,
+  "speechStart": 30.56,
+  "speechEnd": 32.04,
+  "text": "For everyone except you.",
+  "end": 33.04
+ },
+ {
+  "i": 10,
+  "start": 33.04,
+  "speechStart": 33.16,
+  "speechEnd": 37.86,
+  "text": "The first thing you notice is the quiet. No squeaking shoes. No shouting.",
+  "end": 38.14
+ },
+ {
+  "i": 11,
+  "start": 38.14,
+  "speechStart": 38.26,
+  "speechEnd": 39.22,
+  "text": "Not even a hum.",
+  "end": 39.74
+ },
+ {
+  "i": 12,
+  "start": 39.74,
+  "speechStart": 39.86,
+  "speechEnd": 41.54,
+  "text": "That's because sound is air moving.",
+  "end": 41.82
+ },
+ {
+  "i": 13,
+  "start": 41.82,
+  "speechStart": 41.94,
+  "speechEnd": 46.4,
+  "text": "When someone shouts, they push air molecules, which push the next ones, all the way to your ear.",
+  "end": 46.88
+ },
+ {
+  "i": 14,
+  "start": 46.88,
+  "speechStart": 47.0,
+  "speechEnd": 51.98,
+  "text": "Freeze the air, and there's nothing left to carry a sound. You clap your hands. Nothing.",
+  "end": 53.0
+ },
+ {
+  "i": 15,
+  "start": 53.0,
+  "speechStart": 53.12,
+  "speechEnd": 55.8,
+  "text": "Then you try to walk, and it's like walking into a mattress.",
+  "end": 55.68
+ },
+ {
+  "i": 16,
+  "start": 55.68,
+  "speechStart": 55.8,
+  "speechEnd": 58.6,
+  "text": "Air looks like nothing, but it's packed with molecules,",
+  "end": 58.82
+ },
+ {
+  "i": 17,
+  "start": 58.82,
+  "speechStart": 58.94,
+  "speechEnd": 62.94,
+  "text": "normally zooming around at about five hundred metres a second. That's faster than a jet airliner.",
+  "end": 63.46
+ },
+ {
+  "i": 18,
+  "start": 63.46,
+  "speechStart": 63.58,
+  "speechEnd": 64.74,
+  "text": "They usually bounce out of your way.",
+  "end": 65.54
+ },
+ {
+  "i": 19,
+  "start": 65.54,
+  "speechStart": 65.66,
+  "speechEnd": 67.36,
+  "text": "Frozen, they don't move at all.",
+  "end": 67.72
+ },
+ {
+  "i": 20,
+  "start": 67.72,
+  "speechStart": 67.84,
+  "speechEnd": 72.04,
+  "text": "Physicists who've thought about this say pushing through frozen air would take enormous force.",
+  "end": 72.36
+ },
+ {
+  "i": 21,
+  "start": 72.36,
+  "speechStart": 72.48,
+  "speechEnd": 73.76,
+  "text": "You wouldn't be walking through air.",
+  "end": 73.84
+ },
+ {
+  "i": 22,
+  "start": 73.84,
+  "speechStart": 73.96,
+  "speechEnd": 77.88,
+  "text": "You'd be shoving through a wall of it. And it gets worse.",
+  "end": 78.52
+ },
+ {
+  "i": 23,
+  "start": 78.52,
+  "speechStart": 78.64,
+  "speechEnd": 82.22,
+  "text": "To see anything, light has to travel from the world into your eyes.",
+  "end": 82.1
+ },
+ {
+  "i": 24,
+  "start": 82.1,
+  "speechStart": 82.22,
+  "speechEnd": 84.3,
+  "text": "A few tiny packets of light,",
+  "end": 84.18
+ },
+ {
+  "i": 25,
+  "start": 84.18,
+  "speechStart": 84.3,
+  "speechEnd": 86.78,
+  "text": "called photons, have to land on the back of your eye.",
+  "end": 87.22
+ },
+ {
+  "i": 26,
+  "start": 87.22,
+  "speechStart": 87.34,
+  "speechEnd": 91.26,
+  "text": "If time stops, light stops too. Nothing new reaches you.",
+  "end": 91.6
+ },
+ {
+  "i": 27,
+  "start": 91.6,
+  "speechStart": 91.72,
+  "speechEnd": 93.5,
+  "text": "One philosopher of physics put it simply:",
+  "end": 93.8
+ },
+ {
+  "i": 28,
+  "start": 93.8,
+  "speechStart": 93.92,
+  "speechEnd": 97.5,
+  "text": "if you really stopped time, you probably couldn't see a thing.",
+  "end": 98.56
+ },
+ {
+  "i": 29,
+  "start": 98.56,
+  "speechStart": 98.68,
+  "speechEnd": 103.28,
+  "text": "Silent, solid, and pitch black. Not a superpower. A prison.",
+  "end": 104.54
+ },
+ {
+  "i": 30,
+  "start": 104.54,
+  "speechStart": 104.66,
+  "speechEnd": 107.02,
+  "text": "So, like every story that does this, let's cheat.",
+  "end": 107.46
+ },
+ {
+  "i": 31,
+  "start": 107.46,
+  "speechStart": 107.58,
+  "speechEnd": 110.54,
+  "text": "Time stops everywhere, except in a little bubble around you.",
+  "end": 110.42
+ },
+ {
+  "i": 32,
+  "start": 110.42,
+  "speechStart": 110.54,
+  "speechEnd": 114.66,
+  "text": "Inside your bubble, the air moves, so you can breathe, hear and walk.",
+  "end": 115.16
+ },
+ {
+  "i": 33,
+  "start": 115.16,
+  "speechStart": 115.28,
+  "speechEnd": 117.08,
+  "text": "Light inside it still works, so you can see.",
+  "end": 117.8
+ },
+ {
+  "i": 34,
+  "start": 117.8,
+  "speechStart": 117.92,
+  "speechEnd": 120.42,
+  "text": "Physicists will tell you there's no real science that allows this.",
+  "end": 120.4
+ },
+ {
+  "i": 35,
+  "start": 120.4,
+  "speechStart": 120.52,
+  "speechEnd": 122.82,
+  "text": "But it's your power, so you get a bubble.",
+  "end": 123.14
+ },
+ {
+  "i": 36,
+  "start": 123.14,
+  "speechStart": 123.26,
+  "speechEnd": 127.7,
+  "text": "You gently push the ball away from your face. You step out of the way. Then you let go.",
+  "end": 127.98
+ },
+ {
+  "i": 37,
+  "start": 127.98,
+  "speechStart": 128.1,
+  "speechEnd": 129.32,
+  "text": "The ball sails past.",
+  "end": 129.68
+ },
+ {
+  "i": 38,
+  "start": 129.68,
+  "speechStart": 129.8,
+  "speechEnd": 134.02,
+  "text": "Your friend's mouth drops open. How did you dodge that? Reflexes.",
+  "end": 134.64
+ },
+ {
+  "i": 39,
+  "start": 134.64,
+  "speechStart": 134.76,
+  "speechEnd": 137.3,
+  "text": "You start testing it. And the bubble has rules.",
+  "end": 137.18
+ },
+ {
+  "i": 40,
+  "start": 137.18,
+  "speechStart": 137.3,
+  "speechEnd": 140.36,
+  "text": "It only reaches about an arm's length around you.",
+  "end": 140.78
+ },
+ {
+  "i": 41,
+  "start": 140.78,
+  "speechStart": 140.9,
+  "speechEnd": 143.42,
+  "text": "Outside it, everything is frozen, including the air.",
+  "end": 143.62
+ },
+ {
+  "i": 42,
+  "start": 143.62,
+  "speechStart": 143.74,
+  "speechEnd": 145.7,
+  "text": "So there's no fresh air coming in.",
+  "end": 145.98
+ },
+ {
+  "i": 43,
+  "start": 145.98,
+  "speechStart": 146.1,
+  "speechEnd": 148.36,
+  "text": "Just whatever is in your bubble and in your lungs.",
+  "end": 149.04
+ },
+ {
+  "i": 44,
+  "start": 149.04,
+  "speechStart": 149.16,
+  "speechEnd": 153.08,
+  "text": "Most people can hold their breath for somewhere between thirty seconds and a minute and a half.",
+  "end": 153.64
+ },
+ {
+  "i": 45,
+  "start": 153.64,
+  "speechStart": 153.76,
+  "speechEnd": 156.3,
+  "text": "Trained freedivers can go more than eleven minutes.",
+  "end": 156.46
+ },
+ {
+  "i": 46,
+  "start": 156.46,
+  "speechStart": 156.58,
+  "speechEnd": 160.84,
+  "text": "But your brain can start to be damaged after about four minutes without oxygen.",
+  "end": 161.22
+ },
+ {
+  "i": 47,
+  "start": 161.22,
+  "speechStart": 161.34,
+  "speechEnd": 163.34,
+  "text": "So your superpower comes with a timer.",
+  "end": 163.56
+ },
+ {
+  "i": 48,
+  "start": 163.56,
+  "speechStart": 163.68,
+  "speechEnd": 167.5,
+  "text": "And you can't hear it ticking. And here's the thing.",
+  "end": 167.92
+ },
+ {
+  "i": 49,
+  "start": 167.92,
+  "speechStart": 168.04,
+  "speechEnd": 170.86,
+  "text": "Scientists have actually stopped something. Light.",
+  "end": 171.54
+ },
+ {
+  "i": 50,
+  "start": 171.54,
+  "speechStart": 171.66,
+  "speechEnd": 175.86,
+  "text": "In 2013, a team in Germany fired a beam of light into a special crystal,",
+  "end": 176.16
+ },
+ {
+  "i": 51,
+  "start": 176.16,
+  "speechStart": 176.28,
+  "speechEnd": 177.72,
+  "text": "then switched off a second laser.",
+  "end": 178.2
+ },
+ {
+  "i": 52,
+  "start": 178.2,
+  "speechStart": 178.32,
+  "speechEnd": 182.18,
+  "text": "The light stopped inside the crystal. For about a minute.",
+  "end": 182.58
+ },
+ {
+  "i": 53,
+  "start": 182.58,
+  "speechStart": 182.7,
+  "speechEnd": 185.48,
+  "text": "Then they switched the laser back on, and the light came out again,",
+  "end": 185.56
+ },
+ {
+  "i": 54,
+  "start": 185.56,
+  "speechStart": 185.68,
+  "speechEnd": 189.44,
+  "text": "carrying a tiny picture of three stripes. And in 2018,",
+  "end": 189.48
+ },
+ {
+  "i": 55,
+  "start": 189.48,
+  "speechStart": 189.6,
+  "speechEnd": 193.12,
+  "text": "a camera at Caltech filmed at ten trillion frames a second.",
+  "end": 193.3
+ },
+ {
+  "i": 56,
+  "start": 193.3,
+  "speechStart": 193.42,
+  "speechEnd": 195.4,
+  "text": "Fast enough to watch a pulse of light move.",
+  "end": 195.96
+ },
+ {
+  "i": 57,
+  "start": 195.96,
+  "speechStart": 196.08,
+  "speechEnd": 197.96,
+  "text": "Your own brain even does a small version.",
+  "end": 198.48
+ },
+ {
+  "i": 58,
+  "start": 198.48,
+  "speechStart": 198.6,
+  "speechEnd": 200.4,
+  "text": "Look quickly at a clock with a second hand,",
+  "end": 200.28
+ },
+ {
+  "i": 59,
+  "start": 200.28,
+  "speechStart": 200.4,
+  "speechEnd": 203.46,
+  "text": "and the first second can seem to last longer than the others.",
+  "end": 203.9
+ },
+ {
+  "i": 60,
+  "start": 203.9,
+  "speechStart": 204.02,
+  "speechEnd": 205.96,
+  "text": "It's called the stopped-clock illusion.",
+  "end": 207.1
+ },
+ {
+  "i": 61,
+  "start": 207.1,
+  "speechStart": 207.22,
+  "speechEnd": 209.22,
+  "text": "Then one Saturday, it matters.",
+  "end": 209.56
+ },
+ {
+  "i": 62,
+  "start": 209.56,
+  "speechStart": 209.68,
+  "speechEnd": 213.72,
+  "text": "Your friend's little brother chases a ball into the road. There's a van. It's too close.",
+  "end": 213.74
+ },
+ {
+  "i": 63,
+  "start": 213.74,
+  "speechStart": 213.86,
+  "speechEnd": 215.92,
+  "text": "You stop time. Everything freezes.",
+  "end": 216.18
+ },
+ {
+  "i": 64,
+  "start": 216.18,
+  "speechStart": 216.3,
+  "speechEnd": 219.72,
+  "text": "The van, the driver's face, the ball in mid-bounce. You run.",
+  "end": 220.32
+ },
+ {
+  "i": 65,
+  "start": 220.32,
+  "speechStart": 220.44,
+  "speechEnd": 223.24,
+  "text": "But your bubble only reaches arm's length, and every step you take,",
+  "end": 223.26
+ },
+ {
+  "i": 66,
+  "start": 223.26,
+  "speechStart": 223.38,
+  "speechEnd": 227.2,
+  "text": "you're pushing your bubble through frozen air. Ten seconds. Twenty.",
+  "end": 227.08
+ },
+ {
+  "i": 67,
+  "start": 227.08,
+  "speechStart": 227.2,
+  "speechEnd": 231.74,
+  "text": "Your chest is burning. Forty. You reach him. You grab his jacket. You pull him back to the pavement.",
+  "end": 231.62
+ },
+ {
+  "i": 68,
+  "start": 231.62,
+  "speechStart": 231.74,
+  "speechEnd": 236.38,
+  "text": "Fifty seconds. Your vision is going grey. You let go. The van roars past.",
+  "end": 236.38
+ },
+ {
+  "i": 69,
+  "start": 236.38,
+  "speechStart": 236.5,
+  "speechEnd": 237.76,
+  "text": "The ball bounces off its bumper.",
+  "end": 238.3
+ },
+ {
+  "i": 70,
+  "start": 238.3,
+  "speechStart": 238.42,
+  "speechEnd": 242.52,
+  "text": "And he's standing next to you, totally confused. Where did you come from?",
+  "end": 243.58
+ },
+ {
+  "i": 71,
+  "start": 243.58,
+  "speechStart": 243.7,
+  "speechEnd": 245.66,
+  "text": "That night, you try it one more time.",
+  "end": 245.86
+ },
+ {
+  "i": 72,
+  "start": 245.86,
+  "speechStart": 245.98,
+  "speechEnd": 247.46,
+  "text": "Just a few seconds, to check you're okay.",
+  "end": 247.34
+ },
+ {
+  "i": 73,
+  "start": 247.34,
+  "speechStart": 247.46,
+  "speechEnd": 250.78,
+  "text": "The street freezes. Birds stuck in the sky.",
+  "end": 250.94
+ },
+ {
+  "i": 74,
+  "start": 250.94,
+  "speechStart": 251.06,
+  "speechEnd": 252.98,
+  "text": "A cyclist stuck mid-pedal.",
+  "end": 252.86
+ },
+ {
+  "i": 75,
+  "start": 252.86,
+  "speechStart": 252.98,
+  "speechEnd": 257.94,
+  "text": "And across the road, someone is still moving. They look straight at you.",
+  "end": 257.82
+ },
+ {
+  "i": 76,
+  "start": 257.82,
+  "speechStart": 257.94,
+  "speechEnd": 259.2,
+  "text": "And they wave.",
+  "end": 260.4
+ },
+ {
+  "i": 77,
+  "start": 260.4,
+  "speechStart": 260.52,
+  "speechEnd": 264.56,
+  "text": "So if you could stop time, what would you do with your sixty seconds?",
+  "end": 264.96
+ },
+ {
+  "i": 78,
+  "start": 264.96,
+  "speechStart": 265.08,
+  "speechEnd": 265.72,
+  "text": "Tell us in the comments.",
+  "end": 265.6
+ },
+ {
+  "i": 79,
+  "start": 265.6,
+  "speechStart": 265.72,
+  "speechEnd": 267.86,
+  "text": "And subscribe, because next time,",
+  "end": 267.74
+ },
+ {
+  "i": 80,
+  "start": 267.74,
+  "speechStart": 267.86,
+  "speechEnd": 270.28,
+  "text": "we find out what happens if you could turn invisible.",
+  "end": 271.88
+ }
+]

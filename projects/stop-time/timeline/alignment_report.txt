@@ -1,0 +1,20 @@
+00:14.78  replace  script: ten centimetres  |  heard: 10 centimeters
+00:18.24  replace  script: mid-laugh.  |  heard: mid -laugh.
+00:20.10  replace  script: stands  |  heard: stance
+00:20.84  replace  script: mid-sneeze.  |  heard: mid -sneeze.
+00:59.96  replace  script: five hundred metres  |  heard: 500 meters
+01:08.16  replace  script: who've  |  heard: who have
+02:30.84  replace  script: thirty  |  heard: 30
+02:35.40  replace  script: eleven  |  heard: 11
+02:39.08  replace  script: four  |  heard: 4
+03:11.02  replace  script: ten  |  heard: 10
+03:24.76  replace  script: stopped-clock  |  heard: stopped clock
+03:38.30  replace  script: mid-bounce.  |  heard: mid -bounds.
+03:42.46  replace  script: and  |  heard: In
+03:46.12  replace  script: Ten  |  heard: 10
+03:46.82  replace  script: Twenty.  |  heard: 20.
+03:48.76  replace  script: Forty.  |  heard: 40.
+03:52.26  replace  script: Fifty  |  heard: 50
+03:54.14  replace  script: grey.  |  heard: gray.
+04:11.94  replace  script: mid-pedal.  |  heard: mid -pedal,
+04:23.82  replace  script: sixty  |  heard: 60
