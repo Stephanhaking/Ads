@@ -155,7 +155,7 @@ def run(a, sample):
     n = len(text.split())
     with open(os.path.join(os.path.dirname(os.path.abspath(out)), "voice_settings.md"), "w", encoding="utf-8") as f:
         f.write(f"# Voice settings\n\n- engine: Gemini API TTS\n- model: {state['model']}\n- voice: {a.voice} ({VOICES.get(a.voice, 'custom')})\n"
-                f"- style prompt: {STYLE.strip()!r}\n- chunks: {len(chunks)} (max {a.max_chars} chars), gap {a.gap}s\n- keys available: {len(keys)} (never recorded)\n"
+                f"- style: {a.style} · prompt: {(STYLES.get(a.style) or STYLE).strip()!r}\n- chunks: {len(chunks)} (max {a.max_chars} chars), gap {a.gap}s\n- keys available: {len(keys)} (never recorded)\n"
                 f"- raw file: {out} ({dur:.2f} s), {n} words -> {n / (dur / 60):.0f} wpm\n- generated: {time.strftime('%Y-%m-%d %H:%M')}\n")
     print(f"voiceover (raw): {out}  {dur:.2f}s  {n / (dur / 60):.0f} wpm — next: tools/pauses.py (ask the user first), then tools/transcribe.py")
 
