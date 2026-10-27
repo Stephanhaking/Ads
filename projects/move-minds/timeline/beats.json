@@ -1,0 +1,410 @@
+[
+ {
+  "i": 0,
+  "start": 0.0,
+  "speechStart": 0.0,
+  "speechEnd": 1.9,
+  "text": "The scrapyard behind the train station.",
+  "end": 2.24
+ },
+ {
+  "i": 1,
+  "start": 2.24,
+  "speechStart": 2.36,
+  "speechEnd": 6.26,
+  "text": "Nia lands, Kai climbs the fence, and you walk in through the gate like a normal person.",
+  "end": 6.8
+ },
+ {
+  "i": 2,
+  "start": 6.8,
+  "speechStart": 6.92,
+  "speechEnd": 10.92,
+  "text": "On top of a pile of old cars sits a boy with headphones. His name is Ravi.",
+  "end": 11.3
+ },
+ {
+  "i": 3,
+  "start": 11.3,
+  "speechStart": 11.42,
+  "speechEnd": 14.66,
+  "text": "He doesn't get up. He doesn't even look at you. He just lifts one finger.",
+  "end": 15.12
+ },
+ {
+  "i": 4,
+  "start": 15.12,
+  "speechStart": 15.24,
+  "speechEnd": 16.84,
+  "text": "And the car underneath him starts to float.",
+  "end": 17.5
+ },
+ {
+  "i": 5,
+  "start": 17.5,
+  "speechStart": 17.62,
+  "speechEnd": 22.3,
+  "text": "So what if you could move things just by thinking? No hands. No strings.",
+  "end": 23.48
+ },
+ {
+  "i": 6,
+  "start": 23.48,
+  "speechStart": 23.6,
+  "speechEnd": 25.52,
+  "text": "First, physics wants to talk about the bill.",
+  "end": 25.4
+ },
+ {
+  "i": 7,
+  "start": 25.4,
+  "speechStart": 25.52,
+  "speechEnd": 30.0,
+  "text": "Lifting a car two metres takes about thirty thousand joules of energy.",
+  "end": 29.88
+ },
+ {
+  "i": 8,
+  "start": 29.88,
+  "speechStart": 30.0,
+  "speechEnd": 33.86,
+  "text": "Physics doesn't care if you use your arms, a crane, or your brain.",
+  "end": 33.74
+ },
+ {
+  "i": 9,
+  "start": 33.74,
+  "speechStart": 33.86,
+  "speechEnd": 36.6,
+  "text": "And your brain runs on about twenty watts.",
+  "end": 36.48
+ },
+ {
+  "i": 10,
+  "start": 36.48,
+  "speechStart": 36.6,
+  "speechEnd": 38.06,
+  "text": "Less than an old light bulb.",
+  "end": 37.94
+ },
+ {
+  "i": 11,
+  "start": 37.94,
+  "speechStart": 38.06,
+  "speechEnd": 39.72,
+  "text": "If all of it went into lifting,",
+  "end": 39.6
+ },
+ {
+  "i": 12,
+  "start": 39.6,
+  "speechStart": 39.72,
+  "speechEnd": 42.64,
+  "text": "it would take about twenty-five minutes to raise that car.",
+  "end": 42.52
+ },
+ {
+  "i": 13,
+  "start": 42.52,
+  "speechStart": 42.64,
+  "speechEnd": 44.58,
+  "text": "And you'd have nothing left for thinking.",
+  "end": 44.46
+ },
+ {
+  "i": 14,
+  "start": 44.46,
+  "speechStart": 44.58,
+  "speechEnd": 47.22,
+  "text": "Ravi does it in two seconds.",
+  "end": 47.1
+ },
+ {
+  "i": 15,
+  "start": 47.1,
+  "speechStart": 47.22,
+  "speechEnd": 49.4,
+  "text": "So his power isn't coming from his brain.",
+  "end": 49.82
+ },
+ {
+  "i": 16,
+  "start": 49.82,
+  "speechStart": 49.94,
+  "speechEnd": 51.54,
+  "text": "Nobody knows where it comes from.",
+  "end": 51.42
+ },
+ {
+  "i": 17,
+  "start": 51.42,
+  "speechStart": 51.54,
+  "speechEnd": 52.96,
+  "text": "Not even Ravi.",
+  "end": 52.84
+ },
+ {
+  "i": 18,
+  "start": 52.84,
+  "speechStart": 52.96,
+  "speechEnd": 55.26,
+  "text": "Here's the second problem.",
+  "end": 55.14
+ },
+ {
+  "i": 19,
+  "start": 55.14,
+  "speechStart": 55.26,
+  "speechEnd": 58.84,
+  "text": "Every push pushes back. That's Newton's third law.",
+  "end": 59.18
+ },
+ {
+  "i": 20,
+  "start": 59.18,
+  "speechStart": 59.3,
+  "speechEnd": 62.86,
+  "text": "When Ravi shoves a car across the yard, something has to push him the other way.",
+  "end": 63.12
+ },
+ {
+  "i": 21,
+  "start": 63.12,
+  "speechStart": 63.24,
+  "speechEnd": 68.7,
+  "text": "That's why he sits down to do it. Standing up, he'd go flying. Now the fun part.",
+  "end": 69.04
+ },
+ {
+  "i": 22,
+  "start": 69.04,
+  "speechStart": 69.16,
+  "speechEnd": 72.62,
+  "text": "Humans can already move things without touching them. Just not with our minds.",
+  "end": 73.14
+ },
+ {
+  "i": 23,
+  "start": 73.14,
+  "speechStart": 73.26,
+  "speechEnd": 74.76,
+  "text": "In 1997, in the Netherlands,",
+  "end": 74.9
+ },
+ {
+  "i": 24,
+  "start": 74.9,
+  "speechStart": 75.02,
+  "speechEnd": 77.56,
+  "text": "a physicist named Andre Geim put a tiny live",
+  "end": 77.44
+ },
+ {
+  "i": 25,
+  "start": 77.44,
+  "speechStart": 77.56,
+  "speechEnd": 80.2,
+  "text": "frog inside a very powerful magnet.",
+  "end": 80.48
+ },
+ {
+  "i": 26,
+  "start": 80.48,
+  "speechStart": 80.6,
+  "speechEnd": 83.44,
+  "text": "Hundreds of thousands of times stronger than the Earth's magnetic field.",
+  "end": 83.32
+ },
+ {
+  "i": 27,
+  "start": 83.32,
+  "speechStart": 83.44,
+  "speechEnd": 86.62,
+  "text": "The frog floated in mid-air. Unharmed.",
+  "end": 87.1
+ },
+ {
+  "i": 28,
+  "start": 87.1,
+  "speechStart": 87.22,
+  "speechEnd": 91.22,
+  "text": "A magnet that strong pushes on everything a tiny bit. Even water. Even frogs.",
+  "end": 91.34
+ },
+ {
+  "i": 29,
+  "start": 91.34,
+  "speechStart": 91.46,
+  "speechEnd": 92.0,
+  "text": "Even you.",
+  "end": 91.88
+ },
+ {
+  "i": 30,
+  "start": 91.88,
+  "speechStart": 92.0,
+  "speechEnd": 94.82,
+  "text": "Geim won a joke prize for it, the Ig Nobel.",
+  "end": 95.4
+ },
+ {
+  "i": 31,
+  "start": 95.4,
+  "speechStart": 95.52,
+  "speechEnd": 98.18,
+  "text": "Ten years later, he won the real Nobel Prize, for something else.",
+  "end": 98.4
+ },
+ {
+  "i": 32,
+  "start": 98.4,
+  "speechStart": 98.52,
+  "speechEnd": 102.84,
+  "text": "He's the only person who has won both. And light can push too.",
+  "end": 103.34
+ },
+ {
+  "i": 33,
+  "start": 103.34,
+  "speechStart": 103.46,
+  "speechEnd": 105.42,
+  "text": "Arthur Ashkin built optical tweezers:",
+  "end": 105.66
+ },
+ {
+  "i": 34,
+  "start": 105.66,
+  "speechStart": 105.78,
+  "speechEnd": 108.18,
+  "text": "a laser beam that can grab and hold living bacteria.",
+  "end": 108.7
+ },
+ {
+  "i": 35,
+  "start": 108.7,
+  "speechStart": 108.82,
+  "speechEnd": 112.54,
+  "text": "In 2018, at ninety-six, he won the Nobel Prize for it.",
+  "end": 112.42
+ },
+ {
+  "i": 36,
+  "start": 112.42,
+  "speechStart": 112.54,
+  "speechEnd": 116.08,
+  "text": "And moving things with your mind? That happened too.",
+  "end": 116.66
+ },
+ {
+  "i": 37,
+  "start": 116.66,
+  "speechStart": 116.78,
+  "speechEnd": 120.1,
+  "text": "In 2012, a woman named Cathy Hutchinson, paralysed by a stroke,",
+  "end": 120.16
+ },
+ {
+  "i": 38,
+  "start": 120.16,
+  "speechStart": 120.28,
+  "speechEnd": 122.58,
+  "text": "had a tiny sensor placed in her brain.",
+  "end": 122.98
+ },
+ {
+  "i": 39,
+  "start": 122.98,
+  "speechStart": 123.1,
+  "speechEnd": 126.86,
+  "text": "She imagined picking up a cup of coffee. A robot arm did it.",
+  "end": 126.92
+ },
+ {
+  "i": 40,
+  "start": 126.92,
+  "speechStart": 127.04,
+  "speechEnd": 131.6,
+  "text": "Her first sip on her own in about fifteen years. Not magic.",
+  "end": 131.9
+ },
+ {
+  "i": 41,
+  "start": 131.9,
+  "speechStart": 132.02,
+  "speechEnd": 134.14,
+  "text": "A sensor, some wires, and a computer.",
+  "end": 134.58
+ },
+ {
+  "i": 42,
+  "start": 134.58,
+  "speechStart": 134.7,
+  "speechEnd": 136.46,
+  "text": "But she moved something with a thought.",
+  "end": 137.62
+ },
+ {
+  "i": 43,
+  "start": 137.62,
+  "speechStart": 137.74,
+  "speechEnd": 139.7,
+  "text": "That night, Ravi walks with you along the river.",
+  "end": 140.04
+ },
+ {
+  "i": 44,
+  "start": 140.04,
+  "speechStart": 140.16,
+  "speechEnd": 144.02,
+  "text": "He skips stones across the water without throwing them. Nia points at the sky.",
+  "end": 144.38
+ },
+ {
+  "i": 45,
+  "start": 144.38,
+  "speechStart": 144.5,
+  "speechEnd": 147.7,
+  "text": "The star that isn't a star is there again. Brighter.",
+  "end": 148.58
+ },
+ {
+  "i": 46,
+  "start": 148.58,
+  "speechStart": 148.7,
+  "speechEnd": 153.72,
+  "text": "Ravi looks up, and for the first time, he doesn't look bored. Can you push that?",
+  "end": 153.98
+ },
+ {
+  "i": 47,
+  "start": 153.98,
+  "speechStart": 154.1,
+  "speechEnd": 157.04,
+  "text": "Kai asks. Ravi grins. Not yet.",
+  "end": 158.24
+ },
+ {
+  "i": 48,
+  "start": 158.24,
+  "speechStart": 158.36,
+  "speechEnd": 161.28,
+  "text": "So what's the first thing you'd move? Tell us in the comments.",
+  "end": 161.56
+ },
+ {
+  "i": 49,
+  "start": 161.56,
+  "speechStart": 161.68,
+  "speechEnd": 165.42,
+  "text": "And subscribe, because next time, you meet the strongest person in the group,",
+  "end": 165.3
+ },
+ {
+  "i": 50,
+  "start": 165.3,
+  "speechStart": 165.42,
+  "speechEnd": 167.96,
+  "text": "and find out why super strength would break your bones.",
+  "end": 169.56
+ }
+]

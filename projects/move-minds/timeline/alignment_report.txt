@@ -1,0 +1,12 @@
+00:26.98  replace  script: metres  |  heard: meters
+00:27.90  replace  script: thirty thousand  |  heard: 30 ,000
+00:35.64  replace  script: twenty  |  heard: 20
+00:40.56  replace  script: twenty-five  |  heard: 25
+01:25.30  replace  script: mid-air.  |  heard: mid -air,
+01:32.82  replace  script: Geim  |  heard: Guy
+01:49.88  replace  script: ninety-six,  |  heard: 96,
+01:57.96  replace  script: Cathy  |  heard: Kathy
+01:59.04  replace  script: paralysed  |  heard: paralyzed
+02:09.22  replace  script: fifteen  |  heard: 15
+02:18.50  replace  script: Ravi  |  heard: Robbie
+02:19.70  insert   script: —  |  heard: However,
