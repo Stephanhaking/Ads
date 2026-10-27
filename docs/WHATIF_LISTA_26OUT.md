@@ -34,3 +34,21 @@ Saturados/evitar: see in the dark (19 títulos), freeze anything (16), photosynt
 
 ## Risco
 IFOLOGY faz ~1 poder por dia: em 7 dias pode tirar 1 a 3 destes. Rever com `python3 -I tools/whatif_recheck.py` na véspera de cada vídeo.
+
+## Estado a 27/10/2026 (tarde), medido com `tools/whatif_recheck.py`
+Nenhum dos 10 foi tirado pelo IFOLOGY (últimos: walls 25/10, shrink 24/10, 1000x faster, see future, invisible…) nem pelo Ifverse (5x weaker gravity, restart your life, mentalist, time loop…).
+| # | Tema | Oferta (90 d) | Maior recente | Líderes? |
+|---|---|---|---|---|
+| 1 | Breathe underwater (o utilizador diz que já fez) | 3 (1) | 1,73 M | não |
+| 2 | Control your dreams | 2 (2) | 300 mil | não |
+| 3 | Never need to eat | 5 (5) | 101 mil | não |
+| 4 | Never get sick | 2 (0) | — (799 mil antigo) | não |
+| 5 | X-ray vision (descartado pelo utilizador) | 2 (1) | 38,5 mil | não |
+| 6 | Clone yourself | 3 (2) | 142 mil | não |
+| 7 | Talk to animals | 1 (0) | — (1,57 M antigo) | não |
+| 8 | Heal instantly | 7 (7) | 52 mil | não |
+| 9 | Turn into water | 2 (2) | 9 mil | não |
+| 10 | Grow wings | 5 (2) | 34 (recente) | não |
+Tirados pelos líderes: walk through walls (IFOLOGY 25/10, 75,6 mil), shrink (IFOLOGY 24/10, 111 mil).
+Extras: time travel só para a frente (por escrever); guião walls (escrito e verificado, tema já feito pelo IFOLOGY).
+Utilizador (27/10): "fiz 3, 1 a renderizar, quero 10"; canal IFSUPERPOWER com 0 vídeos publicados e handle @ifsuperpowe (falta o "r").
