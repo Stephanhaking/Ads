@@ -1,0 +1,16 @@
+{
+ "profile": "documentary",
+ "max": 1.15,
+ "to": 0.85,
+ "duration_before": 203.079,
+ "duration_after": 202.619,
+ "removed_s": 0.46,
+ "cuts": [
+  {
+   "at": 186.325,
+   "was": 1.31,
+   "kind": "pause"
+  }
+ ],
+ "applied": true
+}

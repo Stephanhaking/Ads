@@ -1,0 +1,536 @@
+[
+ {
+  "i": 0,
+  "start": 0.0,
+  "end": 0.66,
+  "text": "The alley."
+ },
+ {
+  "i": 1,
+  "start": 1.04,
+  "end": 1.42,
+  "text": "The stranger."
+ },
+ {
+  "i": 2,
+  "start": 1.88,
+  "end": 2.34,
+  "text": "The dog."
+ },
+ {
+  "i": 3,
+  "start": 2.7,
+  "end": 6.3,
+  "text": "And you, standing there in your sunglasses, trying very hard not to panic."
+ },
+ {
+  "i": 4,
+  "start": 6.96,
+  "end": 8.54,
+  "text": "Don't think about the toothbrush, you tell yourself."
+ },
+ {
+  "i": 5,
+  "start": 8.66,
+  "end": 9.7,
+  "text": "Don't think about the toothbrush."
+ },
+ {
+  "i": 6,
+  "start": 10.32,
+  "end": 11.34,
+  "text": "The stranger tilts their head."
+ },
+ {
+  "i": 7,
+  "start": 11.9,
+  "end": 12.32,
+  "text": "Toothbrush?"
+ },
+ {
+  "i": 8,
+  "start": 12.88,
+  "end": 13.48,
+  "text": "Your stomach drops."
+ },
+ {
+  "i": 9,
+  "start": 13.98,
+  "end": 14.78,
+  "text": "They can hear you."
+ },
+ {
+  "i": 10,
+  "start": 15.26,
+  "end": 15.84,
+  "text": "Every thought."
+ },
+ {
+  "i": 11,
+  "start": 16.96,
+  "end": 17.44,
+  "text": "Relax, they say."
+ },
+ {
+  "i": 12,
+  "start": 17.74,
+  "end": 18.66,
+  "text": "I'm not here to hurt you."
+ },
+ {
+  "i": 13,
+  "start": 19.3,
+  "end": 20.74,
+  "text": "I just wanted to see if you'd follow me."
+ },
+ {
+  "i": 14,
+  "start": 21.18,
+  "end": 21.46,
+  "text": "You did."
+ },
+ {
+  "i": 15,
+  "start": 22.26,
+  "end": 23.54,
+  "text": "So what if you could read minds?"
+ },
+ {
+  "i": 16,
+  "start": 23.88,
+  "end": 24.34,
+  "text": "Not guess."
+ },
+ {
+  "i": 17,
+  "start": 24.82,
+  "end": 26.12,
+  "text": "Actually hear what people think."
+ },
+ {
+  "i": 18,
+  "start": 27.24,
+  "end": 28.92,
+  "text": "Here's what you'd be listening to."
+ },
+ {
+  "i": 19,
+  "start": 29.4,
+  "end": 33.14,
+  "text": "Your brain has about eighty-six billion nerve cells, called neurons."
+ },
+ {
+  "i": 20,
+  "start": 33.86,
+  "end": 38.0,
+  "text": "Every thought you have is millions of them firing tiny electrical pulses."
+ },
+ {
+  "i": 21,
+  "start": 38.8,
+  "end": 39.24,
+  "text": "Sounds loud."
+ },
+ {
+  "i": 22,
+  "start": 39.92,
+  "end": 40.38,
+  "text": "It isn't."
+ },
+ {
+  "i": 23,
+  "start": 40.72,
+  "end": 45.72,
+  "text": "By the time those signals reach the outside of your skull, they're about fifty millionths of a volt."
+ },
+ {
+  "i": 24,
+  "start": 46.26,
+  "end": 48.82,
+  "text": "The magnetic field your brain makes is weaker still."
+ },
+ {
+  "i": 25,
+  "start": 49.36,
+  "end": 53.08,
+  "text": "One researcher puts it at more than a billion times weaker than the Earth's."
+ },
+ {
+  "i": 26,
+  "start": 53.08,
+  "end": 58.36,
+  "text": "To measure it, scientists use super-cold sensors inside rooms shielded from the outside world."
+ },
+ {
+  "i": 27,
+  "start": 58.84,
+  "end": 60.52,
+  "text": "A passing car can drown it out."
+ },
+ {
+  "i": 28,
+  "start": 61.04,
+  "end": 62.94,
+  "text": "So hearing thoughts from across a street?"
+ },
+ {
+  "i": 29,
+  "start": 63.44,
+  "end": 65.14,
+  "text": "With known physics, that's impossible."
+ },
+ {
+  "i": 30,
+  "start": 66.4,
+  "end": 67.5,
+  "text": "But the stranger can."
+ },
+ {
+  "i": 31,
+  "start": 68.22,
+  "end": 69.22,
+  "text": "And they tell you what it's like."
+ },
+ {
+  "i": 32,
+  "start": 69.68,
+  "end": 71.2,
+  "text": "Imagine a crowded market, they say."
+ },
+ {
+  "i": 33,
+  "start": 71.72,
+  "end": 74.58,
+  "text": "Now imagine hearing every single person, all at once."
+ },
+ {
+  "i": 34,
+  "start": 75.06,
+  "end": 75.96,
+  "text": "Did I leave the oven on."
+ },
+ {
+  "i": 35,
+  "start": 76.16,
+  "end": 76.9,
+  "text": "I hate this song."
+ },
+ {
+  "i": 36,
+  "start": 77.18,
+  "end": 78.28,
+  "text": "Is that dog looking at me."
+ },
+ {
+  "i": 37,
+  "start": 78.56,
+  "end": 79.52,
+  "text": "It never stops."
+ },
+ {
+  "i": 38,
+  "start": 80.14,
+  "end": 81.38,
+  "text": "That's why I like alleys."
+ },
+ {
+  "i": 39,
+  "start": 82.4,
+  "end": 84.06,
+  "text": "And here's the strange part."
+ },
+ {
+  "i": 40,
+  "start": 84.8,
+  "end": 87.1,
+  "text": "Scientists are starting to do a tiny version of it."
+ },
+ {
+  "i": 41,
+  "start": 87.46,
+  "end": 93.1,
+  "text": "In 2023, a team at the University of Texas put people inside a brain scanner while they listened to podcasts."
+ },
+ {
+  "i": 42,
+  "start": 93.62,
+  "end": 95.36,
+  "text": "For about sixteen hours each."
+ },
+ {
+  "i": 43,
+  "start": 95.78,
+  "end": 98.46,
+  "text": "A computer learned which brain patterns went with which ideas."
+ },
+ {
+  "i": 44,
+  "start": 99.06,
+  "end": 103.42,
+  "text": "Then, when people imagined telling a story, it turned their brain activity into text."
+ },
+ {
+  "i": 45,
+  "start": 103.78,
+  "end": 105.06,
+  "text": "Not word for word."
+ },
+ {
+  "i": 46,
+  "start": 105.2,
+  "end": 106.18,
+  "text": "It got the gist."
+ },
+ {
+  "i": 47,
+  "start": 106.64,
+  "end": 108.7,
+  "text": "But it only worked on the person it was trained on."
+ },
+ {
+  "i": 48,
+  "start": 108.7,
+  "end": 112.48,
+  "text": "And people could block it, just by counting, or by thinking about animals."
+ },
+ {
+  "i": 49,
+  "start": 113.94,
+  "end": 114.74,
+  "text": "So you try it."
+ },
+ {
+  "i": 50,
+  "start": 115.02,
+  "end": 116.42,
+  "text": "You think as hard as you can."
+ },
+ {
+  "i": 51,
+  "start": 116.82,
+  "end": 116.88,
+  "text": "Penguin."
+ },
+ {
+  "i": 52,
+  "start": 117.28,
+  "end": 117.62,
+  "text": "Giraffe."
+ },
+ {
+  "i": 53,
+  "start": 117.96,
+  "end": 118.2,
+  "text": "Hamster."
+ },
+ {
+  "i": 54,
+  "start": 118.48,
+  "end": 118.66,
+  "text": "Penguin."
+ },
+ {
+  "i": 55,
+  "start": 119.42,
+  "end": 120.4,
+  "text": "The stranger winces."
+ },
+ {
+  "i": 56,
+  "start": 120.8,
+  "end": 121.1,
+  "text": "Okay, okay."
+ },
+ {
+  "i": 57,
+  "start": 121.16,
+  "end": 121.36,
+  "text": "Stop."
+ },
+ {
+  "i": 58,
+  "start": 121.52,
+  "end": 122.14,
+  "text": "That's so annoying."
+ },
+ {
+  "i": 59,
+  "start": 122.86,
+  "end": 123.7,
+  "text": "It works on them too."
+ },
+ {
+  "i": 60,
+  "start": 125.08,
+  "end": 126.72,
+  "text": "Brain implants go even further."
+ },
+ {
+  "i": 61,
+  "start": 127.14,
+  "end": 132.5,
+  "text": "In 2023, doctors in San Francisco placed a thin sheet of sensors on the brain of a woman named Ann."
+ },
+ {
+  "i": 62,
+  "start": 133.04,
+  "end": 136.04,
+  "text": "A stroke had left her unable to speak for eighteen years."
+ },
+ {
+  "i": 63,
+  "start": 136.04,
+  "end": 139.58,
+  "text": "The sensors picked up the signals for the sounds she was trying to make."
+ },
+ {
+  "i": 64,
+  "start": 140.08,
+  "end": 143.58,
+  "text": "A computer turned them into words, spoken by an avatar on a screen."
+ },
+ {
+  "i": 65,
+  "start": 144.18,
+  "end": 145.5,
+  "text": "About seventy-eight words a minute."
+ },
+ {
+  "i": 66,
+  "start": 145.92,
+  "end": 148.08,
+  "text": "Normal conversation is about a hundred and sixty."
+ },
+ {
+  "i": 67,
+  "start": 148.08,
+  "end": 150.02,
+  "text": "But for Ann, it was a voice again."
+ },
+ {
+  "i": 68,
+  "start": 150.58,
+  "end": 157.1,
+  "text": "And in 2024, the first person with a Neuralink implant moved a cursor and played chess on a laptop, just by thinking."
+ },
+ {
+  "i": 69,
+  "start": 158.44,
+  "end": 160.0,
+  "text": "The stranger lowers their hood."
+ },
+ {
+  "i": 70,
+  "start": 160.56,
+  "end": 162.48,
+  "text": "My name is Kai, they say."
+ },
+ {
+  "i": 71,
+  "start": 163.16,
+  "end": 164.86,
+  "text": "And I'm not the only one."
+ },
+ {
+  "i": 72,
+  "start": 165.46,
+  "end": 168.74,
+  "text": "Behind them, on the rooftops, four shapes are watching."
+ },
+ {
+  "i": 73,
+  "start": 169.58,
+  "end": 172.2,
+  "text": "We sent you the message after the lake, Kai says."
+ },
+ {
+  "i": 74,
+  "start": 172.78,
+  "end": 174.26,
+  "text": "We saw what you did under the ice."
+ },
+ {
+  "i": 75,
+  "start": 174.72,
+  "end": 175.34,
+  "text": "In the gym."
+ },
+ {
+  "i": 76,
+  "start": 175.6,
+  "end": 176.5,
+  "text": "At the crossing."
+ },
+ {
+  "i": 77,
+  "start": 177.26,
+  "end": 178.24,
+  "text": "There are more of us."
+ },
+ {
+  "i": 78,
+  "start": 179.0,
+  "end": 181.52,
+  "text": "And something's coming that we can't handle on our own."
+ },
+ {
+  "i": 79,
+  "start": 182.14,
+  "end": 182.54,
+  "text": "Tomorrow."
+ },
+ {
+  "i": 80,
+  "start": 182.54,
+  "end": 183.72,
+  "text": "Six a.m."
+ },
+ {
+  "i": 81,
+  "start": 184.36,
+  "end": 185.82,
+  "text": "The old observatory on the hill."
+ },
+ {
+  "i": 82,
+  "start": 185.82,
+  "end": 187.58,
+  "text": "Then Kai smiles."
+ },
+ {
+  "i": 83,
+  "start": 188.54,
+  "end": 189.84,
+  "text": "And stop thinking about penguins."
+ },
+ {
+  "i": 84,
+  "start": 190.14,
+  "end": 190.56,
+  "text": "It's distracting."
+ },
+ {
+  "i": 85,
+  "start": 191.92,
+  "end": 194.88,
+  "text": "So if you could read one person's mind, whose would it be?"
+ },
+ {
+  "i": 86,
+  "start": 195.44,
+  "end": 196.08,
+  "text": "Tell us in the comments."
+ },
+ {
+  "i": 87,
+  "start": 196.08,
+  "end": 199.34,
+  "text": "And subscribe, because next time, you meet the others."
+ },
+ {
+  "i": 88,
+  "start": 199.98,
+  "end": 201.9,
+  "text": "Starting with the one who can fly."
+ }
+]

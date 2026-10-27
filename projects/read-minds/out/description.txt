@@ -1,0 +1,27 @@
+What If You Could Read Minds?
+
+The stranger from the frozen street can hear every thought you have. This story follows what mind-reading would really involve: how faint the brain's signals are outside your head, why hearing a crowd would be unbearable, and the real scanners and implants that already turn brain activity into words.
+
+The story (and Kai's power) is fiction. The science is real (sources below).
+
+CHAPTERS
+0:00 The alley
+0:27 The signal
+1:08 The noise
+1:22 Mind reading for real
+1:54 The test
+2:05 Talking without moving
+2:38 Who they are
+3:12 Your turn
+
+THE SCIENCE AND WHERE IT COMES FROM
+- About 86 billion neurons in a human brain, with roughly 100 trillion synapses (estimates vary) (UCLA Brain Research Institute; Herculano-Houzel 2009)
+- Scalp EEG signals are around 50 microvolts and must be amplified thousands of times (HyperPhysics)
+- The brain's magnetic field is in the femtotesla range — one researcher puts it at more than a billion times weaker than Earth's; MEG uses super-cooled sensors in magnetically shielded rooms (University of Oldenburg; Karolinska Institutet)
+- 2023, University of Texas at Austin (Tang, LeBel, Jain, Huth; Nature Neuroscience): an fMRI "semantic decoder" trained on about 16 hours of podcasts per person turned brain activity into text that captured the gist, not exact words; it failed on people it wasn't trained on, and participants could sabotage it by counting or naming animals (NIH Research Matters; University of Sydney)
+- 2023, UCSF (Edward Chang's team; Nature): a woman named Ann, paralysed by a brain-stem stroke 18 years earlier, communicated through a talking avatar at about 78 words per minute; natural conversation is about 160 (Scientific American)
+- 2024: the first Neuralink patient moved a cursor and played online chess using his implant (AP / Reuters reports)
+
+These figures come from secondary sources and search summaries; not every original paper was read. If you spot an error, tell us in the comments.
+
+Whose mind would you read? Subscribe: next time, you meet the others — starting with the one who can fly.

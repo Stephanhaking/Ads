@@ -1,0 +1,11 @@
+00:30.14  replace  script: eighty-six  |  heard: 86
+00:43.92  replace  script: fifty  |  heard: 50
+00:54.74  replace  script: super-cold  |  heard: super cold
+01:02.42  replace  script: a  |  heard: the
+01:34.06  replace  script: sixteen  |  heard: 16
+02:15.04  replace  script: eighteen  |  heard: 18
+02:24.30  replace  script: seventy-eight  |  heard: 78
+02:26.08  replace  script: conversation is  |  heard: conversations
+02:26.96  replace  script: a hundred and sixty.  |  heard: 160.
+02:28.48  replace  script: Ann,  |  heard: Anne,
+03:03.14  replace  script: Six  |  heard: 6

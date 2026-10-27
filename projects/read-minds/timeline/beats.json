@@ -1,0 +1,498 @@
+[
+ {
+  "i": 0,
+  "start": 0.0,
+  "speechStart": 0.0,
+  "speechEnd": 2.34,
+  "text": "The alley. The stranger. The dog.",
+  "end": 2.58
+ },
+ {
+  "i": 1,
+  "start": 2.58,
+  "speechStart": 2.7,
+  "speechEnd": 6.3,
+  "text": "And you, standing there in your sunglasses, trying very hard not to panic.",
+  "end": 6.84
+ },
+ {
+  "i": 2,
+  "start": 6.84,
+  "speechStart": 6.96,
+  "speechEnd": 11.34,
+  "text": "Don't think about the toothbrush, you tell yourself. Don't think about the toothbrush. The stranger tilts their head.",
+  "end": 11.78
+ },
+ {
+  "i": 3,
+  "start": 11.78,
+  "speechStart": 11.9,
+  "speechEnd": 17.44,
+  "text": "Toothbrush? Your stomach drops. They can hear you. Every thought. Relax, they say.",
+  "end": 17.62
+ },
+ {
+  "i": 4,
+  "start": 17.62,
+  "speechStart": 17.74,
+  "speechEnd": 18.66,
+  "text": "I'm not here to hurt you.",
+  "end": 19.18
+ },
+ {
+  "i": 5,
+  "start": 19.18,
+  "speechStart": 19.3,
+  "speechEnd": 23.54,
+  "text": "I just wanted to see if you'd follow me. You did. So what if you could read minds?",
+  "end": 23.76
+ },
+ {
+  "i": 6,
+  "start": 23.76,
+  "speechStart": 23.88,
+  "speechEnd": 26.12,
+  "text": "Not guess. Actually hear what people think.",
+  "end": 27.12
+ },
+ {
+  "i": 7,
+  "start": 27.12,
+  "speechStart": 27.24,
+  "speechEnd": 28.92,
+  "text": "Here's what you'd be listening to.",
+  "end": 29.28
+ },
+ {
+  "i": 8,
+  "start": 29.28,
+  "speechStart": 29.4,
+  "speechEnd": 33.14,
+  "text": "Your brain has about eighty-six billion nerve cells, called neurons.",
+  "end": 33.74
+ },
+ {
+  "i": 9,
+  "start": 33.74,
+  "speechStart": 33.86,
+  "speechEnd": 38.0,
+  "text": "Every thought you have is millions of them firing tiny electrical pulses.",
+  "end": 38.68
+ },
+ {
+  "i": 10,
+  "start": 38.68,
+  "speechStart": 38.8,
+  "speechEnd": 40.38,
+  "text": "Sounds loud. It isn't.",
+  "end": 40.6
+ },
+ {
+  "i": 11,
+  "start": 40.6,
+  "speechStart": 40.72,
+  "speechEnd": 43.18,
+  "text": "By the time those signals reach the outside of your skull,",
+  "end": 43.5
+ },
+ {
+  "i": 12,
+  "start": 43.5,
+  "speechStart": 43.62,
+  "speechEnd": 45.72,
+  "text": "they're about fifty millionths of a volt.",
+  "end": 46.14
+ },
+ {
+  "i": 13,
+  "start": 46.14,
+  "speechStart": 46.26,
+  "speechEnd": 48.82,
+  "text": "The magnetic field your brain makes is weaker still.",
+  "end": 49.24
+ },
+ {
+  "i": 14,
+  "start": 49.24,
+  "speechStart": 49.36,
+  "speechEnd": 53.08,
+  "text": "One researcher puts it at more than a billion times weaker than the Earth's.",
+  "end": 52.96
+ },
+ {
+  "i": 15,
+  "start": 52.96,
+  "speechStart": 53.08,
+  "speechEnd": 53.92,
+  "text": "To measure it,",
+  "end": 54.0
+ },
+ {
+  "i": 16,
+  "start": 54.0,
+  "speechStart": 54.12,
+  "speechEnd": 58.36,
+  "text": "scientists use super-cold sensors inside rooms shielded from the outside world.",
+  "end": 58.72
+ },
+ {
+  "i": 17,
+  "start": 58.72,
+  "speechStart": 58.84,
+  "speechEnd": 60.52,
+  "text": "A passing car can drown it out.",
+  "end": 60.92
+ },
+ {
+  "i": 18,
+  "start": 60.92,
+  "speechStart": 61.04,
+  "speechEnd": 62.94,
+  "text": "So hearing thoughts from across a street?",
+  "end": 63.32
+ },
+ {
+  "i": 19,
+  "start": 63.32,
+  "speechStart": 63.44,
+  "speechEnd": 67.5,
+  "text": "With known physics, that's impossible. But the stranger can.",
+  "end": 68.1
+ },
+ {
+  "i": 20,
+  "start": 68.1,
+  "speechStart": 68.22,
+  "speechEnd": 69.22,
+  "text": "And they tell you what it's like.",
+  "end": 69.56
+ },
+ {
+  "i": 21,
+  "start": 69.56,
+  "speechStart": 69.68,
+  "speechEnd": 71.2,
+  "text": "Imagine a crowded market, they say.",
+  "end": 71.6
+ },
+ {
+  "i": 22,
+  "start": 71.6,
+  "speechStart": 71.72,
+  "speechEnd": 75.96,
+  "text": "Now imagine hearing every single person, all at once. Did I leave the oven on.",
+  "end": 76.04
+ },
+ {
+  "i": 23,
+  "start": 76.04,
+  "speechStart": 76.16,
+  "speechEnd": 79.52,
+  "text": "I hate this song. Is that dog looking at me. It never stops.",
+  "end": 80.02
+ },
+ {
+  "i": 24,
+  "start": 80.02,
+  "speechStart": 80.14,
+  "speechEnd": 81.38,
+  "text": "That's why I like alleys.",
+  "end": 82.28
+ },
+ {
+  "i": 25,
+  "start": 82.28,
+  "speechStart": 82.4,
+  "speechEnd": 84.06,
+  "text": "And here's the strange part.",
+  "end": 84.68
+ },
+ {
+  "i": 26,
+  "start": 84.68,
+  "speechStart": 84.8,
+  "speechEnd": 87.1,
+  "text": "Scientists are starting to do a tiny version of it.",
+  "end": 87.34
+ },
+ {
+  "i": 27,
+  "start": 87.34,
+  "speechStart": 87.46,
+  "speechEnd": 91.72,
+  "text": "In 2023, a team at the University of Texas put people inside a brain scanner",
+  "end": 91.6
+ },
+ {
+  "i": 28,
+  "start": 91.6,
+  "speechStart": 91.72,
+  "speechEnd": 93.1,
+  "text": "while they listened to podcasts.",
+  "end": 93.5
+ },
+ {
+  "i": 29,
+  "start": 93.5,
+  "speechStart": 93.62,
+  "speechEnd": 95.36,
+  "text": "For about sixteen hours each.",
+  "end": 95.66
+ },
+ {
+  "i": 30,
+  "start": 95.66,
+  "speechStart": 95.78,
+  "speechEnd": 98.46,
+  "text": "A computer learned which brain patterns went with which ideas.",
+  "end": 98.94
+ },
+ {
+  "i": 31,
+  "start": 98.94,
+  "speechStart": 99.06,
+  "speechEnd": 103.42,
+  "text": "Then, when people imagined telling a story, it turned their brain activity into text.",
+  "end": 103.66
+ },
+ {
+  "i": 32,
+  "start": 103.66,
+  "speechStart": 103.78,
+  "speechEnd": 106.18,
+  "text": "Not word for word. It got the gist.",
+  "end": 106.52
+ },
+ {
+  "i": 33,
+  "start": 106.52,
+  "speechStart": 106.64,
+  "speechEnd": 108.7,
+  "text": "But it only worked on the person it was trained on.",
+  "end": 108.58
+ },
+ {
+  "i": 34,
+  "start": 108.58,
+  "speechStart": 108.7,
+  "speechEnd": 112.48,
+  "text": "And people could block it, just by counting, or by thinking about animals.",
+  "end": 113.82
+ },
+ {
+  "i": 35,
+  "start": 113.82,
+  "speechStart": 113.94,
+  "speechEnd": 114.74,
+  "text": "So you try it.",
+  "end": 114.9
+ },
+ {
+  "i": 36,
+  "start": 114.9,
+  "speechStart": 115.02,
+  "speechEnd": 118.66,
+  "text": "You think as hard as you can. Penguin. Giraffe. Hamster. Penguin.",
+  "end": 119.3
+ },
+ {
+  "i": 37,
+  "start": 119.3,
+  "speechStart": 119.42,
+  "speechEnd": 123.7,
+  "text": "The stranger winces. Okay, okay. Stop. That's so annoying. It works on them too.",
+  "end": 124.96
+ },
+ {
+  "i": 38,
+  "start": 124.96,
+  "speechStart": 125.08,
+  "speechEnd": 128.04,
+  "text": "Brain implants go even further. In 2023,",
+  "end": 128.08
+ },
+ {
+  "i": 39,
+  "start": 128.08,
+  "speechStart": 128.2,
+  "speechEnd": 132.5,
+  "text": "doctors in San Francisco placed a thin sheet of sensors on the brain of a woman named Ann.",
+  "end": 132.92
+ },
+ {
+  "i": 40,
+  "start": 132.92,
+  "speechStart": 133.04,
+  "speechEnd": 136.04,
+  "text": "A stroke had left her unable to speak for eighteen years.",
+  "end": 135.92
+ },
+ {
+  "i": 41,
+  "start": 135.92,
+  "speechStart": 136.04,
+  "speechEnd": 139.58,
+  "text": "The sensors picked up the signals for the sounds she was trying to make.",
+  "end": 139.96
+ },
+ {
+  "i": 42,
+  "start": 139.96,
+  "speechStart": 140.08,
+  "speechEnd": 143.58,
+  "text": "A computer turned them into words, spoken by an avatar on a screen.",
+  "end": 144.06
+ },
+ {
+  "i": 43,
+  "start": 144.06,
+  "speechStart": 144.18,
+  "speechEnd": 145.5,
+  "text": "About seventy-eight words a minute.",
+  "end": 145.8
+ },
+ {
+  "i": 44,
+  "start": 145.8,
+  "speechStart": 145.92,
+  "speechEnd": 148.08,
+  "text": "Normal conversation is about a hundred and sixty.",
+  "end": 147.96
+ },
+ {
+  "i": 45,
+  "start": 147.96,
+  "speechStart": 148.08,
+  "speechEnd": 150.02,
+  "text": "But for Ann, it was a voice again.",
+  "end": 150.46
+ },
+ {
+  "i": 46,
+  "start": 150.46,
+  "speechStart": 150.58,
+  "speechEnd": 154.16,
+  "text": "And in 2024, the first person with a Neuralink implant moved a cursor",
+  "end": 154.04
+ },
+ {
+  "i": 47,
+  "start": 154.04,
+  "speechStart": 154.16,
+  "speechEnd": 157.1,
+  "text": "and played chess on a laptop, just by thinking.",
+  "end": 158.32
+ },
+ {
+  "i": 48,
+  "start": 158.32,
+  "speechStart": 158.44,
+  "speechEnd": 160.0,
+  "text": "The stranger lowers their hood.",
+  "end": 160.44
+ },
+ {
+  "i": 49,
+  "start": 160.44,
+  "speechStart": 160.56,
+  "speechEnd": 162.48,
+  "text": "My name is Kai, they say.",
+  "end": 163.04
+ },
+ {
+  "i": 50,
+  "start": 163.04,
+  "speechStart": 163.16,
+  "speechEnd": 164.86,
+  "text": "And I'm not the only one.",
+  "end": 165.34
+ },
+ {
+  "i": 51,
+  "start": 165.34,
+  "speechStart": 165.46,
+  "speechEnd": 168.74,
+  "text": "Behind them, on the rooftops, four shapes are watching.",
+  "end": 169.46
+ },
+ {
+  "i": 52,
+  "start": 169.46,
+  "speechStart": 169.58,
+  "speechEnd": 172.2,
+  "text": "We sent you the message after the lake, Kai says.",
+  "end": 172.66
+ },
+ {
+  "i": 53,
+  "start": 172.66,
+  "speechStart": 172.78,
+  "speechEnd": 176.5,
+  "text": "We saw what you did under the ice. In the gym. At the crossing.",
+  "end": 177.14
+ },
+ {
+  "i": 54,
+  "start": 177.14,
+  "speechStart": 177.26,
+  "speechEnd": 178.24,
+  "text": "There are more of us.",
+  "end": 178.88
+ },
+ {
+  "i": 55,
+  "start": 178.88,
+  "speechStart": 179.0,
+  "speechEnd": 182.54,
+  "text": "And something's coming that we can't handle on our own. Tomorrow.",
+  "end": 182.42
+ },
+ {
+  "i": 56,
+  "start": 182.42,
+  "speechStart": 182.54,
+  "speechEnd": 183.72,
+  "text": "Six a.m.",
+  "end": 184.24
+ },
+ {
+  "i": 57,
+  "start": 184.24,
+  "speechStart": 184.36,
+  "speechEnd": 185.82,
+  "text": "The old observatory on the hill.",
+  "end": 185.7
+ },
+ {
+  "i": 58,
+  "start": 185.7,
+  "speechStart": 185.82,
+  "speechEnd": 190.56,
+  "text": "Then Kai smiles. And stop thinking about penguins. It's distracting.",
+  "end": 191.8
+ },
+ {
+  "i": 59,
+  "start": 191.8,
+  "speechStart": 191.92,
+  "speechEnd": 196.08,
+  "text": "So if you could read one person's mind, whose would it be? Tell us in the comments.",
+  "end": 195.96
+ },
+ {
+  "i": 60,
+  "start": 195.96,
+  "speechStart": 196.08,
+  "speechEnd": 199.34,
+  "text": "And subscribe, because next time, you meet the others.",
+  "end": 199.86
+ },
+ {
+  "i": 61,
+  "start": 199.86,
+  "speechStart": 199.98,
+  "speechEnd": 201.9,
+  "text": "Starting with the one who can fly.",
+  "end": 203.5
+ }
+]
