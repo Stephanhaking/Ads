@@ -1,0 +1,903 @@
+{
+ "title": "What If You Could Turn Invisible?",
+ "duration": 220.58,
+ "shots": [
+  {
+   "id": "s001",
+   "start": 0.0,
+   "end": 1.1,
+   "line": "Monday morning.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s002",
+   "start": 1.1,
+   "end": 4.78,
+   "line": "You're brushing your teeth, half asleep, staring into the mirror.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s003",
+   "start": 4.78,
+   "end": 7.2,
+   "line": "And then the mirror is empty.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s004",
+   "start": 7.2,
+   "end": 11.66,
+   "line": "The toothbrush is still there, floating, moving up and down. Your T-shirt is there.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s005",
+   "start": 11.66,
+   "end": 15.06,
+   "line": "But you're not. You turned invisible.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s006",
+   "start": 15.06,
+   "end": 19.7,
+   "line": "And then, a second later, everything goes black. You can't see. Not the mirror.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s007",
+   "start": 19.7,
+   "end": 22.24,
+   "line": "Not the sink. Nothing.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s008",
+   "start": 22.24,
+   "end": 24.5,
+   "line": "Here's the catch nobody puts in the movies.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s009",
+   "start": 24.5,
+   "end": 26.62,
+   "line": "To see, your eyes have to catch light.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s010",
+   "start": 26.62,
+   "end": 30.08,
+   "line": "Light comes in, hits the back of your eye, and stops there.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s011",
+   "start": 30.08,
+   "end": 32.58,
+   "line": "That's what tells your brain something's out there.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s012",
+   "start": 32.58,
+   "end": 37.12,
+   "line": "But if you're invisible, light goes straight through you. Including your eyes.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s013",
+   "start": 37.12,
+   "end": 39.28,
+   "line": "Nothing stops. Nothing gets caught.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s014",
+   "start": 39.28,
+   "end": 42.94,
+   "line": "So a truly invisible person would be completely blind.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s015",
+   "start": 42.94,
+   "end": 47.9,
+   "line": "So what if you could turn invisible? Let's find out what would really happen.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s016",
+   "start": 47.9,
+   "end": 50.9,
+   "line": "So for this story, your power has one exception.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s017",
+   "start": 50.9,
+   "end": 54.74,
+   "line": "Your eyes stay visible. You can see again. You look in the mirror.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s018",
+   "start": 54.74,
+   "end": 59.56,
+   "line": "Two eyeballs float above an empty T-shirt, staring back at you.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s019",
+   "start": 59.56,
+   "end": 62.4,
+   "line": "Your mum opens the door. She screams. You scream.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s020",
+   "start": 62.4,
+   "end": 67.38,
+   "line": "The toothbrush falls in the sink. That's going to be a problem.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s021",
+   "start": 67.38,
+   "end": 70.54,
+   "line": "So why aren't we see-through already? A glass of water is.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s022",
+   "start": 70.54,
+   "end": 74.38,
+   "line": "Water is the same all the way through, so light passes straight across it.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s023",
+   "start": 74.38,
+   "end": 76.28,
+   "line": "But your body is a mix.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s024",
+   "start": 76.28,
+   "end": 80.34,
+   "line": "Water, fat and proteins all bend light by slightly different amounts.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s025",
+   "start": 80.34,
+   "end": 83.18,
+   "line": "Every time light crosses from one to the next, it bends a bit.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s026",
+   "start": 83.18,
+   "end": 88.24,
+   "line": "After millions of tiny bends, it's scattered everywhere. And you look solid.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s027",
+   "start": 88.24,
+   "end": 91.62,
+   "line": "Some animals have figured this out. Meet the glass frog.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s028",
+   "start": 91.62,
+   "end": 95.6,
+   "line": "Its skin and muscles are nearly see-through. The problem is blood.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s029",
+   "start": 95.6,
+   "end": 98.92,
+   "line": "Red blood is very easy to see. So when it sleeps,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s030",
+   "start": 98.92,
+   "end": 103.18,
+   "line": "the glass frog hides almost ninety percent of its red blood cells inside its liver.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s031",
+   "start": 103.18,
+   "end": 106.32,
+   "line": "That makes it two to three times more transparent.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s032",
+   "start": 106.32,
+   "end": 111.5,
+   "line": "Scientists still aren't sure how it does this without its blood clotting. And in 2024,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s033",
+   "start": 111.5,
+   "end": 115.02,
+   "line": "scientists at Stanford did something wild with food colouring.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s034",
+   "start": 115.02,
+   "end": 118.36,
+   "line": "They rubbed a yellow food dye on the skin of a living mouse.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s035",
+   "start": 118.36,
+   "end": 120.38,
+   "line": "And the skin turned see-through.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s036",
+   "start": 120.38,
+   "end": 122.36,
+   "line": "They could watch its insides working.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s037",
+   "start": 122.36,
+   "end": 125.02,
+   "line": "When they washed the dye off, the skin went back to normal.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s038",
+   "start": 125.02,
+   "end": 128.2,
+   "line": "Before you raid the kitchen, it hasn't been tested on people.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s039",
+   "start": 128.2,
+   "end": 131.6,
+   "line": "And human skin is much thicker.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s040",
+   "start": 131.6,
+   "end": 135.38,
+   "line": "In 2006, engineers built the first real invisibility cloak.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s041",
+   "start": 135.38,
+   "end": 137.56,
+   "line": "It was smaller than your hand,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s042",
+   "start": 137.56,
+   "end": 141.84,
+   "line": "made of rings of special material that bent waves around a copper cylinder,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s043",
+   "start": 141.84,
+   "end": 144.44,
+   "line": "like water around a rock. It worked.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s044",
+   "start": 144.44,
+   "end": 146.5,
+   "line": "But only for microwaves.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s045",
+   "start": 146.5,
+   "end": 151.4,
+   "line": "To your eyes, it was a very obvious pile of circuit boards.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s046",
+   "start": 151.4,
+   "end": 155.26,
+   "line": "So you learn to wear sunglasses. And you learn the rules.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s047",
+   "start": 155.26,
+   "end": 160.38,
+   "line": "Invisible isn't the same as undetectable. You still give off heat. About as much as an old light bulb.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s048",
+   "start": 160.38,
+   "end": 163.62,
+   "line": "A thermal camera would see you glowing like a lamp, even in total darkness.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s049",
+   "start": 163.62,
+   "end": 166.18,
+   "line": "You still smell like you.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s050",
+   "start": 166.18,
+   "end": 169.94,
+   "line": "A dog can have up to three hundred million smell sensors in its nose.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s051",
+   "start": 169.94,
+   "end": 171.84,
+   "line": "You have about six million.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s052",
+   "start": 171.84,
+   "end": 177.48,
+   "line": "And if it rains, every drop that hits you draws your outline in the air.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s053",
+   "start": 177.48,
+   "end": 180.14,
+   "line": "Then, on Friday night, you see them again.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s054",
+   "start": 180.14,
+   "end": 183.56,
+   "line": "The stranger from the frozen street. The one who waved.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s055",
+   "start": 183.56,
+   "end": 187.84,
+   "line": "You turn invisible, put on your sunglasses, and follow them through the night market.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s056",
+   "start": 187.84,
+   "end": 189.58,
+   "line": "They stop at the noodle stall.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s057",
+   "start": 189.58,
+   "end": 194.44,
+   "line": "They turn into a dark alley. You follow. Their dog stops. Sniffs.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s058",
+   "start": 194.44,
+   "end": 196.7,
+   "line": "Looks straight at you.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s059",
+   "start": 196.7,
+   "end": 200.56,
+   "line": "The stranger takes out something like a camera and points it your way.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s060",
+   "start": 200.56,
+   "end": 206.26,
+   "line": "On the screen, you're glowing. Bright orange. Like a lamp. They smile.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s061",
+   "start": 206.26,
+   "end": 207.72,
+   "line": "Nice sunglasses.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s062",
+   "start": 207.72,
+   "end": 210.22,
+   "line": "We've been watching you since the lake.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s063",
+   "start": 210.22,
+   "end": 214.56,
+   "line": "So if you could turn invisible, where's the first place you'd go? Tell us in the comments.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s064",
+   "start": 214.56,
+   "end": 220.58,
+   "line": "And subscribe, because next time, you find out who they are.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  }
+ ],
+ "music": []
+}

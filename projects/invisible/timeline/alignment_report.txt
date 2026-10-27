@@ -1,0 +1,13 @@
+00:10.42  replace  script: T-shirt  |  heard: T -shirt
+00:57.38  replace  script: T-shirt,  |  heard: t -shirt
+00:59.82  replace  script: mum  |  heard: mom
+01:05.20  replace  script: going to  |  heard: gonna
+01:08.42  replace  script: see-through  |  heard: see -through
+01:11.16  replace  script: Water is  |  heard: Water's
+01:23.04  insert   script: —  |  heard: it.
+01:33.26  replace  script: see-through.  |  heard: see -through.
+01:40.14  replace  script: ninety percent  |  heard: 90 %
+01:54.32  replace  script: colouring.  |  heard: coloring.
+01:59.32  replace  script: see-through.  |  heard: see -through.
+02:47.28  replace  script: three hundred  |  heard: 300
+03:15.14  replace  script: Looks  |  heard: Look

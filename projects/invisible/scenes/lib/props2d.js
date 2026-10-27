@@ -317,11 +317,13 @@ export function cloak(x, y, r, t = 0, o = {}) {
   return g;
 }
 // thermal camera with a screen showing a glowing figure (centre x, y; width w)
+let TID = 0;
 export function thermalCam(x, y, w, glow = 1) {
+  const id = 'thg' + ++TID;
   const h = w * 0.7; let g = rr(x - w / 2, y - h / 2, w, h, w * 0.06, '#22242a', `stroke="${OUT}" stroke-width="5"`);
-  g += `<defs><radialGradient id="thg"><stop offset="0" stop-color="#ffffff"/><stop offset="0.35" stop-color="#ffd25a"/><stop offset="0.7" stop-color="#ff7a2a"/><stop offset="1" stop-color="#7a1fa8"/></radialGradient></defs>`;
+  g += `<defs><radialGradient id="${id}"><stop offset="0" stop-color="#ffffff"/><stop offset="0.35" stop-color="#ffd25a"/><stop offset="0.7" stop-color="#ff7a2a"/><stop offset="1" stop-color="#7a1fa8"/></radialGradient></defs>`;
   g += rr(x - w * 0.42, y - h * 0.38, w * 0.84, h * 0.76, 8, '#1a0a3a');
-  if (glow > 0) g += `<g opacity="${f(glow)}"><ellipse cx="${f(x)}" cy="${f(y - h * 0.16)}" rx="${f(w * 0.08)}" ry="${f(w * 0.09)}" fill="url(#thg)"/><rect x="${f(x - w * 0.1)}" y="${f(y - h * 0.06)}" width="${f(w * 0.2)}" height="${f(h * 0.4)}" rx="${f(w * 0.05)}" fill="url(#thg)"/></g>`;
+  if (glow > 0) g += `<g opacity="${f(glow)}"><ellipse cx="${f(x)}" cy="${f(y - h * 0.16)}" rx="${f(w * 0.08)}" ry="${f(w * 0.09)}" fill="url(#${id})"/><rect x="${f(x - w * 0.1)}" y="${f(y - h * 0.06)}" width="${f(w * 0.2)}" height="${f(h * 0.4)}" rx="${f(w * 0.05)}" fill="url(#${id})"/></g>`;
   g += `<text x="${f(x - w * 0.38)}" y="${f(y - h * 0.26)}" font-family="IBM Plex Mono" font-size="${f(w * 0.05)}" fill="#ffd25a">37°C</text>`;
   return g;
 }

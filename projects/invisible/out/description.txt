@@ -1,0 +1,30 @@
+What If You Could Turn Invisible?
+
+You look in the mirror and you're gone. Then everything goes black. This story follows what invisibility would really be like: why a truly invisible person would be blind, why we aren't see-through already, the frog that hides its own blood, a food dye that made mouse skin transparent, the first real invisibility cloak, and why invisible is not the same as undetectable.
+
+The story (and her visible eyes) is fiction. The science is real (sources below).
+
+CHAPTERS
+0:00 Monday morning
+0:22 Why you'd be blind
+0:48 The eyes
+1:07 Why we're not see-through
+1:28 The glass frog
+1:52 The yellow dye
+2:12 The first invisibility cloak
+2:31 The rules
+2:57 The follow
+3:30 Your turn
+
+THE SCIENCE AND WHERE IT COMES FROM
+- To see, the retina must absorb light; a perfectly invisible eye absorbs none, so a fully invisible person would be blind (standard optics; the argument goes back to H. G. Wells' The Invisible Man, 1897)
+- We look solid because light scatters: water (refractive index ≈ 1.33), fats (≈ 1.46) and proteins (≈ 1.50) bend light by different amounts (Physics World; optics literature)
+- Glass frogs: while resting they pack about 89 % of their red blood cells into the liver and become 2–3 times more transparent; how they avoid clotting is still unknown (Science, Dec 2022, Duke / AMNH; via Live Science, Discover)
+- Tartrazine (FD&C Yellow 5) made the skin of living mice temporarily transparent; washing reversed it; not tested on humans, whose skin is much thicker (Science, Sept 2024, Stanford; via Stanford Engineering, Scientific American)
+- First working invisibility cloak: Duke University with Imperial College London, Oct 2006 — a metamaterial cloak under 13 cm across that hid a copper cylinder from microwaves only (Science 314; Duke Today)
+- A resting body gives off roughly 100 W of heat, and thermal cameras see people in total darkness
+- Dogs have up to about 300 million smell receptors (breed-dependent) vs about 5–6 million in humans (Wikipedia, "Dog sense of smell"; receptor count isn't the same as "times better")
+
+These figures come from secondary sources and search summaries; not every original paper was read. If you spot an error, tell us in the comments.
+
+Where's the first place you'd go if you could turn invisible? Subscribe: next time, you find out who they are.

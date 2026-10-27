@@ -10,6 +10,9 @@ registerSet('market', async (W) => {
   for (let i = 0; i < 60; i++) { const x = -15 + i * 0.5; W.add(K.sphere(0.06, K.glowMat(['#ffd29a', '#ff9a7a', '#fff2c8'][i % 3], 2.6), [x, 4.0 - 0.35 * Math.abs(Math.sin(i * 0.3)), 0])); }
   for (let i = 0; i < 5; i++) { const l = new THREE.PointLight('#ffcf8a', 22, 9, 1.6); l.position.set(-12 + i * 6, 3.6, -1.5); W.add(l); }
   // the alley: a narrow dark gap at x = 6 on the far side, with a single cold lamp
-  W.add(K.box(2.2, 0.02, 10, K.mat('#24211f'), [7.1, 0.01, 12])); const al = new THREE.PointLight('#9fbfff', 6, 6, 1.6); al.position.set(7, 3, 13); W.add(al);
+  W.add(K.box(2.2, 0.02, 10, K.mat('#24211f'), [7.1, 0.01, 12]));
+  for (const x of [5.4, 8.8]) W.add(K.box(1.2, 7, 12, K.mat(x < 7 ? '#4a3a3a' : '#3a3a4a', { rough: 1 }), [x, 3.5, 15]));
+  W.add(K.box(4, 7, 0.4, K.mat('#2f2a2a', { rough: 1 }), [7.1, 3.5, 21]));
+  for (let i = 0; i < 4; i++) W.add(K.box(0.6, 0.8, 0.6, K.mat('#5a4a3a', { rough: 0.9 }), [6.2 + (i % 2) * 1.7, 0.4, 14 + i * 1.6])); const al = new THREE.PointLight('#9fbfff', 16, 10, 1.4); al.position.set(7, 3, 13); W.add(al);
   return {};
 });

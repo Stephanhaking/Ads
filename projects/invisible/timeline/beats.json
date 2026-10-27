@@ -1,0 +1,514 @@
+[
+ {
+  "i": 0,
+  "start": 0.0,
+  "speechStart": 0.0,
+  "speechEnd": 0.86,
+  "text": "Monday morning.",
+  "end": 1.1
+ },
+ {
+  "i": 1,
+  "start": 1.1,
+  "speechStart": 1.22,
+  "speechEnd": 4.36,
+  "text": "You're brushing your teeth, half asleep, staring into the mirror.",
+  "end": 4.78
+ },
+ {
+  "i": 2,
+  "start": 4.78,
+  "speechStart": 4.9,
+  "speechEnd": 6.64,
+  "text": "And then the mirror is empty.",
+  "end": 7.2
+ },
+ {
+  "i": 3,
+  "start": 7.2,
+  "speechStart": 7.32,
+  "speechEnd": 11.4,
+  "text": "The toothbrush is still there, floating, moving up and down. Your T-shirt is there.",
+  "end": 11.66
+ },
+ {
+  "i": 4,
+  "start": 11.66,
+  "speechStart": 11.78,
+  "speechEnd": 14.58,
+  "text": "But you're not. You turned invisible.",
+  "end": 15.06
+ },
+ {
+  "i": 5,
+  "start": 15.06,
+  "speechStart": 15.18,
+  "speechEnd": 19.4,
+  "text": "And then, a second later, everything goes black. You can't see. Not the mirror.",
+  "end": 19.7
+ },
+ {
+  "i": 6,
+  "start": 19.7,
+  "speechStart": 19.82,
+  "speechEnd": 20.96,
+  "text": "Not the sink. Nothing.",
+  "end": 22.24
+ },
+ {
+  "i": 7,
+  "start": 22.24,
+  "speechStart": 22.36,
+  "speechEnd": 24.0,
+  "text": "Here's the catch nobody puts in the movies.",
+  "end": 24.5
+ },
+ {
+  "i": 8,
+  "start": 24.5,
+  "speechStart": 24.62,
+  "speechEnd": 26.74,
+  "text": "To see, your eyes have to catch light.",
+  "end": 26.62
+ },
+ {
+  "i": 9,
+  "start": 26.62,
+  "speechStart": 26.74,
+  "speechEnd": 29.72,
+  "text": "Light comes in, hits the back of your eye, and stops there.",
+  "end": 30.08
+ },
+ {
+  "i": 10,
+  "start": 30.08,
+  "speechStart": 30.2,
+  "speechEnd": 32.18,
+  "text": "That's what tells your brain something's out there.",
+  "end": 32.58
+ },
+ {
+  "i": 11,
+  "start": 32.58,
+  "speechStart": 32.7,
+  "speechEnd": 36.7,
+  "text": "But if you're invisible, light goes straight through you. Including your eyes.",
+  "end": 37.12
+ },
+ {
+  "i": 12,
+  "start": 37.12,
+  "speechStart": 37.24,
+  "speechEnd": 38.9,
+  "text": "Nothing stops. Nothing gets caught.",
+  "end": 39.28
+ },
+ {
+  "i": 13,
+  "start": 39.28,
+  "speechStart": 39.4,
+  "speechEnd": 42.38,
+  "text": "So a truly invisible person would be completely blind.",
+  "end": 42.94
+ },
+ {
+  "i": 14,
+  "start": 42.94,
+  "speechStart": 43.06,
+  "speechEnd": 46.92,
+  "text": "So what if you could turn invisible? Let's find out what would really happen.",
+  "end": 47.9
+ },
+ {
+  "i": 15,
+  "start": 47.9,
+  "speechStart": 48.02,
+  "speechEnd": 50.54,
+  "text": "So for this story, your power has one exception.",
+  "end": 50.9
+ },
+ {
+  "i": 16,
+  "start": 50.9,
+  "speechStart": 51.02,
+  "speechEnd": 54.86,
+  "text": "Your eyes stay visible. You can see again. You look in the mirror.",
+  "end": 54.74
+ },
+ {
+  "i": 17,
+  "start": 54.74,
+  "speechStart": 54.86,
+  "speechEnd": 59.22,
+  "text": "Two eyeballs float above an empty T-shirt, staring back at you.",
+  "end": 59.56
+ },
+ {
+  "i": 18,
+  "start": 59.56,
+  "speechStart": 59.68,
+  "speechEnd": 62.14,
+  "text": "Your mum opens the door. She screams. You scream.",
+  "end": 62.4
+ },
+ {
+  "i": 19,
+  "start": 62.4,
+  "speechStart": 62.52,
+  "speechEnd": 65.96,
+  "text": "The toothbrush falls in the sink. That's going to be a problem.",
+  "end": 67.38
+ },
+ {
+  "i": 20,
+  "start": 67.38,
+  "speechStart": 67.5,
+  "speechEnd": 70.66,
+  "text": "So why aren't we see-through already? A glass of water is.",
+  "end": 70.54
+ },
+ {
+  "i": 21,
+  "start": 70.54,
+  "speechStart": 70.66,
+  "speechEnd": 74.2,
+  "text": "Water is the same all the way through, so light passes straight across it.",
+  "end": 74.38
+ },
+ {
+  "i": 22,
+  "start": 74.38,
+  "speechStart": 74.5,
+  "speechEnd": 75.9,
+  "text": "But your body is a mix.",
+  "end": 76.28
+ },
+ {
+  "i": 23,
+  "start": 76.28,
+  "speechStart": 76.4,
+  "speechEnd": 79.9,
+  "text": "Water, fat and proteins all bend light by slightly different amounts.",
+  "end": 80.34
+ },
+ {
+  "i": 24,
+  "start": 80.34,
+  "speechStart": 80.46,
+  "speechEnd": 83.04,
+  "text": "Every time light crosses from one to the next, it bends a bit.",
+  "end": 83.18
+ },
+ {
+  "i": 25,
+  "start": 83.18,
+  "speechStart": 83.3,
+  "speechEnd": 87.02,
+  "text": "After millions of tiny bends, it's scattered everywhere. And you look solid.",
+  "end": 88.24
+ },
+ {
+  "i": 26,
+  "start": 88.24,
+  "speechStart": 88.36,
+  "speechEnd": 91.3,
+  "text": "Some animals have figured this out. Meet the glass frog.",
+  "end": 91.62
+ },
+ {
+  "i": 27,
+  "start": 91.62,
+  "speechStart": 91.74,
+  "speechEnd": 95.34,
+  "text": "Its skin and muscles are nearly see-through. The problem is blood.",
+  "end": 95.6
+ },
+ {
+  "i": 28,
+  "start": 95.6,
+  "speechStart": 95.72,
+  "speechEnd": 98.74,
+  "text": "Red blood is very easy to see. So when it sleeps,",
+  "end": 98.92
+ },
+ {
+  "i": 29,
+  "start": 98.92,
+  "speechStart": 99.04,
+  "speechEnd": 102.92,
+  "text": "the glass frog hides almost ninety percent of its red blood cells inside its liver.",
+  "end": 103.18
+ },
+ {
+  "i": 30,
+  "start": 103.18,
+  "speechStart": 103.3,
+  "speechEnd": 105.84,
+  "text": "That makes it two to three times more transparent.",
+  "end": 106.32
+ },
+ {
+  "i": 31,
+  "start": 106.32,
+  "speechStart": 106.44,
+  "speechEnd": 111.4,
+  "text": "Scientists still aren't sure how it does this without its blood clotting. And in 2024,",
+  "end": 111.5
+ },
+ {
+  "i": 32,
+  "start": 111.5,
+  "speechStart": 111.62,
+  "speechEnd": 115.14,
+  "text": "scientists at Stanford did something wild with food colouring.",
+  "end": 115.02
+ },
+ {
+  "i": 33,
+  "start": 115.02,
+  "speechStart": 115.14,
+  "speechEnd": 118.02,
+  "text": "They rubbed a yellow food dye on the skin of a living mouse.",
+  "end": 118.36
+ },
+ {
+  "i": 34,
+  "start": 118.36,
+  "speechStart": 118.48,
+  "speechEnd": 120.5,
+  "text": "And the skin turned see-through.",
+  "end": 120.38
+ },
+ {
+  "i": 35,
+  "start": 120.38,
+  "speechStart": 120.5,
+  "speechEnd": 121.96,
+  "text": "They could watch its insides working.",
+  "end": 122.36
+ },
+ {
+  "i": 36,
+  "start": 122.36,
+  "speechStart": 122.48,
+  "speechEnd": 124.48,
+  "text": "When they washed the dye off, the skin went back to normal.",
+  "end": 125.02
+ },
+ {
+  "i": 37,
+  "start": 125.02,
+  "speechStart": 125.14,
+  "speechEnd": 127.74,
+  "text": "Before you raid the kitchen, it hasn't been tested on people.",
+  "end": 128.2
+ },
+ {
+  "i": 38,
+  "start": 128.2,
+  "speechStart": 128.32,
+  "speechEnd": 130.06,
+  "text": "And human skin is much thicker.",
+  "end": 131.6
+ },
+ {
+  "i": 39,
+  "start": 131.6,
+  "speechStart": 131.72,
+  "speechEnd": 135.5,
+  "text": "In 2006, engineers built the first real invisibility cloak.",
+  "end": 135.38
+ },
+ {
+  "i": 40,
+  "start": 135.38,
+  "speechStart": 135.5,
+  "speechEnd": 137.36,
+  "text": "It was smaller than your hand,",
+  "end": 137.56
+ },
+ {
+  "i": 41,
+  "start": 137.56,
+  "speechStart": 137.68,
+  "speechEnd": 141.56,
+  "text": "made of rings of special material that bent waves around a copper cylinder,",
+  "end": 141.84
+ },
+ {
+  "i": 42,
+  "start": 141.84,
+  "speechStart": 141.96,
+  "speechEnd": 144.18,
+  "text": "like water around a rock. It worked.",
+  "end": 144.44
+ },
+ {
+  "i": 43,
+  "start": 144.44,
+  "speechStart": 144.56,
+  "speechEnd": 146.22,
+  "text": "But only for microwaves.",
+  "end": 146.5
+ },
+ {
+  "i": 44,
+  "start": 146.5,
+  "speechStart": 146.62,
+  "speechEnd": 149.74,
+  "text": "To your eyes, it was a very obvious pile of circuit boards.",
+  "end": 151.4
+ },
+ {
+  "i": 45,
+  "start": 151.4,
+  "speechStart": 151.52,
+  "speechEnd": 154.38,
+  "text": "So you learn to wear sunglasses. And you learn the rules.",
+  "end": 155.26
+ },
+ {
+  "i": 46,
+  "start": 155.26,
+  "speechStart": 155.38,
+  "speechEnd": 159.98,
+  "text": "Invisible isn't the same as undetectable. You still give off heat. About as much as an old light bulb.",
+  "end": 160.38
+ },
+ {
+  "i": 47,
+  "start": 160.38,
+  "speechStart": 160.5,
+  "speechEnd": 163.74,
+  "text": "A thermal camera would see you glowing like a lamp, even in total darkness.",
+  "end": 163.62
+ },
+ {
+  "i": 48,
+  "start": 163.62,
+  "speechStart": 163.74,
+  "speechEnd": 165.92,
+  "text": "You still smell like you.",
+  "end": 166.18
+ },
+ {
+  "i": 49,
+  "start": 166.18,
+  "speechStart": 166.3,
+  "speechEnd": 169.62,
+  "text": "A dog can have up to three hundred million smell sensors in its nose.",
+  "end": 169.94
+ },
+ {
+  "i": 50,
+  "start": 169.94,
+  "speechStart": 170.06,
+  "speechEnd": 171.36,
+  "text": "You have about six million.",
+  "end": 171.84
+ },
+ {
+  "i": 51,
+  "start": 171.84,
+  "speechStart": 171.96,
+  "speechEnd": 176.22,
+  "text": "And if it rains, every drop that hits you draws your outline in the air.",
+  "end": 177.48
+ },
+ {
+  "i": 52,
+  "start": 177.48,
+  "speechStart": 177.6,
+  "speechEnd": 179.88,
+  "text": "Then, on Friday night, you see them again.",
+  "end": 180.14
+ },
+ {
+  "i": 53,
+  "start": 180.14,
+  "speechStart": 180.26,
+  "speechEnd": 183.26,
+  "text": "The stranger from the frozen street. The one who waved.",
+  "end": 183.56
+ },
+ {
+  "i": 54,
+  "start": 183.56,
+  "speechStart": 183.68,
+  "speechEnd": 187.44,
+  "text": "You turn invisible, put on your sunglasses, and follow them through the night market.",
+  "end": 187.84
+ },
+ {
+  "i": 55,
+  "start": 187.84,
+  "speechStart": 187.96,
+  "speechEnd": 189.16,
+  "text": "They stop at the noodle stall.",
+  "end": 189.58
+ },
+ {
+  "i": 56,
+  "start": 189.58,
+  "speechStart": 189.7,
+  "speechEnd": 194.56,
+  "text": "They turn into a dark alley. You follow. Their dog stops. Sniffs.",
+  "end": 194.44
+ },
+ {
+  "i": 57,
+  "start": 194.44,
+  "speechStart": 194.56,
+  "speechEnd": 196.3,
+  "text": "Looks straight at you.",
+  "end": 196.7
+ },
+ {
+  "i": 58,
+  "start": 196.7,
+  "speechStart": 196.82,
+  "speechEnd": 200.12,
+  "text": "The stranger takes out something like a camera and points it your way.",
+  "end": 200.56
+ },
+ {
+  "i": 59,
+  "start": 200.56,
+  "speechStart": 200.68,
+  "speechEnd": 205.52,
+  "text": "On the screen, you're glowing. Bright orange. Like a lamp. They smile.",
+  "end": 206.26
+ },
+ {
+  "i": 60,
+  "start": 206.26,
+  "speechStart": 206.38,
+  "speechEnd": 206.96,
+  "text": "Nice sunglasses.",
+  "end": 207.72
+ },
+ {
+  "i": 61,
+  "start": 207.72,
+  "speechStart": 207.84,
+  "speechEnd": 209.26,
+  "text": "We've been watching you since the lake.",
+  "end": 210.22
+ },
+ {
+  "i": 62,
+  "start": 210.22,
+  "speechStart": 210.34,
+  "speechEnd": 214.68,
+  "text": "So if you could turn invisible, where's the first place you'd go? Tell us in the comments.",
+  "end": 214.56
+ },
+ {
+  "i": 63,
+  "start": 214.56,
+  "speechStart": 214.68,
+  "speechEnd": 218.98,
+  "text": "And subscribe, because next time, you find out who they are.",
+  "end": 220.58
+ }
+]
