@@ -1,0 +1,76 @@
+## Cold open
+[a new bathroom, morning; mirror; the hero (red T-shirt) brushing her teeth]
+Monday morning. You're brushing your teeth, half asleep, staring into the mirror.
+And then the mirror is empty.
+The toothbrush is still there, floating, moving up and down. Your T-shirt is there. But you're not.
+You turned invisible.
+And then, a second later, everything goes black.
+You can't see. Not the mirror. Not the sink. Nothing.
+
+## Why you're blind
+[dark; diagram of an eye with light passing straight through]
+Here's the catch nobody puts in the movies. To see, your eyes have to catch light.
+Light comes in, hits the back of your eye, and stops there. That's what tells your brain something's out there.
+But if you're invisible, light goes straight through you. Including your eyes.
+Nothing stops. Nothing gets caught. So a truly invisible person would be completely blind.
+So what if you could turn invisible? Let's find out what would really happen.
+
+## The eyes
+[the bathroom again; two eyeballs floating above the T-shirt]
+So for this story, your power has one exception. Your eyes stay visible.
+You can see again. You look in the mirror.
+Two eyeballs float above an empty T-shirt, staring back at you.
+Your mum opens the door. She screams. You scream. The toothbrush falls in the sink.
+That's going to be a problem.
+
+## Why we're not see-through
+[a glass of water next to a hand; light rays]
+So why aren't we see-through already? A glass of water is.
+Water is the same all the way through, so light passes straight across it.
+But your body is a mix. Water, fat and proteins all bend light by slightly different amounts.
+Every time light crosses from one to the next, it bends a bit. After millions of tiny bends, it's scattered everywhere. And you look solid.
+
+## Nature's trick
+[a rainforest at night; a glass frog asleep on a leaf]
+Some animals have figured this out. Meet the glass frog.
+Its skin and muscles are nearly see-through. The problem is blood. Red blood is very easy to see.
+So when it sleeps, the glass frog hides almost ninety percent of its red blood cells inside its liver.
+That makes it two to three times more transparent. Scientists still aren't sure how it does this without its blood clotting.
+
+## The yellow dye
+[a bright lab; a mouse; a bottle of yellow dye]
+And in 2024, scientists at Stanford did something wild with food colouring.
+They rubbed a yellow food dye on the skin of a living mouse. And the skin turned see-through. They could watch its insides working.
+When they washed the dye off, the skin went back to normal.
+Before you raid the kitchen, it hasn't been tested on people. And human skin is much thicker.
+
+## The cloak
+[a microwave lab; a small copper cylinder inside rings of circuit boards]
+In 2006, engineers built the first real invisibility cloak.
+It was smaller than your hand, made of rings of special material that bent waves around a copper cylinder, like water around a rock.
+It worked. But only for microwaves. To your eyes, it was a very obvious pile of circuit boards.
+
+## The problems
+[school corridor; the floating eyes in sunglasses]
+So you learn to wear sunglasses. And you learn the rules.
+Invisible isn't the same as undetectable.
+You still give off heat. About as much as an old light bulb. A thermal camera would see you glowing like a lamp, even in total darkness.
+You still smell like you. A dog can have up to three hundred million smell sensors in its nose. You have about six million.
+And if it rains, every drop that hits you draws your outline in the air.
+
+## The follow
+[a night market, string lights; the stranger in the dark hoodie]
+Then, on Friday night, you see them again. The stranger from the frozen street.
+The one who waved.
+You turn invisible, put on your sunglasses, and follow them through the night market.
+They stop at the noodle stall. They turn into a dark alley. You follow.
+Their dog stops. Sniffs. Looks straight at you.
+The stranger takes out something like a camera and points it your way.
+On the screen, you're glowing. Bright orange. Like a lamp.
+They smile. Nice sunglasses.
+We've been watching you since the lake.
+
+## Ending
+[the stranger walks away; the hero alone in the alley]
+So if you could turn invisible, where's the first place you'd go? Tell us in the comments.
+And subscribe, because next time, you find out who they are.
