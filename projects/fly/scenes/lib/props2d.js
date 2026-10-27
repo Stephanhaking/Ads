@@ -337,3 +337,23 @@ export function dog(x, y, L, o = {}) {
   if (o.sniff) for (let i = 0; i < 3; i++) g += `<path d="M ${f(x + L * 0.68 + i * 12)} ${f(y - h * 0.8)} q 8 -10 0 -20" fill="none" stroke="#fff" stroke-width="3" opacity="0.7"/>`;
   return g;
 }
+
+// ---- fly props
+// pedal-powered aircraft, side-ish view (centre x, y; span w): very long thin wing, a small pod, pusher propeller
+export function pedalPlane(x, y, w, t = 0) {
+  let g = `<path d="M ${f(x - w / 2)} ${f(y)} Q ${f(x)} ${f(y - w * 0.03)} ${f(x + w / 2)} ${f(y)} L ${f(x + w / 2)} ${f(y + w * 0.012)} Q ${f(x)} ${f(y - w * 0.015)} ${f(x - w / 2)} ${f(y + w * 0.012)} Z" fill="#e8f2f8" stroke="${OUT}" stroke-width="3"/>`;
+  for (let i = -6; i <= 6; i++) g += `<line x1="${f(x + i * w * 0.07)}" y1="${f(y - w * 0.012)}" x2="${f(x + i * w * 0.07)}" y2="${f(y + w * 0.008)}" stroke="#9fb0bd" stroke-width="2"/>`;
+  g += `<line x1="${f(x)}" y1="${f(y)}" x2="${f(x)}" y2="${f(y + w * 0.12)}" stroke="${OUT}" stroke-width="3"/><ellipse cx="${f(x)}" cy="${f(y + w * 0.14)}" rx="${f(w * 0.035)}" ry="${f(w * 0.045)}" fill="#cfe6ef" fill-opacity="0.7" stroke="${OUT}" stroke-width="3"/>`;
+  g += `<circle cx="${f(x)}" cy="${f(y + w * 0.135)}" r="${f(w * 0.012)}" fill="#111"/>`;
+  const pa = (t * 20) % (Math.PI * 2); g += `<line x1="${f(x - w * 0.05 * Math.cos(pa))}" y1="${f(y + w * 0.14 - w * 0.05 * Math.sin(pa))}" x2="${f(x + w * 0.05 * Math.cos(pa))}" y2="${f(y + w * 0.14 + w * 0.05 * Math.sin(pa))}" stroke="#e2553f" stroke-width="4" opacity="0.8"/>`;
+  g += `<line x1="${f(x)}" y1="${f(y + w * 0.04)}" x2="${f(x + w * 0.22)}" y2="${f(y + w * 0.06)}" stroke="${OUT}" stroke-width="2"/><path d="M ${f(x + w * 0.2)} ${f(y + w * 0.02)} L ${f(x + w * 0.26)} ${f(y + w * 0.02)} L ${f(x + w * 0.26)} ${f(y + w * 0.08)} Z" fill="#e8f2f8" stroke="${OUT}" stroke-width="2"/>`;
+  return g;
+}
+// wingsuit flyer seen from above-behind (centre x, y; span w)
+export function wingsuit(x, y, w, col = '#e2553f', a = 0) {
+  return `<g transform="rotate(${f(a)} ${f(x)} ${f(y)})"><path d="M ${f(x)} ${f(y - w * 0.35)} L ${f(x + w * 0.5)} ${f(y + w * 0.05)} L ${f(x + w * 0.12)} ${f(y + w * 0.1)} L ${f(x + w * 0.1)} ${f(y + w * 0.45)} L ${f(x)} ${f(y + w * 0.3)} L ${f(x - w * 0.1)} ${f(y + w * 0.45)} L ${f(x - w * 0.12)} ${f(y + w * 0.1)} L ${f(x - w * 0.5)} ${f(y + w * 0.05)} Z" fill="${col}" stroke="${OUT}" stroke-width="4" stroke-linejoin="round"/><circle cx="${f(x)}" cy="${f(y - w * 0.32)}" r="${f(w * 0.07)}" fill="#1b1410"/><path d="M ${f(x - w * 0.45)} ${f(y + w * 0.06)} L ${f(x + w * 0.45)} ${f(y + w * 0.06)}" stroke="#ffd29a" stroke-width="3" opacity="0.6"/></g>`;
+}
+// jet flames from a point, pointing down-back
+export function jetFlame(x, y, L, t = 0, a = 160) { const k = 0.85 + 0.15 * Math.sin(t * 40 + x); return `<g transform="rotate(${f(a)} ${f(x)} ${f(y)})"><path d="M ${f(x - L * 0.12)} ${f(y)} Q ${f(x)} ${f(y + L * k)} ${f(x + L * 0.12)} ${f(y)} Z" fill="#ffb24a" opacity="0.9"/><path d="M ${f(x - L * 0.06)} ${f(y)} Q ${f(x)} ${f(y + L * 0.6 * k)} ${f(x + L * 0.06)} ${f(y)} Z" fill="#fff4c8"/></g>`; }
+// big telescope (pivot x, y; length L; angle in degrees from horizontal)
+export function telescope(x, y, L, a = 35) { return `<g transform="rotate(${f(-a)} ${f(x)} ${f(y)})">${rr(x - L * 0.2, y - L * 0.08, L, L * 0.16, L * 0.05, '#e9e4da', `stroke="${OUT}" stroke-width="5"`)}${rr(x + L * 0.75, y - L * 0.1, L * 0.08, L * 0.2, 6, '#2f3e52', `stroke="${OUT}" stroke-width="4"`)}</g>` + `<path d="M ${f(x - L * 0.15)} ${f(y + L * 0.7)} L ${f(x)} ${f(y)} L ${f(x + L * 0.15)} ${f(y + L * 0.7)}" fill="none" stroke="${OUT}" stroke-width="${f(L * 0.03)}"/>`; }
