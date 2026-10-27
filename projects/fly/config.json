@@ -1,0 +1,38 @@
+{
+ "title": "What If You Could Fly?",
+ "format": "long",
+ "aspect": "16:9",
+ "resolution": "1080p",
+ "fps": 30,
+ "look": "clay",
+ "quality": "standard",
+ "voiceover": "audio/voiceover.wav",
+ "captions": false,
+ "fadeIn": 0.4,
+ "fadeOut": 1.0,
+ "ui": {
+  "badge": null,
+  "look2d": "clay",
+  "karaoke": false
+ },
+ "music": {
+  "enabled": true,
+  "source": "score",
+  "gainDb": -19,
+  "lufs": -20,
+  "soundfont": null,
+  "seed": 1
+ },
+ "sfx": {
+  "enabled": true,
+  "gainDb": -8
+ },
+ "loudness": -14,
+ "voice": {
+  "engine": "gemini",
+  "voice": "Puck",
+  "style": "story",
+  "pauses": "documentary"
+ },
+ "duration": 202.604
+}

@@ -1,0 +1,54 @@
+## Cold open
+[the old observatory on a hill at dawn; mist below; the hero arrives out of breath; Kai leaning on the railing]
+Six a.m. The old observatory on the hill. You're out of breath, you're freezing, and Kai is already there, eating a sandwich.
+You're late, Kai says. She's been waiting.
+Who's been waiting?
+Something drops out of the clouds and lands next to you. Hard enough to crack the paving stones.
+A girl in a white jacket. She stands up, brushes off her knees, and grins.
+I'm Nia. Want to go up?
+So what if you could fly? Not in a plane. Just you.
+
+## Why we can't
+[a blueprint-style comparison: a human with giant bat wings next to a bird]
+First, the bad news. You're built for walking, not flying.
+If you wanted to flap like a bird, scientists estimate you'd need wings about six metres across.
+And chest muscles about twice the size of a professional bodybuilder's, anchored to a big keel bone you don't have.
+Birds put a huge chunk of their muscle into flying. You put yours into your legs.
+So Nia's power isn't wings. It's just, up.
+
+## Up
+[sunrise above the clouds; Nia holding the hero's hand; the observatory shrinking below]
+She grabs your hand. Your stomach stays on the ground. The rest of you doesn't.
+One hundred metres. The town looks like a map.
+One kilometre. Your fingers go numb. Nia laughs at your face.
+Here's something nobody tells you. The higher you go, the colder it gets. About six and a half degrees colder for every kilometre.
+Three kilometres up, it's about twenty degrees colder than on the ground. Your breath comes out as fog.
+Nia doesn't care. She's wearing a jacket. You're wearing a hoodie.
+
+## People who tried
+[a calm sea; a huge, light aircraft with a pedalling pilot]
+Humans have always wanted this. And some of them got surprisingly close.
+In 1979, a cyclist named Bryan Allen pedalled a plane across the English Channel. Thirty-five kilometres. Under his own power.
+The plane had wings almost twenty-nine metres wide, and it weighed about as much as a big dog.
+Nine years later, a Greek Olympic cyclist pedalled a plane from Crete to Santorini. A hundred and fifteen kilometres, in just under four hours.
+A gust of wind snapped its tail, and it fell into the sea about seven metres from the beach. It's still the record.
+
+## Faster
+[a mountain cliff; a wingsuit flyer; then a beach and a man in a jet suit]
+If you want speed, there are wingsuits. You jump from a cliff and glide. About two and a half metres forward for every metre you fall, at around a hundred and sixty kilometres an hour.
+It's not flying up. It's falling, very stylishly.
+And in 2019, a British inventor flew a suit with small jet engines on his arms along a beach at about a hundred and thirty-seven kilometres an hour.
+That's a world record. And it's about as close to Nia as anyone has got.
+
+## The others
+[back at the observatory; the big telescope; Kai and two more of the group]
+Nia lands you back at the observatory. Your legs are jelly.
+Inside, under the dome, the rest of the group is waiting around the telescope.
+Kai points at the eyepiece. Look.
+You look. There's a star that's not a star. It's moving. And every night, it's a little bit brighter.
+That's what's coming, Kai says.
+
+## Ending
+[the dome opens; the moving light in the sky]
+So if you could fly anywhere, where would you go first? Tell us in the comments.
+And subscribe, because next time, you meet the one who can move things without touching them.
