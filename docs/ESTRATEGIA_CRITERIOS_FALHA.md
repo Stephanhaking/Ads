@@ -91,3 +91,9 @@ Fonte: vídeo promocional de um criador que vende mentoria; os números de ganho
 6. **Velocidade** acima de tudo.
 Diferença chave para o que fizemos: **não inventar estilo próprio**; replicar formatos já provados.
 **Conta:** ele recomenda conta pessoal, nova ou envelhecida; aquecer a conta 1 semana (1–2 h/dia) é prática dele, **não verificada**.
+
+## Ifsuperpower: cadência diária e pontos de controlo (27/10/2026)
+Decisão do utilizador: publicar **todos os dias** (IFOLOGY e Ifverse publicam diariamente; IFOLOGY 36 vídeos em 18 dias, 42 mil subs). Biblioteca prevista: 10 vídeos (3 feitos, 1 a renderizar).
+Calendário proposto: 1 vídeo por dia às 18:00 UTC de seg 2/nov a qua 11/nov. Troca de tema se um líder o publicar entretanto (rever com `tools/whatif_recheck.py` na véspera). Sem Shorts no início (os do IFOLOGY rendem 10–38 mil contra 100–800 mil dos longos).
+Pontos de controlo (não são paragem automática): **48 h após o 3.º vídeo** (qua 4/nov + 2 dias): se os 3 estiverem < 300 views, diagnosticar título, miniatura e retenção antes de continuar; **sex 6/nov a seg 9/nov** (7 dias após o 1.º): ver CTR, retenção aos 30 s e visualizações; regra de paragem original (6 vídeos < 2 000 views ao fim de 7 dias) só se aplica a partir de 13/nov.
+Risco aceite: com cadência diária, a biblioteca de 10 esgota-se antes de haver 7 dias de dados para os últimos; o custo é só o de não poder ajustar os últimos.
