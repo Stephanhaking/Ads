@@ -29,3 +29,7 @@ Para quem retomar este trabalho noutra conversa. Branch com tudo: `claude/hopefu
 2. Corrigir o handle `@ifsuperpowe` no Studio. Miniaturas personalizadas exigem canal verificado por telemóvel (por confirmar).
 3. Na véspera de cada publicação, rever se um líder fez o mesmo tema.
 4. Pontos de controlo: 48 h após o 3.º vídeo (< 300 views → diagnosticar) e 7 dias após o 1.º.
+
+## Atualização 27/10 (tarde): início da publicação
+O utilizador decidiu que a publicação diária **só começa depois de os 10 vídeos estarem terminados**. O calendário de 2–11/nov (`docs/ifsuperpower_schedule.json`) fica **provisório**: as datas serão refeitas quando o 10.º estiver pronto (1 vídeo por dia às 18:00 UTC, a partir do dia seguinte). Até lá: rever a oferta dos temas pelo menos 1 vez por semana (`tools/whatif_recheck.py`) e trocar os que os líderes publicarem.
+Ideia nova do utilizador: "What If You Never Needed to Drink Water Again?" (medição em `docs/WHATIF_AGUA_27OUT.md`).
