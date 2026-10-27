@@ -9,6 +9,7 @@ export const P_TIRED = { lean: 22, aL: [8, 2], aR: [8, 2], lL: [8, 10], lR: [8, 
 export const P_PHONE = { lean: 4, aL: [12, 8], aR: [30, 150], lL: [4, 0], lR: [4, 0], head: 14 };
 export const P_RUN = { lean: 18, aL: [50, 80], aR: [40, 110], lL: [30, 40], lR: [-10, 10], head: 4 };
 export const P_SWIM = { lean: 70, aL: [150, 160], aR: [120, 140], lL: [10, 20], lR: [6, 10], head: -30 };
+export const P_SIT = { sit: true, lean: 0, aL: [16, 40], aR: [16, 40], lL: [0, 0], lR: [0, 0], head: 0 };
 export const P_SHIVER = { lean: 6, aL: [30, 150], aR: [30, 150], lL: [3, 4], lR: [3, 4], head: 10 };
 
 export const CAST = {
@@ -22,6 +23,11 @@ export const CAST = {
   mum: { top: '#7a5ea8', sleeves: 'long', bottom: '#3a3a46', hair: 'ponytail', shoes: '#22242a' },
   cousin: { top: '#3f6db3', sleeves: 'long', hood: true, bottom: '#2a2d3a', shoes: '#e2553f' },
   paramedic: { top: '#2f6e52', sleeves: 'long', bottom: '#2a3a33', shoes: '#15161b' },
+  astro: { top: '#f2f2f2', top2: '#d6d9dd', sleeves: 'long', bottom: '#e6e8ea', shoes: '#9aa3ad' },
+  kidA: { top: '#4f8a5b', bottom: '#2a2d3a', shoes: '#f2f2f2', hair: 'ponytail' },
+  kidB: { top: '#7a5ea8', sleeves: 'long', bottom: '#3a4f7a', shoes: '#22242a' },
+  kidC: { top: '#e0b44a', bottom: '#1f2a44', shoes: '#e2553f' },
+  capOlder: { top: '#3a4a5e', top2: '#2a3646', sleeves: 'long', bottom: '#2f3440', cap: '#2f6fdb', shoes: '#5a3a22' },
   heroWinter: { top: '#e2553f', sleeves: 'long', hood: true, bottom: '#1f2a44', hair: 'ponytail', shoes: '#f2f2f2' },
 };
 

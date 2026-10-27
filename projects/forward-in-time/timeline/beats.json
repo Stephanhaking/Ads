@@ -1,0 +1,674 @@
+[
+ {
+  "i": 0,
+  "start": 0.0,
+  "speechStart": 0.0,
+  "speechEnd": 3.36,
+  "text": "It's two fifty-eight on a Friday. Maths.",
+  "end": 3.44
+ },
+ {
+  "i": 1,
+  "start": 3.44,
+  "speechStart": 3.56,
+  "speechEnd": 5.8,
+  "text": "The clock on the wall is barely moving.",
+  "end": 6.22
+ },
+ {
+  "i": 2,
+  "start": 6.22,
+  "speechStart": 6.34,
+  "speechEnd": 9.86,
+  "text": "You stare at it and think, just be over already. You blink.",
+  "end": 10.02
+ },
+ {
+  "i": 3,
+  "start": 10.02,
+  "speechStart": 10.14,
+  "speechEnd": 14.42,
+  "text": "And it's three fifteen. The classroom is empty. Your bag is packed.",
+  "end": 14.66
+ },
+ {
+  "i": 4,
+  "start": 14.66,
+  "speechStart": 14.78,
+  "speechEnd": 18.2,
+  "text": "The bell rang, and you weren't there for it. Your friend is in the doorway.",
+  "end": 18.64
+ },
+ {
+  "i": 5,
+  "start": 18.64,
+  "speechStart": 18.76,
+  "speechEnd": 19.98,
+  "text": "Why are you just sitting there?",
+  "end": 20.28
+ },
+ {
+  "i": 6,
+  "start": 20.28,
+  "speechStart": 20.4,
+  "speechEnd": 25.32,
+  "text": "You've been staring at the wall for twenty minutes! You weren't staring. You were skipping.",
+  "end": 26.08
+ },
+ {
+  "i": 7,
+  "start": 26.08,
+  "speechStart": 26.2,
+  "speechEnd": 27.6,
+  "text": "Over the next few days you work it out.",
+  "end": 27.48
+ },
+ {
+  "i": 8,
+  "start": 27.48,
+  "speechStart": 27.6,
+  "speechEnd": 29.72,
+  "text": "You can jump forward.",
+  "end": 29.6
+ },
+ {
+  "i": 9,
+  "start": 29.6,
+  "speechStart": 29.72,
+  "speechEnd": 32.84,
+  "text": "A minute, an hour, a day.",
+  "end": 32.72
+ },
+ {
+  "i": 10,
+  "start": 32.72,
+  "speechStart": 32.84,
+  "speechEnd": 35.72,
+  "text": "But never, ever back.",
+  "end": 35.6
+ },
+ {
+  "i": 11,
+  "start": 35.6,
+  "speechStart": 35.72,
+  "speechEnd": 40.02,
+  "text": "So what if you could only travel forward in time? Here's the twist.",
+  "end": 39.9
+ },
+ {
+  "i": 12,
+  "start": 39.9,
+  "speechStart": 40.02,
+  "speechEnd": 41.56,
+  "text": "You already do.",
+  "end": 41.44
+ },
+ {
+  "i": 13,
+  "start": 41.44,
+  "speechStart": 41.56,
+  "speechEnd": 45.92,
+  "text": "At first, it's the best power in the world. The dentist?",
+  "end": 45.8
+ },
+ {
+  "i": 14,
+  "start": 45.8,
+  "speechStart": 45.92,
+  "speechEnd": 49.6,
+  "text": "Skip. The queue for the bus? Skip. Waiting for the pizza?",
+  "end": 49.48
+ },
+ {
+  "i": 15,
+  "start": 49.48,
+  "speechStart": 49.6,
+  "speechEnd": 51.8,
+  "text": "Skip, and it's hot on the table.",
+  "end": 51.68
+ },
+ {
+  "i": 16,
+  "start": 51.68,
+  "speechStart": 51.8,
+  "speechEnd": 56.76,
+  "text": "Then your mum asks why your homework is never done. And that's the catch.",
+  "end": 57.24
+ },
+ {
+  "i": 17,
+  "start": 57.24,
+  "speechStart": 57.36,
+  "speechEnd": 61.4,
+  "text": "When you skip the boring part, you also skip the time you needed to do it.",
+  "end": 61.88
+ },
+ {
+  "i": 18,
+  "start": 61.88,
+  "speechStart": 62.0,
+  "speechEnd": 66.5,
+  "text": "Your friend tries to understand. Where do you go? Nowhere. I just get there later.",
+  "end": 66.92
+ },
+ {
+  "i": 19,
+  "start": 66.92,
+  "speechStart": 67.04,
+  "speechEnd": 69.26,
+  "text": "And that's exactly how real time travel works.",
+  "end": 70.28
+ },
+ {
+  "i": 20,
+  "start": 70.28,
+  "speechStart": 70.4,
+  "speechEnd": 73.74,
+  "text": "A hundred years ago, Einstein worked out something wild.",
+  "end": 74.12
+ },
+ {
+  "i": 21,
+  "start": 74.12,
+  "speechStart": 74.24,
+  "speechEnd": 78.74,
+  "text": "The faster you move, the slower your clock ticks, compared with someone standing still.",
+  "end": 79.32
+ },
+ {
+  "i": 22,
+  "start": 79.32,
+  "speechStart": 79.44,
+  "speechEnd": 82.04,
+  "text": "It sounds like science fiction. So in 1971,",
+  "end": 82.3
+ },
+ {
+  "i": 23,
+  "start": 82.3,
+  "speechStart": 82.42,
+  "speechEnd": 85.74,
+  "text": "two scientists put four atomic clocks on passenger planes",
+  "end": 85.62
+ },
+ {
+  "i": 24,
+  "start": 85.62,
+  "speechStart": 85.74,
+  "speechEnd": 87.08,
+  "text": "and flew them around the world.",
+  "end": 87.48
+ },
+ {
+  "i": 25,
+  "start": 87.48,
+  "speechStart": 87.6,
+  "speechEnd": 91.2,
+  "text": "When they landed, the clocks no longer agreed with the ones that stayed behind.",
+  "end": 91.62
+ },
+ {
+  "i": 26,
+  "start": 91.62,
+  "speechStart": 91.74,
+  "speechEnd": 93.32,
+  "text": "By billionths of a second.",
+  "end": 93.62
+ },
+ {
+  "i": 27,
+  "start": 93.62,
+  "speechStart": 93.74,
+  "speechEnd": 95.22,
+  "text": "Exactly as Einstein predicted.",
+  "end": 95.98
+ },
+ {
+  "i": 28,
+  "start": 95.98,
+  "speechStart": 96.1,
+  "speechEnd": 97.62,
+  "text": "Your phone uses this every day.",
+  "end": 97.84
+ },
+ {
+  "i": 29,
+  "start": 97.84,
+  "speechStart": 97.96,
+  "speechEnd": 101.98,
+  "text": "The clocks on GPS satellites drift by about thirty-eight millionths of a second a day.",
+  "end": 102.4
+ },
+ {
+  "i": 30,
+  "start": 102.4,
+  "speechStart": 102.52,
+  "speechEnd": 103.3,
+  "text": "Doesn't sound like much.",
+  "end": 103.24
+ },
+ {
+  "i": 31,
+  "start": 103.24,
+  "speechStart": 103.36,
+  "speechEnd": 105.12,
+  "text": "But if engineers didn't correct for it,",
+  "end": 105.2
+ },
+ {
+  "i": 32,
+  "start": 105.2,
+  "speechStart": 105.32,
+  "speechEnd": 108.12,
+  "text": "your map would be off by about ten kilometres by tomorrow.",
+  "end": 109.06
+ },
+ {
+  "i": 33,
+  "start": 109.06,
+  "speechStart": 109.18,
+  "speechEnd": 111.66,
+  "text": "Some people have actually travelled into the future.",
+  "end": 112.18
+ },
+ {
+  "i": 34,
+  "start": 112.18,
+  "speechStart": 112.3,
+  "speechEnd": 115.88,
+  "text": "Cosmonaut Sergei Krikalev spent eight hundred and three days in space.",
+  "end": 116.12
+ },
+ {
+  "i": 35,
+  "start": 116.12,
+  "speechStart": 116.24,
+  "speechEnd": 120.5,
+  "text": "Moving that fast for that long, he landed about two hundredths of a second in the future.",
+  "end": 120.92
+ },
+ {
+  "i": 36,
+  "start": 120.92,
+  "speechStart": 121.04,
+  "speechEnd": 124.7,
+  "text": "And on one trip, he went up in May 1991 for about five months.",
+  "end": 125.02
+ },
+ {
+  "i": 37,
+  "start": 125.02,
+  "speechStart": 125.14,
+  "speechEnd": 126.36,
+  "text": "He stayed for ten.",
+  "end": 126.82
+ },
+ {
+  "i": 38,
+  "start": 126.82,
+  "speechStart": 126.94,
+  "speechEnd": 129.06,
+  "text": "While he was up there, the country that launched him,",
+  "end": 129.14
+ },
+ {
+  "i": 39,
+  "start": 129.14,
+  "speechStart": 129.26,
+  "speechEnd": 131.5,
+  "text": "the Soviet Union, stopped existing.",
+  "end": 131.92
+ },
+ {
+  "i": 40,
+  "start": 131.92,
+  "speechStart": 132.04,
+  "speechEnd": 135.0,
+  "text": "He went up from one country, and came down to a different one.",
+  "end": 135.92
+ },
+ {
+  "i": 41,
+  "start": 135.92,
+  "speechStart": 136.04,
+  "speechEnd": 138.88,
+  "text": "Two hundredths of a second isn't going to get you out of maths.",
+  "end": 139.36
+ },
+ {
+  "i": 42,
+  "start": 139.36,
+  "speechStart": 139.48,
+  "speechEnd": 143.14,
+  "text": "The fastest any human has ever travelled is Apollo 10, coming back from the Moon.",
+  "end": 143.42
+ },
+ {
+  "i": 43,
+  "start": 143.42,
+  "speechStart": 143.54,
+  "speechEnd": 145.78,
+  "text": "Almost forty thousand kilometres an hour.",
+  "end": 146.3
+ },
+ {
+  "i": 44,
+  "start": 146.3,
+  "speechStart": 146.42,
+  "speechEnd": 150.64,
+  "text": "That's less than one two-hundredth of one percent of the speed of light.",
+  "end": 151.04
+ },
+ {
+  "i": 45,
+  "start": 151.04,
+  "speechStart": 151.16,
+  "speechEnd": 153.8,
+  "text": "To really skip ahead, you need to get close to light speed.",
+  "end": 154.12
+ },
+ {
+  "i": 46,
+  "start": 154.12,
+  "speechStart": 154.24,
+  "speechEnd": 158.22,
+  "text": "At ninety-nine percent of it, every year on your ship is about seven years back on Earth.",
+  "end": 158.64
+ },
+ {
+  "i": 47,
+  "start": 158.64,
+  "speechStart": 158.76,
+  "speechEnd": 161.72,
+  "text": "So you leave at thirteen. You come back a year older.",
+  "end": 161.6
+ },
+ {
+  "i": 48,
+  "start": 161.6,
+  "speechStart": 161.72,
+  "speechEnd": 165.46,
+  "text": "Your friend is twenty. Here's the problem.",
+  "end": 165.76
+ },
+ {
+  "i": 49,
+  "start": 165.76,
+  "speechStart": 165.88,
+  "speechEnd": 168.2,
+  "text": "Getting just your body to that speed takes about",
+  "end": 168.08
+ },
+ {
+  "i": 50,
+  "start": 168.08,
+  "speechStart": 168.2,
+  "speechEnd": 170.66,
+  "text": "thirty-eight billion billion joules of energy.",
+  "end": 171.04
+ },
+ {
+  "i": 51,
+  "start": 171.04,
+  "speechStart": 171.16,
+  "speechEnd": 175.58,
+  "text": "That's around six percent of all the energy humanity uses in a whole year.",
+  "end": 175.88
+ },
+ {
+  "i": 52,
+  "start": 175.88,
+  "speechStart": 176.0,
+  "speechEnd": 177.64,
+  "text": "Just for you. Not the ship.",
+  "end": 178.32
+ },
+ {
+  "i": 53,
+  "start": 178.32,
+  "speechStart": 178.44,
+  "speechEnd": 182.56,
+  "text": "Even pushing at a steady one g, it takes about two and a half years just to get up to speed.",
+  "end": 183.08
+ },
+ {
+  "i": 54,
+  "start": 183.08,
+  "speechStart": 183.2,
+  "speechEnd": 184.54,
+  "text": "And space isn't empty.",
+  "end": 184.86
+ },
+ {
+  "i": 55,
+  "start": 184.86,
+  "speechStart": 184.98,
+  "speechEnd": 188.52,
+  "text": "There are one or two hydrogen atoms in every sugar-cube-sized bit of it.",
+  "end": 188.88
+ },
+ {
+  "i": 56,
+  "start": 188.88,
+  "speechStart": 189.0,
+  "speechEnd": 192.22,
+  "text": "Near light speed, those atoms hit you like a beam of radiation.",
+  "end": 192.74
+ },
+ {
+  "i": 57,
+  "start": 192.74,
+  "speechStart": 192.86,
+  "speechEnd": 197.14,
+  "text": "One physicist calculated it could be deadly in about a second. Honestly?",
+  "end": 197.8
+ },
+ {
+  "i": 58,
+  "start": 197.8,
+  "speechStart": 197.92,
+  "speechEnd": 199.26,
+  "text": "Nobody has solved that yet.",
+  "end": 200.4
+ },
+ {
+  "i": 59,
+  "start": 200.4,
+  "speechStart": 200.52,
+  "speechEnd": 203.04,
+  "text": "There's a second way to skip ahead. Gravity.",
+  "end": 203.52
+ },
+ {
+  "i": 60,
+  "start": 203.52,
+  "speechStart": 203.64,
+  "speechEnd": 208.16,
+  "text": "The closer you are to something heavy, the slower your time runs. In 2010,",
+  "end": 208.3
+ },
+ {
+  "i": 61,
+  "start": 208.3,
+  "speechStart": 208.42,
+  "speechEnd": 210.82,
+  "text": "scientists in the United States raised an atomic",
+  "end": 210.7
+ },
+ {
+  "i": 62,
+  "start": 210.7,
+  "speechStart": 210.82,
+  "speechEnd": 214.72,
+  "text": "clock just thirty-three centimetres. And it ticked faster.",
+  "end": 215.1
+ },
+ {
+  "i": 63,
+  "start": 215.1,
+  "speechStart": 215.22,
+  "speechEnd": 217.98,
+  "text": "That means your head is ageing faster than your feet.",
+  "end": 217.86
+ },
+ {
+  "i": 64,
+  "start": 217.86,
+  "speechStart": 217.98,
+  "speechEnd": 222.86,
+  "text": "By about ninety billionths of a second over a whole lifetime. Don't worry.",
+  "end": 223.24
+ },
+ {
+  "i": 65,
+  "start": 223.24,
+  "speechStart": 223.36,
+  "speechEnd": 227.86,
+  "text": "You won't notice. But you get greedy. Exam week is coming.",
+  "end": 228.14
+ },
+ {
+  "i": 66,
+  "start": 228.14,
+  "speechStart": 228.26,
+  "speechEnd": 231.3,
+  "text": "So you close your eyes, and you push. Harder than ever.",
+  "end": 231.74
+ },
+ {
+  "i": 67,
+  "start": 231.74,
+  "speechStart": 231.86,
+  "speechEnd": 233.7,
+  "text": "When you open them, the lake is the same.",
+  "end": 234.14
+ },
+ {
+  "i": 68,
+  "start": 234.14,
+  "speechStart": 234.26,
+  "speechEnd": 238.96,
+  "text": "The pier is new. Your phone has no signal. It won't even turn on.",
+  "end": 239.54
+ },
+ {
+  "i": 69,
+  "start": 239.54,
+  "speechStart": 239.66,
+  "speechEnd": 243.68,
+  "text": "Someone is standing at the end of the pier. Taller. A beard.",
+  "end": 244.06
+ },
+ {
+  "i": 70,
+  "start": 244.06,
+  "speechStart": 244.18,
+  "speechEnd": 244.68,
+  "text": "A blue cap.",
+  "end": 244.96
+ },
+ {
+  "i": 71,
+  "start": 244.96,
+  "speechStart": 245.08,
+  "speechEnd": 249.52,
+  "text": "He stares at you like he's seeing a ghost. You've been gone ten years.",
+  "end": 249.4
+ },
+ {
+  "i": 72,
+  "start": 249.4,
+  "speechStart": 249.52,
+  "speechEnd": 251.12,
+  "text": "Ten years of birthdays.",
+  "end": 251.0
+ },
+ {
+  "i": 73,
+  "start": 251.0,
+  "speechStart": 251.12,
+  "speechEnd": 253.16,
+  "text": "Ten years of everybody looking for you.",
+  "end": 253.3
+ },
+ {
+  "i": 74,
+  "start": 253.3,
+  "speechStart": 253.42,
+  "speechEnd": 258.0,
+  "text": "And there's no button that takes you back. So is backwards possible?",
+  "end": 258.46
+ },
+ {
+  "i": 75,
+  "start": 258.46,
+  "speechStart": 258.58,
+  "speechEnd": 261.72,
+  "text": "Einstein's equations allow some strange loops in time, on paper.",
+  "end": 261.98
+ },
+ {
+  "i": 76,
+  "start": 261.98,
+  "speechStart": 262.1,
+  "speechEnd": 263.76,
+  "text": "But nobody knows how to build one.",
+  "end": 264.28
+ },
+ {
+  "i": 77,
+  "start": 264.28,
+  "speechStart": 264.4,
+  "speechEnd": 267.42,
+  "text": "Stephen Hawking even suggested that nature itself might forbid it.",
+  "end": 267.72
+ },
+ {
+  "i": 78,
+  "start": 267.72,
+  "speechStart": 267.84,
+  "speechEnd": 269.4,
+  "text": "It's an idea, not a proof.",
+  "end": 269.92
+ },
+ {
+  "i": 79,
+  "start": 269.92,
+  "speechStart": 270.04,
+  "speechEnd": 272.76,
+  "text": "Right now, forward is the only direction we know works.",
+  "end": 273.82
+ },
+ {
+  "i": 80,
+  "start": 273.82,
+  "speechStart": 273.94,
+  "speechEnd": 278.24,
+  "text": "Your friend sits down next to you. So, he says. Was it worth skipping maths?",
+  "end": 278.68
+ },
+ {
+  "i": 81,
+  "start": 278.68,
+  "speechStart": 278.8,
+  "speechEnd": 282.34,
+  "text": "So what would you skip, if you could only go forward? Tell us in the comments.",
+  "end": 282.22
+ },
+ {
+  "i": 82,
+  "start": 282.22,
+  "speechStart": 282.34,
+  "speechEnd": 284.34,
+  "text": "And subscribe, because next time,",
+  "end": 284.22
+ },
+ {
+  "i": 83,
+  "start": 284.22,
+  "speechStart": 284.34,
+  "speechEnd": 287.0,
+  "text": "you find out what happens if you could stop time completely.",
+  "end": 288.6
+ }
+]

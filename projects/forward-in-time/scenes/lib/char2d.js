@@ -18,13 +18,13 @@ export function person(x, y, h, pose = P_STAND, o = {}) {
   const s = h / 340, w = 11 * s, side = o.flip ? -1 : 1;
   const top = o.top || '#e2553f', topS = o.top2 || shade(top, 0.72), bot = o.bottom || '#283552', botS = shade(bot, 0.75), shoe = o.shoes || '#15161b', rim = o.rim || '#ffd2a0';
   // skeleton (y up the screen = negative)
-  const hip = [x, y - 158 * s];
+  const hip = [x, y - (pose.sit ? 80 : 158) * s]; // seated: hips at seat height, thighs forward, shins down
   const neck = at(hip, 180 - pose.lean * side, 112 * s); // torso goes up
   const R = 46 * s, hc = at(neck, 180 - (pose.lean + pose.head) * side, R + 6 * s);
   const shL = [neck[0] - 26 * s, neck[1] + 12 * s], shR = [neck[0] + 26 * s, neck[1] + 12 * s];
   const arm = (sh, a, sgn) => { const e = at(sh, sgn * a[0] * side, 54 * s); const hnd = at(e, sgn * a[1] * side, 52 * s); return [sh, e, hnd]; };
   const AL = arm(shL, pose.aL, -1), AR = arm(shR, pose.aR, 1);
-  const leg = (dx, a, sgn) => { const h0 = [hip[0] + dx, hip[1]]; const k = at(h0, sgn * a[0] * side, 78 * s); const ft = at(k, sgn * a[0] * side - sgn * a[1] * side * 0.3 + a[1] * 0.0, 76 * s); return [h0, k, ft]; };
+  const leg = (dx, a, sgn) => { const h0 = [hip[0] + dx, hip[1]]; if (pose.sit) { const k = at(h0, side * (92 - sgn * 4), 70 * s); return [h0, k, at(k, side * 6, 76 * s)]; } const k = at(h0, sgn * a[0] * side, 78 * s); const ft = at(k, sgn * a[0] * side - sgn * a[1] * side * 0.3 + a[1] * 0.0, 76 * s); return [h0, k, ft]; };
   const LL = leg(-14 * s, pose.lL, -1), LR = leg(14 * s, pose.lR, 1);
   let g = '';
   // rim helper: draws the same stroke offset toward the light (upper right), under the shape

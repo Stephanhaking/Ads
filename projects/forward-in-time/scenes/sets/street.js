@@ -10,6 +10,6 @@ registerSet('street', async (W) => {
   W.add(K.box(80, 0.15, 0.25, K.mat('#9a948a'), [0, 0.07, 3.0]));
   const cols = ['#d9ccb4', '#e8b4a0', '#a9c4d6', '#e6d39a', '#c9d6b0', '#d9b8d0'];
   for (let i = 0; i < 9; i++) { const b = K.building({ w: 7.5, h: 6 + (i % 3) * 2.2, d: 8, wall: cols[i % cols.length], roofType: i % 2 ? 'gable' : 'flat', seed: i + 3 }); b.position.set(-30 + i * 7.6, 0, -7); W.add(b); }
-  for (let i = 0; i < 5; i++) { const t = K.tree ? K.tree({ h: 5, seed: i }) : null; if (t) { t.position.set(-24 + i * 12, 0, 2.4); W.add(t); } }
+  for (let i = 0; i < 4; i++) { const t = K.tree({ h: 5, seed: i }); t.position.set(-30 + i * 18, 0, -2.2); W.add(t); }
   return {};
 });

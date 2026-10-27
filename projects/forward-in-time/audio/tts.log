@@ -4,3 +4,9 @@ chunk 3/10: 659 chars
 chunk 4/10: 448 chars
 chunk 5/10: 487 chars
 chunk 6/10: 572 chars
+chunk 7/10: 374 chars
+chunk 8/10: 455 chars
+chunk 9/10: 275 chars
+chunk 10/10: 250 chars
+  retry 1: odd pace (96 wpm, 29.5s for 47 words)
+voiceover (raw): /home/user/Ads/projects/forward-in-time/audio/voiceover_raw.wav  287.73s  174 wpm — next: tools/pauses.py (ask the user first), then tools/transcribe.py

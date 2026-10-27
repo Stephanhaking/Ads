@@ -1,0 +1,639 @@
+1
+00:00:00,000 --> 00:00:01,860
+It's two fifty-eight on a Friday.
+
+2
+00:00:02,920 --> 00:00:03,360
+Maths.
+
+3
+00:00:03,560 --> 00:00:05,800
+The clock on the wall is barely moving.
+
+4
+00:00:06,340 --> 00:00:07,860
+You stare at it and think, just be
+
+5
+00:00:07,860 --> 00:00:08,620
+over already.
+
+6
+00:00:09,480 --> 00:00:09,860
+You blink.
+
+7
+00:00:10,140 --> 00:00:12,440
+And it's three fifteen.
+
+8
+00:00:12,440 --> 00:00:13,360
+The classroom is empty.
+
+9
+00:00:13,700 --> 00:00:14,420
+Your bag is packed.
+
+10
+00:00:14,780 --> 00:00:16,680
+The bell rang, and you weren't there for
+
+11
+00:00:16,680 --> 00:00:16,880
+it.
+
+12
+00:00:17,440 --> 00:00:18,200
+Your friend is in the doorway.
+
+13
+00:00:18,760 --> 00:00:19,980
+Why are you just sitting there?
+
+14
+00:00:20,400 --> 00:00:22,240
+You've been staring at the wall for twenty
+
+15
+00:00:22,240 --> 00:00:22,540
+minutes!
+
+16
+00:00:23,260 --> 00:00:24,020
+You weren't staring.
+
+17
+00:00:24,480 --> 00:00:25,320
+You were skipping.
+
+18
+00:00:26,200 --> 00:00:27,440
+Over the next few days you work it
+
+19
+00:00:27,440 --> 00:00:27,600
+out.
+
+20
+00:00:27,600 --> 00:00:29,720
+You can jump forward.
+
+21
+00:00:29,720 --> 00:00:32,840
+A minute, an hour, a day.
+
+22
+00:00:32,840 --> 00:00:35,720
+But never, ever back.
+
+23
+00:00:35,720 --> 00:00:38,100
+So what if you could only travel forward
+
+24
+00:00:38,100 --> 00:00:38,720
+in time?
+
+25
+00:00:38,720 --> 00:00:40,020
+Here's the twist.
+
+26
+00:00:40,020 --> 00:00:41,560
+You already do.
+
+27
+00:00:41,560 --> 00:00:44,700
+At first, it's the best power in the
+
+28
+00:00:44,700 --> 00:00:45,140
+world.
+
+29
+00:00:45,140 --> 00:00:45,920
+The dentist?
+
+30
+00:00:45,920 --> 00:00:46,560
+Skip.
+
+31
+00:00:46,560 --> 00:00:47,720
+The queue for the bus?
+
+32
+00:00:47,720 --> 00:00:48,280
+Skip.
+
+33
+00:00:48,280 --> 00:00:49,600
+Waiting for the pizza?
+
+34
+00:00:49,600 --> 00:00:51,800
+Skip, and it's hot on the table.
+
+35
+00:00:51,800 --> 00:00:54,720
+Then your mum asks why your homework is
+
+36
+00:00:54,720 --> 00:00:55,160
+never done.
+
+37
+00:00:56,120 --> 00:00:56,760
+And that's the catch.
+
+38
+00:00:57,360 --> 00:00:59,300
+When you skip the boring part, you also
+
+39
+00:00:59,300 --> 00:01:01,400
+skip the time you needed to do it.
+
+40
+00:01:02,000 --> 00:01:03,100
+Your friend tries to understand.
+
+41
+00:01:03,860 --> 00:01:04,340
+Where do you go?
+
+42
+00:01:05,000 --> 00:01:05,460
+Nowhere.
+
+43
+00:01:05,700 --> 00:01:06,500
+I just get there later.
+
+44
+00:01:07,040 --> 00:01:09,260
+And that's exactly how real time travel works.
+
+45
+00:01:10,400 --> 00:01:12,980
+A hundred years ago, Einstein worked out something
+
+46
+00:01:12,980 --> 00:01:13,740
+wild.
+
+47
+00:01:14,240 --> 00:01:16,660
+The faster you move, the slower your clock
+
+48
+00:01:16,660 --> 00:01:18,740
+ticks, compared with someone standing still.
+
+49
+00:01:19,440 --> 00:01:20,520
+It sounds like science fiction.
+
+50
+00:01:21,060 --> 00:01:24,320
+So in 1971, two scientists put four atomic
+
+51
+00:01:24,320 --> 00:01:26,700
+clocks on passenger planes and flew them around
+
+52
+00:01:26,700 --> 00:01:27,080
+the world.
+
+53
+00:01:27,600 --> 00:01:30,000
+When they landed, the clocks no longer agreed
+
+54
+00:01:30,000 --> 00:01:31,200
+with the ones that stayed behind.
+
+55
+00:01:31,740 --> 00:01:33,320
+By billionths of a second.
+
+56
+00:01:33,740 --> 00:01:35,220
+Exactly as Einstein predicted.
+
+57
+00:01:36,100 --> 00:01:37,620
+Your phone uses this every day.
+
+58
+00:01:37,960 --> 00:01:40,000
+The clocks on GPS satellites drift by about
+
+59
+00:01:40,000 --> 00:01:41,980
+thirty-eight millionths of a second a day.
+
+60
+00:01:42,520 --> 00:01:43,300
+Doesn't sound like much.
+
+61
+00:01:43,360 --> 00:01:45,520
+But if engineers didn't correct for it, your
+
+62
+00:01:45,520 --> 00:01:47,500
+map would be off by about ten kilometres
+
+63
+00:01:47,500 --> 00:01:48,120
+by tomorrow.
+
+64
+00:01:49,180 --> 00:01:51,660
+Some people have actually travelled into the future.
+
+65
+00:01:52,300 --> 00:01:54,880
+Cosmonaut Sergei Krikalev spent eight hundred and three
+
+66
+00:01:54,880 --> 00:01:55,880
+days in space.
+
+67
+00:01:56,240 --> 00:01:58,160
+Moving that fast for that long, he landed
+
+68
+00:01:58,160 --> 00:02:00,220
+about two hundredths of a second in the
+
+69
+00:02:00,220 --> 00:02:00,500
+future.
+
+70
+00:02:01,040 --> 00:02:02,540
+And on one trip, he went up in
+
+71
+00:02:02,540 --> 00:02:04,700
+May 1991 for about five months.
+
+72
+00:02:05,140 --> 00:02:06,360
+He stayed for ten.
+
+73
+00:02:06,940 --> 00:02:08,460
+While he was up there, the country that
+
+74
+00:02:08,460 --> 00:02:11,500
+launched him, the Soviet Union, stopped existing.
+
+75
+00:02:12,040 --> 00:02:13,700
+He went up from one country, and came
+
+76
+00:02:13,700 --> 00:02:15,000
+down to a different one.
+
+77
+00:02:16,040 --> 00:02:18,100
+Two hundredths of a second isn't going to
+
+78
+00:02:18,100 --> 00:02:18,880
+get you out of maths.
+
+79
+00:02:19,480 --> 00:02:21,440
+The fastest any human has ever travelled is
+
+80
+00:02:21,440 --> 00:02:23,140
+Apollo 10, coming back from the Moon.
+
+81
+00:02:23,540 --> 00:02:25,780
+Almost forty thousand kilometres an hour.
+
+82
+00:02:26,420 --> 00:02:29,480
+That's less than one two-hundredth of one percent
+
+83
+00:02:29,480 --> 00:02:30,640
+of the speed of light.
+
+84
+00:02:31,160 --> 00:02:32,780
+To really skip ahead, you need to get
+
+85
+00:02:32,780 --> 00:02:33,800
+close to light speed.
+
+86
+00:02:34,240 --> 00:02:36,120
+At ninety-nine percent of it, every year on
+
+87
+00:02:36,120 --> 00:02:38,040
+your ship is about seven years back on
+
+88
+00:02:38,040 --> 00:02:38,220
+Earth.
+
+89
+00:02:38,760 --> 00:02:40,540
+So you leave at thirteen.
+
+90
+00:02:40,540 --> 00:02:41,720
+You come back a year older.
+
+91
+00:02:41,720 --> 00:02:44,460
+Your friend is twenty.
+
+92
+00:02:44,460 --> 00:02:45,460
+Here's the problem.
+
+93
+00:02:45,880 --> 00:02:47,900
+Getting just your body to that speed takes
+
+94
+00:02:47,900 --> 00:02:50,660
+about thirty-eight billion billion joules of energy.
+
+95
+00:02:51,160 --> 00:02:53,720
+That's around six percent of all the energy
+
+96
+00:02:53,720 --> 00:02:55,580
+humanity uses in a whole year.
+
+97
+00:02:56,000 --> 00:02:56,700
+Just for you.
+
+98
+00:02:57,040 --> 00:02:57,640
+Not the ship.
+
+99
+00:02:58,440 --> 00:03:00,180
+Even pushing at a steady one g, it
+
+100
+00:03:00,180 --> 00:03:01,860
+takes about two and a half years just
+
+101
+00:03:01,860 --> 00:03:02,560
+to get up to speed.
+
+102
+00:03:03,200 --> 00:03:04,540
+And space isn't empty.
+
+103
+00:03:04,980 --> 00:03:06,680
+There are one or two hydrogen atoms in
+
+104
+00:03:06,680 --> 00:03:08,520
+every sugar-cube-sized bit of it.
+
+105
+00:03:09,000 --> 00:03:10,980
+Near light speed, those atoms hit you like
+
+106
+00:03:10,980 --> 00:03:12,220
+a beam of radiation.
+
+107
+00:03:12,860 --> 00:03:15,160
+One physicist calculated it could be deadly in
+
+108
+00:03:15,160 --> 00:03:15,840
+about a second.
+
+109
+00:03:16,740 --> 00:03:17,140
+Honestly?
+
+110
+00:03:17,920 --> 00:03:19,260
+Nobody has solved that yet.
+
+111
+00:03:20,520 --> 00:03:22,100
+There's a second way to skip ahead.
+
+112
+00:03:22,720 --> 00:03:23,040
+Gravity.
+
+113
+00:03:23,640 --> 00:03:25,500
+The closer you are to something heavy, the
+
+114
+00:03:25,500 --> 00:03:27,040
+slower your time runs.
+
+115
+00:03:27,620 --> 00:03:30,060
+In 2010, scientists in the United States raised
+
+116
+00:03:30,060 --> 00:03:33,420
+an atomic clock just thirty-three centimetres.
+
+117
+00:03:33,420 --> 00:03:34,720
+And it ticked faster.
+
+118
+00:03:35,220 --> 00:03:37,440
+That means your head is ageing faster than
+
+119
+00:03:37,500 --> 00:03:37,980
+your feet.
+
+120
+00:03:37,980 --> 00:03:41,340
+By about ninety billionths of a second over
+
+121
+00:03:41,340 --> 00:03:42,060
+a whole lifetime.
+
+122
+00:03:42,540 --> 00:03:42,860
+Don't worry.
+
+123
+00:03:43,360 --> 00:03:43,940
+You won't notice.
+
+124
+00:03:45,100 --> 00:03:46,360
+But you get greedy.
+
+125
+00:03:46,940 --> 00:03:47,860
+Exam week is coming.
+
+126
+00:03:48,260 --> 00:03:50,180
+So you close your eyes, and you push.
+
+127
+00:03:50,180 --> 00:03:51,300
+Harder than ever.
+
+128
+00:03:51,860 --> 00:03:53,480
+When you open them, the lake is the
+
+129
+00:03:53,480 --> 00:03:53,700
+same.
+
+130
+00:03:54,260 --> 00:03:55,700
+The pier is new.
+
+131
+00:03:56,340 --> 00:03:57,720
+Your phone has no signal.
+
+132
+00:03:58,060 --> 00:03:58,960
+It won't even turn on.
+
+133
+00:03:59,660 --> 00:04:01,540
+Someone is standing at the end of the
+
+134
+00:04:01,540 --> 00:04:01,780
+pier.
+
+135
+00:04:02,700 --> 00:04:02,960
+Taller.
+
+136
+00:04:03,360 --> 00:04:03,680
+A beard.
+
+137
+00:04:04,180 --> 00:04:04,680
+A blue cap.
+
+138
+00:04:05,080 --> 00:04:07,160
+He stares at you like he's seeing a
+
+139
+00:04:07,160 --> 00:04:07,460
+ghost.
+
+140
+00:04:08,320 --> 00:04:09,520
+You've been gone ten years.
+
+141
+00:04:09,520 --> 00:04:11,120
+Ten years of birthdays.
+
+142
+00:04:11,120 --> 00:04:13,160
+Ten years of everybody looking for you.
+
+143
+00:04:13,420 --> 00:04:15,400
+And there's no button that takes you back.
+
+144
+00:04:16,720 --> 00:04:18,000
+So is backwards possible?
+
+145
+00:04:18,580 --> 00:04:21,080
+Einstein's equations allow some strange loops in time,
+
+146
+00:04:21,080 --> 00:04:21,720
+on paper.
+
+147
+00:04:22,100 --> 00:04:23,760
+But nobody knows how to build one.
+
+148
+00:04:24,400 --> 00:04:26,700
+Stephen Hawking even suggested that nature itself might
+
+149
+00:04:26,700 --> 00:04:27,420
+forbid it.
+
+150
+00:04:27,840 --> 00:04:29,400
+It's an idea, not a proof.
+
+151
+00:04:30,040 --> 00:04:32,280
+Right now, forward is the only direction we
+
+152
+00:04:32,280 --> 00:04:32,760
+know works.
+
+153
+00:04:33,940 --> 00:04:35,520
+Your friend sits down next to you.
+
+154
+00:04:35,520 --> 00:04:36,740
+So, he says.
+
+155
+00:04:37,220 --> 00:04:38,240
+Was it worth skipping maths?
+
+156
+00:04:38,800 --> 00:04:40,180
+So what would you skip, if you could
+
+157
+00:04:40,180 --> 00:04:40,900
+only go forward?
+
+158
+00:04:41,620 --> 00:04:42,340
+Tell us in the comments.
+
+159
+00:04:42,340 --> 00:04:45,040
+And subscribe, because next time, you find out
+
+160
+00:04:45,040 --> 00:04:47,000
+what happens if you could stop time completely.

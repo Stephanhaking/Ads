@@ -1,0 +1,28 @@
+00:00.46  replace  script: two fifty-eight  |  heard: 2 .58
+00:11.20  replace  script: three fifteen.  |  heard: 3 .15.
+00:21.80  replace  script: twenty  |  heard: 20
+00:47.12  replace  script: queue  |  heard: cue
+00:53.24  replace  script: mum  |  heard: mom
+01:40.00  replace  script: thirty-eight  |  heard: 38
+01:46.66  replace  script: ten kilometres  |  heard: 10 kilometers
+01:50.64  replace  script: travelled  |  heard: traveled
+01:53.82  replace  script: eight hundred and three  |  heard: 803
+02:17.96  replace  script: going to  |  heard: gonna
+02:20.84  replace  script: travelled  |  heard: traveled
+02:23.76  replace  script: forty thousand kilometres  |  heard: 40 ,000 kilometers
+02:27.86  replace  script: two-hundredth  |  heard: two hundredth
+02:28.88  replace  script: one percent  |  heard: 1 %
+02:34.38  replace  script: ninety-nine percent  |  heard: 99 %
+02:39.82  replace  script: thirteen.  |  heard: 13,
+02:42.62  replace  script: twenty.  |  heard: 20.
+02:48.20  replace  script: thirty-eight  |  heard: 38
+02:51.82  replace  script: six percent  |  heard: 6 %
+02:59.44  replace  script: one g,  |  heard: 1g,
+03:06.96  replace  script: sugar-cube-sized  |  heard: sugar cube size
+03:31.60  replace  script: thirty-three centimetres.  |  heard: 33 centimeters,
+03:36.38  replace  script: ageing  |  heard: aging
+03:37.44  insert   script: —  |  heard: in
+03:39.30  replace  script: ninety  |  heard: 90
+04:08.70  replace  script: ten  |  heard: 10
+04:10.02  replace  script: Ten  |  heard: 10
+04:11.52  replace  script: Ten  |  heard: 10

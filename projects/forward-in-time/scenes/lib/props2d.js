@@ -223,3 +223,21 @@ export function cockpit(t = 0, o = {}) {
   if (o.speed) g += rr(760, 860, 400, 120, 14, '#0c1a14', `stroke="${edge}" stroke-width="5"`) + `<text x="960" y="905" text-anchor="middle" font-family="IBM Plex Mono" font-size="28" fill="#7dffb0" letter-spacing="3">SPEED</text><text x="960" y="955" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="44" fill="#7dffb0">${o.speed}</text>`;
   return g;
 }
+// command module capsule (bottom-centre x, y; height h)
+export function capsule(x, y, h) {
+  const w = h * 1.1; return `<path d="M ${f(x - w / 2)} ${f(y)} L ${f(x - w * 0.12)} ${f(y - h)} L ${f(x + w * 0.12)} ${f(y - h)} L ${f(x + w / 2)} ${f(y)} Z" fill="#d9dde0" stroke="${OUT}" stroke-width="5" stroke-linejoin="round"/>` +
+    rr(x - w / 2 - 6, y - 10, w + 12, 18, 9, '#8a6a4a', `stroke="${OUT}" stroke-width="4"`) + `<circle cx="${f(x)}" cy="${f(y - h * 0.5)}" r="${f(h * 0.1)}" fill="#3a4b5e" stroke="${OUT}" stroke-width="3"/>`;
+}
+// a sugar cube (bottom-centre x, y; size s) with a few glowing atoms
+export function sugarCube(x, y, s, atoms = 2, t = 0) {
+  const d = s * 0.3; let g = `<path d="M ${f(x - s / 2)} ${f(y - s)} L ${f(x - s / 2 + d)} ${f(y - s - d)} L ${f(x + s / 2 + d)} ${f(y - s - d)} L ${f(x + s / 2)} ${f(y - s)} Z" fill="#ffffff" stroke="${OUT}" stroke-width="5"/>`;
+  g += `<path d="M ${f(x + s / 2)} ${f(y - s)} L ${f(x + s / 2 + d)} ${f(y - s - d)} L ${f(x + s / 2 + d)} ${f(y - d)} L ${f(x + s / 2)} ${f(y)} Z" fill="#dfe4e8" stroke="${OUT}" stroke-width="5"/>`;
+  g += rr(x - s / 2, y - s, s, s, 4, '#f4f6f8', `stroke="${OUT}" stroke-width="5" fill-opacity="0.55"`);
+  for (let i = 0; i < atoms; i++) { const ax = x - s * 0.15 + i * s * 0.35 + Math.sin(t * 2 + i) * s * 0.05, ay = y - s * 0.5 + Math.cos(t * 1.7 + i * 2) * s * 0.15; g += `<circle cx="${f(ax)}" cy="${f(ay)}" r="${f(s * 0.06)}" fill="#e2553f" stroke="${OUT}" stroke-width="3"/><circle cx="${f(ax)}" cy="${f(ay)}" r="${f(s * 0.14)}" fill="#e2553f" opacity="0.25"/>`; }
+  return g;
+}
+// a calendar page (bottom-centre x, y; height h)
+export function calendar(x, y, h, top = 'EXAMS', big = 'MON') {
+  const w = h * 0.8; return rr(x - w / 2, y - h, w, h, 10, '#ffffff', `stroke="${OUT}" stroke-width="5"`) + rr(x - w / 2, y - h, w, h * 0.28, 10, '#e2553f', `stroke="${OUT}" stroke-width="5"`) +
+    `<text x="${f(x)}" y="${f(y - h * 0.8)}" text-anchor="middle" font-family="Inter" font-weight="900" font-size="${f(h * 0.15)}" fill="#fff">${top}</text><text x="${f(x)}" y="${f(y - h * 0.25)}" text-anchor="middle" font-family="Inter" font-weight="900" font-size="${f(h * 0.3)}" fill="${OUT}">${big}</text>`;
+}
