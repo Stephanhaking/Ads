@@ -1,0 +1,33 @@
+What If You Could Only Travel Forward in Time?
+
+You blink in maths class and it's suddenly 3:15. You can skip ahead: a minute, a day, a year. But never back. This story follows what that power would really be like, and how real time travel into the future already works: speed, gravity, astronauts who landed a fraction of a second in the future, and what it would cost to skip years.
+
+The story and characters are fiction. The physics is real (sources below).
+
+CHAPTERS
+0:00 2:58 on a Friday
+0:41 The rules
+1:10 The real way: speed
+1:49 The time travellers
+2:16 How fast is fast enough?
+2:46 The cost
+3:20 The other way: gravity
+3:43 The big jump
+4:18 Can you ever go back?
+4:34 Your turn
+
+THE PHYSICS AND WHERE IT COMES FROM
+- Moving clocks run slow by the Lorentz factor; at 99 % of light speed, 1 year on board ≈ 7.1 years on Earth (our arithmetic from special relativity)
+- 1971 Hafele–Keating experiment: four atomic clocks flown around the world on airliners lost 59 ns (eastward) and gained 273 ns (westward), matching predictions (Science, 1972; HyperPhysics)
+- GPS satellite clocks: about −7 µs/day from speed, +45 µs/day from weaker gravity, net +38 µs/day; uncorrected, positions drift about 10 km a day (GPS World)
+- Sergei Krikalev: 803 days in space in total, about 0.02 s "younger" (FAI; IOP Spark). In 1991–92 he went up for about five months, stayed about ten, and the Soviet Union dissolved while he was in orbit
+- Fastest humans: Apollo 10, 39,897 km/h in 1969 ≈ 0.0037 % of light speed (Wikipedia; Guinness)
+- Energy to bring 70 kg to 99 % of light speed: (γ − 1)mc² ≈ 3.8 × 10¹⁹ J ≈ 6 % of the world's yearly primary energy use, about 620 EJ in 2023 (our arithmetic; Energy Institute Statistical Review 2024)
+- At a steady 1 g, reaching 99 % of light speed takes about 2.6 years of ship time (our arithmetic)
+- Interstellar hydrogen (under 2 atoms per cm³) becomes deadly radiation near light speed; one estimate (W. Edelstein, 2010) put a lethal dose within about a second at 99.999998 % of c (press reports, Space.com / Popular Science)
+- Gravitational time dilation: NIST (2010) measured a clock raised by 33 cm ticking faster; over a 79-year life that is about 90 billionths of a second (nist.gov)
+- Backwards: general relativity allows closed timelike curves on paper; there is no known way to build one, and Hawking's "chronology protection conjecture" (1992) suggests physics may forbid them. Unproven.
+
+These figures come from secondary sources and search summaries; not every original paper was read. If you spot an error, tell us in the comments.
+
+What would you skip, if you could only go forward? Subscribe: next time, what if you could stop time completely?
