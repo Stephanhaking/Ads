@@ -1,0 +1,23 @@
+00:00.00  replace  script: Six a.m.  |  heard: 6 a .m.
+00:05.84  replace  script: Kai is  |  heard: Kai's
+00:22.40  replace  script: Want to  |  heard: Wanna
+00:35.36  replace  script: metres  |  heard: meters
+00:57.68  replace  script: metres.  |  heard: meters.
+01:00.58  replace  script: kilometre.  |  heard: kilometer.
+01:11.74  replace  script: kilometre.  |  heard: kilometer.
+01:13.30  replace  script: kilometres  |  heard: kilometers
+01:14.84  replace  script: twenty  |  heard: 20
+01:21.48  insert   script: —  |  heard: it.
+01:31.40  replace  script: Bryan  |  heard: Brian
+01:32.08  replace  script: pedalled  |  heard: pedaled
+01:34.36  replace  script: Thirty-five kilometres.  |  heard: 35 kilometers,
+01:38.74  replace  script: twenty-nine metres  |  heard: 29 meters
+01:45.04  replace  script: pedalled  |  heard: pedaled
+01:48.52  replace  script: kilometres,  |  heard: kilometers
+01:54.48  replace  script: metres  |  heard: meters
+01:59.66  replace  script: wingsuits.  |  heard: wing suits
+02:03.14  replace  script: metres  |  heard: meters
+02:04.34  replace  script: metre  |  heard: meter
+02:05.96  replace  script: a hundred and sixty kilometres  |  heard: 160 kilometers
+02:16.38  insert   script: —  |  heard: on
+02:18.04  replace  script: a hundred and thirty-seven kilometres  |  heard: 137 kilometers

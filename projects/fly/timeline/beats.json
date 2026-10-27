@@ -1,0 +1,426 @@
+[
+ {
+  "i": 0,
+  "start": 0.0,
+  "speechStart": 0.0,
+  "speechEnd": 1.44,
+  "text": "Six a.m.",
+  "end": 1.32
+ },
+ {
+  "i": 1,
+  "start": 1.32,
+  "speechStart": 1.44,
+  "speechEnd": 2.9,
+  "text": "The old observatory on the hill.",
+  "end": 3.5
+ },
+ {
+  "i": 2,
+  "start": 3.5,
+  "speechStart": 3.62,
+  "speechEnd": 7.24,
+  "text": "You're out of breath, you're freezing, and Kai is already there, eating a sandwich.",
+  "end": 7.74
+ },
+ {
+  "i": 3,
+  "start": 7.74,
+  "speechStart": 7.86,
+  "speechEnd": 12.1,
+  "text": "You're late, Kai says. She's been waiting. Who's been waiting?",
+  "end": 12.56
+ },
+ {
+  "i": 4,
+  "start": 12.56,
+  "speechStart": 12.68,
+  "speechEnd": 14.92,
+  "text": "Something drops out of the clouds and lands next to you.",
+  "end": 14.88
+ },
+ {
+  "i": 5,
+  "start": 14.88,
+  "speechStart": 15.0,
+  "speechEnd": 18.34,
+  "text": "Hard enough to crack the paving stones. A girl in a white jacket.",
+  "end": 18.78
+ },
+ {
+  "i": 6,
+  "start": 18.78,
+  "speechStart": 18.9,
+  "speechEnd": 22.74,
+  "text": "She stands up, brushes off her knees, and grins. I'm Nia. Want to go up?",
+  "end": 23.32
+ },
+ {
+  "i": 7,
+  "start": 23.32,
+  "speechStart": 23.44,
+  "speechEnd": 28.82,
+  "text": "So what if you could fly? Not in a plane. Just you. First, the bad news.",
+  "end": 29.18
+ },
+ {
+  "i": 8,
+  "start": 29.18,
+  "speechStart": 29.3,
+  "speechEnd": 32.78,
+  "text": "You're built for walking, not flying. If you wanted to flap like a bird,",
+  "end": 32.98
+ },
+ {
+  "i": 9,
+  "start": 32.98,
+  "speechStart": 33.1,
+  "speechEnd": 36.06,
+  "text": "scientists estimate you'd need wings about six metres across.",
+  "end": 36.52
+ },
+ {
+  "i": 10,
+  "start": 36.52,
+  "speechStart": 36.64,
+  "speechEnd": 40.3,
+  "text": "And chest muscles about twice the size of a professional bodybuilder's,",
+  "end": 40.18
+ },
+ {
+  "i": 11,
+  "start": 40.18,
+  "speechStart": 40.3,
+  "speechEnd": 42.68,
+  "text": "anchored to a big keel bone you don't have.",
+  "end": 43.24
+ },
+ {
+  "i": 12,
+  "start": 43.24,
+  "speechStart": 43.36,
+  "speechEnd": 47.44,
+  "text": "Birds put a huge chunk of their muscle into flying. You put yours into your legs.",
+  "end": 47.86
+ },
+ {
+  "i": 13,
+  "start": 47.86,
+  "speechStart": 47.98,
+  "speechEnd": 53.46,
+  "text": "So Nia's power isn't wings. It's just, up. She grabs your hand.",
+  "end": 53.34
+ },
+ {
+  "i": 14,
+  "start": 53.34,
+  "speechStart": 53.46,
+  "speechEnd": 56.7,
+  "text": "Your stomach stays on the ground. The rest of you doesn't.",
+  "end": 57.22
+ },
+ {
+  "i": 15,
+  "start": 57.22,
+  "speechStart": 57.34,
+  "speechEnd": 61.74,
+  "text": "One hundred metres. The town looks like a map. One kilometre.",
+  "end": 61.62
+ },
+ {
+  "i": 16,
+  "start": 61.62,
+  "speechStart": 61.74,
+  "speechEnd": 64.32,
+  "text": "Your fingers go numb. Nia laughs at your face.",
+  "end": 64.96
+ },
+ {
+  "i": 17,
+  "start": 64.96,
+  "speechStart": 65.08,
+  "speechEnd": 66.6,
+  "text": "Here's something nobody tells you.",
+  "end": 66.86
+ },
+ {
+  "i": 18,
+  "start": 66.86,
+  "speechStart": 66.98,
+  "speechEnd": 69.14,
+  "text": "The higher you go, the colder it gets.",
+  "end": 69.52
+ },
+ {
+  "i": 19,
+  "start": 69.52,
+  "speechStart": 69.64,
+  "speechEnd": 72.9,
+  "text": "About six and a half degrees colder for every kilometre.",
+  "end": 72.78
+ },
+ {
+  "i": 20,
+  "start": 72.78,
+  "speechStart": 72.9,
+  "speechEnd": 76.76,
+  "text": "Three kilometres up, it's about twenty degrees colder than on the ground.",
+  "end": 77.28
+ },
+ {
+  "i": 21,
+  "start": 77.28,
+  "speechStart": 77.4,
+  "speechEnd": 81.48,
+  "text": "Your breath comes out as fog. Nia doesn't care. She's wearing a jacket.",
+  "end": 82.12
+ },
+ {
+  "i": 22,
+  "start": 82.12,
+  "speechStart": 82.24,
+  "speechEnd": 84.56,
+  "text": "You're wearing a hoodie.",
+  "end": 84.44
+ },
+ {
+  "i": 23,
+  "start": 84.44,
+  "speechStart": 84.56,
+  "speechEnd": 86.6,
+  "text": "Humans have always wanted this.",
+  "end": 87.0
+ },
+ {
+  "i": 24,
+  "start": 87.0,
+  "speechStart": 87.12,
+  "speechEnd": 88.92,
+  "text": "And some of them got surprisingly close.",
+  "end": 89.42
+ },
+ {
+  "i": 25,
+  "start": 89.42,
+  "speechStart": 89.54,
+  "speechEnd": 93.8,
+  "text": "In 1979, a cyclist named Bryan Allen pedalled a plane across the English Channel.",
+  "end": 93.68
+ },
+ {
+  "i": 26,
+  "start": 93.68,
+  "speechStart": 93.8,
+  "speechEnd": 96.82,
+  "text": "Thirty-five kilometres. Under his own power.",
+  "end": 97.38
+ },
+ {
+  "i": 27,
+  "start": 97.38,
+  "speechStart": 97.5,
+  "speechEnd": 100.02,
+  "text": "The plane had wings almost twenty-nine metres wide,",
+  "end": 100.26
+ },
+ {
+  "i": 28,
+  "start": 100.26,
+  "speechStart": 100.38,
+  "speechEnd": 102.3,
+  "text": "and it weighed about as much as a big dog.",
+  "end": 102.92
+ },
+ {
+  "i": 29,
+  "start": 102.92,
+  "speechStart": 103.04,
+  "speechEnd": 107.06,
+  "text": "Nine years later, a Greek Olympic cyclist pedalled a plane from Crete to Santorini.",
+  "end": 106.94
+ },
+ {
+  "i": 30,
+  "start": 106.94,
+  "speechStart": 107.06,
+  "speechEnd": 110.62,
+  "text": "A hundred and fifteen kilometres, in just under four hours.",
+  "end": 110.5
+ },
+ {
+  "i": 31,
+  "start": 110.5,
+  "speechStart": 110.62,
+  "speechEnd": 112.82,
+  "text": "A gust of wind snapped its tail,",
+  "end": 112.7
+ },
+ {
+  "i": 32,
+  "start": 112.7,
+  "speechStart": 112.82,
+  "speechEnd": 115.28,
+  "text": "and it fell into the sea about seven metres from the beach.",
+  "end": 115.16
+ },
+ {
+  "i": 33,
+  "start": 115.16,
+  "speechStart": 115.28,
+  "speechEnd": 116.92,
+  "text": "It's still the record.",
+  "end": 116.8
+ },
+ {
+  "i": 34,
+  "start": 116.8,
+  "speechStart": 116.92,
+  "speechEnd": 120.26,
+  "text": "If you want speed, there are wingsuits.",
+  "end": 120.14
+ },
+ {
+  "i": 35,
+  "start": 120.14,
+  "speechStart": 120.26,
+  "speechEnd": 121.96,
+  "text": "You jump from a cliff and glide.",
+  "end": 121.84
+ },
+ {
+  "i": 36,
+  "start": 121.84,
+  "speechStart": 121.96,
+  "speechEnd": 125.22,
+  "text": "About two and a half metres forward for every metre you fall,",
+  "end": 125.1
+ },
+ {
+  "i": 37,
+  "start": 125.1,
+  "speechStart": 125.22,
+  "speechEnd": 127.96,
+  "text": "at around a hundred and sixty kilometres an hour.",
+  "end": 127.84
+ },
+ {
+  "i": 38,
+  "start": 127.84,
+  "speechStart": 127.96,
+  "speechEnd": 129.56,
+  "text": "It's not flying up.",
+  "end": 129.44
+ },
+ {
+  "i": 39,
+  "start": 129.44,
+  "speechStart": 129.56,
+  "speechEnd": 133.22,
+  "text": "It's falling, very stylishly. And in 2019,",
+  "end": 133.1
+ },
+ {
+  "i": 40,
+  "start": 133.1,
+  "speechStart": 133.22,
+  "speechEnd": 135.86,
+  "text": "a British inventor flew a suit with small jet",
+  "end": 135.74
+ },
+ {
+  "i": 41,
+  "start": 135.74,
+  "speechStart": 135.86,
+  "speechEnd": 138.704,
+  "text": "engines on his arms along a beach at about a hundred",
+  "end": 138.584
+ },
+ {
+  "i": 42,
+  "start": 138.584,
+  "speechStart": 138.704,
+  "speechEnd": 141.48,
+  "text": "and thirty-seven kilometres an hour. That's a world record.",
+  "end": 141.7
+ },
+ {
+  "i": 43,
+  "start": 141.7,
+  "speechStart": 141.82,
+  "speechEnd": 144.26,
+  "text": "And it's about as close to Nia as anyone has got.",
+  "end": 145.56
+ },
+ {
+  "i": 44,
+  "start": 145.56,
+  "speechStart": 145.68,
+  "speechEnd": 149.46,
+  "text": "Nia lands you back at the observatory. Your legs are jelly.",
+  "end": 150.18
+ },
+ {
+  "i": 45,
+  "start": 150.18,
+  "speechStart": 150.3,
+  "speechEnd": 155.2,
+  "text": "Inside, under the dome, the rest of the group is waiting around the telescope. Kai points at the eyepiece.",
+  "end": 155.74
+ },
+ {
+  "i": 46,
+  "start": 155.74,
+  "speechStart": 155.86,
+  "speechEnd": 156.98,
+  "text": "Look. You look.",
+  "end": 157.46
+ },
+ {
+  "i": 47,
+  "start": 157.46,
+  "speechStart": 157.58,
+  "speechEnd": 160.58,
+  "text": "There's a star that's not a star. It's moving.",
+  "end": 161.02
+ },
+ {
+  "i": 48,
+  "start": 161.02,
+  "speechStart": 161.14,
+  "speechEnd": 163.08,
+  "text": "And every night, it's a little bit brighter.",
+  "end": 163.68
+ },
+ {
+  "i": 49,
+  "start": 163.68,
+  "speechStart": 163.8,
+  "speechEnd": 165.56,
+  "text": "That's what's coming, Kai says.",
+  "end": 166.36
+ },
+ {
+  "i": 50,
+  "start": 166.36,
+  "speechStart": 166.48,
+  "speechEnd": 171.0,
+  "text": "So if you could fly anywhere, where would you go first? Tell us in the comments.",
+  "end": 171.56
+ },
+ {
+  "i": 51,
+  "start": 171.56,
+  "speechStart": 171.68,
+  "speechEnd": 174.14,
+  "text": "And subscribe, because next time, you meet the one",
+  "end": 174.02
+ },
+ {
+  "i": 52,
+  "start": 174.02,
+  "speechStart": 174.14,
+  "speechEnd": 176.34,
+  "text": "who can move things without touching them.",
+  "end": 177.94
+ }
+]
