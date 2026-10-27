@@ -17,5 +17,8 @@ registerSet('space', async (W) => {
   const earth = new THREE.Mesh(new THREE.SphereGeometry(60, 96, 64), new THREE.MeshStandardMaterial({ map: tex, roughness: 0.85 })); earth.position.set(0, -72, -20); W.add(earth);
   const glow = new THREE.Mesh(new THREE.SphereGeometry(61.6, 96, 64), new THREE.MeshBasicMaterial({ color: '#7fc4ff', transparent: true, opacity: 0.22, side: THREE.BackSide })); glow.position.copy(earth.position); W.add(glow);
   const sun = new THREE.DirectionalLight('#fff6e8', 3.2); sun.position.set(80, 40, 60); W.add(sun);
-  return { earth };
+  const mtex = K.canvasTex(1024, 512, (c, w, h) => { c.fillStyle = '#b9b5ad'; c.fillRect(0, 0, w, h); const RR = r(11); for (let i = 0; i < 120; i++) { c.fillStyle = `rgba(90,86,80,${0.15 + RR() * 0.35})`; c.beginPath(); c.arc(RR() * w, RR() * h, 4 + RR() * 30, 0, 7); c.fill(); } });
+  const moon = new THREE.Mesh(new THREE.SphereGeometry(16, 64, 48), new THREE.MeshStandardMaterial({ map: mtex, roughness: 1 })); moon.position.set(-150, 40, -320); W.add(moon);
+  const sunDisc = new THREE.Mesh(new THREE.SphereGeometry(10, 32, 24), new THREE.MeshBasicMaterial({ color: '#fff4d6', fog: false })); sunDisc.position.set(320, 160, 240); W.add(sunDisc);
+  return { earth, moon, sunDisc };
 });
