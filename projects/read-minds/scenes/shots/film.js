@@ -98,18 +98,29 @@ sh('s025', 'market', MK, { cam: [A_KAI],
 
 // ---------------------------------------------------------------- mind reading for real (MRI room)
 const MRI = 'day';
-const R_W = { pos: [2.6, 1.8, 4.2], look: [0, 1.1, -0.6], fov: 44 };
-// lying on the MRI bed: the body is laid along the bed's 3D axis (head toward the bore); k slides the bed in
-const lying = (U, st, k = 0) => { const zh = 0.0 - k * 1.05, hd = proj(st, [0, 1.0, zh]), ft = proj(st, [0, 1.0, zh + 1.65]); if (!hd.ok || !ft.ok) return;
-  const dx = hd.x - ft.x, dy = hd.y - ft.y, L = Math.hypot(dx, dy), ang = Math.atan2(dy, dx) * 180 / Math.PI + 90, w = 1.65 * (hd.ppm + ft.ppm) / 2;
-  const c = person(0, 0, w, { ...P_STAND, aL: [8, 0], aR: [8, 0] }, { ...CAST.kidC, face: k > 0.5 ? 'neutral' : 'smile' });
-  U.svg('ly', `<g transform="translate(${f(ft.x)} ${f(ft.y)}) rotate(${f(ang)}) scale(1 ${f(L / w)})">${c.svg}</g>`, { z: 6 }); };
+const R_W = { pos: [2.8, 3.0, 4.0], look: [0, 0.9, -0.5], fov: 44 };
+// lying on the MRI bed on their back, face up: a flat 2D body laid in the bed's 3D plane (a side band for
+// thickness, then the top: legs, torso, arms, head with the face toward the ceiling); k slides the bed in
+const lying = (U, st, k = 0) => { const zh = 0.0 - k * 1.05, Y = 0.93, C = CAST.kidC, ink = '#1b1410', zf = zh + 1.65;
+  const Q = (x, y, z) => proj(st, [x, Y + y, z]), pts = (q) => q.map((v) => { const r = Q(...v); return `${f(r.x)},${f(r.y)}`; }).join(' ');
+  const hc = Q(0, 0.12, zh + 0.13); if (!hc.ok) return; const sw = Math.max(2, hc.ppm * 0.018), poly = (q, fill) => `<polygon points="${pts(q)}" fill="${fill}" stroke="${ink}" stroke-width="${f(sw)}" stroke-linejoin="round"/>`;
+  const box = (x0, x1, z0, z1, h, fill) => poly([[x0, h, z0], [x1, h, z0], [x1, h, z1], [x0, h, z1]], fill);
+  const sx = Q(0.2, 0, zh + 0.8).y > Q(-0.2, 0, zh + 0.8).y ? 0.2 : -0.2;                       // the side nearer the camera
+  let g = poly([[sx, 0, zh + 0.25], [sx, 0, zf], [sx, 0.16, zf], [sx, 0.16, zh + 0.82], [sx, 0.22, zh + 0.8], [sx, 0.22, zh + 0.25]], '#3a4462');
+  g += box(-0.17, -0.02, zh + 0.8, zf - 0.08, 0.16, C.bottom) + box(0.02, 0.17, zh + 0.8, zf - 0.08, 0.16, C.bottom);   // legs
+  for (const x of [-0.1, 0.1]) g += poly([[x - 0.06, 0.12, zf - 0.1], [x + 0.06, 0.12, zf - 0.1], [x + 0.06, 0.3, zf - 0.02], [x - 0.06, 0.3, zf - 0.02]], C.shoes);   // shoes, toes up
+  g += box(-0.2, 0.2, zh + 0.26, zh + 0.86, 0.22, C.top);                                                              // torso
+  g += box(-0.27, -0.19, zh + 0.3, zh + 0.8, 0.17, '#c89a38') + box(0.19, 0.27, zh + 0.3, zh + 0.8, 0.17, '#c89a38');   // arms at the sides
+  const hr = 0.13 * hc.ppm; g += `<circle cx="${f(hc.x)}" cy="${f(hc.y)}" r="${f(hr)}" fill="#111" stroke="${ink}" stroke-width="${f(sw)}"/>`;
+  for (const x of [-0.05, 0.05]) { const e = Q(x, 0.25, zh + 0.1); g += `<ellipse cx="${f(e.x)}" cy="${f(e.y)}" rx="${f(hr * 0.12)}" ry="${f(hr * 0.17)}" fill="#fff"/>`; }   // eyes, looking at the ceiling
+  if (k < 0.5) { const m0 = Q(-0.04, 0.25, zh + 0.19), m1 = Q(0.04, 0.25, zh + 0.19), mc = Q(0, 0.25, zh + 0.22); g += `<path d="M ${f(m0.x)} ${f(m0.y)} Q ${f(mc.x)} ${f(mc.y)} ${f(m1.x)} ${f(m1.y)}" fill="none" stroke="#fff" stroke-width="${f(sw)}"/>`; }
+  U.svg('ly', g, { z: 6 }); };
 const screenText = (U, st, s, k = 1) => { const q = proj(st, [3.4, 1.8, -3.27]); const w = 2.6 * q.ppm, h = 1.1 * q.ppm; U.svg('scr', `<rect x="${f(q.x - w / 2)}" y="${f(q.y - h / 2)}" width="${f(w)}" height="${f(h)}" fill="#0b1a14"/><text x="${f(q.x - w / 2 + 20)}" y="${f(q.y)}" font-family="IBM Plex Mono" font-weight="700" font-size="${f(h * 0.16)}" fill="#7dffb0">${esc(s.slice(0, Math.round(s.length * k)))}▌</text>`, { z: 5 }); };
 sh('s026', 'mriroom', MRI, { cam: [R_W, mv(R_W, [-0.3, 0, -0.5])], ui(U, t, info, S, st, tt) { lying(U, st, 0); } });
-sh('s027', 'mriroom', MRI, { cam: [{ pos: [-2.0, 1.6, 3.6], look: [0, 1.2, -1], fov: 44 }], ui(U, t, info, S, st, tt) { lying(U, st, 0); put(U, st, 'sci', [1.8, 0, 1.2], 1.75, P_PRESENT, 'scientist', { face: 'smile', flip: true, look: -0.6 }); } });
+sh('s027', 'mriroom', MRI, { cam: [{ pos: [-2.2, 2.9, 3.4], look: [0, 0.9, 0.2], fov: 44 }], ui(U, t, info, S, st, tt) { lying(U, st, 0); put(U, st, 'sci', [1.8, 0, 1.2], 1.75, P_PRESENT, 'scientist', { face: 'smile', flip: true, look: -0.6 }); } });
 sh('s028', 'mriroom', MRI, { cam: [R_W], ui(U, t, info, S, st, tt) { lying(U, st, ease.inOut(clamp(t / 3))); U.timeStack({ date: '2023', time: 'University of Texas at Austin' }, { at: info.w('2023', 0.2) }); } });
-sh('s029', 'mriroom', MRI, { cam: [{ pos: [1.9, 1.75, 2.8], look: [0, 1.05, -0.4], fov: 40 }], ui(U, t, info, S, st, tt) { lying(U, st, 1); U.svg('pod', `<g transform="translate(1500 300)"><circle r="90" fill="#7a5ea8" stroke="#1b1410" stroke-width="6"/><rect x="-22" y="-50" width="44" height="80" rx="22" fill="#fff"/><path d="M -40 10 Q -40 60 0 60 Q 40 60 40 10" fill="none" stroke="#fff" stroke-width="8"/><line x1="0" y1="60" x2="0" y2="80" stroke="#fff" stroke-width="8"/></g>`, { z: 30 }); } });
-sh('s030', 'mriroom', MRI, { cam: [{ pos: [1.9, 1.75, 2.8], look: [0, 1.05, -0.4], fov: 40 }], ui(U, t, info, S, st, tt) { lying(U, st, 1); U.timeChip({ time: '≈ 16 hours', sub: 'OF PODCASTS EACH' }, { at: 0.1, key: 'tc' }); } });
+sh('s029', 'mriroom', MRI, { cam: [{ pos: [1.6, 2.9, 2.2], look: [0, 0.95, -0.4], fov: 42 }], ui(U, t, info, S, st, tt) { lying(U, st, 1); U.svg('pod', `<g transform="translate(1500 300)"><circle r="90" fill="#7a5ea8" stroke="#1b1410" stroke-width="6"/><rect x="-22" y="-50" width="44" height="80" rx="22" fill="#fff"/><path d="M -40 10 Q -40 60 0 60 Q 40 60 40 10" fill="none" stroke="#fff" stroke-width="8"/><line x1="0" y1="60" x2="0" y2="80" stroke="#fff" stroke-width="8"/></g>`, { z: 30 }); } });
+sh('s030', 'mriroom', MRI, { cam: [{ pos: [1.6, 2.9, 2.2], look: [0, 0.95, -0.4], fov: 42 }], ui(U, t, info, S, st, tt) { lying(U, st, 1); U.timeChip({ time: '≈ 16 hours', sub: 'OF PODCASTS EACH' }, { at: 0.1, key: 'tc' }); } });
 ncard('s031', { kicker: 'A COMPUTER LEARNED WHICH PATTERN GOES WITH WHICH IDEA', brain: false, draw: (U, t, info, tt) => U.svg('br', brainDots(620, 600, 700, tt, 0.25) + `<path d="M 1000 600 L 1180 600" stroke="#7ff0ff" stroke-width="8"/><path d="M 1160 580 L 1190 600 L 1160 620" fill="none" stroke="#7ff0ff" stroke-width="8"/><g transform="translate(1450 600)">${['dog', 'rain', 'home', 'car'].map((w, i) => `<rect x="-140" y="${-170 + i * 90}" width="280" height="70" rx="12" fill="#14101e" stroke="#ff5fd2" stroke-width="4" opacity="${f(clamp((t - i * 0.4) / 0.3))}"/><text x="0" y="${-122 + i * 90}" text-anchor="middle" font-family="IBM Plex Mono" font-size="38" fill="#fff" opacity="${f(clamp((t - i * 0.4) / 0.3))}">${w}</text>`).join('')}</g>`, { z: 2 }), top: 100 });
 sh('s032', 'mriroom', MRI, { cam: [{ pos: [2.4, 1.7, 0.4], look: [3.4, 1.7, -3.3], fov: 40 }], ui(U, t, info, S, st, tt) { screenText(U, st, 'she went home… and looked for the dog…', clamp((t - info.w('text', 3.6) + 0.4) / 1.2)); } });
 ncard('s033', { text: 'Not word for word.', sub: 'It got the gist.', who: 'her', pose: P_SHRUG, face: 'smile', side: 'left', shades: true });
