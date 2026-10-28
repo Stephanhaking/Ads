@@ -1,0 +1,31 @@
+What If an Asteroid Was Heading for Earth?
+
+The "star" Kai has been watching every night is not a star. It's a rock about 150 metres wide, and it's coming. In Bo's garage, the five friends find out what that really means: how fast asteroids hit, how much energy they carry, what small, medium and giant rocks have already done to Earth, and how humans already moved one on purpose.
+
+The story is fiction: no real asteroid is known to be on a collision course. The science and the history are real (sources below).
+
+CHAPTERS
+0:00 The garage
+0:38 How Kai found it
+1:02 How fast
+1:28 Small rocks: Chelyabinsk
+2:02 Medium rocks: Tunguska and Meteor Crater
+2:26 Big rocks: the dinosaurs
+2:41 Who's watching
+3:12 The plan
+3:57 Your turn
+
+THE SCIENCE AND WHERE IT COMES FROM
+- Asteroids typically hit Earth at about 20 km/s (impact-modelling studies)
+- A 150 m rock at 20 km/s carries roughly 170 megatons of TNT (our estimate: 1/2 m v^2, density 2,000 kg/m^3); the biggest bomb ever tested was about 50 Mt
+- 15 Feb 2013, Chelyabinsk, Russia: a rock about 17-19 m across exploded in the air with roughly 30 times the energy of the Hiroshima bomb; about 1,500 people were hurt, mostly by glass from blown-in windows (Wikipedia; AP; CBC)
+- 30 June 1908, Tunguska, Siberia: an air burst flattened about 80 million trees over about 2,150 km^2 (Wikipedia; Britannica)
+- Meteor Crater, Arizona: about 1.2 km wide, made about 50,000 years ago by an iron meteorite about 50 m across (NASA Earth Observatory; Arizona State University)
+- About 66 million years ago, a rock about 10 km across hit what is now Mexico (Chicxulub studies)
+- 13 April 2029: asteroid Apophis (about 340 m) passes about 32,000 km from Earth, inside the ring of geostationary satellites, and will not hit (ESA; The Planetary Society)
+- NASA's NEO Surveyor infrared telescope, launching no earlier than 2027, aims to find most near-Earth objects larger than 140 m (NASA JPL)
+- 26 Sept 2022: NASA's DART spacecraft hit Dimorphos (about 150 m) at about 22,500 km/h and shortened its orbit by about 32 minutes (Science News; Space.com)
+
+These figures come from secondary sources and search summaries; not every original paper was read. If you spot an error, tell us in the comments.
+
+What would you do if you saw it coming? Subscribe: next time, the five of you try to move a rock from space.

@@ -1,11 +1,11 @@
 {
  "title": "What If an Asteroid Was Heading for Earth?",
- "duration": 158.92,
+ "duration": 248.86,
  "shots": [
   {
    "id": "s001",
    "start": 0.0,
-   "end": 0.78,
+   "end": 0.68,
    "line": "Sunday night.",
    "set": null,
    "scene": "TODO",
@@ -18,8 +18,8 @@
   },
   {
    "id": "s002",
-   "start": 0.78,
-   "end": 3.24,
+   "start": 0.68,
+   "end": 3.06,
    "line": "Bo's garage is now a headquarters.",
    "set": null,
    "scene": "TODO",
@@ -32,9 +32,9 @@
   },
   {
    "id": "s003",
-   "start": 3.24,
-   "end": 5.04,
-   "line": "There's a whiteboard, a laptop,",
+   "start": 3.06,
+   "end": 5.48,
+   "line": "There's a whiteboard, a laptop, five folding chairs,",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -46,9 +46,9 @@
   },
   {
    "id": "s004",
-   "start": 5.04,
-   "end": 8.64,
-   "line": "and a bag of crisps nobody is allowed to touch.",
+   "start": 5.48,
+   "end": 10.12,
+   "line": "and a bag of crisps nobody is allowed to touch. Nia lands in the driveway.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -60,9 +60,9 @@
   },
   {
    "id": "s005",
-   "start": 8.64,
-   "end": 13.86,
-   "line": "Kai has been watching the rock every night. Now Kai has numbers. Kai turns the laptop around.",
+   "start": 10.12,
+   "end": 11.48,
+   "line": "Ravi walks in with his headphones on.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -74,9 +74,9 @@
   },
   {
    "id": "s006",
-   "start": 13.86,
-   "end": 17.72,
-   "line": "On the screen there's a dot, and a long curved line.",
+   "start": 11.48,
+   "end": 13.98,
+   "line": "Bo is already there, because it's her garage.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -88,9 +88,9 @@
   },
   {
    "id": "s007",
-   "start": 17.72,
-   "end": 19.8,
-   "line": "The line ends at Earth.",
+   "start": 13.98,
+   "end": 18.18,
+   "line": "Kai has been watching the rock every night for a week. Now Kai has numbers.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -102,9 +102,9 @@
   },
   {
    "id": "s008",
-   "start": 19.8,
-   "end": 23.32,
-   "line": "It's about a hundred and fifty metres wide, Kai says.",
+   "start": 18.18,
+   "end": 19.6,
+   "line": "Kai turns the laptop around.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -116,9 +116,9 @@
   },
   {
    "id": "s009",
-   "start": 23.32,
-   "end": 28.24,
-   "line": "And it's heading for us. Nobody says anything. Ravi takes off his headphones.",
+   "start": 19.6,
+   "end": 24.9,
+   "line": "On the screen there's a dot, and a long curved line. The line ends at Earth.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -130,9 +130,9 @@
   },
   {
    "id": "s010",
-   "start": 28.24,
-   "end": 32.46,
-   "line": "So what if an asteroid was heading for Earth? A real one.",
+   "start": 24.9,
+   "end": 28.76,
+   "line": "It's about a hundred and fifty metres wide, Kai says. And it's heading for us.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -144,9 +144,9 @@
   },
   {
    "id": "s011",
-   "start": 32.46,
-   "end": 36.26,
-   "line": "With your name on it. First, the speed.",
+   "start": 28.76,
+   "end": 33.7,
+   "line": "Nobody says anything. Ravi takes off his headphones. That's how you know it's serious.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -158,9 +158,9 @@
   },
   {
    "id": "s012",
-   "start": 36.26,
-   "end": 38.86,
-   "line": "Asteroids hit Earth at about twenty kilometres a second.",
+   "start": 33.7,
+   "end": 38.08,
+   "line": "So what if an asteroid was heading for Earth? A real one. With your name on it.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -172,9 +172,9 @@
   },
   {
    "id": "s013",
-   "start": 38.86,
-   "end": 41.56,
-   "line": "That's from London to Paris in under twenty seconds.",
+   "start": 38.08,
+   "end": 39.6,
+   "line": "Kai explains.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -186,9 +186,9 @@
   },
   {
    "id": "s014",
-   "start": 41.56,
-   "end": 43.5,
-   "line": "And speed is where the energy hides.",
+   "start": 39.6,
+   "end": 43.56,
+   "line": "Every night for a week, Kai photographed the same patch of sky.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -200,9 +200,9 @@
   },
   {
    "id": "s015",
-   "start": 43.5,
-   "end": 47.68,
-   "line": "A rock this size, at that speed, carries about a hundred and seventy megatons.",
+   "start": 43.56,
+   "end": 44.96,
+   "line": "The stars stay in the same place.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -214,9 +214,9 @@
   },
   {
    "id": "s016",
-   "start": 47.68,
-   "end": 52.76,
-   "line": "That's more than three times the biggest bomb humans ever tested. Bo cracks her knuckles.",
+   "start": 44.96,
+   "end": 47.76,
+   "line": "But one dot moved a little every night.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -228,9 +228,9 @@
   },
   {
    "id": "s017",
-   "start": 52.76,
-   "end": 56.22,
-   "line": "Kai shakes their head. Not even you.",
+   "start": 47.76,
+   "end": 50.22,
+   "line": "That's how real astronomers find asteroids.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -242,9 +242,9 @@
   },
   {
    "id": "s018",
-   "start": 56.22,
-   "end": 58.64,
-   "line": "Even small ones are scary.",
+   "start": 50.22,
+   "end": 55.82,
+   "line": "They compare pictures of the sky, and look for the dot that moves. And this dot isn't just moving.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -256,9 +256,9 @@
   },
   {
    "id": "s019",
-   "start": 58.64,
-   "end": 61.56,
-   "line": "In 2013, over the city of Chelyabinsk in Russia,",
+   "start": 55.82,
+   "end": 61.96,
+   "line": "It's getting brighter. Because it's getting closer. First, the speed.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -270,9 +270,9 @@
   },
   {
    "id": "s020",
-   "start": 61.56,
-   "end": 64.16,
-   "line": "a rock about eighteen metres across hit the air.",
+   "start": 61.96,
+   "end": 64.92,
+   "line": "Asteroids hit Earth at about twenty kilometres a second.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -284,9 +284,9 @@
   },
   {
    "id": "s021",
-   "start": 64.16,
-   "end": 68.74,
-   "line": "It exploded above the city with about thirty times the energy of the Hiroshima bomb.",
+   "start": 64.92,
+   "end": 68.02,
+   "line": "That's from London to Paris in under twenty seconds.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -298,9 +298,9 @@
   },
   {
    "id": "s022",
-   "start": 68.74,
-   "end": 71.14,
-   "line": "Around fifteen hundred people were hurt.",
+   "start": 68.02,
+   "end": 70.34,
+   "line": "And speed is where the energy hides.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -312,9 +312,9 @@
   },
   {
    "id": "s023",
-   "start": 71.14,
-   "end": 74.6,
-   "line": "Almost all of them by glass, when the shock wave blew in their windows.",
+   "start": 70.34,
+   "end": 73.36,
+   "line": "Double the speed, and you get four times the energy.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -326,9 +326,9 @@
   },
   {
    "id": "s024",
-   "start": 74.6,
-   "end": 79.2,
-   "line": "People ran to their windows to see the flash. Then the windows came to them.",
+   "start": 73.36,
+   "end": 78.26,
+   "line": "A rock this size, at that speed, carries about a hundred and seventy megatons.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -340,9 +340,9 @@
   },
   {
    "id": "s025",
-   "start": 79.2,
-   "end": 80.98,
-   "line": "And sixty-six million years ago,",
+   "start": 78.26,
+   "end": 81.78,
+   "line": "That's more than three times the biggest bomb humans ever tested.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -354,9 +354,9 @@
   },
   {
    "id": "s026",
-   "start": 80.98,
-   "end": 86.78,
-   "line": "a rock about ten kilometres wide hit what is now Mexico. You know how that ended for the dinosaurs.",
+   "start": 81.78,
+   "end": 83.54,
+   "line": "Bo cracks her knuckles.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -368,9 +368,9 @@
   },
   {
    "id": "s027",
-   "start": 86.78,
-   "end": 88.86,
-   "line": "Ravi asks the obvious question.",
+   "start": 83.54,
+   "end": 87.98,
+   "line": "Kai shakes their head. Not even you.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -382,9 +382,9 @@
   },
   {
    "id": "s028",
-   "start": 88.86,
-   "end": 94.42,
-   "line": "How did nobody see that one coming? Easy, Kai says. Nobody had telescopes.",
+   "start": 87.98,
+   "end": 90.46,
+   "line": "Kai opens a video on the laptop.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -396,9 +396,9 @@
   },
   {
    "id": "s029",
-   "start": 94.42,
-   "end": 95.5,
-   "line": "The good news?",
+   "start": 90.46,
+   "end": 92.7,
+   "line": "Even small rocks are scary.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -410,9 +410,9 @@
   },
   {
    "id": "s030",
-   "start": 95.5,
-   "end": 97.6,
-   "line": "Astronomers watch the sky all the time.",
+   "start": 92.7,
+   "end": 95.58,
+   "line": "In 2013, over the city of Chelyabinsk in Russia,",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -424,9 +424,9 @@
   },
   {
    "id": "s031",
-   "start": 97.6,
-   "end": 99.68,
-   "line": "On the thirteenth of April, 2029,",
+   "start": 95.58,
+   "end": 100.36,
+   "line": "a rock about eighteen metres across hit the air. That's about the length of two buses.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -438,9 +438,9 @@
   },
   {
    "id": "s032",
-   "start": 99.68,
-   "end": 104.52,
-   "line": "an asteroid called Apophis will fly past Earth closer than some of our satellites.",
+   "start": 100.36,
+   "end": 105.26,
+   "line": "It exploded above the city with about thirty times the energy of the Hiroshima bomb.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -452,9 +452,9 @@
   },
   {
    "id": "s033",
-   "start": 104.52,
-   "end": 108.3,
-   "line": "It won't hit. We checked. Twice.",
+   "start": 105.26,
+   "end": 106.74,
+   "line": "Nobody saw it coming.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -466,9 +466,9 @@
   },
   {
    "id": "s034",
-   "start": 108.3,
-   "end": 112.76,
-   "line": "Back in the garage, Bo wants to punch it. Nia wants to fly up and look at it.",
+   "start": 106.74,
+   "end": 108.6,
+   "line": "Around fifteen hundred people were hurt.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -480,9 +480,9 @@
   },
   {
    "id": "s035",
-   "start": 112.76,
-   "end": 114.68,
-   "line": "Ravi wants to try pushing it.",
+   "start": 108.6,
+   "end": 111.46,
+   "line": "Almost all of them by glass, when the shock wave blew in their windows.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -494,9 +494,9 @@
   },
   {
    "id": "s036",
-   "start": 114.68,
-   "end": 116.6,
-   "line": "Kai reminds Nia that there's no air up there,",
+   "start": 111.46,
+   "end": 114.18,
+   "line": "People ran to their windows to see the flash.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -508,9 +508,9 @@
   },
   {
    "id": "s037",
-   "start": 116.6,
-   "end": 121.68,
-   "line": "and it's much colder than her worst day at three kilometres. Nia sits back down.",
+   "start": 114.18,
+   "end": 116.34,
+   "line": "Then the windows came to them.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -522,9 +522,9 @@
   },
   {
    "id": "s038",
-   "start": 121.68,
-   "end": 123.52,
-   "line": "And you remember something you read.",
+   "start": 116.34,
+   "end": 118.34,
+   "line": "So the first rule of asteroids:",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -536,9 +536,9 @@
   },
   {
    "id": "s039",
-   "start": 123.52,
-   "end": 127.92,
-   "line": "In 2022, NASA crashed a spacecraft into an asteroid on purpose.",
+   "start": 118.34,
+   "end": 122.22,
+   "line": "if you see a flash in the sky, stay away from the windows.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -550,9 +550,9 @@
   },
   {
    "id": "s040",
-   "start": 127.92,
-   "end": 129.14,
-   "line": "It was called DART.",
+   "start": 122.22,
+   "end": 126.74,
+   "line": "Go back to 1908, to a forest in Siberia called Tunguska.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -564,9 +564,9 @@
   },
   {
    "id": "s041",
-   "start": 129.14,
-   "end": 133.42,
-   "line": "It hit a rock about the same size as ours, at twenty-two thousand kilometres an hour.",
+   "start": 126.74,
+   "end": 130.2,
+   "line": "Something exploded in the air above it. It left no crater.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -578,9 +578,9 @@
   },
   {
    "id": "s042",
-   "start": 133.42,
-   "end": 137.06,
-   "line": "And it changed the rock's orbit by thirty-two minutes.",
+   "start": 130.2,
+   "end": 135.32,
+   "line": "Just eighty million trees, knocked flat, over an area bigger than a big city.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -592,9 +592,9 @@
   },
   {
    "id": "s043",
-   "start": 137.06,
-   "end": 139.7,
-   "line": "Humans have already moved an asteroid.",
+   "start": 135.32,
+   "end": 138.16,
+   "line": "And in Arizona, there's a hole more than a kilometre wide.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -606,9 +606,9 @@
   },
   {
    "id": "s044",
-   "start": 139.7,
-   "end": 144.9,
-   "line": "So we can too, you say. Kai looks at you. Then we don't stop it.",
+   "start": 138.16,
+   "end": 140.16,
+   "line": "It was made about fifty thousand years ago,",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -620,9 +620,9 @@
   },
   {
    "id": "s045",
-   "start": 144.9,
-   "end": 146.94,
-   "line": "We nudge it.",
+   "start": 140.16,
+   "end": 145.98,
+   "line": "by a lump of iron about fifty metres across. Smaller than our rock.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -634,9 +634,9 @@
   },
   {
    "id": "s046",
-   "start": 146.94,
-   "end": 150.36,
-   "line": "So what would you do if you saw it coming? Tell us in the comments.",
+   "start": 145.98,
+   "end": 147.66,
+   "line": "And sixty-six million years ago,",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -648,9 +648,9 @@
   },
   {
    "id": "s047",
-   "start": 150.36,
-   "end": 155.34,
-   "line": "And subscribe, because next time, the five of you try to move a rock from space.",
+   "start": 147.66,
+   "end": 153.52,
+   "line": "a rock about ten kilometres wide hit what is now Mexico. You know how that ended for the dinosaurs.",
    "set": null,
    "scene": "TODO",
    "footnote": "",
@@ -662,8 +662,400 @@
   },
   {
    "id": "s048",
-   "start": 155.34,
-   "end": 158.92,
+   "start": 153.52,
+   "end": 155.68,
+   "line": "Ravi asks the obvious question.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s049",
+   "start": 155.68,
+   "end": 161.32,
+   "line": "How did nobody see that one coming? Easy, Kai says. Nobody had telescopes.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s050",
+   "start": 161.32,
+   "end": 162.9,
+   "line": "Today, people do.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s051",
+   "start": 162.9,
+   "end": 166.12,
+   "line": "Astronomers watch the sky every night, and they track thousands of rocks.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s052",
+   "start": 166.12,
+   "end": 168.48,
+   "line": "On the thirteenth of April, 2029,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s053",
+   "start": 168.48,
+   "end": 172.94,
+   "line": "an asteroid called Apophis will fly past Earth closer than some of our satellites.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s054",
+   "start": 172.94,
+   "end": 175.24,
+   "line": "It won't hit. We checked. Twice.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s055",
+   "start": 175.24,
+   "end": 178.8,
+   "line": "On that night, people in parts of the world will be able to see it without a telescope.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s056",
+   "start": 178.8,
+   "end": 182.14,
+   "line": "A real asteroid, sliding across the sky.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s057",
+   "start": 182.14,
+   "end": 184.96,
+   "line": "And NASA is building a space telescope called NEO Surveyor,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s058",
+   "start": 184.96,
+   "end": 189.18,
+   "line": "to find most of the big ones before they find us. But our rock?",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s059",
+   "start": 189.18,
+   "end": 192.08,
+   "line": "Nobody has spotted it. Except Kai.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s060",
+   "start": 192.08,
+   "end": 195.5,
+   "line": "Back in the garage, everybody has an idea. Bo wants to punch it.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s061",
+   "start": 195.5,
+   "end": 199.38,
+   "line": "Nia wants to fly up and look at it. Ravi wants to try pushing it.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s062",
+   "start": 199.38,
+   "end": 201.34,
+   "line": "Kai reminds Nia that there's no air up there,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s063",
+   "start": 201.34,
+   "end": 206.24,
+   "line": "and it's much colder than her worst day at three kilometres. Nia sits back down.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s064",
+   "start": 206.24,
+   "end": 209.44,
+   "line": "Bo suggests a really big net. Kai doesn't even answer.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s065",
+   "start": 209.44,
+   "end": 211.94,
+   "line": "And then you remember something you read.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s066",
+   "start": 211.94,
+   "end": 216.42,
+   "line": "In 2022, NASA crashed a spacecraft into an asteroid on purpose.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s067",
+   "start": 216.42,
+   "end": 217.52,
+   "line": "It was called DART.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s068",
+   "start": 217.52,
+   "end": 219.56,
+   "line": "It hit a rock about the same size as ours,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s069",
+   "start": 219.56,
+   "end": 222.48,
+   "line": "at twenty-two thousand kilometres an hour.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s070",
+   "start": 222.48,
+   "end": 225.7,
+   "line": "And it changed the rock's orbit by thirty-two minutes.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s071",
+   "start": 225.7,
+   "end": 230.44,
+   "line": "Humans have already moved an asteroid, you say. So we can too.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s072",
+   "start": 230.44,
+   "end": 232.5,
+   "line": "Kai looks at you for a long time.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s073",
+   "start": 232.5,
+   "end": 237.06,
+   "line": "Then Kai writes one word on the whiteboard. Nudge.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s074",
+   "start": 237.06,
+   "end": 240.88,
+   "line": "So what would you do if you saw it coming? Tell us in the comments.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s075",
+   "start": 240.88,
+   "end": 245.38,
+   "line": "And subscribe, because next time, the five of you try to move a rock from space.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s076",
+   "start": 245.38,
+   "end": 248.86,
    "line": "And you find out what that would really take.",
    "set": null,
    "scene": "TODO",
