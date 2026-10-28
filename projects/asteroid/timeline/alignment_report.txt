@@ -1,0 +1,18 @@
+00:01.34  replace  script: Bo's  |  heard: Beau's
+00:20.24  replace  script: a hundred and fifty metres  |  heard: 150 meters
+00:37.32  replace  script: twenty kilometres  |  heard: 20 kilometers
+00:40.38  replace  script: twenty  |  heard: 20
+00:45.66  replace  script: a hundred and seventy  |  heard: 170
+00:52.92  replace  script: shakes  |  heard: shake
+01:02.22  replace  script: eighteen metres  |  heard: 18 meters
+01:05.96  replace  script: thirty  |  heard: 30
+01:09.04  replace  script: fifteen hundred  |  heard: 1500
+01:12.92  replace  script: shock wave  |  heard: shockwave
+01:17.04  replace  script: windows  |  heard: Indos
+01:19.42  replace  script: sixty-six  |  heard: 66
+01:21.64  replace  script: ten kilometres  |  heard: 10 kilometers
+01:37.94  replace  script: thirteenth  |  heard: 13th
+01:59.16  replace  script: kilometres.  |  heard: kilometers.
+02:11.74  replace  script: twenty-two thousand kilometres  |  heard: 22 ,000 kilometers
+02:14.78  replace  script: rock's  |  heard: rocks
+02:15.44  replace  script: thirty-two  |  heard: 32

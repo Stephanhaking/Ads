@@ -1,7 +1,7 @@
 # Script approval
 
 - version: script_v01.md
-- approved: 2026-10-28 07:24
-- user said: "faça os dois restantes (pedido do utilizador, piloto automático, 28 Oct 2026)"
-- script_final.txt sha256: 3091f98691df69c7bd2c4c135630664caeb7d969d6b3d60f65b5f553fd3f330c
-- words: 469
+- approved: 2026-10-28 07:34
+- user said: "faça os dois restantes; versão longa pedida pelo utilizador (28 Oct 2026)"
+- script_final.txt sha256: 33aeb45a0b2fbde5ae6e1bf80d60fffded806844c609920b9c1f9999c14de8e0
+- words: 757

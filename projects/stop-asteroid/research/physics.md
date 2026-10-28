@@ -10,6 +10,7 @@ Inputs come from web-search summaries (secondary sources); originals not all ope
 | D03 | DART | 26 Sept 2022: hit Dimorphos at about 22,500 km/h; orbit shortened by about 32 minutes (11 h 55 min to 11 h 23 min); minimum goal 73 seconds; debris thrown off added to the push | Science News; Space.com; Scientific American | |
 | D04 | Gravity tractor | proposed 2005 (Lu & Love, Nature): a spacecraft hovers near an asteroid and its own gravity slowly tugs it; a 20-tonne tractor could deflect a typical 200 m asteroid given about 20 years' warning | arXiv astro-ph/0509595; ESA | not tested yet |
 | D05 | Hera | ESA's Hera launched 7 Oct 2024 to inspect Dimorphos after DART; due to arrive in late 2026 | Planetary Society; Scientific American; Space.com | |
+| D06 | NEO Surveyor | NASA infrared asteroid-hunting telescope, launch no earlier than Sept 2027 | NASA JPL | |
 
 ## Unknowns
 - U01 Pushing an asteroid with the mind, or stopping time: fiction.

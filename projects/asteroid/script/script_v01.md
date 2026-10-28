@@ -1,26 +1,46 @@
 ## Cold open
 [Bo's garage at night, turned into a base: a whiteboard, a laptop, five chairs; the group arrives]
-Sunday night. Bo's garage is now a headquarters. There's a whiteboard, a laptop, and a bag of crisps nobody is allowed to touch.
-Kai has been watching the rock every night. Now Kai has numbers.
+Sunday night. Bo's garage is now a headquarters. There's a whiteboard, a laptop, five folding chairs, and a bag of crisps nobody is allowed to touch.
+Nia lands in the driveway. Ravi walks in with his headphones on. Bo is already there, because it's her garage.
+Kai has been watching the rock every night for a week. Now Kai has numbers.
 Kai turns the laptop around. On the screen there's a dot, and a long curved line. The line ends at Earth.
 It's about a hundred and fifty metres wide, Kai says. And it's heading for us.
-Nobody says anything. Ravi takes off his headphones.
+Nobody says anything. Ravi takes off his headphones. That's how you know it's serious.
 So what if an asteroid was heading for Earth? A real one. With your name on it.
+
+## How Kai found it
+[a night sky photo; one dot moving between pictures]
+Kai explains. Every night for a week, Kai photographed the same patch of sky.
+The stars stay in the same place. But one dot moved a little every night.
+That's how real astronomers find asteroids. They compare pictures of the sky, and look for the dot that moves.
+And this dot isn't just moving. It's getting brighter. Because it's getting closer.
 
 ## How fast
 [space; the rock tumbling; Earth far away]
 First, the speed. Asteroids hit Earth at about twenty kilometres a second.
 That's from London to Paris in under twenty seconds.
-And speed is where the energy hides. A rock this size, at that speed, carries about a hundred and seventy megatons.
+And speed is where the energy hides. Double the speed, and you get four times the energy.
+A rock this size, at that speed, carries about a hundred and seventy megatons.
 That's more than three times the biggest bomb humans ever tested.
 Bo cracks her knuckles. Kai shakes their head. Not even you.
 
 ## Small rocks
 [a snowy Russian city at morning; a bright streak in the sky]
-Even small ones are scary. In 2013, over the city of Chelyabinsk in Russia, a rock about eighteen metres across hit the air.
+Kai opens a video on the laptop. Even small rocks are scary.
+In 2013, over the city of Chelyabinsk in Russia, a rock about eighteen metres across hit the air.
+That's about the length of two buses.
 It exploded above the city with about thirty times the energy of the Hiroshima bomb.
+Nobody saw it coming.
 Around fifteen hundred people were hurt. Almost all of them by glass, when the shock wave blew in their windows.
 People ran to their windows to see the flash. Then the windows came to them.
+So the first rule of asteroids: if you see a flash in the sky, stay away from the windows.
+
+## Medium rocks
+[a Siberian forest in 1908; trees knocked down in a huge circle]
+Go back to 1908, to a forest in Siberia called Tunguska.
+Something exploded in the air above it. It left no crater. Just eighty million trees, knocked flat, over an area bigger than a big city.
+And in Arizona, there's a hole more than a kilometre wide.
+It was made about fifty thousand years ago, by a lump of iron about fifty metres across. Smaller than our rock.
 
 ## Big rocks
 [a prehistoric forest; dinosaurs; a light in the sky]
@@ -29,23 +49,29 @@ You know how that ended for the dinosaurs.
 Ravi asks the obvious question. How did nobody see that one coming?
 Easy, Kai says. Nobody had telescopes.
 
-## Close calls
+## Who's watching
 [space; Earth surrounded by a ring of satellites; an asteroid passing inside it]
-The good news? Astronomers watch the sky all the time.
+Today, people do. Astronomers watch the sky every night, and they track thousands of rocks.
 On the thirteenth of April, 2029, an asteroid called Apophis will fly past Earth closer than some of our satellites.
 It won't hit. We checked. Twice.
+On that night, people in parts of the world will be able to see it without a telescope. A real asteroid, sliding across the sky.
+And NASA is building a space telescope called NEO Surveyor, to find most of the big ones before they find us.
+But our rock? Nobody has spotted it. Except Kai.
 
 ## The plan
 [back in the garage; the whiteboard fills up with drawings]
-Back in the garage, Bo wants to punch it. Nia wants to fly up and look at it. Ravi wants to try pushing it.
+Back in the garage, everybody has an idea.
+Bo wants to punch it. Nia wants to fly up and look at it. Ravi wants to try pushing it.
 Kai reminds Nia that there's no air up there, and it's much colder than her worst day at three kilometres.
 Nia sits back down.
-And you remember something you read.
+Bo suggests a really big net. Kai doesn't even answer.
+And then you remember something you read.
 In 2022, NASA crashed a spacecraft into an asteroid on purpose. It was called DART.
 It hit a rock about the same size as ours, at twenty-two thousand kilometres an hour.
 And it changed the rock's orbit by thirty-two minutes.
-Humans have already moved an asteroid. So we can too, you say.
-Kai looks at you. Then we don't stop it. We nudge it.
+Humans have already moved an asteroid, you say. So we can too.
+Kai looks at you for a long time. Then Kai writes one word on the whiteboard.
+Nudge.
 
 ## Ending
 So what would you do if you saw it coming? Tell us in the comments.
