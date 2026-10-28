@@ -3,384 +3,608 @@
   "i": 0,
   "start": 0.0,
   "speechStart": 0.0,
-  "speechEnd": 0.9,
+  "speechEnd": 0.8,
   "text": "Sunday night.",
-  "end": 0.78
+  "end": 0.68
  },
  {
   "i": 1,
-  "start": 0.78,
-  "speechStart": 0.9,
-  "speechEnd": 2.7,
+  "start": 0.68,
+  "speechStart": 0.8,
+  "speechEnd": 2.72,
   "text": "Bo's garage is now a headquarters.",
-  "end": 3.24
+  "end": 3.06
  },
  {
   "i": 2,
-  "start": 3.24,
-  "speechStart": 3.36,
-  "speechEnd": 4.9,
-  "text": "There's a whiteboard, a laptop,",
-  "end": 5.04
+  "start": 3.06,
+  "speechStart": 3.18,
+  "speechEnd": 5.46,
+  "text": "There's a whiteboard, a laptop, five folding chairs,",
+  "end": 5.48
  },
  {
   "i": 3,
-  "start": 5.04,
-  "speechStart": 5.16,
-  "speechEnd": 8.06,
-  "text": "and a bag of crisps nobody is allowed to touch.",
-  "end": 8.64
+  "start": 5.48,
+  "speechStart": 5.6,
+  "speechEnd": 9.74,
+  "text": "and a bag of crisps nobody is allowed to touch. Nia lands in the driveway.",
+  "end": 10.12
  },
  {
   "i": 4,
-  "start": 8.64,
-  "speechStart": 8.76,
-  "speechEnd": 13.58,
-  "text": "Kai has been watching the rock every night. Now Kai has numbers. Kai turns the laptop around.",
-  "end": 13.86
+  "start": 10.12,
+  "speechStart": 10.24,
+  "speechEnd": 11.6,
+  "text": "Ravi walks in with his headphones on.",
+  "end": 11.48
  },
  {
   "i": 5,
-  "start": 13.86,
-  "speechStart": 13.98,
-  "speechEnd": 17.22,
-  "text": "On the screen there's a dot, and a long curved line.",
-  "end": 17.72
+  "start": 11.48,
+  "speechStart": 11.6,
+  "speechEnd": 13.46,
+  "text": "Bo is already there, because it's her garage.",
+  "end": 13.98
  },
  {
   "i": 6,
-  "start": 17.72,
-  "speechStart": 17.84,
-  "speechEnd": 19.22,
-  "text": "The line ends at Earth.",
-  "end": 19.8
+  "start": 13.98,
+  "speechStart": 14.1,
+  "speechEnd": 17.72,
+  "text": "Kai has been watching the rock every night for a week. Now Kai has numbers.",
+  "end": 18.18
  },
  {
   "i": 7,
-  "start": 19.8,
-  "speechStart": 19.92,
-  "speechEnd": 22.7,
-  "text": "It's about a hundred and fifty metres wide, Kai says.",
-  "end": 23.32
+  "start": 18.18,
+  "speechStart": 18.3,
+  "speechEnd": 19.38,
+  "text": "Kai turns the laptop around.",
+  "end": 19.6
  },
  {
   "i": 8,
-  "start": 23.32,
-  "speechStart": 23.44,
-  "speechEnd": 28.36,
-  "text": "And it's heading for us. Nobody says anything. Ravi takes off his headphones.",
-  "end": 28.24
+  "start": 19.6,
+  "speechStart": 19.72,
+  "speechEnd": 24.32,
+  "text": "On the screen there's a dot, and a long curved line. The line ends at Earth.",
+  "end": 24.9
  },
  {
   "i": 9,
-  "start": 28.24,
-  "speechStart": 28.36,
-  "speechEnd": 32.58,
-  "text": "So what if an asteroid was heading for Earth? A real one.",
-  "end": 32.46
+  "start": 24.9,
+  "speechStart": 25.02,
+  "speechEnd": 28.88,
+  "text": "It's about a hundred and fifty metres wide, Kai says. And it's heading for us.",
+  "end": 28.76
  },
  {
   "i": 10,
-  "start": 32.46,
-  "speechStart": 32.58,
-  "speechEnd": 35.9,
-  "text": "With your name on it. First, the speed.",
-  "end": 36.26
+  "start": 28.76,
+  "speechStart": 28.88,
+  "speechEnd": 33.06,
+  "text": "Nobody says anything. Ravi takes off his headphones. That's how you know it's serious.",
+  "end": 33.7
  },
  {
   "i": 11,
-  "start": 36.26,
-  "speechStart": 36.38,
-  "speechEnd": 38.72,
-  "text": "Asteroids hit Earth at about twenty kilometres a second.",
-  "end": 38.86
+  "start": 33.7,
+  "speechStart": 33.82,
+  "speechEnd": 38.2,
+  "text": "So what if an asteroid was heading for Earth? A real one. With your name on it.",
+  "end": 38.08
  },
  {
   "i": 12,
-  "start": 38.86,
-  "speechStart": 38.98,
-  "speechEnd": 41.14,
-  "text": "That's from London to Paris in under twenty seconds.",
-  "end": 41.56
+  "start": 38.08,
+  "speechStart": 38.2,
+  "speechEnd": 39.72,
+  "text": "Kai explains.",
+  "end": 39.6
  },
  {
   "i": 13,
-  "start": 41.56,
-  "speechStart": 41.68,
-  "speechEnd": 43.2,
-  "text": "And speed is where the energy hides.",
-  "end": 43.5
+  "start": 39.6,
+  "speechStart": 39.72,
+  "speechEnd": 43.18,
+  "text": "Every night for a week, Kai photographed the same patch of sky.",
+  "end": 43.56
  },
  {
   "i": 14,
-  "start": 43.5,
-  "speechStart": 43.62,
-  "speechEnd": 47.5,
-  "text": "A rock this size, at that speed, carries about a hundred and seventy megatons.",
-  "end": 47.68
+  "start": 43.56,
+  "speechStart": 43.68,
+  "speechEnd": 44.76,
+  "text": "The stars stay in the same place.",
+  "end": 44.96
  },
  {
   "i": 15,
-  "start": 47.68,
-  "speechStart": 47.8,
-  "speechEnd": 52.32,
-  "text": "That's more than three times the biggest bomb humans ever tested. Bo cracks her knuckles.",
-  "end": 52.76
+  "start": 44.96,
+  "speechStart": 45.08,
+  "speechEnd": 47.4,
+  "text": "But one dot moved a little every night.",
+  "end": 47.76
  },
  {
   "i": 16,
-  "start": 52.76,
-  "speechStart": 52.88,
-  "speechEnd": 54.96,
-  "text": "Kai shakes their head. Not even you.",
-  "end": 56.22
+  "start": 47.76,
+  "speechStart": 47.88,
+  "speechEnd": 50.1,
+  "text": "That's how real astronomers find asteroids.",
+  "end": 50.22
  },
  {
   "i": 17,
-  "start": 56.22,
-  "speechStart": 56.34,
-  "speechEnd": 58.1,
-  "text": "Even small ones are scary.",
-  "end": 58.64
+  "start": 50.22,
+  "speechStart": 50.34,
+  "speechEnd": 55.44,
+  "text": "They compare pictures of the sky, and look for the dot that moves. And this dot isn't just moving.",
+  "end": 55.82
  },
  {
   "i": 18,
-  "start": 58.64,
-  "speechStart": 58.76,
-  "speechEnd": 61.5,
-  "text": "In 2013, over the city of Chelyabinsk in Russia,",
-  "end": 61.56
+  "start": 55.82,
+  "speechStart": 55.94,
+  "speechEnd": 61.48,
+  "text": "It's getting brighter. Because it's getting closer. First, the speed.",
+  "end": 61.96
  },
  {
   "i": 19,
-  "start": 61.56,
-  "speechStart": 61.68,
-  "speechEnd": 63.94,
-  "text": "a rock about eighteen metres across hit the air.",
-  "end": 64.16
+  "start": 61.96,
+  "speechStart": 62.08,
+  "speechEnd": 64.64,
+  "text": "Asteroids hit Earth at about twenty kilometres a second.",
+  "end": 64.92
  },
  {
   "i": 20,
-  "start": 64.16,
-  "speechStart": 64.28,
-  "speechEnd": 68.36,
-  "text": "It exploded above the city with about thirty times the energy of the Hiroshima bomb.",
-  "end": 68.74
+  "start": 64.92,
+  "speechStart": 65.04,
+  "speechEnd": 67.68,
+  "text": "That's from London to Paris in under twenty seconds.",
+  "end": 68.02
  },
  {
   "i": 21,
-  "start": 68.74,
-  "speechStart": 68.86,
-  "speechEnd": 70.82,
-  "text": "Around fifteen hundred people were hurt.",
-  "end": 71.14
+  "start": 68.02,
+  "speechStart": 68.14,
+  "speechEnd": 69.94,
+  "text": "And speed is where the energy hides.",
+  "end": 70.34
  },
  {
   "i": 22,
-  "start": 71.14,
-  "speechStart": 71.26,
-  "speechEnd": 74.34,
-  "text": "Almost all of them by glass, when the shock wave blew in their windows.",
-  "end": 74.6
+  "start": 70.34,
+  "speechStart": 70.46,
+  "speechEnd": 72.98,
+  "text": "Double the speed, and you get four times the energy.",
+  "end": 73.36
  },
  {
   "i": 23,
-  "start": 74.6,
-  "speechStart": 74.72,
-  "speechEnd": 78.1,
-  "text": "People ran to their windows to see the flash. Then the windows came to them.",
-  "end": 79.2
+  "start": 73.36,
+  "speechStart": 73.48,
+  "speechEnd": 77.98,
+  "text": "A rock this size, at that speed, carries about a hundred and seventy megatons.",
+  "end": 78.26
  },
  {
   "i": 24,
-  "start": 79.2,
-  "speechStart": 79.32,
-  "speechEnd": 80.9,
-  "text": "And sixty-six million years ago,",
-  "end": 80.98
+  "start": 78.26,
+  "speechStart": 78.38,
+  "speechEnd": 81.9,
+  "text": "That's more than three times the biggest bomb humans ever tested.",
+  "end": 81.78
  },
  {
   "i": 25,
-  "start": 80.98,
-  "speechStart": 81.1,
-  "speechEnd": 85.96,
-  "text": "a rock about ten kilometres wide hit what is now Mexico. You know how that ended for the dinosaurs.",
-  "end": 86.78
+  "start": 81.78,
+  "speechStart": 81.9,
+  "speechEnd": 83.66,
+  "text": "Bo cracks her knuckles.",
+  "end": 83.54
  },
  {
   "i": 26,
-  "start": 86.78,
-  "speechStart": 86.9,
-  "speechEnd": 88.44,
-  "text": "Ravi asks the obvious question.",
-  "end": 88.86
+  "start": 83.54,
+  "speechStart": 83.66,
+  "speechEnd": 86.84,
+  "text": "Kai shakes their head. Not even you.",
+  "end": 87.98
  },
  {
   "i": 27,
-  "start": 88.86,
-  "speechStart": 88.98,
-  "speechEnd": 93.26,
-  "text": "How did nobody see that one coming? Easy, Kai says. Nobody had telescopes.",
-  "end": 94.42
+  "start": 87.98,
+  "speechStart": 88.1,
+  "speechEnd": 89.84,
+  "text": "Kai opens a video on the laptop.",
+  "end": 90.46
  },
  {
   "i": 28,
-  "start": 94.42,
-  "speechStart": 94.54,
-  "speechEnd": 95.06,
-  "text": "The good news?",
-  "end": 95.5
+  "start": 90.46,
+  "speechStart": 90.58,
+  "speechEnd": 92.32,
+  "text": "Even small rocks are scary.",
+  "end": 92.7
  },
  {
   "i": 29,
-  "start": 95.5,
-  "speechStart": 95.62,
-  "speechEnd": 97.32,
-  "text": "Astronomers watch the sky all the time.",
-  "end": 97.6
+  "start": 92.7,
+  "speechStart": 92.82,
+  "speechEnd": 95.46,
+  "text": "In 2013, over the city of Chelyabinsk in Russia,",
+  "end": 95.58
  },
  {
   "i": 30,
-  "start": 97.6,
-  "speechStart": 97.72,
-  "speechEnd": 99.46,
-  "text": "On the thirteenth of April, 2029,",
-  "end": 99.68
+  "start": 95.58,
+  "speechStart": 95.7,
+  "speechEnd": 99.82,
+  "text": "a rock about eighteen metres across hit the air. That's about the length of two buses.",
+  "end": 100.36
  },
  {
   "i": 31,
-  "start": 99.68,
-  "speechStart": 99.8,
-  "speechEnd": 104.22,
-  "text": "an asteroid called Apophis will fly past Earth closer than some of our satellites.",
-  "end": 104.52
+  "start": 100.36,
+  "speechStart": 100.48,
+  "speechEnd": 104.82,
+  "text": "It exploded above the city with about thirty times the energy of the Hiroshima bomb.",
+  "end": 105.26
  },
  {
   "i": 32,
-  "start": 104.52,
-  "speechStart": 104.64,
-  "speechEnd": 106.56,
-  "text": "It won't hit. We checked. Twice.",
-  "end": 108.3
+  "start": 105.26,
+  "speechStart": 105.38,
+  "speechEnd": 106.14,
+  "text": "Nobody saw it coming.",
+  "end": 106.74
  },
  {
   "i": 33,
-  "start": 108.3,
-  "speechStart": 108.42,
-  "speechEnd": 112.48,
-  "text": "Back in the garage, Bo wants to punch it. Nia wants to fly up and look at it.",
-  "end": 112.76
+  "start": 106.74,
+  "speechStart": 106.86,
+  "speechEnd": 108.6,
+  "text": "Around fifteen hundred people were hurt.",
+  "end": 108.6
  },
  {
   "i": 34,
-  "start": 112.76,
-  "speechStart": 112.88,
-  "speechEnd": 114.2,
-  "text": "Ravi wants to try pushing it.",
-  "end": 114.68
+  "start": 108.6,
+  "speechStart": 108.72,
+  "speechEnd": 111.58,
+  "text": "Almost all of them by glass, when the shock wave blew in their windows.",
+  "end": 111.46
  },
  {
   "i": 35,
-  "start": 114.68,
-  "speechStart": 114.8,
-  "speechEnd": 116.72,
-  "text": "Kai reminds Nia that there's no air up there,",
-  "end": 116.6
+  "start": 111.46,
+  "speechStart": 111.58,
+  "speechEnd": 113.88,
+  "text": "People ran to their windows to see the flash.",
+  "end": 114.18
  },
  {
   "i": 36,
-  "start": 116.6,
-  "speechStart": 116.72,
-  "speechEnd": 121.2,
-  "text": "and it's much colder than her worst day at three kilometres. Nia sits back down.",
-  "end": 121.68
+  "start": 114.18,
+  "speechStart": 114.3,
+  "speechEnd": 116.46,
+  "text": "Then the windows came to them.",
+  "end": 116.34
  },
  {
   "i": 37,
-  "start": 121.68,
-  "speechStart": 121.8,
-  "speechEnd": 123.02,
-  "text": "And you remember something you read.",
-  "end": 123.52
+  "start": 116.34,
+  "speechStart": 116.46,
+  "speechEnd": 117.96,
+  "text": "So the first rule of asteroids:",
+  "end": 118.34
  },
  {
   "i": 38,
-  "start": 123.52,
-  "speechStart": 123.64,
-  "speechEnd": 127.68,
-  "text": "In 2022, NASA crashed a spacecraft into an asteroid on purpose.",
-  "end": 127.92
+  "start": 118.34,
+  "speechStart": 118.46,
+  "speechEnd": 121.1,
+  "text": "if you see a flash in the sky, stay away from the windows.",
+  "end": 122.22
  },
  {
   "i": 39,
-  "start": 127.92,
-  "speechStart": 128.04,
-  "speechEnd": 128.8,
-  "text": "It was called DART.",
-  "end": 129.14
+  "start": 122.22,
+  "speechStart": 122.34,
+  "speechEnd": 126.36,
+  "text": "Go back to 1908, to a forest in Siberia called Tunguska.",
+  "end": 126.74
  },
  {
   "i": 40,
-  "start": 129.14,
-  "speechStart": 129.26,
-  "speechEnd": 133.54,
-  "text": "It hit a rock about the same size as ours, at twenty-two thousand kilometres an hour.",
-  "end": 133.42
+  "start": 126.74,
+  "speechStart": 126.86,
+  "speechEnd": 129.9,
+  "text": "Something exploded in the air above it. It left no crater.",
+  "end": 130.2
  },
  {
   "i": 41,
-  "start": 133.42,
-  "speechStart": 133.54,
-  "speechEnd": 136.44,
-  "text": "And it changed the rock's orbit by thirty-two minutes.",
-  "end": 137.06
+  "start": 130.2,
+  "speechStart": 130.32,
+  "speechEnd": 134.82,
+  "text": "Just eighty million trees, knocked flat, over an area bigger than a big city.",
+  "end": 135.32
  },
  {
   "i": 42,
-  "start": 137.06,
-  "speechStart": 137.18,
-  "speechEnd": 139.04,
-  "text": "Humans have already moved an asteroid.",
-  "end": 139.7
+  "start": 135.32,
+  "speechStart": 135.44,
+  "speechEnd": 138.28,
+  "text": "And in Arizona, there's a hole more than a kilometre wide.",
+  "end": 138.16
  },
  {
   "i": 43,
-  "start": 139.7,
-  "speechStart": 139.82,
-  "speechEnd": 144.5,
-  "text": "So we can too, you say. Kai looks at you. Then we don't stop it.",
-  "end": 144.9
+  "start": 138.16,
+  "speechStart": 138.28,
+  "speechEnd": 140.28,
+  "text": "It was made about fifty thousand years ago,",
+  "end": 140.16
  },
  {
   "i": 44,
-  "start": 144.9,
-  "speechStart": 145.02,
-  "speechEnd": 146.04,
-  "text": "We nudge it.",
-  "end": 146.94
+  "start": 140.16,
+  "speechStart": 140.28,
+  "speechEnd": 144.82,
+  "text": "by a lump of iron about fifty metres across. Smaller than our rock.",
+  "end": 145.98
  },
  {
   "i": 45,
-  "start": 146.94,
-  "speechStart": 147.06,
-  "speechEnd": 150.48,
-  "text": "So what would you do if you saw it coming? Tell us in the comments.",
-  "end": 150.36
+  "start": 145.98,
+  "speechStart": 146.1,
+  "speechEnd": 147.64,
+  "text": "And sixty-six million years ago,",
+  "end": 147.66
  },
  {
   "i": 46,
-  "start": 150.36,
-  "speechStart": 150.48,
-  "speechEnd": 154.92,
-  "text": "And subscribe, because next time, the five of you try to move a rock from space.",
-  "end": 155.34
+  "start": 147.66,
+  "speechStart": 147.78,
+  "speechEnd": 152.7,
+  "text": "a rock about ten kilometres wide hit what is now Mexico. You know how that ended for the dinosaurs.",
+  "end": 153.52
  },
  {
   "i": 47,
-  "start": 155.34,
-  "speechStart": 155.46,
-  "speechEnd": 157.32,
+  "start": 153.52,
+  "speechStart": 153.64,
+  "speechEnd": 155.18,
+  "text": "Ravi asks the obvious question.",
+  "end": 155.68
+ },
+ {
+  "i": 48,
+  "start": 155.68,
+  "speechStart": 155.8,
+  "speechEnd": 160.0,
+  "text": "How did nobody see that one coming? Easy, Kai says. Nobody had telescopes.",
+  "end": 161.32
+ },
+ {
+  "i": 49,
+  "start": 161.32,
+  "speechStart": 161.44,
+  "speechEnd": 162.6,
+  "text": "Today, people do.",
+  "end": 162.9
+ },
+ {
+  "i": 50,
+  "start": 162.9,
+  "speechStart": 163.02,
+  "speechEnd": 166.24,
+  "text": "Astronomers watch the sky every night, and they track thousands of rocks.",
+  "end": 166.12
+ },
+ {
+  "i": 51,
+  "start": 166.12,
+  "speechStart": 166.24,
+  "speechEnd": 168.4,
+  "text": "On the thirteenth of April, 2029,",
+  "end": 168.48
+ },
+ {
+  "i": 52,
+  "start": 168.48,
+  "speechStart": 168.6,
+  "speechEnd": 172.64,
+  "text": "an asteroid called Apophis will fly past Earth closer than some of our satellites.",
+  "end": 172.94
+ },
+ {
+  "i": 53,
+  "start": 172.94,
+  "speechStart": 173.06,
+  "speechEnd": 174.72,
+  "text": "It won't hit. We checked. Twice.",
+  "end": 175.24
+ },
+ {
+  "i": 54,
+  "start": 175.24,
+  "speechStart": 175.36,
+  "speechEnd": 178.54,
+  "text": "On that night, people in parts of the world will be able to see it without a telescope.",
+  "end": 178.8
+ },
+ {
+  "i": 55,
+  "start": 178.8,
+  "speechStart": 178.92,
+  "speechEnd": 181.68,
+  "text": "A real asteroid, sliding across the sky.",
+  "end": 182.14
+ },
+ {
+  "i": 56,
+  "start": 182.14,
+  "speechStart": 182.26,
+  "speechEnd": 185.08,
+  "text": "And NASA is building a space telescope called NEO Surveyor,",
+  "end": 184.96
+ },
+ {
+  "i": 57,
+  "start": 184.96,
+  "speechStart": 185.08,
+  "speechEnd": 188.58,
+  "text": "to find most of the big ones before they find us. But our rock?",
+  "end": 189.18
+ },
+ {
+  "i": 58,
+  "start": 189.18,
+  "speechStart": 189.3,
+  "speechEnd": 191.36,
+  "text": "Nobody has spotted it. Except Kai.",
+  "end": 192.08
+ },
+ {
+  "i": 59,
+  "start": 192.08,
+  "speechStart": 192.2,
+  "speechEnd": 195.62,
+  "text": "Back in the garage, everybody has an idea. Bo wants to punch it.",
+  "end": 195.5
+ },
+ {
+  "i": 60,
+  "start": 195.5,
+  "speechStart": 195.62,
+  "speechEnd": 199.12,
+  "text": "Nia wants to fly up and look at it. Ravi wants to try pushing it.",
+  "end": 199.38
+ },
+ {
+  "i": 61,
+  "start": 199.38,
+  "speechStart": 199.5,
+  "speechEnd": 201.38,
+  "text": "Kai reminds Nia that there's no air up there,",
+  "end": 201.34
+ },
+ {
+  "i": 62,
+  "start": 201.34,
+  "speechStart": 201.46,
+  "speechEnd": 205.76,
+  "text": "and it's much colder than her worst day at three kilometres. Nia sits back down.",
+  "end": 206.24
+ },
+ {
+  "i": 63,
+  "start": 206.24,
+  "speechStart": 206.36,
+  "speechEnd": 209.1,
+  "text": "Bo suggests a really big net. Kai doesn't even answer.",
+  "end": 209.44
+ },
+ {
+  "i": 64,
+  "start": 209.44,
+  "speechStart": 209.56,
+  "speechEnd": 211.5,
+  "text": "And then you remember something you read.",
+  "end": 211.94
+ },
+ {
+  "i": 65,
+  "start": 211.94,
+  "speechStart": 212.06,
+  "speechEnd": 216.06,
+  "text": "In 2022, NASA crashed a spacecraft into an asteroid on purpose.",
+  "end": 216.42
+ },
+ {
+  "i": 66,
+  "start": 216.42,
+  "speechStart": 216.54,
+  "speechEnd": 217.18,
+  "text": "It was called DART.",
+  "end": 217.52
+ },
+ {
+  "i": 67,
+  "start": 217.52,
+  "speechStart": 217.64,
+  "speechEnd": 219.68,
+  "text": "It hit a rock about the same size as ours,",
+  "end": 219.56
+ },
+ {
+  "i": 68,
+  "start": 219.56,
+  "speechStart": 219.68,
+  "speechEnd": 222.42,
+  "text": "at twenty-two thousand kilometres an hour.",
+  "end": 222.48
+ },
+ {
+  "i": 69,
+  "start": 222.48,
+  "speechStart": 222.6,
+  "speechEnd": 225.24,
+  "text": "And it changed the rock's orbit by thirty-two minutes.",
+  "end": 225.7
+ },
+ {
+  "i": 70,
+  "start": 225.7,
+  "speechStart": 225.82,
+  "speechEnd": 229.64,
+  "text": "Humans have already moved an asteroid, you say. So we can too.",
+  "end": 230.44
+ },
+ {
+  "i": 71,
+  "start": 230.44,
+  "speechStart": 230.56,
+  "speechEnd": 232.1,
+  "text": "Kai looks at you for a long time.",
+  "end": 232.5
+ },
+ {
+  "i": 72,
+  "start": 232.5,
+  "speechStart": 232.62,
+  "speechEnd": 235.7,
+  "text": "Then Kai writes one word on the whiteboard. Nudge.",
+  "end": 237.06
+ },
+ {
+  "i": 73,
+  "start": 237.06,
+  "speechStart": 237.18,
+  "speechEnd": 240.44,
+  "text": "So what would you do if you saw it coming? Tell us in the comments.",
+  "end": 240.88
+ },
+ {
+  "i": 74,
+  "start": 240.88,
+  "speechStart": 241.0,
+  "speechEnd": 244.86,
+  "text": "And subscribe, because next time, the five of you try to move a rock from space.",
+  "end": 245.38
+ },
+ {
+  "i": 75,
+  "start": 245.38,
+  "speechStart": 245.5,
+  "speechEnd": 247.26,
   "text": "And you find out what that would really take.",
-  "end": 158.92
+  "end": 248.86
  }
 ]

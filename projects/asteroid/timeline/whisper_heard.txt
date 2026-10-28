@@ -1,54 +1,85 @@
-[00:00.00 -> 00:00.90] Sunday night.
-[00:01.34 -> 00:02.70] Beau's garage is now a headquarters.
-[00:03.36 -> 00:08.06] There's a whiteboard, a laptop, and a bag of crisps nobody is allowed to touch.
-[00:08.76 -> 00:10.62] Kai has been watching The Rock every night.
-[00:11.10 -> 00:11.88] Now Kai has numbers.
-[00:12.56 -> 00:13.58] Kai turns the laptop around.
-[00:13.98 -> 00:17.22] On the screen, there's a dot and a long curved line.
-[00:17.84 -> 00:19.22] The line ends at Earth.
-[00:19.92 -> 00:22.70] It's about 150 meters wide, Kai says.
-[00:23.44 -> 00:25.06] And it's heading for us.
-[00:26.20 -> 00:27.02] Nobody says anything.
-[00:27.50 -> 00:28.36] Ravi takes off his headphones.
-[00:28.36 -> 00:31.72] so what if an asteroid was heading for Earth?
-[00:32.12 -> 00:34.06] A real one with your name on it.
-[00:35.08 -> 00:35.90] First, the speed.
-[00:36.38 -> 00:38.72] Asteroids hit Earth at about 20 kilometers a second.
-[00:38.98 -> 00:41.14] That's from London to Paris in under 20 seconds.
-[00:41.68 -> 00:43.20] And speed is where the energy hides.
-[00:43.62 -> 00:47.50] A rock this size at that speed carries about 170 megatons.
-[00:47.80 -> 00:50.78] That's more than three times the biggest bomb humans ever tested.
-[00:51.56 -> 00:52.32] Bo cracks her knuckles.
-[00:52.88 -> 00:53.52] Kai shake their head.
-[00:54.32 -> 00:54.96] Not even you.
-[00:56.34 -> 00:58.10] Even small ones are scary.
-[00:58.76 -> 01:03.94] In 2013 over the city of Chelyabinsk in Russia, a rock about 18 meters across hit the air.
-[01:04.28 -> 01:08.36] It exploded above the city with about 30 times the energy of the Hiroshima bomb.
-[01:08.86 -> 01:10.82] Around 1500 people were hurt.
-[01:11.26 -> 01:14.34] Almost all of them by glass when the shockwave blew in their windows.
-[01:14.72 -> 01:16.42] People ran to their windows to see the flash.
-[01:16.70 -> 01:18.10] Then the Indos came to them.
-[01:19.32 -> 01:24.14] And 66 million years ago, a rock about 10 kilometers wide hit what is now Mexico.
-[01:24.64 -> 01:25.96] You know how that ended for the dinosaurs.
-[01:26.90 -> 01:30.56] Ravi asks the obvious question, how did nobody see that one coming?
-[01:31.20 -> 01:33.26] Easy, Kai says, nobody had telescopes.
-[01:34.54 -> 01:37.32] The good news, astronomers watch the sky all the time.
-[01:37.72 -> 01:44.22] On the 13th of April, 2029, an asteroid called Apophis will fly past Earth closer than some of our satellites.
-[01:44.64 -> 01:45.12] It won't hit.
-[01:45.36 -> 01:45.68] We checked.
-[01:45.68 -> 01:46.56] twice.
-[01:48.42 -> 01:50.74] Back in the garage, Bo wants to punch it.
-[01:51.12 -> 01:52.48] Nia wants to fly up and look at it.
-[01:52.88 -> 01:54.20] Ravi wants to try pushing it.
-[01:54.80 -> 01:59.48] Kai reminds Nia that there's no air up there and it's much colder than her worst day at three kilometers.
-[02:00.36 -> 02:01.20] Nia sits back down.
-[02:01.80 -> 02:03.02] And you remember something you read.
-[02:03.64 -> 02:07.68] In 2022, NASA crashed a spacecraft into an asteroid on purpose.
-[02:08.04 -> 02:08.80] It was called DART.
-[02:09.26 -> 02:16.44] It hit a rock about the same size as ours at 22 ,000 kilometers an hour and it changed the rocks orbit by 32 minutes.
-[02:17.18 -> 02:19.04] Humans have already moved an asteroid.
-[02:19.82 -> 02:21.46] So we can too, you say.
-[02:22.22 -> 02:22.86] Kai looks at you.
-[02:23.52 -> 02:26.04] Then we don't stop it, we nudge it.
-[02:27.06 -> 02:29.34] So what would you do if you saw it coming?
-[02:29.86 -> 02:37.32] Tell us in the comments and subscribe because next time the five of you try to move a rock from space and you find out what that would really take.
+[00:00.00 -> 00:00.80] Sunday night.
+[00:01.32 -> 00:02.72] Beau's garage is now a headquarters.
+[00:03.18 -> 00:08.06] There's a whiteboard, a laptop, five folding chairs, and a bag of crisps nobody is allowed to touch.
+[00:08.80 -> 00:09.74] Nia lands in the driveway.
+[00:10.24 -> 00:11.60] Ravi walks in with his headphones on.
+[00:11.86 -> 00:13.46] Beau is already there because it's her garage.
+[00:14.10 -> 00:16.08] Kai has been watching The Rock every night for a week.
+[00:16.78 -> 00:17.72] Now Kai has numbers.
+[00:18.30 -> 00:19.38] Kai turns the laptop around.
+[00:19.72 -> 00:22.52] On the screen, there's a dot and a long, curved line.
+[00:23.04 -> 00:24.32] The line ends at Earth.
+[00:25.02 -> 00:28.88] It's about 150 meters wide, Kai says, and it's heading for us.
+[00:28.88 -> 00:30.38] Nobody says anything.
+[00:30.78 -> 00:31.74] Ravi takes off his headphones.
+[00:32.22 -> 00:33.06] That's how you know it's serious.
+[00:33.82 -> 00:36.06] So what if an asteroid was heading for earth?
+[00:36.36 -> 00:38.20] A real one, with your name on it.
+[00:39.14 -> 00:43.18] Okay, so every night for a week Kai photographed the same patch of sky.
+[00:43.68 -> 00:47.40] The stars stay in the same place, but one dot moved a little every night.
+[00:47.88 -> 00:50.10] That's how real astronomers find asteroids.
+[00:50.34 -> 00:53.40] They compare pictures of the sky and look for the dot that moves.
+[00:54.06 -> 00:55.44] And this dot isn't just moving.
+[00:55.94 -> 00:56.98] It's getting brighter.
+[00:57.88 -> 00:58.92] Because it's getting closer.
+[01:00.46 -> 01:01.48] First the speed.
+[01:02.08 -> 01:04.64] Asteroids hit Earth at about 20 kilometers a second.
+[01:05.04 -> 01:07.68] That's from London to Paris in under 20 seconds.
+[01:08.14 -> 01:09.94] And speed is where the energy hides.
+[01:10.46 -> 01:12.98] Double the speed and you get four times the energy.
+[01:13.48 -> 01:17.98] A rock this size at that speed carries about 170 megatons.
+[01:18.38 -> 01:21.90] That's more than three times the biggest bomb humans ever tested.
+[01:22.74 -> 01:23.66] Bow cracks her knuckles.
+[01:23.66 -> 01:25.20] Kai shakes their head.
+[01:25.74 -> 01:26.84] Not even you.
+[01:28.10 -> 01:29.84] Kai opens a video on the laptop.
+[01:30.58 -> 01:32.32] Even small rocks are scary.
+[01:32.82 -> 01:38.04] In 2013, over the city of Chelyabinsk in Russia, a rock about 18 meters across hit the air.
+[01:38.42 -> 01:39.82] That's about the length of two buses.
+[01:40.48 -> 01:44.82] It exploded above the city with about 30 times the energy of the Hiroshima bomb.
+[01:45.38 -> 01:46.14] Nobody saw it coming.
+[01:46.86 -> 01:51.58] Around 1 ,500 people were hurt, almost all of them by glass when the shockwave blew in their windows.
+[01:51.58 -> 01:55.86] People ran to their windows to see the flash, then the windows came to that.
+[01:56.46 -> 02:01.10] So the first rule of asteroids, if you see a flash in the sky, stay away from the windows.
+[02:02.34 -> 02:06.36] Go back to 1908, to a forest in Siberia called Tunguska.
+[02:06.86 -> 02:08.92] Something exploded in the air above it.
+[02:09.08 -> 02:09.90] It left no crater.
+[02:10.32 -> 02:14.82] Just 80 million trees, knocked flat over an area bigger than a big city.
+[02:15.44 -> 02:18.28] And in Arizona, there's a hole more than a kilometer wide.
+[02:18.28 -> 02:24.82] It was made about 50 ,000 years ago by a lump of iron about 50 meters across, smaller than our rock.
+[02:26.10 -> 02:30.84] And 66 million years ago, a rock about 10 kilometers wide hit what is now Mexico.
+[02:31.40 -> 02:32.70] You know how that ended for the dinosaurs.
+[02:33.64 -> 02:37.32] Ravi asks the obvious question, how did nobody see that one coming?
+[02:37.92 -> 02:38.76] Easy, Kai says.
+[02:39.30 -> 02:40.00] Nobody had telescopes.
+[02:41.44 -> 02:42.60] Today, people do.
+[02:43.02 -> 02:46.24] Astronomers watch the sky every night and they track thousands of rocks.
+[02:46.24 -> 02:52.64] On the 13th of April, 2029, an asteroid called Apophis will fly past Earth closer than some of our satellites.
+[02:53.06 -> 02:53.60] It won't hit.
+[02:53.82 -> 02:54.16] We checked.
+[02:54.54 -> 02:54.72] Twice.
+[02:55.36 -> 02:58.54] On that night, people in parts of the world will be able to see it without a telescope.
+[02:58.92 -> 03:01.68] A real asteroid sliding across the sky.
+[03:02.26 -> 03:07.08] And NASA's building a space telescope called NEO Surveyor to find most of the big ones before they find us.
+[03:07.72 -> 03:08.58] But our rock?
+[03:09.30 -> 03:10.62] Nobody has spotted it.
+[03:10.72 -> 03:11.36] Except Kai.
+[03:12.20 -> 03:14.18] Back in the garage, everybody has an idea.
+[03:14.72 -> 03:15.62] Bo wants to punch it.
+[03:15.62 -> 03:17.50] Nia wants to fly up and look at it.
+[03:17.88 -> 03:19.12] Ravi wants to try pushing it.
+[03:19.50 -> 03:24.02] Kai reminds Nia that there's no air up there, and it's much colder than her worst day at three kilometers.
+[03:24.58 -> 03:25.76] Nia sits back down.
+[03:26.36 -> 03:27.62] Bo suggests a really big net.
+[03:28.10 -> 03:29.10] Kai doesn't even answer.
+[03:29.56 -> 03:31.50] And then you remember something you read.
+[03:32.06 -> 03:36.06] In 2022, NASA crashed a spacecraft into an asteroid on purpose.
+[03:36.54 -> 03:37.18] It was called DART.
+[03:37.64 -> 03:45.24] It hit a rock about the same size as ours at 22 ,000 kilometers an hour, and it changed the rock's orbit by 32 minutes.
+[03:45.82 -> 03:49.64] Humans have already moved an asteroid, you say, so we can too.
+[03:50.56 -> 03:54.62] Kai looks at you for a long time, then Kai writes one word on the whiteboard.
+[03:55.58 -> 03:55.70] Nudge.
+[03:57.18 -> 03:59.28] So what would you do if you saw it coming?
+[03:59.78 -> 04:00.44] Tell us in the comments.
+[04:01.00 -> 04:04.86] And subscribe, because next time the five of you try to move a rock from space.
+[04:05.50 -> 04:07.26] And you find out what that would really take.
