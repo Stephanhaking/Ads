@@ -1,0 +1,610 @@
+[
+ {
+  "i": 0,
+  "start": 0.0,
+  "speechStart": 0.0,
+  "speechEnd": 0.6,
+  "text": "Monday.",
+  "end": 1.22
+ },
+ {
+  "i": 1,
+  "start": 1.22,
+  "speechStart": 1.34,
+  "speechEnd": 3.08,
+  "text": "The school computer lab, after dark.",
+  "end": 2.96
+ },
+ {
+  "i": 2,
+  "start": 2.96,
+  "speechStart": 3.08,
+  "speechEnd": 5.44,
+  "text": "Kai has hacked nothing,",
+  "end": 5.74
+ },
+ {
+  "i": 3,
+  "start": 5.74,
+  "speechStart": 5.86,
+  "speechEnd": 7.74,
+  "text": "but has borrowed every single screen.",
+  "end": 8.04
+ },
+ {
+  "i": 4,
+  "start": 8.04,
+  "speechStart": 8.16,
+  "speechEnd": 12.96,
+  "text": "On every screen, the same thing. The rock, and its path. The rock is still coming.",
+  "end": 13.46
+ },
+ {
+  "i": 5,
+  "start": 13.46,
+  "speechStart": 13.58,
+  "speechEnd": 18.36,
+  "text": "But now you have a word on a whiteboard. Nudge. You can't catch it, Kai says.",
+  "end": 18.66
+ },
+ {
+  "i": 6,
+  "start": 18.66,
+  "speechStart": 18.78,
+  "speechEnd": 19.24,
+  "text": "Bo looks offended.",
+  "end": 19.8
+ },
+ {
+  "i": 7,
+  "start": 19.8,
+  "speechStart": 19.92,
+  "speechEnd": 24.06,
+  "text": "So what if you had to stop an asteroid? Not in a movie. The real way.",
+  "end": 25.0
+ },
+ {
+  "i": 8,
+  "start": 25.0,
+  "speechStart": 25.12,
+  "speechEnd": 25.74,
+  "text": "Think about it.",
+  "end": 25.84
+ },
+ {
+  "i": 9,
+  "start": 25.84,
+  "speechStart": 25.96,
+  "speechEnd": 28.6,
+  "text": "The rock weighs about three and a half billion kilograms,",
+  "end": 28.48
+ },
+ {
+  "i": 10,
+  "start": 28.48,
+  "speechStart": 28.6,
+  "speechEnd": 31.0,
+  "text": "and it moves twenty kilometres every second.",
+  "end": 31.54
+ },
+ {
+  "i": 11,
+  "start": 31.54,
+  "speechStart": 31.66,
+  "speechEnd": 33.9,
+  "text": "Catching it means stopping all that energy at once.",
+  "end": 33.92
+ },
+ {
+  "i": 12,
+  "start": 33.92,
+  "speechStart": 34.04,
+  "speechEnd": 37.1,
+  "text": "About a hundred and seventy megatons. Bo's arms are strong.",
+  "end": 37.18
+ },
+ {
+  "i": 13,
+  "start": 37.18,
+  "speechStart": 37.3,
+  "speechEnd": 39.84,
+  "text": "But a hundred and seventy megatons would turn Bo,",
+  "end": 39.72
+ },
+ {
+  "i": 14,
+  "start": 39.72,
+  "speechStart": 39.84,
+  "speechEnd": 43.68,
+  "text": "the rock, and the town into vapour. And blowing it up is no better.",
+  "end": 43.56
+ },
+ {
+  "i": 15,
+  "start": 43.56,
+  "speechStart": 43.68,
+  "speechEnd": 47.02,
+  "text": "You'd turn one big rock into lots of smaller rocks, all still coming.",
+  "end": 47.3
+ },
+ {
+  "i": 16,
+  "start": 47.3,
+  "speechStart": 47.42,
+  "speechEnd": 51.8,
+  "text": "So the trick isn't stopping it. It's changing where it goes. A tiny bit.",
+  "end": 52.08
+ },
+ {
+  "i": 17,
+  "start": 52.08,
+  "speechStart": 52.2,
+  "speechEnd": 55.0,
+  "text": "Very early. Here's the magic.",
+  "end": 55.46
+ },
+ {
+  "i": 18,
+  "start": 55.46,
+  "speechStart": 55.58,
+  "speechEnd": 59.94,
+  "text": "Change a rock's speed by one centimetre per second. Much slower than walking.",
+  "end": 60.16
+ },
+ {
+  "i": 19,
+  "start": 60.16,
+  "speechStart": 60.28,
+  "speechEnd": 61.28,
+  "text": "Do it ten years early,",
+  "end": 61.38
+ },
+ {
+  "i": 20,
+  "start": 61.38,
+  "speechStart": 61.5,
+  "speechEnd": 65.26,
+  "text": "and that tiny push adds up to thousands of kilometres by the time it arrives.",
+  "end": 65.6
+ },
+ {
+  "i": 21,
+  "start": 65.6,
+  "speechStart": 65.72,
+  "speechEnd": 66.7,
+  "text": "Enough to miss the whole planet.",
+  "end": 67.18
+ },
+ {
+  "i": 22,
+  "start": 67.18,
+  "speechStart": 67.3,
+  "speechEnd": 69.24,
+  "text": "It's like steering a huge ship.",
+  "end": 69.44
+ },
+ {
+  "i": 23,
+  "start": 69.44,
+  "speechStart": 69.56,
+  "speechEnd": 72.22,
+  "text": "Turn the wheel early, and a tiny turn is enough.",
+  "end": 72.48
+ },
+ {
+  "i": 24,
+  "start": 72.48,
+  "speechStart": 72.6,
+  "speechEnd": 75.16,
+  "text": "Turn it late, and nothing can save you.",
+  "end": 75.56
+ },
+ {
+  "i": 25,
+  "start": 75.56,
+  "speechStart": 75.68,
+  "speechEnd": 77.68,
+  "text": "Push it late, and you need a giant shove.",
+  "end": 77.94
+ },
+ {
+  "i": 26,
+  "start": 77.94,
+  "speechStart": 78.06,
+  "speechEnd": 80.56,
+  "text": "Push it early, and a nudge is enough.",
+  "end": 81.62
+ },
+ {
+  "i": 27,
+  "start": 81.62,
+  "speechStart": 81.74,
+  "speechEnd": 83.54,
+  "text": "That's exactly what NASA tested.",
+  "end": 83.94
+ },
+ {
+  "i": 28,
+  "start": 83.94,
+  "speechStart": 84.06,
+  "speechEnd": 88.28,
+  "text": "They picked an asteroid called Didymos, which has its own little moon called Dimorphos.",
+  "end": 88.16
+ },
+ {
+  "i": 29,
+  "start": 88.16,
+  "speechStart": 88.28,
+  "speechEnd": 91.28,
+  "text": "The moon is about a hundred and fifty metres wide. The same size as your rock.",
+  "end": 91.9
+ },
+ {
+  "i": 30,
+  "start": 91.9,
+  "speechStart": 92.02,
+  "speechEnd": 95.52,
+  "text": "In 2022, the DART spacecraft, about the size of a small car,",
+  "end": 95.56
+ },
+ {
+  "i": 31,
+  "start": 95.56,
+  "speechStart": 95.68,
+  "speechEnd": 99.62,
+  "text": "flew straight into it, at twenty-two thousand kilometres an hour.",
+  "end": 100.18
+ },
+ {
+  "i": 32,
+  "start": 100.18,
+  "speechStart": 100.3,
+  "speechEnd": 103.54,
+  "text": "NASA hoped to change the moon's orbit by at least seventy-three seconds.",
+  "end": 103.8
+ },
+ {
+  "i": 33,
+  "start": 103.8,
+  "speechStart": 103.92,
+  "speechEnd": 108.04,
+  "text": "It changed it by thirty-two minutes. And here's the surprise.",
+  "end": 108.48
+ },
+ {
+  "i": 34,
+  "start": 108.48,
+  "speechStart": 108.6,
+  "speechEnd": 111.78,
+  "text": "The rubble that blasted off the surface pushed the rock even more,",
+  "end": 111.82
+ },
+ {
+  "i": 35,
+  "start": 111.82,
+  "speechStart": 111.94,
+  "speechEnd": 113.52,
+  "text": "like a rocket engine made of gravel.",
+  "end": 114.14
+ },
+ {
+  "i": 36,
+  "start": 114.14,
+  "speechStart": 114.26,
+  "speechEnd": 118.24,
+  "text": "Now a European spacecraft called Hera is on its way to look at the crash site up close.",
+  "end": 119.26
+ },
+ {
+  "i": 37,
+  "start": 119.26,
+  "speechStart": 119.38,
+  "speechEnd": 121.3,
+  "text": "Scientists have a gentler idea too.",
+  "end": 121.64
+ },
+ {
+  "i": 38,
+  "start": 121.64,
+  "speechStart": 121.76,
+  "speechEnd": 125.7,
+  "text": "A heavy spacecraft parks next to the asteroid. It never touches it.",
+  "end": 125.94
+ },
+ {
+  "i": 39,
+  "start": 125.94,
+  "speechStart": 126.06,
+  "speechEnd": 131.02,
+  "text": "Its own gravity slowly tugs the rock off course. It's called a gravity tractor.",
+  "end": 131.48
+ },
+ {
+  "i": 40,
+  "start": 131.48,
+  "speechStart": 131.6,
+  "speechEnd": 135.56,
+  "text": "One idea is that a twenty-tonne spacecraft could move a two-hundred-metre rock,",
+  "end": 135.44
+ },
+ {
+  "i": 41,
+  "start": 135.44,
+  "speechStart": 135.56,
+  "speechEnd": 138.34,
+  "text": "if it had about twenty years. It's slow.",
+  "end": 138.64
+ },
+ {
+  "i": 42,
+  "start": 138.64,
+  "speechStart": 138.76,
+  "speechEnd": 141.9,
+  "text": "But it doesn't need to hit anything. Ravi likes this one.",
+  "end": 142.02
+ },
+ {
+  "i": 43,
+  "start": 142.02,
+  "speechStart": 142.14,
+  "speechEnd": 147.34,
+  "text": "It sounds like what he does, just slower. So you practise.",
+  "end": 147.22
+ },
+ {
+  "i": 44,
+  "start": 147.22,
+  "speechStart": 147.34,
+  "speechEnd": 151.5,
+  "text": "On the school football pitch, Ravi pushes a football without touching it. Not hard.",
+  "end": 151.58
+ },
+ {
+  "i": 45,
+  "start": 151.58,
+  "speechStart": 151.7,
+  "speechEnd": 154.58,
+  "text": "Just a tiny push, for a long time.",
+  "end": 155.0
+ },
+ {
+  "i": 46,
+  "start": 155.0,
+  "speechStart": 155.12,
+  "speechEnd": 157.0,
+  "text": "The ball rolls the length of the pitch.",
+  "end": 157.44
+ },
+ {
+  "i": 47,
+  "start": 157.44,
+  "speechStart": 157.56,
+  "speechEnd": 160.76,
+  "text": "Then Ravi tries again with his eyes closed. Then with a bigger ball.",
+  "end": 161.12
+ },
+ {
+  "i": 48,
+  "start": 161.12,
+  "speechStart": 161.24,
+  "speechEnd": 162.58,
+  "text": "Then with Bo's motorbike.",
+  "end": 162.46
+ },
+ {
+  "i": 49,
+  "start": 162.46,
+  "speechStart": 162.58,
+  "speechEnd": 167.62,
+  "text": "Bo gets bored and kicks the football into the next street. Kai makes her go and get it.",
+  "end": 167.82
+ },
+ {
+  "i": 50,
+  "start": 167.82,
+  "speechStart": 167.94,
+  "speechEnd": 171.62,
+  "text": "By the end of the night, Ravi can keep a gentle push going for as long as you like.",
+  "end": 172.04
+ },
+ {
+  "i": 51,
+  "start": 172.04,
+  "speechStart": 172.16,
+  "speechEnd": 176.08,
+  "text": "The problem is, you don't have ten years. You have three weeks.",
+  "end": 176.5
+ },
+ {
+  "i": 52,
+  "start": 176.5,
+  "speechStart": 176.62,
+  "speechEnd": 177.64,
+  "text": "That's where you come in.",
+  "end": 178.52
+ },
+ {
+  "i": 53,
+  "start": 178.52,
+  "speechStart": 178.64,
+  "speechEnd": 181.48,
+  "text": "That night, the five of you lie on the grass in the middle of the pitch.",
+  "end": 182.0
+ },
+ {
+  "i": 54,
+  "start": 182.0,
+  "speechStart": 182.12,
+  "speechEnd": 186.0,
+  "text": "Nia holds Ravi's hand, so he doesn't float away. Bo holds Nia's.",
+  "end": 186.14
+ },
+ {
+  "i": 55,
+  "start": 186.14,
+  "speechStart": 186.26,
+  "speechEnd": 187.16,
+  "text": "Kai counts down.",
+  "end": 187.04
+ },
+ {
+  "i": 56,
+  "start": 187.04,
+  "speechStart": 187.16,
+  "speechEnd": 189.54,
+  "text": "Ravi raises one hand towards the sky.",
+  "end": 189.42
+ },
+ {
+  "i": 57,
+  "start": 189.42,
+  "speechStart": 189.54,
+  "speechEnd": 193.98,
+  "text": "And you stop time. The world freezes.",
+  "end": 194.26
+ },
+ {
+  "i": 58,
+  "start": 194.26,
+  "speechStart": 194.38,
+  "speechEnd": 196.08,
+  "text": "A bird hangs in the air above the goal.",
+  "end": 196.44
+ },
+ {
+  "i": 59,
+  "start": 196.44,
+  "speechStart": 196.56,
+  "speechEnd": 198.18,
+  "text": "Kai is stuck halfway through a blink.",
+  "end": 198.64
+ },
+ {
+  "i": 60,
+  "start": 198.64,
+  "speechStart": 198.76,
+  "speechEnd": 202.36,
+  "text": "But you reach out and touch Ravi's shoulder, and he can move too.",
+  "end": 202.92
+ },
+ {
+  "i": 61,
+  "start": 202.92,
+  "speechStart": 203.04,
+  "speechEnd": 204.5,
+  "text": "For everyone else, it's one second.",
+  "end": 204.84
+ },
+ {
+  "i": 62,
+  "start": 204.84,
+  "speechStart": 204.96,
+  "speechEnd": 208.2,
+  "text": "For Ravi, it's a whole hour of gentle pushing.",
+  "end": 208.48
+ },
+ {
+  "i": 63,
+  "start": 208.48,
+  "speechStart": 208.6,
+  "speechEnd": 210.84,
+  "text": "Like a gravity tractor with headphones.",
+  "end": 211.6
+ },
+ {
+  "i": 64,
+  "start": 211.6,
+  "speechStart": 211.72,
+  "speechEnd": 216.0,
+  "text": "An hour of pushing, three weeks early. You hope it's enough.",
+  "end": 216.86
+ },
+ {
+  "i": 65,
+  "start": 216.86,
+  "speechStart": 216.98,
+  "speechEnd": 217.76,
+  "text": "Time starts again.",
+  "end": 218.16
+ },
+ {
+  "i": 66,
+  "start": 218.16,
+  "speechStart": 218.28,
+  "speechEnd": 223.36,
+  "text": "The bright dot in the sky doesn't look any different. Nobody breathes. Kai is checking the numbers.",
+  "end": 223.86
+ },
+ {
+  "i": 67,
+  "start": 223.86,
+  "speechStart": 223.98,
+  "speechEnd": 226.66,
+  "text": "Then Kai smiles. It's going to miss.",
+  "end": 227.86
+ },
+ {
+  "i": 68,
+  "start": 227.86,
+  "speechStart": 227.98,
+  "speechEnd": 230.48,
+  "text": "A few weeks later, the rock flies past Earth.",
+  "end": 230.86
+ },
+ {
+  "i": 69,
+  "start": 230.86,
+  "speechStart": 230.98,
+  "speechEnd": 233.68,
+  "text": "Millions of people go outside to watch it cross the sky.",
+  "end": 234.28
+ },
+ {
+  "i": 70,
+  "start": 234.28,
+  "speechStart": 234.4,
+  "speechEnd": 238.54,
+  "text": "Nia watches from above the crowd, where nobody looks. Bo carries the folding chairs.",
+  "end": 238.96
+ },
+ {
+  "i": 71,
+  "start": 238.96,
+  "speechStart": 239.08,
+  "speechEnd": 240.68,
+  "text": "The news calls it a lucky miss.",
+  "end": 241.4
+ },
+ {
+  "i": 72,
+  "start": 241.4,
+  "speechStart": 241.52,
+  "speechEnd": 244.2,
+  "text": "Nobody knows that five teenagers moved it.",
+  "end": 244.76
+ },
+ {
+  "i": 73,
+  "start": 244.76,
+  "speechStart": 244.88,
+  "speechEnd": 246.82,
+  "text": "Kai finally opens the crisps.",
+  "end": 247.72
+ },
+ {
+  "i": 74,
+  "start": 247.72,
+  "speechStart": 247.84,
+  "speechEnd": 251.34,
+  "text": "So which power would you bring to save the planet? Tell us in the comments.",
+  "end": 251.84
+ },
+ {
+  "i": 75,
+  "start": 251.84,
+  "speechStart": 251.96,
+  "speechEnd": 255.02,
+  "text": "And subscribe, because the five of you are just getting started.",
+  "end": 256.62
+ }
+]

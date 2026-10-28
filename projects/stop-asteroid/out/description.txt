@@ -1,0 +1,27 @@
+What If You Tried to Stop an Asteroid?
+
+The rock is coming, and the five friends have one word on a whiteboard: nudge. In this series finale they find out why you can't catch an asteroid or blow it up, why a push slower than walking is enough if it's early, how NASA's DART mission really moved an asteroid, and what a "gravity tractor" is. Then, on the school football pitch, they try it for real.
+
+The story (and the powers) are fiction. The science and the missions are real (sources below).
+
+CHAPTERS
+0:00 The computer lab
+0:25 Why you can't catch it
+0:52 The nudge
+1:21 DART
+1:59 The gentle way
+2:22 The practice
+2:58 The real thing
+3:48 After
+4:07 Your turn
+
+THE SCIENCE AND WHERE IT COMES FROM
+- A 150 m rock (about 3.5 billion kg) at 20 km/s carries roughly 170 megatons of TNT (our estimate); the biggest bomb ever tested was about 50 Mt
+- Changing an asteroid's speed by about 1 cm/s ten years ahead moves its arrival point by roughly 3 x dv x t, about 9,000 km, more than Earth's radius (our rough estimate; real numbers depend on the orbit)
+- 26 Sept 2022: NASA's DART spacecraft hit Dimorphos, the ~150 m moon of asteroid Didymos, at about 22,500 km/h; its orbit shortened by about 32 minutes (11 h 55 min to 11 h 23 min), against a minimum goal of 73 seconds; debris thrown off added to the push (Science News; Space.com; Scientific American)
+- ESA's Hera spacecraft launched on 7 Oct 2024 to study Dimorphos after the impact (The Planetary Society; Space.com)
+- Gravity tractor (Lu & Love, 2005): a spacecraft hovering near an asteroid tugs it with its own gravity; a 20-tonne tractor could deflect a typical 200 m asteroid given about 20 years (arXiv astro-ph/0509595; ESA)
+
+These figures come from secondary sources and search summaries; not every original paper was read. If you spot an error, tell us in the comments.
+
+Which power would you bring to save the planet? Subscribe: the five of you are just getting started.

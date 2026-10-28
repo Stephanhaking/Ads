@@ -1,55 +1,92 @@
-[00:00.00 -> 00:00.64] Monday.
-[00:01.10 -> 00:02.70] The school computer lab after dark.
-[00:03.40 -> 00:06.04] Kai has hacked nothing but has borrowed every screen.
-[00:06.52 -> 00:08.74] The rock is still coming, but now you have a plan.
-[00:09.28 -> 00:10.76] You can't catch it, Kai says.
-[00:11.34 -> 00:11.94] Bo looks offended.
-[00:12.66 -> 00:14.56] So what if you had to stop an asteroid?
-[00:15.16 -> 00:15.66] The real way.
-[00:16.86 -> 00:17.46] Think about it.
-[00:17.60 -> 00:22.58] The rock weighs about 3 .5 billion kilograms, and it moves 20 kilometers every second.
-[00:23.06 -> 00:25.38] Catching it means stopping all that energy at once.
-[00:25.70 -> 00:27.32] About 170 megatons.
-[00:27.32 -> 00:33.46] Bow's arms are strong, but 170 megatons would turn Bow, the rock, and the town into vapor.
-[00:34.08 -> 00:35.52] So the trick isn't stopping it.
-[00:35.66 -> 00:38.88] It's changing where it goes a tiny bit very early.
-[00:40.34 -> 00:41.04] Here's the magic.
-[00:41.64 -> 00:44.60] Change a rock's speed by one centimeter per second.
-[00:44.96 -> 00:45.98] Much slower than walking.
-[00:46.30 -> 00:51.30] Do it 10 years early, and that tiny push adds up to thousands of kilometers by the time it arrives.
-[00:51.70 -> 00:52.72] Enough to miss the whole planet.
-[00:52.72 -> 00:55.28] It's like steering a huge ship.
-[00:55.66 -> 00:58.26] Turn the wheel early, and a tiny turn is enough.
-[00:58.64 -> 01:01.24] Turn it late, and nothing can save you.
-[01:01.70 -> 01:03.70] Push it late, and you need a giant shove.
-[01:04.08 -> 01:06.58] Push it early, and a nudge is enough.
-[01:07.76 -> 01:09.64] That's exactly what NASA tested.
-[01:10.04 -> 01:15.38] In 2022, the DART spacecraft flew into dimorphous, a small moon of a bigger asteroid.
-[01:15.76 -> 01:18.60] It hit at 22 ,000 kilometers an hour.
-[01:19.02 -> 01:21.30] The moon's orbit got 32 minutes shorter.
-[01:21.30 -> 01:27.44] NASA had hoped for 73 seconds and the rubble it blasted off pushed the rock even more.
-[01:28.02 -> 01:32.46] Now a European spacecraft called Hera is on its way to see the crash site up close.
-[01:33.88 -> 01:35.46] Scientists have a gentler idea too.
-[01:35.92 -> 01:38.26] A heavy spacecraft parks next to the asteroid.
-[01:38.60 -> 01:39.50] It doesn't touch it.
-[01:39.84 -> 01:42.36] Its own gravity slowly tugs the rock off course.
-[01:42.82 -> 01:44.12] It's called a gravity tractor.
-[01:44.74 -> 01:47.30] It's slow but with years it works.
-[01:49.20 -> 01:51.70] That night the five of you lie on the school football pitch.
-[01:52.10 -> 01:54.26] Nia holds Ravi's hand so he doesn't float away.
-[01:54.82 -> 01:55.70] Bo holds Nia's.
-[01:56.18 -> 01:56.96] Kai counts down.
-[01:57.76 -> 02:01.90] Ravi raises one hand towards the sky and you stop time.
-[02:02.60 -> 02:04.24] For everyone else it's one second.
-[02:04.56 -> 02:09.24] For Ravi it's a whole hour of gentle pushing like a gravity tractor with headphones.
-[02:09.98 -> 02:10.60] Time starts again.
-[02:11.14 -> 02:13.04] The bright dot in the sky doesn't look different.
-[02:13.60 -> 02:15.16] But Kai is checking the numbers.
-[02:15.82 -> 02:16.36] Then Kai smiles.
-[02:17.14 -> 02:17.70] It's gonna miss.
-[02:18.52 -> 02:20.76] A few weeks later, the rock flies past Earth.
-[02:21.30 -> 02:23.10] Millions of people watch it cross the sky.
-[02:23.84 -> 02:26.06] Nobody knows that five teenagers moved it.
-[02:26.86 -> 02:28.70] Kai finally opens the crisps.
-[02:29.64 -> 02:32.06] So which power would you bring to save the planet?
-[02:32.52 -> 02:36.82] Tell us in the comments and subscribe because the five of you are just getting started.
+[00:00.00 -> 00:00.60] Monday.
+[00:01.34 -> 00:03.08] The school computer lab after dark.
+[00:03.80 -> 00:07.74] Kaya has hacked nothing, but has borrowed every single screen.
+[00:08.16 -> 00:09.74] On every screen, the same thing.
+[00:10.12 -> 00:11.36] The rock and its path.
+[00:11.84 -> 00:12.96] The rock is still coming.
+[00:13.58 -> 00:15.20] But now you have a word on a whiteboard.
+[00:16.04 -> 00:16.14] Nudge.
+[00:17.10 -> 00:18.36] You can't catch it, Kai says.
+[00:18.78 -> 00:19.24] Bo looks offended.
+[00:19.92 -> 00:21.92] So what if you had to stop an asteroid?
+[00:22.36 -> 00:22.98] Not in a movie.
+[00:23.44 -> 00:24.06] The real way.
+[00:25.12 -> 00:25.74] Think about it.
+[00:25.96 -> 00:31.00] The rock weighs about three and a half billion kilograms, and it moves 20 km every second.
+[00:31.66 -> 00:35.74] Catching it means stopping all that energy at once, about 170 megatons.
+[00:36.38 -> 00:42.00] Bow's arms are strong, but 170 megatons would turn bow, the rock, and the town into vapor.
+[00:42.66 -> 00:43.68] And blowing it up is no better.
+[00:44.00 -> 00:47.02] You turn one big rock into lots of smaller rocks, all still coming.
+[00:47.42 -> 00:50.56] So the trick isn't stopping it, it's changing where it goes.
+[00:50.98 -> 00:51.80] A tiny bit.
+[00:52.20 -> 00:52.90] Very early.
+[00:54.06 -> 00:55.00] Here's the magic.
+[00:55.58 -> 00:58.58] Change a rock's speed by 1 cm per second.
+[00:58.98 -> 00:59.94] Much slower than walking.
+[01:00.28 -> 01:05.26] Do it 10 years early, and that tiny push adds up to thousands of kilometers by the time it arrives.
+[01:05.72 -> 01:06.70] Enough to miss the whole planet.
+[01:07.30 -> 01:09.24] It's like steering a huge ship.
+[01:09.56 -> 01:12.22] Turn the wheel early, and a tiny turn is enough.
+[01:12.60 -> 01:15.16] Turn it late, and nothing can save you.
+[01:15.68 -> 01:17.68] Push it late, and you need a giant shove.
+[01:18.06 -> 01:20.56] Push it early, and a nudge is enough.
+[01:21.74 -> 01:23.54] That's exactly what NASA tested.
+[01:24.06 -> 01:27.90] They picked an asteroid called Didymos, which has its own little moon called Dymorphous.
+[01:28.28 -> 01:31.28] The moon is about 150 meters wide, the same size as your rock.
+[01:32.02 -> 01:39.62] In 2022, the DART spacecraft, about the size of a small car, flew straight into it at 22 ,000 kilometers an hour.
+[01:40.30 -> 01:43.54] NASA hoped to change the moon's orbit by at least 73 seconds.
+[01:43.92 -> 01:46.42] It changed it by 32 minutes.
+[01:47.08 -> 01:48.04] And here's the surprise.
+[01:48.60 -> 01:53.52] The rubble that blasted it off the surface pushed the rock even more, like a rocket engine made of gravel.
+[01:54.26 -> 01:58.24] Now a European spacecraft called HERA is on its way to look at the crash site up close.
+[01:59.38 -> 02:01.30] Scientists have a gentler idea, too.
+[02:01.76 -> 02:04.38] A heavy spacecraft parks next to the asteroid.
+[02:04.72 -> 02:05.70] It never touches it.
+[02:06.06 -> 02:09.20] Its own gravity slowly tugs the rock off course.
+[02:09.78 -> 02:11.02] It's called a gravity tractor.
+[02:11.60 -> 02:15.56] One idea is that a 20 -ton spacecraft could move a 200 -meter rock.
+[02:15.56 -> 02:20.32] If it had about 20 years, it's slow, but it doesn't need to hit anything.
+[02:21.22 -> 02:21.90] Ravi likes this one.
+[02:22.14 -> 02:24.54] It sounds like what he does, just slower.
+[02:25.96 -> 02:26.80] So you practice.
+[02:27.34 -> 02:30.70] On the school football pitch, Ravi pushes a football without touching it.
+[02:30.96 -> 02:34.58] Not hard, just a tiny push for a long time.
+[02:35.12 -> 02:37.00] The ball rolls the length of the pitch.
+[02:37.56 -> 02:39.32] Then Ravi tries again with his eyes closed.
+[02:39.82 -> 02:42.58] Then with a bigger ball, then with Beau's motorbike.
+[02:42.58 -> 02:45.70] Bo gets bored and kicks the football into the next street.
+[02:46.34 -> 02:47.62] Kai makes her go and get it.
+[02:47.94 -> 02:51.62] By the end of the night, Robbie can keep a gentle push going for as long as you like.
+[02:52.16 -> 02:54.68] The problem is you don't have 10 years.
+[02:55.14 -> 02:56.08] You have three weeks.
+[02:56.62 -> 02:57.64] That's where you come in.
+[02:58.64 -> 03:01.48] That night, the five of you lie on the grass in the middle of the pitch.
+[03:02.12 -> 03:04.46] Nia holds Robbie's hand so he doesn't float away.
+[03:05.06 -> 03:06.00] Bo holds Nia's.
+[03:06.26 -> 03:07.16] Kai counts down.
+[03:07.16 -> 03:11.82] Ravi raises one hand towards the sky and you stop time.
+[03:12.94 -> 03:13.98] The world freezes.
+[03:14.38 -> 03:16.08] A bird hangs in the air above the goal.
+[03:16.56 -> 03:18.18] Kai is stuck halfway through a blink.
+[03:18.76 -> 03:22.36] But you reach out and touch Ravi's shoulder and he can move too.
+[03:23.04 -> 03:24.50] For everyone else it's one second.
+[03:24.96 -> 03:28.20] For Ravi it's a whole hour of gentle pushing.
+[03:28.60 -> 03:30.84] Like a gravity tractor with headphones.
+[03:31.72 -> 03:34.02] An hour of pushing three weeks early.
+[03:35.06 -> 03:36.00] You hope it's enough.
+[03:36.98 -> 03:37.76] Time starts again.
+[03:38.28 -> 03:40.18] The bright dot in the sky doesn't look any different.
+[03:40.76 -> 03:41.62] Nobody breathes.
+[03:42.32 -> 03:43.36] Kai is checking the numbers.
+[03:43.98 -> 03:45.28] Then Kai smiles.
+[03:46.00 -> 03:46.66] It's gonna miss.
+[03:47.98 -> 03:50.48] A few weeks later, the rock flies past Earth.
+[03:50.98 -> 03:53.68] Millions of people go outside to watch it cross the sky.
+[03:54.40 -> 03:57.08] Nia watches from above the crowd, where nobody looks.
+[03:57.62 -> 03:58.54] Bo carries the folding chairs.
+[03:59.08 -> 04:00.68] The news calls it a lucky miss.
+[04:01.52 -> 04:04.20] Nobody knows that five teenagers moved it.
+[04:04.88 -> 04:06.82] Kai finally opens the crisps.
+[04:07.84 -> 04:10.24] So which power would you bring to save the planet?
+[04:10.72 -> 04:11.34] Tell us in the comments.
+[04:11.96 -> 04:15.02] And subscribe because the five of you are just getting started.

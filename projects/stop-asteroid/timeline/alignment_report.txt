@@ -1,16 +1,26 @@
-00:18.50  replace  script: three and a half  |  heard: 3 .5
-00:20.86  replace  script: twenty kilometres  |  heard: 20 kilometers
-00:25.82  replace  script: a hundred and seventy  |  heard: 170
-00:27.32  replace  script: Bo's  |  heard: Bow's
-00:29.20  replace  script: a hundred and seventy  |  heard: 170
-00:31.16  replace  script: Bo,  |  heard: Bow,
-00:33.24  replace  script: vapour.  |  heard: vapor.
-00:43.34  replace  script: centimetre  |  heard: centimeter
-00:46.56  replace  script: ten  |  heard: 10
-00:50.14  replace  script: kilometres  |  heard: kilometers
-01:12.94  replace  script: Dimorphos,  |  heard: dimorphous,
-01:16.38  replace  script: twenty-two thousand kilometres  |  heard: 22 ,000 kilometers
-01:19.92  replace  script: thirty-two  |  heard: 32
-01:22.78  replace  script: seventy-three  |  heard: 73
-01:46.16  delete   script: enough  |  heard: —
-02:17.36  replace  script: going to  |  heard: gonna
+00:03.80  replace  script: Kai  |  heard: Kaya
+00:29.24  replace  script: twenty kilometres  |  heard: 20 km
+00:34.18  replace  script: a hundred and seventy  |  heard: 170
+00:36.38  replace  script: Bo's  |  heard: Bow's
+00:37.42  replace  script: a hundred and seventy  |  heard: 170
+00:39.28  replace  script: Bo,  |  heard: bow,
+00:41.42  replace  script: vapour.  |  heard: vapor.
+00:44.00  replace  script: You'd  |  heard: You
+00:56.84  replace  script: one centimetre  |  heard: 1 cm
+01:00.54  replace  script: ten  |  heard: 10
+01:04.10  replace  script: kilometres  |  heard: kilometers
+01:27.30  replace  script: Dimorphos.  |  heard: Dymorphous.
+01:28.74  replace  script: a hundred and fifty metres  |  heard: 150 meters
+01:37.42  replace  script: twenty-two thousand kilometres  |  heard: 22 ,000 kilometers
+01:42.38  replace  script: seventy-three  |  heard: 73
+01:44.94  replace  script: thirty-two  |  heard: 32
+01:49.82  insert   script: —  |  heard: it
+02:12.42  replace  script: twenty-tonne  |  heard: 20 -ton
+02:14.16  replace  script: two-hundred-metre  |  heard: 200 -meter
+02:16.82  replace  script: twenty  |  heard: 20
+02:26.46  replace  script: practise.  |  heard: practice.
+02:41.66  replace  script: Bo's  |  heard: Beau's
+02:48.84  replace  script: Ravi  |  heard: Robbie
+02:54.14  replace  script: ten  |  heard: 10
+03:02.42  replace  script: Ravi's  |  heard: Robbie's
+03:46.22  replace  script: going to  |  heard: gonna

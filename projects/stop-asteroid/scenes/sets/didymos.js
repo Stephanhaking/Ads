@@ -9,7 +9,7 @@ registerSet('didymos', async (W) => {
   const g = new THREE.IcosahedronGeometry(75, 2); const p = g.attributes.position; for (let i = 0; i < p.count; i++) { const v = new THREE.Vector3().fromBufferAttribute(p, i); v.multiplyScalar(1 + 0.12 * Math.sin(v.x * 0.2 + v.y * 0.1)); p.setXYZ(i, v.x, v.y * 0.85, v.z); } g.computeVertexNormals();
   const moon = new THREE.Mesh(g, K.mat('#9a8e80', { rough: 1, flat: true })); moon.position.set(1200, 0, 0); W.add(moon);
   for (let i = 0; i < 14; i++) W.add(K.sphere(6 + (i % 4) * 4, K.mat('#8a7e70', { rough: 1, flat: true }), [1200 + Math.cos(i * 1.3) * 60, Math.sin(i * 2.1) * 50, Math.sin(i * 1.3) * 60], 5));
-  for (let i = 0; i < 900; i++) { const a = i * 2.39996, z = 1 - (2 * i) / 900, rr = Math.sqrt(1 - z * z); W.add(K.sphere(4 + (i % 5) * 2, K.glowMat(i % 7 ? '#ffffff' : '#ffd9a8', 1.2 + (i % 3) * 0.4), [Math.cos(a) * rr * 14000, z * 14000, Math.sin(a) * rr * 14000], 4)); }
-  const sun = new THREE.DirectionalLight('#fff4e0', 3.4); sun.position.set(-3000, 1200, 2000); W.add(sun);
+  for (let i = 0; i < 900; i++) { const a = i * 2.39996, z = 1 - (2 * i) / 900, rr = Math.sqrt(1 - z * z); W.add(K.sphere(4 + (i % 5) * 2, K.glowMat(i % 7 ? '#ffffff' : '#ffd9a8', 1.2 + (i % 3) * 0.4), [Math.cos(a) * rr * 4000, z * 4000, Math.sin(a) * rr * 4000], 4)); }
+  const sun = new THREE.DirectionalLight('#fff4e0', 3.4); sun.position.set(3000, 1500, 3000); W.add(sun);
   return {};
 });
