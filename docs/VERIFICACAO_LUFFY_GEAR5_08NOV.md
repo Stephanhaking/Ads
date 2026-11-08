@@ -27,3 +27,13 @@ Regra: nada entra no guião sem fonte. Fontes aqui são secundárias (Wikipedia 
 1. Custos/limites do Gear 5 no canon (não usar sem fonte; senão o guião não os menciona).
 2. Fonte primária para o raio (NWS) e para o riso (artigos originais).
 3. Nunca usar frases ou imagens do anime; só factos e arte original do canal.
+
+## D. Atualização (08/11, 18h) — factos reportados pelo chat Ifsuperhero + a nossa verificação
+Fonte dos relatos: mensagem do chat Ifsuperhero (ficheiro dele: projects/luffy-gear5/research/facts.md, não lido por nós). Estado:
+| Facto | Estado |
+|---|---|
+| Relâmpago típico: ~300 milhões de volts e ~30 000 A | VERIFICADO pelo NWS (https://www.weather.gov/safety/lightning-power). Atenção: é um valor "típico"; o NWS Melbourne dá 100 milhões a 1 000 milhões de volts e correntes de 10 000 a 200 000 A |
+| Ar aquecido a ~30 000 °C, "5× a superfície do Sol" | O NWS atual diz 50 000 °F (~28 000 °C), "cerca de 5× a superfície do Sol" (https://www.weather.gov/safety/lightning-temperature). Dizer "cerca de 28 000 °C" e que é o ar aquecido, não o raio em si. O NSSL dá 18 000 a 60 000 °F |
+| Imunidade do Luffy ao raio do Enel em Skypiea | Canon conhecido; relatado com Fandom/ComicVine (fontes fracas). ⚠ confirmar no mangá/Viz |
+| Custo do Gear 5 (cap. 1045 "Next Level": fica esgotado, volta a ativar) | ⚠ só secundárias (Sportskeeda, ComicBook.com); dizer "segundo o mangá" só se confirmado |
+| Luvas classe 4 (36 000 V, ASTM D120), Gough-Joule, Tg da borracha, alongamento 300-900 % | Não reverificados por nós (⚠); o chat Ifsuperhero tem as fontes |
