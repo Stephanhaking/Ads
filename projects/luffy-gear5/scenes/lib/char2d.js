@@ -21,7 +21,7 @@ export function person(x, y, h, pose = P_STAND, o = {}) {
   const hip = [x, y - (pose.sit ? 80 : 158) * s]; // seated: hips at seat height, thighs forward, shins down
   const neck = at(hip, 180 - pose.lean * side, 112 * s); // torso goes up
   const R = 46 * s, hc = at(neck, 180 - (pose.lean + pose.head) * side, R + 6 * s);
-  const shL = [neck[0] - 26 * s, neck[1] + 12 * s], shR = [neck[0] + 26 * s, neck[1] + 12 * s];
+  const SW = o.broad ? 1.28 : 1; const shL = [neck[0] - 26 * s * SW, neck[1] + 12 * s], shR = [neck[0] + 26 * s * SW, neck[1] + 12 * s];
   const arm = (sh, a, sgn) => { const e = at(sh, sgn * a[0] * side, 54 * s); const hnd = at(e, sgn * a[1] * side, 52 * s); return [sh, e, hnd]; };
   const AL = arm(shL, pose.aL, -1), AR = arm(shR, pose.aR, 1);
   const leg = (dx, a, sgn) => { const h0 = [hip[0] + dx, hip[1]]; if (pose.sit) { const k = at(h0, side * (92 - sgn * 4), 70 * s); return [h0, k, at(k, side * 6, 76 * s)]; } const k = at(h0, sgn * a[0] * side, 78 * s); const ft = at(k, sgn * a[0] * side - sgn * a[1] * side * 0.3 + a[1] * 0.0, 76 * s); return [h0, k, ft]; };
@@ -50,6 +50,7 @@ export function person(x, y, h, pose = P_STAND, o = {}) {
   g += limb(AR, w) + sleeve(AR, o.sleeves === 'long') + hand(AR);
   // head + face
   g += `<circle cx="${f(hc[0] + 3 * s)}" cy="${f(hc[1] - 3 * s)}" r="${f(R + 2 * s)}" fill="${rim}"/><circle cx="${f(hc[0])}" cy="${f(hc[1])}" r="${f(R)}" fill="#0b0b10"/>`;
+  if (o.hair === 'short') { const pts = []; const n = 9; for (let i = 0; i <= n; i++) { const a = Math.PI * (1.12 + 0.76 * i / n); const r = i % 2 ? R * (1.2 + 0.06 * (i % 3)) : R * 0.98; const sw = side * R * 0.18 * Math.sin(Math.PI * i / n); pts.push(`${f(hc[0] + Math.cos(a) * r + (i % 2 ? sw : 0))},${f(hc[1] + Math.sin(a) * r)}`); } g += `<path d="M ${pts.join(' L ')} Q ${f(hc[0])} ${f(hc[1] - R * 0.55)} ${pts[0]} Z" fill="#0b0b10" stroke="${rim}" stroke-width="${f(1.2 * s)}" stroke-linejoin="round" stroke-opacity="0.6"/>`; }
   const lx = (o.look || 0) * 9 * s, ey = hc[1] - 6 * s, face = o.face || 'neutral';
   for (const dx of [-15, 15]) {
     const ex = hc[0] + dx * s + lx;

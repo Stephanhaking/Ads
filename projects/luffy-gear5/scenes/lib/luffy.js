@@ -5,18 +5,22 @@ const OUT = '#1b1410';
 // A stretched rubber arm from shoulder S to hand H (screen px). w0 = normal arm thickness, L0 = normal arm length in px.
 // Volume is kept (rubber's Poisson ratio is close to 0.5): thickness = w0 / sqrt(L / L0). sleeve = hoodie colour.
 export function stretchArm(S, H, w0, L0, o = {}) {
-  const dx = H[0] - S[0], dy = H[1] - S[1], L = Math.hypot(dx, dy), w = Math.max(3, w0 / Math.sqrt(Math.max(1, L / L0)));
-  const sag = o.sag ?? Math.min(80, L * 0.08), mx = (S[0] + H[0]) / 2, my = (S[1] + H[1]) / 2 + sag;
-  const sl = o.sleeve || '#6f8fbf', sx = S[0] + dx * 0.12, sy = S[1] + dy * 0.12;
-  let g = `<path d="M ${f(S[0])} ${f(S[1])} Q ${f(mx)} ${f(my)} ${f(H[0])} ${f(H[1])}" fill="none" stroke="${o.rim || '#ffd6a0'}" stroke-width="${f(w + 4)}" stroke-linecap="round" opacity="0.9"/>`;
-  g += `<path d="M ${f(S[0])} ${f(S[1])} Q ${f(mx)} ${f(my)} ${f(H[0])} ${f(H[1])}" fill="none" stroke="#0b0b10" stroke-width="${f(w)}" stroke-linecap="round"/>`;
-  g += `<line x1="${f(S[0])}" y1="${f(S[1])}" x2="${f(sx)}" y2="${f(sy)}" stroke="${sl}" stroke-width="${f(w0 * 2.2)}" stroke-linecap="round"/>`;
-  g += `<circle cx="${f(H[0])}" cy="${f(H[1])}" r="${f(w0 * 0.85)}" fill="#0b0b10"/>`;
-  if (o.lines) for (let i = 1; i < 4; i++) { const k = i / 4, px = S[0] + dx * k, py = S[1] + dy * k + sag * 4 * k * (1 - k); g += `<line x1="${f(px - dy / L * 40)}" y1="${f(py + dx / L * 40)}" x2="${f(px - dy / L * 70)}" y2="${f(py + dx / L * 70)}" stroke="#fff" stroke-width="3" opacity="0.6"/>`; }
+  const dx = H[0] - S[0], dy = H[1] - S[1], L = Math.hypot(dx, dy) || 1, ratio = Math.max(1, L / L0);
+  const w = Math.max(w0 * 0.55, w0 * 1.35 / Math.sqrt(ratio));           // thinner as it stretches, never a hairline
+  const sag = o.sag ?? Math.min(70, L * 0.06), nx = -dy / L, ny = dx / L, mx = (S[0] + H[0]) / 2 + nx * sag * 0.3, my = (S[1] + H[1]) / 2 + sag;
+  const sl = o.sleeve || '#6f8fbf', path = `M ${f(S[0])} ${f(S[1])} Q ${f(mx)} ${f(my)} ${f(H[0])} ${f(H[1])}`;
+  let g = `<path d="${path}" fill="none" stroke="${o.rim || '#ffd6a0'}" stroke-width="${f(w + 7)}" stroke-linecap="round"/>`;
+  g += `<path d="${path}" fill="none" stroke="#14141c" stroke-width="${f(w)}" stroke-linecap="round"/>`;
+  g += `<path d="${path}" fill="none" stroke="#5a5a72" stroke-width="${f(w * 0.22)}" stroke-linecap="round" opacity="0.55" transform="translate(${f(-nx * w * 0.25)} ${f(-ny * w * 0.25)})"/>`;   // rubber sheen
+  const sx = S[0] + dx * Math.min(0.18, 90 / L), sy = S[1] + dy * Math.min(0.18, 90 / L);
+  g += `<line x1="${f(S[0])}" y1="${f(S[1])}" x2="${f(sx)}" y2="${f(sy)}" stroke="#1b1410" stroke-width="${f(w0 * 2.4 + 6)}" stroke-linecap="round"/><line x1="${f(S[0])}" y1="${f(S[1])}" x2="${f(sx)}" y2="${f(sy)}" stroke="${sl}" stroke-width="${f(w0 * 2.4)}" stroke-linecap="round"/>`;
+  const fr = w0 * 1.25 * (o.fist ?? 1), ang = Math.atan2(dy, dx) * 180 / Math.PI, sq = 1 + Math.min(0.35, (ratio - 1) * 0.05);
+  g += `<g transform="translate(${f(H[0])} ${f(H[1])}) rotate(${f(ang)}) scale(${f(sq)} ${f(1 / sq)})"><ellipse cx="0" cy="0" rx="${f(fr * 1.1)}" ry="${f(fr)}" fill="#14141c" stroke="${o.rim || '#ffd6a0'}" stroke-width="3"/>${[-0.5, 0, 0.5].map((k) => `<line x1="${f(fr * 0.4)}" y1="${f(k * fr * 0.9)}" x2="${f(fr * 1.0)}" y2="${f(k * fr * 0.9)}" stroke="#3a3a4a" stroke-width="3"/>`).join('')}</g>`;
+  if (o.lines) for (let i = 1; i < 4; i++) { const k = i / 4, px = S[0] + dx * k, py = S[1] + dy * k + sag * 4 * k * (1 - k); g += `<line x1="${f(px + nx * 40)}" y1="${f(py + ny * 40)}" x2="${f(px + nx * 80)}" y2="${f(py + ny * 80)}" stroke="#fff" stroke-width="4" opacity="0.6"/>`; }
   return g;
 }
 // approximate shoulders of a char2d person (c = person() result); side +1 = the figure's right as seen on screen
-export const shoulder = (c, side = 1) => [c.head[0] + side * c.R * 0.6, c.head[1] + c.R * 1.55];
+export const shoulder = (c, side = 1) => [c.head[0] + side * c.R * 0.72, c.head[1] + c.R * 1.45];
 
 // Gear-5 look on a figure: white cloud hair, a white glow and drifting steam; t = seconds
 export function gear5(c, t, k = 1) {
