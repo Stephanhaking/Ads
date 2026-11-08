@@ -25,17 +25,17 @@ export function label(U, key, text, t0, t, x, y, o = {}) {
   U.html(key, `<div style="transform:scale(${f(sc)});transform-origin:left center;opacity:${f(k)};display:inline-flex;align-items:center;gap:14px;background:${COL.panel};border-left:8px solid ${acc};border-radius:6px;padding:12px 22px 12px 16px;box-shadow:0 10px 30px rgba(0,0,0,.35)">${o.icon ? `<div style="font:900 30px ${HUD_FONT};color:${acc}">${esc(o.icon)}</div>` : ''}<div style="font:800 ${o.fs || 34}px ${MONO};color:#fff;letter-spacing:.06em;white-space:nowrap">${esc(text.slice(0, n))}</div></div>`, { left: x + 'px', top: y + 'px' }, { z: 55 });
 }
 
-// one-line caption from the narration timings: up to 5 words, uppercase; the longest word (or a number) in yellow
+// one-line caption from the narration timings: fixed chunks of up to 5 words (broken at punctuation and pauses), uppercase;
+// a number, else the longest word, in yellow
+let CH = null;
+function chunks() { if (CH) return CH; const W = E.words || []; CH = []; let cur = [];
+  W.forEach((w, i) => { cur.push(w); const nx = W[i + 1]; if (cur.length >= 5 || /[.!?,:;]$/.test(w.word) || !nx || nx.start - w.end > 0.45) { CH.push(cur); cur = []; } });
+  return CH; }
 export function caption(U, info, t) {
-  const g = info.start + t, W = E.words || []; if (!W.length) return;
-  let i = W.findIndex((w) => w.end >= g); if (i < 0) { U.html('cap', '', {}); return; }
-  if (W[i].start > g + 0.25) { U.html('cap', '', {}); return; }
-  // chunk start: walk back to a sentence end or 5 words
-  let a = i; while (a > 0 && i - a < 4 && !/[.!?]$/.test(W[a - 1].word) && W[a].start - W[a - 1].end < 0.5) a--;
-  let b = a; while (b < W.length - 1 && b - a < 4 && !/[.!?,]$/.test(W[b].word) && W[b + 1].start - W[b].end < 0.5) b++;
-  const chunk = W.slice(a, b + 1), clean = (s) => s.replace(/[^\w'%.-]/g, '');
-  let key = chunk.findIndex((w) => /\d/.test(w.word)); if (key < 0) { let best = -1, len = 0; chunk.forEach((w, j) => { const L = clean(w.word).length; if (L > len) { len = L; best = j; } }); key = best; }
-  const html = chunk.map((w, j) => `<span style="color:${j === key ? COL.yellow : '#fff'}">${esc(w.word.toUpperCase())}</span>`).join(' ');
+  const g = info.start + t, C = chunks(); const c = C.find((ch) => g >= ch[0].start - 0.05 && g <= ch[ch.length - 1].end + 0.25);
+  if (!c) { U.html('cap', '', {}); return; }
+  const clean = (s) => s.replace(/[^\w'%.-]/g, ''); let key = c.findIndex((w) => /\d/.test(w.word)); if (key < 0) { let len = 0; c.forEach((w, j) => { const n = clean(w.word).length; if (n > len) { len = n; key = j; } }); }
+  const html = c.map((w, j) => `<span style="color:${j === key ? COL.yellow : '#fff'};opacity:${g >= w.start - 0.05 ? 1 : 0.55}">${esc(w.word.toUpperCase())}</span>`).join(' ');
   U.html('cap', `<div style="width:1920px;text-align:center"><span style="display:inline-block;font:900 54px ${HUD_FONT};letter-spacing:.01em;padding:8px 26px;background:rgba(0,0,0,.42);border-radius:14px;text-shadow:0 4px 0 rgba(0,0,0,.6)">${html}</span></div>`, { left: '0px', top: '930px' }, { z: 58 });
 }
 
