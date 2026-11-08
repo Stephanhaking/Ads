@@ -1,3 +1,4 @@
+import { personPro } from './body.js';
 // 2D "clothed stickman" character drawn in SVG, composited over the 3D set (characters always face the camera, like
 // hand-animated stickman channels). Black round head with white oval eyes and a white mouth; thin black arms with round hands;
 // clothes as flat two-tone shapes (top with sleeves, optional hood and drawstrings, trousers or shorts, shoes); optional
@@ -14,7 +15,7 @@ export const P_POINT = { lean: 6, aL: [10, 6], aR: [80, 84], lL: [5, 0], lR: [6,
 export const P_HIPS = { lean: 0, aL: [40, 150], aR: [40, 150], lL: [6, 0], lR: [6, 0], head: 6 };
 
 // o: {top, top2 (shadow), sleeves:'short'|'long', hood, bottom, shorts, shoes, hair:'ponytail', cap, face:'open'|'smile'|'worried'|'neutral', rim, look (-1..1), flip}
-export function person(x, y, h, pose = P_STAND, o = {}) {
+export function personClassic(x, y, h, pose = P_STAND, o = {}) {
   const s = h / 340, w = 11 * s, side = o.flip ? -1 : 1;
   const top = o.top || '#e2553f', topS = o.top2 || shade(top, 0.72), bot = o.bottom || '#283552', botS = shade(bot, 0.75), shoe = o.shoes || '#15161b', rim = o.rim || '#ffd2a0';
   // skeleton (y up the screen = negative)
@@ -65,3 +66,6 @@ export function person(x, y, h, pose = P_STAND, o = {}) {
   if (o.cap) { const c = o.cap, cs = shade(c, 0.75); g += `<path d="M ${f(hc[0] - R * 1.02)} ${f(hc[1] - R * 0.18)} A ${f(R * 1.02)} ${f(R * 1.0)} 0 0 1 ${f(hc[0] + R * 1.02)} ${f(hc[1] - R * 0.18)} Z" fill="${c}"/><path d="M ${f(hc[0] + side * R * 0.2)} ${f(hc[1] - R * 0.2)} q ${f(side * R * 0.9)} ${f(-R * 0.05)} ${f(side * R * 1.25)} ${f(R * 0.18)} l ${f(-side * R * 0.2)} ${f(R * 0.12)} z" fill="${cs}"/><circle cx="${f(hc[0])}" cy="${f(hc[1] - R * 1.0)}" r="${f(4 * s)}" fill="${cs}"/>`; }
   return { svg: `<g>${g}</g>`, head: hc, R, mouth: [mx, my] };
 }
+
+// the improved body is the default from now on (personClassic kept for reference)
+export function person(x, y, h, pose = P_STAND, o = {}) { return personPro(x, y, h, pose, o); }
