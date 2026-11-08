@@ -27,7 +27,10 @@ STYLE = ("# DIRECTOR'S NOTES\nStyle: calm, steady, brisk investigative documenta
          "Pace: natural, about 145 words per minute, short pauses at full stops.\n\n# TRANSCRIPT\n")
 STYLES = {"documentary": None, "story": ("# DIRECTOR'S NOTES\nStyle: an energetic, warm, conversational young storyteller talking straight to the viewer. "
     "Playful in the funny moments, tense and quieter in the dangerous ones, quick dialogue lines voiced lightly. "
-    "Pace: lively, about 165 words per minute, short natural pauses.\n\n# TRANSCRIPT\n")}
+    "Pace: lively, about 165 words per minute, short natural pauses.\n\n# TRANSCRIPT\n"),
+    "calm-story": ("# DIRECTOR'S NOTES\nStyle: a calm, confident, warm young storyteller talking straight to the viewer, like a gripping late-night story. "
+    "Steady and clear, never rushed; a little tension in the dangerous moments, a small smile in the funny ones. "
+    "Pace: about 160 words per minute, even rhythm, short natural pauses only.\n\n# TRANSCRIPT\n")}
 VOICES = {  # Gemini prebuilt voices (descriptions from Google's docs; check the live list)
     "Charon": "informative", "Orus": "firm", "Kore": "firm", "Algenib": "gravelly", "Rasalgethi": "informative",
     "Sadaltager": "knowledgeable", "Iapetus": "clear", "Gacrux": "mature", "Schedar": "even", "Umbriel": "easy-going",
