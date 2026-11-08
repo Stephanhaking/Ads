@@ -25,7 +25,7 @@ export function personRef(x, y, h, pose, o = {}) {
   const hip = [x, y - (pose.sit ? 70 : 118) * s];
   const neck = at(hip, 180 - pose.lean * side, 112 * s);
   const R = 54 * s, hc = at(neck, 180 - (pose.lean + pose.head * 0.6) * side, R * 0.78);
-  const tilt = rad(-pose.lean * side), cs = Math.cos(tilt), sn = Math.sin(tilt);
+  const tilt = rad(pose.lean * side), cs = Math.cos(tilt), sn = Math.sin(tilt);
   const rot = (dx, dy, o0 = neck) => [o0[0] + dx * cs - dy * sn, o0[1] + dx * sn + dy * cs];
   const shL = rot(-21 * s * W * side, 14 * s), shR = rot(21 * s * W * side, 14 * s);
   const arm = (sh, a, sgn) => { const e = at(sh, sgn * (a[0] + 6) * side, 52 * s); const hd = at(e, sgn * (a[1] + 4) * side, 50 * s); return [sh, e, hd]; };
@@ -70,8 +70,8 @@ export function personRef(x, y, h, pose, o = {}) {
     else q += `<line x1="${f(mx - 7 * k)}" y1="${f(my)}" x2="${f(mx + 7 * k)}" y2="${f(my)}" stroke="#fff" stroke-width="${f(3 * k)}" stroke-linecap="round"/>`;
     if (o.cap) { const c = o.cap, c2 = shade(c, 0.75); q += `<path d="M ${f(hc[0] - R * 1.0)} ${f(hc[1] - R * 0.2)} A ${f(R)} ${f(R * 0.95)} 0 0 1 ${f(hc[0] + R * 1.0)} ${f(hc[1] - R * 0.2)} Z" fill="${c}"/><path d="M ${f(hc[0] + side * R * 0.3)} ${f(hc[1] - R * 0.26)} L ${f(hc[0] + side * R * 1.55)} ${f(hc[1] - R * 0.14)} Q ${f(hc[0] + side * R * 1.2)} ${f(hc[1] - R * 0.38)} ${f(hc[0] + side * R * 0.7)} ${f(hc[1] - R * 0.4)} Z" fill="${c2}"/>`; }
     return { svg: q, mouth: [mx, my] }; };
-  const back = side > 0 ? AL : AR, front = side > 0 ? AR : AL;
-  let g = legSvg(LL, -1) + legSvg(LR, 1) + armSvg(back) + torso() + armSvg(front);
+  const back = side > 0 ? AL : AR, front = side > 0 ? AR : AL, skip = (A) => (o.noArm === 'R' && A === AR) || (o.noArm === 'L' && A === AL);
+  let g = legSvg(LL, -1) + legSvg(LR, 1) + (skip(back) ? '' : armSvg(back)) + torso() + (skip(front) ? '' : armSvg(front));
   const H = head(); g += H.svg;
   const [id, def] = outlineDef(o.rim || '#dcecff', Math.max(1.3, 3 * s));
   return { svg: `<g><defs>${def}</defs><g filter="url(#${id})">${g}</g></g>`, head: hc, R, mouth: H.mouth, shL, shR, hands: [AL[2], AR[2]] };
