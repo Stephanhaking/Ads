@@ -33,3 +33,26 @@ Para quem retomar este trabalho noutra conversa. Branch com tudo: `claude/hopefu
 ## Atualização 27/10 (tarde): início da publicação
 O utilizador decidiu que a publicação diária **só começa depois de os 10 vídeos estarem terminados**. O calendário de 2–11/nov (`docs/ifsuperpower_schedule.json`) fica **provisório**: as datas serão refeitas quando o 10.º estiver pronto (1 vídeo por dia às 18:00 UTC, a partir do dia seguinte). Até lá: rever a oferta dos temas pelo menos 1 vez por semana (`tools/whatif_recheck.py`) e trocar os que os líderes publicarem.
 Ideia nova do utilizador: "What If You Never Needed to Drink Water Again?" (medição em `docs/WHATIF_AGUA_27OUT.md`).
+
+---
+## Divisão de trabalho entre os dois chats (08/11/2026)
+
+**Chat "Ads" (branch `claude/hopeful-babbage-yw6bff`): dados, verificação e YouTube**
+- Pesquisa de nichos/concorrentes e análise de canais pela API (nada de scraping).
+- Verificação de factos com fonte, antes de qualquer guião: ficheiros `docs/VERIFICACAO_*.md`.
+- Análises de referência (script, visual, áudio) em `docs/REF_*.md`.
+- YouTube: upload, títulos, descrições, thumbnails, publicação, analytics (as credenciais `YT_*` e `GEMINI_API_KEYS` estão neste ambiente). Publicação final é manual, feita pelo utilizador.
+- Estratégia, critérios de sucesso/falha e decisões: `docs/ESTRATEGIA_*.md`.
+
+**Chat "Ifsuperhero" (branch `claude/new-session-pulgxc`): produção**
+- Escrever o guião a partir de `docs/VERIFICACAO_*.md` (só factos verificados) e das análises `docs/REF_*.md`.
+- Voz (Gemini TTS), visuais (Remotion), efeitos sonoros e mistura de áudio (alvo ~-14 LUFS, música contínua, voz a 160-165 palavras/min).
+- Saídas em `projects/<nome>/out/` (mp4, srt, description.txt).
+
+**Regras para não haver confusão**
+1. Cada ficheiro tem um dono: `docs/` fica no chat Ads; `projects/` fica no chat Ifsuperhero. Um chat não edita ficheiros do outro, só lê.
+2. Quando um chat precisa de algo do outro, escreve em chat e aponta o ficheiro e a branch.
+3. Nada é publicado, apagado ou agendado sem o utilizador confirmar.
+4. Factos primeiro, voz e imagem depois. Fontes em falta ficam marcadas ⚠ e não entram no guião.
+5. Poderes de anime: só arte original do canal; nunca imagens, áudio ou música do anime.
+6. Nunca escrever chaves ou tokens em ficheiros; só nomes de variáveis.
