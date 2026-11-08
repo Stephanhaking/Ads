@@ -8,11 +8,11 @@ real-world facts from the sources listed. Original art only: no images, scenes, 
 |---|---|---|
 | L01 | Luffy ate the Gomu Gomu no Mi; in chapter 1044 (2022) it is revealed as the Hito Hito no Mi, Model: Nika (a mythical Zoan) | One Piece Wiki "Chapter 1044"; Dexerto; Looper |
 | L02 | Gear 5: rubber body that deforms freely, and he can give rubber properties to things around him; cartoon-like fighting | Looper; Dexerto; Beebom |
-| L03 | After using Gear 5 his stamina is used up; he shrivels and his face looks old/wrinkled (chapter 1045) | Dexerto; Looper |
+| L03 | After using Gear 5 his stamina runs out; he looks worn out and appears to age decades in seconds, then forces it back on (chapter 1045 'Next Level') | Sportskeeda ch. 1045 coverage; ComicBook.com 'Gear Fifth limits'; Dexerto; Looper (secondary, not the manga itself) |
 | L04 | Gear 2 pumps blood faster; early in the story it was said to strain his body and shorten his life | fan wikis (Beebom, AnimeExplained) |
 | L05 | Gear 3 inflates his bones into giant limbs; early on it shrank him into a child afterwards | fan wikis |
 | L06 | Gear 4 (Boundman): muscle inflation + Armament Haki; afterwards no Haki for about 10 minutes | fan wikis |
-| L07 | Luffy beats Enel (lightning) because rubber does not conduct, in the story | One Piece (Skypiea arc), common knowledge |
+| L07 | Luffy's rubber body is immune to Enel's lightning (Goro Goro no Mi), which decides their Skypiea fight | One Piece Wiki 'Enel' (Fandom mirror); ComicVine; WeGotThisCovered |
 
 ## Real world
 | ID | Fact | Source |
