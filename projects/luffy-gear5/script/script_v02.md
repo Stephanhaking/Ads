@@ -1,5 +1,6 @@
 # Pilot: What If You Had Luffy's Powers in Real Life? (Gear 5)
-# Draft v01 — about 9 minutes (~1,500 words at ~170 wpm). Our structure: power in the first line, a day counter,
+# Draft v02 — about 8 minutes (~1,350 spoken words at ~170 wpm); scene times are approximate. v02: lightning keeps the lore (the body is immune, the
+# heat is not); the people in suits use Gear 4's 10-minute gap; more weight on Gear 5's laugh and its cost. Our structure: power in the first line, a day counter,
 # one new scene about every minute, each power with a rule, a cost, and a real, sourced fact.
 
 ## Cold open (0:00)
@@ -32,16 +33,19 @@ But there's a catch Luffy never mentions. Your arm also has to come back. And it
 You punch yourself in the face with your own elbow. Twice.
 Rule two: what you throw, comes back.
 
-## Day 6: the storm (3:00)
-[a thunderstorm over the city; the hero on a rooftop, thinking]
-In One Piece, Luffy beats a man made of lightning, because rubber doesn't conduct electricity.
-So on day six, when a thunderstorm rolls in, you have a very bad idea. You go up to the roof.
-Then you remember the numbers, and you go back down.
-A typical lightning bolt carries about three hundred million volts.
-The thick rubber gloves electricians use on power lines are rated for thirty-six thousand volts.
-Lightning is more than eight thousand times that.
-And here's the myth: car tyres don't protect you from lightning either. What protects you in a car is the metal body, which carries the current around you and into the ground.
-Rubber that beats lightning only works in the manga. Rule three: you are not lightning-proof. Stay inside.
+## Day 6: the lightning test (3:00)
+[a thunderstorm over the city; the hero on a rooftop; a lightning rod on the next building]
+In One Piece, Luffy beats a man made of lightning, because his rubber body doesn't conduct electricity.
+So on day six, when a thunderstorm rolls in, you climb to the roof to find out if that's true for you too.
+Ordinary rubber would lose this fight. A typical lightning bolt carries about three hundred million volts.
+The thick rubber gloves electricians wear on power lines are rated for thirty-six thousand. Lightning is more than eight thousand times that.
+Push enough voltage through any insulator and it suddenly gives up and conducts. Physicists call it dielectric breakdown.
+Even car tyres don't protect you from lightning. What protects you in a car is the metal body, which carries the current around you.
+But you're not ordinary rubber. The bolt hits the lightning rod next door, jumps to you, and nothing happens. No shock. No pain.
+Your body is the one thing in this story that follows the manga.
+Your phone, though, is not made of Nika rubber. And the air around a lightning bolt gets about five times hotter than the surface of the Sun.
+Your hoodie is smoking. Your sneakers have melted to the roof.
+Rule three: you beat the voltage. You don't beat the heat.
 
 ## Day 9: the cold (4:00)
 [a frozen-food warehouse; breath clouds; the hero in a work jacket]
@@ -68,13 +72,21 @@ Rule five: big now, small later.
 
 ## Day 27: Gear 4 (6:45)
 [a video spreading across phones; a news ticker; two people in suits at the door]
-By now there are videos. A forklift. A crane. A boy who got very small, very fast.
+By now there are videos. A forklift. A crane. A kid who suddenly got very small, very fast.
 Nobody has your name yet. But two people in suits knock on your door and ask, very politely, if you'd like a job.
-You say no. That night you try the strongest form you know: Gear 4. Muscles inflated, arms coated in black armour.
-It's incredible for about a minute. Then it ends, and Luffy's rule hits you too. No armour, nothing, for ten whole minutes.
-Ten minutes is a long time when people in suits know your address.
+You say no. They leave a card. They don't seem surprised.
+That night you try the strongest form you know: Gear 4. You blow air into your muscles until they swell like armour, and your arms and legs turn black and hard.
+In One Piece that black coating is Armament Haki, a willpower that hardens the skin like steel. For about a minute, nothing can touch you.
+Then it ends, and Luffy's rule hits you too. No armour. No Haki. Ten whole minutes where you're just a tired person in a parking lot.
 
-## Day 40: Gear 5 (7:45)
+## Day 28: the ten minutes (7:30)
+[the parking lot at night; a drone hovering; headlights]
+The next night, you notice a drone. It has been following you since you left the warehouse.
+The people in suits didn't come back to talk. They came back to watch. And now they know exactly how long your strongest form lasts, and exactly how long you're open afterwards.
+Ten minutes is enough for a net, a van, and a very quiet drive.
+So you make a new rule, the one Luffy never needed because he always had his crew: never use Gear 4 alone. Rule six: your strongest minute is also your weakest ten.
+
+## Day 40: Gear 5 (8:20)
 [night; a city square; a drumbeat; the hero's hair turns white]
 Day forty. A gas main explodes under a busy square. Cars tip over. A bus is sliding toward the hole.
 Your heart starts to drum. Boom. Boom. Boom-boom.
@@ -82,12 +94,15 @@ Gear 5. Your hair turns white. You laugh, and you don't know why.
 And the rules stop applying. You turn the road itself into rubber. The bus bounces back onto the street like a toy.
 You stretch the falling streetlights into soft loops and lay them down gently.
 For thirty seconds, the whole city is a cartoon, and you are the only one drawing it.
+The people in the square don't scream. They stare. One woman laughs with you without knowing why. A man films everything with his mouth open.
+And you can't stop laughing. It isn't happiness exactly. It's the power itself, loud and free, like a song you can't turn off.
+Somewhere in the back of your head, a quieter voice is counting. Because every second of this is being paid for.
 
-## The cost (8:35)
+## The cost (9:20)
 [the hero sitting on the curb; wrinkled face; white hair; very tired]
 Then it ends. And the cost of Gear 5 arrives all at once, just like it does for Luffy.
 Your face goes wrinkled. Your legs won't hold you. You look eighty years old, sitting on the curb, laughing at nothing.
 It wears off by morning. But now you know: the most powerful thing you can do is also the thing you can do least.
 
-## Ending (9:05)
+## Ending (9:50)
 So if you woke up tomorrow made of rubber, which gear would you use first? And which one would you never touch? Tell us in the comments.

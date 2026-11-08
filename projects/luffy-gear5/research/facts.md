@@ -24,4 +24,6 @@ real-world facts from the sources listed. Original art only: no images, scenes, 
 | R05 | Car tires do not protect you from lightning; a car's metal body carries the current around the people inside | NWS "Lightning and cars"; UW-Madison |
 | R06 | Class 4 lineman's rubber gloves are rated for up to 36,000 V AC | Salisbury/Honeywell; ASTM D120 |
 | R07 | Estimated maximum heart rate is about 220 minus age (a rough estimate, often off by 10-20 bpm) | Fox et al. 1971; reviews |
+| R08 | Lightning heats the air in its channel to about 30,000 C (older NWS page: 50,000 F), about five times the Sun's visible surface (~5,500 C) | NWS (archived page); NOAA summaries |
+| R09 | Dielectric breakdown: above a high enough voltage, an insulator suddenly conducts; thicker insulation holds more | Wikipedia 'Electrical breakdown'; All About Circuits |
 | C01 | 300,000,000 V / 36,000 V is about 8,300 times | calculation |
