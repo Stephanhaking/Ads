@@ -1,4 +1,5 @@
 import { personPro } from './body.js';
+import { personRef } from './body2.js';
 // 2D "clothed stickman" character drawn in SVG, composited over the 3D set (characters always face the camera, like
 // hand-animated stickman channels). Black round head with white oval eyes and a white mouth; thin black arms with round hands;
 // clothes as flat two-tone shapes (top with sleeves, optional hood and drawstrings, trousers or shorts, shoes); optional
@@ -68,4 +69,4 @@ export function personClassic(x, y, h, pose = P_STAND, o = {}) {
 }
 
 // the improved body is the default from now on (personClassic kept for reference)
-export function person(x, y, h, pose = P_STAND, o = {}) { return personPro(x, y, h, pose, o); }
+export function person(x, y, h, pose = P_STAND, o = {}) { return personRef(x, y, h, pose, o); }

@@ -17,18 +17,18 @@ export function stretchArm(S, H, w0, L0, o = {}) {
   const d = 'M ' + pts.map((p) => `${f(p[0])} ${f(p[1])}`).join(' L ');
   let g = '';
   if (o.smear) g += `<path d="${d}" fill="none" stroke="#ffffff" stroke-width="${f(w * 3.2)}" stroke-linecap="round" opacity="${f(0.18 * o.smear)}"/>`;
-  g += `<path d="${d}" fill="none" stroke="${o.rim || '#ffd6a0'}" stroke-width="${f(w + 6)}" stroke-linecap="round" stroke-linejoin="round"/>`;
+  g += `<path d="${d}" fill="none" stroke="${o.rim || '#e4f0ff'}" stroke-width="${f(w + 7)}" opacity="0.9" stroke-linecap="round" stroke-linejoin="round"/>`;
   g += `<path d="${d}" fill="none" stroke="#14141c" stroke-width="${f(w)}" stroke-linecap="round" stroke-linejoin="round"/>`;
   g += `<path d="${d}" fill="none" stroke="#6a6a86" stroke-width="${f(w * 0.2)}" stroke-linecap="round" opacity="0.6" transform="translate(${f(-nx * w * 0.26)} ${f(-ny * w * 0.26)})"/>`;
   // stretch rings: spacing grows with the stretch
   const nR = Math.min(14, Math.floor(ratio * 2)); for (let i = 1; i < nR; i++) { const u = i / nR, j = Math.round(u * N), p = pts[j], q = pts[Math.min(N, j + 1)], tx = q[0] - p[0], ty = q[1] - p[1], tl = Math.hypot(tx, ty) || 1, ex = -ty / tl * w * 0.48, ey = tx / tl * w * 0.48; g += `<line x1="${f(p[0] + ex)}" y1="${f(p[1] + ey)}" x2="${f(p[0] - ex)}" y2="${f(p[1] - ey)}" stroke="#3a3a50" stroke-width="${f(Math.max(1.5, w * 0.12))}" stroke-linecap="round"/>`; }
   // cuff at the shoulder
-  const cx = S[0] + dx * Math.min(0.14, 70 / Ln), cy = S[1] + dy * Math.min(0.14, 70 / Ln);
-  g += `<line x1="${f(S[0])}" y1="${f(S[1])}" x2="${f(cx)}" y2="${f(cy)}" stroke="#1b1410" stroke-width="${f(w0 * 2.2 + 5)}" stroke-linecap="round"/><line x1="${f(S[0])}" y1="${f(S[1])}" x2="${f(cx)}" y2="${f(cy)}" stroke="${o.sleeve || '#6f8fbf'}" stroke-width="${f(w0 * 2.2)}" stroke-linecap="round"/>`;
+  const cx = S[0] + dx * Math.min(0.2, 46 / Ln), cy = S[1] + dy * Math.min(0.2, 46 / Ln);
+  g += `<line x1="${f(S[0])}" y1="${f(S[1])}" x2="${f(cx)}" y2="${f(cy)}" stroke="${o.rim || '#e4f0ff'}" stroke-width="${f(w0 * 1.05 + 6)}" stroke-linecap="round"/><line x1="${f(S[0])}" y1="${f(S[1])}" x2="${f(cx)}" y2="${f(cy)}" stroke="${o.sleeve || '#6f8fbf'}" stroke-width="${f(w0 * 1.05)}" stroke-linecap="round"/>`;
   // hand: a fist, or fingers wrapped round the target
-  const last = pts[N], prev = pts[N - 2], ang = Math.atan2(last[1] - prev[1], last[0] - prev[0]) * 180 / Math.PI, fr = w0 * 1.2, sq = 1 + Math.min(0.3, (ratio - 1) * 0.04);
+  const last = pts[N], prev = pts[N - 2], ang = Math.atan2(last[1] - prev[1], last[0] - prev[0]) * 180 / Math.PI, fr = w0 * 0.85, sq = 1 + Math.min(0.3, (ratio - 1) * 0.04);
   if (o.grab) g += `<g transform="translate(${f(last[0])} ${f(last[1])}) rotate(${f(ang)})"><path d="M ${f(-fr * 0.4)} ${f(-fr * 1.1)} A ${f(fr * 1.1)} ${f(fr * 1.1)} 0 1 1 ${f(-fr * 0.4)} ${f(fr * 1.1)}" fill="none" stroke="#14141c" stroke-width="${f(fr * 0.9)}" stroke-linecap="round"/></g>`;
-  else g += `<g transform="translate(${f(last[0])} ${f(last[1])}) rotate(${f(ang)}) scale(${f(sq)} ${f(1 / sq)})"><ellipse cx="0" cy="0" rx="${f(fr * 1.15)}" ry="${f(fr)}" fill="#14141c" stroke="${o.rim || '#ffd6a0'}" stroke-width="3"/>${[-0.5, 0, 0.5].map((k) => `<line x1="${f(fr * 0.45)}" y1="${f(k * fr * 0.9)}" x2="${f(fr * 1.05)}" y2="${f(k * fr * 0.9)}" stroke="#3a3a4a" stroke-width="3"/>`).join('')}</g>`;
+  else g += `<g transform="translate(${f(last[0])} ${f(last[1])}) rotate(${f(ang)}) scale(${f(sq)} ${f(1 / sq)})"><circle cx="${f(fr * 0.2)}" cy="0" r="${f(fr)}" fill="#14141c" stroke="${o.rim || '#e4f0ff'}" stroke-width="3.5"/><path d="M ${f(fr * 0.5)} ${f(-fr * 0.45)} q ${f(fr * 0.35)} ${f(fr * 0.45)} 0 ${f(fr * 0.9)}" fill="none" stroke="#3a3a50" stroke-width="3" stroke-linecap="round"/></g>`;
   if (o.lines) for (let i = 1; i < 4; i++) { const p = pts[Math.round(i / 4 * N)]; g += `<line x1="${f(p[0] + nx * (w + 16))}" y1="${f(p[1] + ny * (w + 16))}" x2="${f(p[0] + nx * (w + 54))}" y2="${f(p[1] + ny * (w + 54))}" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity="0.7"/>`; }
   return g;
 }
