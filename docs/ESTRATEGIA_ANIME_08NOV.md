@@ -18,3 +18,6 @@
 3. Critério de sucesso/falha: definir número de views a 72 h e retenção média antes de publicar (a preencher).
 4. Factos verificados ANTES de voz e visuais.
 5. Os 10 vídeos atuais ficam como estão. Vídeo 10 (Stop an Asteroid) privado, por publicar à mão.
+
+## Decisão 08/11 (2): Opção A
+O utilizador escolheu personagens/técnicas reais de anime (não poderes originais). Condições mantidas: só arte original própria (boneco do canal + efeitos), nunca imagens, cenas, áudio ou música do anime; sem copiar designs oficiais; risco de direitos e de monetização aceite e registado.
