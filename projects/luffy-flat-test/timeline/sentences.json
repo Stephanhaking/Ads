@@ -1,0 +1,980 @@
+[
+ {
+  "i": 0,
+  "start": 0.0,
+  "end": 2.36,
+  "text": "You miss the last step of the subway stairs."
+ },
+ {
+  "i": 1,
+  "start": 3.1,
+  "end": 5.22,
+  "text": "You're falling backwards into a crowd of strangers."
+ },
+ {
+  "i": 2,
+  "start": 6.38,
+  "end": 14.5,
+  "text": "And then your arm stretches four metres across the station, wraps around a railing, and pulls you back like a bungee cord."
+ },
+ {
+  "i": 3,
+  "start": 15.64,
+  "end": 16.5,
+  "text": "Nobody saw it."
+ },
+ {
+  "i": 4,
+  "start": 17.02,
+  "end": 18.32,
+  "text": "Everybody was looking at their phone."
+ },
+ {
+  "i": 5,
+  "start": 19.36,
+  "end": 20.28,
+  "text": "You look at your hand."
+ },
+ {
+  "i": 6,
+  "start": 21.08,
+  "end": 21.88,
+  "text": "It's normal again."
+ },
+ {
+  "i": 7,
+  "start": 23.1,
+  "end": 24.52,
+  "text": "Your heart is beating like a drum."
+ },
+ {
+  "i": 8,
+  "start": 25.18,
+  "end": 25.26,
+  "text": "Boom."
+ },
+ {
+  "i": 9,
+  "start": 26.1,
+  "end": 26.26,
+  "text": "Boom."
+ },
+ {
+  "i": 10,
+  "start": 27.06,
+  "end": 27.34,
+  "text": "Boom."
+ },
+ {
+  "i": 11,
+  "start": 28.3,
+  "end": 30.8,
+  "text": "Overnight, you got the powers of Monkey D."
+ },
+ {
+  "i": 12,
+  "start": 31.06,
+  "end": 32.0,
+  "text": "Luffy from One Piece."
+ },
+ {
+  "i": 13,
+  "start": 32.74,
+  "end": 33.52,
+  "text": "Not his straw hat."
+ },
+ {
+  "i": 14,
+  "start": 33.98,
+  "end": 34.48,
+  "text": "Not his crew."
+ },
+ {
+  "i": 15,
+  "start": 35.1,
+  "end": 36.1,
+  "text": "Just his body."
+ },
+ {
+  "i": 16,
+  "start": 36.8,
+  "end": 38.42,
+  "text": "A body made of rubber."
+ },
+ {
+  "i": 17,
+  "start": 39.26,
+  "end": 39.8,
+  "text": "Four gears."
+ },
+ {
+  "i": 18,
+  "start": 40.46,
+  "end": 46.22,
+  "text": "And one last form, Gear 5, so powerful that it leaves Luffy looking like an old man when it ends."
+ },
+ {
+  "i": 19,
+  "start": 47.16,
+  "end": 55.84,
+  "text": "In the next sixty days you'll learn what rubber can really do, what it can't, and why the strongest thing you have also costs the most."
+ },
+ {
+  "i": 20,
+  "start": 56.5,
+  "end": 58.32,
+  "text": "First test: the mirror."
+ },
+ {
+  "i": 21,
+  "start": 58.98,
+  "end": 60.6,
+  "text": "You pinch your cheek and pull."
+ },
+ {
+  "i": 22,
+  "start": 61.2,
+  "end": 63.84,
+  "text": "It stretches thirty centimetres and snaps back."
+ },
+ {
+  "i": 23,
+  "start": 64.5,
+  "end": 67.1,
+  "text": "Real rubber is stretchy, but it has limits."
+ },
+ {
+  "i": 24,
+  "start": 68.24,
+  "end": 72.46,
+  "text": "Natural rubber usually breaks when it's stretched to somewhere between four and ten times its length."
+ },
+ {
+  "i": 25,
+  "start": 73.3,
+  "end": 75.04,
+  "text": "Luffy goes far beyond that."
+ },
+ {
+  "i": 26,
+  "start": 75.72,
+  "end": 78.28,
+  "text": "Your arm just did four metres without tearing."
+ },
+ {
+  "i": 27,
+  "start": 79.28,
+  "end": 80.52,
+  "text": "Then you notice something weird."
+ },
+ {
+  "i": 28,
+  "start": 81.26,
+  "end": 83.22,
+  "text": "When you stretch, your arm gets warm."
+ },
+ {
+  "i": 29,
+  "start": 83.86,
+  "end": 85.56,
+  "text": "When it snaps back, it goes cold."
+ },
+ {
+  "i": 30,
+  "start": 86.44,
+  "end": 87.06,
+  "text": "That one's real."
+ },
+ {
+  "i": 31,
+  "start": 87.5,
+  "end": 89.14,
+  "text": "It's called the Gough-Joule effect."
+ },
+ {
+  "i": 32,
+  "start": 89.88,
+  "end": 93.52,
+  "text": "Stretch a rubber band fast and touch it to your lips, and you'll feel it warm up."
+ },
+ {
+  "i": 33,
+  "start": 94.34,
+  "end": 98.02,
+  "text": "Stretching lines up the long molecules inside the rubber, and that releases heat."
+ },
+ {
+  "i": 34,
+  "start": 98.82,
+  "end": 99.76,
+  "text": "Letting go does the opposite."
+ },
+ {
+  "i": 35,
+  "start": 100.64,
+  "end": 103.34,
+  "text": "So rule one: every stretch makes you warm."
+ },
+ {
+  "i": 36,
+  "start": 103.34,
+  "end": 105.48,
+  "text": "A hundred stretches, and you're sweating."
+ },
+ {
+  "i": 37,
+  "start": 106.74,
+  "end": 108.68,
+  "text": "Luffy's most famous move is simple."
+ },
+ {
+  "i": 38,
+  "start": 109.34,
+  "end": 112.88,
+  "text": "Stretch your arm back, let go, and it flies forward like a slingshot."
+ },
+ {
+  "i": 39,
+  "start": 113.5,
+  "end": 114.54,
+  "text": "You try it on a punching bag."
+ },
+ {
+  "i": 40,
+  "start": 115.02,
+  "end": 117.42,
+  "text": "You pull your arm back ten metres."
+ },
+ {
+  "i": 41,
+  "start": 117.42,
+  "end": 117.9,
+  "text": "You let go."
+ },
+ {
+  "i": 42,
+  "start": 118.42,
+  "end": 121.7,
+  "text": "The bag rips off its chain and lands on the other side of the court."
+ },
+ {
+  "i": 43,
+  "start": 122.46,
+  "end": 126.46,
+  "text": "A slingshot stores energy while you stretch it, and gives it all back at once."
+ },
+ {
+  "i": 44,
+  "start": 126.94,
+  "end": 128.52,
+  "text": "The further you pull, the more energy."
+ },
+ {
+  "i": 45,
+  "start": 129.26,
+  "end": 131.4,
+  "text": "But there's a catch Luffy never mentions."
+ },
+ {
+  "i": 46,
+  "start": 131.98,
+  "end": 134.08,
+  "text": "Your arm also has to come back."
+ },
+ {
+  "i": 47,
+  "start": 134.48,
+  "end": 136.2,
+  "text": "And it comes back just as fast."
+ },
+ {
+  "i": 48,
+  "start": 136.92,
+  "end": 139.18,
+  "text": "You punch yourself in the face with your own elbow."
+ },
+ {
+  "i": 49,
+  "start": 139.78,
+  "end": 140.0,
+  "text": "Twice."
+ },
+ {
+  "i": 50,
+  "start": 141.0,
+  "end": 143.36,
+  "text": "Rule two: what you throw, comes back."
+ },
+ {
+  "i": 51,
+  "start": 144.54,
+  "end": 149.88,
+  "text": "In One Piece, Luffy beats a man made of lightning, because his rubber body doesn't conduct electricity."
+ },
+ {
+  "i": 52,
+  "start": 150.58,
+  "end": 156.16,
+  "text": "So on day six, when a thunderstorm rolls in, you climb to the roof to find out if that's true for you too."
+ },
+ {
+  "i": 53,
+  "start": 157.1,
+  "end": 158.88,
+  "text": "Ordinary rubber would lose this fight."
+ },
+ {
+  "i": 54,
+  "start": 159.46,
+  "end": 162.66,
+  "text": "A typical lightning bolt carries about three hundred million volts."
+ },
+ {
+  "i": 55,
+  "start": 163.22,
+  "end": 168.06,
+  "text": "The thick rubber gloves electricians wear on power lines are rated for thirty-six thousand."
+ },
+ {
+  "i": 56,
+  "start": 168.06,
+  "end": 170.42,
+  "text": "Lightning is more than eight thousand times that."
+ },
+ {
+  "i": 57,
+  "start": 170.94,
+  "end": 174.8,
+  "text": "Push enough voltage through any insulator and it suddenly gives up and conducts."
+ },
+ {
+  "i": 58,
+  "start": 175.6,
+  "end": 177.56,
+  "text": "Physicists call it dielectric breakdown."
+ },
+ {
+  "i": 59,
+  "start": 178.5,
+  "end": 180.28,
+  "text": "Even car tyres don't protect you from lightning."
+ },
+ {
+  "i": 60,
+  "start": 180.7,
+  "end": 184.34,
+  "text": "What protects you in a car is the metal body, which carries the current around you."
+ },
+ {
+  "i": 61,
+  "start": 184.86,
+  "end": 186.96,
+  "text": "But you're not ordinary rubber."
+ },
+ {
+  "i": 62,
+  "start": 187.56,
+  "end": 191.96,
+  "text": "The bolt hits the lightning rod next door, jumps to you, and nothing happens."
+ },
+ {
+  "i": 63,
+  "start": 192.48,
+  "end": 193.04,
+  "text": "No shock."
+ },
+ {
+  "i": 64,
+  "start": 193.44,
+  "end": 193.86,
+  "text": "No pain."
+ },
+ {
+  "i": 65,
+  "start": 194.6,
+  "end": 197.38,
+  "text": "Your body is the one thing in this story that follows the manga."
+ },
+ {
+  "i": 66,
+  "start": 198.22,
+  "end": 200.66,
+  "text": "Your phone, though, is not made of Nika rubber."
+ },
+ {
+  "i": 67,
+  "start": 201.08,
+  "end": 204.92,
+  "text": "And the air around a lightning bolt gets about five times hotter than the surface of the Sun."
+ },
+ {
+  "i": 68,
+  "start": 205.6,
+  "end": 206.62,
+  "text": "Your hoodie is smoking."
+ },
+ {
+  "i": 69,
+  "start": 207.18,
+  "end": 208.68,
+  "text": "Your sneakers have melted to the roof."
+ },
+ {
+  "i": 70,
+  "start": 209.58,
+  "end": 211.1,
+  "text": "Rule three: you beat the voltage."
+ },
+ {
+  "i": 71,
+  "start": 211.6,
+  "end": 212.48,
+  "text": "You don't beat the heat."
+ },
+ {
+  "i": 72,
+  "start": 213.36,
+  "end": 219.44,
+  "text": "You get a job loading trucks at a frozen-food warehouse, because nobody else can carry that many boxes at once."
+ },
+ {
+  "i": 73,
+  "start": 219.82,
+  "end": 222.4,
+  "text": "At minus twenty degrees, your arms feel stiff."
+ },
+ {
+  "i": 74,
+  "start": 223.34,
+  "end": 223.34,
+  "text": "Slower."
+ },
+ {
+  "i": 75,
+  "start": 223.8,
+  "end": 224.7,
+  "text": "Like old elastic."
+ },
+ {
+  "i": 76,
+  "start": 225.66,
+  "end": 227.7,
+  "text": "Real rubber has a breaking point in the cold."
+ },
+ {
+  "i": 77,
+  "start": 228.48,
+  "end": 233.88,
+  "text": "Below about minus sixty, natural rubber stops being stretchy and turns hard and brittle, like glass."
+ },
+ {
+  "i": 78,
+  "start": 235.16,
+  "end": 239.94,
+  "text": "Only a few places on Earth ever get that cold, deep in Siberia in winter and in Antarctica."
+ },
+ {
+  "i": 79,
+  "start": 240.62,
+  "end": 243.5,
+  "text": "Now you know the two places you'll never take a holiday."
+ },
+ {
+  "i": 80,
+  "start": 244.8,
+  "end": 248.84,
+  "text": "A forklift loses its brakes on a ramp and rolls toward a coworker."
+ },
+ {
+  "i": 81,
+  "start": 249.22,
+  "end": 251.34,
+  "text": "You do the thing Luffy does when he needs speed."
+ },
+ {
+  "i": 82,
+  "start": 251.92,
+  "end": 252.24,
+  "text": "Gear 2."
+ },
+ {
+  "i": 83,
+  "start": 252.76,
+  "end": 255.9,
+  "text": "You pump your blood faster, and your skin starts to steam."
+ },
+ {
+  "i": 84,
+  "start": 256.5,
+  "end": 258.8,
+  "text": "You move faster than anyone in the warehouse can see."
+ },
+ {
+  "i": 85,
+  "start": 259.5,
+  "end": 261.38,
+  "text": "The forklift stops against your hands."
+ },
+ {
+  "i": 86,
+  "start": 262.34,
+  "end": 264.3,
+  "text": "Here's what Gear 2 does to a real body."
+ },
+ {
+  "i": 87,
+  "start": 264.3,
+  "end": 268.68,
+  "text": "A healthy heart's maximum is roughly two hundred and twenty minus your age."
+ },
+ {
+  "i": 88,
+  "start": 268.68,
+  "end": 271.66,
+  "text": "For a twenty-year-old, around two hundred beats a minute."
+ },
+ {
+  "i": 89,
+  "start": 272.3,
+  "end": 274.46,
+  "text": "Gear 2 pushes past that, on purpose."
+ },
+ {
+  "i": 90,
+  "start": 275.26,
+  "end": 278.6,
+  "text": "In the early story, people warned Luffy that it was shortening his life."
+ },
+ {
+  "i": 91,
+  "start": 279.2,
+  "end": 282.26,
+  "text": "You sit on a crate afterwards, your heart racing for an hour."
+ },
+ {
+  "i": 92,
+  "start": 283.08,
+  "end": 285.12,
+  "text": "Rule four: speed is borrowed."
+ },
+ {
+  "i": 93,
+  "start": 285.68,
+  "end": 286.4,
+  "text": "You pay it back."
+ },
+ {
+  "i": 94,
+  "start": 287.76,
+  "end": 288.84,
+  "text": "Gear 3."
+ },
+ {
+  "i": 95,
+  "start": 288.84,
+  "end": 292.32,
+  "text": "You bite your thumb and blow into it, and your bones inflate."
+ },
+ {
+  "i": 96,
+  "start": 292.9,
+  "end": 294.82,
+  "text": "Your fist becomes the size of a car."
+ },
+ {
+  "i": 97,
+  "start": 295.52,
+  "end": 297.0,
+  "text": "A steel beam slips off a crane."
+ },
+ {
+  "i": 98,
+  "start": 297.0,
+  "end": 300.1,
+  "text": "You catch it with a hand as big as a garage door."
+ },
+ {
+  "i": 99,
+  "start": 300.1,
+  "end": 304.58,
+  "text": "And then, like early Luffy, your body shrinks back down for a while."
+ },
+ {
+  "i": 100,
+  "start": 305.28,
+  "end": 309.5,
+  "text": "You walk home the size of a ten-year-old, in clothes that are far too big."
+ },
+ {
+  "i": 101,
+  "start": 310.2,
+  "end": 312.5,
+  "text": "Rule five: big now, small later."
+ },
+ {
+  "i": 102,
+  "start": 313.76,
+  "end": 314.96,
+  "text": "By now there are videos."
+ },
+ {
+  "i": 103,
+  "start": 315.6,
+  "end": 316.34,
+  "text": "A forklift."
+ },
+ {
+  "i": 104,
+  "start": 316.7,
+  "end": 317.16,
+  "text": "A crane."
+ },
+ {
+  "i": 105,
+  "start": 317.74,
+  "end": 320.62,
+  "text": "A kid who suddenly got very small, very fast."
+ },
+ {
+  "i": 106,
+  "start": 321.72,
+  "end": 322.86,
+  "text": "Nobody has your name yet."
+ },
+ {
+  "i": 107,
+  "start": 323.26,
+  "end": 328.74,
+  "text": "But two people in suits knock on your door and ask, very politely, if you'd like a job."
+ },
+ {
+  "i": 108,
+  "start": 329.68,
+  "end": 330.1,
+  "text": "You say no."
+ },
+ {
+  "i": 109,
+  "start": 331.08,
+  "end": 331.74,
+  "text": "They leave a card."
+ },
+ {
+  "i": 110,
+  "start": 332.66,
+  "end": 333.62,
+  "text": "They don't seem surprised."
+ },
+ {
+  "i": 111,
+  "start": 334.7,
+  "end": 338.04,
+  "text": "That night you try the strongest form you know: Gear 4."
+ },
+ {
+  "i": 112,
+  "start": 338.96,
+  "end": 344.18,
+  "text": "You blow air into your muscles until they swell like armour, and your arms and legs turn black and hard."
+ },
+ {
+  "i": 113,
+  "start": 345.06,
+  "end": 350.48,
+  "text": "In One Piece that black coating is Armament Haki, a willpower that hardens the skin like steel."
+ },
+ {
+  "i": 114,
+  "start": 351.44,
+  "end": 353.36,
+  "text": "For about a minute, nothing can touch you."
+ },
+ {
+  "i": 115,
+  "start": 354.34,
+  "end": 357.22,
+  "text": "Then it ends, and Luffy's rule hits you too."
+ },
+ {
+  "i": 116,
+  "start": 358.2,
+  "end": 359.54,
+  "text": "No armour."
+ },
+ {
+  "i": 117,
+  "start": 359.54,
+  "end": 361.42,
+  "text": "No Haki."
+ },
+ {
+  "i": 118,
+  "start": 361.42,
+  "end": 364.86,
+  "text": "Ten whole minutes where you're just a tired person in a parking lot."
+ },
+ {
+  "i": 119,
+  "start": 365.92,
+  "end": 367.68,
+  "text": "The next night, you notice a drone."
+ },
+ {
+  "i": 120,
+  "start": 368.46,
+  "end": 370.72,
+  "text": "It has been following you since you left the warehouse."
+ },
+ {
+  "i": 121,
+  "start": 371.44,
+  "end": 373.42,
+  "text": "The people in suits didn't come back to talk."
+ },
+ {
+  "i": 122,
+  "start": 374.0,
+  "end": 375.0,
+  "text": "They came back to watch."
+ },
+ {
+  "i": 123,
+  "start": 375.0,
+  "end": 382.0,
+  "text": "And now they know exactly how long your strongest form lasts, and exactly how long you're open afterwards."
+ },
+ {
+  "i": 124,
+  "start": 382.0,
+  "end": 387.76,
+  "text": "Ten minutes is enough for a net, a van, and a very quiet drive."
+ },
+ {
+  "i": 125,
+  "start": 388.74,
+  "end": 393.08,
+  "text": "So you make a new rule, the one Luffy never needed because he always had his crew:"
+ },
+ {
+  "i": 126,
+  "start": 393.9,
+  "end": 395.6,
+  "text": "never use Gear 4 alone."
+ },
+ {
+  "i": 127,
+  "start": 396.64,
+  "end": 401.74,
+  "text": "Rule six: your strongest minute is also your weakest ten."
+ },
+ {
+  "i": 128,
+  "start": 401.74,
+  "end": 402.94,
+  "text": "Day forty."
+ },
+ {
+  "i": 129,
+  "start": 402.94,
+  "end": 405.88,
+  "text": "A gas main explodes under a busy square."
+ },
+ {
+  "i": 130,
+  "start": 406.6,
+  "end": 407.2,
+  "text": "Cars tip over."
+ },
+ {
+  "i": 131,
+  "start": 407.46,
+  "end": 409.34,
+  "text": "A bus is sliding toward the hole."
+ },
+ {
+  "i": 132,
+  "start": 409.96,
+  "end": 411.38,
+  "text": "Your heart starts to drum."
+ },
+ {
+  "i": 133,
+  "start": 412.08,
+  "end": 412.18,
+  "text": "Boom."
+ },
+ {
+  "i": 134,
+  "start": 412.84,
+  "end": 413.12,
+  "text": "Boom."
+ },
+ {
+  "i": 135,
+  "start": 413.12,
+  "end": 414.92,
+  "text": "Boom-boom."
+ },
+ {
+  "i": 136,
+  "start": 414.92,
+  "end": 415.4,
+  "text": "Gear 5."
+ },
+ {
+  "i": 137,
+  "start": 416.24,
+  "end": 417.28,
+  "text": "Your hair turns white."
+ },
+ {
+  "i": 138,
+  "start": 418.04,
+  "end": 419.76,
+  "text": "You laugh, and you don't know why."
+ },
+ {
+  "i": 139,
+  "start": 420.0,
+  "end": 421.78,
+  "text": "And the rules stop applying."
+ },
+ {
+  "i": 140,
+  "start": 422.52,
+  "end": 424.5,
+  "text": "You turn the road itself into rubber."
+ },
+ {
+  "i": 141,
+  "start": 425.06,
+  "end": 427.42,
+  "text": "The bus bounces back onto the street like a toy."
+ },
+ {
+  "i": 142,
+  "start": 428.22,
+  "end": 432.16,
+  "text": "You stretch the falling streetlights into soft loops and lay them down gently."
+ },
+ {
+  "i": 143,
+  "start": 432.86,
+  "end": 437.98,
+  "text": "For thirty seconds, the whole city is a cartoon, and you are the only one drawing it."
+ },
+ {
+  "i": 144,
+  "start": 438.6,
+  "end": 440.18,
+  "text": "The people in the square don't scream."
+ },
+ {
+  "i": 145,
+  "start": 440.64,
+  "end": 441.12,
+  "text": "They stare."
+ },
+ {
+  "i": 146,
+  "start": 441.84,
+  "end": 444.0,
+  "text": "One woman laughs with you without knowing why."
+ },
+ {
+  "i": 147,
+  "start": 444.54,
+  "end": 446.78,
+  "text": "A man films everything with his mouth open."
+ },
+ {
+  "i": 148,
+  "start": 447.56,
+  "end": 449.32,
+  "text": "And you can't stop laughing."
+ },
+ {
+  "i": 149,
+  "start": 450.22,
+  "end": 451.7,
+  "text": "It isn't happiness exactly."
+ },
+ {
+  "i": 150,
+  "start": 452.18,
+  "end": 456.44,
+  "text": "It's the power itself, loud and free, like a song you can't turn off."
+ },
+ {
+  "i": 151,
+  "start": 457.38,
+  "end": 460.2,
+  "text": "Somewhere in the back of your head, a quieter voice is counting."
+ },
+ {
+  "i": 152,
+  "start": 460.96,
+  "end": 463.14,
+  "text": "Because every second of this is being paid for."
+ },
+ {
+  "i": 153,
+  "start": 464.18,
+  "end": 465.6,
+  "text": "Then it ends."
+ },
+ {
+  "i": 154,
+  "start": 466.1,
+  "end": 470.78,
+  "text": "And the cost of Gear 5 arrives all at once, just like it does for Luffy."
+ },
+ {
+  "i": 155,
+  "start": 471.54,
+  "end": 472.96,
+  "text": "Your face goes wrinkled."
+ },
+ {
+  "i": 156,
+  "start": 473.22,
+  "end": 474.54,
+  "text": "Your legs won't hold you."
+ },
+ {
+  "i": 157,
+  "start": 474.94,
+  "end": 478.76,
+  "text": "You look eighty years old, sitting on the curb, laughing at nothing."
+ },
+ {
+  "i": 158,
+  "start": 479.58,
+  "end": 480.62,
+  "text": "It wears off by morning."
+ },
+ {
+  "i": 159,
+  "start": 481.28,
+  "end": 487.04,
+  "text": "But now you know: the most powerful thing you can do is also the thing you can do least."
+ },
+ {
+  "i": 160,
+  "start": 488.2,
+  "end": 492.9,
+  "text": "So if you woke up tomorrow made of rubber, which gear would you use first?"
+ },
+ {
+  "i": 161,
+  "start": 493.54,
+  "end": 495.12,
+  "text": "And which one would you never touch?"
+ },
+ {
+  "i": 162,
+  "start": 496.04,
+  "end": 496.68,
+  "text": "Tell us in the comments."
+ }
+]
