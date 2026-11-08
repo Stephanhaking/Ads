@@ -16,15 +16,20 @@ export function stretchArm(S, H, w0, L0, o = {}) {
   for (let i = 0; i <= N; i++) { const u = i / N, env = Math.sin(Math.PI * u), off = sag * 4 * u * (1 - u) + wob * env * Math.sin(u * Math.PI * 3 - ph * 18); pts.push([S[0] + dx * u + nx * off, S[1] + dy * u + ny * off]); }
   const d = 'M ' + pts.map((p) => `${f(p[0])} ${f(p[1])}`).join(' L ');
   let g = '';
-  if (o.smear) g += `<path d="${d}" fill="none" stroke="#ffffff" stroke-width="${f(w * 3.2)}" stroke-linecap="round" opacity="${f(0.18 * o.smear)}"/>`;
+  if (o.smear) g += `<path d="${d}" fill="none" stroke="#ffffff" stroke-width="${f(w * 3.2)}" stroke-linecap="round" opacity="${f(0.1 * o.smear)}"/>`;
   g += `<path d="${d}" fill="none" stroke="${o.rim || '#e4f0ff'}" stroke-width="${f(w + 7)}" opacity="0.9" stroke-linecap="round" stroke-linejoin="round"/>`;
   g += `<path d="${d}" fill="none" stroke="#14141c" stroke-width="${f(w)}" stroke-linecap="round" stroke-linejoin="round"/>`;
-  g += `<path d="${d}" fill="none" stroke="#6a6a86" stroke-width="${f(w * 0.2)}" stroke-linecap="round" opacity="0.6" transform="translate(${f(-nx * w * 0.26)} ${f(-ny * w * 0.26)})"/>`;
+  g += `<path d="${d}" fill="none" stroke="#7a7a96" stroke-width="${f(w * 0.14)}" stroke-linecap="round" opacity="0.35" transform="translate(${f(-nx * w * 0.26)} ${f(-ny * w * 0.26)})"/>`;
   // stretch rings: spacing grows with the stretch
-  const nR = Math.min(14, Math.floor(ratio * 2)); for (let i = 1; i < nR; i++) { const u = i / nR, j = Math.round(u * N), p = pts[j], q = pts[Math.min(N, j + 1)], tx = q[0] - p[0], ty = q[1] - p[1], tl = Math.hypot(tx, ty) || 1, ex = -ty / tl * w * 0.48, ey = tx / tl * w * 0.48; g += `<line x1="${f(p[0] + ex)}" y1="${f(p[1] + ey)}" x2="${f(p[0] - ex)}" y2="${f(p[1] - ey)}" stroke="#3a3a50" stroke-width="${f(Math.max(1.5, w * 0.12))}" stroke-linecap="round"/>`; }
-  // cuff at the shoulder
-  const cx = S[0] + dx * Math.min(0.2, 46 / Ln), cy = S[1] + dy * Math.min(0.2, 46 / Ln);
-  g += `<line x1="${f(S[0])}" y1="${f(S[1])}" x2="${f(cx)}" y2="${f(cy)}" stroke="${o.rim || '#e4f0ff'}" stroke-width="${f(w0 * 1.05 + 6)}" stroke-linecap="round"/><line x1="${f(S[0])}" y1="${f(S[1])}" x2="${f(cx)}" y2="${f(cy)}" stroke="${o.sleeve || '#6f8fbf'}" stroke-width="${f(w0 * 1.05)}" stroke-linecap="round"/>`;
+  const nR = Math.min(14, Math.floor(ratio * 2)); for (let i = 1; i < nR; i++) { const u = i / nR, j = Math.round(u * N), p = pts[j], q = pts[Math.min(N, j + 1)], tx = q[0] - p[0], ty = q[1] - p[1], tl = Math.hypot(tx, ty) || 1, ex = -ty / tl * w * 0.48, ey = tx / tl * w * 0.48; g += `<line x1="${f(p[0] + ex)}" y1="${f(p[1] + ey)}" x2="${f(p[0] - ex)}" y2="${f(p[1] - ey)}" stroke="#34344a" stroke-width="${f(Math.max(1.2, w * 0.08))}" opacity="0.7" stroke-linecap="round"/>`; }
+  // sleeve: follows the same curve out of the shoulder, then a cuff band where the rubber arm comes out
+  { const ws = Math.max(w * 1.2, w0 * 0.85), Ls = Math.min(64, Ln * 0.22); let acc = 0, k = 1; for (; k < N; k++) { acc += Math.hypot(pts[k][0] - pts[k - 1][0], pts[k][1] - pts[k - 1][1]); if (acc >= Ls) break; }
+    const sp = 'M ' + pts.slice(0, k + 1).map((p) => `${f(p[0])} ${f(p[1])}`).join(' L '), sc = o.sleeve || '#6f8fbf';
+    const e = pts[k], q = pts[k - 1], tx = e[0] - q[0], ty = e[1] - q[1], tl = Math.hypot(tx, ty) || 1, ux = tx / tl, uy = ty / tl, px = -uy * ws * 0.52, py = ux * ws * 0.52;
+    g += `<path d="${sp}" fill="none" stroke="${o.rim || '#e4f0ff'}" stroke-width="${f(ws + 6)}" stroke-linecap="butt" stroke-linejoin="round"/><circle cx="${f(pts[0][0])}" cy="${f(pts[0][1])}" r="${f(ws / 2 + 3)}" fill="${o.rim || '#e4f0ff'}"/><path d="${sp}" fill="none" stroke="${sc}" stroke-width="${f(ws)}" stroke-linecap="butt" stroke-linejoin="round"/><circle cx="${f(pts[0][0])}" cy="${f(pts[0][1])}" r="${f(ws / 2)}" fill="${sc}"/>`;
+    // flat cuff end (covers the round cap) + a darker band
+    g += `<path d="M ${f(e[0] + px)} ${f(e[1] + py)} L ${f(e[0] - px)} ${f(e[1] - py)}" stroke="${o.rim || '#e4f0ff'}" stroke-width="3" stroke-linecap="round"/><path d="M ${f(e[0] + px - ux * 4)} ${f(e[1] + py - uy * 4)} L ${f(e[0] - px - ux * 4)} ${f(e[1] - py - uy * 4)}" stroke="#00000033" stroke-width="5"/>`;
+    g += `<path d="${sp}" fill="none" stroke="#ffffff" stroke-width="${f(ws * 0.18)}" stroke-linecap="round" opacity="0.18" transform="translate(${f(-nx * ws * 0.22)} ${f(-ny * ws * 0.22)})"/>`; }
   // hand: a fist, or fingers wrapped round the target
   const last = pts[N], prev = pts[N - 2], ang = Math.atan2(last[1] - prev[1], last[0] - prev[0]) * 180 / Math.PI, fr = w0 * 0.85, sq = 1 + Math.min(0.3, (ratio - 1) * 0.04);
   if (o.grab) g += `<g transform="translate(${f(last[0])} ${f(last[1])}) rotate(${f(ang)})"><path d="M ${f(-fr * 0.4)} ${f(-fr * 1.1)} A ${f(fr * 1.1)} ${f(fr * 1.1)} 0 1 1 ${f(-fr * 0.4)} ${f(fr * 1.1)}" fill="none" stroke="#14141c" stroke-width="${f(fr * 0.9)}" stroke-linecap="round"/></g>`;
