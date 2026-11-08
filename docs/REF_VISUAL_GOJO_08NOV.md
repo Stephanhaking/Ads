@@ -15,3 +15,11 @@ Ficheiro: mp4 640x360, 30 fps, 9:51 (591 s), H.264 + AAC. Contact sheet dos prim
 2. Mais diagramas animados a explicar a física (ex. "o braço estica e fica mais fino": volume constante), que é a nossa vantagem.
 3. Planos mais curtos (2 a 4 s) e legenda destacada.
 4. Manter o nosso boneco (capuz azul, cabeça preta), com variações próprias de cor/efeito para o Gear 5.
+
+## Resto do vídeo (3:00 a 9:51, frames a cada 8 s)
+- O mesmo sistema visual até ao fim: HUD com "DAY N" (mais tarde com hora, ex. "DAY 23 · 3:00 AM"), título da série fixo, etiquetas de estado.
+- **Etiquetas tipo "interface de jogo" por cima das cenas**, que resumem o ponto numa linha: "TASER · STOPPED", "30 GOVERNMENTS · 1 REQUEST: A DEMONSTRATION", "24/24 HOURS PROTECTED", "BRAIN LOAD: 0%", "8,000,000,000 PEOPLE / MARKETS ↓", "60,000 HOSTAGES", "EVERYONE: STANDING STILL", "CASUALTIES: 0", "LAST TOUCH: 143 DAYS AGO".
+- **Paleta por cena:** noite roxa (cidade), laranja (deserto), verde (estádio), preto com texto a encher o ecrã para o Unlimited Void, cozinha/quarto quentes, fundos claros para diagramas.
+- **Cenas de escala:** estádio com milhares de pontos; mapa de 8 mil milhões de pontos; grelha de ecrãs escuros no fim ("choose to be reachable").
+- **Fecho em círculo:** volta ao quarto e ao ventilador do início, e termina numa janela iluminada à noite (solidão).
+- A arte é simples (vetorial plana, boneco pequeno, poucos detalhes): é replicável no nosso pipeline Remotion; o que dá valor é o sistema (HUD, etiquetas, diagramas, ritmo), não o desenho.
