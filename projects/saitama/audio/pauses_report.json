@@ -2,198 +2,193 @@
  "profile": "documentary",
  "max": 0.8,
  "to": 0.55,
- "duration_before": 683.714,
- "duration_after": 668.724,
- "removed_s": 14.99,
+ "duration_before": 631.146,
+ "duration_after": 617.607,
+ "removed_s": 13.54,
  "cuts": [
   {
-   "at": 15.515,
-   "was": 0.81,
-   "kind": "pause"
-  },
-  {
-   "at": 18.025,
-   "was": 0.94,
-   "kind": "pause"
-  },
-  {
-   "at": 21.435,
-   "was": 0.97,
-   "kind": "pause"
-  },
-  {
-   "at": 29.745,
+   "at": 27.595,
    "was": 0.86,
    "kind": "pause"
   },
   {
-   "at": 36.365,
+   "at": 34.215,
    "was": 0.85,
    "kind": "pause"
   },
   {
-   "at": 67.835,
-   "was": 1.07,
-   "kind": "pause"
-  },
-  {
-   "at": 81.785,
-   "was": 0.81,
-   "kind": "pause"
-  },
-  {
-   "at": 155.795,
-   "was": 0.96,
-   "kind": "pause"
-  },
-  {
-   "at": 199.915,
+   "at": 65.695,
    "was": 1.06,
    "kind": "pause"
   },
   {
-   "at": 202.065,
-   "was": 1.07,
-   "kind": "pause"
-  },
-  {
-   "at": 234.635,
-   "was": 1.02,
-   "kind": "pause"
-  },
-  {
-   "at": 241.855,
+   "at": 80.205,
    "was": 0.85,
    "kind": "pause"
   },
   {
-   "at": 244.495,
-   "was": 1.11,
+   "at": 84.325,
+   "was": 0.81,
    "kind": "pause"
   },
   {
-   "at": 246.325,
+   "at": 91.115,
+   "was": 0.82,
+   "kind": "pause"
+  },
+  {
+   "at": 94.325,
+   "was": 0.81,
+   "kind": "pause"
+  },
+  {
+   "at": 103.455,
+   "was": 0.86,
+   "kind": "pause"
+  },
+  {
+   "at": 137.595,
+   "was": 1.09,
+   "kind": "pause"
+  },
+  {
+   "at": 155.095,
    "was": 0.94,
    "kind": "pause"
   },
   {
-   "at": 260.445,
-   "was": 1.19,
-   "kind": "pause"
-  },
-  {
-   "at": 281.005,
+   "at": 193.085,
    "was": 1.01,
    "kind": "pause"
   },
   {
-   "at": 282.625,
-   "was": 0.86,
-   "kind": "pause"
-  },
-  {
-   "at": 314.895,
+   "at": 194.945,
    "was": 1.12,
    "kind": "pause"
   },
   {
-   "at": 339.505,
-   "was": 0.85,
-   "kind": "pause"
-  },
-  {
-   "at": 344.435,
-   "was": 0.84,
-   "kind": "pause"
-  },
-  {
-   "at": 362.225,
-   "was": 0.99,
-   "kind": "pause"
-  },
-  {
-   "at": 375.495,
-   "was": 0.88,
-   "kind": "pause"
-  },
-  {
-   "at": 408.365,
-   "was": 0.89,
-   "kind": "pause"
-  },
-  {
-   "at": 412.635,
-   "was": 0.89,
-   "kind": "pause"
-  },
-  {
-   "at": 437.905,
+   "at": 197.035,
    "was": 0.87,
    "kind": "pause"
   },
   {
-   "at": 448.625,
-   "was": 0.92,
+   "at": 225.815,
+   "was": 1.02,
    "kind": "pause"
   },
   {
-   "at": 500.265,
-   "was": 0.83,
+   "at": 233.035,
+   "was": 0.86,
    "kind": "pause"
   },
   {
-   "at": 553.135,
-   "was": 0.84,
+   "at": 235.675,
+   "was": 1.12,
    "kind": "pause"
   },
   {
-   "at": 562.285,
-   "was": 0.87,
-   "kind": "pause"
-  },
-  {
-   "at": 570.935,
+   "at": 237.505,
    "was": 0.94,
    "kind": "pause"
   },
   {
-   "at": 579.805,
-   "was": 0.81,
+   "at": 251.205,
+   "was": 0.82,
    "kind": "pause"
   },
   {
-   "at": 595.085,
-   "was": 0.84,
+   "at": 270.905,
+   "was": 1.01,
    "kind": "pause"
   },
   {
-   "at": 616.765,
-   "was": 1.76,
+   "at": 272.535,
+   "was": 0.85,
    "kind": "pause"
   },
   {
-   "at": 629.875,
-   "was": 0.86,
+   "at": 304.795,
+   "was": 1.12,
    "kind": "pause"
   },
   {
-   "at": 639.435,
+   "at": 329.405,
+   "was": 0.85,
+   "kind": "pause"
+  },
+  {
+   "at": 334.345,
+   "was": 0.83,
+   "kind": "pause"
+  },
+  {
+   "at": 358.395,
+   "was": 0.83,
+   "kind": "pause"
+  },
+  {
+   "at": 365.755,
+   "was": 0.96,
+   "kind": "pause"
+  },
+  {
+   "at": 389.815,
+   "was": 0.89,
+   "kind": "pause"
+  },
+  {
+   "at": 394.085,
+   "was": 0.89,
+   "kind": "pause"
+  },
+  {
+   "at": 418.585,
+   "was": 1.07,
+   "kind": "pause"
+  },
+  {
+   "at": 430.215,
+   "was": 0.91,
+   "kind": "pause"
+  },
+  {
+   "at": 481.795,
+   "was": 0.83,
+   "kind": "pause"
+  },
+  {
+   "at": 534.655,
+   "was": 0.85,
+   "kind": "pause"
+  },
+  {
+   "at": 543.815,
+   "was": 0.87,
+   "kind": "pause"
+  },
+  {
+   "at": 552.485,
    "was": 0.92,
    "kind": "pause"
   },
   {
-   "at": 657.415,
+   "at": 578.235,
+   "was": 0.9,
+   "kind": "pause"
+  },
+  {
+   "at": 604.845,
    "was": 0.81,
    "kind": "pause"
   },
   {
-   "at": 661.395,
+   "at": 608.825,
    "was": 0.86,
    "kind": "pause"
   },
   {
-   "at": 662.905,
-   "was": 0.92,
+   "at": 610.335,
+   "was": 0.93,
    "kind": "pause"
   }
  ],
