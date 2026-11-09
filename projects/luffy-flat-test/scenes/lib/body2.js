@@ -5,7 +5,7 @@ const rad = (d) => (d * Math.PI) / 180;
 const at = (p, a, l) => [p[0] + Math.sin(rad(a)) * l, p[1] + Math.cos(rad(a)) * l];
 const f = (n) => n.toFixed(1);
 const shade = (hex, k) => { const n = parseInt(hex.slice(1), 16); const c = [n >> 16, (n >> 8) & 255, n & 255].map((v) => Math.max(0, Math.min(255, Math.round(v * k)))); return '#' + c.map((v) => v.toString(16).padStart(2, '0')).join(''); };
-const INK = '#0c0c12';
+const INK = '#050507';
 // tapered capsule A -> B (polygon + round ends)
 function tube(A, B, wa, wb, fill, extra = '') {
   const dx = B[0] - A[0], dy = B[1] - A[1], L = Math.hypot(dx, dy) || 1, nx = -dy / L, ny = dx / L;
