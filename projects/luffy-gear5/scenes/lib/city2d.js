@@ -19,17 +19,19 @@ export function building(x, base, w, h, o = {}) {
   let g = '';
   // side face + its windows (skewed)
   g += quad([[ex, top], sT, sB, [ex, base]], side);
-  const rows = Math.max(2, Math.floor(h / (o.rowH || 46))), sc = Math.max(1, Math.round(Math.abs(sT[0] - ex) / 34));
+  const rows = Math.max(2, Math.floor(h / (o.rowH || 50))), sc = Math.max(1, Math.round(Math.abs(sT[0] - ex) / 34));
   for (let r = 0; r < rows - 1; r++) for (let c = 0; c < sc; c++) { const u0 = (c + 0.25) / sc, u1 = (c + 0.75) / sc, v0 = (r + 0.3) / rows, v1 = (r + 0.75) / rows;
     const P = (u, v) => { const ax = ex + (sT[0] - ex) * u, ay = top + (sT[1] - top) * u, bx = ex + (sB[0] - ex) * u, by = base + (sB[1] - base) * u; return [ax + (bx - ax) * v, ay + (by - ay) * v]; };
     if (r < rows - 1) g += quad([P(u0, v0), P(u1, v0), P(u1, v1), P(u0, v1)], R() < litP * 0.7 ? mix(lit, side, 0.3) : mix(win, side, 0.4)); }
   // front face
   g += `<rect x="${f(x)}" y="${f(top)}" width="${f(w)}" height="${f(h)}" fill="${col}"/>`;
-  const st = o.style || 'apartment';
+  const st = o.style || 'apartment', gf = o.gf ?? Math.min(70, h * 0.16);
+  g += `<rect x="${f(x)}" y="${f(base - gf)}" width="${f(w)}" height="${f(gf)}" fill="${mix(col, '#000000', 0.22)}"/><rect x="${f(x)}" y="${f(base - gf)}" width="${f(w)}" height="6" fill="${mix(col, '#ffffff', 0.18)}"/>`;
+  for (let i = 0; i < Math.max(1, Math.floor(w / 90)); i++) { const dx = x + 14 + i * 90; if (dx + 50 < x + w) g += `<rect x="${f(dx)}" y="${f(base - gf * 0.72)}" width="${f(Math.min(54, w * 0.3))}" height="${f(gf * 0.72)}" fill="${R() < 0.5 ? mix(lit, col, 0.35) : mix(win, '#000000', 0.2)}"/>`; }
   if (st === 'tower') { for (let y = top + 18; y < base - 10; y += 22) g += `<rect x="${f(x + 6)}" y="${f(y)}" width="${f(w - 12)}" height="9" fill="${win}" opacity="0.8"/>`; g += `<rect x="${f(x + w * 0.62)}" y="${f(top)}" width="${f(w * 0.08)}" height="${f(h)}" fill="#ffffff" opacity="0.08"/>`; }
-  else { const cols = Math.max(2, Math.floor(w / (o.colW || 44))), cw = w / cols, rh = h / rows;
-    for (let r = 0; r < rows - 1; r++) for (let c = 0; c < cols; c++) { const wx = x + c * cw + cw * 0.22, wy = top + r * rh + rh * 0.28, ww = cw * 0.56, wh = rh * (st === 'office' ? 0.58 : 0.48);
-      const on = R() < litP; g += `<rect x="${f(wx)}" y="${f(wy)}" width="${f(ww)}" height="${f(wh)}" fill="${on ? lit : win}"/>`;
+  else { const hh = h - gf, rows2 = Math.max(2, Math.floor(hh / (o.rowH || 50))), cols = Math.max(2, Math.floor(w / (o.colW || 58))), cw = w / cols, rh = hh / rows2;
+    for (let r = 0; r < rows2; r++) for (let c = 0; c < cols; c++) { const wx = x + c * cw + cw * 0.24, wy = top + r * rh + rh * 0.3, ww = cw * 0.52, wh = rh * (st === 'office' ? 0.56 : 0.46);
+      const on = R() < litP; g += `<rect x="${f(wx)}" y="${f(wy)}" width="${f(ww)}" height="${f(wh)}" fill="${on ? lit : win}"/><rect x="${f(wx - 2)}" y="${f(wy + wh)}" width="${f(ww + 4)}" height="3" fill="${mix(col, '#ffffff', 0.2)}"/>`;
       if (st === 'apartment' && r % 2 === 1 && o.balcony !== false) g += `<rect x="${f(wx - cw * 0.08)}" y="${f(wy + wh)}" width="${f(ww + cw * 0.16)}" height="${f(rh * 0.12)}" fill="${mix(col, '#ffffff', 0.12)}"/>`; }
     if (st === 'office') for (let c = 1; c < cols; c++) g += `<rect x="${f(x + c * cw - 2)}" y="${f(top)}" width="4" height="${f(h)}" fill="${mix(col, '#ffffff', 0.1)}"/>`; }
   // roof ledge + clutter, and a soft light edge on the lit side
