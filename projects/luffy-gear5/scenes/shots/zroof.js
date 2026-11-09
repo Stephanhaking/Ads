@@ -5,6 +5,7 @@ import { CAST, P_STAND, P_HIPS, P_PHONE } from '../lib/people.js';
 import { hud, label, caption, punch, COL } from '../lib/hud.js';
 import { frame, pan, glow } from '../lib/flat2d.js';
 import * as L from '../lib/luffy.js';
+import { city, building } from '../lib/city2d.js';
 
 const f = (n) => n.toFixed(1);
 const HERO = { ...CAST.heroHoodie };
@@ -22,11 +23,9 @@ function roof(tt, flash = 0) {
   if (flash > 0) back += `<rect x="-900" y="-500" width="3720" height="${FLOOR + 500}" fill="#c9d8ff" opacity="${f(0.55 * flash)}"/>`;
   // skyline with lit windows and a pink city glow
   back += `<ellipse cx="900" cy="${FLOOR}" rx="1400" ry="260" fill="url(#cg)"/>`;
-  for (let i = 0; i < 16; i++) { const x = -700 + i * 190, w = 150 + (i % 3) * 30, top = 330 + ((i * 53) % 220); back += `<rect x="${x}" y="${top}" width="${w}" height="${FLOOR - top}" fill="${['#1d1a40', '#241f4e', '#191636'][i % 3]}"/>`;
-    for (let wy = top + 24; wy < FLOOR - 20; wy += 40) for (let wx = x + 16; wx < x + w - 20; wx += 34) if ((wx * 13 + wy * 7 + i) % 4 === 0) back += `<rect x="${wx}" y="${wy}" width="16" height="20" fill="${(wx + wy) % 3 ? '#ffd27a' : '#7ad8ff'}" opacity="0.9"/>`; }
+  back += city({ vp: [900, 420], ground: FLOOR, fog: '#3a2f7a', lit: '#ffd27a', litP: 0.32, pal: ['#2a2458', '#1f2a5e', '#33275e', '#24204a'], layers: [{ n: 10, x0: -800, x1: 2700, hmin: 420, hmax: 760, wmin: 150, wmax: 240, haze: 0.55, seed: 3, depth: 0.08, style: 'tower', litP: 0.12 }, { n: 7, x0: -700, x1: 2600, hmin: 280, hmax: 520, wmin: 200, wmax: 320, haze: 0.3, seed: 5, depth: 0.14, style: 'office' }, { n: 5, x0: -600, x1: 2500, hmin: 180, hmax: 340, wmin: 260, wmax: 400, haze: 0.1, seed: 9, depth: 0.2, style: 'apartment' }] });
   // next-door building with the lightning rod (sharp, mid layer)
-  let mid = `<rect x="1520" y="230" width="900" height="${FLOOR - 230}" fill="#2b2558"/><rect x="1520" y="230" width="900" height="16" fill="#3d3478"/>`;
-  for (let wy = 290; wy < FLOOR - 40; wy += 80) for (let wx = 1580; wx < 2400; wx += 110) mid += `<rect x="${wx}" y="${wy}" width="54" height="50" fill="${(wx + wy) % 5 === 0 ? '#ffd27a' : '#211c48'}"/>`;
+  let mid = building(1520, FLOOR, 900, FLOOR - 230, { vp: [900, 420], depth: 0.12, col: '#2b2558', side: '#1d1840', win: '#211c48', lit: '#ffd27a', litP: 0.35, style: 'office', seed: 42, roof: false, rowH: 80, colW: 110 });
   mid += `<rect x="${ROD[0] - 4}" y="${ROD[1]}" width="8" height="${230 - ROD[1]}" fill="#c9ced3"/><circle cx="${ROD[0]}" cy="${ROD[1]}" r="7" fill="#e8ecf0"/>`;
   // water tank + AC units + parapet
   mid += `<rect x="40" y="380" width="240" height="190" rx="16" fill="#8a5a46"/><rect x="40" y="380" width="70" height="190" rx="16" fill="#a8705a" opacity="0.6"/>${[60, 130, 200, 250].map((x) => `<rect x="${x}" y="570" width="10" height="${FLOOR - 570}" fill="#2a2440"/>`).join('')}<path d="M 30 380 L 160 330 L 290 380 Z" fill="#6a4434"/>`;
@@ -35,7 +34,7 @@ function roof(tt, flash = 0) {
   let floor = `<rect x="-900" y="${FLOOR}" width="3720" height="700" fill="#2a2650"/>`;
   [[300, 70, 260], [1000, 140, 380], [1500, 60, 220]].forEach(([x, dy, rx]) => { floor += `<ellipse cx="${x}" cy="${FLOOR + dy}" rx="${rx}" ry="${f(rx * 0.12)}" fill="#6a5cc0" opacity="${f(0.45 + 0.4 * flash)}"/>`; });
   for (let i = 0; i < 40; i++) floor += `<circle cx="${(i * 233) % 2600 - 400}" cy="${FLOOR + 20 + ((i * 71) % 260)}" r="3" fill="#4a4488"/>`;
-  return { back, mid, floor, FLOOR, bg: '#2c2266', blur: 4, reflOp: 0.14 };
+  return { back, mid, floor, FLOOR, bg: '#2c2266', blur: 2, reflOp: 0.14, tex: 0.26 };
 }
 const rain = (U, tt) => { let g = ''; for (let i = 0; i < 130; i++) { const x = (i * 157) % 1960, y = ((i * 97) + tt * 1500) % 1100; g += `<line x1="${x}" y1="${f(y)}" x2="${x - 12}" y2="${f(y + 38)}" stroke="#b9c8ff" stroke-width="2.5" opacity="0.5"/>`; } U.svg('rain', g, { z: 45 }); };
 const flashK = (t, t0) => (t > t0 ? clamp(1 - (t - t0) / 0.3) : 0);

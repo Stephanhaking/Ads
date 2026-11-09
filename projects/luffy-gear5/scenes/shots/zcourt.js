@@ -5,6 +5,7 @@ import { CAST, P_STAND, P_HIPS, P_THINK } from '../lib/people.js';
 import { hud, label, caption, punch, speedLines, COL } from '../lib/hud.js';
 import { frame, pan, glow } from '../lib/flat2d.js';
 import * as L from '../lib/luffy.js';
+import { city } from '../lib/city2d.js';
 
 const f = (n) => n.toFixed(1);
 const HERO = { ...CAST.heroHoodie };
@@ -25,19 +26,17 @@ function bagSvg(k = 0, sw = 0) {   // k: 0 hanging .. 1 flown off
 function court(tt, bagK = 0, sw = 0) {
   let back = `<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b5fb8"/><stop offset="0.5" stop-color="#ff9a6a"/><stop offset="1" stop-color="#ffd38a"/></linearGradient>${glow('sun', '#fff1b8', 0.95)}</defs>`;
   back += `<rect x="-800" y="-400" width="3520" height="${FLOOR + 400}" fill="url(#sky)"/><ellipse cx="420" cy="480" rx="520" ry="380" fill="url(#sun)"/><circle cx="420" cy="500" r="70" fill="#fff4cc"/>`;
-  // apartment blocks (hazy), with lit windows
-  [[-500, 180, '#b46a7a'], [-150, 120, '#c27a6a'], [260, 220, '#a8607a'], [700, 90, '#c9846e'], [1180, 160, '#b06878'], [1600, 60, '#c27a6a'], [2000, 200, '#a8607a']].forEach(([x, y, c], i) => {
-    back += `<rect x="${x}" y="${y}" width="${300 + (i % 2) * 80}" height="${FLOOR - y}" fill="${c}"/>`; for (let wy = y + 40; wy < FLOOR - 60; wy += 70) for (let wx = x + 30; wx < x + 270 + (i % 2) * 80; wx += 70) back += `<rect x="${wx}" y="${wy}" width="34" height="40" fill="${(wx * 7 + wy * 3 + i) % 5 === 0 ? '#ffd27a' : '#8a4a64'}" opacity="0.85"/>`; });
+  back += city({ vp: [760, 560], ground: FLOOR, fog: '#ffc7a0', lit: '#ffe08a', litP: 0.12, pal: ['#c0707e', '#d08a6e', '#9a6a8e', '#c27a6a', '#a8607a'] });
   back += `<rect x="-800" y="0" width="3520" height="${FLOOR}" fill="#ffc89a" opacity="0.25"/>`;
   // chain-link fence
   let mid = ''; for (let x = -800; x < 2720; x += 260) mid += `<rect x="${x}" y="300" width="10" height="${FLOOR - 300}" fill="#5a6270"/>`; mid += `<rect x="-800" y="296" width="3520" height="8" fill="#5a6270"/>`;
-  let mesh = ''; for (let x = -800; x < 2720; x += 34) mesh += `<line x1="${x}" y1="300" x2="${x + 120}" y2="${FLOOR}" stroke="#4a5262" stroke-width="2" opacity="0.35"/><line x1="${x + 120}" y1="300" x2="${x}" y2="${FLOOR}" stroke="#4a5262" stroke-width="2" opacity="0.35"/>`; mid += mesh;
+  let mesh = ''; for (let x = -800; x < 2720; x += 34) mesh += `<line x1="${x}" y1="300" x2="${x + 120}" y2="${FLOOR}" stroke="#4a5262" stroke-width="2" opacity="0.2"/><line x1="${x + 120}" y1="300" x2="${x}" y2="${FLOOR}" stroke="#4a5262" stroke-width="2" opacity="0.35"/>`; mid += mesh;
   // hoop on the right
   mid += `<rect x="1880" y="260" width="22" height="${FLOOR - 260}" fill="#3a4250"/><rect x="1760" y="220" width="160" height="110" rx="6" fill="#f4f6f8"/><rect x="1800" y="250" width="70" height="50" fill="none" stroke="#e0412e" stroke-width="5"/><rect x="1740" y="320" width="80" height="8" rx="4" fill="#ff6a3b"/><path d="M 1744 328 L 1754 380 L 1806 380 L 1816 328" fill="none" stroke="#fff" stroke-width="3"/>`;
   mid += bagSvg(bagK, sw);
   let floor = `<defs><linearGradient id="ct" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1f9a86"/><stop offset="1" stop-color="#2a7fa6"/></linearGradient></defs><rect x="-800" y="${FLOOR}" width="3520" height="700" fill="url(#ct)"/><rect x="-800" y="${FLOOR}" width="3520" height="10" fill="#17705f"/>`;
   floor += `<rect x="-800" y="${FLOOR + 70}" width="3520" height="8" fill="#f4f6f0" opacity="0.9"/><path d="M 960 ${FLOOR + 74} L 760 1400" stroke="#f4f6f0" stroke-width="8" opacity="0.9"/><ellipse cx="960" cy="${FLOOR + 230}" rx="260" ry="70" fill="none" stroke="#f4f6f0" stroke-width="8" opacity="0.9"/><ellipse cx="420" cy="${FLOOR + 140}" rx="700" ry="60" fill="#ffe6a8" opacity="0.18"/>`;
-  return { back, mid, floor, FLOOR, bg: '#ff9a6a', blur: 4, reflOp: 0.06 };
+  return { back, mid, floor, FLOOR, bg: '#ff9a6a', blur: 1.6, reflOp: 0.06, tex: 0.26 };
 }
 const HX = 640;
 const H = (pose, face, o = {}) => ({ x: o.x ?? HX, y: FLOOR + 40, h: o.h || 360, pose, outfit: { ...HERO, ...(o.outfit || {}) }, face, flip: o.flip ?? false, look: 0.5, extra: o.extra });
