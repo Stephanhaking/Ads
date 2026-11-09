@@ -45,15 +45,29 @@ function bathroom(tt, heroX = 1350, pose = P_STAND) {
   return { back, mid, floor, FLOOR, bg: '#2f8fb4', blur: 3, reflOp: 0.1 };
 }
 const H = (x, pose, face, o = {}) => ({ x, y: FLOOR + 40, h: o.h || 400, pose, outfit: { ...HERO, ...(o.outfit || {}) }, face, flip: o.flip ?? false, look: 0, extra: o.extra, pre: o.pre });
-const cheek = (c, k) => { if (!c) return ''; const [hx, hy] = c.head, R = c.R, x2 = hx + R * (0.9 + 2.6 * k); return `<path d="M ${f(hx + R * 0.6)} ${f(hy - R * 0.2)} Q ${f((hx + x2) / 2)} ${f(hy - R * (0.3 + 0.2 * k))} ${f(x2)} ${f(hy + R * 0.1)} Q ${f((hx + x2) / 2)} ${f(hy + R * (0.5 + 0.2 * k))} ${f(hx + R * 0.6)} ${f(hy + R * 0.4)} Z" fill="#050507" stroke="#b9dcff" stroke-width="3"/><circle cx="${f(x2 + R * 0.1)}" cy="${f(hy + R * 0.1)}" r="${f(R * 0.2)}" fill="#050507" stroke="#b9dcff" stroke-width="3"/>`; };
+// cheek pull: a rubbery lobe of skin stretched out of the right side of the face, pinched by the hero's own hand.
+// k = 0..1 stretch; the lobe narrows to a neck under the fingers, with crease lines; the arm reaches the pinch point.
+const cheek = (c, k, wob = 0, behind = false) => { if (!c) return ''; const [hx, hy] = c.head, R = c.R, OL = '#b9dcff', INK = '#00000d';
+  const bx = hx + R * 0.72, by = hy + R * 0.42, len = R * (0.25 + 2.8 * k), tx = bx + len, ty = by + R * 0.12 + wob * R * 0.3;
+  const wB = R * 0.36, wN = R * Math.max(0.12, 0.3 - 0.12 * k), mx = bx + len * 0.55;
+  const lobe = `M ${f(bx - R * 0.1)} ${f(by - wB)} C ${f(mx - len * 0.15)} ${f(by - wB * 0.9)} ${f(mx)} ${f(ty - wN * 1.6)} ${f(tx - R * 0.12)} ${f(ty - wN)} Q ${f(tx + R * 0.16)} ${f(ty)} ${f(tx - R * 0.12)} ${f(ty + wN)} C ${f(mx)} ${f(ty + wN * 1.8)} ${f(mx - len * 0.15)} ${f(by + wB * 0.9)} ${f(bx - R * 0.1)} ${f(by + wB)} Z`;
+  if (behind) return `<path d="${lobe}" fill="${INK}" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/>`;
+  let g = `<path d="${lobe}" fill="${INK}"/>`;
+  if (k > 0.1) g += `<path d="M ${f(bx + R * 0.1)} ${f(by - wB * 0.55)} C ${f(mx - len * 0.1)} ${f(by - wB * 0.5)} ${f(mx)} ${f(ty - wN * 1.1)} ${f(tx - R * 0.25)} ${f(ty - wN * 0.55)}" fill="none" stroke="#7a8aa8" stroke-width="${f(R * 0.07)}" stroke-linecap="round" opacity="0.55"/>`;
+  for (let i = 1; i <= 3; i++) { const u = 0.25 + i * 0.17, x = bx + len * u, hw = (wB + (wN - wB) * u) * 0.7; if (k > 0.15) g += `<path d="M ${f(x)} ${f(by + (ty - by) * u - hw)} q ${f(R * 0.08)} ${f(hw)} 0 ${f(hw * 2)}" fill="none" stroke="#ffffff" stroke-width="2.5" opacity="0.35"/>`; }
+  // the arm: shoulder -> elbow (down and out) -> pinch, sleeve colour with outline; mitten hand + thumb
+  const S = c.shR, E = [S[0] + (tx - S[0]) * 0.55 + R * 0.25, Math.max(S[1], ty) + R * 1.1], w = R * 0.28, sl = HERO.top, d = `M ${f(S[0])} ${f(S[1])} L ${f(E[0])} ${f(E[1])} L ${f(tx + R * 0.05)} ${f(ty + R * 0.12)}`;
+  g += `<path d="${d}" fill="none" stroke="${OL}" stroke-width="${f(w + 6)}" stroke-linecap="round" stroke-linejoin="round"/><path d="${d}" fill="none" stroke="${sl}" stroke-width="${f(w)}" stroke-linecap="round" stroke-linejoin="round"/>`;
+  g += `<circle cx="${f(tx + R * 0.05)}" cy="${f(ty + R * 0.14)}" r="${f(R * 0.19)}" fill="${INK}" stroke="${OL}" stroke-width="3"/><circle cx="${f(tx + R * 0.02)}" cy="${f(ty - R * 0.14)}" r="${f(R * 0.1)}" fill="${INK}" stroke="${OL}" stroke-width="2.5"/>`;
+  return g; };
 const heat = (c, col, k) => c ? `<circle cx="${f(c.head[0])}" cy="${f(c.head[1] + c.R * 2.4)}" r="${f(c.R * 3)}" fill="${col}" opacity="${f(0.28 * k)}"/>` : '';
 const WIDE = { z: 1, cx: 960, cy: 520 }, MED = { z: 1.35, cx: 1250, cy: 560 }, CU = { z: 2.3, cx: 1350, cy: 470 };
 const shot = (id, body) => registerShot(id, { bg: '#2f8fb4', theme: 'dark', ui(U, t, info) { body(U, t, info, info.start + t); } });
 
 shot('s018', (U, t, info, tt) => { frame(U, bathroom(tt), pan(WIDE, MED, ease.inOut(clamp(t / info.dur))), [H(1350, P_STAND, 'neutral')]); lab(U, t, [['TEST 1 · MIRROR', 0.3, 1240, 260]]); chrome(U, t, info, D1); });
-shot('s019', (U, t, info, tt) => { const k = ease.inOut(clamp((t - 0.8) / 1.2)) * 0.5, pose = { ...P_STAND, aR: [-70, -150] }; frame(U, bathroom(tt, 1350, pose), CU, [H(1350, pose, 'worried', { extra: (c) => cheek(c, k) })]); chrome(U, t, info, D1); });
-shot('s020', (U, t, info, tt) => { const k = t < 1.6 ? 0.5 + ease.out(clamp(t / 0.6)) * 0.5 : Math.max(0, 1 - (t - 1.6) / 0.15), sh = t > 1.6 && t < 1.9 ? Math.sin(t * 90) * 8 : 0, pose = { ...P_STAND, aR: [-70, -150] };
-  frame(U, bathroom(tt, 1350, pose), { ...CU, cx: CU.cx + sh }, [H(1350, pose, k > 0.1 ? 'worried' : 'open', { extra: (c) => cheek(c, k) })]); lab(U, t, [['CHEEK · 30 CM', 0.5, 1240, 260], ['SNAP-BACK · 0.1 S', 1.8, 1240, 350, COL.red]]); chrome(U, t, info, D1); });
+shot('s019', (U, t, info, tt) => { const k = 0.12 + ease.inOut(clamp((t - 0.8) / 1.2)) * 0.4, pose = P_STAND; frame(U, bathroom(tt, 1350, pose), CU, [H(1350, pose, 'worried', { outfit: { noArm: 'R' }, pre: (c) => cheek(c, k, 0, true), extra: (c) => cheek(c, k) })]); chrome(U, t, info, D1); });
+shot('s020', (U, t, info, tt) => { const k = t < 1.6 ? 0.52 + ease.out(clamp(t / 0.6)) * 0.48 : Math.max(0, 1 - (t - 1.6) / 0.12), sh = t > 1.6 && t < 1.9 ? Math.sin(t * 90) * 8 : 0, pose = P_STAND, wob = t > 1.6 ? Math.sin((t - 1.6) * 40) * Math.exp(-(t - 1.6) * 6) : 0;
+  frame(U, bathroom(tt, 1350, pose), { ...CU, cx: CU.cx + sh }, [H(1350, pose, k > 0.1 ? 'worried' : 'open', { outfit: k > 0.02 ? { noArm: 'R' } : {}, pre: (c) => (k > 0.02 ? cheek(c, k, wob, true) : ''), extra: (c) => (k > 0.02 ? cheek(c, k, wob) : '') + (t > 1.6 && t < 2.1 ? `<g stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="${f(1 - (t - 1.6) * 2)}">${[-1, 0, 1].map((j) => `<line x1="${f(c.head[0] + c.R * 1.2)}" y1="${f(c.head[1] + c.R * (0.3 + j * 0.35))}" x2="${f(c.head[0] + c.R * 1.6)}" y2="${f(c.head[1] + c.R * (0.3 + j * 0.5))}"/>`).join('')}</g>` : '') })]); lab(U, t, [['CHEEK · 30 CM', 0.5, 1240, 260], ['SNAP-BACK · 0.1 S', 1.8, 1240, 350, COL.red]]); chrome(U, t, info, D1); });
 shot('s026', (U, t, info, tt) => { frame(U, bathroom(tt, 1350, P_THINK), pan(MED, { ...MED, z: 1.45 }, clamp(t / info.dur)), [H(1350, P_THINK, 'worried')]); chrome(U, t, info, D1); });
 const ARM = { ...P_STAND, aR: [-70, -150] };
 shot('s027', (U, t, info, tt) => { const k = ease.out(clamp(t / 1.2)); frame(U, bathroom(tt, 1350, P_STAND), { z: 1.7, cx: 1150, cy: 520 }, [H(1350, P_STAND, 'open', { outfit: { noArm: 'L' }, pre: (c) => heat(c, '#ff6a3b', 1) })], (cs) => { const c = cs[0]; if (!c) return ''; const S = c.shL; return L.stretchArm(S, [S[0] - c.R * (1.5 + 6 * k), S[1] + c.R * 0.3], c.R * 0.42, c.R * 2.4, { sleeve: HERO.top, wob: 8 * (1 - k), ph: tt, rim: '#b9dcff' }); }, { fxIn: true });
