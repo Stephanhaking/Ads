@@ -21,3 +21,7 @@
 
 ## Decisão 08/11 (2): Opção A
 O utilizador escolheu personagens/técnicas reais de anime (não poderes originais). Condições mantidas: só arte original própria (boneco do canal + efeitos), nunca imagens, cenas, áudio ou música do anime; sem copiar designs oficiais; risco de direitos e de monetização aceite e registado.
+
+## 09/11: thumbnail do piloto Luffy APROVADA pelo utilizador
+Imagem: docs/thumbs/luffy_piloto_APROVADA_09NOV.webp (1672x941). Mostra o desenho oficial do Luffy e painéis cinzentos de estilo mangá. Aviso dado ao utilizador (risco de reivindicação/remoção, perda de identidade do canal); decisão dele: usar mesmo assim ("curious dude faz também").
+Consequência para a descrição: NÃO afirmar que todos os desenhos são originais nem "sem imagens do anime", porque a thumbnail contradiz isso. Manter só o aviso de que é um cenário feito por fãs e de quem são os direitos.
