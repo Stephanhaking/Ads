@@ -2,6 +2,7 @@
 // at z = -8, scaffolding, a tower crane (mast at (-10, 0, -14), jib along +X at y = 30), stacked steel beams and orange
 // barriers. The falling beam, the giant fist and people are 2D.
 import { registerSet, K, THREE } from '/engine/api.js';
+import { flatten } from '../lib/flatten.js';
 registerSet('site', async (W) => {
   W.shadowArea([0, 0, -4], 24);
   W.add(K.ground({ color: '#9a7a5a', size: 500 }));
@@ -14,5 +15,6 @@ registerSet('site', async (W) => {
   for (let i = 0; i < 8; i++) W.add(K.box(1.2, 0.8, 0.2, K.mat(i % 2 ? '#e2703a' : '#f4f1ea'), [-6 + i * 1.6, 0.4, 7]));
   for (let i = 0; i < 4; i++) for (let j = 0; j < 4; j++) W.add(K.box(0.08, 4, 0.08, K.mat('#8a8f96', { metal: 0.6 }), [-6 + i * 2, j * 4 + 2, -4.5]));
   const sun = new THREE.DirectionalLight('#fff2d6', 2.6); sun.position.set(30, 60, 20); W.add(sun);
+  flatten(W);
   return {};
 });

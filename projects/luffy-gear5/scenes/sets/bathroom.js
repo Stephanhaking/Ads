@@ -1,6 +1,7 @@
 // Set: a small morning bathroom: light-blue tiles, a sink with a wide mirror on the back wall (z = -1.6, mirror centre
 // y = 1.55), a towel rail, a window with soft daylight on the left (x = -1.9), a tiled floor (y = 0). People are 2D.
 import { registerSet, K, THREE } from '/engine/api.js';
+import { flatten } from '../lib/flatten.js';
 registerSet('bathroom', async (W) => {
   W.shadowArea([0, 1, 0], 4); W.fogScale(0.05);
   W.add(K.box(5, 0.1, 5, K.mat('#d9dee2', { rough: 0.4 }), [0, -0.05, 0.5]));
@@ -11,5 +12,6 @@ registerSet('bathroom', async (W) => {
   W.add(K.box(0.6, 0.04, 0.04, K.mat('#c9ced3', { metal: 0.8 }), [1.4, 1.2, -1.6])); W.add(K.box(0.5, 0.8, 0.05, K.mat('#e2553f', { rough: 0.9 }), [1.4, 0.85, -1.58]));
   W.add(K.box(0.05, 1.0, 1.0, K.glowMat('#fff6e0', 1.4), [-1.94, 1.8, 0.2]));
   const l = new THREE.PointLight('#fff6e8', 10, 7, 1.4); l.position.set(0, 2.5, 1); W.add(l);
+  flatten(W);
   return {};
 });

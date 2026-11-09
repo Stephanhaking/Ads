@@ -3,6 +3,7 @@
 // x = -6 (steps from y = 0 up to y = 4, going toward -X), a metal handrail at x = 2 (y = 1.0, along X), ceiling strip
 // lights, a train waiting on the far track. People and signs are 2D.
 import { registerSet, K, THREE } from '/engine/api.js';
+import { flatten } from '../lib/flatten.js';
 registerSet('subway', async (W) => {
   W.shadowArea([0, 1, 0], 18); W.fogScale(0.2);
   W.add(K.box(80, 0.2, 18, K.mat('#9a968e', { rough: 0.8 }), [0, -0.1, 5])); W.add(K.box(80, 0.02, 0.4, K.mat('#f2c230'), [0, 0.01, -3.6]));
@@ -17,5 +18,6 @@ registerSet('subway', async (W) => {
   for (let i = 0; i < 5; i++) W.add(K.box(0.05, 1.0, 0.05, K.mat('#b8bec6', { metal: 0.8 }), [-1.8 + i * 1.9, 0.5, 2.2]));
   const train = K.mat('#2f6fdb', { rough: 0.4 }); W.add(K.box(40, 3, 3, train, [6, 1.2, -6])); for (let i = 0; i < 12; i++) W.add(K.box(1.6, 1.1, 0.05, K.glowMat('#fff2c8', 1.0), [-12 + i * 3.2, 1.8, -4.47]));
   const l = new THREE.PointLight('#fff4e0', 22, 18, 1.4); l.position.set(0, 4, 0); W.add(l);
+  flatten(W);
   return {};
 });
