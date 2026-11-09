@@ -99,6 +99,7 @@ This is the part nobody warns you about.
 At first, winning felt amazing. Then it felt normal. Then it felt like nothing. Psychologists call it hedonic adaptation: we get used to almost anything, good or bad, and the thrill fades. Saitama's real enemy was never a monster. It was boredom.
 
 Every fight ends before it starts. Every video game feels slow. Every danger looks like it's standing still. You'd give anything for one opponent who makes you sweat, just once, to remember what it felt like to try.
+You stop setting goals, because every goal is already done. You stop telling people about your day, because your day is always the same: something happens, you hit it once, it's over. The strongest person in the world, and the thing you miss most is losing.
 
 ## Day 95: how high can you go (7:30)
 [a beach at night; the hero crouches; the ground cracks; clouds rush past; the curve of the Earth; a splash in the ocean]
@@ -110,7 +111,7 @@ You land in the ocean. It takes you an hour to swim home. You smile the whole wa
 ## Day 120: the meteor (8:20)
 [a red sky; a burning rock; the city panicking; the hero on a rooftop]
 And then, on day one hundred and twenty, the sky turns red. Something is coming in from space, a rock the size of a stadium, and every government on Earth runs out of time at the same moment.
-For the first time in months, your heart is pounding.
+For the first time in months, your heart is pounding. Millions of people are looking up, and for once, so are you. Not because you're scared. Because, finally, something is coming that might actually be a fight.
 
 You jump. You meet it above the clouds, and for one second you throw a serious punch.
 The rock turns into gravel and dust. A few pieces still rain down on the city. A few roofs get holes, a few cars get dents. Nobody dies.
@@ -123,6 +124,7 @@ So you do what Saitama does. You go shopping. Eggs are half price, and for some 
 
 That night, you set your alarm for 6:15. In the morning it rings, and you reach out and tap it. Gently.
 It stops ringing. The nightstand is still there.
+Your friend texts: "Run tomorrow? Ten kilometres." You say yes. Not because you need it. Because it's the one thing left that you get to do with someone else.
 It's the hardest thing you've learned all year.
 
 ## Ending question (9:45)
