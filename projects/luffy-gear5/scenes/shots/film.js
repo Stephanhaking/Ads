@@ -25,9 +25,9 @@ const TXT = (px, col = '#fff') => `font:900 ${px}px Inter;letter-spacing:-.01em;
 let hide = false;
 function dcard(id, o) {
   registerShot(id, { bg: '#0c1226', theme: 'dark',
-    ui(U, t, info) { const tt = info.start + t; dossier(U, id, tt); hide = false; if (o.draw) o.draw(U, t, info, tt);
+    ui(U, t, info) { const tt = info.start + t; dossier(U, id, tt); hide = false; if (o.draw) { const W = Object.create(U); W.svg = (k, g, op) => U.svg(k, g ? `<g transform="translate(960 300) scale(0.88) translate(-960 -300)">${g}</g>` : g, op); o.draw(o.raw ? U : W, t, info, tt); }
       const a = clamp((t - (o.at ? info.w(o.at, 0.15) : 0.1)) / 0.2);
-      if (hide) U.html('dc', '', {}); else if (o.text || o.kicker || o.value) U.html('dc', `<div style="width:${o.width || 1500}px;opacity:${f(a)};transform:translateY(${f((1 - a) * 20)}px)">${o.kicker ? `<div style="font:800 30px ${MONO};letter-spacing:.18em;color:${COL.yellow};margin-bottom:14px">${esc(o.kicker)}</div>` : ''}${o.value ? `<div style="${TXT(150)}">${esc(o.value)}</div>` : ''}${o.text ? `<div style="${TXT(o.fs || 84)}">${esc(o.text)}</div>` : ''}${o.sub ? `<div style="font:600 34px Inter;color:#b9c4e8;margin-top:12px">${esc(o.sub)}</div>` : ''}</div>`, { left: (o.left ?? 160) + 'px', top: (o.top ?? 220) + 'px' });
+      if (hide) U.html('dc', '', {}); else if (o.text || o.kicker || o.value) U.html('dc', `<div style="width:${o.width || (o.draw ? 1050 : 1500)}px;opacity:${f(a)};transform:translateY(${f((1 - a) * 20)}px)">${o.kicker ? `<div style="font:800 30px ${MONO};letter-spacing:.18em;color:${COL.yellow};margin-bottom:14px">${esc(o.kicker)}</div>` : ''}${o.value ? `<div style="${TXT(o.value.length > 9 ? 120 : 150)}">${esc(o.value)}</div>` : ''}${o.text ? `<div style="${TXT(o.fs || 84)}">${esc(o.text)}</div>` : ''}${o.sub ? `<div style="font:600 34px Inter;color:#b9c4e8;margin-top:12px">${esc(o.sub)}</div>` : ''}</div>`, { left: (o.left ?? 160) + 'px', top: (o.top ?? 220) + 'px' });
       chrome(U, t, info, o.hud || {}); } });
 }
 
@@ -151,7 +151,7 @@ dcard('s060', { kicker: 'PUSH ENOUGH VOLTAGE THROUGH', text: 'any insulator…',
 dcard('s061', { kicker: '…AND IT SUDDENLY', text: 'gives up and conducts.', fs: 84, top: 170, hud: D6, draw: (U, t) => breakdown(U, t, 0.7 + clamp(t / 0.8) * 0.3) });
 dcard('s062', { kicker: 'PHYSICISTS CALL IT', text: 'dielectric breakdown', fs: 92, top: 170, hud: D6, draw: (U, t) => breakdown(U, t, 1) });
 const carCage = (U, t, k, tyres) => { let g = `<path d="M 600 760 L 640 620 L 820 540 L 1100 540 L 1240 620 L 1360 640 L 1360 760 Z" fill="#3a4a6a" stroke="#fff" stroke-width="5"/>`; for (const x of [720, 1220]) g += `<circle cx="${x}" cy="770" r="60" fill="#22242a" stroke="${tyres ? COL.red : '#555'}" stroke-width="${tyres ? 8 : 4}"/>`;
-  g += L.bolt(960, 100, 1000, 540, 9, 8); if (!tyres) g += `<path d="M 1000 540 L 1240 620 L 1360 640 L 1360 760 L 1400 900" fill="none" stroke="${COL.yellow}" stroke-width="10" stroke-dasharray="20 14" stroke-dashoffset="${f(-t * 80)}"/>`; else g += `<path d="M 700 820 l -30 30 m 30 -30 l 30 30 M 1200 820 l -30 30 m 30 -30 l 30 30" stroke="${COL.red}" stroke-width="10"/>`; U.svg('car', g, { z: 3 }); };
+  g += L.bolt(960, 100, 1000, 540, 9, 8); if (!tyres) g += `<path d="M 1000 540 L 1240 620 L 1360 640 L 1360 760 L 1400 900" fill="none" stroke="${COL.yellow}" stroke-width="10" stroke-dasharray="20 14" stroke-dashoffset="${f(-t * 80)}"/>`; else g += `<path d="M 700 820 l -30 30 m 30 -30 l 30 30 M 1200 820 l -30 30 m 30 -30 l 30 30" stroke="${COL.red}" stroke-width="10"/>`; U.svg('car', `<g transform="translate(380 60)">${g}</g>`, { z: 3 }); };
 dcard('s063', { kicker: 'MYTH', text: "Car tyres don't protect you.", fs: 80, top: 170, hud: D6, draw: (U, t) => carCage(U, t, 1, true) });
 dcard('s064', { kicker: 'WHAT DOES', text: 'the metal body', fs: 92, top: 170, hud: D6, draw: (U, t) => carCage(U, t, 1, false) });
 dcard('s065', { kicker: 'IT CARRIES THE CURRENT', text: 'around you.', fs: 92, top: 170, hud: D6, draw: (U, t) => carCage(U, t, 1, false) });

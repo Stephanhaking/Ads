@@ -8,7 +8,9 @@ const f = (n) => n.toFixed(1);
 let FID = 0;
 // people: [{ x, y, h, pose, outfit, face, flip, extra(c), look, refl }]
 export function frame(U, S, v, people, fx = '', o = {}) {
-  const z = v.z || 1, tx = 960 - v.cx * z, ty = 540 - v.cy * z;
+  const T = U.t ?? 0, D = (U.info && U.info.dur) || 3, sm = (x) => x * x * (3 - 2 * x), p = Math.min(1, Math.max(0, T / D)), eo = 1 - Math.pow(1 - Math.min(1, T / 0.5), 3);
+  // camera smoothing: a slow continuous push-in over the shot + a gentle settle as the shot starts (no dead-still frames)
+  const z = (v.z || 1) * (1 + 0.035 * sm(p)) * (1 + 0.035 * (1 - eo)), tx = 960 - v.cx * z, ty = 540 - v.cy * z;
   let ppl = '', refl = ''; const out = [];
   for (const p of people) { if (!p) { out.push(null); continue; }
     const c = person(p.x, p.y, p.h, p.pose, { ...p.outfit, face: p.face || 'neutral', flip: p.flip, look: p.look ?? (p.flip ? -0.5 : 0.5), rim: o.rim || '#b9dcff' }); out.push(c);
@@ -22,6 +24,6 @@ export function frame(U, S, v, people, fx = '', o = {}) {
   return out;
 }
 // camera helper: ease between two views over the shot
-export const pan = (a, b, k) => ({ z: a.z + (b.z - a.z) * k, cx: a.cx + (b.cx - a.cx) * k, cy: a.cy + (b.cy - a.cy) * k });
+export const pan = (a, b, k0) => { const k = Math.min(1, Math.max(0, k0)) ** 2 * (3 - 2 * Math.min(1, Math.max(0, k0))); return { z: a.z + (b.z - a.z) * k, cx: a.cx + (b.cx - a.cx) * k, cy: a.cy + (b.cy - a.cy) * k }; };
 // shared radial glow defs (use ids inside a layer; frame() makes them unique per frame)
 export const glow = (id, col, op = 0.7) => `<radialGradient id="${id}"><stop offset="0" stop-color="${col}" stop-opacity="${op}"/><stop offset="1" stop-color="${col}" stop-opacity="0"/></radialGradient>`;

@@ -52,9 +52,10 @@ function station(tt) {
   return { back, mid, floor };
 }
 let FRAMEID = 0;
+const info0 = (U) => (U.info && U.info.dur) || 3;
 // one flat frame: v = { z: zoom, cx, cy } camera; people: [[x, y(feet), h, pose, outfit, face, flip, extra]]
 function frame(U, t, tt, v, people, fx = '') {
-  const S = station(tt), z = v.z || 1, tx = 960 - v.cx * z, ty = 540 - v.cy * z;
+  const S = station(tt), D = info0(U), sm = (x) => x * x * (3 - 2 * x), p = Math.min(1, Math.max(0, t / D)), eo = 1 - Math.pow(1 - Math.min(1, t / 0.5), 3), z = (v.z || 1) * (1 + 0.035 * sm(p)) * (1 + 0.035 * (1 - eo)), tx = 960 - v.cx * z, ty = 540 - v.cy * z;
   let ppl = '', refl = ''; const out = [];
   for (const [x, y, h, pose, outfit, face, flip, extra] of people) { const c = person(x, y, h, pose, { ...outfit, face, flip, look: flip ? -0.5 : 0.5, rim: '#b9dcff' }); out.push(c); if (y >= FLOOR) refl += `<g transform="translate(0 ${f(2 * y + 6)}) scale(1 -1)" opacity="0.09">${c.svg.replace(/<defs>.*?<\/defs>/, '').replace(/ filter="url\(#ol[^)]*\)"/, '')}</g>`; ppl += `<ellipse cx="${f(x)}" cy="${f(y + 4)}" rx="${f(h * 0.16)}" ry="${f(h * 0.03)}" fill="#000" opacity="0.18"/>` + c.svg + (extra ? extra(c) : ''); }
   const UID = (++FRAMEID).toString(36), uniq = (x) => x.replace(/id="([A-Za-z][\w-]*)"/g, `id="$1_${UID}"`).replace(/url\(#([A-Za-z][\w-]*)\)/g, `url(#$1_${UID})`);
