@@ -22,11 +22,12 @@ function dossier(U, id, tt) {
   U.svg('bg', g, { z: 1 });
 }
 const TXT = (px, col = '#fff') => `font:900 ${px}px Inter;letter-spacing:-.01em;line-height:1.04;color:${col}`;
+let hide = false;
 function dcard(id, o) {
   registerShot(id, { bg: '#0c1226', theme: 'dark',
-    ui(U, t, info) { const tt = info.start + t; dossier(U, id, tt); if (o.draw) o.draw(U, t, info, tt);
+    ui(U, t, info) { const tt = info.start + t; dossier(U, id, tt); hide = false; if (o.draw) o.draw(U, t, info, tt);
       const a = clamp((t - (o.at ? info.w(o.at, 0.15) : 0.1)) / 0.2);
-      if (o.text || o.kicker || o.value) U.html('dc', `<div style="width:${o.width || 1500}px;opacity:${f(a)};transform:translateY(${f((1 - a) * 20)}px)">${o.kicker ? `<div style="font:800 30px ${MONO};letter-spacing:.18em;color:${COL.yellow};margin-bottom:14px">${esc(o.kicker)}</div>` : ''}${o.value ? `<div style="${TXT(150)}">${esc(o.value)}</div>` : ''}${o.text ? `<div style="${TXT(o.fs || 84)}">${esc(o.text)}</div>` : ''}${o.sub ? `<div style="font:600 34px Inter;color:#b9c4e8;margin-top:12px">${esc(o.sub)}</div>` : ''}</div>`, { left: (o.left ?? 160) + 'px', top: (o.top ?? 220) + 'px' });
+      if (hide) U.html('dc', '', {}); else if (o.text || o.kicker || o.value) U.html('dc', `<div style="width:${o.width || 1500}px;opacity:${f(a)};transform:translateY(${f((1 - a) * 20)}px)">${o.kicker ? `<div style="font:800 30px ${MONO};letter-spacing:.18em;color:${COL.yellow};margin-bottom:14px">${esc(o.kicker)}</div>` : ''}${o.value ? `<div style="${TXT(150)}">${esc(o.value)}</div>` : ''}${o.text ? `<div style="${TXT(o.fs || 84)}">${esc(o.text)}</div>` : ''}${o.sub ? `<div style="font:600 34px Inter;color:#b9c4e8;margin-top:12px">${esc(o.sub)}</div>` : ''}</div>`, { left: (o.left ?? 160) + 'px', top: (o.top ?? 220) + 'px' });
       chrome(U, t, info, o.hud || {}); } });
 }
 
@@ -206,7 +207,7 @@ dcard('s095', { kicker: 'AGE 20', value: '≈200 bpm', fs: 84, width: 900, hud: 
 dcard('s096', { kicker: 'GEAR 2', text: 'pushes past that. On purpose.', fs: 76, width: 900, hud: { ...D14, status: G2 }, draw: (U, t, info) => hrGauge(U, t, 200 + ease.out(clamp(t / 1.2)) * 50 + Math.sin(t * 30) * 3, info) });
 dcard('s097', { kicker: 'IN THE EARLY STORY', text: 'Luffy was warned it was shortening his life.', fs: 70, hud: D14, draw: (U, t) => U.svg('s', silhouette(1560, 1000, 480, { pose: P_TIRED, face: 'worried' }), { z: 3 }) });
 S3('s098', 'freezer', FRZ, [{ pos: [1.2, 1.2, 2.8], look: [0, 0.9, 0], fov: 40 }], { ...D14, time: '3:15 PM', status: { text: 'HEART · RACING', on: true, color: COL.red } }, (U, t, i, st, tt) => { const q = proj(st, [0, 0, 0]), e = proj(st, [0.5, 0.45, 0]); if (q.ok) U.svg('cr', `<rect x="${f(q.x - Math.abs(e.x - q.x))}" y="${f(e.y)}" width="${f(Math.abs(e.x - q.x) * 2)}" height="${f(q.y - e.y)}" fill="#c8a27a" stroke="#1b1410" stroke-width="4"/>`, { z: 8 }); hero(U, st, [0.1, 0.45, 0.1], { sit: true, lean: 10, aL: [20, 40], aR: [20, 40], lL: [0, 0], lR: [0, 0], head: 14 }, 'worried', { extra: (c) => L.drum(c.head[0], c.head[1] + c.R * 2.4, tt, 150, c.R * 0.6, COL.red) }); if (t > i.w('Rule four', 3.6)) U.html('r4', `<div style="${TXT(110, COL.yellow)}">RULE 4</div>`, { left: '160px', top: '380px' }); else U.html('r4', '', {}); });
-dcard('s099', { kicker: 'RULE 4', text: 'Speed is borrowed. You pay it back.', fs: 76, top: 360, hud: { ...D14, status: ST.off }, draw: (U, t, info) => { if (t > info.w('Gear 3', 3.6)) U.html('dc', '', {}); } });
+dcard('s099', { kicker: 'RULE 4', text: 'Speed is borrowed. You pay it back.', fs: 76, top: 360, hud: { ...D14, status: ST.off }, draw: (U, t, info) => { if (t > info.w('Gear 3', 3.6)) U.html('dc', '', {}); hide = true; } });
 
 // ---------------------------------------------------------------- Day 20: Gear 3 (construction site)
 const SITE = { base: 'day', fog: { color: '#f2e6d0', density: 0.004 } };
@@ -221,7 +222,7 @@ dcard('s104', { kicker: 'AND THEN', text: 'like early Luffy…', fs: 90, hud: D2
 S3('s105', 'site', SITE, [SC], { ...D20, status: { text: 'SIZE · SHRINKING', on: true, color: '#ff8a3b' } }, (U, t, i, st, tt) => { const k = ease.inOut(clamp(t / 2)); hero(U, st, [0, 0, 2], P_STAND, 'open', { h: 1.6 - k * 0.6 }); });
 S3('s106', 'site', SITE, [{ pos: [-3, 1.3, 6], look: [0, 0.8, 1], fov: 46 }], { ...D20, time: '5:40 PM', status: { text: 'SIZE · AGE 10', on: true, color: '#ff8a3b' } }, (U, t, i, st, tt) => { hero(U, st, [-1 + t * 0.6, 0, 1.5], walk(tt, 6), 'worried', { h: 1.0 }); });
 S3('s107', 'site', SITE, [{ pos: [-1.6, 1.0, 3.4], look: [-0.4, 0.7, 1.5], fov: 40 }], { ...D20, time: '5:40 PM', status: { text: 'SIZE · AGE 10', on: true, color: '#ff8a3b' } }, (U, t, i, st, tt) => { hero(U, st, [0, 0, 1.5], P_SHRUG, 'worried', { h: 1.0, extra: (c) => `<rect x="${f(c.head[0] - c.R * 1.7)}" y="${f(c.head[1] + c.R * 1.0)}" width="${f(c.R * 3.4)}" height="${f(c.R * 5.2)}" rx="${f(c.R * 0.5)}" fill="${CAST.heroHoodie.top}" opacity="0.85"/>` }); if (t > i.w('Rule five', 3.2)) U.html('r5', `<div style="${TXT(110, COL.yellow)}">RULE 5</div>`, { left: '160px', top: '380px' }); else U.html('r5', '', {}); });
-dcard('s108', { kicker: 'RULE 5', text: 'Big now, small later.', fs: 96, top: 360, hud: D20, draw: (U, t, info) => { if (t > info.w('By now there are videos', 2.5)) { U.html('dc', '', {}); U.html('v', `<div style="${TXT(84)}">By now there are videos.</div>`, { left: '160px', top: '400px' }); } else U.html('v', '', {}); } });
+dcard('s108', { kicker: 'RULE 5', text: 'Big now, small later.', fs: 96, top: 360, hud: D20, draw: (U, t, info) => { if (t > info.w('By now there are videos', 2.5)) { U.html('dc', '', {}); hide = true; U.html('v', `<div style="${TXT(84)}">By now there are videos.</div>`, { left: '160px', top: '400px' }); } else U.html('v', '', {}); } });
 
 // ---------------------------------------------------------------- Day 27: videos, the people in suits, Gear 4 (parking)
 const D27 = { day: 27, time: '9:10 PM', status: ST.off };
@@ -267,9 +268,9 @@ S3('s131', 'parking', PARK, [{ pos: [-6, 2.2, 12], look: [0, 1, 0], fov: 48 }], 
 S3('s132', 'parking', PARK, [{ pos: [-6, 2.2, 12], look: [0, 1, 0], fov: 48 }], { ...D28, status: HAKI('09:40') }, (U, t, i, st, tt) => { van(U, st, -14 + ease.out(clamp(t / 2)) * 12); lab(U, t, [['STEP 2 · VAN', 0.3, 1240, 260, COL.red], ['STEP 3 · QUIET DRIVE', 1.6, 1240, 350, COL.red]]); });
 S3('s133', 'parking', PARK, [{ pos: [-1.2, 1.6, 3.6], look: [0, 1.4, 0], fov: 40 }], { ...D28, status: ST.off }, (U, t, i, st, tt) => { hero(U, st, [0, 0, 0], P_THINK, 'neutral'); lab(U, t, [['NEW RULE · LOADING', 0.4, 1220, 260]]); });
 dcard('s134', { kicker: 'LUFFY NEVER NEEDED IT', text: 'because he always had his crew.', fs: 76, hud: D28 });
-dcard('s135', { kicker: 'NEW RULE', text: 'Never use Gear 4 alone.', fs: 92, hud: D28, draw: (U, t, info) => { if (t > info.w('Rule six', 2.6)) { U.html('dc', '', {}); U.html('r6', `<div style="${TXT(160, COL.yellow)}">RULE 6</div>`, { left: '160px', top: '380px' }); } else U.html('r6', '', {}); } });
+dcard('s135', { kicker: 'NEW RULE', text: 'Never use Gear 4 alone.', fs: 92, hud: D28, draw: (U, t, info) => { if (t > info.w('Rule six', 2.6)) { U.html('dc', '', {}); hide = true; U.html('r6', `<div style="${TXT(160, COL.yellow)}">RULE 6</div>`, { left: '160px', top: '380px' }); } else U.html('r6', '', {}); } });
 dcard('s136', { kicker: 'RULE 6', text: 'Your strongest minute is also…', fs: 84, top: 360, hud: D28 });
-dcard('s137', { kicker: 'RULE 6', text: '…your weakest ten.', fs: 100, top: 360, hud: D28, draw: (U, t, info) => { if (t > info.w('Day forty', 1.6)) { U.html('dc', '', {}); U.html('d40', `<div style="${TXT(170, COL.yellow)}">DAY 40</div>`, { left: '160px', top: '380px' }); } else U.html('d40', '', {}); } });
+dcard('s137', { kicker: 'RULE 6', text: '…your weakest ten.', fs: 100, top: 360, hud: D28, draw: (U, t, info) => { if (t > info.w('Day forty', 1.6)) { U.html('dc', '', {}); hide = true; U.html('d40', `<div style="${TXT(170, COL.yellow)}">DAY 40</div>`, { left: '160px', top: '380px' }); } else U.html('d40', '', {}); } });
 
 // ---------------------------------------------------------------- Day 40: Gear 5 (city square)
 const SQ = { base: 'night', fog: { color: '#1a1622', density: 0.006 } };
