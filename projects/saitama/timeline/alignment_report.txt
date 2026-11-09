@@ -1,44 +1,41 @@
-00:10.50  replace  script: neighbour's  |  heard: neighbor's
-00:24.32  replace  script: One-Punch  |  heard: One punch
-01:00.22  insert   script: —  |  heard: You turn the tap and it comes off in your hand. You pick up a mug and you're holding a handle.
-01:06.82  replace  script: learn  |  heard: learned
-01:53.52  replace  script: two.  |  heard: 2.
-02:04.36  replace  script: practise  |  heard: practice
-02:28.60  replace  script: metres  |  heard: meters
-02:34.50  replace  script: metres  |  heard: meters
-02:36.88  replace  script: thirty  |  heard: 30
-02:38.84  replace  script: eight hundred  |  heard: 800
-02:49.90  replace  script: twelve  |  heard: 12
-03:15.02  replace  script: twelve  |  heard: 12,
-03:42.96  replace  script: seventeen  |  heard: 17, you're walking home from the supermarket when a crane on a building site snaps. A load of steel beams is falling tow
-04:09.80  replace  script: Nobody is  |  heard: Nobody's
-04:20.52  replace  script: eggs  |  heard: egg
-04:22.16  insert   script: —  |  heard: You decide that counts as a win.
-04:34.94  replace  script: push-ups,  |  heard: push -ups,
-04:35.82  replace  script: sit-ups,  |  heard: sit -ups,
-04:37.76  replace  script: kilometres.  |  heard: kilometers.
-04:52.54  replace  script: push-ups  |  heard: push -ups
-04:58.28  replace  script: kilometres  |  heard: kilometers
-05:05.92  replace  script: You  |  heard: They
-05:08.18  replace  script: thirty,  |  heard: 30,
-05:09.64  replace  script: grey  |  heard: gray
-05:33.36  insert   script: —  |  heard: At the end of the day, they don't have a number. They have a report with one line. Upper limit, not found.
-05:57.10  replace  script: twelve  |  heard: 12
-06:00.94  replace  script: apologising  |  heard: apologizing
-06:11.26  replace  script: sixty  |  heard: 60,
-06:15.46  insert   script: —  |  heard: is
-06:21.56  replace  script: A runaway  |  heard: I went away
-06:54.10  insert   script: —  |  heard: even rhythm, short natural pauses only.
-07:23.54  replace  script: hit  |  heard: hate
-07:50.72  replace  script: need  |  heard: meet
-07:51.06  replace  script: eleven kilometres  |  heard: 11 kilometers
-07:56.64  replace  script: twenty  |  heard: 20
-08:09.30  replace  script: one hundred and twenty,  |  heard: 120,
-08:18.86  replace  script: out of  |  heard: at a
-08:48.82  replace  script: dents.  |  heard: dense
-08:50.70  insert   script: —  |  heard: the next morning a calm confident warm young storyteller talking straight to the viewer like a gripping late -night stor
-09:25.56  insert   script: —  |  heard: So you do what Saitama does. You go shopping. Eggs are half price. And for some reason that makes you happier than savin
-09:35.88  replace  script: 6:15.  |  heard: 6 .15.
-09:43.08  replace  script: nightstand  |  heard: night stand
-09:46.86  replace  script: Ten kilometres."  |  heard: 10 kilometers.
-09:54.00  replace  script: It's  |  heard: That's
+00:00.00  replace  script: 6:15  |  heard: 6 .15
+00:11.32  replace  script: neighbour's  |  heard: neighbor's
+00:26.40  replace  script: One-Punch  |  heard: One punch
+01:15.50  replace  script: they're  |  heard: their
+02:09.62  replace  script: practise  |  heard: practice
+02:35.06  replace  script: metres  |  heard: meters
+02:40.90  replace  script: metres  |  heard: meters
+02:42.90  replace  script: thirty  |  heard: 30
+02:44.78  replace  script: eight hundred  |  heard: 800
+02:53.94  replace  script: twelve  |  heard: 12
+03:14.78  replace  script: a  |  heard: the
+03:18.52  replace  script: twelve  |  heard: 12,
+03:38.96  replace  script: tap  |  heard: top
+03:48.94  replace  script: seventeen  |  heard: 17,
+04:02.34  insert   script: —  |  heard: him
+04:08.52  replace  script: Nobody is  |  heard: Nobody's
+04:20.34  replace  script: eggs  |  heard: egg
+04:34.50  replace  script: push-ups,  |  heard: push -ups,
+04:35.48  replace  script: sit-ups,  |  heard: sit -ups,
+04:37.60  replace  script: kilometres.  |  heard: kilometers.
+04:53.84  replace  script: push-ups  |  heard: push -ups
+04:55.98  replace  script: sore  |  heard: or
+04:59.84  replace  script: ten kilometres  |  heard: 10 kilometers
+05:11.22  replace  script: thirty,  |  heard: 30,
+05:13.06  replace  script: grey  |  heard: gray
+05:55.02  replace  script: has  |  heard: is
+05:56.52  replace  script: twelve  |  heard: 12
+06:00.72  replace  script: apologising  |  heard: apologizing
+06:12.10  replace  script: sixty  |  heard: 60,
+06:22.04  delete   script: it  |  heard: —
+07:28.48  replace  script: hit  |  heard: hate
+07:58.36  replace  script: need  |  heard: meet
+07:58.76  replace  script: eleven kilometres  |  heard: 11 kilometers
+08:04.90  replace  script: twenty  |  heard: 20
+08:18.82  replace  script: one hundred and twenty,  |  heard: 120,
+08:29.32  replace  script: out of  |  heard: at a
+09:02.98  replace  script: dents.  |  heard: dense.
+09:10.56  replace  script: Saitama  |  heard: Cytima
+09:22.12  replace  script: 6:15.  |  heard: 6 .15.
+09:34.20  replace  script: Ten kilometres."  |  heard: 10 kilometers.
+09:42.08  replace  script: It's  |  heard: That's

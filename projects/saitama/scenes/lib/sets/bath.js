@@ -8,7 +8,7 @@ import { person } from '../char2d.js';
 import * as L from '../luffy.js';
 
 const f = (n) => n.toFixed(1);
-const HERO = { ...CAST.heroHoodie };
+const HERO = { top: '#2f8f9a', bottom: '#1f2a44', hood: true, bald: true, broad: true };
 const ST = { off: { text: 'RUBBER · IDLE', on: false } };
 const D1 = { day: 1, time: '8:02 AM', status: ST.off };
 const chrome = (U, t, info, d) => { hud(U, d); caption(U, info, t); };
