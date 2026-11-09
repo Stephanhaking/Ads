@@ -59,6 +59,7 @@ export function personRef(x, y, h, pose, o = {}) {
     if (o.hair === 'short') { let d = ''; const n = 7; for (let i = 0; i <= n; i++) { const a = Math.PI * (1.08 + 0.84 * i / n), r = R * (i % 2 ? 1.2 : 0.96), sw = side * R * 0.12; d += `${i ? 'L' : 'M'} ${f(hc[0] + Math.cos(a) * r + (i % 2 ? sw : 0))} ${f(hc[1] + Math.sin(a) * r)} `; } q += `<path d="${d} Z" fill="${INK}" stroke-linejoin="round"/>`; }
     if (o.hair === 'curly') for (let i = 0; i < 7; i++) { const a = Math.PI * (1.1 + 0.8 * i / 6); q += `<circle cx="${f(hc[0] + Math.cos(a) * R * 0.95)}" cy="${f(hc[1] + Math.sin(a) * R * 0.95)}" r="${f(R * 0.26)}" fill="${INK}"/>`; }
     const k = R / 46, lx = (o.look || 0) * 6 * s, ey = hc[1] - 1 * k, face = o.face || 'neutral';
+    if (face === 'back') { if (o.cap) q += `<circle cx="${f(hc[0])}" cy="${f(hc[1] - R * 0.5)}" r="${f(R * 0.6)}" fill="${o.cap}"/>`; return { svg: q, mouth: [hc[0], hc[1] + 17 * k] }; }
     for (const dx of [-15, 15]) { const ex = hc[0] + dx * k + lx, rx = 8.5 * k;
       if (face === 'smile' || face === 'closed') { q += `<path d="M ${f(ex - rx)} ${f(ey + 1 * k)} q ${f(rx)} ${f(face === 'smile' ? -9 * k : 6 * k)} ${f(rx * 2)} 0" stroke="#fff" stroke-width="${f(3.4 * k)}" fill="none" stroke-linecap="round"/>`; continue; }
       if (face === 'open') q += `<ellipse cx="${f(ex)}" cy="${f(ey)}" rx="${f(rx)}" ry="${f(rx * 1.1)}" fill="#fff"/><circle cx="${f(ex + lx * 0.35)}" cy="${f(ey + 1 * k)}" r="${f(3.6 * k)}" fill="${INK}"/>`;
