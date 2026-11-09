@@ -1,0 +1,201 @@
+{
+ "profile": "documentary",
+ "max": 0.8,
+ "to": 0.55,
+ "duration_before": 683.714,
+ "duration_after": 668.724,
+ "removed_s": 14.99,
+ "cuts": [
+  {
+   "at": 15.515,
+   "was": 0.81,
+   "kind": "pause"
+  },
+  {
+   "at": 18.025,
+   "was": 0.94,
+   "kind": "pause"
+  },
+  {
+   "at": 21.435,
+   "was": 0.97,
+   "kind": "pause"
+  },
+  {
+   "at": 29.745,
+   "was": 0.86,
+   "kind": "pause"
+  },
+  {
+   "at": 36.365,
+   "was": 0.85,
+   "kind": "pause"
+  },
+  {
+   "at": 67.835,
+   "was": 1.07,
+   "kind": "pause"
+  },
+  {
+   "at": 81.785,
+   "was": 0.81,
+   "kind": "pause"
+  },
+  {
+   "at": 155.795,
+   "was": 0.96,
+   "kind": "pause"
+  },
+  {
+   "at": 199.915,
+   "was": 1.06,
+   "kind": "pause"
+  },
+  {
+   "at": 202.065,
+   "was": 1.07,
+   "kind": "pause"
+  },
+  {
+   "at": 234.635,
+   "was": 1.02,
+   "kind": "pause"
+  },
+  {
+   "at": 241.855,
+   "was": 0.85,
+   "kind": "pause"
+  },
+  {
+   "at": 244.495,
+   "was": 1.11,
+   "kind": "pause"
+  },
+  {
+   "at": 246.325,
+   "was": 0.94,
+   "kind": "pause"
+  },
+  {
+   "at": 260.445,
+   "was": 1.19,
+   "kind": "pause"
+  },
+  {
+   "at": 281.005,
+   "was": 1.01,
+   "kind": "pause"
+  },
+  {
+   "at": 282.625,
+   "was": 0.86,
+   "kind": "pause"
+  },
+  {
+   "at": 314.895,
+   "was": 1.12,
+   "kind": "pause"
+  },
+  {
+   "at": 339.505,
+   "was": 0.85,
+   "kind": "pause"
+  },
+  {
+   "at": 344.435,
+   "was": 0.84,
+   "kind": "pause"
+  },
+  {
+   "at": 362.225,
+   "was": 0.99,
+   "kind": "pause"
+  },
+  {
+   "at": 375.495,
+   "was": 0.88,
+   "kind": "pause"
+  },
+  {
+   "at": 408.365,
+   "was": 0.89,
+   "kind": "pause"
+  },
+  {
+   "at": 412.635,
+   "was": 0.89,
+   "kind": "pause"
+  },
+  {
+   "at": 437.905,
+   "was": 0.87,
+   "kind": "pause"
+  },
+  {
+   "at": 448.625,
+   "was": 0.92,
+   "kind": "pause"
+  },
+  {
+   "at": 500.265,
+   "was": 0.83,
+   "kind": "pause"
+  },
+  {
+   "at": 553.135,
+   "was": 0.84,
+   "kind": "pause"
+  },
+  {
+   "at": 562.285,
+   "was": 0.87,
+   "kind": "pause"
+  },
+  {
+   "at": 570.935,
+   "was": 0.94,
+   "kind": "pause"
+  },
+  {
+   "at": 579.805,
+   "was": 0.81,
+   "kind": "pause"
+  },
+  {
+   "at": 595.085,
+   "was": 0.84,
+   "kind": "pause"
+  },
+  {
+   "at": 616.765,
+   "was": 1.76,
+   "kind": "pause"
+  },
+  {
+   "at": 629.875,
+   "was": 0.86,
+   "kind": "pause"
+  },
+  {
+   "at": 639.435,
+   "was": 0.92,
+   "kind": "pause"
+  },
+  {
+   "at": 657.415,
+   "was": 0.81,
+   "kind": "pause"
+  },
+  {
+   "at": 661.395,
+   "was": 0.86,
+   "kind": "pause"
+  },
+  {
+   "at": 662.905,
+   "was": 0.92,
+   "kind": "pause"
+  }
+ ],
+ "applied": true
+}

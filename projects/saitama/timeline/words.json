@@ -1,0 +1,7995 @@
+{
+ "source": "whisper:small.en+script",
+ "words": [
+  {
+   "word": "6:15",
+   "start": 0.0,
+   "end": 0.86
+  },
+  {
+   "word": "in",
+   "start": 0.86,
+   "end": 1.02
+  },
+  {
+   "word": "the",
+   "start": 1.02,
+   "end": 1.12
+  },
+  {
+   "word": "morning.",
+   "start": 1.12,
+   "end": 1.34
+  },
+  {
+   "word": "Your",
+   "start": 1.86,
+   "end": 1.92
+  },
+  {
+   "word": "alarm",
+   "start": 1.92,
+   "end": 2.14
+  },
+  {
+   "word": "goes",
+   "start": 2.14,
+   "end": 2.38
+  },
+  {
+   "word": "off,",
+   "start": 2.38,
+   "end": 2.66
+  },
+  {
+   "word": "and",
+   "start": 2.66,
+   "end": 2.86
+  },
+  {
+   "word": "you",
+   "start": 2.86,
+   "end": 3.04
+  },
+  {
+   "word": "tap",
+   "start": 3.04,
+   "end": 3.24
+  },
+  {
+   "word": "the",
+   "start": 3.24,
+   "end": 3.42
+  },
+  {
+   "word": "snooze",
+   "start": 3.42,
+   "end": 3.72
+  },
+  {
+   "word": "button",
+   "start": 3.72,
+   "end": 3.94
+  },
+  {
+   "word": "the",
+   "start": 3.94,
+   "end": 4.08
+  },
+  {
+   "word": "way",
+   "start": 4.08,
+   "end": 4.18
+  },
+  {
+   "word": "you",
+   "start": 4.18,
+   "end": 4.3
+  },
+  {
+   "word": "always",
+   "start": 4.3,
+   "end": 4.58
+  },
+  {
+   "word": "do.",
+   "start": 4.58,
+   "end": 4.82
+  },
+  {
+   "word": "The",
+   "start": 5.32,
+   "end": 5.46
+  },
+  {
+   "word": "phone",
+   "start": 5.46,
+   "end": 5.7
+  },
+  {
+   "word": "goes",
+   "start": 5.7,
+   "end": 5.98
+  },
+  {
+   "word": "through",
+   "start": 5.98,
+   "end": 6.36
+  },
+  {
+   "word": "the",
+   "start": 6.36,
+   "end": 6.56
+  },
+  {
+   "word": "nightstand.",
+   "start": 6.56,
+   "end": 7.0
+  },
+  {
+   "word": "Then",
+   "start": 7.6,
+   "end": 7.78
+  },
+  {
+   "word": "through",
+   "start": 7.78,
+   "end": 8.12
+  },
+  {
+   "word": "the",
+   "start": 8.12,
+   "end": 8.32
+  },
+  {
+   "word": "floor.",
+   "start": 8.32,
+   "end": 8.58
+  },
+  {
+   "word": "You",
+   "start": 9.18,
+   "end": 9.32
+  },
+  {
+   "word": "hear",
+   "start": 9.32,
+   "end": 9.5
+  },
+  {
+   "word": "it",
+   "start": 9.5,
+   "end": 9.62
+  },
+  {
+   "word": "land",
+   "start": 9.62,
+   "end": 9.82
+  },
+  {
+   "word": "in",
+   "start": 9.82,
+   "end": 9.98
+  },
+  {
+   "word": "your",
+   "start": 9.98,
+   "end": 10.08
+  },
+  {
+   "word": "downstairs",
+   "start": 10.08,
+   "end": 10.5
+  },
+  {
+   "word": "neighbour's",
+   "start": 10.5,
+   "end": 10.96
+  },
+  {
+   "word": "kitchen,",
+   "start": 10.96,
+   "end": 11.22
+  },
+  {
+   "word": "still",
+   "start": 11.68,
+   "end": 11.92
+  },
+  {
+   "word": "ringing.",
+   "start": 11.92,
+   "end": 12.16
+  },
+  {
+   "word": "You",
+   "start": 13.3,
+   "end": 13.58
+  },
+  {
+   "word": "sit",
+   "start": 13.58,
+   "end": 13.74
+  },
+  {
+   "word": "up.",
+   "start": 13.74,
+   "end": 13.92
+  },
+  {
+   "word": "Something",
+   "start": 14.36,
+   "end": 14.54
+  },
+  {
+   "word": "feels",
+   "start": 14.54,
+   "end": 15.08
+  },
+  {
+   "word": "cold.",
+   "start": 15.08,
+   "end": 15.68
+  },
+  {
+   "word": "You",
+   "start": 16.32,
+   "end": 16.46
+  },
+  {
+   "word": "touch",
+   "start": 16.46,
+   "end": 16.62
+  },
+  {
+   "word": "your",
+   "start": 16.62,
+   "end": 16.8
+  },
+  {
+   "word": "head.",
+   "start": 16.8,
+   "end": 17.08
+  },
+  {
+   "word": "There's",
+   "start": 17.92,
+   "end": 18.16
+  },
+  {
+   "word": "nothing",
+   "start": 18.16,
+   "end": 18.28
+  },
+  {
+   "word": "there.",
+   "start": 18.28,
+   "end": 18.6
+  },
+  {
+   "word": "Not",
+   "start": 19.12,
+   "end": 19.24
+  },
+  {
+   "word": "a",
+   "start": 19.24,
+   "end": 19.34
+  },
+  {
+   "word": "single",
+   "start": 19.34,
+   "end": 19.62
+  },
+  {
+   "word": "hair.",
+   "start": 19.62,
+   "end": 19.92
+  },
+  {
+   "word": "Sometime",
+   "start": 21.18,
+   "end": 21.66
+  },
+  {
+   "word": "during",
+   "start": 21.66,
+   "end": 21.96
+  },
+  {
+   "word": "the",
+   "start": 21.96,
+   "end": 22.16
+  },
+  {
+   "word": "night,",
+   "start": 22.16,
+   "end": 22.4
+  },
+  {
+   "word": "you",
+   "start": 22.62,
+   "end": 22.9
+  },
+  {
+   "word": "got",
+   "start": 22.9,
+   "end": 23.1
+  },
+  {
+   "word": "the",
+   "start": 23.1,
+   "end": 23.28
+  },
+  {
+   "word": "power",
+   "start": 23.28,
+   "end": 23.62
+  },
+  {
+   "word": "of",
+   "start": 23.62,
+   "end": 23.98
+  },
+  {
+   "word": "Saitama.",
+   "start": 23.98,
+   "end": 24.32
+  },
+  {
+   "word": "One-Punch",
+   "start": 24.32,
+   "end": 25.5
+  },
+  {
+   "word": "Man.",
+   "start": 25.5,
+   "end": 25.74
+  },
+  {
+   "word": "No",
+   "start": 26.52,
+   "end": 26.54
+  },
+  {
+   "word": "transformation,",
+   "start": 26.54,
+   "end": 27.08
+  },
+  {
+   "word": "no",
+   "start": 27.5,
+   "end": 27.54
+  },
+  {
+   "word": "special",
+   "start": 27.54,
+   "end": 27.84
+  },
+  {
+   "word": "moves,",
+   "start": 27.84,
+   "end": 28.26
+  },
+  {
+   "word": "no",
+   "start": 28.4,
+   "end": 28.48
+  },
+  {
+   "word": "gears,",
+   "start": 28.48,
+   "end": 28.84
+  },
+  {
+   "word": "no",
+   "start": 29.02,
+   "end": 29.12
+  },
+  {
+   "word": "glowing",
+   "start": 29.12,
+   "end": 29.4
+  },
+  {
+   "word": "aura.",
+   "start": 29.4,
+   "end": 29.72
+  },
+  {
+   "word": "Just",
+   "start": 30.54,
+   "end": 30.66
+  },
+  {
+   "word": "this:",
+   "start": 30.66,
+   "end": 31.32
+  },
+  {
+   "word": "anything",
+   "start": 32.04,
+   "end": 32.22
+  },
+  {
+   "word": "you",
+   "start": 32.22,
+   "end": 32.56
+  },
+  {
+   "word": "hit",
+   "start": 32.56,
+   "end": 32.82
+  },
+  {
+   "word": "with",
+   "start": 32.82,
+   "end": 33.12
+  },
+  {
+   "word": "real",
+   "start": 33.12,
+   "end": 33.56
+  },
+  {
+   "word": "intent",
+   "start": 33.56,
+   "end": 34.06
+  },
+  {
+   "word": "goes",
+   "start": 34.06,
+   "end": 34.6
+  },
+  {
+   "word": "down",
+   "start": 34.6,
+   "end": 34.86
+  },
+  {
+   "word": "in",
+   "start": 34.86,
+   "end": 34.98
+  },
+  {
+   "word": "one",
+   "start": 34.98,
+   "end": 35.12
+  },
+  {
+   "word": "punch.",
+   "start": 35.12,
+   "end": 35.44
+  },
+  {
+   "word": "Anything.",
+   "start": 36.42,
+   "end": 36.64
+  },
+  {
+   "word": "Within",
+   "start": 37.98,
+   "end": 38.1
+  },
+  {
+   "word": "a",
+   "start": 38.1,
+   "end": 38.28
+  },
+  {
+   "word": "few",
+   "start": 38.28,
+   "end": 38.42
+  },
+  {
+   "word": "months",
+   "start": 38.42,
+   "end": 38.7
+  },
+  {
+   "word": "you'll",
+   "start": 38.96,
+   "end": 39.14
+  },
+  {
+   "word": "be",
+   "start": 39.14,
+   "end": 39.22
+  },
+  {
+   "word": "the",
+   "start": 39.22,
+   "end": 39.38
+  },
+  {
+   "word": "strongest",
+   "start": 39.38,
+   "end": 39.78
+  },
+  {
+   "word": "person",
+   "start": 39.78,
+   "end": 40.26
+  },
+  {
+   "word": "who",
+   "start": 40.26,
+   "end": 40.54
+  },
+  {
+   "word": "has",
+   "start": 40.54,
+   "end": 40.68
+  },
+  {
+   "word": "ever",
+   "start": 40.68,
+   "end": 40.92
+  },
+  {
+   "word": "lived.",
+   "start": 40.92,
+   "end": 41.24
+  },
+  {
+   "word": "And",
+   "start": 41.74,
+   "end": 41.82
+  },
+  {
+   "word": "you'll",
+   "start": 41.82,
+   "end": 41.98
+  },
+  {
+   "word": "find",
+   "start": 41.98,
+   "end": 42.12
+  },
+  {
+   "word": "out",
+   "start": 42.12,
+   "end": 42.3
+  },
+  {
+   "word": "that",
+   "start": 42.3,
+   "end": 42.46
+  },
+  {
+   "word": "the",
+   "start": 42.46,
+   "end": 42.58
+  },
+  {
+   "word": "hardest",
+   "start": 42.58,
+   "end": 42.9
+  },
+  {
+   "word": "thing",
+   "start": 42.9,
+   "end": 43.18
+  },
+  {
+   "word": "about",
+   "start": 43.18,
+   "end": 43.42
+  },
+  {
+   "word": "being",
+   "start": 43.42,
+   "end": 43.6
+  },
+  {
+   "word": "unbeatable",
+   "start": 43.6,
+   "end": 44.16
+  },
+  {
+   "word": "isn't",
+   "start": 44.16,
+   "end": 44.62
+  },
+  {
+   "word": "the",
+   "start": 44.62,
+   "end": 44.74
+  },
+  {
+   "word": "fighting.",
+   "start": 44.74,
+   "end": 45.0
+  },
+  {
+   "word": "It's",
+   "start": 45.58,
+   "end": 45.86
+  },
+  {
+   "word": "everything",
+   "start": 45.86,
+   "end": 46.28
+  },
+  {
+   "word": "after.",
+   "start": 46.28,
+   "end": 46.78
+  },
+  {
+   "word": "First",
+   "start": 47.98,
+   "end": 48.28
+  },
+  {
+   "word": "problem:",
+   "start": 48.28,
+   "end": 48.66
+  },
+  {
+   "word": "everything",
+   "start": 49.26,
+   "end": 49.56
+  },
+  {
+   "word": "in",
+   "start": 49.56,
+   "end": 49.84
+  },
+  {
+   "word": "your",
+   "start": 49.84,
+   "end": 49.92
+  },
+  {
+   "word": "apartment",
+   "start": 49.92,
+   "end": 50.22
+  },
+  {
+   "word": "is",
+   "start": 50.22,
+   "end": 50.52
+  },
+  {
+   "word": "made",
+   "start": 50.52,
+   "end": 50.66
+  },
+  {
+   "word": "of",
+   "start": 50.66,
+   "end": 50.8
+  },
+  {
+   "word": "paper",
+   "start": 50.8,
+   "end": 51.1
+  },
+  {
+   "word": "now.",
+   "start": 51.1,
+   "end": 51.42
+  },
+  {
+   "word": "You",
+   "start": 51.42,
+   "end": 52.08
+  },
+  {
+   "word": "squeeze",
+   "start": 52.08,
+   "end": 52.32
+  },
+  {
+   "word": "the",
+   "start": 52.32,
+   "end": 52.48
+  },
+  {
+   "word": "toothpaste",
+   "start": 52.48,
+   "end": 52.92
+  },
+  {
+   "word": "and",
+   "start": 52.92,
+   "end": 53.24
+  },
+  {
+   "word": "it",
+   "start": 53.24,
+   "end": 53.36
+  },
+  {
+   "word": "empties",
+   "start": 53.36,
+   "end": 53.78
+  },
+  {
+   "word": "in",
+   "start": 53.78,
+   "end": 53.98
+  },
+  {
+   "word": "one",
+   "start": 53.98,
+   "end": 54.16
+  },
+  {
+   "word": "shot.",
+   "start": 54.16,
+   "end": 54.44
+  },
+  {
+   "word": "You",
+   "start": 54.98,
+   "end": 55.02
+  },
+  {
+   "word": "turn",
+   "start": 55.02,
+   "end": 55.16
+  },
+  {
+   "word": "the",
+   "start": 55.16,
+   "end": 55.3
+  },
+  {
+   "word": "tap",
+   "start": 55.3,
+   "end": 55.48
+  },
+  {
+   "word": "and",
+   "start": 55.48,
+   "end": 55.76
+  },
+  {
+   "word": "it",
+   "start": 55.76,
+   "end": 55.9
+  },
+  {
+   "word": "comes",
+   "start": 55.9,
+   "end": 56.06
+  },
+  {
+   "word": "off",
+   "start": 56.06,
+   "end": 56.26
+  },
+  {
+   "word": "in",
+   "start": 56.26,
+   "end": 56.4
+  },
+  {
+   "word": "your",
+   "start": 56.4,
+   "end": 56.54
+  },
+  {
+   "word": "hand.",
+   "start": 56.54,
+   "end": 56.84
+  },
+  {
+   "word": "You",
+   "start": 57.56,
+   "end": 57.82
+  },
+  {
+   "word": "pick",
+   "start": 57.82,
+   "end": 57.94
+  },
+  {
+   "word": "up",
+   "start": 57.94,
+   "end": 58.08
+  },
+  {
+   "word": "a",
+   "start": 58.08,
+   "end": 58.2
+  },
+  {
+   "word": "mug",
+   "start": 58.2,
+   "end": 58.36
+  },
+  {
+   "word": "and",
+   "start": 58.36,
+   "end": 58.76
+  },
+  {
+   "word": "you're",
+   "start": 58.76,
+   "end": 58.96
+  },
+  {
+   "word": "holding",
+   "start": 58.96,
+   "end": 59.22
+  },
+  {
+   "word": "a",
+   "start": 59.22,
+   "end": 59.42
+  },
+  {
+   "word": "handle.",
+   "start": 59.42,
+   "end": 59.7
+  },
+  {
+   "word": "So",
+   "start": 66.28,
+   "end": 66.46
+  },
+  {
+   "word": "you",
+   "start": 66.46,
+   "end": 66.82
+  },
+  {
+   "word": "learn",
+   "start": 66.82,
+   "end": 67.06
+  },
+  {
+   "word": "rule",
+   "start": 67.06,
+   "end": 67.28
+  },
+  {
+   "word": "one,",
+   "start": 67.28,
+   "end": 67.6
+  },
+  {
+   "word": "the",
+   "start": 68.06,
+   "end": 68.14
+  },
+  {
+   "word": "way",
+   "start": 68.14,
+   "end": 68.28
+  },
+  {
+   "word": "Saitama",
+   "start": 68.28,
+   "end": 68.72
+  },
+  {
+   "word": "lives",
+   "start": 68.72,
+   "end": 68.92
+  },
+  {
+   "word": "it:",
+   "start": 68.92,
+   "end": 69.4
+  },
+  {
+   "word": "your",
+   "start": 69.72,
+   "end": 69.82
+  },
+  {
+   "word": "strength",
+   "start": 69.82,
+   "end": 70.18
+  },
+  {
+   "word": "doesn't",
+   "start": 70.18,
+   "end": 70.68
+  },
+  {
+   "word": "turn",
+   "start": 70.68,
+   "end": 70.92
+  },
+  {
+   "word": "off.",
+   "start": 70.92,
+   "end": 71.2
+  },
+  {
+   "word": "You",
+   "start": 71.7,
+   "end": 71.78
+  },
+  {
+   "word": "do.",
+   "start": 71.78,
+   "end": 71.98
+  },
+  {
+   "word": "You",
+   "start": 72.48,
+   "end": 72.6
+  },
+  {
+   "word": "move",
+   "start": 72.6,
+   "end": 72.76
+  },
+  {
+   "word": "slowly.",
+   "start": 72.76,
+   "end": 73.32
+  },
+  {
+   "word": "You",
+   "start": 73.7,
+   "end": 73.82
+  },
+  {
+   "word": "hold",
+   "start": 73.82,
+   "end": 74.08
+  },
+  {
+   "word": "things",
+   "start": 74.08,
+   "end": 74.34
+  },
+  {
+   "word": "like",
+   "start": 74.34,
+   "end": 74.58
+  },
+  {
+   "word": "they're",
+   "start": 74.58,
+   "end": 74.9
+  },
+  {
+   "word": "eggs.",
+   "start": 74.9,
+   "end": 75.16
+  },
+  {
+   "word": "Door",
+   "start": 76.14,
+   "end": 76.2
+  },
+  {
+   "word": "handles",
+   "start": 76.2,
+   "end": 76.56
+  },
+  {
+   "word": "get",
+   "start": 76.56,
+   "end": 76.8
+  },
+  {
+   "word": "one",
+   "start": 76.8,
+   "end": 77.18
+  },
+  {
+   "word": "finger.",
+   "start": 77.18,
+   "end": 77.6
+  },
+  {
+   "word": "By",
+   "start": 77.6,
+   "end": 78.5
+  },
+  {
+   "word": "lunchtime",
+   "start": 78.5,
+   "end": 78.9
+  },
+  {
+   "word": "you",
+   "start": 79.36,
+   "end": 79.36
+  },
+  {
+   "word": "can",
+   "start": 79.36,
+   "end": 79.48
+  },
+  {
+   "word": "make",
+   "start": 79.48,
+   "end": 79.6
+  },
+  {
+   "word": "a",
+   "start": 79.6,
+   "end": 79.84
+  },
+  {
+   "word": "cup",
+   "start": 79.84,
+   "end": 79.94
+  },
+  {
+   "word": "of",
+   "start": 79.94,
+   "end": 80.08
+  },
+  {
+   "word": "tea",
+   "start": 80.08,
+   "end": 80.3
+  },
+  {
+   "word": "without",
+   "start": 80.3,
+   "end": 80.6
+  },
+  {
+   "word": "destroying",
+   "start": 80.6,
+   "end": 81.28
+  },
+  {
+   "word": "the",
+   "start": 81.28,
+   "end": 81.54
+  },
+  {
+   "word": "kettle,",
+   "start": 81.54,
+   "end": 81.8
+  },
+  {
+   "word": "and",
+   "start": 82.12,
+   "end": 82.34
+  },
+  {
+   "word": "you",
+   "start": 82.34,
+   "end": 82.56
+  },
+  {
+   "word": "have",
+   "start": 82.56,
+   "end": 82.74
+  },
+  {
+   "word": "never",
+   "start": 82.74,
+   "end": 83.08
+  },
+  {
+   "word": "been",
+   "start": 83.08,
+   "end": 83.34
+  },
+  {
+   "word": "prouder",
+   "start": 83.34,
+   "end": 83.72
+  },
+  {
+   "word": "of",
+   "start": 83.72,
+   "end": 83.86
+  },
+  {
+   "word": "anything.",
+   "start": 83.86,
+   "end": 84.28
+  },
+  {
+   "word": "And",
+   "start": 85.48,
+   "end": 85.52
+  },
+  {
+   "word": "the",
+   "start": 85.52,
+   "end": 85.64
+  },
+  {
+   "word": "hair.",
+   "start": 85.64,
+   "end": 85.94
+  },
+  {
+   "word": "Real",
+   "start": 86.9,
+   "end": 86.9
+  },
+  {
+   "word": "stress",
+   "start": 86.9,
+   "end": 87.28
+  },
+  {
+   "word": "hair",
+   "start": 87.28,
+   "end": 87.56
+  },
+  {
+   "word": "loss",
+   "start": 87.56,
+   "end": 87.82
+  },
+  {
+   "word": "takes",
+   "start": 87.82,
+   "end": 88.08
+  },
+  {
+   "word": "two",
+   "start": 88.08,
+   "end": 88.38
+  },
+  {
+   "word": "to",
+   "start": 88.38,
+   "end": 88.48
+  },
+  {
+   "word": "four",
+   "start": 88.48,
+   "end": 88.68
+  },
+  {
+   "word": "months",
+   "start": 88.68,
+   "end": 88.84
+  },
+  {
+   "word": "to",
+   "start": 88.84,
+   "end": 89.04
+  },
+  {
+   "word": "show",
+   "start": 89.04,
+   "end": 89.16
+  },
+  {
+   "word": "up,",
+   "start": 89.16,
+   "end": 89.34
+  },
+  {
+   "word": "and",
+   "start": 89.46,
+   "end": 89.5
+  },
+  {
+   "word": "it",
+   "start": 89.5,
+   "end": 89.6
+  },
+  {
+   "word": "usually",
+   "start": 89.6,
+   "end": 90.0
+  },
+  {
+   "word": "grows",
+   "start": 90.0,
+   "end": 90.28
+  },
+  {
+   "word": "back.",
+   "start": 90.28,
+   "end": 90.64
+  },
+  {
+   "word": "Yours",
+   "start": 91.4,
+   "end": 91.74
+  },
+  {
+   "word": "took",
+   "start": 91.74,
+   "end": 91.92
+  },
+  {
+   "word": "one",
+   "start": 91.92,
+   "end": 92.26
+  },
+  {
+   "word": "night.",
+   "start": 92.26,
+   "end": 92.5
+  },
+  {
+   "word": "And",
+   "start": 93.06,
+   "end": 93.36
+  },
+  {
+   "word": "it's",
+   "start": 93.36,
+   "end": 93.62
+  },
+  {
+   "word": "not",
+   "start": 93.62,
+   "end": 93.78
+  },
+  {
+   "word": "coming",
+   "start": 93.78,
+   "end": 94.06
+  },
+  {
+   "word": "back.",
+   "start": 94.06,
+   "end": 94.48
+  },
+  {
+   "word": "You",
+   "start": 95.6,
+   "end": 95.84
+  },
+  {
+   "word": "need",
+   "start": 95.84,
+   "end": 95.96
+  },
+  {
+   "word": "to",
+   "start": 95.96,
+   "end": 96.1
+  },
+  {
+   "word": "know",
+   "start": 96.1,
+   "end": 96.24
+  },
+  {
+   "word": "how",
+   "start": 96.24,
+   "end": 96.46
+  },
+  {
+   "word": "strong",
+   "start": 96.46,
+   "end": 96.8
+  },
+  {
+   "word": "you",
+   "start": 96.8,
+   "end": 97.02
+  },
+  {
+   "word": "are,",
+   "start": 97.02,
+   "end": 97.26
+  },
+  {
+   "word": "so",
+   "start": 97.5,
+   "end": 97.66
+  },
+  {
+   "word": "you",
+   "start": 97.66,
+   "end": 97.86
+  },
+  {
+   "word": "go",
+   "start": 97.86,
+   "end": 97.98
+  },
+  {
+   "word": "to",
+   "start": 97.98,
+   "end": 98.08
+  },
+  {
+   "word": "the",
+   "start": 98.08,
+   "end": 98.22
+  },
+  {
+   "word": "quietest",
+   "start": 98.22,
+   "end": 98.84
+  },
+  {
+   "word": "gym",
+   "start": 98.84,
+   "end": 99.02
+  },
+  {
+   "word": "in",
+   "start": 99.02,
+   "end": 99.18
+  },
+  {
+   "word": "town",
+   "start": 99.18,
+   "end": 99.46
+  },
+  {
+   "word": "and",
+   "start": 99.46,
+   "end": 99.68
+  },
+  {
+   "word": "ask",
+   "start": 99.68,
+   "end": 99.96
+  },
+  {
+   "word": "to",
+   "start": 99.96,
+   "end": 100.14
+  },
+  {
+   "word": "use",
+   "start": 100.14,
+   "end": 100.24
+  },
+  {
+   "word": "the",
+   "start": 100.24,
+   "end": 100.36
+  },
+  {
+   "word": "heavy",
+   "start": 100.36,
+   "end": 100.56
+  },
+  {
+   "word": "bag.",
+   "start": 100.56,
+   "end": 100.8
+  },
+  {
+   "word": "The",
+   "start": 101.36,
+   "end": 101.52
+  },
+  {
+   "word": "trainer",
+   "start": 101.52,
+   "end": 101.7
+  },
+  {
+   "word": "laughs.",
+   "start": 101.7,
+   "end": 101.96
+  },
+  {
+   "word": "You",
+   "start": 102.66,
+   "end": 102.82
+  },
+  {
+   "word": "tap",
+   "start": 102.82,
+   "end": 103.0
+  },
+  {
+   "word": "it.",
+   "start": 103.0,
+   "end": 103.22
+  },
+  {
+   "word": "Barely.",
+   "start": 103.22,
+   "end": 103.82
+  },
+  {
+   "word": "The",
+   "start": 104.6,
+   "end": 104.82
+  },
+  {
+   "word": "bag",
+   "start": 104.82,
+   "end": 105.08
+  },
+  {
+   "word": "doesn't",
+   "start": 105.08,
+   "end": 105.62
+  },
+  {
+   "word": "swing.",
+   "start": 105.62,
+   "end": 105.92
+  },
+  {
+   "word": "It",
+   "start": 105.92,
+   "end": 106.6
+  },
+  {
+   "word": "tears",
+   "start": 106.6,
+   "end": 107.06
+  },
+  {
+   "word": "off",
+   "start": 107.06,
+   "end": 107.36
+  },
+  {
+   "word": "the",
+   "start": 107.36,
+   "end": 107.58
+  },
+  {
+   "word": "chain,",
+   "start": 107.58,
+   "end": 108.04
+  },
+  {
+   "word": "goes",
+   "start": 108.4,
+   "end": 108.7
+  },
+  {
+   "word": "through",
+   "start": 108.7,
+   "end": 108.98
+  },
+  {
+   "word": "the",
+   "start": 108.98,
+   "end": 109.14
+  },
+  {
+   "word": "wall,",
+   "start": 109.14,
+   "end": 109.4
+  },
+  {
+   "word": "and",
+   "start": 109.7,
+   "end": 109.88
+  },
+  {
+   "word": "lands",
+   "start": 109.88,
+   "end": 110.1
+  },
+  {
+   "word": "in",
+   "start": 110.1,
+   "end": 110.36
+  },
+  {
+   "word": "the",
+   "start": 110.36,
+   "end": 110.48
+  },
+  {
+   "word": "car",
+   "start": 110.48,
+   "end": 110.72
+  },
+  {
+   "word": "park",
+   "start": 110.72,
+   "end": 110.94
+  },
+  {
+   "word": "outside.",
+   "start": 110.94,
+   "end": 111.4
+  },
+  {
+   "word": "So",
+   "start": 112.64,
+   "end": 112.76
+  },
+  {
+   "word": "you",
+   "start": 112.76,
+   "end": 113.04
+  },
+  {
+   "word": "learn",
+   "start": 113.04,
+   "end": 113.28
+  },
+  {
+   "word": "rule",
+   "start": 113.28,
+   "end": 113.52
+  },
+  {
+   "word": "two.",
+   "start": 113.52,
+   "end": 114.34
+  },
+  {
+   "word": "With",
+   "start": 114.34,
+   "end": 114.54
+  },
+  {
+   "word": "Saitama",
+   "start": 114.54,
+   "end": 114.92
+  },
+  {
+   "word": "there",
+   "start": 115.18,
+   "end": 115.22
+  },
+  {
+   "word": "are",
+   "start": 115.22,
+   "end": 115.4
+  },
+  {
+   "word": "two",
+   "start": 115.4,
+   "end": 115.6
+  },
+  {
+   "word": "kinds",
+   "start": 115.6,
+   "end": 115.86
+  },
+  {
+   "word": "of",
+   "start": 115.86,
+   "end": 116.02
+  },
+  {
+   "word": "punches:",
+   "start": 116.02,
+   "end": 116.28
+  },
+  {
+   "word": "the",
+   "start": 116.78,
+   "end": 116.88
+  },
+  {
+   "word": "normal",
+   "start": 116.88,
+   "end": 117.1
+  },
+  {
+   "word": "one,",
+   "start": 117.1,
+   "end": 117.42
+  },
+  {
+   "word": "which",
+   "start": 117.66,
+   "end": 117.76
+  },
+  {
+   "word": "is",
+   "start": 117.76,
+   "end": 117.98
+  },
+  {
+   "word": "already",
+   "start": 117.98,
+   "end": 118.28
+  },
+  {
+   "word": "too",
+   "start": 118.28,
+   "end": 118.48
+  },
+  {
+   "word": "much,",
+   "start": 118.48,
+   "end": 118.8
+  },
+  {
+   "word": "and",
+   "start": 119.14,
+   "end": 119.36
+  },
+  {
+   "word": "the",
+   "start": 119.36,
+   "end": 119.48
+  },
+  {
+   "word": "serious",
+   "start": 119.48,
+   "end": 119.82
+  },
+  {
+   "word": "one,",
+   "start": 119.82,
+   "end": 120.2
+  },
+  {
+   "word": "which",
+   "start": 120.52,
+   "end": 120.72
+  },
+  {
+   "word": "you",
+   "start": 120.72,
+   "end": 120.92
+  },
+  {
+   "word": "never",
+   "start": 120.92,
+   "end": 121.14
+  },
+  {
+   "word": "want",
+   "start": 121.14,
+   "end": 121.34
+  },
+  {
+   "word": "to",
+   "start": 121.34,
+   "end": 121.46
+  },
+  {
+   "word": "find",
+   "start": 121.46,
+   "end": 121.6
+  },
+  {
+   "word": "out",
+   "start": 121.6,
+   "end": 121.8
+  },
+  {
+   "word": "about",
+   "start": 121.8,
+   "end": 122.0
+  },
+  {
+   "word": "indoors.",
+   "start": 122.0,
+   "end": 122.4
+  },
+  {
+   "word": "You",
+   "start": 123.58,
+   "end": 123.72
+  },
+  {
+   "word": "go",
+   "start": 123.72,
+   "end": 123.88
+  },
+  {
+   "word": "home",
+   "start": 123.88,
+   "end": 124.14
+  },
+  {
+   "word": "and",
+   "start": 124.14,
+   "end": 124.36
+  },
+  {
+   "word": "practise",
+   "start": 124.36,
+   "end": 124.66
+  },
+  {
+   "word": "holding",
+   "start": 124.66,
+   "end": 124.94
+  },
+  {
+   "word": "back",
+   "start": 124.94,
+   "end": 125.28
+  },
+  {
+   "word": "on",
+   "start": 125.28,
+   "end": 125.76
+  },
+  {
+   "word": "a",
+   "start": 125.76,
+   "end": 125.88
+  },
+  {
+   "word": "pillow.",
+   "start": 125.88,
+   "end": 126.16
+  },
+  {
+   "word": "Then",
+   "start": 126.86,
+   "end": 127.1
+  },
+  {
+   "word": "on",
+   "start": 127.1,
+   "end": 127.42
+  },
+  {
+   "word": "a",
+   "start": 127.42,
+   "end": 127.54
+  },
+  {
+   "word": "mattress.",
+   "start": 127.54,
+   "end": 127.82
+  },
+  {
+   "word": "Then",
+   "start": 128.46,
+   "end": 128.62
+  },
+  {
+   "word": "you",
+   "start": 128.62,
+   "end": 128.86
+  },
+  {
+   "word": "buy",
+   "start": 128.86,
+   "end": 129.08
+  },
+  {
+   "word": "a",
+   "start": 129.08,
+   "end": 129.22
+  },
+  {
+   "word": "new",
+   "start": 129.22,
+   "end": 129.3
+  },
+  {
+   "word": "mattress.",
+   "start": 129.3,
+   "end": 129.66
+  },
+  {
+   "word": "On",
+   "start": 130.92,
+   "end": 131.48
+  },
+  {
+   "word": "day",
+   "start": 131.48,
+   "end": 131.82
+  },
+  {
+   "word": "five",
+   "start": 131.82,
+   "end": 132.22
+  },
+  {
+   "word": "you",
+   "start": 132.44,
+   "end": 132.46
+  },
+  {
+   "word": "test",
+   "start": 132.46,
+   "end": 132.7
+  },
+  {
+   "word": "your",
+   "start": 132.7,
+   "end": 132.88
+  },
+  {
+   "word": "speed",
+   "start": 132.88,
+   "end": 133.1
+  },
+  {
+   "word": "somewhere",
+   "start": 133.1,
+   "end": 133.5
+  },
+  {
+   "word": "safe:",
+   "start": 133.5,
+   "end": 133.86
+  },
+  {
+   "word": "an",
+   "start": 134.34,
+   "end": 134.44
+  },
+  {
+   "word": "empty",
+   "start": 134.44,
+   "end": 134.8
+  },
+  {
+   "word": "field,",
+   "start": 134.8,
+   "end": 135.22
+  },
+  {
+   "word": "nobody",
+   "start": 135.52,
+   "end": 135.68
+  },
+  {
+   "word": "around.",
+   "start": 135.68,
+   "end": 136.1
+  },
+  {
+   "word": "You",
+   "start": 136.58,
+   "end": 136.78
+  },
+  {
+   "word": "punch",
+   "start": 136.78,
+   "end": 136.94
+  },
+  {
+   "word": "the",
+   "start": 136.94,
+   "end": 137.14
+  },
+  {
+   "word": "air.",
+   "start": 137.14,
+   "end": 137.3
+  },
+  {
+   "word": "Not",
+   "start": 137.56,
+   "end": 137.82
+  },
+  {
+   "word": "at",
+   "start": 137.82,
+   "end": 137.96
+  },
+  {
+   "word": "anything.",
+   "start": 137.96,
+   "end": 138.32
+  },
+  {
+   "word": "Just",
+   "start": 138.52,
+   "end": 138.6
+  },
+  {
+   "word": "the",
+   "start": 138.6,
+   "end": 138.8
+  },
+  {
+   "word": "air.",
+   "start": 138.8,
+   "end": 139.0
+  },
+  {
+   "word": "There's",
+   "start": 139.52,
+   "end": 139.76
+  },
+  {
+   "word": "a",
+   "start": 139.76,
+   "end": 139.94
+  },
+  {
+   "word": "crack",
+   "start": 139.94,
+   "end": 140.28
+  },
+  {
+   "word": "like",
+   "start": 140.28,
+   "end": 140.58
+  },
+  {
+   "word": "a",
+   "start": 140.58,
+   "end": 140.78
+  },
+  {
+   "word": "gunshot,",
+   "start": 140.78,
+   "end": 141.18
+  },
+  {
+   "word": "and",
+   "start": 141.18,
+   "end": 141.46
+  },
+  {
+   "word": "every",
+   "start": 141.46,
+   "end": 141.82
+  },
+  {
+   "word": "car",
+   "start": 141.82,
+   "end": 142.14
+  },
+  {
+   "word": "alarm",
+   "start": 142.14,
+   "end": 142.36
+  },
+  {
+   "word": "in",
+   "start": 142.36,
+   "end": 142.52
+  },
+  {
+   "word": "the",
+   "start": 142.52,
+   "end": 142.6
+  },
+  {
+   "word": "street",
+   "start": 142.6,
+   "end": 142.82
+  },
+  {
+   "word": "behind",
+   "start": 142.82,
+   "end": 143.12
+  },
+  {
+   "word": "you",
+   "start": 143.12,
+   "end": 143.34
+  },
+  {
+   "word": "goes",
+   "start": 143.34,
+   "end": 143.52
+  },
+  {
+   "word": "off.",
+   "start": 143.52,
+   "end": 143.8
+  },
+  {
+   "word": "The",
+   "start": 144.98,
+   "end": 145.08
+  },
+  {
+   "word": "fastest",
+   "start": 145.08,
+   "end": 145.6
+  },
+  {
+   "word": "punches",
+   "start": 145.6,
+   "end": 146.06
+  },
+  {
+   "word": "ever",
+   "start": 146.06,
+   "end": 146.52
+  },
+  {
+   "word": "measured",
+   "start": 146.52,
+   "end": 146.86
+  },
+  {
+   "word": "in",
+   "start": 146.86,
+   "end": 147.02
+  },
+  {
+   "word": "a",
+   "start": 147.02,
+   "end": 147.26
+  },
+  {
+   "word": "lab",
+   "start": 147.26,
+   "end": 147.38
+  },
+  {
+   "word": "hit",
+   "start": 147.38,
+   "end": 147.88
+  },
+  {
+   "word": "about",
+   "start": 147.88,
+   "end": 148.16
+  },
+  {
+   "word": "12",
+   "start": 148.16,
+   "end": 148.6
+  },
+  {
+   "word": "metres",
+   "start": 148.6,
+   "end": 148.84
+  },
+  {
+   "word": "per",
+   "start": 148.84,
+   "end": 149.16
+  },
+  {
+   "word": "second.",
+   "start": 149.16,
+   "end": 149.46
+  },
+  {
+   "word": "To",
+   "start": 149.92,
+   "end": 150.1
+  },
+  {
+   "word": "make",
+   "start": 150.1,
+   "end": 150.22
+  },
+  {
+   "word": "that",
+   "start": 150.22,
+   "end": 150.46
+  },
+  {
+   "word": "crack,",
+   "start": 150.46,
+   "end": 150.74
+  },
+  {
+   "word": "your",
+   "start": 151.08,
+   "end": 151.16
+  },
+  {
+   "word": "fist",
+   "start": 151.16,
+   "end": 151.4
+  },
+  {
+   "word": "broke",
+   "start": 151.4,
+   "end": 151.84
+  },
+  {
+   "word": "the",
+   "start": 151.84,
+   "end": 152.12
+  },
+  {
+   "word": "sound",
+   "start": 152.12,
+   "end": 152.58
+  },
+  {
+   "word": "barrier,",
+   "start": 152.58,
+   "end": 152.98
+  },
+  {
+   "word": "around",
+   "start": 153.34,
+   "end": 153.6
+  },
+  {
+   "word": "343",
+   "start": 153.6,
+   "end": 154.5
+  },
+  {
+   "word": "metres",
+   "start": 154.5,
+   "end": 155.14
+  },
+  {
+   "word": "per",
+   "start": 155.14,
+   "end": 155.46
+  },
+  {
+   "word": "second.",
+   "start": 155.46,
+   "end": 155.74
+  },
+  {
+   "word": "That's",
+   "start": 156.18,
+   "end": 156.66
+  },
+  {
+   "word": "nearly",
+   "start": 156.66,
+   "end": 156.88
+  },
+  {
+   "word": "thirty",
+   "start": 156.88,
+   "end": 157.36
+  },
+  {
+   "word": "times",
+   "start": 157.36,
+   "end": 157.76
+  },
+  {
+   "word": "faster,",
+   "start": 157.76,
+   "end": 158.24
+  },
+  {
+   "word": "and",
+   "start": 158.24,
+   "end": 158.62
+  },
+  {
+   "word": "about",
+   "start": 158.62,
+   "end": 158.84
+  },
+  {
+   "word": "eight",
+   "start": 158.84,
+   "end": 159.07
+  },
+  {
+   "word": "hundred",
+   "start": 159.07,
+   "end": 159.3
+  },
+  {
+   "word": "times",
+   "start": 159.3,
+   "end": 159.9
+  },
+  {
+   "word": "the",
+   "start": 159.9,
+   "end": 160.08
+  },
+  {
+   "word": "energy.",
+   "start": 160.08,
+   "end": 160.4
+  },
+  {
+   "word": "You",
+   "start": 161.26,
+   "end": 161.56
+  },
+  {
+   "word": "punched",
+   "start": 161.56,
+   "end": 161.94
+  },
+  {
+   "word": "the",
+   "start": 161.94,
+   "end": 162.24
+  },
+  {
+   "word": "sky,",
+   "start": 162.24,
+   "end": 162.54
+  },
+  {
+   "word": "and",
+   "start": 162.54,
+   "end": 163.34
+  },
+  {
+   "word": "the",
+   "start": 163.34,
+   "end": 163.56
+  },
+  {
+   "word": "sky",
+   "start": 163.56,
+   "end": 163.86
+  },
+  {
+   "word": "complained.",
+   "start": 163.86,
+   "end": 164.32
+  },
+  {
+   "word": "Somebody",
+   "start": 165.3,
+   "end": 165.6
+  },
+  {
+   "word": "filmed",
+   "start": 165.6,
+   "end": 165.94
+  },
+  {
+   "word": "it",
+   "start": 165.94,
+   "end": 166.14
+  },
+  {
+   "word": "from",
+   "start": 166.14,
+   "end": 166.34
+  },
+  {
+   "word": "a",
+   "start": 166.34,
+   "end": 166.46
+  },
+  {
+   "word": "balcony.",
+   "start": 166.46,
+   "end": 166.8
+  },
+  {
+   "word": "By",
+   "start": 168.22,
+   "end": 168.38
+  },
+  {
+   "word": "day",
+   "start": 168.38,
+   "end": 168.6
+  },
+  {
+   "word": "nine",
+   "start": 168.6,
+   "end": 168.94
+  },
+  {
+   "word": "the",
+   "start": 169.28,
+   "end": 169.36
+  },
+  {
+   "word": "video",
+   "start": 169.36,
+   "end": 169.62
+  },
+  {
+   "word": "has",
+   "start": 169.62,
+   "end": 169.9
+  },
+  {
+   "word": "twelve",
+   "start": 169.9,
+   "end": 170.34
+  },
+  {
+   "word": "million",
+   "start": 170.34,
+   "end": 170.72
+  },
+  {
+   "word": "views.",
+   "start": 170.72,
+   "end": 171.2
+  },
+  {
+   "word": "The",
+   "start": 171.88,
+   "end": 171.98
+  },
+  {
+   "word": "comments",
+   "start": 171.98,
+   "end": 172.24
+  },
+  {
+   "word": "are",
+   "start": 172.24,
+   "end": 172.44
+  },
+  {
+   "word": "split",
+   "start": 172.44,
+   "end": 172.7
+  },
+  {
+   "word": "right",
+   "start": 172.7,
+   "end": 173.0
+  },
+  {
+   "word": "down",
+   "start": 173.0,
+   "end": 173.16
+  },
+  {
+   "word": "the",
+   "start": 173.16,
+   "end": 173.24
+  },
+  {
+   "word": "middle.",
+   "start": 173.24,
+   "end": 173.5
+  },
+  {
+   "word": "Half",
+   "start": 174.12,
+   "end": 174.22
+  },
+  {
+   "word": "of",
+   "start": 174.22,
+   "end": 174.3
+  },
+  {
+   "word": "them",
+   "start": 174.3,
+   "end": 174.38
+  },
+  {
+   "word": "say",
+   "start": 174.38,
+   "end": 174.66
+  },
+  {
+   "word": "it's",
+   "start": 174.66,
+   "end": 174.96
+  },
+  {
+   "word": "CGI.",
+   "start": 174.96,
+   "end": 175.2
+  },
+  {
+   "word": "The",
+   "start": 175.96,
+   "end": 176.06
+  },
+  {
+   "word": "other",
+   "start": 176.06,
+   "end": 176.2
+  },
+  {
+   "word": "half",
+   "start": 176.2,
+   "end": 176.38
+  },
+  {
+   "word": "say",
+   "start": 176.38,
+   "end": 176.66
+  },
+  {
+   "word": "it's",
+   "start": 176.66,
+   "end": 176.94
+  },
+  {
+   "word": "CGI,",
+   "start": 176.94,
+   "end": 177.26
+  },
+  {
+   "word": "but",
+   "start": 177.66,
+   "end": 177.82
+  },
+  {
+   "word": "good",
+   "start": 177.82,
+   "end": 178.28
+  },
+  {
+   "word": "CGI.",
+   "start": 178.28,
+   "end": 178.62
+  },
+  {
+   "word": "Nobody",
+   "start": 179.34,
+   "end": 179.58
+  },
+  {
+   "word": "believes",
+   "start": 179.58,
+   "end": 180.02
+  },
+  {
+   "word": "you.",
+   "start": 180.02,
+   "end": 180.28
+  },
+  {
+   "word": "That's",
+   "start": 180.66,
+   "end": 181.0
+  },
+  {
+   "word": "the",
+   "start": 181.0,
+   "end": 181.14
+  },
+  {
+   "word": "strange",
+   "start": 181.14,
+   "end": 181.34
+  },
+  {
+   "word": "part.",
+   "start": 181.34,
+   "end": 181.6
+  },
+  {
+   "word": "You",
+   "start": 182.18,
+   "end": 182.38
+  },
+  {
+   "word": "can",
+   "start": 182.38,
+   "end": 182.52
+  },
+  {
+   "word": "stop",
+   "start": 182.52,
+   "end": 182.74
+  },
+  {
+   "word": "a",
+   "start": 182.74,
+   "end": 182.86
+  },
+  {
+   "word": "truck,",
+   "start": 182.86,
+   "end": 183.12
+  },
+  {
+   "word": "but",
+   "start": 183.12,
+   "end": 183.38
+  },
+  {
+   "word": "you",
+   "start": 183.38,
+   "end": 183.58
+  },
+  {
+   "word": "can't",
+   "start": 183.58,
+   "end": 184.0
+  },
+  {
+   "word": "stop",
+   "start": 184.0,
+   "end": 184.14
+  },
+  {
+   "word": "people",
+   "start": 184.14,
+   "end": 184.38
+  },
+  {
+   "word": "saying",
+   "start": 184.38,
+   "end": 184.66
+  },
+  {
+   "word": "you're",
+   "start": 184.66,
+   "end": 184.88
+  },
+  {
+   "word": "fake.",
+   "start": 184.88,
+   "end": 185.04
+  },
+  {
+   "word": "You",
+   "start": 186.16,
+   "end": 186.6
+  },
+  {
+   "word": "find",
+   "start": 186.6,
+   "end": 186.84
+  },
+  {
+   "word": "out",
+   "start": 186.84,
+   "end": 187.08
+  },
+  {
+   "word": "that",
+   "start": 187.08,
+   "end": 187.32
+  },
+  {
+   "word": "being",
+   "start": 187.32,
+   "end": 187.62
+  },
+  {
+   "word": "strong",
+   "start": 187.62,
+   "end": 188.1
+  },
+  {
+   "word": "in",
+   "start": 188.1,
+   "end": 188.34
+  },
+  {
+   "word": "real",
+   "start": 188.34,
+   "end": 188.54
+  },
+  {
+   "word": "life",
+   "start": 188.54,
+   "end": 188.84
+  },
+  {
+   "word": "doesn't",
+   "start": 188.84,
+   "end": 189.16
+  },
+  {
+   "word": "come",
+   "start": 189.16,
+   "end": 189.4
+  },
+  {
+   "word": "with",
+   "start": 189.4,
+   "end": 189.56
+  },
+  {
+   "word": "an",
+   "start": 189.56,
+   "end": 189.7
+  },
+  {
+   "word": "audience.",
+   "start": 189.7,
+   "end": 190.12
+  },
+  {
+   "word": "It",
+   "start": 190.74,
+   "end": 190.8
+  },
+  {
+   "word": "comes",
+   "start": 190.8,
+   "end": 190.96
+  },
+  {
+   "word": "with",
+   "start": 190.96,
+   "end": 191.16
+  },
+  {
+   "word": "a",
+   "start": 191.16,
+   "end": 191.3
+  },
+  {
+   "word": "landlord",
+   "start": 191.3,
+   "end": 191.7
+  },
+  {
+   "word": "asking",
+   "start": 191.7,
+   "end": 192.1
+  },
+  {
+   "word": "who",
+   "start": 192.1,
+   "end": 192.58
+  },
+  {
+   "word": "is",
+   "start": 192.58,
+   "end": 192.76
+  },
+  {
+   "word": "paying",
+   "start": 192.76,
+   "end": 192.98
+  },
+  {
+   "word": "for",
+   "start": 192.98,
+   "end": 193.26
+  },
+  {
+   "word": "the",
+   "start": 193.26,
+   "end": 193.36
+  },
+  {
+   "word": "wall.",
+   "start": 193.36,
+   "end": 193.6
+  },
+  {
+   "word": "On",
+   "start": 194.82,
+   "end": 194.84
+  },
+  {
+   "word": "day",
+   "start": 194.84,
+   "end": 195.02
+  },
+  {
+   "word": "twelve",
+   "start": 195.02,
+   "end": 195.76
+  },
+  {
+   "word": "you",
+   "start": 195.76,
+   "end": 195.82
+  },
+  {
+   "word": "try",
+   "start": 195.82,
+   "end": 196.04
+  },
+  {
+   "word": "to",
+   "start": 196.04,
+   "end": 196.18
+  },
+  {
+   "word": "live",
+   "start": 196.18,
+   "end": 196.34
+  },
+  {
+   "word": "a",
+   "start": 196.34,
+   "end": 196.54
+  },
+  {
+   "word": "normal",
+   "start": 196.54,
+   "end": 196.76
+  },
+  {
+   "word": "life.",
+   "start": 196.76,
+   "end": 197.12
+  },
+  {
+   "word": "You",
+   "start": 197.64,
+   "end": 197.74
+  },
+  {
+   "word": "have",
+   "start": 197.74,
+   "end": 197.84
+  },
+  {
+   "word": "a",
+   "start": 197.84,
+   "end": 197.92
+  },
+  {
+   "word": "job",
+   "start": 197.92,
+   "end": 198.08
+  },
+  {
+   "word": "interview",
+   "start": 198.08,
+   "end": 198.32
+  },
+  {
+   "word": "at",
+   "start": 198.32,
+   "end": 198.48
+  },
+  {
+   "word": "nine.",
+   "start": 198.48,
+   "end": 198.68
+  },
+  {
+   "word": "The",
+   "start": 199.24,
+   "end": 199.36
+  },
+  {
+   "word": "interviewer",
+   "start": 199.36,
+   "end": 199.62
+  },
+  {
+   "word": "reaches",
+   "start": 199.62,
+   "end": 200.06
+  },
+  {
+   "word": "out",
+   "start": 200.06,
+   "end": 200.24
+  },
+  {
+   "word": "to",
+   "start": 200.24,
+   "end": 200.38
+  },
+  {
+   "word": "shake",
+   "start": 200.38,
+   "end": 200.5
+  },
+  {
+   "word": "your",
+   "start": 200.5,
+   "end": 200.66
+  },
+  {
+   "word": "hand,",
+   "start": 200.66,
+   "end": 200.86
+  },
+  {
+   "word": "and",
+   "start": 201.46,
+   "end": 201.64
+  },
+  {
+   "word": "you",
+   "start": 201.64,
+   "end": 201.76
+  },
+  {
+   "word": "spend",
+   "start": 201.76,
+   "end": 201.96
+  },
+  {
+   "word": "the",
+   "start": 201.96,
+   "end": 202.16
+  },
+  {
+   "word": "longest",
+   "start": 202.16,
+   "end": 202.64
+  },
+  {
+   "word": "second",
+   "start": 202.64,
+   "end": 203.16
+  },
+  {
+   "word": "of",
+   "start": 203.16,
+   "end": 203.46
+  },
+  {
+   "word": "your",
+   "start": 203.46,
+   "end": 203.64
+  },
+  {
+   "word": "life",
+   "start": 203.64,
+   "end": 204.02
+  },
+  {
+   "word": "deciding",
+   "start": 204.02,
+   "end": 204.48
+  },
+  {
+   "word": "how",
+   "start": 204.48,
+   "end": 204.92
+  },
+  {
+   "word": "hard",
+   "start": 204.92,
+   "end": 205.22
+  },
+  {
+   "word": "a",
+   "start": 205.22,
+   "end": 205.32
+  },
+  {
+   "word": "handshake",
+   "start": 205.32,
+   "end": 205.56
+  },
+  {
+   "word": "is.",
+   "start": 205.56,
+   "end": 205.88
+  },
+  {
+   "word": "You",
+   "start": 206.74,
+   "end": 206.86
+  },
+  {
+   "word": "go",
+   "start": 206.86,
+   "end": 207.02
+  },
+  {
+   "word": "with",
+   "start": 207.02,
+   "end": 207.22
+  },
+  {
+   "word": "\"dead",
+   "start": 207.22,
+   "end": 207.58
+  },
+  {
+   "word": "fish\".",
+   "start": 207.58,
+   "end": 207.78
+  },
+  {
+   "word": "He",
+   "start": 208.54,
+   "end": 208.74
+  },
+  {
+   "word": "winces",
+   "start": 208.74,
+   "end": 209.04
+  },
+  {
+   "word": "anyway.",
+   "start": 209.04,
+   "end": 209.28
+  },
+  {
+   "word": "Then",
+   "start": 209.9,
+   "end": 210.04
+  },
+  {
+   "word": "the",
+   "start": 210.04,
+   "end": 210.16
+  },
+  {
+   "word": "coffee",
+   "start": 210.16,
+   "end": 210.38
+  },
+  {
+   "word": "machine",
+   "start": 210.38,
+   "end": 210.66
+  },
+  {
+   "word": "jams,",
+   "start": 210.66,
+   "end": 210.9
+  },
+  {
+   "word": "everyone",
+   "start": 211.52,
+   "end": 211.8
+  },
+  {
+   "word": "sighs,",
+   "start": 211.8,
+   "end": 212.5
+  },
+  {
+   "word": "and",
+   "start": 212.5,
+   "end": 212.76
+  },
+  {
+   "word": "you",
+   "start": 212.76,
+   "end": 212.94
+  },
+  {
+   "word": "give",
+   "start": 212.94,
+   "end": 213.08
+  },
+  {
+   "word": "it",
+   "start": 213.08,
+   "end": 213.24
+  },
+  {
+   "word": "a",
+   "start": 213.24,
+   "end": 213.46
+  },
+  {
+   "word": "little",
+   "start": 213.46,
+   "end": 213.6
+  },
+  {
+   "word": "tap",
+   "start": 213.6,
+   "end": 213.82
+  },
+  {
+   "word": "to",
+   "start": 213.82,
+   "end": 214.0
+  },
+  {
+   "word": "help.",
+   "start": 214.0,
+   "end": 214.18
+  },
+  {
+   "word": "It",
+   "start": 214.18,
+   "end": 215.0
+  },
+  {
+   "word": "works",
+   "start": 215.0,
+   "end": 215.16
+  },
+  {
+   "word": "again.",
+   "start": 215.16,
+   "end": 215.44
+  },
+  {
+   "word": "It's",
+   "start": 216.14,
+   "end": 216.38
+  },
+  {
+   "word": "also",
+   "start": 216.38,
+   "end": 216.74
+  },
+  {
+   "word": "now",
+   "start": 216.74,
+   "end": 217.08
+  },
+  {
+   "word": "part",
+   "start": 217.08,
+   "end": 217.24
+  },
+  {
+   "word": "of",
+   "start": 217.24,
+   "end": 217.36
+  },
+  {
+   "word": "the",
+   "start": 217.36,
+   "end": 217.42
+  },
+  {
+   "word": "wall.",
+   "start": 217.42,
+   "end": 217.56
+  },
+  {
+   "word": "You",
+   "start": 218.12,
+   "end": 218.22
+  },
+  {
+   "word": "don't",
+   "start": 218.22,
+   "end": 218.36
+  },
+  {
+   "word": "get",
+   "start": 218.36,
+   "end": 218.46
+  },
+  {
+   "word": "the",
+   "start": 218.46,
+   "end": 218.56
+  },
+  {
+   "word": "job.",
+   "start": 218.56,
+   "end": 218.72
+  },
+  {
+   "word": "On",
+   "start": 219.28,
+   "end": 219.4
+  },
+  {
+   "word": "the",
+   "start": 219.4,
+   "end": 219.48
+  },
+  {
+   "word": "way",
+   "start": 219.48,
+   "end": 219.6
+  },
+  {
+   "word": "out,",
+   "start": 219.6,
+   "end": 219.8
+  },
+  {
+   "word": "the",
+   "start": 220.02,
+   "end": 220.04
+  },
+  {
+   "word": "security",
+   "start": 220.04,
+   "end": 220.36
+  },
+  {
+   "word": "guard",
+   "start": 220.36,
+   "end": 220.6
+  },
+  {
+   "word": "asks",
+   "start": 220.6,
+   "end": 220.82
+  },
+  {
+   "word": "for",
+   "start": 220.82,
+   "end": 221.04
+  },
+  {
+   "word": "a",
+   "start": 221.04,
+   "end": 221.14
+  },
+  {
+   "word": "selfie.",
+   "start": 221.14,
+   "end": 221.36
+  },
+  {
+   "word": "On",
+   "start": 222.62,
+   "end": 222.76
+  },
+  {
+   "word": "day",
+   "start": 222.76,
+   "end": 222.96
+  },
+  {
+   "word": "seventeen",
+   "start": 222.96,
+   "end": 232.66
+  },
+  {
+   "word": "you're",
+   "start": 232.66,
+   "end": 232.78
+  },
+  {
+   "word": "walking",
+   "start": 232.78,
+   "end": 233.04
+  },
+  {
+   "word": "home",
+   "start": 233.04,
+   "end": 233.24
+  },
+  {
+   "word": "from",
+   "start": 233.24,
+   "end": 233.42
+  },
+  {
+   "word": "the",
+   "start": 233.42,
+   "end": 233.54
+  },
+  {
+   "word": "supermarket",
+   "start": 233.54,
+   "end": 233.94
+  },
+  {
+   "word": "when",
+   "start": 233.94,
+   "end": 234.46
+  },
+  {
+   "word": "a",
+   "start": 234.46,
+   "end": 234.8
+  },
+  {
+   "word": "crane",
+   "start": 234.8,
+   "end": 235.12
+  },
+  {
+   "word": "on",
+   "start": 235.12,
+   "end": 235.3
+  },
+  {
+   "word": "a",
+   "start": 235.3,
+   "end": 235.42
+  },
+  {
+   "word": "building",
+   "start": 235.42,
+   "end": 235.64
+  },
+  {
+   "word": "site",
+   "start": 235.64,
+   "end": 235.94
+  },
+  {
+   "word": "snaps.",
+   "start": 235.94,
+   "end": 236.52
+  },
+  {
+   "word": "A",
+   "start": 237.14,
+   "end": 237.32
+  },
+  {
+   "word": "load",
+   "start": 237.32,
+   "end": 237.44
+  },
+  {
+   "word": "of",
+   "start": 237.44,
+   "end": 237.54
+  },
+  {
+   "word": "steel",
+   "start": 237.54,
+   "end": 237.72
+  },
+  {
+   "word": "beams",
+   "start": 237.72,
+   "end": 238.0
+  },
+  {
+   "word": "is",
+   "start": 238.0,
+   "end": 238.16
+  },
+  {
+   "word": "falling",
+   "start": 238.16,
+   "end": 238.46
+  },
+  {
+   "word": "toward",
+   "start": 238.46,
+   "end": 238.66
+  },
+  {
+   "word": "a",
+   "start": 238.66,
+   "end": 238.78
+  },
+  {
+   "word": "bus",
+   "start": 238.78,
+   "end": 238.92
+  },
+  {
+   "word": "stop",
+   "start": 238.92,
+   "end": 239.12
+  },
+  {
+   "word": "full",
+   "start": 239.12,
+   "end": 239.4
+  },
+  {
+   "word": "of",
+   "start": 239.4,
+   "end": 239.58
+  },
+  {
+   "word": "people.",
+   "start": 239.58,
+   "end": 239.86
+  },
+  {
+   "word": "You",
+   "start": 240.76,
+   "end": 241.14
+  },
+  {
+   "word": "don't",
+   "start": 241.14,
+   "end": 241.36
+  },
+  {
+   "word": "think.",
+   "start": 241.36,
+   "end": 241.58
+  },
+  {
+   "word": "You",
+   "start": 242.04,
+   "end": 242.18
+  },
+  {
+   "word": "jump.",
+   "start": 242.18,
+   "end": 242.44
+  },
+  {
+   "word": "You",
+   "start": 242.44,
+   "end": 243.16
+  },
+  {
+   "word": "catch",
+   "start": 243.16,
+   "end": 243.4
+  },
+  {
+   "word": "the",
+   "start": 243.4,
+   "end": 243.62
+  },
+  {
+   "word": "first",
+   "start": 243.62,
+   "end": 243.82
+  },
+  {
+   "word": "beam,",
+   "start": 243.82,
+   "end": 244.18
+  },
+  {
+   "word": "punch",
+   "start": 244.44,
+   "end": 244.58
+  },
+  {
+   "word": "the",
+   "start": 244.58,
+   "end": 244.8
+  },
+  {
+   "word": "second",
+   "start": 244.8,
+   "end": 245.06
+  },
+  {
+   "word": "one",
+   "start": 245.06,
+   "end": 245.24
+  },
+  {
+   "word": "sideways",
+   "start": 245.24,
+   "end": 245.62
+  },
+  {
+   "word": "into",
+   "start": 245.62,
+   "end": 245.98
+  },
+  {
+   "word": "the",
+   "start": 245.98,
+   "end": 246.1
+  },
+  {
+   "word": "empty",
+   "start": 246.1,
+   "end": 246.32
+  },
+  {
+   "word": "lot,",
+   "start": 246.32,
+   "end": 246.54
+  },
+  {
+   "word": "and",
+   "start": 246.9,
+   "end": 247.08
+  },
+  {
+   "word": "set",
+   "start": 247.08,
+   "end": 247.28
+  },
+  {
+   "word": "the",
+   "start": 247.28,
+   "end": 247.44
+  },
+  {
+   "word": "third",
+   "start": 247.44,
+   "end": 247.6
+  },
+  {
+   "word": "one",
+   "start": 247.6,
+   "end": 247.82
+  },
+  {
+   "word": "down",
+   "start": 247.82,
+   "end": 248.04
+  },
+  {
+   "word": "on",
+   "start": 248.04,
+   "end": 248.18
+  },
+  {
+   "word": "the",
+   "start": 248.18,
+   "end": 248.26
+  },
+  {
+   "word": "pavement",
+   "start": 248.26,
+   "end": 248.58
+  },
+  {
+   "word": "like",
+   "start": 248.58,
+   "end": 248.84
+  },
+  {
+   "word": "a",
+   "start": 248.84,
+   "end": 248.96
+  },
+  {
+   "word": "sofa.",
+   "start": 248.96,
+   "end": 249.16
+  },
+  {
+   "word": "Nobody",
+   "start": 249.16,
+   "end": 249.66
+  },
+  {
+   "word": "is",
+   "start": 249.66,
+   "end": 250.16
+  },
+  {
+   "word": "hurt.",
+   "start": 250.16,
+   "end": 250.34
+  },
+  {
+   "word": "It",
+   "start": 250.86,
+   "end": 250.96
+  },
+  {
+   "word": "takes",
+   "start": 250.96,
+   "end": 251.18
+  },
+  {
+   "word": "about",
+   "start": 251.18,
+   "end": 251.5
+  },
+  {
+   "word": "four",
+   "start": 251.5,
+   "end": 251.96
+  },
+  {
+   "word": "seconds.",
+   "start": 251.96,
+   "end": 252.42
+  },
+  {
+   "word": "When",
+   "start": 253.78,
+   "end": 253.86
+  },
+  {
+   "word": "the",
+   "start": 253.86,
+   "end": 254.0
+  },
+  {
+   "word": "news",
+   "start": 254.0,
+   "end": 254.18
+  },
+  {
+   "word": "arrives,",
+   "start": 254.18,
+   "end": 254.54
+  },
+  {
+   "word": "a",
+   "start": 255.02,
+   "end": 255.1
+  },
+  {
+   "word": "man",
+   "start": 255.1,
+   "end": 255.28
+  },
+  {
+   "word": "in",
+   "start": 255.28,
+   "end": 255.42
+  },
+  {
+   "word": "a",
+   "start": 255.42,
+   "end": 255.52
+  },
+  {
+   "word": "shiny",
+   "start": 255.52,
+   "end": 255.84
+  },
+  {
+   "word": "costume",
+   "start": 255.84,
+   "end": 256.36
+  },
+  {
+   "word": "who",
+   "start": 256.36,
+   "end": 256.56
+  },
+  {
+   "word": "arrived",
+   "start": 256.56,
+   "end": 256.84
+  },
+  {
+   "word": "ten",
+   "start": 256.84,
+   "end": 257.06
+  },
+  {
+   "word": "minutes",
+   "start": 257.06,
+   "end": 257.28
+  },
+  {
+   "word": "later",
+   "start": 257.28,
+   "end": 257.56
+  },
+  {
+   "word": "is",
+   "start": 257.56,
+   "end": 257.8
+  },
+  {
+   "word": "giving",
+   "start": 257.8,
+   "end": 258.06
+  },
+  {
+   "word": "interviews.",
+   "start": 258.06,
+   "end": 258.52
+  },
+  {
+   "word": "You're",
+   "start": 259.04,
+   "end": 259.18
+  },
+  {
+   "word": "holding",
+   "start": 259.18,
+   "end": 259.34
+  },
+  {
+   "word": "a",
+   "start": 259.34,
+   "end": 259.46
+  },
+  {
+   "word": "bag",
+   "start": 259.46,
+   "end": 259.58
+  },
+  {
+   "word": "of",
+   "start": 259.58,
+   "end": 259.74
+  },
+  {
+   "word": "groceries",
+   "start": 259.74,
+   "end": 260.08
+  },
+  {
+   "word": "with",
+   "start": 260.08,
+   "end": 260.38
+  },
+  {
+   "word": "the",
+   "start": 260.38,
+   "end": 260.52
+  },
+  {
+   "word": "eggs",
+   "start": 260.52,
+   "end": 260.76
+  },
+  {
+   "word": "still",
+   "start": 260.76,
+   "end": 261.1
+  },
+  {
+   "word": "intact.",
+   "start": 261.1,
+   "end": 261.5
+  },
+  {
+   "word": "You",
+   "start": 264.46,
+   "end": 264.56
+  },
+  {
+   "word": "decide",
+   "start": 264.56,
+   "end": 264.8
+  },
+  {
+   "word": "that",
+   "start": 264.8,
+   "end": 264.94
+  },
+  {
+   "word": "counts",
+   "start": 264.94,
+   "end": 265.1
+  },
+  {
+   "word": "as",
+   "start": 265.1,
+   "end": 265.24
+  },
+  {
+   "word": "a",
+   "start": 265.24,
+   "end": 265.34
+  },
+  {
+   "word": "win.",
+   "start": 265.34,
+   "end": 265.5
+  },
+  {
+   "word": "After",
+   "start": 266.44,
+   "end": 266.68
+  },
+  {
+   "word": "the",
+   "start": 266.68,
+   "end": 266.84
+  },
+  {
+   "word": "crane,",
+   "start": 266.84,
+   "end": 267.14
+  },
+  {
+   "word": "your",
+   "start": 267.46,
+   "end": 267.56
+  },
+  {
+   "word": "oldest",
+   "start": 267.56,
+   "end": 267.98
+  },
+  {
+   "word": "friend",
+   "start": 267.98,
+   "end": 268.38
+  },
+  {
+   "word": "shows",
+   "start": 268.38,
+   "end": 268.66
+  },
+  {
+   "word": "up",
+   "start": 268.66,
+   "end": 268.84
+  },
+  {
+   "word": "at",
+   "start": 268.84,
+   "end": 268.94
+  },
+  {
+   "word": "your",
+   "start": 268.94,
+   "end": 269.04
+  },
+  {
+   "word": "door",
+   "start": 269.04,
+   "end": 269.26
+  },
+  {
+   "word": "at",
+   "start": 269.26,
+   "end": 269.52
+  },
+  {
+   "word": "five",
+   "start": 269.52,
+   "end": 269.96
+  },
+  {
+   "word": "in",
+   "start": 269.96,
+   "end": 270.14
+  },
+  {
+   "word": "the",
+   "start": 270.14,
+   "end": 270.24
+  },
+  {
+   "word": "morning",
+   "start": 270.24,
+   "end": 270.5
+  },
+  {
+   "word": "in",
+   "start": 270.5,
+   "end": 270.98
+  },
+  {
+   "word": "running",
+   "start": 270.98,
+   "end": 271.3
+  },
+  {
+   "word": "gear.",
+   "start": 271.3,
+   "end": 271.66
+  },
+  {
+   "word": "\"Teach",
+   "start": 272.22,
+   "end": 272.4
+  },
+  {
+   "word": "me,\"",
+   "start": 272.4,
+   "end": 272.68
+  },
+  {
+   "word": "they",
+   "start": 272.92,
+   "end": 273.0
+  },
+  {
+   "word": "say.",
+   "start": 273.0,
+   "end": 273.24
+  },
+  {
+   "word": "\"The",
+   "start": 273.64,
+   "end": 273.72
+  },
+  {
+   "word": "routine.",
+   "start": 273.72,
+   "end": 274.04
+  },
+  {
+   "word": "A",
+   "start": 274.72,
+   "end": 274.74
+  },
+  {
+   "word": "hundred",
+   "start": 274.74,
+   "end": 274.94
+  },
+  {
+   "word": "push-ups,",
+   "start": 274.94,
+   "end": 275.62
+  },
+  {
+   "word": "a",
+   "start": 275.62,
+   "end": 275.66
+  },
+  {
+   "word": "hundred",
+   "start": 275.66,
+   "end": 275.82
+  },
+  {
+   "word": "sit-ups,",
+   "start": 275.82,
+   "end": 276.48
+  },
+  {
+   "word": "a",
+   "start": 276.48,
+   "end": 276.48
+  },
+  {
+   "word": "hundred",
+   "start": 276.48,
+   "end": 276.68
+  },
+  {
+   "word": "squats,",
+   "start": 276.68,
+   "end": 277.14
+  },
+  {
+   "word": "ten",
+   "start": 277.6,
+   "end": 277.76
+  },
+  {
+   "word": "kilometres.",
+   "start": 277.76,
+   "end": 278.94
+  },
+  {
+   "word": "Every",
+   "start": 278.94,
+   "end": 279.18
+  },
+  {
+   "word": "day.\"",
+   "start": 279.18,
+   "end": 279.4
+  },
+  {
+   "word": "So",
+   "start": 279.88,
+   "end": 280.12
+  },
+  {
+   "word": "you",
+   "start": 280.58,
+   "end": 280.68
+  },
+  {
+   "word": "train",
+   "start": 280.68,
+   "end": 280.86
+  },
+  {
+   "word": "together.",
+   "start": 280.86,
+   "end": 281.16
+  },
+  {
+   "word": "And",
+   "start": 281.96,
+   "end": 282.1
+  },
+  {
+   "word": "here's",
+   "start": 282.1,
+   "end": 282.3
+  },
+  {
+   "word": "the",
+   "start": 282.3,
+   "end": 282.4
+  },
+  {
+   "word": "thing:",
+   "start": 282.4,
+   "end": 282.58
+  },
+  {
+   "word": "in",
+   "start": 282.96,
+   "end": 283.16
+  },
+  {
+   "word": "real",
+   "start": 283.16,
+   "end": 283.38
+  },
+  {
+   "word": "life,",
+   "start": 283.38,
+   "end": 283.76
+  },
+  {
+   "word": "that",
+   "start": 284.04,
+   "end": 284.2
+  },
+  {
+   "word": "routine",
+   "start": 284.2,
+   "end": 284.62
+  },
+  {
+   "word": "works,",
+   "start": 284.62,
+   "end": 285.5
+  },
+  {
+   "word": "for",
+   "start": 286.12,
+   "end": 286.36
+  },
+  {
+   "word": "a",
+   "start": 286.36,
+   "end": 286.42
+  },
+  {
+   "word": "while.",
+   "start": 286.42,
+   "end": 286.58
+  },
+  {
+   "word": "You",
+   "start": 287.1,
+   "end": 287.26
+  },
+  {
+   "word": "get",
+   "start": 287.26,
+   "end": 287.4
+  },
+  {
+   "word": "fitter",
+   "start": 287.4,
+   "end": 287.66
+  },
+  {
+   "word": "fast",
+   "start": 287.66,
+   "end": 288.12
+  },
+  {
+   "word": "in",
+   "start": 288.12,
+   "end": 288.38
+  },
+  {
+   "word": "the",
+   "start": 288.38,
+   "end": 288.5
+  },
+  {
+   "word": "first",
+   "start": 288.5,
+   "end": 288.66
+  },
+  {
+   "word": "weeks,",
+   "start": 288.66,
+   "end": 289.04
+  },
+  {
+   "word": "then",
+   "start": 289.36,
+   "end": 289.54
+  },
+  {
+   "word": "the",
+   "start": 289.54,
+   "end": 289.68
+  },
+  {
+   "word": "progress",
+   "start": 289.68,
+   "end": 290.0
+  },
+  {
+   "word": "slows",
+   "start": 290.0,
+   "end": 290.36
+  },
+  {
+   "word": "down,",
+   "start": 290.36,
+   "end": 290.68
+  },
+  {
+   "word": "and",
+   "start": 291.32,
+   "end": 291.46
+  },
+  {
+   "word": "months",
+   "start": 291.46,
+   "end": 291.7
+  },
+  {
+   "word": "of",
+   "start": 291.7,
+   "end": 291.84
+  },
+  {
+   "word": "the",
+   "start": 291.84,
+   "end": 291.98
+  },
+  {
+   "word": "same",
+   "start": 291.98,
+   "end": 292.2
+  },
+  {
+   "word": "hundred",
+   "start": 292.2,
+   "end": 292.54
+  },
+  {
+   "word": "push-ups",
+   "start": 292.54,
+   "end": 292.96
+  },
+  {
+   "word": "is",
+   "start": 292.96,
+   "end": 293.36
+  },
+  {
+   "word": "how",
+   "start": 293.36,
+   "end": 293.56
+  },
+  {
+   "word": "a",
+   "start": 293.56,
+   "end": 293.62
+  },
+  {
+   "word": "lot",
+   "start": 293.62,
+   "end": 293.72
+  },
+  {
+   "word": "of",
+   "start": 293.72,
+   "end": 293.82
+  },
+  {
+   "word": "people",
+   "start": 293.82,
+   "end": 294.02
+  },
+  {
+   "word": "end",
+   "start": 294.02,
+   "end": 294.2
+  },
+  {
+   "word": "up",
+   "start": 294.2,
+   "end": 294.32
+  },
+  {
+   "word": "with",
+   "start": 294.32,
+   "end": 294.46
+  },
+  {
+   "word": "sore",
+   "start": 294.46,
+   "end": 294.68
+  },
+  {
+   "word": "elbows",
+   "start": 294.68,
+   "end": 294.98
+  },
+  {
+   "word": "and",
+   "start": 294.98,
+   "end": 295.32
+  },
+  {
+   "word": "shoulders.",
+   "start": 295.32,
+   "end": 295.64
+  },
+  {
+   "word": "After",
+   "start": 296.42,
+   "end": 296.62
+  },
+  {
+   "word": "three",
+   "start": 296.62,
+   "end": 296.88
+  },
+  {
+   "word": "weeks",
+   "start": 296.88,
+   "end": 297.12
+  },
+  {
+   "word": "your",
+   "start": 297.18,
+   "end": 297.36
+  },
+  {
+   "word": "friend",
+   "start": 297.36,
+   "end": 297.56
+  },
+  {
+   "word": "can",
+   "start": 297.56,
+   "end": 297.8
+  },
+  {
+   "word": "run",
+   "start": 297.8,
+   "end": 297.96
+  },
+  {
+   "word": "ten",
+   "start": 297.96,
+   "end": 298.28
+  },
+  {
+   "word": "kilometres",
+   "start": 298.28,
+   "end": 298.68
+  },
+  {
+   "word": "without",
+   "start": 298.68,
+   "end": 299.02
+  },
+  {
+   "word": "stopping.",
+   "start": 299.02,
+   "end": 299.4
+  },
+  {
+   "word": "They're",
+   "start": 300.0,
+   "end": 300.1
+  },
+  {
+   "word": "proud.",
+   "start": 300.1,
+   "end": 300.3
+  },
+  {
+   "word": "They",
+   "start": 300.84,
+   "end": 300.92
+  },
+  {
+   "word": "should",
+   "start": 300.92,
+   "end": 301.04
+  },
+  {
+   "word": "be.",
+   "start": 301.04,
+   "end": 301.22
+  },
+  {
+   "word": "They",
+   "start": 301.7,
+   "end": 301.84
+  },
+  {
+   "word": "still",
+   "start": 301.84,
+   "end": 302.02
+  },
+  {
+   "word": "can't",
+   "start": 302.02,
+   "end": 302.34
+  },
+  {
+   "word": "lift",
+   "start": 302.34,
+   "end": 302.42
+  },
+  {
+   "word": "a",
+   "start": 302.42,
+   "end": 302.56
+  },
+  {
+   "word": "car.",
+   "start": 302.56,
+   "end": 302.78
+  },
+  {
+   "word": "They",
+   "start": 303.46,
+   "end": 303.64
+  },
+  {
+   "word": "ask",
+   "start": 303.64,
+   "end": 303.84
+  },
+  {
+   "word": "what",
+   "start": 303.84,
+   "end": 304.08
+  },
+  {
+   "word": "your",
+   "start": 304.08,
+   "end": 304.26
+  },
+  {
+   "word": "secret",
+   "start": 304.26,
+   "end": 304.64
+  },
+  {
+   "word": "really",
+   "start": 304.64,
+   "end": 304.94
+  },
+  {
+   "word": "is.",
+   "start": 304.94,
+   "end": 305.36
+  },
+  {
+   "word": "You",
+   "start": 305.36,
+   "end": 306.02
+  },
+  {
+   "word": "honestly",
+   "start": 306.02,
+   "end": 306.2
+  },
+  {
+   "word": "don't",
+   "start": 306.2,
+   "end": 306.46
+  },
+  {
+   "word": "know.",
+   "start": 306.46,
+   "end": 306.72
+  },
+  {
+   "word": "On",
+   "start": 307.88,
+   "end": 307.98
+  },
+  {
+   "word": "day",
+   "start": 307.98,
+   "end": 308.18
+  },
+  {
+   "word": "thirty,",
+   "start": 308.18,
+   "end": 309.04
+  },
+  {
+   "word": "two",
+   "start": 309.04,
+   "end": 309.14
+  },
+  {
+   "word": "people",
+   "start": 309.14,
+   "end": 309.42
+  },
+  {
+   "word": "in",
+   "start": 309.42,
+   "end": 309.64
+  },
+  {
+   "word": "grey",
+   "start": 309.64,
+   "end": 309.8
+  },
+  {
+   "word": "suits",
+   "start": 309.8,
+   "end": 310.1
+  },
+  {
+   "word": "knock",
+   "start": 310.1,
+   "end": 310.3
+  },
+  {
+   "word": "on",
+   "start": 310.3,
+   "end": 310.48
+  },
+  {
+   "word": "your",
+   "start": 310.48,
+   "end": 310.58
+  },
+  {
+   "word": "door.",
+   "start": 310.58,
+   "end": 310.78
+  },
+  {
+   "word": "Very",
+   "start": 311.26,
+   "end": 311.46
+  },
+  {
+   "word": "polite.",
+   "start": 311.46,
+   "end": 311.72
+  },
+  {
+   "word": "They'd",
+   "start": 312.24,
+   "end": 312.4
+  },
+  {
+   "word": "like",
+   "start": 312.4,
+   "end": 312.5
+  },
+  {
+   "word": "to",
+   "start": 312.5,
+   "end": 312.78
+  },
+  {
+   "word": "run",
+   "start": 312.78,
+   "end": 313.06
+  },
+  {
+   "word": "a",
+   "start": 313.06,
+   "end": 313.16
+  },
+  {
+   "word": "few",
+   "start": 313.16,
+   "end": 313.3
+  },
+  {
+   "word": "tests.",
+   "start": 313.3,
+   "end": 313.62
+  },
+  {
+   "word": "They",
+   "start": 314.46,
+   "end": 314.58
+  },
+  {
+   "word": "bring",
+   "start": 314.58,
+   "end": 314.72
+  },
+  {
+   "word": "a",
+   "start": 314.72,
+   "end": 314.82
+  },
+  {
+   "word": "machine",
+   "start": 314.82,
+   "end": 315.08
+  },
+  {
+   "word": "that",
+   "start": 315.08,
+   "end": 315.26
+  },
+  {
+   "word": "measures",
+   "start": 315.26,
+   "end": 315.5
+  },
+  {
+   "word": "punching",
+   "start": 315.5,
+   "end": 315.82
+  },
+  {
+   "word": "force.",
+   "start": 315.82,
+   "end": 316.22
+  },
+  {
+   "word": "You",
+   "start": 316.84,
+   "end": 316.94
+  },
+  {
+   "word": "hit",
+   "start": 316.94,
+   "end": 317.04
+  },
+  {
+   "word": "it",
+   "start": 317.04,
+   "end": 317.14
+  },
+  {
+   "word": "gently.",
+   "start": 317.14,
+   "end": 317.38
+  },
+  {
+   "word": "It",
+   "start": 317.96,
+   "end": 318.18
+  },
+  {
+   "word": "stops",
+   "start": 318.18,
+   "end": 318.48
+  },
+  {
+   "word": "working.",
+   "start": 318.48,
+   "end": 318.8
+  },
+  {
+   "word": "They",
+   "start": 319.58,
+   "end": 319.68
+  },
+  {
+   "word": "bring",
+   "start": 319.68,
+   "end": 319.8
+  },
+  {
+   "word": "a",
+   "start": 319.8,
+   "end": 319.92
+  },
+  {
+   "word": "bigger",
+   "start": 319.92,
+   "end": 320.08
+  },
+  {
+   "word": "one.",
+   "start": 320.08,
+   "end": 320.38
+  },
+  {
+   "word": "Same",
+   "start": 320.94,
+   "end": 321.04
+  },
+  {
+   "word": "thing.",
+   "start": 321.04,
+   "end": 321.3
+  },
+  {
+   "word": "They",
+   "start": 321.8,
+   "end": 321.94
+  },
+  {
+   "word": "bring",
+   "start": 321.94,
+   "end": 322.12
+  },
+  {
+   "word": "a",
+   "start": 322.12,
+   "end": 322.28
+  },
+  {
+   "word": "block",
+   "start": 322.28,
+   "end": 322.5
+  },
+  {
+   "word": "of",
+   "start": 322.5,
+   "end": 322.72
+  },
+  {
+   "word": "steel",
+   "start": 322.72,
+   "end": 322.98
+  },
+  {
+   "word": "the",
+   "start": 322.98,
+   "end": 323.18
+  },
+  {
+   "word": "size",
+   "start": 323.18,
+   "end": 323.48
+  },
+  {
+   "word": "of",
+   "start": 323.48,
+   "end": 323.7
+  },
+  {
+   "word": "a",
+   "start": 323.7,
+   "end": 323.92
+  },
+  {
+   "word": "fridge,",
+   "start": 323.92,
+   "end": 324.22
+  },
+  {
+   "word": "and",
+   "start": 324.22,
+   "end": 324.72
+  },
+  {
+   "word": "it",
+   "start": 324.72,
+   "end": 324.84
+  },
+  {
+   "word": "folds",
+   "start": 324.84,
+   "end": 325.16
+  },
+  {
+   "word": "like",
+   "start": 325.16,
+   "end": 325.4
+  },
+  {
+   "word": "a",
+   "start": 325.4,
+   "end": 325.52
+  },
+  {
+   "word": "napkin.",
+   "start": 325.52,
+   "end": 326.0
+  },
+  {
+   "word": "At",
+   "start": 326.0,
+   "end": 326.56
+  },
+  {
+   "word": "the",
+   "start": 326.56,
+   "end": 327.44
+  },
+  {
+   "word": "end",
+   "start": 327.44,
+   "end": 327.56
+  },
+  {
+   "word": "of",
+   "start": 327.56,
+   "end": 327.68
+  },
+  {
+   "word": "the",
+   "start": 327.68,
+   "end": 327.8
+  },
+  {
+   "word": "day",
+   "start": 327.8,
+   "end": 327.98
+  },
+  {
+   "word": "they",
+   "start": 328.06,
+   "end": 328.2
+  },
+  {
+   "word": "don't",
+   "start": 328.2,
+   "end": 328.52
+  },
+  {
+   "word": "have",
+   "start": 328.52,
+   "end": 328.66
+  },
+  {
+   "word": "a",
+   "start": 328.66,
+   "end": 328.78
+  },
+  {
+   "word": "number.",
+   "start": 328.78,
+   "end": 328.96
+  },
+  {
+   "word": "They",
+   "start": 329.4,
+   "end": 329.46
+  },
+  {
+   "word": "have",
+   "start": 329.46,
+   "end": 329.56
+  },
+  {
+   "word": "a",
+   "start": 329.56,
+   "end": 329.66
+  },
+  {
+   "word": "report",
+   "start": 329.66,
+   "end": 329.94
+  },
+  {
+   "word": "with",
+   "start": 329.94,
+   "end": 330.16
+  },
+  {
+   "word": "one",
+   "start": 330.16,
+   "end": 330.36
+  },
+  {
+   "word": "line:",
+   "start": 330.36,
+   "end": 330.64
+  },
+  {
+   "word": "\"Upper",
+   "start": 331.24,
+   "end": 331.5
+  },
+  {
+   "word": "limit:",
+   "start": 331.5,
+   "end": 331.8
+  },
+  {
+   "word": "not",
+   "start": 332.3,
+   "end": 332.52
+  },
+  {
+   "word": "found.\"",
+   "start": 332.52,
+   "end": 332.86
+  },
+  {
+   "word": "And",
+   "start": 340.58,
+   "end": 340.72
+  },
+  {
+   "word": "you",
+   "start": 340.72,
+   "end": 340.82
+  },
+  {
+   "word": "notice",
+   "start": 340.82,
+   "end": 341.04
+  },
+  {
+   "word": "something.",
+   "start": 341.04,
+   "end": 341.4
+  },
+  {
+   "word": "You're",
+   "start": 342.14,
+   "end": 342.34
+  },
+  {
+   "word": "not",
+   "start": 342.34,
+   "end": 342.46
+  },
+  {
+   "word": "nervous.",
+   "start": 342.46,
+   "end": 342.8
+  },
+  {
+   "word": "You're",
+   "start": 343.54,
+   "end": 343.76
+  },
+  {
+   "word": "not",
+   "start": 343.76,
+   "end": 343.88
+  },
+  {
+   "word": "even",
+   "start": 343.88,
+   "end": 344.12
+  },
+  {
+   "word": "curious.",
+   "start": 344.12,
+   "end": 344.68
+  },
+  {
+   "word": "You're",
+   "start": 345.62,
+   "end": 345.8
+  },
+  {
+   "word": "checking",
+   "start": 345.8,
+   "end": 345.98
+  },
+  {
+   "word": "the",
+   "start": 345.98,
+   "end": 346.16
+  },
+  {
+   "word": "time,",
+   "start": 346.16,
+   "end": 346.38
+  },
+  {
+   "word": "because",
+   "start": 346.86,
+   "end": 347.04
+  },
+  {
+   "word": "the",
+   "start": 347.04,
+   "end": 347.18
+  },
+  {
+   "word": "supermarket",
+   "start": 347.18,
+   "end": 347.5
+  },
+  {
+   "word": "has",
+   "start": 347.5,
+   "end": 347.8
+  },
+  {
+   "word": "a",
+   "start": 347.8,
+   "end": 347.98
+  },
+  {
+   "word": "sale",
+   "start": 347.98,
+   "end": 348.22
+  },
+  {
+   "word": "at",
+   "start": 348.22,
+   "end": 348.52
+  },
+  {
+   "word": "six.",
+   "start": 348.52,
+   "end": 348.86
+  },
+  {
+   "word": "Word",
+   "start": 350.14,
+   "end": 350.46
+  },
+  {
+   "word": "gets",
+   "start": 350.46,
+   "end": 350.62
+  },
+  {
+   "word": "around.",
+   "start": 350.62,
+   "end": 350.92
+  },
+  {
+   "word": "Fighters",
+   "start": 352.12,
+   "end": 352.12
+  },
+  {
+   "word": "start",
+   "start": 352.12,
+   "end": 352.48
+  },
+  {
+   "word": "showing",
+   "start": 352.48,
+   "end": 352.8
+  },
+  {
+   "word": "up.",
+   "start": 352.8,
+   "end": 353.08
+  },
+  {
+   "word": "Boxers,",
+   "start": 353.62,
+   "end": 354.06
+  },
+  {
+   "word": "wrestlers,",
+   "start": 354.34,
+   "end": 354.68
+  },
+  {
+   "word": "a",
+   "start": 355.38,
+   "end": 355.4
+  },
+  {
+   "word": "man",
+   "start": 355.4,
+   "end": 355.58
+  },
+  {
+   "word": "who",
+   "start": 355.58,
+   "end": 355.76
+  },
+  {
+   "word": "has",
+   "start": 355.76,
+   "end": 355.9
+  },
+  {
+   "word": "trained",
+   "start": 355.9,
+   "end": 356.26
+  },
+  {
+   "word": "in",
+   "start": 356.26,
+   "end": 356.44
+  },
+  {
+   "word": "the",
+   "start": 356.44,
+   "end": 356.54
+  },
+  {
+   "word": "mountains",
+   "start": 356.54,
+   "end": 356.82
+  },
+  {
+   "word": "for",
+   "start": 356.82,
+   "end": 357.1
+  },
+  {
+   "word": "twelve",
+   "start": 357.1,
+   "end": 357.52
+  },
+  {
+   "word": "years.",
+   "start": 357.52,
+   "end": 357.98
+  },
+  {
+   "word": "Each",
+   "start": 358.76,
+   "end": 358.88
+  },
+  {
+   "word": "of",
+   "start": 358.88,
+   "end": 359.04
+  },
+  {
+   "word": "them",
+   "start": 359.04,
+   "end": 359.2
+  },
+  {
+   "word": "gets",
+   "start": 359.2,
+   "end": 359.42
+  },
+  {
+   "word": "one",
+   "start": 359.42,
+   "end": 359.8
+  },
+  {
+   "word": "tap.",
+   "start": 359.8,
+   "end": 360.08
+  },
+  {
+   "word": "You",
+   "start": 360.68,
+   "end": 360.76
+  },
+  {
+   "word": "start",
+   "start": 360.76,
+   "end": 360.94
+  },
+  {
+   "word": "apologising",
+   "start": 360.94,
+   "end": 361.42
+  },
+  {
+   "word": "before",
+   "start": 361.42,
+   "end": 361.78
+  },
+  {
+   "word": "you",
+   "start": 361.78,
+   "end": 361.92
+  },
+  {
+   "word": "even",
+   "start": 361.92,
+   "end": 362.12
+  },
+  {
+   "word": "swing.",
+   "start": 362.12,
+   "end": 362.4
+  },
+  {
+   "word": "One",
+   "start": 363.16,
+   "end": 363.28
+  },
+  {
+   "word": "of",
+   "start": 363.28,
+   "end": 363.4
+  },
+  {
+   "word": "them",
+   "start": 363.4,
+   "end": 363.5
+  },
+  {
+   "word": "asks",
+   "start": 363.5,
+   "end": 363.8
+  },
+  {
+   "word": "you",
+   "start": 363.8,
+   "end": 364.02
+  },
+  {
+   "word": "to",
+   "start": 364.02,
+   "end": 364.18
+  },
+  {
+   "word": "fight",
+   "start": 364.18,
+   "end": 364.46
+  },
+  {
+   "word": "seriously,",
+   "start": 364.46,
+   "end": 365.0
+  },
+  {
+   "word": "just",
+   "start": 365.46,
+   "end": 365.62
+  },
+  {
+   "word": "once.",
+   "start": 365.62,
+   "end": 365.96
+  },
+  {
+   "word": "You",
+   "start": 366.6,
+   "end": 366.74
+  },
+  {
+   "word": "can't.",
+   "start": 366.74,
+   "end": 367.14
+  },
+  {
+   "word": "If",
+   "start": 367.74,
+   "end": 367.88
+  },
+  {
+   "word": "you",
+   "start": 367.88,
+   "end": 367.98
+  },
+  {
+   "word": "did,",
+   "start": 367.98,
+   "end": 368.2
+  },
+  {
+   "word": "there",
+   "start": 368.58,
+   "end": 368.72
+  },
+  {
+   "word": "would",
+   "start": 368.72,
+   "end": 368.84
+  },
+  {
+   "word": "be",
+   "start": 368.84,
+   "end": 368.94
+  },
+  {
+   "word": "no",
+   "start": 368.94,
+   "end": 369.08
+  },
+  {
+   "word": "one",
+   "start": 369.08,
+   "end": 369.2
+  },
+  {
+   "word": "left",
+   "start": 369.2,
+   "end": 369.32
+  },
+  {
+   "word": "to",
+   "start": 369.32,
+   "end": 369.48
+  },
+  {
+   "word": "ask.",
+   "start": 369.48,
+   "end": 369.76
+  },
+  {
+   "word": "By",
+   "start": 370.84,
+   "end": 371.08
+  },
+  {
+   "word": "day",
+   "start": 371.08,
+   "end": 371.26
+  },
+  {
+   "word": "sixty",
+   "start": 371.26,
+   "end": 371.92
+  },
+  {
+   "word": "you've",
+   "start": 371.92,
+   "end": 372.16
+  },
+  {
+   "word": "stopped",
+   "start": 372.16,
+   "end": 372.38
+  },
+  {
+   "word": "trying",
+   "start": 372.38,
+   "end": 372.64
+  },
+  {
+   "word": "to",
+   "start": 372.64,
+   "end": 372.74
+  },
+  {
+   "word": "prove",
+   "start": 372.74,
+   "end": 372.98
+  },
+  {
+   "word": "anything.",
+   "start": 372.98,
+   "end": 373.46
+  },
+  {
+   "word": "You",
+   "start": 373.96,
+   "end": 374.12
+  },
+  {
+   "word": "just",
+   "start": 374.12,
+   "end": 374.26
+  },
+  {
+   "word": "help.",
+   "start": 374.26,
+   "end": 374.54
+  },
+  {
+   "word": "A",
+   "start": 375.12,
+   "end": 375.24
+  },
+  {
+   "word": "car",
+   "start": 375.24,
+   "end": 375.46
+  },
+  {
+   "word": "stuck",
+   "start": 375.54,
+   "end": 375.8
+  },
+  {
+   "word": "in",
+   "start": 375.8,
+   "end": 376.0
+  },
+  {
+   "word": "a",
+   "start": 376.0,
+   "end": 376.1
+  },
+  {
+   "word": "flooded",
+   "start": 376.1,
+   "end": 376.44
+  },
+  {
+   "word": "underpass",
+   "start": 376.44,
+   "end": 376.92
+  },
+  {
+   "word": "at",
+   "start": 376.92,
+   "end": 377.08
+  },
+  {
+   "word": "night:",
+   "start": 377.08,
+   "end": 377.26
+  },
+  {
+   "word": "you",
+   "start": 377.8,
+   "end": 378.0
+  },
+  {
+   "word": "carry",
+   "start": 378.0,
+   "end": 378.2
+  },
+  {
+   "word": "it",
+   "start": 378.2,
+   "end": 378.36
+  },
+  {
+   "word": "out,",
+   "start": 378.36,
+   "end": 378.58
+  },
+  {
+   "word": "with",
+   "start": 378.58,
+   "end": 379.1
+  },
+  {
+   "word": "the",
+   "start": 379.1,
+   "end": 379.22
+  },
+  {
+   "word": "family",
+   "start": 379.22,
+   "end": 379.46
+  },
+  {
+   "word": "still",
+   "start": 379.46,
+   "end": 379.7
+  },
+  {
+   "word": "inside,",
+   "start": 379.7,
+   "end": 380.06
+  },
+  {
+   "word": "and",
+   "start": 380.06,
+   "end": 380.66
+  },
+  {
+   "word": "set",
+   "start": 380.66,
+   "end": 380.82
+  },
+  {
+   "word": "it",
+   "start": 380.82,
+   "end": 380.92
+  },
+  {
+   "word": "down",
+   "start": 380.92,
+   "end": 381.06
+  },
+  {
+   "word": "on",
+   "start": 381.06,
+   "end": 381.22
+  },
+  {
+   "word": "dry",
+   "start": 381.22,
+   "end": 381.36
+  },
+  {
+   "word": "road.",
+   "start": 381.36,
+   "end": 381.56
+  },
+  {
+   "word": "A",
+   "start": 381.56,
+   "end": 382.05
+  },
+  {
+   "word": "runaway",
+   "start": 382.05,
+   "end": 382.54
+  },
+  {
+   "word": "shopping",
+   "start": 382.54,
+   "end": 382.84
+  },
+  {
+   "word": "trolley",
+   "start": 382.84,
+   "end": 383.1
+  },
+  {
+   "word": "heading",
+   "start": 383.1,
+   "end": 383.32
+  },
+  {
+   "word": "for",
+   "start": 383.32,
+   "end": 383.52
+  },
+  {
+   "word": "a",
+   "start": 383.52,
+   "end": 383.6
+  },
+  {
+   "word": "busy",
+   "start": 383.6,
+   "end": 383.76
+  },
+  {
+   "word": "street:",
+   "start": 383.76,
+   "end": 384.14
+  },
+  {
+   "word": "one",
+   "start": 384.76,
+   "end": 384.82
+  },
+  {
+   "word": "finger.",
+   "start": 384.82,
+   "end": 385.18
+  },
+  {
+   "word": "A",
+   "start": 385.88,
+   "end": 386.02
+  },
+  {
+   "word": "cat",
+   "start": 386.02,
+   "end": 386.2
+  },
+  {
+   "word": "on",
+   "start": 386.2,
+   "end": 386.38
+  },
+  {
+   "word": "a",
+   "start": 386.38,
+   "end": 386.46
+  },
+  {
+   "word": "roof:",
+   "start": 386.46,
+   "end": 386.68
+  },
+  {
+   "word": "you",
+   "start": 387.14,
+   "end": 387.28
+  },
+  {
+   "word": "jump,",
+   "start": 387.28,
+   "end": 387.46
+  },
+  {
+   "word": "very",
+   "start": 388.0,
+   "end": 388.32
+  },
+  {
+   "word": "gently.",
+   "start": 388.32,
+   "end": 388.6
+  },
+  {
+   "word": "Nobody",
+   "start": 389.26,
+   "end": 389.42
+  },
+  {
+   "word": "films",
+   "start": 389.42,
+   "end": 389.68
+  },
+  {
+   "word": "those",
+   "start": 389.68,
+   "end": 389.84
+  },
+  {
+   "word": "ones.",
+   "start": 389.84,
+   "end": 390.06
+  },
+  {
+   "word": "Nobody",
+   "start": 390.74,
+   "end": 390.88
+  },
+  {
+   "word": "writes",
+   "start": 390.88,
+   "end": 391.08
+  },
+  {
+   "word": "about",
+   "start": 391.08,
+   "end": 391.28
+  },
+  {
+   "word": "them.",
+   "start": 391.28,
+   "end": 391.54
+  },
+  {
+   "word": "A",
+   "start": 392.04,
+   "end": 392.3
+  },
+  {
+   "word": "little",
+   "start": 392.3,
+   "end": 392.46
+  },
+  {
+   "word": "kid",
+   "start": 392.46,
+   "end": 392.68
+  },
+  {
+   "word": "in",
+   "start": 392.68,
+   "end": 392.84
+  },
+  {
+   "word": "a",
+   "start": 392.84,
+   "end": 392.9
+  },
+  {
+   "word": "window",
+   "start": 392.9,
+   "end": 393.14
+  },
+  {
+   "word": "waves",
+   "start": 393.14,
+   "end": 393.36
+  },
+  {
+   "word": "at",
+   "start": 393.36,
+   "end": 393.56
+  },
+  {
+   "word": "you,",
+   "start": 393.56,
+   "end": 393.8
+  },
+  {
+   "word": "and",
+   "start": 393.8,
+   "end": 394.18
+  },
+  {
+   "word": "you",
+   "start": 394.18,
+   "end": 394.32
+  },
+  {
+   "word": "wave",
+   "start": 394.32,
+   "end": 394.48
+  },
+  {
+   "word": "back,",
+   "start": 394.48,
+   "end": 394.82
+  },
+  {
+   "word": "and",
+   "start": 394.82,
+   "end": 395.2
+  },
+  {
+   "word": "that's",
+   "start": 395.2,
+   "end": 395.52
+  },
+  {
+   "word": "the",
+   "start": 395.52,
+   "end": 395.62
+  },
+  {
+   "word": "whole",
+   "start": 395.62,
+   "end": 395.74
+  },
+  {
+   "word": "reward.",
+   "start": 395.74,
+   "end": 396.14
+  },
+  {
+   "word": "It",
+   "start": 396.8,
+   "end": 397.28
+  },
+  {
+   "word": "should",
+   "start": 397.28,
+   "end": 397.44
+  },
+  {
+   "word": "feel",
+   "start": 397.44,
+   "end": 397.62
+  },
+  {
+   "word": "like",
+   "start": 397.62,
+   "end": 397.78
+  },
+  {
+   "word": "enough.",
+   "start": 397.78,
+   "end": 398.06
+  },
+  {
+   "word": "Some",
+   "start": 398.7,
+   "end": 398.84
+  },
+  {
+   "word": "nights",
+   "start": 398.84,
+   "end": 399.06
+  },
+  {
+   "word": "it",
+   "start": 399.06,
+   "end": 399.36
+  },
+  {
+   "word": "does.",
+   "start": 399.36,
+   "end": 399.64
+  },
+  {
+   "word": "This",
+   "start": 400.28,
+   "end": 400.76
+  },
+  {
+   "word": "is",
+   "start": 400.76,
+   "end": 400.9
+  },
+  {
+   "word": "the",
+   "start": 400.9,
+   "end": 401.06
+  },
+  {
+   "word": "part",
+   "start": 401.06,
+   "end": 401.26
+  },
+  {
+   "word": "nobody",
+   "start": 401.26,
+   "end": 401.66
+  },
+  {
+   "word": "warns",
+   "start": 401.66,
+   "end": 401.96
+  },
+  {
+   "word": "you",
+   "start": 401.96,
+   "end": 402.16
+  },
+  {
+   "word": "about.",
+   "start": 402.16,
+   "end": 402.4
+  },
+  {
+   "word": "At",
+   "start": 402.82,
+   "end": 402.9
+  },
+  {
+   "word": "first,",
+   "start": 402.9,
+   "end": 403.24
+  },
+  {
+   "word": "winning",
+   "start": 403.4,
+   "end": 403.58
+  },
+  {
+   "word": "felt",
+   "start": 403.58,
+   "end": 403.8
+  },
+  {
+   "word": "amazing.",
+   "start": 403.8,
+   "end": 404.18
+  },
+  {
+   "word": "Then",
+   "start": 404.46,
+   "end": 404.58
+  },
+  {
+   "word": "it",
+   "start": 404.58,
+   "end": 404.68
+  },
+  {
+   "word": "felt",
+   "start": 404.68,
+   "end": 404.94
+  },
+  {
+   "word": "normal.",
+   "start": 404.94,
+   "end": 405.44
+  },
+  {
+   "word": "Then",
+   "start": 406.06,
+   "end": 406.16
+  },
+  {
+   "word": "it",
+   "start": 406.16,
+   "end": 406.3
+  },
+  {
+   "word": "felt",
+   "start": 406.3,
+   "end": 406.56
+  },
+  {
+   "word": "like",
+   "start": 406.56,
+   "end": 406.78
+  },
+  {
+   "word": "nothing.",
+   "start": 406.78,
+   "end": 407.12
+  },
+  {
+   "word": "Psychologists",
+   "start": 407.96,
+   "end": 408.38
+  },
+  {
+   "word": "call",
+   "start": 408.38,
+   "end": 408.68
+  },
+  {
+   "word": "it",
+   "start": 408.68,
+   "end": 408.82
+  },
+  {
+   "word": "hedonic",
+   "start": 408.82,
+   "end": 409.36
+  },
+  {
+   "word": "adaptation:",
+   "start": 409.36,
+   "end": 409.94
+  },
+  {
+   "word": "we",
+   "start": 409.94,
+   "end": 410.54
+  },
+  {
+   "word": "get",
+   "start": 410.54,
+   "end": 410.68
+  },
+  {
+   "word": "used",
+   "start": 410.68,
+   "end": 410.9
+  },
+  {
+   "word": "to",
+   "start": 410.9,
+   "end": 411.06
+  },
+  {
+   "word": "almost",
+   "start": 411.06,
+   "end": 411.24
+  },
+  {
+   "word": "anything,",
+   "start": 411.24,
+   "end": 411.76
+  },
+  {
+   "word": "good",
+   "start": 412.1,
+   "end": 412.16
+  },
+  {
+   "word": "or",
+   "start": 412.16,
+   "end": 412.44
+  },
+  {
+   "word": "bad,",
+   "start": 412.44,
+   "end": 412.7
+  },
+  {
+   "word": "and",
+   "start": 413.1,
+   "end": 413.14
+  },
+  {
+   "word": "the",
+   "start": 413.14,
+   "end": 413.24
+  },
+  {
+   "word": "thrill",
+   "start": 413.24,
+   "end": 413.46
+  },
+  {
+   "word": "fades.",
+   "start": 413.46,
+   "end": 413.72
+  },
+  {
+   "word": "Saitama's",
+   "start": 417.06,
+   "end": 417.52
+  },
+  {
+   "word": "real",
+   "start": 417.52,
+   "end": 417.76
+  },
+  {
+   "word": "enemy",
+   "start": 417.76,
+   "end": 418.08
+  },
+  {
+   "word": "was",
+   "start": 418.08,
+   "end": 418.46
+  },
+  {
+   "word": "never",
+   "start": 418.46,
+   "end": 418.68
+  },
+  {
+   "word": "a",
+   "start": 418.68,
+   "end": 418.88
+  },
+  {
+   "word": "monster.",
+   "start": 418.88,
+   "end": 419.2
+  },
+  {
+   "word": "It",
+   "start": 419.78,
+   "end": 419.98
+  },
+  {
+   "word": "was",
+   "start": 419.98,
+   "end": 420.14
+  },
+  {
+   "word": "boredom.",
+   "start": 420.14,
+   "end": 420.52
+  },
+  {
+   "word": "Every",
+   "start": 422.08,
+   "end": 422.2
+  },
+  {
+   "word": "fight",
+   "start": 422.2,
+   "end": 422.5
+  },
+  {
+   "word": "ends",
+   "start": 422.5,
+   "end": 422.98
+  },
+  {
+   "word": "before",
+   "start": 422.98,
+   "end": 423.32
+  },
+  {
+   "word": "it",
+   "start": 423.32,
+   "end": 423.46
+  },
+  {
+   "word": "starts.",
+   "start": 423.46,
+   "end": 423.8
+  },
+  {
+   "word": "Every",
+   "start": 424.4,
+   "end": 424.6
+  },
+  {
+   "word": "video",
+   "start": 424.6,
+   "end": 424.94
+  },
+  {
+   "word": "game",
+   "start": 424.94,
+   "end": 425.2
+  },
+  {
+   "word": "feels",
+   "start": 425.2,
+   "end": 425.54
+  },
+  {
+   "word": "slow.",
+   "start": 425.54,
+   "end": 426.04
+  },
+  {
+   "word": "Every",
+   "start": 426.74,
+   "end": 427.0
+  },
+  {
+   "word": "danger",
+   "start": 427.0,
+   "end": 427.5
+  },
+  {
+   "word": "looks",
+   "start": 427.5,
+   "end": 427.82
+  },
+  {
+   "word": "like",
+   "start": 427.82,
+   "end": 427.98
+  },
+  {
+   "word": "it's",
+   "start": 427.98,
+   "end": 428.12
+  },
+  {
+   "word": "standing",
+   "start": 428.12,
+   "end": 428.36
+  },
+  {
+   "word": "still.",
+   "start": 428.36,
+   "end": 428.72
+  },
+  {
+   "word": "You'd",
+   "start": 429.42,
+   "end": 429.62
+  },
+  {
+   "word": "give",
+   "start": 429.62,
+   "end": 429.7
+  },
+  {
+   "word": "anything",
+   "start": 429.7,
+   "end": 430.12
+  },
+  {
+   "word": "for",
+   "start": 430.12,
+   "end": 430.4
+  },
+  {
+   "word": "one",
+   "start": 430.4,
+   "end": 430.66
+  },
+  {
+   "word": "opponent",
+   "start": 430.66,
+   "end": 430.96
+  },
+  {
+   "word": "who",
+   "start": 430.96,
+   "end": 431.24
+  },
+  {
+   "word": "makes",
+   "start": 431.24,
+   "end": 431.4
+  },
+  {
+   "word": "you",
+   "start": 431.4,
+   "end": 431.6
+  },
+  {
+   "word": "sweat,",
+   "start": 431.6,
+   "end": 431.86
+  },
+  {
+   "word": "just",
+   "start": 431.86,
+   "end": 432.2
+  },
+  {
+   "word": "once,",
+   "start": 432.2,
+   "end": 432.7
+  },
+  {
+   "word": "to",
+   "start": 432.7,
+   "end": 433.12
+  },
+  {
+   "word": "remember",
+   "start": 433.12,
+   "end": 433.34
+  },
+  {
+   "word": "what",
+   "start": 433.34,
+   "end": 433.56
+  },
+  {
+   "word": "it",
+   "start": 433.56,
+   "end": 433.64
+  },
+  {
+   "word": "felt",
+   "start": 433.64,
+   "end": 433.78
+  },
+  {
+   "word": "like",
+   "start": 433.78,
+   "end": 433.92
+  },
+  {
+   "word": "to",
+   "start": 433.92,
+   "end": 434.06
+  },
+  {
+   "word": "try.",
+   "start": 434.06,
+   "end": 434.3
+  },
+  {
+   "word": "You",
+   "start": 435.08,
+   "end": 435.4
+  },
+  {
+   "word": "stop",
+   "start": 435.4,
+   "end": 435.56
+  },
+  {
+   "word": "setting",
+   "start": 435.56,
+   "end": 435.8
+  },
+  {
+   "word": "goals,",
+   "start": 435.8,
+   "end": 436.08
+  },
+  {
+   "word": "because",
+   "start": 436.08,
+   "end": 436.66
+  },
+  {
+   "word": "every",
+   "start": 436.66,
+   "end": 437.18
+  },
+  {
+   "word": "goal",
+   "start": 437.18,
+   "end": 437.4
+  },
+  {
+   "word": "is",
+   "start": 437.4,
+   "end": 437.58
+  },
+  {
+   "word": "already",
+   "start": 437.58,
+   "end": 437.88
+  },
+  {
+   "word": "done.",
+   "start": 437.88,
+   "end": 438.2
+  },
+  {
+   "word": "You",
+   "start": 438.2,
+   "end": 438.98
+  },
+  {
+   "word": "stop",
+   "start": 438.98,
+   "end": 439.12
+  },
+  {
+   "word": "telling",
+   "start": 439.12,
+   "end": 439.38
+  },
+  {
+   "word": "people",
+   "start": 439.38,
+   "end": 439.56
+  },
+  {
+   "word": "about",
+   "start": 439.56,
+   "end": 439.76
+  },
+  {
+   "word": "your",
+   "start": 439.76,
+   "end": 439.92
+  },
+  {
+   "word": "day,",
+   "start": 439.92,
+   "end": 440.16
+  },
+  {
+   "word": "because",
+   "start": 440.16,
+   "end": 440.7
+  },
+  {
+   "word": "your",
+   "start": 440.7,
+   "end": 441.06
+  },
+  {
+   "word": "day",
+   "start": 441.06,
+   "end": 441.18
+  },
+  {
+   "word": "is",
+   "start": 441.18,
+   "end": 441.28
+  },
+  {
+   "word": "always",
+   "start": 441.28,
+   "end": 441.46
+  },
+  {
+   "word": "the",
+   "start": 441.46,
+   "end": 441.62
+  },
+  {
+   "word": "same:",
+   "start": 441.62,
+   "end": 441.92
+  },
+  {
+   "word": "something",
+   "start": 442.58,
+   "end": 442.74
+  },
+  {
+   "word": "happens,",
+   "start": 442.74,
+   "end": 443.1
+  },
+  {
+   "word": "you",
+   "start": 443.46,
+   "end": 443.54
+  },
+  {
+   "word": "hit",
+   "start": 443.54,
+   "end": 443.64
+  },
+  {
+   "word": "it",
+   "start": 443.64,
+   "end": 443.74
+  },
+  {
+   "word": "once,",
+   "start": 443.74,
+   "end": 444.04
+  },
+  {
+   "word": "it's",
+   "start": 444.28,
+   "end": 444.5
+  },
+  {
+   "word": "over.",
+   "start": 444.5,
+   "end": 444.74
+  },
+  {
+   "word": "The",
+   "start": 445.34,
+   "end": 445.42
+  },
+  {
+   "word": "strongest",
+   "start": 445.42,
+   "end": 445.84
+  },
+  {
+   "word": "person",
+   "start": 445.84,
+   "end": 446.3
+  },
+  {
+   "word": "in",
+   "start": 446.3,
+   "end": 446.58
+  },
+  {
+   "word": "the",
+   "start": 446.58,
+   "end": 446.66
+  },
+  {
+   "word": "world,",
+   "start": 446.66,
+   "end": 446.94
+  },
+  {
+   "word": "and",
+   "start": 447.34,
+   "end": 447.58
+  },
+  {
+   "word": "the",
+   "start": 447.58,
+   "end": 447.68
+  },
+  {
+   "word": "thing",
+   "start": 447.68,
+   "end": 447.76
+  },
+  {
+   "word": "you",
+   "start": 447.76,
+   "end": 447.86
+  },
+  {
+   "word": "miss",
+   "start": 447.86,
+   "end": 447.98
+  },
+  {
+   "word": "most",
+   "start": 447.98,
+   "end": 448.3
+  },
+  {
+   "word": "is",
+   "start": 448.3,
+   "end": 449.1
+  },
+  {
+   "word": "losing.",
+   "start": 449.1,
+   "end": 449.42
+  },
+  {
+   "word": "One",
+   "start": 450.58,
+   "end": 450.78
+  },
+  {
+   "word": "night,",
+   "start": 450.78,
+   "end": 451.02
+  },
+  {
+   "word": "just",
+   "start": 451.36,
+   "end": 451.66
+  },
+  {
+   "word": "to",
+   "start": 451.66,
+   "end": 451.96
+  },
+  {
+   "word": "feel",
+   "start": 451.96,
+   "end": 452.16
+  },
+  {
+   "word": "something,",
+   "start": 452.16,
+   "end": 452.56
+  },
+  {
+   "word": "you",
+   "start": 452.76,
+   "end": 452.98
+  },
+  {
+   "word": "go",
+   "start": 452.98,
+   "end": 453.14
+  },
+  {
+   "word": "to",
+   "start": 453.14,
+   "end": 453.24
+  },
+  {
+   "word": "an",
+   "start": 453.24,
+   "end": 453.36
+  },
+  {
+   "word": "empty",
+   "start": 453.36,
+   "end": 453.66
+  },
+  {
+   "word": "beach",
+   "start": 453.66,
+   "end": 453.98
+  },
+  {
+   "word": "and",
+   "start": 453.98,
+   "end": 454.48
+  },
+  {
+   "word": "jump.",
+   "start": 454.48,
+   "end": 454.88
+  },
+  {
+   "word": "Not",
+   "start": 455.3,
+   "end": 455.52
+  },
+  {
+   "word": "a",
+   "start": 455.52,
+   "end": 455.62
+  },
+  {
+   "word": "careful",
+   "start": 455.62,
+   "end": 455.86
+  },
+  {
+   "word": "jump.",
+   "start": 455.86,
+   "end": 456.08
+  },
+  {
+   "word": "A",
+   "start": 456.36,
+   "end": 456.56
+  },
+  {
+   "word": "real",
+   "start": 456.56,
+   "end": 456.82
+  },
+  {
+   "word": "one.",
+   "start": 456.82,
+   "end": 457.1
+  },
+  {
+   "word": "The",
+   "start": 457.68,
+   "end": 457.88
+  },
+  {
+   "word": "ground",
+   "start": 457.88,
+   "end": 458.22
+  },
+  {
+   "word": "cracks.",
+   "start": 458.22,
+   "end": 458.84
+  },
+  {
+   "word": "The",
+   "start": 459.54,
+   "end": 459.66
+  },
+  {
+   "word": "clouds",
+   "start": 459.66,
+   "end": 459.86
+  },
+  {
+   "word": "go",
+   "start": 459.86,
+   "end": 460.1
+  },
+  {
+   "word": "past",
+   "start": 460.1,
+   "end": 460.4
+  },
+  {
+   "word": "like",
+   "start": 460.4,
+   "end": 460.66
+  },
+  {
+   "word": "you're",
+   "start": 460.66,
+   "end": 460.94
+  },
+  {
+   "word": "in",
+   "start": 460.94,
+   "end": 461.02
+  },
+  {
+   "word": "an",
+   "start": 461.02,
+   "end": 461.12
+  },
+  {
+   "word": "elevator.",
+   "start": 461.12,
+   "end": 461.5
+  },
+  {
+   "word": "Then",
+   "start": 461.92,
+   "end": 462.14
+  },
+  {
+   "word": "the",
+   "start": 462.14,
+   "end": 462.44
+  },
+  {
+   "word": "sky",
+   "start": 462.44,
+   "end": 462.84
+  },
+  {
+   "word": "turns",
+   "start": 462.84,
+   "end": 463.34
+  },
+  {
+   "word": "black,",
+   "start": 463.34,
+   "end": 463.84
+  },
+  {
+   "word": "and",
+   "start": 463.84,
+   "end": 464.6
+  },
+  {
+   "word": "below",
+   "start": 464.6,
+   "end": 464.8
+  },
+  {
+   "word": "you",
+   "start": 464.8,
+   "end": 465.18
+  },
+  {
+   "word": "there's",
+   "start": 465.24,
+   "end": 465.66
+  },
+  {
+   "word": "the",
+   "start": 465.66,
+   "end": 465.78
+  },
+  {
+   "word": "curve",
+   "start": 465.78,
+   "end": 466.02
+  },
+  {
+   "word": "of",
+   "start": 466.02,
+   "end": 466.22
+  },
+  {
+   "word": "the",
+   "start": 466.22,
+   "end": 466.34
+  },
+  {
+   "word": "Earth,",
+   "start": 466.34,
+   "end": 466.54
+  },
+  {
+   "word": "blue",
+   "start": 466.54,
+   "end": 467.22
+  },
+  {
+   "word": "and",
+   "start": 467.22,
+   "end": 467.56
+  },
+  {
+   "word": "white",
+   "start": 467.56,
+   "end": 467.84
+  },
+  {
+   "word": "and",
+   "start": 468.28,
+   "end": 468.32
+  },
+  {
+   "word": "silent.",
+   "start": 468.32,
+   "end": 468.7
+  },
+  {
+   "word": "To",
+   "start": 469.44,
+   "end": 469.58
+  },
+  {
+   "word": "leave",
+   "start": 469.58,
+   "end": 469.72
+  },
+  {
+   "word": "Earth",
+   "start": 469.72,
+   "end": 469.86
+  },
+  {
+   "word": "for",
+   "start": 469.86,
+   "end": 470.04
+  },
+  {
+   "word": "good",
+   "start": 470.04,
+   "end": 470.24
+  },
+  {
+   "word": "you'd",
+   "start": 470.64,
+   "end": 470.72
+  },
+  {
+   "word": "need",
+   "start": 470.72,
+   "end": 470.8
+  },
+  {
+   "word": "about",
+   "start": 470.8,
+   "end": 471.06
+  },
+  {
+   "word": "eleven",
+   "start": 471.06,
+   "end": 471.49
+  },
+  {
+   "word": "kilometres",
+   "start": 471.49,
+   "end": 471.92
+  },
+  {
+   "word": "per",
+   "start": 471.92,
+   "end": 472.26
+  },
+  {
+   "word": "second.",
+   "start": 472.26,
+   "end": 472.52
+  },
+  {
+   "word": "You",
+   "start": 473.08,
+   "end": 473.22
+  },
+  {
+   "word": "don't",
+   "start": 473.22,
+   "end": 473.32
+  },
+  {
+   "word": "know",
+   "start": 473.32,
+   "end": 473.44
+  },
+  {
+   "word": "if",
+   "start": 473.44,
+   "end": 473.5
+  },
+  {
+   "word": "you",
+   "start": 473.5,
+   "end": 473.58
+  },
+  {
+   "word": "went",
+   "start": 473.58,
+   "end": 473.66
+  },
+  {
+   "word": "that",
+   "start": 473.66,
+   "end": 473.8
+  },
+  {
+   "word": "fast.",
+   "start": 473.8,
+   "end": 474.08
+  },
+  {
+   "word": "You",
+   "start": 474.72,
+   "end": 474.86
+  },
+  {
+   "word": "know",
+   "start": 474.86,
+   "end": 474.98
+  },
+  {
+   "word": "you're",
+   "start": 474.98,
+   "end": 475.16
+  },
+  {
+   "word": "falling",
+   "start": 475.16,
+   "end": 475.36
+  },
+  {
+   "word": "back,",
+   "start": 475.36,
+   "end": 475.72
+  },
+  {
+   "word": "and",
+   "start": 476.14,
+   "end": 476.32
+  },
+  {
+   "word": "for",
+   "start": 476.32,
+   "end": 476.44
+  },
+  {
+   "word": "about",
+   "start": 476.44,
+   "end": 476.64
+  },
+  {
+   "word": "twenty",
+   "start": 476.64,
+   "end": 477.1
+  },
+  {
+   "word": "seconds,",
+   "start": 477.1,
+   "end": 477.6
+  },
+  {
+   "word": "falling",
+   "start": 478.0,
+   "end": 478.36
+  },
+  {
+   "word": "feels",
+   "start": 478.36,
+   "end": 478.62
+  },
+  {
+   "word": "like",
+   "start": 478.62,
+   "end": 478.84
+  },
+  {
+   "word": "the",
+   "start": 478.84,
+   "end": 479.0
+  },
+  {
+   "word": "most",
+   "start": 479.0,
+   "end": 479.22
+  },
+  {
+   "word": "exciting",
+   "start": 479.22,
+   "end": 479.78
+  },
+  {
+   "word": "thing",
+   "start": 479.78,
+   "end": 480.14
+  },
+  {
+   "word": "that",
+   "start": 480.14,
+   "end": 480.3
+  },
+  {
+   "word": "has",
+   "start": 480.3,
+   "end": 480.4
+  },
+  {
+   "word": "happened",
+   "start": 480.4,
+   "end": 480.72
+  },
+  {
+   "word": "to",
+   "start": 480.72,
+   "end": 480.92
+  },
+  {
+   "word": "you",
+   "start": 480.92,
+   "end": 481.06
+  },
+  {
+   "word": "in",
+   "start": 481.06,
+   "end": 481.32
+  },
+  {
+   "word": "months.",
+   "start": 481.32,
+   "end": 481.72
+  },
+  {
+   "word": "You",
+   "start": 482.56,
+   "end": 482.78
+  },
+  {
+   "word": "land",
+   "start": 482.78,
+   "end": 482.96
+  },
+  {
+   "word": "in",
+   "start": 482.96,
+   "end": 483.1
+  },
+  {
+   "word": "the",
+   "start": 483.1,
+   "end": 483.18
+  },
+  {
+   "word": "ocean.",
+   "start": 483.18,
+   "end": 483.42
+  },
+  {
+   "word": "It",
+   "start": 483.98,
+   "end": 484.08
+  },
+  {
+   "word": "takes",
+   "start": 484.08,
+   "end": 484.28
+  },
+  {
+   "word": "you",
+   "start": 484.28,
+   "end": 484.48
+  },
+  {
+   "word": "an",
+   "start": 484.48,
+   "end": 484.66
+  },
+  {
+   "word": "hour",
+   "start": 484.66,
+   "end": 484.82
+  },
+  {
+   "word": "to",
+   "start": 484.82,
+   "end": 485.0
+  },
+  {
+   "word": "swim",
+   "start": 485.0,
+   "end": 485.2
+  },
+  {
+   "word": "home.",
+   "start": 485.2,
+   "end": 485.44
+  },
+  {
+   "word": "You",
+   "start": 486.0,
+   "end": 486.14
+  },
+  {
+   "word": "smile",
+   "start": 486.14,
+   "end": 486.44
+  },
+  {
+   "word": "the",
+   "start": 486.44,
+   "end": 486.64
+  },
+  {
+   "word": "whole",
+   "start": 486.64,
+   "end": 486.76
+  },
+  {
+   "word": "way.",
+   "start": 486.76,
+   "end": 487.14
+  },
+  {
+   "word": "And",
+   "start": 488.04,
+   "end": 488.16
+  },
+  {
+   "word": "then,",
+   "start": 488.16,
+   "end": 488.44
+  },
+  {
+   "word": "on",
+   "start": 488.78,
+   "end": 489.06
+  },
+  {
+   "word": "day",
+   "start": 489.06,
+   "end": 489.3
+  },
+  {
+   "word": "one",
+   "start": 489.3,
+   "end": 489.725
+  },
+  {
+   "word": "hundred",
+   "start": 489.725,
+   "end": 490.15
+  },
+  {
+   "word": "and",
+   "start": 490.15,
+   "end": 490.575
+  },
+  {
+   "word": "twenty,",
+   "start": 490.575,
+   "end": 491.0
+  },
+  {
+   "word": "the",
+   "start": 491.0,
+   "end": 491.16
+  },
+  {
+   "word": "sky",
+   "start": 491.16,
+   "end": 491.52
+  },
+  {
+   "word": "turns",
+   "start": 491.52,
+   "end": 492.06
+  },
+  {
+   "word": "red.",
+   "start": 492.06,
+   "end": 492.44
+  },
+  {
+   "word": "Something",
+   "start": 493.1,
+   "end": 493.26
+  },
+  {
+   "word": "is",
+   "start": 493.26,
+   "end": 493.48
+  },
+  {
+   "word": "coming",
+   "start": 493.48,
+   "end": 493.64
+  },
+  {
+   "word": "in",
+   "start": 493.64,
+   "end": 493.88
+  },
+  {
+   "word": "from",
+   "start": 493.88,
+   "end": 494.06
+  },
+  {
+   "word": "space,",
+   "start": 494.06,
+   "end": 494.44
+  },
+  {
+   "word": "a",
+   "start": 494.44,
+   "end": 495.06
+  },
+  {
+   "word": "rock",
+   "start": 495.06,
+   "end": 495.34
+  },
+  {
+   "word": "the",
+   "start": 495.34,
+   "end": 495.6
+  },
+  {
+   "word": "size",
+   "start": 495.6,
+   "end": 495.84
+  },
+  {
+   "word": "of",
+   "start": 495.84,
+   "end": 495.98
+  },
+  {
+   "word": "a",
+   "start": 495.98,
+   "end": 496.1
+  },
+  {
+   "word": "stadium,",
+   "start": 496.1,
+   "end": 496.48
+  },
+  {
+   "word": "and",
+   "start": 497.08,
+   "end": 497.14
+  },
+  {
+   "word": "every",
+   "start": 497.14,
+   "end": 497.64
+  },
+  {
+   "word": "government",
+   "start": 497.64,
+   "end": 498.02
+  },
+  {
+   "word": "on",
+   "start": 498.02,
+   "end": 498.28
+  },
+  {
+   "word": "Earth",
+   "start": 498.28,
+   "end": 498.48
+  },
+  {
+   "word": "runs",
+   "start": 498.48,
+   "end": 498.86
+  },
+  {
+   "word": "out",
+   "start": 498.86,
+   "end": 499.1
+  },
+  {
+   "word": "of",
+   "start": 499.1,
+   "end": 499.34
+  },
+  {
+   "word": "time",
+   "start": 499.34,
+   "end": 499.52
+  },
+  {
+   "word": "at",
+   "start": 499.52,
+   "end": 499.76
+  },
+  {
+   "word": "the",
+   "start": 499.76,
+   "end": 499.88
+  },
+  {
+   "word": "same",
+   "start": 499.88,
+   "end": 500.22
+  },
+  {
+   "word": "moment.",
+   "start": 500.22,
+   "end": 500.58
+  },
+  {
+   "word": "For",
+   "start": 501.14,
+   "end": 501.22
+  },
+  {
+   "word": "the",
+   "start": 501.22,
+   "end": 501.32
+  },
+  {
+   "word": "first",
+   "start": 501.32,
+   "end": 501.48
+  },
+  {
+   "word": "time",
+   "start": 501.48,
+   "end": 501.68
+  },
+  {
+   "word": "in",
+   "start": 501.68,
+   "end": 501.82
+  },
+  {
+   "word": "months,",
+   "start": 501.82,
+   "end": 502.1
+  },
+  {
+   "word": "your",
+   "start": 502.74,
+   "end": 502.82
+  },
+  {
+   "word": "heart",
+   "start": 502.82,
+   "end": 503.04
+  },
+  {
+   "word": "is",
+   "start": 503.04,
+   "end": 503.26
+  },
+  {
+   "word": "pounding.",
+   "start": 503.26,
+   "end": 503.64
+  },
+  {
+   "word": "Millions",
+   "start": 504.56,
+   "end": 504.68
+  },
+  {
+   "word": "of",
+   "start": 504.68,
+   "end": 505.06
+  },
+  {
+   "word": "people",
+   "start": 505.06,
+   "end": 505.34
+  },
+  {
+   "word": "are",
+   "start": 505.34,
+   "end": 505.56
+  },
+  {
+   "word": "looking",
+   "start": 505.56,
+   "end": 505.74
+  },
+  {
+   "word": "up,",
+   "start": 505.74,
+   "end": 505.98
+  },
+  {
+   "word": "and",
+   "start": 506.52,
+   "end": 506.62
+  },
+  {
+   "word": "for",
+   "start": 506.62,
+   "end": 506.74
+  },
+  {
+   "word": "once,",
+   "start": 506.74,
+   "end": 507.08
+  },
+  {
+   "word": "so",
+   "start": 507.6,
+   "end": 507.82
+  },
+  {
+   "word": "are",
+   "start": 507.82,
+   "end": 507.94
+  },
+  {
+   "word": "you.",
+   "start": 507.94,
+   "end": 508.14
+  },
+  {
+   "word": "Not",
+   "start": 508.6,
+   "end": 508.84
+  },
+  {
+   "word": "because",
+   "start": 508.84,
+   "end": 509.08
+  },
+  {
+   "word": "you're",
+   "start": 509.08,
+   "end": 509.34
+  },
+  {
+   "word": "scared.",
+   "start": 509.34,
+   "end": 509.66
+  },
+  {
+   "word": "Because,",
+   "start": 510.12,
+   "end": 510.52
+  },
+  {
+   "word": "finally,",
+   "start": 510.52,
+   "end": 511.12
+  },
+  {
+   "word": "something",
+   "start": 511.56,
+   "end": 511.82
+  },
+  {
+   "word": "is",
+   "start": 511.82,
+   "end": 512.14
+  },
+  {
+   "word": "coming",
+   "start": 512.14,
+   "end": 512.44
+  },
+  {
+   "word": "that",
+   "start": 512.44,
+   "end": 512.72
+  },
+  {
+   "word": "might",
+   "start": 512.72,
+   "end": 513.02
+  },
+  {
+   "word": "actually",
+   "start": 513.02,
+   "end": 513.72
+  },
+  {
+   "word": "be",
+   "start": 513.72,
+   "end": 513.98
+  },
+  {
+   "word": "a",
+   "start": 513.98,
+   "end": 514.16
+  },
+  {
+   "word": "fight.",
+   "start": 514.16,
+   "end": 514.4
+  },
+  {
+   "word": "You",
+   "start": 515.18,
+   "end": 515.52
+  },
+  {
+   "word": "jump.",
+   "start": 515.52,
+   "end": 515.78
+  },
+  {
+   "word": "You",
+   "start": 516.32,
+   "end": 516.5
+  },
+  {
+   "word": "meet",
+   "start": 516.5,
+   "end": 516.66
+  },
+  {
+   "word": "it",
+   "start": 516.66,
+   "end": 516.88
+  },
+  {
+   "word": "above",
+   "start": 516.88,
+   "end": 517.1
+  },
+  {
+   "word": "the",
+   "start": 517.1,
+   "end": 517.28
+  },
+  {
+   "word": "clouds,",
+   "start": 517.28,
+   "end": 517.58
+  },
+  {
+   "word": "and",
+   "start": 517.9,
+   "end": 518.1
+  },
+  {
+   "word": "for",
+   "start": 518.1,
+   "end": 518.36
+  },
+  {
+   "word": "one",
+   "start": 518.36,
+   "end": 518.68
+  },
+  {
+   "word": "second",
+   "start": 518.68,
+   "end": 519.0
+  },
+  {
+   "word": "you",
+   "start": 519.0,
+   "end": 519.3
+  },
+  {
+   "word": "throw",
+   "start": 519.3,
+   "end": 519.56
+  },
+  {
+   "word": "a",
+   "start": 519.56,
+   "end": 519.82
+  },
+  {
+   "word": "serious",
+   "start": 519.82,
+   "end": 520.22
+  },
+  {
+   "word": "punch.",
+   "start": 520.22,
+   "end": 520.62
+  },
+  {
+   "word": "The",
+   "start": 521.32,
+   "end": 521.66
+  },
+  {
+   "word": "rock",
+   "start": 521.66,
+   "end": 521.92
+  },
+  {
+   "word": "turns",
+   "start": 521.92,
+   "end": 522.38
+  },
+  {
+   "word": "into",
+   "start": 522.38,
+   "end": 522.62
+  },
+  {
+   "word": "gravel",
+   "start": 522.62,
+   "end": 522.86
+  },
+  {
+   "word": "and",
+   "start": 522.86,
+   "end": 523.04
+  },
+  {
+   "word": "dust.",
+   "start": 523.04,
+   "end": 523.26
+  },
+  {
+   "word": "A",
+   "start": 523.26,
+   "end": 524.22
+  },
+  {
+   "word": "few",
+   "start": 524.22,
+   "end": 524.38
+  },
+  {
+   "word": "pieces",
+   "start": 524.38,
+   "end": 524.72
+  },
+  {
+   "word": "still",
+   "start": 524.72,
+   "end": 525.0
+  },
+  {
+   "word": "rain",
+   "start": 525.0,
+   "end": 525.26
+  },
+  {
+   "word": "down",
+   "start": 525.26,
+   "end": 525.5
+  },
+  {
+   "word": "on",
+   "start": 525.5,
+   "end": 525.66
+  },
+  {
+   "word": "the",
+   "start": 525.66,
+   "end": 525.76
+  },
+  {
+   "word": "city.",
+   "start": 525.76,
+   "end": 526.0
+  },
+  {
+   "word": "A",
+   "start": 526.0,
+   "end": 526.86
+  },
+  {
+   "word": "few",
+   "start": 526.86,
+   "end": 527.02
+  },
+  {
+   "word": "roofs",
+   "start": 527.02,
+   "end": 527.32
+  },
+  {
+   "word": "get",
+   "start": 527.32,
+   "end": 527.48
+  },
+  {
+   "word": "holes,",
+   "start": 527.48,
+   "end": 527.9
+  },
+  {
+   "word": "a",
+   "start": 527.9,
+   "end": 528.24
+  },
+  {
+   "word": "few",
+   "start": 528.24,
+   "end": 528.38
+  },
+  {
+   "word": "cars",
+   "start": 528.38,
+   "end": 528.64
+  },
+  {
+   "word": "get",
+   "start": 528.64,
+   "end": 528.82
+  },
+  {
+   "word": "dents.",
+   "start": 528.82,
+   "end": 529.22
+  },
+  {
+   "word": "Nobody",
+   "start": 529.22,
+   "end": 530.2
+  },
+  {
+   "word": "dies.",
+   "start": 530.2,
+   "end": 530.7
+  },
+  {
+   "word": "The",
+   "start": 553.24,
+   "end": 553.24
+  },
+  {
+   "word": "next",
+   "start": 553.24,
+   "end": 553.42
+  },
+  {
+   "word": "morning",
+   "start": 553.42,
+   "end": 553.66
+  },
+  {
+   "word": "a",
+   "start": 553.66,
+   "end": 553.92
+  },
+  {
+   "word": "headline",
+   "start": 553.92,
+   "end": 554.18
+  },
+  {
+   "word": "asks",
+   "start": 554.18,
+   "end": 554.5
+  },
+  {
+   "word": "who",
+   "start": 554.5,
+   "end": 554.88
+  },
+  {
+   "word": "will",
+   "start": 554.88,
+   "end": 555.0
+  },
+  {
+   "word": "pay",
+   "start": 555.0,
+   "end": 555.24
+  },
+  {
+   "word": "for",
+   "start": 555.24,
+   "end": 555.42
+  },
+  {
+   "word": "the",
+   "start": 555.42,
+   "end": 555.5
+  },
+  {
+   "word": "damage.",
+   "start": 555.5,
+   "end": 555.86
+  },
+  {
+   "word": "So",
+   "start": 557.1,
+   "end": 557.12
+  },
+  {
+   "word": "you",
+   "start": 557.12,
+   "end": 557.5
+  },
+  {
+   "word": "do",
+   "start": 557.5,
+   "end": 557.72
+  },
+  {
+   "word": "what",
+   "start": 557.72,
+   "end": 557.92
+  },
+  {
+   "word": "Saitama",
+   "start": 557.92,
+   "end": 558.22
+  },
+  {
+   "word": "does.",
+   "start": 558.22,
+   "end": 558.5
+  },
+  {
+   "word": "You",
+   "start": 559.22,
+   "end": 559.28
+  },
+  {
+   "word": "go",
+   "start": 559.28,
+   "end": 559.4
+  },
+  {
+   "word": "shopping.",
+   "start": 559.4,
+   "end": 559.7
+  },
+  {
+   "word": "Eggs",
+   "start": 560.34,
+   "end": 560.42
+  },
+  {
+   "word": "are",
+   "start": 560.42,
+   "end": 560.56
+  },
+  {
+   "word": "half",
+   "start": 560.56,
+   "end": 560.74
+  },
+  {
+   "word": "price,",
+   "start": 560.74,
+   "end": 560.98
+  },
+  {
+   "word": "and",
+   "start": 561.62,
+   "end": 561.78
+  },
+  {
+   "word": "for",
+   "start": 561.78,
+   "end": 562.1
+  },
+  {
+   "word": "some",
+   "start": 562.1,
+   "end": 562.26
+  },
+  {
+   "word": "reason",
+   "start": 562.26,
+   "end": 562.52
+  },
+  {
+   "word": "that",
+   "start": 562.52,
+   "end": 562.86
+  },
+  {
+   "word": "makes",
+   "start": 562.86,
+   "end": 563.04
+  },
+  {
+   "word": "you",
+   "start": 563.04,
+   "end": 563.28
+  },
+  {
+   "word": "happier",
+   "start": 563.28,
+   "end": 563.6
+  },
+  {
+   "word": "than",
+   "start": 563.6,
+   "end": 563.94
+  },
+  {
+   "word": "saving",
+   "start": 563.94,
+   "end": 564.22
+  },
+  {
+   "word": "the",
+   "start": 564.22,
+   "end": 564.4
+  },
+  {
+   "word": "planet",
+   "start": 564.4,
+   "end": 564.6
+  },
+  {
+   "word": "did.",
+   "start": 564.6,
+   "end": 564.86
+  },
+  {
+   "word": "That",
+   "start": 574.08,
+   "end": 574.46
+  },
+  {
+   "word": "night,",
+   "start": 574.46,
+   "end": 574.7
+  },
+  {
+   "word": "you",
+   "start": 574.7,
+   "end": 575.1
+  },
+  {
+   "word": "set",
+   "start": 575.1,
+   "end": 575.28
+  },
+  {
+   "word": "your",
+   "start": 575.28,
+   "end": 575.4
+  },
+  {
+   "word": "alarm",
+   "start": 575.4,
+   "end": 575.66
+  },
+  {
+   "word": "for",
+   "start": 575.66,
+   "end": 575.88
+  },
+  {
+   "word": "6:15.",
+   "start": 575.88,
+   "end": 577.04
+  },
+  {
+   "word": "In",
+   "start": 577.04,
+   "end": 577.24
+  },
+  {
+   "word": "the",
+   "start": 577.24,
+   "end": 577.34
+  },
+  {
+   "word": "morning",
+   "start": 577.34,
+   "end": 577.56
+  },
+  {
+   "word": "it",
+   "start": 577.56,
+   "end": 577.9
+  },
+  {
+   "word": "rings,",
+   "start": 577.9,
+   "end": 578.18
+  },
+  {
+   "word": "and",
+   "start": 578.18,
+   "end": 578.58
+  },
+  {
+   "word": "you",
+   "start": 578.58,
+   "end": 578.78
+  },
+  {
+   "word": "reach",
+   "start": 578.78,
+   "end": 578.96
+  },
+  {
+   "word": "out",
+   "start": 578.96,
+   "end": 579.26
+  },
+  {
+   "word": "and",
+   "start": 579.26,
+   "end": 579.68
+  },
+  {
+   "word": "tap",
+   "start": 579.68,
+   "end": 579.86
+  },
+  {
+   "word": "it.",
+   "start": 579.86,
+   "end": 580.22
+  },
+  {
+   "word": "Gently.",
+   "start": 580.54,
+   "end": 580.8
+  },
+  {
+   "word": "It",
+   "start": 581.6,
+   "end": 581.8
+  },
+  {
+   "word": "stops",
+   "start": 581.8,
+   "end": 581.96
+  },
+  {
+   "word": "ringing.",
+   "start": 581.96,
+   "end": 582.22
+  },
+  {
+   "word": "The",
+   "start": 582.22,
+   "end": 583.08
+  },
+  {
+   "word": "nightstand",
+   "start": 583.08,
+   "end": 583.5
+  },
+  {
+   "word": "is",
+   "start": 583.5,
+   "end": 583.68
+  },
+  {
+   "word": "still",
+   "start": 583.68,
+   "end": 583.86
+  },
+  {
+   "word": "there.",
+   "start": 583.86,
+   "end": 584.18
+  },
+  {
+   "word": "Your",
+   "start": 584.72,
+   "end": 584.76
+  },
+  {
+   "word": "friend",
+   "start": 584.76,
+   "end": 584.94
+  },
+  {
+   "word": "texts:",
+   "start": 584.94,
+   "end": 585.34
+  },
+  {
+   "word": "\"Run",
+   "start": 585.9,
+   "end": 586.0
+  },
+  {
+   "word": "tomorrow?",
+   "start": 586.0,
+   "end": 586.34
+  },
+  {
+   "word": "Ten",
+   "start": 586.34,
+   "end": 587.17
+  },
+  {
+   "word": "kilometres.\"",
+   "start": 587.17,
+   "end": 588.0
+  },
+  {
+   "word": "You",
+   "start": 588.0,
+   "end": 588.08
+  },
+  {
+   "word": "say",
+   "start": 588.08,
+   "end": 588.24
+  },
+  {
+   "word": "yes.",
+   "start": 588.24,
+   "end": 588.48
+  },
+  {
+   "word": "Not",
+   "start": 588.98,
+   "end": 589.22
+  },
+  {
+   "word": "because",
+   "start": 589.22,
+   "end": 589.42
+  },
+  {
+   "word": "you",
+   "start": 589.42,
+   "end": 589.58
+  },
+  {
+   "word": "need",
+   "start": 589.58,
+   "end": 589.72
+  },
+  {
+   "word": "it.",
+   "start": 589.72,
+   "end": 590.02
+  },
+  {
+   "word": "Because",
+   "start": 590.32,
+   "end": 590.68
+  },
+  {
+   "word": "it's",
+   "start": 590.68,
+   "end": 590.9
+  },
+  {
+   "word": "the",
+   "start": 590.9,
+   "end": 591.02
+  },
+  {
+   "word": "one",
+   "start": 591.02,
+   "end": 591.32
+  },
+  {
+   "word": "thing",
+   "start": 591.32,
+   "end": 591.58
+  },
+  {
+   "word": "left",
+   "start": 591.58,
+   "end": 591.86
+  },
+  {
+   "word": "that",
+   "start": 591.86,
+   "end": 592.12
+  },
+  {
+   "word": "you",
+   "start": 592.12,
+   "end": 592.22
+  },
+  {
+   "word": "get",
+   "start": 592.22,
+   "end": 592.34
+  },
+  {
+   "word": "to",
+   "start": 592.34,
+   "end": 592.46
+  },
+  {
+   "word": "do",
+   "start": 592.46,
+   "end": 592.56
+  },
+  {
+   "word": "with",
+   "start": 592.56,
+   "end": 592.72
+  },
+  {
+   "word": "someone",
+   "start": 592.72,
+   "end": 592.98
+  },
+  {
+   "word": "else.",
+   "start": 592.98,
+   "end": 593.28
+  },
+  {
+   "word": "It's",
+   "start": 593.28,
+   "end": 594.34
+  },
+  {
+   "word": "the",
+   "start": 594.34,
+   "end": 594.5
+  },
+  {
+   "word": "hardest",
+   "start": 594.5,
+   "end": 594.78
+  },
+  {
+   "word": "thing",
+   "start": 594.78,
+   "end": 595.04
+  },
+  {
+   "word": "you've",
+   "start": 595.04,
+   "end": 595.28
+  },
+  {
+   "word": "learned",
+   "start": 595.28,
+   "end": 595.4
+  },
+  {
+   "word": "all",
+   "start": 595.4,
+   "end": 595.58
+  },
+  {
+   "word": "year.",
+   "start": 595.58,
+   "end": 595.8
+  },
+  {
+   "word": "So:",
+   "start": 596.94,
+   "end": 597.18
+  },
+  {
+   "word": "would",
+   "start": 597.74,
+   "end": 597.9
+  },
+  {
+   "word": "you",
+   "start": 597.9,
+   "end": 598.04
+  },
+  {
+   "word": "take",
+   "start": 598.04,
+   "end": 598.2
+  },
+  {
+   "word": "one",
+   "start": 598.2,
+   "end": 598.58
+  },
+  {
+   "word": "punch",
+   "start": 598.58,
+   "end": 599.0
+  },
+  {
+   "word": "that",
+   "start": 599.0,
+   "end": 599.36
+  },
+  {
+   "word": "wins",
+   "start": 599.36,
+   "end": 599.52
+  },
+  {
+   "word": "every",
+   "start": 599.52,
+   "end": 600.02
+  },
+  {
+   "word": "fight,",
+   "start": 600.02,
+   "end": 600.44
+  },
+  {
+   "word": "if",
+   "start": 600.44,
+   "end": 601.04
+  },
+  {
+   "word": "it",
+   "start": 601.04,
+   "end": 601.14
+  },
+  {
+   "word": "meant",
+   "start": 601.14,
+   "end": 601.28
+  },
+  {
+   "word": "nothing",
+   "start": 601.28,
+   "end": 601.68
+  },
+  {
+   "word": "would",
+   "start": 601.68,
+   "end": 601.88
+  },
+  {
+   "word": "ever",
+   "start": 601.88,
+   "end": 602.22
+  },
+  {
+   "word": "feel",
+   "start": 602.22,
+   "end": 602.54
+  },
+  {
+   "word": "hard",
+   "start": 602.54,
+   "end": 602.86
+  },
+  {
+   "word": "again?",
+   "start": 602.86,
+   "end": 603.14
+  },
+  {
+   "word": "And",
+   "start": 603.98,
+   "end": 604.16
+  },
+  {
+   "word": "what's",
+   "start": 604.16,
+   "end": 604.6
+  },
+  {
+   "word": "the",
+   "start": 604.6,
+   "end": 604.68
+  },
+  {
+   "word": "first",
+   "start": 604.68,
+   "end": 604.84
+  },
+  {
+   "word": "thing",
+   "start": 604.84,
+   "end": 605.0
+  },
+  {
+   "word": "you'd",
+   "start": 605.0,
+   "end": 605.16
+  },
+  {
+   "word": "punch?",
+   "start": 605.16,
+   "end": 605.4
+  },
+  {
+   "word": "Tell",
+   "start": 606.16,
+   "end": 606.26
+  },
+  {
+   "word": "us",
+   "start": 606.26,
+   "end": 606.36
+  },
+  {
+   "word": "in",
+   "start": 606.36,
+   "end": 606.46
+  },
+  {
+   "word": "the",
+   "start": 606.46,
+   "end": 606.56
+  },
+  {
+   "word": "comments.",
+   "start": 606.56,
+   "end": 606.72
+  }
+ ]
+}
