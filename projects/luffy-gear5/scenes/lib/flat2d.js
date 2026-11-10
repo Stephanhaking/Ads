@@ -10,7 +10,7 @@ let FID = 0;
 export function frame(U, S, v, people, fx = '', o = {}) {
   const T = U.t ?? 0, D = (U.info && U.info.dur) || 3, sm = (x) => x * x * (3 - 2 * x), p = Math.min(1, Math.max(0, T / D)), eo = 1 - Math.pow(1 - Math.min(1, T / 0.5), 3);
   // camera smoothing: a slow continuous push-in over the shot + a gentle settle as the shot starts (no dead-still frames)
-  const z = (v.z || 1) * (1 + 0.035 * sm(p)) * (1 + 0.035 * (1 - eo)), tx = 960 - v.cx * z, ty = 540 - v.cy * z;
+  const z = (v.z || 1) * (1 + 0.035 * sm(p)) , tx = 960 - v.cx * z, ty = 540 - v.cy * z;
   let ppl = '', refl = ''; const out = [];
   for (const p of people) { if (!p) { out.push(null); continue; }
     const c = person(p.x, p.y, p.h, p.pose, { ...p.outfit, face: p.face || 'neutral', flip: p.flip, look: p.look ?? (p.flip ? -0.5 : 0.5), rim: o.rim || '#b9dcff' }); out.push(c);
@@ -19,7 +19,7 @@ export function frame(U, S, v, people, fx = '', o = {}) {
   const UID = (++FID).toString(36), uniq = (x) => x.replace(/id="([A-Za-z][\w-]*)"/g, `id="$1_${UID}"`).replace(/url\(#([A-Za-z][\w-]*)\)/g, `url(#$1_${UID})`);
   const fxs = typeof fx === 'function' ? fx(out) : fx;
   U.svg('flat', uniq(`<defs><filter id="bl" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation="${f((S.blur ?? 5) / z)}"/></filter><radialGradient id="vig" cx="0.5" cy="0.5" r="0.75"><stop offset="0.55" stop-color="#0d1118" stop-opacity="0"/><stop offset="1" stop-color="#0d1118" stop-opacity="${S.vig ?? 0.5}"/></radialGradient><pattern id="mot" width="700" height="700" patternUnits="userSpaceOnUse"><image href="${MOTTLE}" width="700" height="700"/></pattern><pattern id="grn" width="256" height="256" patternUnits="userSpaceOnUse"><image href="${GRAIN}" width="256" height="256"/></pattern><linearGradient id="hudbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14121c" stop-opacity="0.7"/><stop offset="1" stop-color="#14121c" stop-opacity="0"/></linearGradient></defs>`
-    + `<rect width="1920" height="1080" fill="${S.bg || '#222'}"/><g transform="translate(${f(tx)} ${f(ty)}) scale(${f(z)})"><g filter="url(#bl)">${S.back}</g>${S.mid || ''}${S.floor || ''}<rect x="-3000" y="-2000" width="8000" height="5000" fill="url(#mot)" opacity="${S.tex ?? 0.26}" style="mix-blend-mode:overlay"/><g filter="url(#bl)">${refl}</g>${ppl}${S.front || ''}${o.fxIn ? fxs : ''}</g>${o.fxIn ? '' : fxs}`
+    + `<rect width="1920" height="1080" fill="${S.bg || '#222'}"/><g transform="translate(${tx.toFixed(3)} ${ty.toFixed(3)}) scale(${z.toFixed(5)})"><g filter="url(#bl)">${S.back}</g>${S.mid || ''}${S.floor || ''}<rect x="-3000" y="-2000" width="8000" height="5000" fill="url(#mot)" opacity="${S.tex ?? 0.26}" style="mix-blend-mode:overlay"/><g filter="url(#bl)">${refl}</g>${ppl}${S.front || ''}${o.fxIn ? fxs : ''}</g>${o.fxIn ? '' : fxs}`
     + `<rect width="1920" height="1080" fill="url(#grn)" opacity="0.07" style="mix-blend-mode:overlay"/><rect width="1920" height="1080" fill="url(#vig)"/><rect width="1920" height="200" fill="url(#hudbg)"/>`), { z: 2 });
   return out;
 }
