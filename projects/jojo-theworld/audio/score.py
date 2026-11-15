@@ -1,0 +1,40 @@
+# audio/score.py — original score for the JoJo "The World" video (~7:20). Continuous bed, never silent. A clock-tick
+# pulse and a glassy "freeze" pad for stopped time, a light playful motif for the experiments, tension for the world
+# reacting, a big swell for the fire, a warm quiet close. Original material only.
+S.set_key("E minor")
+tick = Motif("1 . 5 . 1 . 5 .", ".5 .5 .5 .5 .5 .5 .5 .5")
+play = Motif("1 3 5 3 6 5 3 .", ".5 .5 .5 .5 .5 .5 .5 .5")
+hero = Motif("1 5 8 7 5 3", "1 .5 .5 1 .5 1.5")
+W = lambda p, a=0: S.word(p, after=a)
+cuts = [W("Overnight"), W("Breakfast"), W("On day two"), W("On day four"), W("On day seven"), W("On day eleven"), W("Someone else filmed"),
+        W("On day twenty-five"), W("On day forty"), W("This is the part nobody"), W("So: if you")]
+t = [0] + cuts + [S.duration]
+
+A = S.section("open", t[0], t[1], bpm=96, chords="i:2 bVI:2 bVII:2 i:2")
+A.pad("pad_glass", 4, 24, "open"); A.ticks("stick", step=0.5, vel=18); A.pulse("synth_bass", octave=2, vel=30, step=1)
+S.hit(W("and it stops"), "boom", vel=84); S.hit(W("like someone pressed play"), "pluck", vel=66)
+B = S.section("reveal", t[1], t[2], bpm=100, chords="i:2 bVI:2 bIII:2 bVII:2")
+B.motif(hero, "horns", every=4, octave=3, vel=42); B.strings("strings", 3, 30, swell=0.5); B.ticks("stick", step=0.5, vel=16)
+C = S.section("day1", t[2], t[3], bpm=104, key="G major", chords="I:2 V:2 vi:2 IV:2")
+C.ostinato(play, "pizz", octave=4, vel=32); C.ticks("stick", step=0.5, vel=14)
+S.hit(W("Everything stops"), "impact", vel=80)
+D = S.section("day2", t[3], t[4], bpm=84, chords="i:2 iv:2 bVI:2 V:2")
+D.pad("pad_glass", 4, 22, "open"); D.arp("celesta", "1 5 8 5", step=0.5, octave=4, vel=16)
+E = S.section("day4", t[4], t[5], bpm=106, key="G major", chords="I:1 V:1 vi:1 IV:1")
+E.ostinato(play, "marimba", octave=4, vel=30); E.drums({"kick": "x...x...", "hat": "x.x.x.x."}, "kit", step=0.25, vel=28)
+F = S.section("day7", t[5], t[6], bpm=118, chords="i:1 bVII:1 bVI:1 V:1")
+F.drums({"kick": "x..x..x.", "snare": "....x...", "hat": "x.x.x.x."}, "kit", step=0.25, vel=36); F.pulse("synth_bass", octave=2, vel=38, step=0.5)
+G = S.section("day11", t[6], t[7], bpm=90, chords="i:2 iv:2 bVI:2 V:2")
+G.pad("pad_space", 3, 22, "open"); G.arp("celesta", "1 3 5 8", step=0.5, octave=4, vel=18)
+H = S.section("day18", t[7], t[8], bpm=100, chords="i:1 bVI:1 bVII:1 V:1")
+H.pulse("synth_bass", octave=2, vel=36, step=0.5); H.ticks("stick", step=0.5, vel=18); H.strings("tremolo", 3, 26, swell=0.4)
+I = S.section("day25", t[8], t[9], bpm=96, chords="i:2 bII:2 i:2 V:2")
+I.ostinato(tick, "marimba", octave=4, vel=28); I.pad("pad_space", 3, 22, "open"); I.pulse("synth_bass", octave=2, vel=34, step=1)
+S.hit(W("you reach nine"), "boom", vel=82)
+J = S.section("day40", t[9], t[10], bpm=124, chords="i:1 bVI:1 bVII:1 V:1")
+J.drums({"kick": "x.x.x.x.x.x.x.x.", "snare": "....x.......x...", "hat": "xxxxxxxxxxxxxxxx"}, "kit", step=0.25, vel=42); J.strings("tremolo", 3, 40, swell=0.6); J.motif(hero, "horns", every=2, octave=4, vel=50)
+S.hit(W("You stop time"), "boom", vel=92); S.hit(W("Time starts"), "impact", vel=86)
+K = S.section("cost", t[10], t[11], bpm=72, key="G major", chords="vi:2 IV:2 I:2 V:2")
+K.motif(play, "piano", every=4, octave=4, vel=34); K.pad("pad_warm", 3, 24, "open", swell=0.3)
+L = S.section("ending", t[11], t[12], bpm=80, key="G major", chords="I:2 V:2 vi:2 IV:2")
+L.pad("pad_warm", 3, 26, "open", swell=0.4); L.arp("celesta", "1 5 8 5", step=0.5, octave=4, vel=16)

@@ -1,0 +1,40 @@
+00:02.74  replace  script: twelve  |  heard: 12
+00:09.16  replace  script: metre  |  heard: meter
+00:17.36  replace  script: grey  |  heard: gray
+00:28.50  replace  script: One. Two. Three. Four. Five.  |  heard: 1, 2, 3, 4, 5.
+00:40.66  replace  script: time-stopping  |  heard: time -stopping
+00:53.06  replace  script: five  |  heard: 5
+00:54.78  replace  script: forty  |  heard: 40
+00:55.90  replace  script: going to  |  heard: gonna
+01:17.94  replace  script: back  |  heard: pack
+01:50.10  replace  script: metres  |  heard: meters
+01:56.50  replace  script: metres  |  heard: meters
+02:26.92  replace  script: metres  |  heard: meters
+02:43.90  replace  script: twenty  |  heard: 20
+02:46.38  replace  script: twenty  |  heard: 20
+02:50.72  replace  script: three:  |  heard: 3.
+02:56.42  replace  script: seven  |  heard: 7,
+02:59.76  replace  script: five  |  heard: 5
+03:05.00  replace  script: metres  |  heard: meters
+03:05.56  replace  script: 9.58  |  heard: 9 .58
+03:08.72  replace  script: ten metres  |  heard: 10 meters
+03:10.70  replace  script: five  |  heard: 5
+03:12.90  replace  script: fifty metres.  |  heard: 50 meters.
+03:21.12  replace  script: fifty metres  |  heard: 50 meters
+03:32.30  replace  script: eleven  |  heard: 11,
+03:46.32  replace  script: in-between.  |  heard: in -between.
+04:07.04  replace  script: five:  |  heard: 5.
+04:14.84  replace  script: eighteen,  |  heard: 18,
+04:29.12  replace  script: traveller.  |  heard: traveler.
+04:46.12  replace  script: six:  |  heard: 6.
+04:52.02  replace  script: twenty-five,  |  heard: 25,
+04:53.68  replace  script: grey  |  heard: gray
+05:14.26  replace  script: practise,  |  heard: practice,
+05:27.44  replace  script: thirty-nine,  |  heard: 39,
+05:38.22  replace  script: forty,  |  heard: 40,
+05:43.24  replace  script: fourth-floor  |  heard: fourth floor
+05:51.28  replace  script: grey  |  heard: gray
+06:39.16  replace  script: forty  |  heard: 40
+06:53.86  replace  script: the  |  heard: a
+06:55.38  replace  script: realise  |  heard: realize
+07:13.30  replace  script: you'd  |  heard: you
