@@ -1,0 +1,1218 @@
+[
+ {
+  "i": 0,
+  "start": 0.0,
+  "speechStart": 0.0,
+  "speechEnd": 3.22,
+  "text": "It's eleven at night, and you're the last person in the laundromat.",
+  "end": 3.68
+ },
+ {
+  "i": 1,
+  "start": 3.68,
+  "speechStart": 3.8,
+  "speechEnd": 5.98,
+  "text": "On top of the lost-and-found box there's a",
+  "end": 5.86
+ },
+ {
+  "i": 2,
+  "start": 5.86,
+  "speechStart": 5.98,
+  "speechEnd": 9.08,
+  "text": "black notebook with two words on the cover: Death Note.",
+  "end": 9.86
+ },
+ {
+  "i": 3,
+  "start": 9.86,
+  "speechStart": 9.98,
+  "speechEnd": 12.08,
+  "text": "Inside, the first page is a list of rules,",
+  "end": 12.38
+ },
+ {
+  "i": 4,
+  "start": 12.38,
+  "speechStart": 12.5,
+  "speechEnd": 15.22,
+  "text": "written in careful English. The first one says:",
+  "end": 15.7
+ },
+ {
+  "i": 5,
+  "start": 15.7,
+  "speechStart": 15.82,
+  "speechEnd": 19.2,
+  "text": "the human whose name is written in this note shall die. You laugh.",
+  "end": 19.82
+ },
+ {
+  "i": 6,
+  "start": 19.82,
+  "speechStart": 19.94,
+  "speechEnd": 22.38,
+  "text": "Then you read the rest. Then you stop laughing.",
+  "end": 22.88
+ },
+ {
+  "i": 7,
+  "start": 22.88,
+  "speechStart": 23.0,
+  "speechEnd": 26.76,
+  "text": "In the story, this notebook belongs to the shinigami, the gods of death,",
+  "end": 27.06
+ },
+ {
+  "i": 8,
+  "start": 27.06,
+  "speechStart": 27.18,
+  "speechEnd": 31.36,
+  "text": "and it changes everything for a high-school student called Light. You're not Light.",
+  "end": 31.74
+ },
+ {
+  "i": 9,
+  "start": 31.74,
+  "speechStart": 31.86,
+  "speechEnd": 34.28,
+  "text": "You've just got the notebook, a wet bag of laundry,",
+  "end": 34.5
+ },
+ {
+  "i": 10,
+  "start": 34.5,
+  "speechStart": 34.62,
+  "speechEnd": 37.3,
+  "text": "and a choice you're going to have to make every single day.",
+  "end": 38.48
+ },
+ {
+  "i": 11,
+  "start": 38.48,
+  "speechStart": 38.6,
+  "speechEnd": 40.82,
+  "text": "You read the rules at your kitchen table",
+  "end": 40.7
+ },
+ {
+  "i": 12,
+  "start": 40.7,
+  "speechStart": 40.82,
+  "speechEnd": 42.34,
+  "text": "until two in the morning.",
+  "end": 42.9
+ },
+ {
+  "i": 13,
+  "start": 42.9,
+  "speechStart": 43.02,
+  "speechEnd": 44.68,
+  "text": "If you write a name and nothing else,",
+  "end": 44.82
+ },
+ {
+  "i": 14,
+  "start": 44.82,
+  "speechStart": 44.94,
+  "speechEnd": 47.44,
+  "text": "the person dies of a heart attack forty seconds later.",
+  "end": 47.86
+ },
+ {
+  "i": 15,
+  "start": 47.86,
+  "speechStart": 47.98,
+  "speechEnd": 50.1,
+  "text": "If you write a cause, you have six minutes",
+  "end": 49.98
+ },
+ {
+  "i": 16,
+  "start": 49.98,
+  "speechStart": 50.1,
+  "speechEnd": 52.12,
+  "text": "and forty seconds to add the details.",
+  "end": 52.84
+ },
+ {
+  "i": 17,
+  "start": 52.84,
+  "speechStart": 52.96,
+  "speechEnd": 56.28,
+  "text": "And you have to know their face. A name alone doesn't work.",
+  "end": 56.66
+ },
+ {
+  "i": 18,
+  "start": 56.66,
+  "speechStart": 56.78,
+  "speechEnd": 60.8,
+  "text": "You have to picture the person while you write. You close the notebook.",
+  "end": 61.56
+ },
+ {
+  "i": 19,
+  "start": 61.56,
+  "speechStart": 61.68,
+  "speechEnd": 65.6,
+  "text": "You don't write anything. Rule one: a name is not enough.",
+  "end": 66.2
+ },
+ {
+  "i": 20,
+  "start": 66.2,
+  "speechStart": 66.32,
+  "speechEnd": 67.66,
+  "text": "The notebook needs a face.",
+  "end": 68.84
+ },
+ {
+  "i": 21,
+  "start": 68.84,
+  "speechStart": 68.96,
+  "speechEnd": 72.04,
+  "text": "Everybody who hears this story asks the same question:",
+  "end": 72.56
+ },
+ {
+  "i": 22,
+  "start": 72.56,
+  "speechStart": 72.68,
+  "speechEnd": 73.46,
+  "text": "how do you know it's real?",
+  "end": 73.92
+ },
+ {
+  "i": 23,
+  "start": 73.92,
+  "speechStart": 74.04,
+  "speechEnd": 76.88,
+  "text": "In the manga, Light tests it straight away. You don't.",
+  "end": 77.22
+ },
+ {
+  "i": 24,
+  "start": 77.22,
+  "speechStart": 77.34,
+  "speechEnd": 79.36,
+  "text": "You sit in a cafe with the notebook in your bag,",
+  "end": 79.5
+ },
+ {
+  "i": 25,
+  "start": 79.5,
+  "speechStart": 79.62,
+  "speechEnd": 81.28,
+  "text": "and every time someone is rude to the waiter,",
+  "end": 81.42
+ },
+ {
+  "i": 26,
+  "start": 81.42,
+  "speechStart": 81.54,
+  "speechEnd": 83.22,
+  "text": "you feel it there, like a weight.",
+  "end": 83.9
+ },
+ {
+  "i": 27,
+  "start": 83.9,
+  "speechStart": 84.02,
+  "speechEnd": 86.46,
+  "text": "You realise something that isn't in any rule:",
+  "end": 87.06
+ },
+ {
+  "i": 28,
+  "start": 87.06,
+  "speechStart": 87.18,
+  "speechEnd": 89.72,
+  "text": "the notebook doesn't need you to use it to change you.",
+  "end": 90.3
+ },
+ {
+  "i": 29,
+  "start": 90.3,
+  "speechStart": 90.42,
+  "speechEnd": 93.52,
+  "text": "Just having it changes how you look at people. Rule two:",
+  "end": 93.86
+ },
+ {
+  "i": 30,
+  "start": 93.86,
+  "speechStart": 93.98,
+  "speechEnd": 97.28,
+  "text": "the most dangerous thing about the notebook is the idea of it.",
+  "end": 98.36
+ },
+ {
+  "i": 31,
+  "start": 98.36,
+  "speechStart": 98.48,
+  "speechEnd": 101.24,
+  "text": "On day five, the news has a strange story.",
+  "end": 101.94
+ },
+ {
+  "i": 32,
+  "start": 101.94,
+  "speechStart": 102.06,
+  "speechEnd": 103.64,
+  "text": "Three men, all on trial,",
+  "end": 103.8
+ },
+ {
+  "i": 33,
+  "start": 103.8,
+  "speechStart": 103.92,
+  "speechEnd": 106.4,
+  "text": "all died of heart attacks on the same afternoon.",
+  "end": 107.0
+ },
+ {
+  "i": 34,
+  "start": 107.0,
+  "speechStart": 107.12,
+  "speechEnd": 110.76,
+  "text": "The reporter calls it a coincidence. You look at your notebook.",
+  "end": 110.64
+ },
+ {
+  "i": 35,
+  "start": 110.64,
+  "speechStart": 110.76,
+  "speechEnd": 113.66,
+  "text": "It's closed. You didn't write anything.",
+  "end": 114.9
+ },
+ {
+  "i": 36,
+  "start": 114.9,
+  "speechStart": 115.02,
+  "speechEnd": 116.9,
+  "text": "Which means there's another one.",
+  "end": 117.44
+ },
+ {
+  "i": 37,
+  "start": 117.44,
+  "speechStart": 117.56,
+  "speechEnd": 118.82,
+  "text": "Rule three:",
+  "end": 118.7
+ },
+ {
+  "i": 38,
+  "start": 118.7,
+  "speechStart": 118.82,
+  "speechEnd": 120.58,
+  "text": "you are not the only one.",
+  "end": 121.46
+ },
+ {
+  "i": 39,
+  "start": 121.46,
+  "speechStart": 121.58,
+  "speechEnd": 124.6,
+  "text": "By day nine, there are twenty-one heart attacks,",
+  "end": 124.48
+ },
+ {
+  "i": 40,
+  "start": 124.48,
+  "speechStart": 124.6,
+  "speechEnd": 127.48,
+  "text": "and every single one is someone the news has talked about.",
+  "end": 128.06
+ },
+ {
+  "i": 41,
+  "start": 128.06,
+  "speechStart": 128.18,
+  "speechEnd": 131.18,
+  "text": "And this is where the real world comes in. In Britain,",
+  "end": 131.5
+ },
+ {
+  "i": 42,
+  "start": 131.5,
+  "speechStart": 131.62,
+  "speechEnd": 133.38,
+  "text": "a doctor called Harold Shipman killed",
+  "end": 133.26
+ },
+ {
+  "i": 43,
+  "start": 133.26,
+  "speechStart": 133.38,
+  "speechEnd": 135.32,
+  "text": "his own patients for years.",
+  "end": 135.82
+ },
+ {
+  "i": 44,
+  "start": 135.82,
+  "speechStart": 135.94,
+  "speechEnd": 137.78,
+  "text": "An official inquiry first concluded he",
+  "end": 137.66
+ },
+ {
+  "i": 45,
+  "start": 137.66,
+  "speechStart": 137.78,
+  "speechEnd": 139.7,
+  "text": "had killed 215 people,",
+  "end": 139.58
+ },
+ {
+  "i": 46,
+  "start": 139.58,
+  "speechStart": 139.7,
+  "speechEnd": 141.96,
+  "text": "and later estimated about 250.",
+  "end": 142.76
+ },
+ {
+  "i": 47,
+  "start": 142.76,
+  "speechStart": 142.88,
+  "speechEnd": 145.28,
+  "text": "What raised the first alarm wasn't a confession.",
+  "end": 145.76
+ },
+ {
+  "i": 48,
+  "start": 145.76,
+  "speechStart": 145.88,
+  "speechEnd": 147.24,
+  "text": "It was other doctors,",
+  "end": 147.12
+ },
+ {
+  "i": 49,
+  "start": 147.12,
+  "speechStart": 147.24,
+  "speechEnd": 150.58,
+  "text": "who noticed that his patients were dying unusually often.",
+  "end": 151.26
+ },
+ {
+  "i": 50,
+  "start": 151.26,
+  "speechStart": 151.38,
+  "speechEnd": 154.22,
+  "text": "Afterwards, statisticians argued that simply watching",
+  "end": 154.1
+ },
+ {
+  "i": 51,
+  "start": 154.1,
+  "speechStart": 154.22,
+  "speechEnd": 156.76,
+  "text": "the death rates would have caught him years earlier.",
+  "end": 157.64
+ },
+ {
+  "i": 52,
+  "start": 157.64,
+  "speechStart": 157.76,
+  "speechEnd": 159.06,
+  "text": "Someone, somewhere,",
+  "end": 158.94
+ },
+ {
+  "i": 53,
+  "start": 158.94,
+  "speechStart": 159.06,
+  "speechEnd": 161.8,
+  "text": "is about to start watching the death rates.",
+  "end": 162.36
+ },
+ {
+  "i": 54,
+  "start": 162.36,
+  "speechStart": 162.48,
+  "speechEnd": 163.54,
+  "text": "Rule four:",
+  "end": 163.42
+ },
+ {
+  "i": 55,
+  "start": 163.42,
+  "speechStart": 163.54,
+  "speechEnd": 164.82,
+  "text": "a single death is a mystery.",
+  "end": 165.32
+ },
+ {
+  "i": 56,
+  "start": 165.32,
+  "speechStart": 165.44,
+  "speechEnd": 167.08,
+  "text": "A pattern is evidence.",
+  "end": 167.82
+ },
+ {
+  "i": 57,
+  "start": 167.82,
+  "speechStart": 167.94,
+  "speechEnd": 171.2,
+  "text": "On day fourteen the whole city is talking about it.",
+  "end": 171.48
+ },
+ {
+  "i": 58,
+  "start": 171.48,
+  "speechStart": 171.6,
+  "speechEnd": 172.42,
+  "text": "Some people are scared.",
+  "end": 172.62
+ },
+ {
+  "i": 59,
+  "start": 172.62,
+  "speechStart": 172.74,
+  "speechEnd": 175.1,
+  "text": "Some people are cheering, and that scares you more.",
+  "end": 175.68
+ },
+ {
+  "i": 60,
+  "start": 175.68,
+  "speechStart": 175.8,
+  "speechEnd": 177.08,
+  "text": "The police hold a press conference.",
+  "end": 177.5
+ },
+ {
+  "i": 61,
+  "start": 177.5,
+  "speechStart": 177.62,
+  "speechEnd": 180.16,
+  "text": "A detective explains that they are treating it as a series.",
+  "end": 180.74
+ },
+ {
+  "i": 62,
+  "start": 180.74,
+  "speechStart": 180.86,
+  "speechEnd": 183.94,
+  "text": "They're looking at who died, when, and who knew their faces.",
+  "end": 184.94
+ },
+ {
+  "i": 63,
+  "start": 184.94,
+  "speechStart": 185.06,
+  "speechEnd": 185.6,
+  "text": "In real life,",
+  "end": 185.48
+ },
+ {
+  "i": 64,
+  "start": 185.48,
+  "speechStart": 185.6,
+  "speechEnd": 188.74,
+  "text": "how good police are at solving murders depends a lot on the country.",
+  "end": 189.22
+ },
+ {
+  "i": 65,
+  "start": 189.22,
+  "speechStart": 189.34,
+  "speechEnd": 191.54,
+  "text": "One study in Japan put the solved rate at",
+  "end": 191.42
+ },
+ {
+  "i": 66,
+  "start": 191.42,
+  "speechStart": 191.54,
+  "speechEnd": 193.6,
+  "text": "about 95 percent.",
+  "end": 193.48
+ },
+ {
+  "i": 67,
+  "start": 193.48,
+  "speechStart": 193.6,
+  "speechEnd": 195.42,
+  "text": "In the United States in 2023,",
+  "end": 195.46
+ },
+ {
+  "i": 68,
+  "start": 195.46,
+  "speechStart": 195.58,
+  "speechEnd": 197.84,
+  "text": "it was about 52 percent.",
+  "end": 197.72
+ },
+ {
+  "i": 69,
+  "start": 197.72,
+  "speechStart": 197.84,
+  "speechEnd": 200.18,
+  "text": "The numbers aren't counted the same way, but either way,",
+  "end": 200.5
+ },
+ {
+  "i": 70,
+  "start": 200.5,
+  "speechStart": 200.62,
+  "speechEnd": 202.38,
+  "text": "a city full of heart attacks is not",
+  "end": 202.26
+ },
+ {
+  "i": 71,
+  "start": 202.26,
+  "speechStart": 202.38,
+  "speechEnd": 206.04,
+  "text": "the kind of thing investigators ignore. Rule five:",
+  "end": 206.56
+ },
+ {
+  "i": 72,
+  "start": 206.56,
+  "speechStart": 206.68,
+  "speechEnd": 209.08,
+  "text": "the more you use it, the louder it gets.",
+  "end": 210.12
+ },
+ {
+  "i": 73,
+  "start": 210.12,
+  "speechStart": 210.24,
+  "speechEnd": 212.94,
+  "text": "On day seventeen, your best friend comes over,",
+  "end": 213.32
+ },
+ {
+  "i": 74,
+  "start": 213.32,
+  "speechStart": 213.44,
+  "speechEnd": 217.5,
+  "text": "and when you walk back in with two coffees, they're holding the notebook. They're laughing.",
+  "end": 217.9
+ },
+ {
+  "i": 75,
+  "start": 217.9,
+  "speechStart": 218.02,
+  "speechEnd": 219.94,
+  "text": "\"Death Note? Is this a joke?\"",
+  "end": 220.72
+ },
+ {
+  "i": 76,
+  "start": 220.72,
+  "speechStart": 220.84,
+  "speechEnd": 223.48,
+  "text": "They flick through the rules out loud, doing a spooky voice.",
+  "end": 224.14
+ },
+ {
+  "i": 77,
+  "start": 224.14,
+  "speechStart": 224.26,
+  "speechEnd": 227.58,
+  "text": "You take it back, a bit too fast. They stop laughing.",
+  "end": 228.16
+ },
+ {
+  "i": 78,
+  "start": 228.16,
+  "speechStart": 228.28,
+  "speechEnd": 228.6,
+  "text": "\"Wait.",
+  "end": 229.1
+ },
+ {
+  "i": 79,
+  "start": 229.1,
+  "speechStart": 229.22,
+  "speechEnd": 233.3,
+  "text": "You're not, like, taking this seriously?\" You say no.",
+  "end": 233.82
+ },
+ {
+  "i": 80,
+  "start": 233.82,
+  "speechStart": 233.94,
+  "speechEnd": 235.3,
+  "text": "You say it's a prop from a party.",
+  "end": 235.86
+ },
+ {
+  "i": 81,
+  "start": 235.86,
+  "speechStart": 235.98,
+  "speechEnd": 237.42,
+  "text": "And for the first time in your life,",
+  "end": 237.88
+ },
+ {
+  "i": 82,
+  "start": 237.88,
+  "speechStart": 238.0,
+  "speechEnd": 240.68,
+  "text": "you lie to your best friend without even thinking about it.",
+  "end": 240.82
+ },
+ {
+  "i": 83,
+  "start": 240.82,
+  "speechStart": 240.94,
+  "speechEnd": 243.44,
+  "text": "That night you realise the notebook has already cost you something,",
+  "end": 244.2
+ },
+ {
+  "i": 84,
+  "start": 244.2,
+  "speechStart": 244.32,
+  "speechEnd": 245.44,
+  "text": "and you haven't even opened it.",
+  "end": 246.16
+ },
+ {
+  "i": 85,
+  "start": 246.16,
+  "speechStart": 246.28,
+  "speechEnd": 250.48,
+  "text": "On day twenty, something is standing in the corner of your room. Tall.",
+  "end": 250.9
+ },
+ {
+  "i": 86,
+  "start": 250.9,
+  "speechStart": 251.02,
+  "speechEnd": 253.0,
+  "text": "Thin. Its eyes glow red.",
+  "end": 253.66
+ },
+ {
+  "i": 87,
+  "start": 253.66,
+  "speechStart": 253.78,
+  "speechEnd": 257.26,
+  "text": "It's the shinigami who owns your notebook, and it has an offer.",
+  "end": 258.0
+ },
+ {
+  "i": 88,
+  "start": 258.0,
+  "speechStart": 258.12,
+  "speechEnd": 259.92,
+  "text": "It can give you the shinigami eyes.",
+  "end": 260.46
+ },
+ {
+  "i": 89,
+  "start": 260.46,
+  "speechStart": 260.58,
+  "speechEnd": 264.06,
+  "text": "With them, you'd see anyone's name just by looking at their face.",
+  "end": 264.58
+ },
+ {
+  "i": 90,
+  "start": 264.58,
+  "speechStart": 264.7,
+  "speechEnd": 266.58,
+  "text": "You'd know who the other owner is in a second.",
+  "end": 267.04
+ },
+ {
+  "i": 91,
+  "start": 267.04,
+  "speechStart": 267.16,
+  "speechEnd": 269.38,
+  "text": "The price is half of the life you have left.",
+  "end": 269.26
+ },
+ {
+  "i": 92,
+  "start": 269.26,
+  "speechStart": 269.38,
+  "speechEnd": 272.44,
+  "text": "In the story, someone takes that deal, and",
+  "end": 272.32
+ },
+ {
+  "i": 93,
+  "start": 272.32,
+  "speechStart": 272.44,
+  "speechEnd": 275.48,
+  "text": "then takes it again, and each time it halves what's left.",
+  "end": 276.04
+ },
+ {
+  "i": 94,
+  "start": 276.04,
+  "speechStart": 276.16,
+  "speechEnd": 280.14,
+  "text": "You think about it all night. You say no. Rule six:",
+  "end": 280.02
+ },
+ {
+  "i": 95,
+  "start": 280.02,
+  "speechStart": 280.14,
+  "speechEnd": 282.9,
+  "text": "every shortcut in this notebook costs more than it saves.",
+  "end": 284.14
+ },
+ {
+  "i": 96,
+  "start": 284.14,
+  "speechStart": 284.26,
+  "speechEnd": 287.52,
+  "text": "On day twenty-three you find a page you hadn't noticed.",
+  "end": 287.68
+ },
+ {
+  "i": 97,
+  "start": 287.68,
+  "speechStart": 287.8,
+  "speechEnd": 289.24,
+  "text": "A rule in a different handwriting:",
+  "end": 289.8
+ },
+ {
+  "i": 98,
+  "start": 289.8,
+  "speechStart": 289.92,
+  "speechEnd": 292.96,
+  "text": "if the owner doesn't write a name every thirteen days,",
+  "end": 293.3
+ },
+ {
+  "i": 99,
+  "start": 293.3,
+  "speechStart": 293.42,
+  "speechEnd": 294.22,
+  "text": "the owner dies.",
+  "end": 294.68
+ },
+ {
+  "i": 100,
+  "start": 294.68,
+  "speechStart": 294.8,
+  "speechEnd": 296.32,
+  "text": "For a second, your heart stops.",
+  "end": 296.2
+ },
+ {
+  "i": 101,
+  "start": 296.2,
+  "speechStart": 296.32,
+  "speechEnd": 297.6,
+  "text": "Then you remember.",
+  "end": 298.06
+ },
+ {
+  "i": 102,
+  "start": 298.06,
+  "speechStart": 298.18,
+  "speechEnd": 299.58,
+  "text": "In the story, that rule is fake.",
+  "end": 300.04
+ },
+ {
+  "i": 103,
+  "start": 300.04,
+  "speechStart": 300.16,
+  "speechEnd": 301.94,
+  "text": "Light wrote it himself, to fool the police.",
+  "end": 302.62
+ },
+ {
+  "i": 104,
+  "start": 302.62,
+  "speechStart": 302.74,
+  "speechEnd": 304.62,
+  "text": "Someone has done the same thing here,",
+  "end": 304.86
+ },
+ {
+  "i": 105,
+  "start": 304.86,
+  "speechStart": 304.98,
+  "speechEnd": 307.88,
+  "text": "to scare whoever finds the notebook into using it.",
+  "end": 308.26
+ },
+ {
+  "i": 106,
+  "start": 308.26,
+  "speechStart": 308.38,
+  "speechEnd": 309.42,
+  "text": "You almost fell for it.",
+  "end": 309.6
+ },
+ {
+  "i": 107,
+  "start": 309.6,
+  "speechStart": 309.72,
+  "speechEnd": 312.76,
+  "text": "That's the thing about a notebook like this. It isn't only deadly.",
+  "end": 313.2
+ },
+ {
+  "i": 108,
+  "start": 313.2,
+  "speechStart": 313.32,
+  "speechEnd": 314.3,
+  "text": "It's persuasive.",
+  "end": 315.7
+ },
+ {
+  "i": 109,
+  "start": 315.7,
+  "speechStart": 315.82,
+  "speechEnd": 319.74,
+  "text": "On day twenty-six, the detective calls you back. They want to talk in person.",
+  "end": 320.22
+ },
+ {
+  "i": 110,
+  "start": 320.22,
+  "speechStart": 320.34,
+  "speechEnd": 322.66,
+  "text": "The interview room is small and too warm.",
+  "end": 323.16
+ },
+ {
+  "i": 111,
+  "start": 323.16,
+  "speechStart": 323.28,
+  "speechEnd": 326.6,
+  "text": "The detective has a folder full of printouts: every death,",
+  "end": 326.9
+ },
+ {
+  "i": 112,
+  "start": 326.9,
+  "speechStart": 327.02,
+  "speechEnd": 329.28,
+  "text": "every date, every face that was on the news.",
+  "end": 329.84
+ },
+ {
+  "i": 113,
+  "start": 329.84,
+  "speechStart": 329.96,
+  "speechEnd": 333.7,
+  "text": "\"You were very helpful on the phone,\" they say. \"How did you know so much?\"",
+  "end": 334.24
+ },
+ {
+  "i": 114,
+  "start": 334.24,
+  "speechStart": 334.36,
+  "speechEnd": 335.26,
+  "text": "You tell them you read the news.",
+  "end": 335.78
+ },
+ {
+  "i": 115,
+  "start": 335.78,
+  "speechStart": 335.9,
+  "speechEnd": 339.3,
+  "text": "You tell them you noticed the pattern, like those doctors who noticed the death rates.",
+  "end": 340.0
+ },
+ {
+  "i": 116,
+  "start": 340.0,
+  "speechStart": 340.12,
+  "speechEnd": 341.54,
+  "text": "They look at you for a long time.",
+  "end": 341.92
+ },
+ {
+  "i": 117,
+  "start": 341.92,
+  "speechStart": 342.04,
+  "speechEnd": 345.26,
+  "text": "Then they smile, slide a card across the table, and say:",
+  "end": 345.58
+ },
+ {
+  "i": 118,
+  "start": 345.58,
+  "speechStart": 345.7,
+  "speechEnd": 348.44,
+  "text": "\"If you notice anything else, call me first.\"",
+  "end": 348.98
+ },
+ {
+  "i": 119,
+  "start": 348.98,
+  "speechStart": 349.1,
+  "speechEnd": 351.58,
+  "text": "You walk out into the cold air with your heart pounding.",
+  "end": 351.46
+ },
+ {
+  "i": 120,
+  "start": 351.46,
+  "speechStart": 351.58,
+  "speechEnd": 355.08,
+  "text": "Because you realise the detective is doing exactly what you did.",
+  "end": 354.96
+ },
+ {
+  "i": 121,
+  "start": 354.96,
+  "speechStart": 355.08,
+  "speechEnd": 356.58,
+  "text": "They're watching the pattern.",
+  "end": 356.46
+ },
+ {
+  "i": 122,
+  "start": 356.46,
+  "speechStart": 356.58,
+  "speechEnd": 360.06,
+  "text": "And one day, the pattern might include you.",
+  "end": 359.94
+ },
+ {
+  "i": 123,
+  "start": 359.94,
+  "speechStart": 360.06,
+  "speechEnd": 363.14,
+  "text": "On day thirty, you work it out.",
+  "end": 363.02
+ },
+ {
+  "i": 124,
+  "start": 363.02,
+  "speechStart": 363.14,
+  "speechEnd": 366.26,
+  "text": "The other owner is someone you know.",
+  "end": 366.14
+ },
+ {
+  "i": 125,
+  "start": 366.14,
+  "speechStart": 366.26,
+  "speechEnd": 367.56,
+  "text": "You have their name.",
+  "end": 367.44
+ },
+ {
+  "i": 126,
+  "start": 367.44,
+  "speechStart": 367.56,
+  "speechEnd": 370.74,
+  "text": "You have their face, in a photo on your phone.",
+  "end": 370.62
+ },
+ {
+  "i": 127,
+  "start": 370.62,
+  "speechStart": 370.74,
+  "speechEnd": 374.14,
+  "text": "You could end this in forty seconds.",
+  "end": 374.02
+ },
+ {
+  "i": 128,
+  "start": 374.02,
+  "speechStart": 374.14,
+  "speechEnd": 376.32,
+  "text": "You sit on the roof with",
+  "end": 376.2
+ },
+ {
+  "i": 129,
+  "start": 376.2,
+  "speechStart": 376.32,
+  "speechEnd": 377.82,
+  "text": "the notebook open on your knees",
+  "end": 377.7
+ },
+ {
+  "i": 130,
+  "start": 377.7,
+  "speechStart": 377.82,
+  "speechEnd": 380.34,
+  "text": "and a pen in your hand for a long time.",
+  "end": 380.22
+ },
+ {
+  "i": 131,
+  "start": 380.22,
+  "speechStart": 380.34,
+  "speechEnd": 382.94,
+  "text": "The city lights come on one by one.",
+  "end": 383.4
+ },
+ {
+  "i": 132,
+  "start": 383.4,
+  "speechStart": 383.52,
+  "speechEnd": 385.78,
+  "text": "And you realise that the moment you write that name,",
+  "end": 386.2
+ },
+ {
+  "i": 133,
+  "start": 386.2,
+  "speechStart": 386.32,
+  "speechEnd": 390.12,
+  "text": "you become exactly the thing you were trying to stop. You close the notebook.",
+  "end": 390.7
+ },
+ {
+  "i": 134,
+  "start": 390.7,
+  "speechStart": 390.82,
+  "speechEnd": 393.44,
+  "text": "You go downstairs, and you call the number from the press conference.",
+  "end": 394.34
+ },
+ {
+  "i": 135,
+  "start": 394.34,
+  "speechStart": 394.46,
+  "speechEnd": 397.92,
+  "text": "You tell the detective everything you know, except one thing:",
+  "end": 398.02
+ },
+ {
+  "i": 136,
+  "start": 398.02,
+  "speechStart": 398.14,
+  "speechEnd": 399.4,
+  "text": "that you have a notebook too.",
+  "end": 400.36
+ },
+ {
+  "i": 137,
+  "start": 400.36,
+  "speechStart": 400.48,
+  "speechEnd": 402.4,
+  "text": "The next night you go back to the laundromat",
+  "end": 402.28
+ },
+ {
+  "i": 138,
+  "start": 402.28,
+  "speechStart": 402.4,
+  "speechEnd": 404.68,
+  "text": "to put the notebook back where you found it.",
+  "end": 405.14
+ },
+ {
+  "i": 139,
+  "start": 405.14,
+  "speechStart": 405.26,
+  "speechEnd": 406.8,
+  "text": "You hold it over the box for a minute.",
+  "end": 406.92
+ },
+ {
+  "i": 140,
+  "start": 406.92,
+  "speechStart": 407.04,
+  "speechEnd": 408.78,
+  "text": "And you can't let go.",
+  "end": 409.14
+ },
+ {
+  "i": 141,
+  "start": 409.14,
+  "speechStart": 409.26,
+  "speechEnd": 412.28,
+  "text": "Because whoever finds it next might not close it.",
+  "end": 412.72
+ },
+ {
+  "i": 142,
+  "start": 412.72,
+  "speechStart": 412.84,
+  "speechEnd": 415.62,
+  "text": "So you keep it. In a drawer. Unopened.",
+  "end": 416.2
+ },
+ {
+  "i": 143,
+  "start": 416.2,
+  "speechStart": 416.32,
+  "speechEnd": 419.72,
+  "text": "That's the real cost of the Death Note. Not half your life.",
+  "end": 419.82
+ },
+ {
+  "i": 144,
+  "start": 419.82,
+  "speechStart": 419.94,
+  "speechEnd": 421.66,
+  "text": "Not a heart attack in forty seconds.",
+  "end": 422.3
+ },
+ {
+  "i": 145,
+  "start": 422.3,
+  "speechStart": 422.42,
+  "speechEnd": 424.08,
+  "text": "It's that once you know it exists,",
+  "end": 424.64
+ },
+ {
+  "i": 146,
+  "start": 424.64,
+  "speechStart": 424.76,
+  "speechEnd": 426.48,
+  "text": "you can never stop being the person",
+  "end": 426.36
+ },
+ {
+  "i": 147,
+  "start": 426.36,
+  "speechStart": 426.48,
+  "speechEnd": 427.98,
+  "text": "who decides not to use it,",
+  "end": 428.56
+ },
+ {
+  "i": 148,
+  "start": 428.56,
+  "speechStart": 428.68,
+  "speechEnd": 430.06,
+  "text": "every single day.",
+  "end": 430.6
+ },
+ {
+  "i": 149,
+  "start": 430.6,
+  "speechStart": 430.72,
+  "speechEnd": 432.26,
+  "text": "So, if you found this notebook tomorrow:",
+  "end": 432.7
+ },
+ {
+  "i": 150,
+  "start": 432.7,
+  "speechStart": 432.82,
+  "speechEnd": 435.26,
+  "text": "would you write a name, or would you keep it closed forever?",
+  "end": 436.08
+ },
+ {
+  "i": 151,
+  "start": 436.08,
+  "speechStart": 436.2,
+  "speechEnd": 439.32,
+  "text": "And which rule scares you most? Tell us in the comments.",
+  "end": 440.92
+ }
+]

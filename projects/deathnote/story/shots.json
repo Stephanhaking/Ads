@@ -1,0 +1,2375 @@
+{
+ "title": "What If You Had the Death Note in Real Life?",
+ "duration": 440.92,
+ "shots": [
+  {
+   "id": "s001",
+   "start": 0.0,
+   "end": 3.68,
+   "line": "It's eleven at night, and you're the last person in the laundromat.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s002",
+   "start": 3.68,
+   "end": 5.86,
+   "line": "On top of the lost-and-found box there's a",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s003",
+   "start": 5.86,
+   "end": 9.86,
+   "line": "black notebook with two words on the cover: Death Note.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "impact",
+     "gain": -9
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s004",
+   "start": 9.86,
+   "end": 12.38,
+   "line": "Inside, the first page is a list of rules,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s005",
+   "start": 12.38,
+   "end": 15.7,
+   "line": "written in careful English. The first one says:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s006",
+   "start": 15.7,
+   "end": 19.82,
+   "line": "the human whose name is written in this note shall die. You laugh.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s007",
+   "start": 19.82,
+   "end": 22.88,
+   "line": "Then you read the rest. Then you stop laughing.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "impact",
+     "gain": -11
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s008",
+   "start": 22.88,
+   "end": 27.06,
+   "line": "In the story, this notebook belongs to the shinigami, the gods of death,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s009",
+   "start": 27.06,
+   "end": 31.74,
+   "line": "and it changes everything for a high-school student called Light. You're not Light.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s010",
+   "start": 31.74,
+   "end": 34.5,
+   "line": "You've just got the notebook, a wet bag of laundry,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s011",
+   "start": 34.5,
+   "end": 38.48,
+   "line": "and a choice you're going to have to make every single day.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s012",
+   "start": 38.48,
+   "end": 40.7,
+   "line": "You read the rules at your kitchen table",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s013",
+   "start": 40.7,
+   "end": 42.9,
+   "line": "until two in the morning.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s014",
+   "start": 42.9,
+   "end": 44.82,
+   "line": "If you write a name and nothing else,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s015",
+   "start": 44.82,
+   "end": 47.86,
+   "line": "the person dies of a heart attack forty seconds later.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "tick",
+     "gain": -11
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s016",
+   "start": 47.86,
+   "end": 49.98,
+   "line": "If you write a cause, you have six minutes",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s017",
+   "start": 49.98,
+   "end": 52.84,
+   "line": "and forty seconds to add the details.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "tick",
+     "gain": -11
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s018",
+   "start": 52.84,
+   "end": 56.66,
+   "line": "And you have to know their face. A name alone doesn't work.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s019",
+   "start": 56.66,
+   "end": 61.56,
+   "line": "You have to picture the person while you write. You close the notebook.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s020",
+   "start": 61.56,
+   "end": 66.2,
+   "line": "You don't write anything. Rule one: a name is not enough.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "ding",
+     "gain": -13
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s021",
+   "start": 66.2,
+   "end": 68.84,
+   "line": "The notebook needs a face.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s022",
+   "start": 68.84,
+   "end": 72.56,
+   "line": "Everybody who hears this story asks the same question:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s023",
+   "start": 72.56,
+   "end": 73.92,
+   "line": "how do you know it's real?",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s024",
+   "start": 73.92,
+   "end": 77.22,
+   "line": "In the manga, Light tests it straight away. You don't.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s025",
+   "start": 77.22,
+   "end": 79.5,
+   "line": "You sit in a cafe with the notebook in your bag,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s026",
+   "start": 79.5,
+   "end": 81.42,
+   "line": "and every time someone is rude to the waiter,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s027",
+   "start": 81.42,
+   "end": 83.9,
+   "line": "you feel it there, like a weight.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s028",
+   "start": 83.9,
+   "end": 87.06,
+   "line": "You realise something that isn't in any rule:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s029",
+   "start": 87.06,
+   "end": 90.3,
+   "line": "the notebook doesn't need you to use it to change you.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s030",
+   "start": 90.3,
+   "end": 93.86,
+   "line": "Just having it changes how you look at people. Rule two:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "ding",
+     "gain": -13
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s031",
+   "start": 93.86,
+   "end": 98.36,
+   "line": "the most dangerous thing about the notebook is the idea of it.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s032",
+   "start": 98.36,
+   "end": 101.94,
+   "line": "On day five, the news has a strange story.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s033",
+   "start": 101.94,
+   "end": 103.8,
+   "line": "Three men, all on trial,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s034",
+   "start": 103.8,
+   "end": 107.0,
+   "line": "all died of heart attacks on the same afternoon.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s035",
+   "start": 107.0,
+   "end": 110.64,
+   "line": "The reporter calls it a coincidence. You look at your notebook.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s036",
+   "start": 110.64,
+   "end": 114.9,
+   "line": "It's closed. You didn't write anything.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s037",
+   "start": 114.9,
+   "end": 117.44,
+   "line": "Which means there's another one.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "impact",
+     "gain": -8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s038",
+   "start": 117.44,
+   "end": 118.7,
+   "line": "Rule three:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "ding",
+     "gain": -13
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s039",
+   "start": 118.7,
+   "end": 121.46,
+   "line": "you are not the only one.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s040",
+   "start": 121.46,
+   "end": 124.48,
+   "line": "By day nine, there are twenty-one heart attacks,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    },
+    {
+     "at": 0.35,
+     "name": "blip",
+     "gain": -15
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s041",
+   "start": 124.48,
+   "end": 128.06,
+   "line": "and every single one is someone the news has talked about.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s042",
+   "start": 128.06,
+   "end": 131.5,
+   "line": "And this is where the real world comes in. In Britain,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s043",
+   "start": 131.5,
+   "end": 133.26,
+   "line": "a doctor called Harold Shipman killed",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s044",
+   "start": 133.26,
+   "end": 135.82,
+   "line": "his own patients for years.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s045",
+   "start": 135.82,
+   "end": 137.66,
+   "line": "An official inquiry first concluded he",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s046",
+   "start": 137.66,
+   "end": 139.58,
+   "line": "had killed 215 people,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.35,
+     "name": "blip",
+     "gain": -15
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s047",
+   "start": 139.58,
+   "end": 142.76,
+   "line": "and later estimated about 250.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.35,
+     "name": "blip",
+     "gain": -15
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s048",
+   "start": 142.76,
+   "end": 145.76,
+   "line": "What raised the first alarm wasn't a confession.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s049",
+   "start": 145.76,
+   "end": 147.12,
+   "line": "It was other doctors,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s050",
+   "start": 147.12,
+   "end": 151.26,
+   "line": "who noticed that his patients were dying unusually often.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s051",
+   "start": 151.26,
+   "end": 154.1,
+   "line": "Afterwards, statisticians argued that simply watching",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s052",
+   "start": 154.1,
+   "end": 157.64,
+   "line": "the death rates would have caught him years earlier.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s053",
+   "start": 157.64,
+   "end": 158.94,
+   "line": "Someone, somewhere,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s054",
+   "start": 158.94,
+   "end": 162.36,
+   "line": "is about to start watching the death rates.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s055",
+   "start": 162.36,
+   "end": 163.42,
+   "line": "Rule four:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "ding",
+     "gain": -13
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s056",
+   "start": 163.42,
+   "end": 165.32,
+   "line": "a single death is a mystery.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s057",
+   "start": 165.32,
+   "end": 167.82,
+   "line": "A pattern is evidence.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s058",
+   "start": 167.82,
+   "end": 171.48,
+   "line": "On day fourteen the whole city is talking about it.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s059",
+   "start": 171.48,
+   "end": 172.62,
+   "line": "Some people are scared.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s060",
+   "start": 172.62,
+   "end": 175.68,
+   "line": "Some people are cheering, and that scares you more.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s061",
+   "start": 175.68,
+   "end": 177.5,
+   "line": "The police hold a press conference.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s062",
+   "start": 177.5,
+   "end": 180.74,
+   "line": "A detective explains that they are treating it as a series.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s063",
+   "start": 180.74,
+   "end": 184.94,
+   "line": "They're looking at who died, when, and who knew their faces.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s064",
+   "start": 184.94,
+   "end": 185.48,
+   "line": "In real life,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s065",
+   "start": 185.48,
+   "end": 189.22,
+   "line": "how good police are at solving murders depends a lot on the country.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s066",
+   "start": 189.22,
+   "end": 191.42,
+   "line": "One study in Japan put the solved rate at",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s067",
+   "start": 191.42,
+   "end": 193.48,
+   "line": "about 95 percent.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.35,
+     "name": "blip",
+     "gain": -15
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s068",
+   "start": 193.48,
+   "end": 195.46,
+   "line": "In the United States in 2023,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s069",
+   "start": 195.46,
+   "end": 197.72,
+   "line": "it was about 52 percent.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.35,
+     "name": "blip",
+     "gain": -15
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s070",
+   "start": 197.72,
+   "end": 200.5,
+   "line": "The numbers aren't counted the same way, but either way,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s071",
+   "start": 200.5,
+   "end": 202.26,
+   "line": "a city full of heart attacks is not",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s072",
+   "start": 202.26,
+   "end": 206.56,
+   "line": "the kind of thing investigators ignore. Rule five:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "ding",
+     "gain": -13
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s073",
+   "start": 206.56,
+   "end": 210.12,
+   "line": "the more you use it, the louder it gets.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s074",
+   "start": 210.12,
+   "end": 213.32,
+   "line": "On day seventeen, your best friend comes over,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s075",
+   "start": 213.32,
+   "end": 217.9,
+   "line": "and when you walk back in with two coffees, they're holding the notebook. They're laughing.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s076",
+   "start": 217.9,
+   "end": 220.72,
+   "line": "\"Death Note? Is this a joke?\"",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "impact",
+     "gain": -9
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s077",
+   "start": 220.72,
+   "end": 224.14,
+   "line": "They flick through the rules out loud, doing a spooky voice.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s078",
+   "start": 224.14,
+   "end": 228.16,
+   "line": "You take it back, a bit too fast. They stop laughing.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "impact",
+     "gain": -11
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s079",
+   "start": 228.16,
+   "end": 229.1,
+   "line": "\"Wait.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s080",
+   "start": 229.1,
+   "end": 233.82,
+   "line": "You're not, like, taking this seriously?\" You say no.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s081",
+   "start": 233.82,
+   "end": 235.86,
+   "line": "You say it's a prop from a party.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s082",
+   "start": 235.86,
+   "end": 237.88,
+   "line": "And for the first time in your life,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s083",
+   "start": 237.88,
+   "end": 240.82,
+   "line": "you lie to your best friend without even thinking about it.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s084",
+   "start": 240.82,
+   "end": 244.2,
+   "line": "That night you realise the notebook has already cost you something,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s085",
+   "start": 244.2,
+   "end": 246.16,
+   "line": "and you haven't even opened it.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s086",
+   "start": 246.16,
+   "end": 250.9,
+   "line": "On day twenty, something is standing in the corner of your room. Tall.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s087",
+   "start": 250.9,
+   "end": 253.66,
+   "line": "Thin. Its eyes glow red.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "shimmer",
+     "gain": -10
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s088",
+   "start": 253.66,
+   "end": 258.0,
+   "line": "It's the shinigami who owns your notebook, and it has an offer.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s089",
+   "start": 258.0,
+   "end": 260.46,
+   "line": "It can give you the shinigami eyes.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s090",
+   "start": 260.46,
+   "end": 264.58,
+   "line": "With them, you'd see anyone's name just by looking at their face.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s091",
+   "start": 264.58,
+   "end": 267.04,
+   "line": "You'd know who the other owner is in a second.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s092",
+   "start": 267.04,
+   "end": 269.26,
+   "line": "The price is half of the life you have left.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s093",
+   "start": 269.26,
+   "end": 272.32,
+   "line": "In the story, someone takes that deal, and",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s094",
+   "start": 272.32,
+   "end": 276.04,
+   "line": "then takes it again, and each time it halves what's left.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s095",
+   "start": 276.04,
+   "end": 280.02,
+   "line": "You think about it all night. You say no. Rule six:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "ding",
+     "gain": -13
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s096",
+   "start": 280.02,
+   "end": 284.14,
+   "line": "every shortcut in this notebook costs more than it saves.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s097",
+   "start": 284.14,
+   "end": 287.68,
+   "line": "On day twenty-three you find a page you hadn't noticed.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s098",
+   "start": 287.68,
+   "end": 289.8,
+   "line": "A rule in a different handwriting:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s099",
+   "start": 289.8,
+   "end": 293.3,
+   "line": "if the owner doesn't write a name every thirteen days,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s100",
+   "start": 293.3,
+   "end": 294.68,
+   "line": "the owner dies.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s101",
+   "start": 294.68,
+   "end": 296.2,
+   "line": "For a second, your heart stops.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "impact",
+     "gain": -10
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s102",
+   "start": 296.2,
+   "end": 298.06,
+   "line": "Then you remember.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s103",
+   "start": 298.06,
+   "end": 300.04,
+   "line": "In the story, that rule is fake.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s104",
+   "start": 300.04,
+   "end": 302.62,
+   "line": "Light wrote it himself, to fool the police.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s105",
+   "start": 302.62,
+   "end": 304.86,
+   "line": "Someone has done the same thing here,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s106",
+   "start": 304.86,
+   "end": 308.26,
+   "line": "to scare whoever finds the notebook into using it.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s107",
+   "start": 308.26,
+   "end": 309.6,
+   "line": "You almost fell for it.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s108",
+   "start": 309.6,
+   "end": 313.2,
+   "line": "That's the thing about a notebook like this. It isn't only deadly.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s109",
+   "start": 313.2,
+   "end": 315.7,
+   "line": "It's persuasive.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s110",
+   "start": 315.7,
+   "end": 320.22,
+   "line": "On day twenty-six, the detective calls you back. They want to talk in person.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s111",
+   "start": 320.22,
+   "end": 323.16,
+   "line": "The interview room is small and too warm.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s112",
+   "start": 323.16,
+   "end": 326.9,
+   "line": "The detective has a folder full of printouts: every death,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s113",
+   "start": 326.9,
+   "end": 329.84,
+   "line": "every date, every face that was on the news.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s114",
+   "start": 329.84,
+   "end": 334.24,
+   "line": "\"You were very helpful on the phone,\" they say. \"How did you know so much?\"",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s115",
+   "start": 334.24,
+   "end": 335.78,
+   "line": "You tell them you read the news.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s116",
+   "start": 335.78,
+   "end": 340.0,
+   "line": "You tell them you noticed the pattern, like those doctors who noticed the death rates.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s117",
+   "start": 340.0,
+   "end": 341.92,
+   "line": "They look at you for a long time.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s118",
+   "start": 341.92,
+   "end": 345.58,
+   "line": "Then they smile, slide a card across the table, and say:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s119",
+   "start": 345.58,
+   "end": 348.98,
+   "line": "\"If you notice anything else, call me first.\"",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "tick",
+     "gain": -12
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s120",
+   "start": 348.98,
+   "end": 351.46,
+   "line": "You walk out into the cold air with your heart pounding.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s121",
+   "start": 351.46,
+   "end": 354.96,
+   "line": "Because you realise the detective is doing exactly what you did.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s122",
+   "start": 354.96,
+   "end": 356.46,
+   "line": "They're watching the pattern.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s123",
+   "start": 356.46,
+   "end": 359.94,
+   "line": "And one day, the pattern might include you.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s124",
+   "start": 359.94,
+   "end": 363.02,
+   "line": "On day thirty, you work it out.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s125",
+   "start": 363.02,
+   "end": 366.14,
+   "line": "The other owner is someone you know.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s126",
+   "start": 366.14,
+   "end": 367.44,
+   "line": "You have their name.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s127",
+   "start": 367.44,
+   "end": 370.62,
+   "line": "You have their face, in a photo on your phone.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s128",
+   "start": 370.62,
+   "end": 374.02,
+   "line": "You could end this in forty seconds.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "tick",
+     "gain": -11
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s129",
+   "start": 374.02,
+   "end": 376.2,
+   "line": "You sit on the roof with",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s130",
+   "start": 376.2,
+   "end": 377.7,
+   "line": "the notebook open on your knees",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s131",
+   "start": 377.7,
+   "end": 380.22,
+   "line": "and a pen in your hand for a long time.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s132",
+   "start": 380.22,
+   "end": 383.4,
+   "line": "The city lights come on one by one.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s133",
+   "start": 383.4,
+   "end": 386.2,
+   "line": "And you realise that the moment you write that name,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s134",
+   "start": 386.2,
+   "end": 390.7,
+   "line": "you become exactly the thing you were trying to stop. You close the notebook.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s135",
+   "start": 390.7,
+   "end": 394.34,
+   "line": "You go downstairs, and you call the number from the press conference.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s136",
+   "start": 394.34,
+   "end": 398.02,
+   "line": "You tell the detective everything you know, except one thing:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s137",
+   "start": 398.02,
+   "end": 400.36,
+   "line": "that you have a notebook too.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s138",
+   "start": 400.36,
+   "end": 402.28,
+   "line": "The next night you go back to the laundromat",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s139",
+   "start": 402.28,
+   "end": 405.14,
+   "line": "to put the notebook back where you found it.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s140",
+   "start": 405.14,
+   "end": 406.92,
+   "line": "You hold it over the box for a minute.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s141",
+   "start": 406.92,
+   "end": 409.14,
+   "line": "And you can't let go.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s142",
+   "start": 409.14,
+   "end": 412.72,
+   "line": "Because whoever finds it next might not close it.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s143",
+   "start": 412.72,
+   "end": 416.2,
+   "line": "So you keep it. In a drawer. Unopened.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "swish",
+     "gain": -10
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s144",
+   "start": 416.2,
+   "end": 419.82,
+   "line": "That's the real cost of the Death Note. Not half your life.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "impact",
+     "gain": -9
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s145",
+   "start": 419.82,
+   "end": 422.3,
+   "line": "Not a heart attack in forty seconds.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "tick",
+     "gain": -11
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s146",
+   "start": 422.3,
+   "end": 424.64,
+   "line": "It's that once you know it exists,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s147",
+   "start": 424.64,
+   "end": 426.36,
+   "line": "you can never stop being the person",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s148",
+   "start": 426.36,
+   "end": 428.56,
+   "line": "who decides not to use it,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s149",
+   "start": 428.56,
+   "end": 430.6,
+   "line": "every single day.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s150",
+   "start": 430.6,
+   "end": 432.7,
+   "line": "So, if you found this notebook tomorrow:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s151",
+   "start": 432.7,
+   "end": 436.08,
+   "line": "would you write a name, or would you keep it closed forever?",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s152",
+   "start": 436.08,
+   "end": 440.92,
+   "line": "And which rule scares you most? Tell us in the comments.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  }
+ ],
+ "music": []
+}

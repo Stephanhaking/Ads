@@ -6,7 +6,7 @@ export const OL = '#b9dcff', INK = '#00000d';
 
 // the notebook: plain black hardcover with two words in a simple serif; o.open shows ruled pages
 export function notebook(x, y, s = 1, o = {}) {
-  if (o.open) return `<g transform="translate(${f(x)} ${f(y)}) scale(${s}) rotate(${o.rot || 0})"><rect x="-150" y="-100" width="300" height="200" rx="8" fill="#15151c" stroke="${OL}" stroke-width="4"/><rect x="-142" y="-92" width="138" height="184" fill="#f2ecdc"/><rect x="4" y="-92" width="138" height="184" fill="#f2ecdc"/>${[...Array(9)].map((_, i) => `<line x1="-134" y1="${-70 + i * 18}" x2="-12" y2="${-70 + i * 18}" stroke="#c9c0aa" stroke-width="2"/><line x1="12" y1="${-70 + i * 18}" x2="134" y2="${-70 + i * 18}" stroke="#c9c0aa" stroke-width="2"/>`).join('')}${o.text ? `<text x="-124" y="-76" font-family="Georgia, serif" font-size="13" fill="#3a3020">${o.text}</text>` : ''}</g>`;
+  if (o.open) return `<g transform="translate(${f(x)} ${f(y)}) scale(${s}) rotate(${o.rot || 0})"><rect x="-150" y="-100" width="300" height="200" rx="8" fill="#15151c" stroke="${OL}" stroke-width="4"/><rect x="-142" y="-92" width="138" height="184" fill="#f2ecdc"/><rect x="4" y="-92" width="138" height="184" fill="#f2ecdc"/>${[...Array(9)].map((_, i) => `<line x1="-134" y1="${-70 + i * 18}" x2="-12" y2="${-70 + i * 18}" stroke="#c9c0aa" stroke-width="2"/><line x1="12" y1="${-70 + i * 18}" x2="134" y2="${-70 + i * 18}" stroke="#c9c0aa" stroke-width="2"/>`).join('')}${o.text ? o.text.split('|').map((l, i) => `<text x="73" y="${-60 + i * 20}" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="15" fill="#8a1a1a">${l}</text>`).join('') : ''}</g>`;
   return `<g transform="translate(${f(x)} ${f(y)}) scale(${s}) rotate(${o.rot || 0})"><rect x="-70" y="-95" width="140" height="190" rx="8" fill="#15151c" stroke="${OL}" stroke-width="4"/><rect x="-70" y="-95" width="14" height="190" fill="#22222c"/><text x="6" y="-20" text-anchor="middle" font-family="Georgia, serif" font-size="26" font-weight="700" fill="#f2ecdc" letter-spacing="2">DEATH</text><text x="6" y="14" text-anchor="middle" font-family="Georgia, serif" font-size="26" font-weight="700" fill="#f2ecdc" letter-spacing="2">NOTE</text></g>`;
 }
 // darken a set for night scenes, with a warm lamp pool at (lx, ly)
@@ -45,11 +45,11 @@ export function interview(tt, o = {}) {
 }
 // full-frame TV news card (headline + ticker); returns svg
 export function newsTV(tt, head, sub, o = {}) {
-  let g = `<rect width="1920" height="1080" fill="#0c0e18"/><rect x="200" y="120" width="1520" height="800" rx="24" fill="#15181e" stroke="${OL}" stroke-width="6"/><rect x="230" y="150" width="1460" height="740" fill="#2a3a6a"/>`;
+  let g = `<rect x="200" y="120" width="1520" height="800" rx="24" fill="#15181e" stroke="${OL}" stroke-width="6"/><rect x="230" y="150" width="1460" height="740" fill="#2a3a6a"/>`;
   g += `<rect x="230" y="150" width="1460" height="520" fill="${o.bg || '#3a4a7a'}"/>` + (o.scene || '');
   g += `<rect x="230" y="670" width="1460" height="110" fill="#c8352e"/><text x="270" y="742" font-family="Inter" font-weight="900" font-size="54" fill="#ffffff">${head}</text><rect x="230" y="780" width="1460" height="110" fill="#f4f6f8"/><text x="270" y="848" font-family="Inter" font-weight="700" font-size="38" fill="#15181e">${sub}</text>`;
   g += `<rect x="1530" y="180" width="130" height="50" rx="6" fill="#c8352e"/><text x="1595" y="215" text-anchor="middle" font-family="Inter" font-weight="900" font-size="28" fill="#ffffff">LIVE</text>`;
-  return g;
+  return `<rect width="1920" height="1080" fill="#0c0e18"/><g transform="translate(144 150) scale(0.85)">${g}</g>`;
 }
 // the shinigami: a tall, thin, faceless silhouette with two red eyes (our own design)
 export function shinigami(x, y, h, tt) { const s = h / 600, sway = Math.sin(tt * 1.2) * 6;
@@ -80,11 +80,11 @@ export function flat(tt, o = {}) {
 }
 // full-frame chart card: a death-rate line that rises (k = 0..1 draw progress); returns svg
 export function chartCard(k, title, o = {}) {
-  const pts = [...Array(13)].map((_, i) => [380 + i * 100, 820 - (i < 6 ? 60 + Math.sin(i * 1.7) * 20 : 60 + (i - 5) * 70)]);
+  const pts = [...Array(13)].map((_, i) => [380 + i * 100, 880 - (i < 6 ? 60 + Math.sin(i * 1.7) * 20 : 60 + (i - 5) * 55)]);
   const n = Math.max(2, Math.round(2 + k * 11)), d = pts.slice(0, n).map((p, i) => (i ? 'L' : 'M') + ` ${p[0]} ${p[1]}`).join(' ');
-  let g = `<rect width="1920" height="1080" fill="#0e1424"/><rect x="300" y="200" width="1340" height="700" rx="24" fill="#f4f6f8"/><text x="360" y="280" font-family="Inter" font-weight="900" font-size="48" fill="#15181e">${title}</text>`;
-  for (let i = 0; i < 5; i++) g += `<line x1="380" y1="${820 - i * 120}" x2="1580" y2="${820 - i * 120}" stroke="#d0d6de" stroke-width="2"/>`;
-  g += `<line x1="380" y1="${820 - 150}" x2="1580" y2="${820 - 150}" stroke="#4fa06a" stroke-width="4" stroke-dasharray="16 12"/><text x="1590" y="${820 - 140}" font-family="IBM Plex Mono" font-weight="800" font-size="22" fill="#4fa06a">${o.normal || 'EXPECTED'}</text>`;
+  let g = `<rect width="1920" height="1080" fill="#0e1424"/><rect x="300" y="300" width="1340" height="640" rx="24" fill="#f4f6f8"/><text x="360" y="380" font-family="Inter" font-weight="900" font-size="48" fill="#15181e">${title}</text>`;
+  for (let i = 0; i < 5; i++) g += `<line x1="380" y1="${880 - i * 100}" x2="1580" y2="${880 - i * 100}" stroke="#d0d6de" stroke-width="2"/>`;
+  g += `<line x1="380" y1="${880 - 150}" x2="1580" y2="${880 - 150}" stroke="#4fa06a" stroke-width="4" stroke-dasharray="16 12"/><text x="1590" y="${880 - 140}" font-family="IBM Plex Mono" font-weight="800" font-size="22" fill="#4fa06a">${o.normal || 'EXPECTED'}</text>`;
   g += `<path d="${d}" stroke="#c8352e" stroke-width="10" fill="none" stroke-linejoin="round" stroke-linecap="round"/>`;
   const e = pts[n - 1]; g += `<circle cx="${e[0]}" cy="${e[1]}" r="14" fill="#c8352e"/>`;
   return g;

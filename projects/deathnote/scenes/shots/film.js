@@ -32,10 +32,12 @@ const full = (U, svg) => U.svg('card', svg, {}, { z: 3 });
 const SHOT = (id, bg, body) => registerShot(id, { bg, theme: 'dark', ui(U, t, info) { U.svg('fx', '', {}); U.svg('card', '', {}); U.html('big', '', {}); body(U, t, info, info.start + t); } });
 const holdBook = (c, open = false) => N.notebook(c.hands[1][0] + 10, c.hands[1][1] - 10, open ? 0.5 : 0.36, { open, rot: open ? 0 : -8 });
 const crowd = (n, x0, y, faces = 'neutral') => Array.from({ length: n }, (_, i) => Q(x0 + i * 170 + (i % 2) * 20, y + (i % 3) * 12, i % 3 === 1 ? { ...P_PHONE, aR: [62, 92] } : P_STAND, { top: ['#e0723a', '#9a5cc0', '#2f9a8e', '#4a6fb5', '#c9a03a', '#e05a8a'][i % 6], bottom: '#22263a', hair: ['ponytail', 'curly', undefined, 'short'][i % 4], cap: i % 4 === 2 ? '#3f6db3' : undefined }, faces, { flip: i % 2 === 0, h: 320 }));
+const CL1 = (U, t, txt, t0 = 0.3, c) => label(U, 'L1', txt, t0, t, 1180, 170, c ? { color: c } : {});
+const CL2 = (U, t, txt, t0 = 1.0, c) => label(U, 'L2', txt, t0, t, 1180, 230, c ? { color: c } : {});
 const rule = (U, t, n, txt) => L1(U, t, `RULE ${n} · ${txt}`, 0.2, COL.yellow);
 
 const S = {};
-S.open = (U, t, info, tt, k, n, line) => { const B = N.laundromat(tt, { book: !has(line, 'black notebook', 'Inside', 'first one', 'laugh', 'rest', 'stop laughing') });
+S.open = (U, t, info, tt, k, n, line) => { const B = N.laundromat(tt, { book: k < 2 });
   let ppl, cam = { z: 1.1, cx: 900, cy: 560 }, fx = '';
   if (has(line, 'eleven', 'last person')) { ppl = [P(500, 880, { ...P_STAND, aR: [40, 40] }, 'neutral', { extra: (c) => `<rect x="${f(c.hands[1][0] - 40)}" y="${f(c.hands[1][1])}" width="80" height="60" rx="10" fill="#e8eef4" stroke="${OL}" stroke-width="3"/>` })]; L1(U, t, '11:00 PM · LAUNDROMAT', 0.3); }
   else if (has(line, 'lost-and-found', 'black notebook', 'two words', 'Death Note')) { ppl = [P(1000, 880, P_STAND, 'open', { look: 0.8 })]; cam = { z: 1.9, cx: 1240, cy: 480 }; if (!has(line, 'lost-and-found')) fx = N.notebook(1280, 470, 0.9, { rot: -4 }); }
@@ -85,14 +87,14 @@ S.day9 = (U, t, info, tt, k, n, line) => {
   if (has(line, 'twenty-one', 'Shipman', '215', '250', 'alarm', 'unusually', 'statisticians', 'death rates', 'confession', 'other doctors')) {
     const title = has(line, 'twenty-one') ? 'HEART ATTACKS · PEOPLE ON THE NEWS' : has(line, 'statisticians', 'watching') ? 'WATCHING THE DEATH RATE' : 'ONE DOCTOR\'S PATIENTS · DEATHS';
     full(U, N.chartCard(clamp(t / Math.max(1, info.dur * 0.8)), title, { normal: has(line, 'twenty-one') ? 'USUAL' : 'EXPECTED' }));
-    if (has(line, 'twenty-one')) L1(U, t, 'DAY 9 · 21 DEATHS', 0.2, COL.red);
-    if (has(line, 'Shipman')) L1(U, t, 'REAL CASE · HAROLD SHIPMAN (UK)', 0.2, COL.yellow);
-    if (has(line, '215')) { L1(U, t, 'INQUIRY · 215 VICTIMS', 0.2, COL.red); }
-    if (has(line, '250')) L2(U, t, 'LATER ESTIMATE · ~250', 0.6, COL.red);
-    if (has(line, 'other doctors', 'unusually')) L1(U, t, 'ALARM · OTHER DOCTORS NOTICED', 0.2, '#4fd06a');
-    if (has(line, 'statisticians', 'years earlier')) L1(U, t, 'MONITORING · YEARS EARLIER', 0.2, '#4fd06a');
+    if (has(line, 'twenty-one')) CL1(U, t, 'DAY 9 · 21 DEATHS', 0.2, COL.red);
+    if (has(line, 'Shipman')) CL1(U, t, 'REAL CASE · HAROLD SHIPMAN (UK)', 0.2, COL.yellow);
+    if (has(line, '215')) { CL1(U, t, 'INQUIRY · 215 VICTIMS', 0.2, COL.red); }
+    if (has(line, '250')) CL2(U, t, 'LATER ESTIMATE · ~250', 0.6, COL.red);
+    if (has(line, 'other doctors', 'unusually')) CL1(U, t, 'ALARM · OTHER DOCTORS NOTICED', 0.2, '#4fd06a');
+    if (has(line, 'statisticians', 'years earlier')) CL1(U, t, 'MONITORING · YEARS EARLIER', 0.2, '#4fd06a');
     chrome(U, t, info, D(9, '10:20 AM', ST.names(0))); return; }
-  const B = SET.lobby(tt); let ppl = [P(760, 840, has(line, 'Rule four') ? P_HIPS : P_THINK, 'neutral')], cam = { z: 1.3, cx: 960, cy: 560 };
+  const B = SET.lobby(tt, { sign: 'CITY HOSPITAL' }); let ppl = [P(760, 840, has(line, 'Rule four') ? P_HIPS : P_THINK, 'neutral')], cam = { z: 1.3, cx: 960, cy: 560 };
   if (has(line, 'Someone', 'about to start')) { ppl.push(Q(1300, 840, P_PHONE, DET, 'neutral', { flip: true })); L1(U, t, 'SOMEONE · IS WATCHING', 0.3, COL.red); }
   if (has(line, 'Rule four')) rule(U, t, 4, 'A PATTERN IS EVIDENCE');
   frame(U, B, cam, ppl, '', { fxIn: true });
@@ -100,13 +102,13 @@ S.day9 = (U, t, info, tt, k, n, line) => {
 };
 S.day14 = (U, t, info, tt, k, n, line) => {
   if (has(line, '95', '52', 'Japan', 'United States', 'counted')) { const jp = has(line, 'Japan', '95'), us = has(line, '52', 'United States');
-    const bar = (x, v, c, lab, on) => `<rect x="${x}" y="${820 - v * 5.5}" width="260" height="${v * 5.5}" fill="${c}" opacity="${on ? 1 : 0.25}"/><text x="${x + 130}" y="${800 - v * 5.5}" text-anchor="middle" font-family="Inter" font-weight="900" font-size="64" fill="#fff" opacity="${on ? 1 : 0.3}">~${v}%</text><text x="${x + 130}" y="880" text-anchor="middle" font-family="IBM Plex Mono" font-weight="800" font-size="30" fill="#cfd8e0">${lab}</text>`;
+    const bar = (x, v, c, lab, on) => `<rect x="${x}" y="${820 - v * 4.4}" width="260" height="${v * 4.4}" fill="${c}" opacity="${on ? 1 : 0.25}"/><text x="${x + 130}" y="${800 - v * 4.4}" text-anchor="middle" font-family="Inter" font-weight="900" font-size="64" fill="#fff" opacity="${on ? 1 : 0.3}">~${v}%</text><text x="${x + 130}" y="870" text-anchor="middle" font-family="IBM Plex Mono" font-weight="800" font-size="30" fill="#cfd8e0">${lab}</text>`;
     full(U, `<rect width="1920" height="1080" fill="#0e1424"/><text x="960" y="250" text-anchor="middle" font-family="Inter" font-weight="900" font-size="56" fill="#fff">MURDERS SOLVED</text>` + bar(620, 95, '#4fa06a', 'JAPAN · STUDY', jp || has(line, 'counted')) + bar(1040, 52, '#c8352e', 'USA · 2023', us || has(line, 'counted')));
-    if (has(line, 'counted', 'ignore')) L1(U, t, 'NOT COUNTED THE SAME WAY', 0.3, COL.yellow);
+    if (has(line, 'counted', 'ignore')) CL1(U, t, 'NOT COUNTED THE SAME WAY', 0.3, COL.yellow);
     chrome(U, t, info, D(14, '6:00 PM', ST.names(0))); return; }
   let B, ppl, cam = { z: 1.0, cx: 960, cy: 560 }, fx = '';
-  if (has(line, 'press conference', 'detective explains', 'series', 'who died', 'faces')) { B = SET.lobby(tt); ppl = [Q(960, 840, { ...P_STAND, aR: [60, 70] }, DET, 'neutral', { h: 380 }), ...crowd(4, 260, 900).map((p, i) => ({ ...p, x: [260, 520, 1400, 1660][i] }))]; cam = { z: 1.2, cx: 960, cy: 580 };
-    fx = `<rect x="840" y="${640}" width="240" height="40" rx="6" fill="#2a3040"/>` + [0, 1, 2].map((i) => `<rect x="${880 + i * 60}" y="600" width="16" height="44" rx="6" fill="#15181e"/>`).join('');
+  if (has(line, 'press conference', 'detective explains', 'series', 'who died', 'faces')) { B = SET.lobby(tt, { sign: 'POLICE', wall: true }); ppl = [Q(960, 840, { ...P_STAND, aR: [60, 70] }, DET, 'neutral', { h: 380 }), ...crowd(4, 260, 900).map((p, i) => ({ ...p, x: [260, 520, 1400, 1660][i] }))]; cam = { z: 1.2, cx: 960, cy: 580 };
+    fx = `<path d="M 850 640 L 1070 640 L 1050 840 L 870 840 Z" fill="#2a3a6a" stroke="${OL}" stroke-width="4"/><circle cx="960" cy="720" r="40" fill="#f4f6f8" opacity="0.85"/><path d="M 960 690 l 26 46 l -52 0 Z" fill="#2a3a6a"/><rect x="954" y="590" width="12" height="50" fill="#15181e"/><circle cx="960" cy="586" r="12" fill="#15181e"/>`;
     L1(U, t, has(line, 'faces') ? 'POLICE · WHO KNEW THEIR FACES?' : 'POLICE · "A SERIES"', 0.3, COL.red); }
   else { B = square(tt); ppl = crowd(8, -100, 880, has(line, 'scared') ? 'worried' : has(line, 'cheering') ? 'smile' : 'neutral');
     if (has(line, 'cheering', 'scares you')) { ppl = [...ppl, P(1700, 900, P_STAND, 'worried', { flip: true })]; L1(U, t, 'SOME PEOPLE · CHEERING', 0.3, COL.red); }
@@ -115,13 +117,13 @@ S.day14 = (U, t, info, tt, k, n, line) => {
   frame(U, B, cam, ppl, fx, { fxIn: true });
   chrome(U, t, info, D(14, '6:00 PM', ST.names(0)));
 };
-S.day17 = (U, t, info, tt, k, n, line) => { const B = N.flat(tt); let cam = { z: 1.3, cx: 900, cy: 600 }, fx = B.table(560);
+S.day17 = (U, t, info, tt, k, n, line) => { const B = N.flat(tt); let cam = { z: 1.3, cx: 900, cy: 600 }, fx = B.table(760);
   const cups = (c) => `<rect x="${f(c.hands[0][0] - 14)}" y="${f(c.hands[0][1] - 20)}" width="28" height="36" rx="4" fill="#f4f1ea"/><rect x="${f(c.hands[1][0] - 14)}" y="${f(c.hands[1][1] - 20)}" width="28" height="36" rx="4" fill="#f4f1ea"/>`;
   const friendHolds = has(line, 'holding', 'laughing', 'joke', 'flick', 'spooky');
-  const fr = Q(480, 830, friendHolds ? { ...P_SIT, aR: [70, 60] } : P_SIT, FRIEND, has(line, 'stop laughing', 'seriously') ? 'worried' : friendHolds ? 'smile' : 'neutral', { extra: friendHolds ? (c) => N.notebook(c.hands[1][0] + 20, c.hands[1][1] - 10, 0.36, { open: has(line, 'flick'), rot: -6 }) : undefined });
+  const fr = Q(420, 830, friendHolds ? { ...P_SIT, aR: [70, 60] } : P_SIT, FRIEND, has(line, 'stop laughing', 'seriously') ? 'worried' : friendHolds ? 'smile' : 'neutral', { extra: friendHolds ? (c) => N.notebook(c.hands[1][0] + 20, c.hands[1][1] - 10, 0.36, { open: has(line, 'flick'), rot: -6 }) : undefined });
   let hero = P(1300, 860, has(line, 'two coffees', 'walk back') ? walk(tt) : has(line, 'take it back') ? { ...P_STAND, aR: [80, 60] } : P_STAND, has(line, 'lie', 'cost') ? 'worried' : 'neutral', { flip: true, extra: has(line, 'two coffees', 'walk back') ? cups : has(line, 'take it back') ? (c) => holdBook(c) : undefined });
   let ppl = [fr, hero];
-  if (!friendHolds && !has(line, 'take it back')) fx += N.notebook(560, 730, 0.3, { rot: 80 });
+  if (!friendHolds && !has(line, 'take it back')) fx += N.notebook(760, 735, 0.3, { rot: 80 });
   if (has(line, 'Is this a joke')) L1(U, t, '"IS THIS A JOKE?"', 0.2);
   if (has(line, 'prop')) L1(U, t, '"A PROP FROM A PARTY"', 0.2, COL.yellow);
   if (has(line, 'lie to your best friend')) { L1(U, t, 'FIRST LIE · TO YOUR BEST FRIEND', 0.2, COL.red); cam = { z: 1.9, cx: 1260, cy: 540 }; }
@@ -143,7 +145,7 @@ S.day20 = (U, t, info, tt, k, n, line) => { const B = N.night(SET.bedroom(tt, { 
 };
 S.day23 = (U, t, info, tt, k, n, line) => { const B = N.night(J.kitchen(tt), 900, 500, 0.5); let cam = { z: 2.0, cx: 960, cy: 620 }, ppl = [P(640, 860, { ...P_STAND, aR: [70, 60] }, has(line, 'heart stops') ? 'worried' : 'neutral')];
   const fake = has(line, 'thirteen', 'heart stops', 'Then you remember', 'fake', 'Light wrote', 'same thing', 'scare');
-  let fx = N.notebook(1000, 700, 0.9, { open: true, text: fake ? '13 DAYS — OR THE OWNER DIES' : '' });
+  let fx = N.notebook(1000, 700, 0.9, { open: true, text: fake ? '13 DAYS|WITHOUT A NAME|= THE OWNER|DIES' : '' });
   if (has(line, 'thirteen')) L1(U, t, 'NEW RULE? · 13 DAYS', 0.2, COL.red);
   if (has(line, 'fake', 'Light wrote', 'remember')) { L1(U, t, 'IN THE STORY · A FAKE RULE', 0.2, '#4fd06a'); }
   if (has(line, 'persuasive', 'almost fell')) { L1(U, t, 'DEADLY · AND PERSUASIVE', 0.2, COL.red); cam = { z: 1.4, cx: 860, cy: 560 }; }
@@ -163,15 +165,17 @@ S.day26 = (U, t, info, tt, k, n, line) => { const B = N.interview(tt); let cam =
 S.day30 = (U, t, info, tt, k, n, line) => { const lights = has(line, 'lights come on') ? clamp(t / info.dur) : has(line, 'close the notebook', 'downstairs', 'call', 'except') ? 1 : 0.15;
   const B = N.rooftop(tt, { lights }); let cam = { z: 1.3, cx: 900, cy: 620 }, open = has(line, 'pen', 'forty seconds', 'lights', 'moment you write');
   const phone = (c) => `<rect x="${f(c.hands[1][0] - 22)}" y="${f(c.hands[1][1] - 40)}" width="44" height="80" rx="8" fill="#15181e" stroke="${OL}" stroke-width="3"/><rect x="${f(c.hands[1][0] - 16)}" y="${f(c.hands[1][1] - 32)}" width="32" height="62" rx="4" fill="#8fd0ff"/><circle cx="${f(c.hands[1][0])}" cy="${f(c.hands[1][1] - 6)}" r="10" fill="#4a5a7a"/>`;
+  const crate = () => `<rect x="760" y="790" width="290" height="110" rx="6" fill="#b07a44" stroke="#3a2410" stroke-width="4"/><path d="M 760 845 L 1050 845 M 820 790 L 820 900 M 990 790 L 990 900" stroke="#7a4e24" stroke-width="5"/>`;
   let ppl = [P(900, 900, has(line, 'phone', 'photo', 'face') ? P_PHONE : open ? { ...P_SIT, aR: [40, 60] } : P_STAND, has(line, 'exactly the thing') ? 'worried' : 'neutral', { extra: has(line, 'phone', 'photo', 'face') ? phone : open ? (c) => holdBook(c, true) : undefined })];
   if (has(line, 'someone you know')) L1(U, t, 'THE OTHER OWNER · SOMEONE YOU KNOW', 0.2, COL.red);
   if (has(line, 'name', 'face')) L2(U, t, 'NAME ✓  FACE ✓', 1.0, COL.red);
-  if (has(line, 'forty seconds')) { L1(U, t, '40 SECONDS', 0.2, COL.red); cam = { z: 1.9, cx: 900, cy: 600 }; }
+  if (has(line, 'forty seconds')) { L1(U, t, '40 SECONDS', 0.2, COL.red); cam = { z: 1.6, cx: 900, cy: 660 }; }
   if (has(line, 'exactly the thing')) L1(U, t, 'YOU · WOULD BECOME THEM', 0.2, COL.red);
   if (has(line, 'close the notebook')) L1(U, t, 'NAMES WRITTEN · 0', 0.2, '#4fd06a');
   if (has(line, 'call the number', 'detective everything')) { ppl = [P(900, 900, P_PHONE, 'neutral')]; L1(U, t, 'CALL · THE DETECTIVE', 0.2, '#4fd06a'); }
   if (has(line, 'except one thing', 'notebook too')) L1(U, t, 'KEPT SECRET · YOUR NOTEBOOK', 0.2, COL.yellow);
   if (has(line, 'lights come on')) cam = { z: 0.9, cx: 960, cy: 560 };
+  if (open && !has(line, 'phone', 'photo', 'face')) B.mid += crate();
   frame(U, B, cam, ppl, '', { fxIn: true });
   chrome(U, t, info, D(30, '6:50 PM', open ? ST.open : ST.names(0)));
 };
