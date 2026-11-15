@@ -54,3 +54,38 @@ export function newsTV(tt, head, sub, o = {}) {
 // the shinigami: a tall, thin, faceless silhouette with two red eyes (our own design)
 export function shinigami(x, y, h, tt) { const s = h / 600, sway = Math.sin(tt * 1.2) * 6;
   return `<g transform="translate(${f(x + sway)} ${f(y)}) scale(${f(s)})"><path d="M -60 0 C -80 -200 -40 -420 -10 -540 C 0 -580 40 -580 50 -540 C 80 -420 100 -200 70 0 Z" fill="#06060c" stroke="#3a3a5a" stroke-width="4"/><path d="M -40 -380 C -140 -300 -150 -160 -120 -60 M 50 -380 C 150 -300 160 -160 130 -60" stroke="#06060c" stroke-width="22" fill="none" stroke-linecap="round"/><circle cx="2" cy="-500" r="10" fill="#ff2a2a"/><circle cx="34" cy="-500" r="10" fill="#ff2a2a"/><circle cx="2" cy="-500" r="40" fill="#ff2a2a" opacity="0.15"/><circle cx="34" cy="-500" r="40" fill="#ff2a2a" opacity="0.15"/></g>`; }
+// rooftop at dusk: low parapet, water tank, the city below with lights coming on (k = 0..1)
+export function rooftop(tt, o = {}) {
+  const FLOOR = 860, k = o.lights ?? 0.5;
+  let back = `<defs><linearGradient id="rs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a1f5e"/><stop offset="0.55" stop-color="#c0607a"/><stop offset="1" stop-color="#ffb07a"/></linearGradient>${glow('rsun', '#ffd08a', 0.8)}</defs><rect x="-600" y="-300" width="3120" height="${FLOOR + 300}" fill="url(#rs)"/><ellipse cx="1500" cy="640" rx="420" ry="220" fill="url(#rsun)" opacity="0.7"/>`;
+  back += city({ vp: [960, 700], ground: 760, fog: '#c07a8a', lit: '#ffd27a', litP: 0.05 + k * 0.5, pal: ['#3a2a6a', '#5a2f5e', '#2a3a72', '#4a2650'], layers: [
+    { n: 12, x0: -700, x1: 2600, hmin: 220, hmax: 520, wmin: 120, wmax: 200, haze: 0.5, seed: 77, depth: 0.06, style: 'tower', litP: 0.05 + k * 0.4 },
+    { n: 8, x0: -700, x1: 2600, hmin: 120, hmax: 260, wmin: 200, wmax: 320, haze: 0.2, seed: 79, depth: 0.1, style: 'apartment', litP: 0.05 + k * 0.6 }] });
+  let mid = `<rect x="-600" y="${FLOOR - 70}" width="3120" height="70" fill="#5a4a6a"/><rect x="-600" y="${FLOOR - 78}" width="3120" height="12" fill="#7a6a8a"/>`;
+  mid += `<g transform="translate(1580 ${FLOOR - 70})"><rect x="-90" y="-260" width="180" height="200" rx="20" fill="#6a5a7a" stroke="${OL}" stroke-width="3"/><rect x="-70" y="-60" width="12" height="60" fill="#4a3a5a"/><rect x="58" y="-60" width="12" height="60" fill="#4a3a5a"/></g>`;
+  const floor = `<rect x="-600" y="${FLOOR}" width="3120" height="600" fill="#4a3f5a"/><rect x="-600" y="${FLOOR}" width="3120" height="8" fill="#3a3048"/>`;
+  return { back, mid, floor, FLOOR, bg: '#2a1f5e', blur: 1.2, reflOp: 0.06, tex: 0.2 };
+}
+// your flat: sofa, coffee table, a door on the right, a floor lamp
+export function flat(tt, o = {}) {
+  const FLOOR = 840;
+  let back = `<defs>${glow('fw', '#ffe0a8', 0.8)}</defs><rect x="-600" y="-300" width="3120" height="${FLOOR + 300}" fill="#8a9ac8"/><rect x="-600" y="${FLOOR - 40}" width="3120" height="40" fill="#6a7aa8"/>`;
+  back += `<rect x="300" y="160" width="420" height="300" fill="#2a3a7a" stroke="#f4f1ea" stroke-width="12"/><rect x="510" y="160" width="6" height="300" fill="#f4f1ea"/><circle cx="420" cy="250" r="30" fill="#f4f1ea" opacity="0.8"/>`;
+  back += `<rect x="1560" y="300" width="200" height="${FLOOR - 300}" fill="#c9a06a" stroke="${OL}" stroke-width="4"/><circle cx="1590" cy="${FLOOR - 260}" r="8" fill="#ffd23f"/>`;
+  back += `<ellipse cx="1300" cy="300" rx="300" ry="260" fill="url(#fw)" opacity="0.6"/><rect x="1296" y="300" width="8" height="${FLOOR - 300}" fill="#2a2d3a"/><path d="M 1250 300 L 1350 300 L 1330 240 L 1270 240 Z" fill="#ffd8a0"/>`;
+  let mid = `<rect x="150" y="${FLOOR - 220}" width="700" height="120" rx="30" fill="#c8452e"/><rect x="150" y="${FLOOR - 300}" width="700" height="110" rx="30" fill="#d85a3e"/><rect x="120" y="${FLOOR - 240}" width="80" height="160" rx="30" fill="#b83a26"/><rect x="800" y="${FLOOR - 240}" width="80" height="160" rx="30" fill="#b83a26"/><rect x="190" y="${FLOOR - 100}" width="20" height="100" fill="#3a2a20"/><rect x="790" y="${FLOOR - 100}" width="20" height="100" fill="#3a2a20"/>`;
+  const floor = `<rect x="-600" y="${FLOOR}" width="3120" height="600" fill="#c9a87a"/>` + [...Array(20)].map((_, i) => `<rect x="${-600 + i * 160}" y="${FLOOR}" width="4" height="600" fill="#a8885a"/>`).join('') + `<ellipse cx="760" cy="${FLOOR + 60}" rx="520" ry="70" fill="#5a6ab8" opacity="0.6"/>`;
+  const table = (x) => `<rect x="${x - 170}" y="${FLOOR - 90}" width="340" height="20" rx="6" fill="#8a6a4a"/><rect x="${x - 150}" y="${FLOOR - 70}" width="12" height="70" fill="#5a4a3a"/><rect x="${x + 138}" y="${FLOOR - 70}" width="12" height="70" fill="#5a4a3a"/>`;
+  return { back, mid, floor, FLOOR, bg: '#8a9ac8', blur: 1.2, reflOp: 0.08, tex: 0.2, table };
+}
+// full-frame chart card: a death-rate line that rises (k = 0..1 draw progress); returns svg
+export function chartCard(k, title, o = {}) {
+  const pts = [...Array(13)].map((_, i) => [380 + i * 100, 820 - (i < 6 ? 60 + Math.sin(i * 1.7) * 20 : 60 + (i - 5) * 70)]);
+  const n = Math.max(2, Math.round(2 + k * 11)), d = pts.slice(0, n).map((p, i) => (i ? 'L' : 'M') + ` ${p[0]} ${p[1]}`).join(' ');
+  let g = `<rect width="1920" height="1080" fill="#0e1424"/><rect x="300" y="200" width="1340" height="700" rx="24" fill="#f4f6f8"/><text x="360" y="280" font-family="Inter" font-weight="900" font-size="48" fill="#15181e">${title}</text>`;
+  for (let i = 0; i < 5; i++) g += `<line x1="380" y1="${820 - i * 120}" x2="1580" y2="${820 - i * 120}" stroke="#d0d6de" stroke-width="2"/>`;
+  g += `<line x1="380" y1="${820 - 150}" x2="1580" y2="${820 - 150}" stroke="#4fa06a" stroke-width="4" stroke-dasharray="16 12"/><text x="1590" y="${820 - 140}" font-family="IBM Plex Mono" font-weight="800" font-size="22" fill="#4fa06a">${o.normal || 'EXPECTED'}</text>`;
+  g += `<path d="${d}" stroke="#c8352e" stroke-width="10" fill="none" stroke-linejoin="round" stroke-linecap="round"/>`;
+  const e = pts[n - 1]; g += `<circle cx="${e[0]}" cy="${e[1]}" r="14" fill="#c8352e"/>`;
+  return g;
+}

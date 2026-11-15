@@ -1,0 +1,42 @@
+# audio/score.py — original score for the Death Note "what if" video (~8 min). Continuous bed, never silent. Low, quiet,
+# suspenseful: a ticking pulse, a dark glassy pad for the notebook, a celesta music-box motif, tension for the world
+# reacting, a hollow drone for the shinigami, a held breath on the rooftop, a warm, sad close. Original material only.
+S.set_key("D minor")
+tick = Motif("1 . 5 . 1 . 5 .", ".5 .5 .5 .5 .5 .5 .5 .5")
+box = Motif("5 3 2 1 2 3 1 .", ".5 .5 .5 .5 .5 .5 1 .5")
+W = lambda p, a=0: S.word(p, after=a)
+cuts = [W("You read the rules"), W("Everybody who hears"), W("On day five"), W("By day nine"), W("On day fourteen"), W("On day seventeen"),
+        W("On day twenty,"), W("On day twenty-three"), W("On day twenty-six"), W("On day thirty"), W("The next night"), W("So, if you found")]
+t = [0] + cuts + [S.duration]
+
+A = S.section("open", t[0], t[1], bpm=84, chords="i:2 bVI:2 iv:2 V:2")
+A.pad("pad_glass", 3, 22, "open"); A.ticks("stick", step=0.5, vel=14); A.motif(box, "celesta", every=4, octave=4, vel=24)
+S.hit(W("Death Note"), "boom", vel=78); S.hit(W("stop laughing"), "impact", vel=66)
+B = S.section("day1", t[1], t[2], bpm=76, chords="i:2 iv:2 bVI:2 V:2")
+B.pad("pad_space", 3, 20, "open"); B.arp("celesta", "1 5 8 5", step=0.5, octave=4, vel=14)
+C = S.section("day2", t[2], t[3], bpm=88, key="F major", chords="I:2 vi:2 IV:2 V:2")
+C.motif(box, "piano", every=4, octave=4, vel=26); C.pad("pad_warm", 3, 18, "open")
+D = S.section("day5", t[3], t[4], bpm=92, chords="i:1 bVI:1 bVII:1 V:1")
+D.pulse("synth_bass", octave=2, vel=32, step=1); D.ticks("stick", step=0.5, vel=16); D.pad("pad_glass", 3, 20, "open")
+S.hit(W("there's another one"), "boom", vel=82)
+E = S.section("day9", t[4], t[5], bpm=96, chords="i:2 iv:2 i:2 V:2")
+E.ostinato(tick, "marimba", octave=4, vel=24); E.pulse("synth_bass", octave=2, vel=32, step=1); E.strings("strings", 3, 22, swell=0.4)
+F = S.section("day14", t[5], t[6], bpm=104, chords="i:1 bVI:1 bVII:1 V:1")
+F.drums({"kick": "x...x...", "snare": "....x...", "hat": "x.x.x.x."}, "kit", step=0.25, vel=30); F.pulse("synth_bass", octave=2, vel=36, step=0.5); F.strings("tremolo", 3, 26, swell=0.4)
+G = S.section("day17", t[6], t[7], bpm=90, key="F major", chords="I:2 V:2 vi:2 IV:2")
+G.motif(box, "pizz", every=4, octave=4, vel=26); G.pad("pad_warm", 3, 20, "open")
+H = S.section("day20", t[7], t[8], bpm=70, chords="i:2 bII:2 i:2 V:2")
+H.pad("pad_space", 2, 26, "open"); H.ticks("stick", step=1, vel=12); H.strings("tremolo", 2, 22, swell=0.5)
+S.hit(W("Its eyes glow red"), "boom", vel=84); S.hit(W("half of the life"), "impact", vel=72)
+I = S.section("day23", t[8], t[9], bpm=84, chords="i:2 iv:2 bVI:2 V:2")
+I.arp("celesta", "1 3 5 8", step=0.5, octave=4, vel=16); I.pad("pad_glass", 3, 20, "open")
+S.hit(W("your heart stops"), "impact", vel=70)
+J = S.section("day26", t[9], t[10], bpm=96, chords="i:1 bVI:1 iv:1 V:1")
+J.ostinato(tick, "marimba", octave=4, vel=24); J.pulse("synth_bass", octave=2, vel=34, step=0.5); J.strings("strings", 3, 24, swell=0.4)
+K = S.section("day30", t[10], t[11], bpm=72, chords="i:2 bVI:2 bIII:2 bVII:2")
+K.pad("pad_space", 3, 24, "open", swell=0.5); K.strings("strings", 3, 30, swell=0.6); K.motif(box, "celesta", every=4, octave=4, vel=20)
+S.hit(W("You could end this"), "boom", vel=80); S.hit(W("You close the notebook. You go"), "pluck", vel=60)
+L = S.section("day31", t[11], t[12], bpm=70, key="F major", chords="vi:2 IV:2 I:2 V:2")
+L.motif(box, "piano", every=4, octave=4, vel=30); L.pad("pad_warm", 3, 24, "open", swell=0.3)
+M = S.section("ending", t[12], t[13], bpm=76, chords="i:2 bVI:2 iv:2 V:2")
+M.pad("pad_glass", 3, 24, "open", swell=0.4); M.motif(box, "celesta", every=4, octave=4, vel=20)
