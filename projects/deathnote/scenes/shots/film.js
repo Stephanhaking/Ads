@@ -103,7 +103,7 @@ S.day9 = (U, t, info, tt, k, n, line) => {
 S.day14 = (U, t, info, tt, k, n, line) => {
   if (has(line, '95', '52', 'Japan', 'United States', 'counted')) { const jp = has(line, 'Japan', '95'), us = has(line, '52', 'United States');
     const bar = (x, v, c, lab, on) => `<rect x="${x}" y="${820 - v * 4.4}" width="260" height="${v * 4.4}" fill="${c}" opacity="${on ? 1 : 0.25}"/><text x="${x + 130}" y="${800 - v * 4.4}" text-anchor="middle" font-family="Inter" font-weight="900" font-size="64" fill="#fff" opacity="${on ? 1 : 0.3}">~${v}%</text><text x="${x + 130}" y="870" text-anchor="middle" font-family="IBM Plex Mono" font-weight="800" font-size="30" fill="#cfd8e0">${lab}</text>`;
-    full(U, `<rect width="1920" height="1080" fill="#0e1424"/><text x="960" y="250" text-anchor="middle" font-family="Inter" font-weight="900" font-size="56" fill="#fff">MURDERS SOLVED</text>` + bar(620, 95, '#4fa06a', 'JAPAN · STUDY', jp || has(line, 'counted')) + bar(1040, 52, '#c8352e', 'USA · 2023', us || has(line, 'counted')));
+    full(U, `<rect width="1920" height="1080" fill="#0e1424"/><text x="960" y="285" text-anchor="middle" font-family="Inter" font-weight="900" font-size="46" fill="#fff">MURDERS SOLVED</text>` + bar(620, 95, '#4fa06a', 'JAPAN · STUDY', jp || has(line, 'counted')) + bar(1040, 52, '#c8352e', 'USA · 2023', us || has(line, 'counted')));
     if (has(line, 'counted', 'ignore')) CL1(U, t, 'NOT COUNTED THE SAME WAY', 0.3, COL.yellow);
     chrome(U, t, info, D(14, '6:00 PM', ST.names(0))); return; }
   let B, ppl, cam = { z: 1.0, cx: 960, cy: 560 }, fx = '';
