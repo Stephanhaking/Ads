@@ -31,3 +31,5 @@ Tabela de referência: top por views÷inscritos (canais pequenos com bom desempe
 | Turn Invisible | capuz sem cabeça na banheira | 26 | 11,5 % | amostra mínima |
 | Move Things | "HANDS FREE." | 39 | 7,7 % | amostra mínima |
 | Luffy (8:19) | "WHAT IF YOU HAD GEAR 5?" (trocada, não a primeira aprovada) | 39 | 2,6 % | 1 clique em 39 |
+| Saitama (9:58) | boneco do canal em pose de Saitama, texto 'SAITAMA'S POWERS IN REAL LIFE!' | 59 | 10,2 % (6 cliques) | 16/11, 6 dias; duração média 5:03 (50 %); 12 views, 0 inscritos |
+| Luffy (8:19), atualização | 'WHAT IF YOU HAD GEAR 5?' | 39 (14/11) | 2,6 % (1 clique) | retenção 7:34 (91 %) em 3 views; 10 views na Data API a 16/11 |
