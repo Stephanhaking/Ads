@@ -110,5 +110,40 @@
       "shorts"
     ],
     "cover": "frame ~0:36 (\"9 SECONDS AT A TIME\" card), big text in the middle third"
+  },
+  {
+    "n": 7,
+    "file": "07_dn_never-write-a-name.mp4",
+    "source": "deathnote/out/What_If_You_Had_The_Death_Note_in_Real_Life.mp4 0:00-0:22.5 + 0:37.4-1:02.8",
+    "duration_s": 48.9,
+    "publish": "2026-11-21 12:00 UTC",
+    "title": "You find the Death Note. You never write a name. #shorts",
+    "description": "You find a black notebook in a laundromat. You read the rules. You never write a name.\nFull video: [LINK TO THE LONG VIDEO]\n\nThis is a fan-made \"what if\" scenario. Death Note and its characters belong to their rights holders (Tsugumi Ohba / Takeshi Obata / Shueisha). This video is not affiliated with or endorsed by them.",
+    "tags": [
+      "death note",
+      "light yagami",
+      "shinigami",
+      "what if",
+      "anime in real life",
+      "shorts"
+    ],
+    "cover": "frame ~0:04 (the DEATH NOTE book on the lost-and-found box); text in the middle third: \"NEVER WRITE\""
+  },
+  {
+    "n": 10,
+    "file": "10_saitama_wake-up-bald.mp4",
+    "source": "saitama/out/What_If_You_Had_Saitamas_Powers_in_Real_Life.mp4 0:00-0:50.5",
+    "duration_s": 51.5,
+    "publish": "2026-11-21 18:00 UTC",
+    "title": "You wake up bald. One punch breaks everything #shorts",
+    "description": "You hit snooze and the phone goes through the floor. You wake up bald, with the power of Saitama.\nFull video: [LINK TO THE LONG VIDEO]\n\nThis is a fan-made \"what if\" scenario. One-Punch Man and its characters belong to their rights holders (ONE / Yusuke Murata / Shueisha). This video is not affiliated with or endorsed by them.",
+    "tags": [
+      "one punch man",
+      "saitama",
+      "what if",
+      "anime in real life",
+      "shorts"
+    ],
+    "cover": "frame ~0:26 (\"ONE PUNCH.\" yellow card), big text in the middle third"
   }
 ]
