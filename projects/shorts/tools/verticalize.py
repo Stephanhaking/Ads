@@ -66,6 +66,9 @@ for fn in os.listdir(os.path.join(dst, 'scenes', 'shots')):
     t = re.sub(r"const full = \(U, svg\) => U\.svg\('card', svg,", "const full = (U, svg) => U.svg('card', VCARD(svg),", t)
     t = re.sub(r"const big = \(U, html, x = (\d+), y = (\d+)\) => U\.html\('big', html, \{ left: x \+ 'px', top: y \+ 'px' \}",
                r"const big = (U, html, x = \1, y = \2) => U.html('big', html, { left: (VE.vertical ? 56 : x) + 'px', top: (VE.vertical ? y + 420 : y) + 'px' }", t)
+    t = t.replace('z = (v.z || 1) * (1 + 0.035 * sm(p))', f'z = (v.z || 1) * (VE.vertical ? {1.35 if fn.startswith("z") else VZ} : 1) * (1 + 0.035 * sm(p))')
+    # z*.js (Luffy's own flat sets): keep the left-weighted horizontal framing (the hero stands left), fix only the height
+    t = t.replace('tx = 960 - v.cx * z, ty = 540 - v.cy * z', ('tx = 960 - v.cx * z' if fn.startswith('z') else 'tx = VE.W / 2 - v.cx * z') + ', ty = VE.H / 2 - (v.cy - (VE.vertical ? 40 : 0)) * z')
     if t != o:
         t = "import { E as VE } from '/engine/api.js';\nconst VCARD = (svg) => VE.vertical ? `<rect width=\"1080\" height=\"1920\" fill=\"#0e1424\"/><g transform=\"translate(0 700) scale(0.5625)\">${svg}</g>` : svg;\n" + t
         open(p, 'w').write(t); print('patched', fn)
