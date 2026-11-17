@@ -130,6 +130,24 @@
     "cover": "frame ~0:04 (the DEATH NOTE book on the lost-and-found box); text in the middle third: \"NEVER WRITE\""
   },
   {
+    "n": 8,
+    "file": "08_dn_police-pattern.mp4",
+    "source": "deathnote/out/What_If_You_Had_The_Death_Note_in_Real_Life.mp4 2:01.5-2:47.3",
+    "duration_s": 46.8,
+    "publish": "2026-11-22 12:00 UTC",
+    "title": "How would police spot a wave of heart attacks? #shorts",
+    "description": "Twenty-one heart attacks in nine days. In the real world, it was a pattern in the death rates that exposed Harold Shipman.\nFull video: [LINK TO THE LONG VIDEO]\n\nThis is a fan-made \"what if\" scenario. Death Note and its characters belong to their rights holders (Tsugumi Ohba / Takeshi Obata / Shueisha). This video is not affiliated with or endorsed by them.",
+    "tags": [
+      "death note",
+      "harold shipman",
+      "statistics",
+      "what if",
+      "anime in real life",
+      "shorts"
+    ],
+    "cover": "frame ~0:42 (\"A PATTERN IS EVIDENCE.\" yellow card), big text in the middle third"
+  },
+  {
     "n": 10,
     "file": "10_saitama_wake-up-bald.mp4",
     "source": "saitama/out/What_If_You_Had_Saitamas_Powers_in_Real_Life.mp4 0:00-0:50.5",
@@ -145,5 +163,24 @@
       "shorts"
     ],
     "cover": "frame ~0:26 (\"ONE PUNCH.\" yellow card), big text in the middle third"
+  },
+  {
+    "n": 11,
+    "file": "11_saitama_sound-barrier.mp4",
+    "source": "saitama/out/What_If_You_Had_Saitamas_Powers_in_Real_Life.mp4 2:16.3-2:49.6",
+    "duration_s": 34.3,
+    "publish": "2026-11-22 18:00 UTC",
+    "title": "A punch needs 30x more speed to break the sound barrier #shorts",
+    "description": "The fastest punches measured in a lab hit about 12 m/s. To crack the sound barrier, your fist needs about 343 m/s.\nFull video: [LINK TO THE LONG VIDEO]\n\nThis is a fan-made \"what if\" scenario. One-Punch Man and its characters belong to their rights holders (ONE / Yusuke Murata / Shueisha). This video is not affiliated with or endorsed by them.",
+    "tags": [
+      "one punch man",
+      "saitama",
+      "sound barrier",
+      "physics",
+      "what if",
+      "anime in real life",
+      "shorts"
+    ],
+    "cover": "frame ~0:21 (\"343 m/s\" blue card), big text in the middle third"
   }
 ]
