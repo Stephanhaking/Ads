@@ -1,0 +1,1154 @@
+[
+ {
+  "i": 0,
+  "start": 0.0,
+  "speechStart": 0.0,
+  "speechEnd": 2.92,
+  "text": "The storm takes the power out at nine at night,",
+  "end": 3.04
+ },
+ {
+  "i": 1,
+  "start": 3.04,
+  "speechStart": 3.16,
+  "speechEnd": 6.4,
+  "text": "and you're alone in a lift between the seventh floor and the eighth,",
+  "end": 6.64
+ },
+ {
+  "i": 2,
+  "start": 6.64,
+  "speechStart": 6.76,
+  "speechEnd": 9.68,
+  "text": "with the powers of Killua from Hunter x Hunter.",
+  "end": 10.34
+ },
+ {
+  "i": 3,
+  "start": 10.34,
+  "speechStart": 10.46,
+  "speechEnd": 13.72,
+  "text": "The emergency light flickers. The buttons are dead.",
+  "end": 14.28
+ },
+ {
+  "i": 4,
+  "start": 14.28,
+  "speechStart": 14.4,
+  "speechEnd": 16.44,
+  "text": "You put your hand flat on the panel,",
+  "end": 16.72
+ },
+ {
+  "i": 5,
+  "start": 16.72,
+  "speechStart": 16.84,
+  "speechEnd": 20.0,
+  "text": "and something in your arm goes cold, then bright.",
+  "end": 20.52
+ },
+ {
+  "i": 6,
+  "start": 20.52,
+  "speechStart": 20.64,
+  "speechEnd": 22.7,
+  "text": "There's a crack, like a snapped twig.",
+  "end": 23.3
+ },
+ {
+  "i": 7,
+  "start": 23.3,
+  "speechStart": 23.42,
+  "speechEnd": 26.44,
+  "text": "A blue line runs from your fingers into the metal.",
+  "end": 27.02
+ },
+ {
+  "i": 8,
+  "start": 27.02,
+  "speechStart": 27.14,
+  "speechEnd": 28.08,
+  "text": "The lights come back on.",
+  "end": 27.96
+ },
+ {
+  "i": 9,
+  "start": 27.96,
+  "speechStart": 28.08,
+  "speechEnd": 31.08,
+  "text": "The lift starts moving. Nobody saw it.",
+  "end": 31.42
+ },
+ {
+  "i": 10,
+  "start": 31.42,
+  "speechStart": 31.54,
+  "speechEnd": 35.76,
+  "text": "Your hair is standing straight up. In the story,",
+  "end": 35.92
+ },
+ {
+  "i": 11,
+  "start": 35.92,
+  "speechStart": 36.04,
+  "speechEnd": 38.78,
+  "text": "Killua turns his own energy into electricity.",
+  "end": 39.28
+ },
+ {
+  "i": 12,
+  "start": 39.28,
+  "speechStart": 39.4,
+  "speechEnd": 42.16,
+  "text": "Not a gadget, not a glove. Just his body.",
+  "end": 42.76
+ },
+ {
+  "i": 13,
+  "start": 42.76,
+  "speechStart": 42.88,
+  "speechEnd": 45.1,
+  "text": "Over the next forty days you're going to learn what",
+  "end": 44.98
+ },
+ {
+  "i": 14,
+  "start": 44.98,
+  "speechStart": 45.1,
+  "speechEnd": 47.3,
+  "text": "electricity can do inside a person,",
+  "end": 47.18
+ },
+ {
+  "i": 15,
+  "start": 47.18,
+  "speechStart": 47.3,
+  "speechEnd": 49.18,
+  "text": "and what it takes back.",
+  "end": 50.16
+ },
+ {
+  "i": 16,
+  "start": 50.16,
+  "speechStart": 50.28,
+  "speechEnd": 53.18,
+  "text": "In the story, that energy is called Nen,",
+  "end": 53.4
+ },
+ {
+  "i": 17,
+  "start": 53.4,
+  "speechStart": 53.52,
+  "speechEnd": 54.8,
+  "text": "and it comes in six types.",
+  "end": 55.12
+ },
+ {
+  "i": 18,
+  "start": 55.12,
+  "speechStart": 55.24,
+  "speechEnd": 57.24,
+  "text": "A simple test with a glass of water",
+  "end": 57.12
+ },
+ {
+  "i": 19,
+  "start": 57.12,
+  "speechStart": 57.24,
+  "speechEnd": 59.18,
+  "text": "and a leaf shows which one is yours.",
+  "end": 59.62
+ },
+ {
+  "i": 20,
+  "start": 59.62,
+  "speechStart": 59.74,
+  "speechEnd": 61.1,
+  "text": "You try it at your kitchen table,",
+  "end": 61.28
+ },
+ {
+  "i": 21,
+  "start": 61.28,
+  "speechStart": 61.4,
+  "speechEnd": 64.34,
+  "text": "and the water changes in a way you can't explain.",
+  "end": 64.8
+ },
+ {
+  "i": 22,
+  "start": 64.8,
+  "speechStart": 64.92,
+  "speechEnd": 66.7,
+  "text": "You're a Transmuter, like Killua.",
+  "end": 67.1
+ },
+ {
+  "i": 23,
+  "start": 67.1,
+  "speechStart": 67.22,
+  "speechEnd": 69.06,
+  "text": "You don't make electricity out of nothing.",
+  "end": 69.18
+ },
+ {
+  "i": 24,
+  "start": 69.18,
+  "speechStart": 69.3,
+  "speechEnd": 72.78,
+  "text": "You change what you already have into it. Rule one:",
+  "end": 73.02
+ },
+ {
+  "i": 25,
+  "start": 73.02,
+  "speechStart": 73.14,
+  "speechEnd": 75.06,
+  "text": "the power isn't something you have.",
+  "end": 75.32
+ },
+ {
+  "i": 26,
+  "start": 75.32,
+  "speechStart": 75.44,
+  "speechEnd": 77.3,
+  "text": "It's something your energy turns into.",
+  "end": 78.34
+ },
+ {
+  "i": 27,
+  "start": 78.34,
+  "speechStart": 78.46,
+  "speechEnd": 81.6,
+  "text": "On day three you try to make a spark on purpose.",
+  "end": 82.14
+ },
+ {
+  "i": 28,
+  "start": 82.14,
+  "speechStart": 82.26,
+  "speechEnd": 84.24,
+  "text": "It works, and it hurts.",
+  "end": 84.78
+ },
+ {
+  "i": 29,
+  "start": 84.78,
+  "speechStart": 84.9,
+  "speechEnd": 86.74,
+  "text": "Your fingers sting for an hour.",
+  "end": 87.56
+ },
+ {
+  "i": 30,
+  "start": 87.56,
+  "speechStart": 87.68,
+  "speechEnd": 89.4,
+  "text": "Killua doesn't feel it the way you do.",
+  "end": 89.82
+ },
+ {
+  "i": 31,
+  "start": 89.82,
+  "speechStart": 89.94,
+  "speechEnd": 93.5,
+  "text": "In the story, he grew up in the Zoldyck family, a family of assassins,",
+  "end": 94.1
+ },
+ {
+  "i": 32,
+  "start": 94.1,
+  "speechStart": 94.22,
+  "speechEnd": 96.56,
+  "text": "and his tolerance for electricity comes from a",
+  "end": 96.44
+ },
+ {
+  "i": 33,
+  "start": 96.44,
+  "speechStart": 96.56,
+  "speechEnd": 100.2,
+  "text": "childhood of training you would never want. You don't have that.",
+  "end": 100.54
+ },
+ {
+  "i": 34,
+  "start": 100.54,
+  "speechStart": 100.66,
+  "speechEnd": 104.94,
+  "text": "You have a stinging hand and a very confused cat. Rule two:",
+  "end": 105.36
+ },
+ {
+  "i": 35,
+  "start": 105.36,
+  "speechStart": 105.48,
+  "speechEnd": 107.96,
+  "text": "the power hits the person who has it first.",
+  "end": 108.8
+ },
+ {
+  "i": 36,
+  "start": 108.8,
+  "speechStart": 108.92,
+  "speechEnd": 111.5,
+  "text": "On day six you go to the aquarium,",
+  "end": 111.38
+ },
+ {
+  "i": 37,
+  "start": 111.38,
+  "speechStart": 111.5,
+  "speechEnd": 114.76,
+  "text": "because you want to meet something that does this for a living.",
+  "end": 115.64
+ },
+ {
+  "i": 38,
+  "start": 115.64,
+  "speechStart": 115.76,
+  "speechEnd": 118.76,
+  "text": "The electric eel in the tank doesn't look like much.",
+  "end": 118.86
+ },
+ {
+  "i": 39,
+  "start": 118.86,
+  "speechStart": 118.98,
+  "speechEnd": 120.22,
+  "text": "But in 2019,",
+  "end": 120.48
+ },
+ {
+  "i": 40,
+  "start": 120.48,
+  "speechStart": 120.6,
+  "speechEnd": 124.54,
+  "text": "scientists described a new species, Volta's electric eel,",
+  "end": 124.56
+ },
+ {
+  "i": 41,
+  "start": 124.56,
+  "speechStart": 124.68,
+  "speechEnd": 128.06,
+  "text": "that can discharge up to eight hundred and sixty volts.",
+  "end": 128.72
+ },
+ {
+  "i": 42,
+  "start": 128.72,
+  "speechStart": 128.84,
+  "speechEnd": 130.21,
+  "text": "That's more than the roughly six hundred",
+  "end": 130.09
+ },
+ {
+  "i": 43,
+  "start": 130.09,
+  "speechStart": 130.21,
+  "speechEnd": 133.0,
+  "text": "and fifty of the eel everyone already knew about.",
+  "end": 134.14
+ },
+ {
+  "i": 44,
+  "start": 134.14,
+  "speechStart": 134.26,
+  "speechEnd": 136.36,
+  "text": "A fish does that without training,",
+  "end": 136.98
+ },
+ {
+  "i": 45,
+  "start": 136.98,
+  "speechStart": 137.1,
+  "speechEnd": 140.12,
+  "text": "without a family of assassins, without even trying.",
+  "end": 140.7
+ },
+ {
+  "i": 46,
+  "start": 140.7,
+  "speechStart": 140.82,
+  "speechEnd": 142.14,
+  "text": "You stand there for a long time,",
+  "end": 142.76
+ },
+ {
+  "i": 47,
+  "start": 142.76,
+  "speechStart": 142.88,
+  "speechEnd": 146.3,
+  "text": "a little jealous of a fish. Rule three:",
+  "end": 147.02
+ },
+ {
+  "i": 48,
+  "start": 147.02,
+  "speechStart": 147.14,
+  "speechEnd": 150.46,
+  "text": "nature got there first, and it never brags about it.",
+  "end": 151.12
+ },
+ {
+  "i": 49,
+  "start": 151.12,
+  "speechStart": 151.24,
+  "speechEnd": 152.8,
+  "text": "On day ten, in the park,",
+  "end": 153.14
+ },
+ {
+  "i": 50,
+  "start": 153.14,
+  "speechStart": 153.26,
+  "speechEnd": 156.84,
+  "text": "a kid kicks a football way too hard, straight at a pram.",
+  "end": 157.32
+ },
+ {
+  "i": 51,
+  "start": 157.32,
+  "speechStart": 157.44,
+  "speechEnd": 158.08,
+  "text": "You catch it.",
+  "end": 158.82
+ },
+ {
+  "i": 52,
+  "start": 158.82,
+  "speechStart": 158.94,
+  "speechEnd": 160.32,
+  "text": "And the strange part is,",
+  "end": 160.66
+ },
+ {
+  "i": 53,
+  "start": 160.66,
+  "speechStart": 160.78,
+  "speechEnd": 163.08,
+  "text": "you caught it before you decided to.",
+  "end": 163.46
+ },
+ {
+  "i": 54,
+  "start": 163.46,
+  "speechStart": 163.58,
+  "speechEnd": 165.5,
+  "text": "A normal person needs about a quarter",
+  "end": 165.38
+ },
+ {
+  "i": 55,
+  "start": 165.38,
+  "speechStart": 165.5,
+  "speechEnd": 167.38,
+  "text": "of a second to react to something they see.",
+  "end": 168.02
+ },
+ {
+  "i": 56,
+  "start": 168.02,
+  "speechStart": 168.14,
+  "speechEnd": 170.36,
+  "text": "Studies put it somewhere between about a hundred",
+  "end": 170.24
+ },
+ {
+  "i": 57,
+  "start": 170.24,
+  "speechStart": 170.36,
+  "speechEnd": 172.16,
+  "text": "and ninety and two hundred and eighty-five milliseconds.",
+  "end": 172.88
+ },
+ {
+  "i": 58,
+  "start": 172.88,
+  "speechStart": 173.0,
+  "speechEnd": 176.14,
+  "text": "That's the delay between the eyes, the brain and the muscles.",
+  "end": 176.78
+ },
+ {
+  "i": 59,
+  "start": 176.78,
+  "speechStart": 176.9,
+  "speechEnd": 180.3,
+  "text": "In the story, Killua's first Godspeed move, called Whirlwind,",
+  "end": 180.7
+ },
+ {
+  "i": 60,
+  "start": 180.7,
+  "speechStart": 180.82,
+  "speechEnd": 183.1,
+  "text": "sends electrical signals straight to his muscles,",
+  "end": 183.16
+ },
+ {
+  "i": 61,
+  "start": 183.16,
+  "speechStart": 183.28,
+  "speechEnd": 185.52,
+  "text": "so his body moves without waiting for that delay.",
+  "end": 185.4
+ },
+ {
+  "i": 62,
+  "start": 185.4,
+  "speechStart": 185.52,
+  "speechEnd": 188.74,
+  "text": "Your hand just did the same thing.",
+  "end": 189.32
+ },
+ {
+  "i": 63,
+  "start": 189.32,
+  "speechStart": 189.44,
+  "speechEnd": 190.16,
+  "text": "The mum thanks you.",
+  "end": 190.48
+ },
+ {
+  "i": 64,
+  "start": 190.48,
+  "speechStart": 190.6,
+  "speechEnd": 194.44,
+  "text": "You don't tell her you're as shocked as she is. Rule four:",
+  "end": 194.96
+ },
+ {
+  "i": 65,
+  "start": 194.96,
+  "speechStart": 195.08,
+  "speechEnd": 197.4,
+  "text": "the fastest thing in you isn't your legs.",
+  "end": 197.98
+ },
+ {
+  "i": 66,
+  "start": 197.98,
+  "speechStart": 198.1,
+  "speechEnd": 199.46,
+  "text": "It's the delay you skip.",
+  "end": 200.8
+ },
+ {
+  "i": 67,
+  "start": 200.8,
+  "speechStart": 200.92,
+  "speechEnd": 203.94,
+  "text": "The second half of Godspeed is called Speed of Lightning:",
+  "end": 204.36
+ },
+ {
+  "i": 68,
+  "start": 204.36,
+  "speechStart": 204.48,
+  "speechEnd": 207.32,
+  "text": "it's about moving at that speed and staying in control.",
+  "end": 207.94
+ },
+ {
+  "i": 69,
+  "start": 207.94,
+  "speechStart": 208.06,
+  "speechEnd": 210.66,
+  "text": "On day fifteen you try it on an empty running track.",
+  "end": 211.24
+ },
+ {
+  "i": 70,
+  "start": 211.24,
+  "speechStart": 211.36,
+  "speechEnd": 212.5,
+  "text": "The start is incredible.",
+  "end": 212.98
+ },
+ {
+  "i": 71,
+  "start": 212.98,
+  "speechStart": 213.1,
+  "speechEnd": 215.08,
+  "text": "The first bend is a disaster.",
+  "end": 215.64
+ },
+ {
+  "i": 72,
+  "start": 215.64,
+  "speechStart": 215.76,
+  "speechEnd": 219.04,
+  "text": "You don't turn, you just keep going, straight into the fence.",
+  "end": 219.82
+ },
+ {
+  "i": 73,
+  "start": 219.82,
+  "speechStart": 219.94,
+  "speechEnd": 221.68,
+  "text": "You lie on the grass looking at the sky,",
+  "end": 221.56
+ },
+ {
+  "i": 74,
+  "start": 221.56,
+  "speechStart": 221.68,
+  "speechEnd": 224.6,
+  "text": "and you realise that being fast was the easy part.",
+  "end": 225.68
+ },
+ {
+  "i": 75,
+  "start": 225.68,
+  "speechStart": 225.8,
+  "speechEnd": 227.02,
+  "text": "Rule five:",
+  "end": 226.9
+ },
+ {
+  "i": 76,
+  "start": 226.9,
+  "speechStart": 227.02,
+  "speechEnd": 230.02,
+  "text": "speed you can't steer is just a crash with extra steps.",
+  "end": 231.36
+ },
+ {
+  "i": 77,
+  "start": 231.36,
+  "speechStart": 231.48,
+  "speechEnd": 232.98,
+  "text": "On day twenty-two,",
+  "end": 232.86
+ },
+ {
+  "i": 78,
+  "start": 232.86,
+  "speechStart": 232.98,
+  "speechEnd": 236.16,
+  "text": "a friend films your five-a-side game. You're in goal.",
+  "end": 236.66
+ },
+ {
+  "i": 79,
+  "start": 236.66,
+  "speechStart": 236.78,
+  "speechEnd": 239.8,
+  "text": "Someone shoots from two metres away, and you save it.",
+  "end": 240.46
+ },
+ {
+  "i": 80,
+  "start": 240.46,
+  "speechStart": 240.58,
+  "speechEnd": 243.36,
+  "text": "In slow motion, the ball hasn't even left their foot",
+  "end": 243.24
+ },
+ {
+  "i": 81,
+  "start": 243.24,
+  "speechStart": 243.36,
+  "speechEnd": 246.42,
+  "text": "when your hand starts moving. The video goes everywhere.",
+  "end": 246.76
+ },
+ {
+  "i": 82,
+  "start": 246.76,
+  "speechStart": 246.88,
+  "speechEnd": 249.66,
+  "text": "People argue that it's edited, people argue that it isn't,",
+  "end": 249.68
+ },
+ {
+  "i": 83,
+  "start": 249.68,
+  "speechStart": 249.8,
+  "speechEnd": 252.06,
+  "text": "and a sports science lab sends you an email",
+  "end": 251.94
+ },
+ {
+  "i": 84,
+  "start": 251.94,
+  "speechStart": 252.06,
+  "speechEnd": 255.88,
+  "text": "asking if you'd like to come in for a reaction test. You go.",
+  "end": 256.46
+ },
+ {
+  "i": 85,
+  "start": 256.46,
+  "speechStart": 256.58,
+  "speechEnd": 258.12,
+  "text": "You try to be slow on purpose.",
+  "end": 258.52
+ },
+ {
+  "i": 86,
+  "start": 258.52,
+  "speechStart": 258.64,
+  "speechEnd": 261.12,
+  "text": "You're slow on the first three tries, then your body forgets",
+  "end": 261.0
+ },
+ {
+  "i": 87,
+  "start": 261.0,
+  "speechStart": 261.12,
+  "speechEnd": 264.46,
+  "text": "and catches the fourth one before the light even finishes turning green.",
+  "end": 265.32
+ },
+ {
+  "i": 88,
+  "start": 265.32,
+  "speechStart": 265.44,
+  "speechEnd": 266.96,
+  "text": "The researcher doesn't say anything.",
+  "end": 267.34
+ },
+ {
+  "i": 89,
+  "start": 267.34,
+  "speechStart": 267.46,
+  "speechEnd": 269.48,
+  "text": "She just writes for a very long time.",
+  "end": 269.36
+ },
+ {
+  "i": 90,
+  "start": 269.36,
+  "speechStart": 269.48,
+  "speechEnd": 271.2,
+  "text": "Rule six:",
+  "end": 271.08
+ },
+ {
+  "i": 91,
+  "start": 271.08,
+  "speechStart": 271.2,
+  "speechEnd": 274.6,
+  "text": "the world doesn't care how you do it. Only how often.",
+  "end": 275.84
+ },
+ {
+  "i": 92,
+  "start": 275.84,
+  "speechStart": 275.96,
+  "speechEnd": 278.14,
+  "text": "On day twenty-six your best friend's",
+  "end": 278.02
+ },
+ {
+  "i": 93,
+  "start": 278.02,
+  "speechStart": 278.14,
+  "speechEnd": 280.22,
+  "text": "little brother comes home with a torn jacket",
+  "end": 280.1
+ },
+ {
+  "i": 94,
+  "start": 280.1,
+  "speechStart": 280.22,
+  "speechEnd": 282.86,
+  "text": "and a bruise, and everyone knows who did it.",
+  "end": 283.16
+ },
+ {
+  "i": 95,
+  "start": 283.16,
+  "speechStart": 283.28,
+  "speechEnd": 285.4,
+  "text": "Your friend says it quietly, half joking:",
+  "end": 286.04
+ },
+ {
+  "i": 96,
+  "start": 286.04,
+  "speechStart": 286.16,
+  "speechEnd": 289.62,
+  "text": "you could just give them a little shock. Nobody would ever know.",
+  "end": 290.28
+ },
+ {
+  "i": 97,
+  "start": 290.28,
+  "speechStart": 290.4,
+  "speechEnd": 293.88,
+  "text": "And they're right. Nobody would know. That's what scares you.",
+  "end": 294.38
+ },
+ {
+  "i": 98,
+  "start": 294.38,
+  "speechStart": 294.5,
+  "speechEnd": 297.7,
+  "text": "You think about Killua, a kid raised in a family of assassins.",
+  "end": 297.58
+ },
+ {
+  "i": 99,
+  "start": 297.58,
+  "speechStart": 297.7,
+  "speechEnd": 299.88,
+  "text": "You realise that one shock like",
+  "end": 299.76
+ },
+ {
+  "i": 100,
+  "start": 299.76,
+  "speechStart": 299.88,
+  "speechEnd": 302.96,
+  "text": "that would make you a little bit like them. You say no.",
+  "end": 303.56
+ },
+ {
+  "i": 101,
+  "start": 303.56,
+  "speechStart": 303.68,
+  "speechEnd": 306.26,
+  "text": "Then you do the slow, boring, normal thing:",
+  "end": 306.6
+ },
+ {
+  "i": 102,
+  "start": 306.6,
+  "speechStart": 306.72,
+  "speechEnd": 310.34,
+  "text": "you walk him to school every day that week. Nobody touches him again.",
+  "end": 310.84
+ },
+ {
+  "i": 103,
+  "start": 310.84,
+  "speechStart": 310.96,
+  "speechEnd": 312.12,
+  "text": "Rule seven:",
+  "end": 312.0
+ },
+ {
+  "i": 104,
+  "start": 312.0,
+  "speechStart": 312.12,
+  "speechEnd": 315.36,
+  "text": "a power is only as good as the things you refuse to do with it.",
+  "end": 316.3
+ },
+ {
+  "i": 105,
+  "start": 316.3,
+  "speechStart": 316.42,
+  "speechEnd": 317.28,
+  "text": "In the story,",
+  "end": 317.52
+ },
+ {
+  "i": 106,
+  "start": 317.52,
+  "speechStart": 317.64,
+  "speechEnd": 320.26,
+  "text": "Godspeed burns through Killua's electricity fast.",
+  "end": 320.72
+ },
+ {
+  "i": 107,
+  "start": 320.72,
+  "speechStart": 320.84,
+  "speechEnd": 321.84,
+  "text": "Using it is easy;",
+  "end": 322.16
+ },
+ {
+  "i": 108,
+  "start": 322.16,
+  "speechStart": 322.28,
+  "speechEnd": 323.52,
+  "text": "running out is the problem.",
+  "end": 323.94
+ },
+ {
+  "i": 109,
+  "start": 323.94,
+  "speechStart": 324.06,
+  "speechEnd": 325.46,
+  "text": "You find that out on day thirty,",
+  "end": 325.34
+ },
+ {
+  "i": 110,
+  "start": 325.34,
+  "speechStart": 325.46,
+  "speechEnd": 328.52,
+  "text": "when you use your power all day just because you can.",
+  "end": 329.08
+ },
+ {
+  "i": 111,
+  "start": 329.08,
+  "speechStart": 329.2,
+  "speechEnd": 330.62,
+  "text": "By evening there's nothing left.",
+  "end": 331.0
+ },
+ {
+  "i": 112,
+  "start": 331.0,
+  "speechStart": 331.12,
+  "speechEnd": 332.88,
+  "text": "No spark, no fast hand.",
+  "end": 333.22
+ },
+ {
+  "i": 113,
+  "start": 333.22,
+  "speechStart": 333.34,
+  "speechEnd": 336.72,
+  "text": "You drop a cup and watch it break, at a normal person's speed.",
+  "end": 337.08
+ },
+ {
+  "i": 114,
+  "start": 337.08,
+  "speechStart": 337.2,
+  "speechEnd": 340.36,
+  "text": "For the first time in a month, you're scared of being ordinary.",
+  "end": 341.6
+ },
+ {
+  "i": 115,
+  "start": 341.6,
+  "speechStart": 341.72,
+  "speechEnd": 344.04,
+  "text": "On day forty there's a storm again,",
+  "end": 343.92
+ },
+ {
+  "i": 116,
+  "start": 343.92,
+  "speechStart": 344.04,
+  "speechEnd": 346.32,
+  "text": "and it hits the funfair by the river.",
+  "end": 346.82
+ },
+ {
+  "i": 117,
+  "start": 346.82,
+  "speechStart": 346.94,
+  "speechEnd": 348.2,
+  "text": "The power goes out.",
+  "end": 348.52
+ },
+ {
+  "i": 118,
+  "start": 348.52,
+  "speechStart": 348.64,
+  "speechEnd": 351.56,
+  "text": "The ferris wheel stops, with people in every car,",
+  "end": 351.74
+ },
+ {
+  "i": 119,
+  "start": 351.74,
+  "speechStart": 351.86,
+  "speechEnd": 353.94,
+  "text": "and the top ones are swinging in the wind.",
+  "end": 354.58
+ },
+ {
+  "i": 120,
+  "start": 354.58,
+  "speechStart": 354.7,
+  "speechEnd": 357.98,
+  "text": "The engineers say it'll be an hour before the generator works.",
+  "end": 358.6
+ },
+ {
+  "i": 121,
+  "start": 358.6,
+  "speechStart": 358.72,
+  "speechEnd": 360.86,
+  "text": "You put both hands on the control box,",
+  "end": 361.24
+ },
+ {
+  "i": 122,
+  "start": 361.24,
+  "speechStart": 361.36,
+  "speechEnd": 364.52,
+  "text": "and you give it everything you've saved. The wheel moves.",
+  "end": 365.22
+ },
+ {
+  "i": 123,
+  "start": 365.22,
+  "speechStart": 365.34,
+  "speechEnd": 368.34,
+  "text": "One car reaches the platform, and you let it go.",
+  "end": 368.96
+ },
+ {
+  "i": 124,
+  "start": 368.96,
+  "speechStart": 369.08,
+  "speechEnd": 370.88,
+  "text": "Then the next. Then the next.",
+  "end": 371.24
+ },
+ {
+  "i": 125,
+  "start": 371.24,
+  "speechStart": 371.36,
+  "speechEnd": 373.78,
+  "text": "By the last car your arms are shaking,",
+  "end": 374.24
+ },
+ {
+  "i": 126,
+  "start": 374.24,
+  "speechStart": 374.36,
+  "speechEnd": 377.04,
+  "text": "the light in your hands is flickering like a dying bulb,",
+  "end": 377.54
+ },
+ {
+  "i": 127,
+  "start": 377.54,
+  "speechStart": 377.66,
+  "speechEnd": 380.5,
+  "text": "and a little boy steps out holding his dad's hand",
+  "end": 380.38
+ },
+ {
+  "i": 128,
+  "start": 380.38,
+  "speechStart": 380.5,
+  "speechEnd": 382.44,
+  "text": "and waves at the wheel,",
+  "end": 382.32
+ },
+ {
+  "i": 129,
+  "start": 382.32,
+  "speechStart": 382.44,
+  "speechEnd": 385.54,
+  "text": "because he thinks the wheel did it.",
+  "end": 385.56
+ },
+ {
+  "i": 130,
+  "start": 385.56,
+  "speechStart": 385.68,
+  "speechEnd": 386.72,
+  "text": "You let him think that.",
+  "end": 387.58
+ },
+ {
+  "i": 131,
+  "start": 387.58,
+  "speechStart": 387.7,
+  "speechEnd": 390.54,
+  "text": "The next morning, a door slams in the corridor,",
+  "end": 390.42
+ },
+ {
+  "i": 132,
+  "start": 390.42,
+  "speechStart": 390.54,
+  "speechEnd": 393.78,
+  "text": "and your hand is in the air before you've even heard it.",
+  "end": 393.96
+ },
+ {
+  "i": 133,
+  "start": 393.96,
+  "speechStart": 394.08,
+  "speechEnd": 395.82,
+  "text": "That's the price nobody mentions.",
+  "end": 396.3
+ },
+ {
+  "i": 134,
+  "start": 396.3,
+  "speechStart": 396.42,
+  "speechEnd": 398.36,
+  "text": "Your body reacts before you decide.",
+  "end": 398.68
+ },
+ {
+  "i": 135,
+  "start": 398.68,
+  "speechStart": 398.8,
+  "speechEnd": 402.04,
+  "text": "Every noise, every movement, every time.",
+  "end": 402.7
+ },
+ {
+  "i": 136,
+  "start": 402.7,
+  "speechStart": 402.82,
+  "speechEnd": 405.44,
+  "text": "You can't watch a scary film. You can't be surprised.",
+  "end": 405.78
+ },
+ {
+  "i": 137,
+  "start": 405.78,
+  "speechStart": 405.9,
+  "speechEnd": 408.1,
+  "text": "You have to learn to be slow on purpose,",
+  "end": 407.98
+ },
+ {
+  "i": 138,
+  "start": 407.98,
+  "speechStart": 408.1,
+  "speechEnd": 411.96,
+  "text": "all day, every day. Rule eight:",
+  "end": 411.84
+ },
+ {
+  "i": 139,
+  "start": 411.84,
+  "speechStart": 411.96,
+  "speechEnd": 415.16,
+  "text": "the hardest part of being fast is choosing to wait.",
+  "end": 416.3
+ },
+ {
+  "i": 140,
+  "start": 416.3,
+  "speechStart": 416.42,
+  "speechEnd": 419.3,
+  "text": "So if you woke up tomorrow with Killua's powers,",
+  "end": 419.74
+ },
+ {
+  "i": 141,
+  "start": 419.74,
+  "speechStart": 419.86,
+  "speechEnd": 422.22,
+  "text": "would you take the speed or the spark?",
+  "end": 422.86
+ },
+ {
+  "i": 142,
+  "start": 422.86,
+  "speechStart": 422.98,
+  "speechEnd": 425.9,
+  "text": "And what's the one thing you'd never use it for?",
+  "end": 426.52
+ },
+ {
+  "i": 143,
+  "start": 426.52,
+  "speechStart": 426.64,
+  "speechEnd": 427.44,
+  "text": "Tell us in the comments.",
+  "end": 429.04
+ }
+]
