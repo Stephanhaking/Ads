@@ -4,7 +4,7 @@
 import { registerShot, clamp, ease } from '/engine/api.js';
 import { P_STAND, P_THINK, P_TIRED, P_HIPS, P_PHONE, P_SIT, P_RUN } from '../lib/people.js';
 import { hud, label, caption, punch, COL } from '../lib/hud.js';
-import { frame } from '../lib/flat2d.js';
+import { frame as frame0 } from '../lib/flat2d.js';
 import * as SET from '../lib/sets/saitama2d.js';
 import * as J from '../lib/sets/jojo2d.js';
 import * as N from '../lib/sets/dn2d.js';
@@ -35,8 +35,22 @@ const P = (x, y, pose, face = 'neutral', o = {}) => ({ x, y, h: o.h || 360, pose
 const Q = (x, y, pose, outfit, face = 'neutral', o = {}) => ({ x, y, h: o.h || 340, pose, outfit, face, flip: o.flip ?? false, look: o.look ?? 0.5, extra: o.extra, pre: o.pre });
 const D = (day, time, status) => ({ day, time, status });
 const big = (U, html, x = 160, y = 360) => U.html('big', html, { left: x + 'px', top: y + 'px' }, { z: 50 });
-const full = (U, svg) => U.svg('card', svg, {}, { z: 3 });
-const SHOT = (id, bg, body) => registerShot(id, { bg, theme: 'dark', ui(U, t, info) { U.svg('fx', '', {}); U.svg('card', '', {}); U.html('big', '', {}); U.svg('punch', '', {}); body(U, t, info, info.start + t); } });
+let FULLED = false;
+const full = (U, svg) => { FULLED = true; return U.svg('card', svg, {}, { z: 3 }); };
+// visual pace: inside a section, shots alternate wide / close-up / kinetic-text card so no single framing lasts long
+// (rule from the Ads chat, 17 Nov: no location > 25-30 s, a strong change about every 5 s)
+let CUT = 'wide';
+const frame = (U, B, cam, ppl, fx, o) => { if (CUT === 'close' && ppl && ppl[0]) { const h = ppl[0]; cam = { z: Math.max(cam.z * 1.9, 2.4), cx: h.x + (h.flip ? -30 : 30), cy: h.y - (h.h || 360) * 0.7 }; } return frame0(U, B, cam, ppl, fx, o); };
+const KCOL = { open: ['#1a1030', '#7fe3ff'], day1: ['#f2d58a', '#15181e'], day3: ['#2a2650', '#7fe3ff'], day6: ['#06304a', '#7fe3ff'], day10: ['#ffd23f', '#15181e'], day15: ['#d8583a', '#ffffff'], day22: ['#2f9a5a', '#ffffff'], day26: ['#3a2a4a', '#ffd23f'], day30: ['#15181e', '#ff5a4a'], day40: ['#0c0a24', '#ffd27a'], day41: ['#8a9ac8', '#15181e'], ending: ['#15181e', '#ffd23f'] };
+const kin = (U, t, line, sec) => { const [bg, ac] = KCOL[sec] || ['#15181e', '#ffd23f']; const words = line.replace(/["“”]/g, '').split(/\s+/).filter(Boolean);
+  let key = 0, len = 0; words.forEach((w, i) => { const n = w.replace(/[^\w]/g, '').length; if (n > len) { len = n; key = i; } });
+  const k = clamp(t / 0.25), dark = ['#f2d58a', '#ffd23f', '#8a9ac8'].includes(bg);
+  U.svg('card', `<rect width="1920" height="1080" fill="${bg}"/>${[...Array(9)].map((_, i) => `<rect x="${-200 + i * 260 + (t * 40) % 260}" y="0" width="120" height="1080" fill="${dark ? '#000' : '#fff'}" opacity="0.035" transform="skewX(-12)"/>`).join('')}`, {}, { z: 3 });
+  U.html('big', `<div style="width:1500px;transform:scale(${f(0.92 + 0.08 * ease.out(k))});transform-origin:left center;opacity:${f(k)};${TXT(118, dark ? '#15181e' : '#ffffff')};text-transform:uppercase">${words.map((w, i) => i === key ? `<span style="color:${ac === '#15181e' ? '#c8352e' : ac}">${w}</span>` : w).join(' ')}</div>`, { left: '200px', top: '330px' }, { z: 50 });
+  U.html('L1', '', {}); U.html('L2', '', {}); U.html('cap', '', {}); };
+const CUTS = {}; { const by = {}; for (const [id, p] of Object.entries(PLAN)) (by[p.sec] = by[p.sec] || []).push(id);
+  for (const ids of Object.values(by)) ids.forEach((id, k) => { CUTS[id] = k === 0 ? 'wide' : ['close', 'wide', 'kin', 'wide', 'close', 'wide'][(k - 1) % 6]; }); }
+const SHOT = (id, bg, body, sec, line) => registerShot(id, { bg, theme: 'dark', ui(U, t, info) { U.svg('fx', '', {}); U.svg('card', '', {}); U.html('big', '', {}); U.svg('punch', '', {}); FULLED = false; CUT = CUTS[id] === 'close' ? 'close' : 'wide'; body(U, t, info, info.start + t); CUT = 'wide'; if (CUTS[id] === 'kin' && !FULLED && sec !== 'ending') kin(U, t, line, sec); } });
 const rule = (U, t, n, txt) => L1(U, t, `RULE ${n} · ${txt}`, 0.2, COL.yellow);
 // sparks on the hero's hands (c = person geometry); k = strength
 const zapHands = (k, tt, which = [0, 1]) => (c) => which.map((i) => K.spark(c.hands[i][0], c.hands[i][1], k, tt, 3 + i)).join('');
@@ -48,6 +62,7 @@ const twoBars = (title, a, b, ka = 1, kb = 1, unit = '') => { const mx = Math.ma
 
 const S = {};
 S.open = (U, t, info, tt, k, n, line) => { const on = k >= since('open', 'lights come back');
+  if (k === 0) { const B = N.night(J.street(tt), 960, 300, 0.62); let rain = ''; for (let i = 0; i < 80; i++) { const x = -200 + (i * 151) % 2400, y = ((i * 89 + tt * 1300) % 1300) - 150; rain += `<line x1="${x}" y1="${f(y)}" x2="${x - 14}" y2="${f(y + 44)}" stroke="#9fd8ff" stroke-width="2.5" opacity="0.5"/>`; } B.front += rain + (Math.sin(tt * 2.3) > 0.9 ? `<rect x="-3000" y="-2000" width="8000" height="5000" fill="#ffffff" opacity="0.35"/>` : ''); frame(U, B, { z: 1.0, cx: 960, cy: 520 }, [], '', { fxIn: true }); L1(U, t, 'STORM · 9:00 PM · POWER CUT', 0.3, COL.red); chrome(U, t, info, D(0, '9:00 PM', CH(0))); return; }
   const B = K.lift(tt, { lights: on ? 1 : 0 }); let cam = { z: 1.15, cx: 1000, cy: 560 }, fx = '';
   let ppl = [P(900, 880, P_STAND, 'worried', { look: 0.8 })];
   if (has(line, 'storm', 'alone in a lift', 'Killua from', 'powers of', 'Hunter')) { L1(U, t, 'POWER CUT · FLOOR 7 · 8', 0.3, COL.red); if (has(line, 'Killua', 'Hunter')) L2(U, t, 'POWERS · KILLUA (HUNTER x HUNTER)', 0.6, BLUE); }
@@ -212,4 +227,4 @@ S.ending = (U, t, info, tt, k, n, line) => { const B = K.lift(tt, { lights: 1, f
 };
 
 const BG = { open: '#3a2a34', day1: '#f2d58a', day3: '#2a2650', day6: '#0a1424', day10: '#4a8ae0', day15: '#ff9a8a', day22: '#ff9a8a', day26: '#4a8ae0', day30: '#8a9ac8', day40: '#0c0a24', day41: '#8a9ac8', ending: '#8a98a8' };
-for (const [id, p] of Object.entries(PLAN)) SHOT(id, BG[p.sec] || '#222', (U, t, info, tt) => S[p.sec](U, t, info, tt, p.k, p.n, p.line));
+for (const [id, p] of Object.entries(PLAN)) SHOT(id, BG[p.sec] || '#222', (U, t, info, tt) => S[p.sec](U, t, info, tt, p.k, p.n, p.line), p.sec, p.line);
