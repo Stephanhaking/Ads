@@ -35,6 +35,26 @@
     "cover": "frame ~0:31 (elbow in the face); text in the middle third: \"IT COMES BACK\""
   },
   {
+    "n": 3,
+    "file": "03_luffy_vs-lightning.mp4",
+    "source": "luffy-gear5/out/What_If_You_Had_Luffys_Powers_in_Real_Life_v2.mp4 2:24.3-3:17.6",
+    "duration_s": 54.3,
+    "publish": "2026-11-20 12:00 UTC",
+    "title": "Luffy vs 300 million volts of lightning #shorts",
+    "description": "A lightning bolt carries about 300 million volts. Ordinary rubber would lose. Luffy's doesn't.\nFull video: [LINK TO THE LONG VIDEO]\n\nThis is a fan-made \"what if\" scenario. One Piece and its characters belong to Eiichiro Oda / Shueisha / Toei Animation. This video is not affiliated with or endorsed by them.",
+    "tags": [
+      "one piece",
+      "luffy",
+      "enel",
+      "lightning",
+      "rubber",
+      "what if",
+      "anime in real life",
+      "shorts"
+    ],
+    "cover": "frame ~0:43 (\"NOT ORDINARY RUBBER.\" red card), big text already in the middle third"
+  },
+  {
     "n": 4,
     "file": "04_jojo_phone-stops.mp4",
     "source": "jojo-theworld/out/What_If_You_Had_The_World_in_Real_Life.mp4 0:00-0:53.9",
@@ -70,5 +90,25 @@
       "shorts"
     ],
     "cover": "frame ~0:19 (\"YOU ARE NOT USAIN BOLT\" red card) — already big text in the middle third"
+  },
+  {
+    "n": 6,
+    "file": "06_jojo_fire-9-seconds.mp4",
+    "source": "jojo-theworld/out/What_If_You_Had_The_World_in_Real_Life.mp4 5:37.5-6:26.5",
+    "duration_s": 50.0,
+    "publish": "2026-11-20 18:00 UTC",
+    "title": "Stopping time to fight a fire, 9 seconds at a time #shorts",
+    "description": "A family is stuck on a fourth-floor balcony. You can stop time, but only for nine seconds.\nFull video: [LINK TO THE LONG VIDEO]\n\nThis is a fan-made \"what if\" scenario. JoJo's Bizarre Adventure and its characters belong to their rights holders (Hirohiko Araki / Shueisha). This video is not affiliated with or endorsed by them.",
+    "tags": [
+      "jojo",
+      "the world",
+      "za warudo",
+      "stop time",
+      "fire rescue",
+      "what if",
+      "anime in real life",
+      "shorts"
+    ],
+    "cover": "frame ~0:36 (\"9 SECONDS AT A TIME\" card), big text in the middle third"
   }
 ]
