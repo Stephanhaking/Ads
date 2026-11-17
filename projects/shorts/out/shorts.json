@@ -148,6 +148,24 @@
     "cover": "frame ~0:44 (\"A PATTERN IS EVIDENCE.\" yellow card), big text in the middle third"
   },
   {
+    "n": 9,
+    "file": "09_dn_13-day-rule.mp4",
+    "source": "deathnote/out/What_If_You_Had_The_Death_Note_in_Real_Life.mp4 4:44.2-5:14.5",
+    "duration_s": 31.3,
+    "publish": "2026-11-23 12:00 UTC",
+    "title": "The 13-day rule in Death Note is a lie #shorts",
+    "description": "Write a name every 13 days or the owner dies? In the story, that rule is fake. Light wrote it himself.\nFull video: [LINK TO THE LONG VIDEO]\n\nThis is a fan-made \"what if\" scenario. Death Note and its characters belong to their rights holders (Tsugumi Ohba / Takeshi Obata / Shueisha). This video is not affiliated with or endorsed by them.",
+    "tags": [
+      "death note",
+      "13 day rule",
+      "light yagami",
+      "what if",
+      "anime in real life",
+      "shorts"
+    ],
+    "cover": "frame ~0:15 (\"FAKE.\" red card), big text in the middle third"
+  },
+  {
     "n": 10,
     "file": "10_saitama_wake-up-bald.mp4",
     "source": "saitama/out/What_If_You_Had_Saitamas_Powers_in_Real_Life.mp4 0:00-0:50.5",
@@ -182,5 +200,24 @@
       "shorts"
     ],
     "cover": "frame ~0:24 (\"343 m/s\" blue card), big text in the middle third"
+  },
+  {
+    "n": 12,
+    "file": "12_saitama_boredom.mp4",
+    "source": "saitama/out/What_If_You_Had_Saitamas_Powers_in_Real_Life.mp4 6:46.5-7:35.1 (boredom section; the plan's 8:17-9:08 meteor cut did not match this title)",
+    "duration_s": 49.6,
+    "publish": "2026-11-23 18:00 UTC",
+    "title": "The only enemy One-Punch Man can't punch #shorts",
+    "description": "Winning felt amazing. Then normal. Then like nothing. Saitama's real enemy was never a monster.\nFull video: [LINK TO THE LONG VIDEO]\n\nThis is a fan-made \"what if\" scenario. One-Punch Man and its characters belong to their rights holders (ONE / Yusuke Murata / Shueisha). This video is not affiliated with or endorsed by them.",
+    "tags": [
+      "one punch man",
+      "saitama",
+      "boredom",
+      "hedonic adaptation",
+      "what if",
+      "anime in real life",
+      "shorts"
+    ],
+    "cover": "frame ~0:15 (\"BOREDOM.\" card), big text in the middle third"
   }
 ]
