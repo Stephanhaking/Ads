@@ -1,0 +1,2 @@
+# Brief: "What if you had Star Platinum (Jotaro)" (18/11/2026)
+Próximo longo depois do Killua. Estilo do script do Luffy/Killua; regras: promessa (Jotaro/Star Platinum/JoJo) nos primeiros 10 s, nenhum cenário > 25 s, >= 70 mudanças em 360 s, etiquetas na área segura, sem factos fora de docs/VERIFICACAO_JOTARO_STARPLATINUM_18NOV.md ("Verificado"). Escrever o guião primeiro e mostrá-lo ao utilizador ANTES de voz e visuais. Passar tools/pre_publish_check.py antes de entregar. Nada no YouTube.
