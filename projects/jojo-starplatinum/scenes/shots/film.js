@@ -53,7 +53,7 @@ const kin = (U, t, line, sec) => { const [bg, ac] = KCOL[sec] || ['#15181e', '#f
   U.html('big', `<div style="width:1500px;transform:scale(${f(0.92 + 0.08 * ease.out(k))});transform-origin:left center;opacity:${f(k)};${TXT(118, dark ? '#15181e' : '#ffffff')};text-transform:uppercase">${words.map((w, i) => i === key ? `<span style="color:${ac === '#15181e' ? '#c8352e' : ac}">${w}</span>` : w).join(' ')}</div>`, { left: '200px', top: '330px' }, { z: 50 });
   U.html('L1', '', {}); U.html('L2', '', {}); U.html('cap', '', {}); };
 // shots that must show the action (never a text card or a close-up)
-const WIDE = new Set(['s006', 's007', 's008', 's010', 's025', 's026', 's027', 's043', 's044', 's058', 's059', 's068', 's069', 's076', 's078', 's114', 's116', 's120', 's121', 's123', 's126', 's136', 's137', 's138']);
+const WIDE = new Set(['s001', 's002', 's003', 's004', 's005', 's009', 's010', 's011', 's025', 's026', 's027', 's043', 's044', 's058', 's059', 's068', 's069', 's076', 's078', 's114', 's116', 's120', 's121', 's123', 's126', 's136', 's137', 's138']);
 const CUTS = {}; { const by = {}; for (const [id, p] of Object.entries(PLAN)) (by[p.sec] = by[p.sec] || []).push(id);
   for (const ids of Object.values(by)) ids.forEach((id, k) => { CUTS[id] = WIDE.has(id) || k === 0 ? 'wide' : ['close', 'wide', 'kin', 'wide', 'close', 'wide'][(k - 1) % 6]; }); }
 const SHOT = (id, bg, body, sec, line) => registerShot(id, { bg, theme: 'dark', ui(U, t, info) { U.svg('fx', '', {}); U.svg('card', '', {}); U.html('big', '', {}); U.svg('punch', '', {}); FULLED = false; CUT = CUTS[id] === 'close' ? 'close' : 'wide'; body(U, t, info, info.start + t); CUT = 'wide'; if (CUTS[id] === 'kin' && !FULLED && sec !== 'ending') kin(U, t, line, sec); } });
@@ -68,22 +68,24 @@ const barbell = (x, y, plates, bend = 0, s = 1) => { let g = `<path d="M ${x - 3
 
 const S = {};
 S.open = (U, t, info, tt, k, n, line) => {
-  if (k === 0) { const kk = clamp(t / 0.4); full(U, `<rect width="1920" height="1080" fill="#0b0b14"/><rect x="560" y="300" width="800" height="440" rx="40" fill="#15181e" stroke="#2a2d3a" stroke-width="10"/><text x="960" y="610" text-anchor="middle" font-family="IBM Plex Mono" font-weight="800" font-size="260" fill="#ff5a4a" opacity="${f(kk)}">7:12</text><text x="1300" y="400" text-anchor="end" font-family="IBM Plex Mono" font-weight="800" font-size="40" fill="#ff5a4a" opacity="0.7">AM</text>`); chrome(U, t, info, D(1, '7:12 AM', ST(false, 'STAND · ?'))); return; }
-  const B = SET.bedroom(tt, { time: 'dawn' }); const FL = 820, gone = k >= since('open', 'puts the glass back'), arm = k >= since('open', 'Something else does');
-  const fallK = gone ? 0 : has(line, 'slides') ? clamp(t / info.dur) * 0.3 : has(line, 'underwater') ? 0.3 + 0.3 * clamp(t / info.dur) : k >= since('open', 'slides') ? 0.6 : 0;
+  // 0-14 s: the promise. Name the power, then flash forward to two real scenes from later in this video.
+  if (has(line, 'faster than anything')) { S.day3(U, t, info, tt, since('day3', 'bag lasts'), 14, 'The bag lasts four seconds. Then it splits,'); L1(U, t, 'LATER · DAY 3', 0.2, COL.yellow); return; }
+  if (has(line, 'stop time for one breath')) { S.day40(U, t, info, tt, since('day40', 'birds stop'), 14, 'The birds stop mid-wing. You reach the van.'); L1(U, t, 'LATER · DAY 40 · TIME STOPPED', 0.2, PUR); return; }
+  if (has(line, 'this morning')) { const kk = clamp(t / 0.4); full(U, `<rect width="1920" height="1080" fill="#0b0b14"/><rect x="560" y="300" width="800" height="440" rx="40" fill="#15181e" stroke="#2a2d3a" stroke-width="10"/><text x="960" y="610" text-anchor="middle" font-family="IBM Plex Mono" font-weight="800" font-size="260" fill="#ff5a4a" opacity="${f(kk)}">7:12</text><text x="1300" y="400" text-anchor="end" font-family="IBM Plex Mono" font-weight="800" font-size="40" fill="#ff5a4a" opacity="0.7">AM</text>`); chrome(U, t, info, D(1, '7:12 AM', ST(false, 'STAND · ?'))); return; }
+  const B = SET.bedroom(tt, { time: 'dawn' }); const FL = 820, intro = k < since('open', 'this morning'), gone = intro || k >= since('open', 'puts the glass back'), arm = intro || k >= since('open', 'Something else does');
+  const fallK = gone ? 0 : has(line, 'slides') ? clamp(t / info.dur) * 0.4 : k >= since('open', 'slides') ? 0.4 + 0.2 * clamp(t / info.dur) : 0;
   let cam = { z: 1.25, cx: 1000, cy: 560 };
-  const hero = P(760, FL, has(line, 'before your own hand') ? { ...P_SIT, aR: [16 + clamp(t / info.dur) * 30, 40] } : P_SIT, arm && !gone ? 'open' : 'neutral', { look: 0.9 });
-  const sp = STAND(760, FL, 360, gone ? { ...P_STAND, aR: [70, 30] } : arm ? { ...P_STAND, aR: [95, 15] } : P_STAND, tt, { op: arm ? (has(line, 'huge pale arm') ? clamp(t / 0.8) : 0.9) : 0, dx: 60, dy: -110, s: 1.15 });
-  let fx = SP.nightstand(1180, FL, '7:12', gone ? 0 : fallK);
+  const hero = P(760, FL, has(line, 'before your own hand') ? { ...P_SIT, aR: [16 + clamp(t / info.dur) * 30, 40] } : P_SIT, intro ? 'open' : arm && !gone ? 'open' : 'neutral', { look: 0.9 });
+  const sp = STAND(760, FL, 360, intro ? { ...P_STAND, aL: [60, 120], aR: [95, 15] } : gone ? { ...P_STAND, aR: [70, 30] } : arm ? { ...P_STAND, aR: [95, 15] } : P_STAND, tt, { op: intro ? 0.95 : arm ? (has(line, 'huge arm') ? clamp(t / 0.8) : 0.9) : 0, dx: 60, dy: -110, s: intro ? 1.3 : 1.15 });
+  let fx = SP.nightstand(1180, FL, '7:12', gone ? (intro ? -1 : 0) : fallK);
   if (arm && !gone) fx += SP.streak(sp.hands[1][0] - 160, sp.hands[1][1] - 40, sp.hands[1][0], sp.hands[1][1], 4, PUR);
   hero.pre = withStand(sp);
-  if (has(line, 'world is slow')) { L1(U, t, 'EVERYTHING · SLOW', 0.3, CY); }
-  if (has(line, 'underwater')) { cam = { z: 2.0, cx: 1120, cy: 680 }; L1(U, t, 'GLASS · FALLING… SLOWLY', 0.2); }
-  if (has(line, 'huge pale arm', 'blue and purple')) { cam = { z: 1.6, cx: 960, cy: 480 }; L1(U, t, 'SOMETHING · ELSE', 0.3, PUR); }
-  if (has(line, 'puts the glass back')) { cam = { z: 1.8, cx: 1120, cy: 600 }; L1(U, t, 'GLASS · SAVED', 0.2, '#4fd06a'); }
-  if (has(line, 'before your own hand')) { cam = { z: 1.9, cx: 820, cy: 600 }; L1(U, t, 'YOUR HAND · STILL MOVING', 0.2); }
-  if (has(line, "You've woken up with Star Platinum")) { cam = { z: 1.1, cx: 900, cy: 520 }; L1(U, t, 'STAR PLATINUM', 0.2, PUR); }
-  if (has(line, "Jotaro's Stand", 'Bizarre')) { L1(U, t, "JOTARO'S STAND · JOJO'S BIZARRE ADVENTURE", 0.2, PUR); }
+  if (has(line, "You've woken up with Star Platinum")) { cam = { z: 1.05 + 0.1 * clamp(t / info.dur), cx: 880, cy: 500 }; L1(U, t, 'STAR PLATINUM', 0.1, PUR); }
+  if (has(line, "Jotaro's Stand", 'Bizarre')) { cam = { z: 1.5, cx: 860, cy: 420 }; L1(U, t, "JOTARO'S STAND · JOJO'S BIZARRE ADVENTURE", 0.1, PUR); }
+  if (has(line, 'In real life')) { cam = { z: 1.15, cx: 960, cy: 540 }; L1(U, t, 'IN REAL LIFE', 0.1, '#4fd06a'); }
+  if (has(line, 'slides')) { cam = { z: 2.0, cx: 1120, cy: 680 }; L1(U, t, 'GLASS · FALLING… SLOWLY', 0.2); }
+  if (has(line, 'huge arm', 'blue and purple')) { cam = { z: 1.6, cx: 960, cy: 480 }; L1(U, t, 'SOMETHING · ELSE', 0.3, PUR); }
+  if (has(line, 'puts the glass back')) { cam = { z: 1.8, cx: 1000, cy: 600 }; L1(U, t, t < info.dur * 0.5 ? 'GLASS · SAVED' : 'YOUR HAND · STILL MOVING', 0.2, '#4fd06a'); }
   if (has(line, 'before tonight')) { cam = { z: 1.7, cx: 760, cy: 520 }; L1(U, t, 'BEFORE TONIGHT…', 0.2, COL.red); }
   if (has(line, "can't replace")) { full(U, `<rect width="1920" height="1080" fill="#1a0810"/>`); big(U, `<div style="${TXT(110)}">BEFORE TONIGHT,<br><span style="color:#ff5a4a">IT WILL COST YOU.</span></div>`, 200, 360); chrome(U, t, info, D(1, '7:13 AM', ST())); return; }
   frame(U, B, cam, [hero], fx, { fxIn: true });
