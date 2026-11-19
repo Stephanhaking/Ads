@@ -13,7 +13,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
    "notes": ""
   },
   {
@@ -41,7 +48,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "swish",
+     "gain": -10,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -69,7 +83,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "impact",
+     "gain": -6,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -83,7 +104,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "shimmer",
+     "gain": -8,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -111,7 +139,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "ding",
+     "gain": -10,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -139,7 +174,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "shimmer",
+     "gain": -8,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -195,7 +237,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
    "notes": ""
   },
   {
@@ -209,7 +258,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "blip",
+     "gain": -12,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -279,7 +335,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "swish",
+     "gain": -10,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -321,7 +384,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
    "notes": ""
   },
   {
@@ -349,7 +419,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "impact",
+     "gain": -6,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -377,7 +454,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -391,7 +475,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "ding",
+     "gain": -10,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -447,7 +538,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "swish",
+     "gain": -10,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -517,7 +615,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
    "notes": ""
   },
   {
@@ -601,7 +706,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "impact",
+     "gain": -6,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -615,7 +727,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "impact",
+     "gain": -8,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -643,7 +762,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "blip",
+     "gain": -10,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -713,7 +839,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
    "notes": ""
   },
   {
@@ -727,7 +860,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "impact",
+     "gain": -6,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -811,7 +951,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "impact",
+     "gain": -6,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -825,7 +972,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "swish",
+     "gain": -12,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -867,7 +1021,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "blip",
+     "gain": -12,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -909,7 +1070,20 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    },
+    {
+     "at": 0.15,
+     "name": "ding",
+     "gain": -12,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -951,7 +1125,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "swish",
+     "gain": -10,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -965,7 +1146,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "ding",
+     "gain": -10,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -1049,7 +1237,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
    "notes": ""
   },
   {
@@ -1063,7 +1258,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "impact",
+     "gain": -8,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -1119,7 +1321,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "blip",
+     "gain": -12,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -1133,7 +1342,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "blip",
+     "gain": -12,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -1189,7 +1405,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
    "notes": ""
   },
   {
@@ -1217,7 +1440,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "blip",
+     "gain": -12,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -1329,7 +1559,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "blip",
+     "gain": -12,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -1413,7 +1650,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "shimmer",
+     "gain": -8,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -1469,7 +1713,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
    "notes": ""
   },
   {
@@ -1483,7 +1734,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "swish",
+     "gain": -10,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -1497,7 +1755,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "impact",
+     "gain": -8,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -1595,7 +1860,20 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    },
+    {
+     "at": 0.15,
+     "name": "whoosh",
+     "gain": -10,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -1623,7 +1901,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "whoosh",
+     "gain": -10,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -1721,7 +2006,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "impact",
+     "gain": -6,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -1763,7 +2055,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "impact",
+     "gain": -6,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -1791,7 +2090,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
    "notes": ""
   },
   {
@@ -1889,7 +2195,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
    "notes": ""
   },
   {
@@ -1903,7 +2216,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "swish",
+     "gain": -10,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -1931,7 +2251,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "shimmer",
+     "gain": -8,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
@@ -1945,7 +2272,14 @@
    "in": {
     "type": "cut"
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "shimmer",
+     "gain": -8,
+     "dur": 0.6
+    }
+   ],
    "notes": ""
   },
   {
