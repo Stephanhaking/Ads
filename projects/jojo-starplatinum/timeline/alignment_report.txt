@@ -1,0 +1,41 @@
+00:00.98  replace  script: seven twelve  |  heard: 712
+00:31.64  replace  script: going to  |  heard: gonna
+00:37.02  replace  script: mum  |  heard: mom
+01:07.10  replace  script: metres  |  heard: meters
+01:14.08  replace  script: Forty  |  heard: 40
+01:21.98  insert   script: —  |  heard: play.
+01:23.56  replace  script: forty  |  heard: 40
+01:30.60  replace  script: two:  |  heard: 2.
+01:41.06  replace  script: five hundred and ten  |  heard: 510
+01:44.46  replace  script: twenty twenty-five.  |  heard: 2025.
+02:19.76  replace  script: ORA ORA ORA.  |  heard: Aura, aura, aura.
+02:24.06  replace  script: boxers'  |  heard: boxer's
+02:25.74  replace  script: six  |  heard: 6
+02:26.30  replace  script: eleven metres  |  heard: 11 meters
+02:30.84  replace  script: twenty  |  heard: 20
+03:14.10  replace  script: two-euro  |  heard: 2 euro
+03:22.62  replace  script: five:  |  heard: 5.
+03:36.30  replace  script: metre  |  heard: meter
+03:50.22  replace  script: who'd  |  heard: who
+04:07.50  replace  script: one hundred  |  heard: 190
+04:08.52  replace  script: ninety and two hundred and eighty-five  |  heard: 285
+04:11.30  replace  script: nine-millimetre  |  heard: nine millimeter
+04:13.68  replace  script: three hundred and fifty  |  heard: 350
+04:15.18  replace  script: four hundred and ten metres  |  heard: 410 meters
+04:18.32  replace  script: maths:  |  heard: math.
+04:19.44  replace  script: three hundred and sixty,  |  heard: 360,
+04:20.74  replace  script: ten metres  |  heard: 10 meters
+04:22.10  replace  script: twenty-eight  |  heard: 28
+04:31.64  replace  script: ten metres  |  heard: 10 meters
+04:39.38  replace  script: three,  |  heard: 3,
+04:42.44  replace  script: five  |  heard: 5
+04:47.10  replace  script: seven:  |  heard: 7.
+04:52.80  replace  script: thirty  |  heard: 30,
+05:09.96  replace  script: eight:  |  heard: 8.
+05:16.60  replace  script: forty,  |  heard: 40,
+05:18.76  replace  script: a hill  |  heard: hell
+05:23.96  replace  script: has  |  heard: is
+05:27.38  replace  script: going to  |  heard: gonna
+05:39.84  replace  script: mid-wing.  |  heard: mid -wing.
+06:19.26  replace  script: nine:  |  heard: 9,
+06:26.62  replace  script: seven twelve.  |  heard: 7 -12,
