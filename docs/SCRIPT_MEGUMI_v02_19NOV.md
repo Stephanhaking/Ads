@@ -4,7 +4,7 @@
 # dois lobos/cães de sombra de olhos azuis, lua, cidade em ruínas à noite).
 # O que a thumbnail promete e o vídeo cumpre: a sombra viva; os cães (Divine Dogs); a noite e a lua; a cidade em ruínas (dia 40).
 # Mudança por causa da thumbnail: a abertura passa a ser NOTURNA (3:15 a.m., lua), não às 6:15 da manhã.
-# Duração: alvo 9 a 10 min (~1 500 palavras faladas); o v01 (7 min) foi rejeitado por curto.
+# Duração: alvo ~10 min (~1 500 palavras faladas); escolha do utilizador. O v01 (7 min) foi rejeitado por curto.
 # Factos só de docs/VERIFICACAO_MEGUMI_19NOV.md ("Verificado"): ver lista no v01 (Ten Shadows, Divine Dogs branco e preto, Toad,
 #  fusão de dois shikigami sem nome, Great Serpent, Max Elephant, Mahoraga e a regra do ritual, Chimera Shadow Garden sem barreira);
 #  mundo real: elefante ~6 t; cão até ~300 M vs ~6 M recetores (limite superior); cobra selvagem mais longa medida 7,22 m;
@@ -82,57 +82,67 @@ The video spreads. Half the comments say it's CGI. The other half say it's a gho
 Nobody says "shikigami", because only a few people know what that means, and they think it's a joke.
 Lesson seven: the people who'd understand are the ones who'd never believe it.
 
-## Day 15: the man in the suit (5:35)
+## Day 12: the garden (5:35)
+[um campo de futebol à noite; a sombra a espalhar-se pelo chão; os cães a correr; tu, ofegante]
+On day twelve you take it to an empty football pitch, at night, to try something bigger.
+In the story, Megumi's version of a Domain Expansion is called Chimera Shadow Garden. It has no walls, no closed barrier. It spreads his shadow over whatever is already there. And it's incomplete.
+So you push your shadow outwards, across the grass, until the whole pitch is dark under your feet.
+The dogs run through it faster than anything you've ever seen, as if the ground itself was helping them.
+But nothing hits for you. Nothing wins for you. It's only a place where everything you call comes out easier.
+You hold it for a minute, and your head feels like it's full of wet sand.
+Lesson eight: the garden doesn't fight. It just makes the fight yours.
+
+## Day 15: the man in the suit (6:25)
 [um café; um homem de fato cinzento com uma pasta]
 A man in a grey suit sits down at your table in a café and doesn't ask a single question.
 He slides a card across. He's not interested in what you can do. He wants to know what you'd refuse to do.
 You say you don't know yet.
 He nods, as if that was the right answer, and leaves without his coffee.
-Lesson eight: the first question anyone asks about power is how far you'd go.
+Lesson nine: the first question anyone asks about power is how far you'd go.
 
-## Day 20: the one that stirs (6:05)
+## Day 20: the one that stirs (6:55)
 [a tua sombra; uma roda de oito lâminas a girar lentamente; tu, imóvel]
 On day twenty something stirs in your shadow that isn't a dog, or a toad, or an elephant.
 In the story, it's called Mahoraga, the strongest shikigami of the technique. It adapts to whatever hits it, and the wheel on its back turns as it learns.
 And the ritual to summon it doesn't end until either its target is dead, or it's tamed. In the story, the only one who ever tamed it was Sukuna.
 You close your eyes. The wheel stops turning.
 You don't tell anyone.
-Lesson nine: there's one door in your shadow you can't walk back through.
+Lesson ten: there's one door in your shadow you can't walk back through.
 
-## Day 25: the lost child (6:50)
+## Day 25: the lost child (7:40)
 [uma floresta à noite; lanternas; uma criança perdida]
 On day twenty-five, a child goes missing at the edge of the city, and the search party is walking in lines with torches.
 You stand at the treeline with your hand over your shadow.
 The dogs take the scent from the child's coat, and they go. White and black, low through the trees, silent.
 They find her in forty minutes, asleep under a fallen trunk, with a muddy shoe in her arms.
 Nobody asks how. They're too busy hugging her.
-Lesson ten: sometimes the point isn't what you can do. It's what you do with it.
+Lesson eleven: sometimes the point isn't what you can do. It's what you do with it.
 
-## Day 30: the cost (7:35)
+## Day 30: the cost (8:25)
 [a tua casa; sentado no chão; as sombras à volta]
 By day thirty you can feel exactly how much each of them costs.
 The dogs are cheap. The toad is cheap. The elephant leaves you in bed for a day.
 You're treating your own shadow like a bank account, and you're afraid to check the balance.
-Lesson eleven: you're never out of shadows. You're only ever out of you.
+Lesson twelve: you're never out of shadows. You're only ever out of you.
 
-## Day 40: the car park (8:00)
+## Day 40: the car park (8:50)
 [o desabamento de um parque de estacionamento; pessoas presas; poeiras; a lua]
 On day forty, at night, a floor of the car park near your flat collapses with eleven people underneath it.
 You run. You're the only one who can do anything.
 There's one thing in your shadow that could lift the slab with one hand. You can feel it turning.
 You stand at the edge of the rubble with your hand over your shadow, and you take it away.
-So you do the other thing. You spread your shadow across the floor, with no walls and no barrier, over whatever's already there. In the story, Megumi's version of this is called Chimera Shadow Garden, and it's incomplete.
-Yours doesn't need to be perfect.
+So you do the other thing. You spread your shadow across the floor, the way you practised on the pitch, over whatever's already there.
+It doesn't need to be perfect. It only needs to be big enough.
 The dogs find them by smell, under the concrete. The toad pulls them out, one by one, with its tongue. The serpent slides under the beams. The elephant stands up under the slab and holds it, and your legs shake the whole time.
 Eleven people come out. Nobody asks what you are.
 
-## Day 41: the cost, again (9:10)
+## Day 41: the cost, again (10:00)
 [o teu quarto; a sombra imóvel; tu, exausto]
 The next morning you can't get out of bed.
 Now you know what it really is. Not a gift. A door in the floor, and you're the only one who decides what comes through.
-Lesson twelve: the strongest thing in your shadow is the one you didn't open.
+Lesson thirteen: the strongest thing in your shadow is the one you didn't open.
 
-## Ending (9:30)
+## Ending (10:20)
 [3:15 a.m.; o quarto; a lua; a tua sombra no chão, parada]
 The next night at 3:15, you lift your arm, and your shadow doesn't move.
 You wait. Something stirs under it, and it sits. It's the white dog.
