@@ -5,9 +5,9 @@ Regra: guardar impressões, CTR, duração média, curva (10/30/60 s), origem do
 |---|---|---|---|---|---|---|---|
 | Luffy | 09/11 | 84 | 6,0 % | 19 | 4:11 (50 %) | pesquisa | amostra mínima |
 | Saitama | 10/11 | 59 | 10,2 % | 17 | 5:03 (50 %) | pesquisa | amostra mínima |
-| JoJo The World | 16/11 19:47 | 6 100 | 0,8 % | 110 (API: 96 a 20/11) | 1:40 (22,8 %) | sugeridos 72 % (20,8 %), subscritores 18 % (36,9 %), pesquisa 4 % (2,2 %) | promessa aos 37,7 s; queda ~55 % aos 30 s (via Ifsuperhero) |
+| JoJo The World | 16/11 19:47 | 6 100 | 0,8 % (mesmo padrão do Killua: thumbnail antiga roxa) | 110 (API: 96 a 20/11) | 1:40 (22,8 %) | sugeridos 72 % (20,8 %), subscritores 18 % (36,9 %), pesquisa 4 % (2,2 %) | promessa aos 37,7 s; queda ~55 % aos 30 s (via Ifsuperhero) |
 | Death Note | 18/11 | 6 | n/a | 1 | n/a | n/a | formato saturado, 3 clones |
-| Killua | 18/11 23:09 | ~15 000 (20/11) | ≲ 1,5 % ⚠ | 232 | 1:20 (18,7 %) | por obter (API só depois de ~3 dias) | curva: 100/65/51/45/37/31/20/12/8 % aos 0/10/25/45/55/65/150/240/430 s; nome do poder aos 7 s, 1.ª eletricidade aos ~23 s |
+| Killua | 18/11 23:09 | 16 100 (20/11 13:31) | 0,7 % (114 cliques) | 271 (Studio) | 1:16 desde impressões; 1:20 (18,7 %) no total | sugeridos 81,4 %, navegação 9,8 %, pesquisa 5,9 %, direta 1,3 %, outro 1,7 % | corrigido: o CTR real é 0,7 %, não ≲1,5 %; curva: 100/65/51/45/37/31/20/12/8 % aos 0/10/25/45/55/65/150/240/430 s; nome do poder aos 7 s, 1.ª eletricidade aos ~23 s; A/B de thumbnail começou depois das ~15 000 impressões |
 | Star Platinum | 19/11 19:53 | 40 (13 h) | 2,5 % (1 clique) | 4 | n/a (0:21, n=4) | pesquisa 75 %, navegação 25 % | início novo (nome aos 0 s); A/B de thumbnail em curso |
 
 ## Experiências em curso
