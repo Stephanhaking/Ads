@@ -1,0 +1,49 @@
+00:01.82  replace  script: Ten  |  heard: 10
+00:18.26  replace  script: forty  |  heard: 40
+00:21.84  replace  script: three fifteen  |  heard: 3 .15
+00:45.06  replace  script: Ten  |  heard: 10
+00:59.54  replace  script: three hundred  |  heard: 300
+01:02.72  replace  script: six  |  heard: 6
+01:11.52  replace  script: neighbour's  |  heard: neighbor's
+01:12.18  replace  script: cat.  |  heard: cop.
+01:25.02  replace  script: mum  |  heard: mom
+01:36.10  replace  script: realise  |  heard: realize
+02:01.58  replace  script: the  |  heard: this
+02:02.62  replace  script: Toad,  |  heard: Toadhound,
+02:39.08  replace  script: six tonnes.  |  heard: 6 tons.
+02:41.76  replace  script: six thousand  |  heard: 6 ,000
+02:43.68  replace  script: three metres,  |  heard: 3 meters
+02:45.68  replace  script: one hundred and seventy-six thousand  |  heard: 176 ,000
+02:52.06  replace  script: legs  |  heard: likes
+03:20.16  replace  script: seven point two two metres,  |  heard: 7 .22 meters,
+03:23.08  replace  script: twenty twenty-six.  |  heard: 2026.
+03:29.22  replace  script: neighbour  |  heard: neighbor
+03:57.74  replace  script: ten  |  heard: 10
+04:10.14  replace  script: six:  |  heard: 6.
+04:14.32  insert   script: —  |  heard: 4.
+04:28.80  replace  script: dog.  |  heard: talk.
+04:30.38  replace  script: "shikigami",  |  heard: sheikigami
+04:36.36  replace  script: seven:  |  heard: 7.
+04:42.30  replace  script: twelve  |  heard: 12,
+04:48.60  replace  script: Megumi's  |  heard: Megamy's
+05:23.18  replace  script: eight:  |  heard: 8.
+05:29.46  replace  script: grey  |  heard: gray
+05:30.20  insert   script: —  |  heard: sits
+05:31.82  replace  script: café  |  heard: cafe
+05:57.76  replace  script: twenty  |  heard: 20,
+06:06.86  replace  script: Mahoraga,  |  heard: maharaga,
+06:22.48  insert   script: —  |  heard: claimed.
+06:33.22  replace  script: ten:  |  heard: 10.
+06:38.84  replace  script: twenty-five,  |  heard: 25,
+06:46.80  replace  script: treeline  |  heard: tree line
+06:58.60  replace  script: forty  |  heard: 40
+07:07.72  replace  script: eleven:  |  heard: 11.
+07:14.50  replace  script: thirty  |  heard: 30
+07:31.14  replace  script: twelve:  |  heard: 12,
+07:37.60  replace  script: forty,  |  heard: 40
+07:42.60  replace  script: eleven  |  heard: 11
+08:05.66  replace  script: practised  |  heard: practiced
+08:07.40  replace  script: whatever's  |  heard: whatever is
+08:44.32  replace  script: thirteen:  |  heard: 13.
+08:51.44  replace  script: three fifteen,  |  heard: 3 .15,
+09:04.70  replace  script: Ten  |  heard: 10

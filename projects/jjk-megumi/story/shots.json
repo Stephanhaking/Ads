@@ -1,0 +1,3140 @@
+{
+ "title": "What If You Had Megumi's Ten Shadows in Real Life?",
+ "duration": 554.58,
+ "shots": [
+  {
+   "id": "s001",
+   "start": 0.0,
+   "end": 2.42,
+   "line": "You've woken up with Megumi's Ten Shadows,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "shimmer",
+     "gain": -8,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s002",
+   "start": 2.42,
+   "end": 5.84,
+   "line": "from Jujutsu Kaisen. In real life.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s003",
+   "start": 5.84,
+   "end": 9.9,
+   "line": "Your shadow is alive. And it's hungry.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s004",
+   "start": 9.9,
+   "end": 13.84,
+   "line": "One of the things inside it will help you save a car park full of people.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "impact",
+     "gain": -6,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s005",
+   "start": 13.84,
+   "end": 17.74,
+   "line": "Another has never been tamed by anyone but Sukuna,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "shimmer",
+     "gain": -8,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s006",
+   "start": 17.74,
+   "end": 20.46,
+   "line": "and in forty days you'll be tempted to open it.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s007",
+   "start": 20.46,
+   "end": 25.0,
+   "line": "But right now it's three fifteen in the morning, the moon is on your floor,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s008",
+   "start": 25.0,
+   "end": 29.18,
+   "line": "and your shadow has just stopped copying you.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s009",
+   "start": 29.18,
+   "end": 31.1,
+   "line": "You lift your arm.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    },
+    {
+     "at": 0.15,
+     "name": "blip",
+     "gain": -14,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s010",
+   "start": 31.1,
+   "end": 33.42,
+   "line": "The shadow on the floor doesn't.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s011",
+   "start": 33.42,
+   "end": 37.32,
+   "line": "Then two dogs step out of it, one white and one black,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "shimmer",
+     "gain": -8,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s012",
+   "start": 37.32,
+   "end": 40.44,
+   "line": "and sit in front of you like they've been waiting all night.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s013",
+   "start": 40.44,
+   "end": 42.88,
+   "line": "In the story these are the Divine Dogs,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s014",
+   "start": 42.88,
+   "end": 46.98,
+   "line": "the first shikigami every user of the Ten Shadows Technique receives.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s015",
+   "start": 46.98,
+   "end": 48.64,
+   "line": "They hunt curses.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s016",
+   "start": 48.64,
+   "end": 52.48,
+   "line": "Your cat, who respects nothing, leaves the room.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s017",
+   "start": 52.48,
+   "end": 55.36,
+   "line": "Then they catch a scent and drag you out of the flat,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s018",
+   "start": 55.36,
+   "end": 57.44,
+   "line": "down the stairs, across the empty city.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s019",
+   "start": 57.44,
+   "end": 59.42,
+   "line": "A dog can have up to about",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s020",
+   "start": 59.42,
+   "end": 61.58,
+   "line": "three hundred million scent receptors,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "blip",
+     "gain": -12,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s021",
+   "start": 61.58,
+   "end": 64.9,
+   "line": "against about six million in a human.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s022",
+   "start": 64.9,
+   "end": 68.04,
+   "line": "That's the best case, but it explains why they're not slowing down.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s023",
+   "start": 68.04,
+   "end": 70.02,
+   "line": "They stop under a rooftop.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s024",
+   "start": 70.02,
+   "end": 73.0,
+   "line": "On it, there's your neighbour's lost cat.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s025",
+   "start": 73.0,
+   "end": 74.3,
+   "line": "It looks at you.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s026",
+   "start": 74.3,
+   "end": 77.54,
+   "line": "It's not impressed either. Lesson one:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s027",
+   "start": 77.54,
+   "end": 82.12,
+   "line": "your shadow has a perfect nose, and no idea what's yours.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s028",
+   "start": 82.12,
+   "end": 84.2,
+   "line": "At breakfast you try to act normal.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s029",
+   "start": 84.2,
+   "end": 88.14,
+   "line": "Your mum asks why you're sitting so far from the table.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s030",
+   "start": 88.14,
+   "end": 89.74,
+   "line": "The dogs are under it.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s031",
+   "start": 89.74,
+   "end": 92.1,
+   "line": "You can feel them breathing.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s032",
+   "start": 92.1,
+   "end": 95.66,
+   "line": "Every time she moves, they move with her shadow,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s033",
+   "start": 95.66,
+   "end": 97.38,
+   "line": "and you realise something:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s034",
+   "start": 97.38,
+   "end": 101.16,
+   "line": "they're not following her. They're guarding you.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s035",
+   "start": 101.16,
+   "end": 105.34,
+   "line": "You eat a whole bowl of cereal with your feet pulled up on the chair.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "blip",
+     "gain": -12,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s036",
+   "start": 105.34,
+   "end": 107.76,
+   "line": "Lesson two: they obey you.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s037",
+   "start": 107.76,
+   "end": 110.62,
+   "line": "But they don't understand \"normal\".",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s038",
+   "start": 110.62,
+   "end": 114.58,
+   "line": "At lunch you try the next one, as quietly as you can.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s039",
+   "start": 114.58,
+   "end": 116.92,
+   "line": "Something wet slaps out of your shadow",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "impact",
+     "gain": -6,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s040",
+   "start": 116.92,
+   "end": 119.08,
+   "line": "and onto the office floor:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s041",
+   "start": 119.08,
+   "end": 121.34,
+   "line": "a toad the size of a person.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s042",
+   "start": 121.34,
+   "end": 125.38,
+   "line": "In the story this is Toad, another shikigami.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s043",
+   "start": 125.38,
+   "end": 128.54,
+   "line": "And in the story, two of them can even fuse into something new.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s044",
+   "start": 128.54,
+   "end": 130.72,
+   "line": "You hide it in the kitchen fridge.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s045",
+   "start": 130.72,
+   "end": 133.8,
+   "line": "It leaves a tongue's worth of mess on the printer.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "blip",
+     "gain": -12,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s046",
+   "start": 133.8,
+   "end": 138.66,
+   "line": "Your boss asks who's been feeding the printer. Lesson three:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "blip",
+     "gain": -12,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s047",
+   "start": 138.66,
+   "end": 140.8,
+   "line": "these things don't come with a manual,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s048",
+   "start": 140.8,
+   "end": 143.98,
+   "line": "and they don't ask permission to appear.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s049",
+   "start": 143.98,
+   "end": 146.2,
+   "line": "In the evening you take it all",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s050",
+   "start": 146.2,
+   "end": 148.9,
+   "line": "to an empty underground car park,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s051",
+   "start": 148.9,
+   "end": 152.82,
+   "line": "because you want to know where your limit is. In the story,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s052",
+   "start": 152.82,
+   "end": 156.72,
+   "line": "Max Elephant takes a huge amount of cursed energy to summon.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s053",
+   "start": 156.72,
+   "end": 158.68,
+   "line": "An adult African elephant weighs",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s054",
+   "start": 158.68,
+   "end": 161.1,
+   "line": "about six tonnes. Our own maths:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "blip",
+     "gain": -12,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s055",
+   "start": 161.1,
+   "end": 164.26,
+   "line": "drop six thousand kilograms from three metres,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s056",
+   "start": 164.26,
+   "end": 168.2,
+   "line": "and you get roughly one hundred and seventy-six thousand joules.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "blip",
+     "gain": -12,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s057",
+   "start": 168.2,
+   "end": 170.96,
+   "line": "You summon it. You make it stand up.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "impact",
+     "gain": -6,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s058",
+   "start": 170.96,
+   "end": 174.96,
+   "line": "Then your legs go, and you sit on the concrete,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s059",
+   "start": 174.96,
+   "end": 176.94,
+   "line": "shaking, because it took everything",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s060",
+   "start": 176.94,
+   "end": 179.68,
+   "line": "you had just to hold it there.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s061",
+   "start": 179.68,
+   "end": 184.34,
+   "line": "You spend an hour finding where you left your keys. Lesson four:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s062",
+   "start": 184.34,
+   "end": 185.72,
+   "line": "the bigger the shadow,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s063",
+   "start": 185.72,
+   "end": 189.06,
+   "line": "the bigger the bill, and you're the one who pays.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s064",
+   "start": 189.06,
+   "end": 192.38,
+   "line": "On day three, you try the Great Serpent,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    },
+    {
+     "at": 0.15,
+     "name": "swish",
+     "gain": -8,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s065",
+   "start": 192.38,
+   "end": 196.28,
+   "line": "a big white snake with black marks across its body.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s066",
+   "start": 196.28,
+   "end": 198.64,
+   "line": "The longest wild snake ever measured is a",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s067",
+   "start": 198.64,
+   "end": 201.48,
+   "line": "reticulated python of seven point two two metres,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "blip",
+     "gain": -12,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s068",
+   "start": 201.48,
+   "end": 202.96,
+   "line": "confirmed by Guinness in",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s069",
+   "start": 202.96,
+   "end": 205.1,
+   "line": "twenty twenty-six.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s070",
+   "start": 205.1,
+   "end": 209.0,
+   "line": "Yours fills the hallway. You can't tell where it ends.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s071",
+   "start": 209.0,
+   "end": 210.54,
+   "line": "Your neighbour opens her door,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s072",
+   "start": 210.54,
+   "end": 213.0,
+   "line": "looks at the white coil blocking the stairs,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s073",
+   "start": 213.0,
+   "end": 215.38,
+   "line": "and goes back inside without a word.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s074",
+   "start": 215.38,
+   "end": 219.72,
+   "line": "She never mentions it again, even when you meet in the lift.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "blip",
+     "gain": -14,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s075",
+   "start": 219.72,
+   "end": 220.84,
+   "line": "Lesson five:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s076",
+   "start": 220.84,
+   "end": 225.76,
+   "line": "when something is bigger than your building, you have to learn to put it back.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s077",
+   "start": 225.76,
+   "end": 226.88,
+   "line": "In the story,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s078",
+   "start": 226.88,
+   "end": 230.4,
+   "line": "two shikigami can fuse into something new.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s079",
+   "start": 230.4,
+   "end": 232.22,
+   "line": "So, of course, you try it.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s080",
+   "start": 232.22,
+   "end": 235.92,
+   "line": "You call two at once. They don't merge.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s081",
+   "start": 235.92,
+   "end": 237.5,
+   "line": "They tangle.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "impact",
+     "gain": -6,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s082",
+   "start": 237.5,
+   "end": 239.4,
+   "line": "For ten seconds there's a creature in",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s083",
+   "start": 239.4,
+   "end": 241.2,
+   "line": "your stairwell that has too many legs",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s084",
+   "start": 241.2,
+   "end": 244.2,
+   "line": "and the wrong number of opinions about it.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s085",
+   "start": 244.2,
+   "end": 247.72,
+   "line": "You manage to send them back, but it takes everything you have.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s086",
+   "start": 247.72,
+   "end": 249.76,
+   "line": "You spend the next day in bed.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s087",
+   "start": 249.76,
+   "end": 253.26,
+   "line": "Lesson six: more is not stronger.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s088",
+   "start": 253.26,
+   "end": 255.72,
+   "line": "More is just more.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s089",
+   "start": 255.72,
+   "end": 258.76,
+   "line": "A boy in the park films your shadow at sunset.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s090",
+   "start": 258.76,
+   "end": 260.74,
+   "line": "It's the wrong shape.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s091",
+   "start": 260.74,
+   "end": 265.24,
+   "line": "It has ears, and it's wagging. The video spreads.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "blip",
+     "gain": -12,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s092",
+   "start": 265.24,
+   "end": 267.14,
+   "line": "Half the comments say it's CGI.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s093",
+   "start": 267.14,
+   "end": 269.7,
+   "line": "The other half say it's a ghost dog.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s094",
+   "start": 269.7,
+   "end": 271.12,
+   "line": "Nobody says \"shikigami\",",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s095",
+   "start": 271.12,
+   "end": 273.46,
+   "line": "because only a few people know what that means,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s096",
+   "start": 273.46,
+   "end": 277.1,
+   "line": "and they think it's a joke. Lesson seven:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s097",
+   "start": 277.1,
+   "end": 278.84,
+   "line": "the people who'd understand are",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s098",
+   "start": 278.84,
+   "end": 281.48,
+   "line": "the ones who'd never believe it.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s099",
+   "start": 281.48,
+   "end": 284.88,
+   "line": "On day twelve you take it to an empty football pitch,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s100",
+   "start": 284.88,
+   "end": 288.1,
+   "line": "at night, to try something bigger. In the story,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s101",
+   "start": 288.1,
+   "end": 290.14,
+   "line": "Megumi's version of a Domain Expansion",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "shimmer",
+     "gain": -8,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s102",
+   "start": 290.14,
+   "end": 292.6,
+   "line": "is called Chimera Shadow Garden.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s103",
+   "start": 292.6,
+   "end": 295.28,
+   "line": "It has no walls, no closed barrier.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s104",
+   "start": 295.28,
+   "end": 298.76,
+   "line": "It spreads his shadow over whatever is already there.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s105",
+   "start": 298.76,
+   "end": 300.26,
+   "line": "And it's incomplete.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s106",
+   "start": 300.26,
+   "end": 303.12,
+   "line": "So you push your shadow outwards, across the grass,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s107",
+   "start": 303.12,
+   "end": 305.08,
+   "line": "until the whole pitch is dark under your feet.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s108",
+   "start": 305.08,
+   "end": 308.88,
+   "line": "The dogs run through it faster than anything you've ever seen,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s109",
+   "start": 308.88,
+   "end": 311.26,
+   "line": "as if the ground itself was helping them.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s110",
+   "start": 311.26,
+   "end": 313.22,
+   "line": "But nothing hits for you.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s111",
+   "start": 313.22,
+   "end": 315.02,
+   "line": "Nothing wins for you.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s112",
+   "start": 315.02,
+   "end": 318.5,
+   "line": "It's only a place where everything you call comes out easier.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s113",
+   "start": 318.5,
+   "end": 319.38,
+   "line": "You hold it for a minute,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s114",
+   "start": 319.38,
+   "end": 322.88,
+   "line": "and your head feels like it's full of wet sand.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s115",
+   "start": 322.88,
+   "end": 325.82,
+   "line": "Lesson eight: the garden doesn't fight.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s116",
+   "start": 325.82,
+   "end": 328.3,
+   "line": "It just makes the fight yours.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s117",
+   "start": 328.3,
+   "end": 330.48,
+   "line": "A man in a grey suit",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s118",
+   "start": 330.48,
+   "end": 332.02,
+   "line": "sits down at your table in a caf\u00e9",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s119",
+   "start": 332.02,
+   "end": 335.24,
+   "line": "and doesn't ask a single question.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s120",
+   "start": 335.24,
+   "end": 337.18,
+   "line": "He slides a card across.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "swish",
+     "gain": -10,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s121",
+   "start": 337.18,
+   "end": 339.74,
+   "line": "He's not interested in what you can do.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s122",
+   "start": 339.74,
+   "end": 342.68,
+   "line": "He wants to know what you'd refuse to do.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s123",
+   "start": 342.68,
+   "end": 344.52,
+   "line": "You say you don't know yet.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s124",
+   "start": 344.52,
+   "end": 347.46,
+   "line": "He nods, as if that was the right answer,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s125",
+   "start": 347.46,
+   "end": 351.1,
+   "line": "and leaves without his coffee. Lesson nine:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s126",
+   "start": 351.1,
+   "end": 353.46,
+   "line": "the first question anyone asks about power",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s127",
+   "start": 353.46,
+   "end": 356.84,
+   "line": "is how far you'd go.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s128",
+   "start": 356.84,
+   "end": 359.92,
+   "line": "On day twenty something stirs",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    },
+    {
+     "at": 0.15,
+     "name": "shimmer",
+     "gain": -8,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s129",
+   "start": 359.92,
+   "end": 362.26,
+   "line": "in your shadow that isn't a dog,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s130",
+   "start": 362.26,
+   "end": 365.48,
+   "line": "or a toad, or an elephant.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s131",
+   "start": 365.48,
+   "end": 368.16,
+   "line": "In the story, it's called Mahoraga,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "impact",
+     "gain": -6,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s132",
+   "start": 368.16,
+   "end": 371.46,
+   "line": "the strongest shikigami of the technique.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s133",
+   "start": 371.46,
+   "end": 373.42,
+   "line": "It adapts to whatever hits it,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s134",
+   "start": 373.42,
+   "end": 377.0,
+   "line": "and the wheel on its back turns as it learns.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s135",
+   "start": 377.0,
+   "end": 379.26,
+   "line": "And the ritual to summon it doesn't end",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s136",
+   "start": 379.26,
+   "end": 383.18,
+   "line": "until either its target is dead, or it's tamed.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s137",
+   "start": 383.18,
+   "end": 385.14,
+   "line": "In the story, the only one",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s138",
+   "start": 385.14,
+   "end": 389.2,
+   "line": "who ever tamed it was Sukuna. You close your eyes.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "shimmer",
+     "gain": -8,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s139",
+   "start": 389.2,
+   "end": 392.86,
+   "line": "The wheel stops turning. You don't tell anyone.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "ding",
+     "gain": -10,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s140",
+   "start": 392.86,
+   "end": 394.0,
+   "line": "Lesson ten:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s141",
+   "start": 394.0,
+   "end": 398.22,
+   "line": "there's one door in your shadow you can't walk back through.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s142",
+   "start": 398.22,
+   "end": 399.96,
+   "line": "On day twenty-five,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s143",
+   "start": 399.96,
+   "end": 402.52,
+   "line": "a child goes missing at the edge of the city,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s144",
+   "start": 402.52,
+   "end": 405.82,
+   "line": "and the search party is walking in lines with torches.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s145",
+   "start": 405.82,
+   "end": 408.98,
+   "line": "You stand at the treeline with your hand over your shadow.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s146",
+   "start": 408.98,
+   "end": 411.74,
+   "line": "The dogs take the scent from the child's coat,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s147",
+   "start": 411.74,
+   "end": 413.48,
+   "line": "and they go.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s148",
+   "start": 413.48,
+   "end": 417.5,
+   "line": "White and black, low through the trees, silent.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s149",
+   "start": 417.5,
+   "end": 419.42,
+   "line": "They find her in forty minutes,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "ding",
+     "gain": -10,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s150",
+   "start": 419.42,
+   "end": 421.44,
+   "line": "asleep under a fallen trunk,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s151",
+   "start": 421.44,
+   "end": 425.42,
+   "line": "with a muddy shoe in her arms. Nobody asks how.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s152",
+   "start": 425.42,
+   "end": 428.4,
+   "line": "They're too busy hugging her. Lesson eleven:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s153",
+   "start": 428.4,
+   "end": 431.38,
+   "line": "sometimes the point isn't what you can do.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s154",
+   "start": 431.38,
+   "end": 434.0,
+   "line": "It's what you do with it.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s155",
+   "start": 434.0,
+   "end": 436.04,
+   "line": "By day thirty you can feel",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s156",
+   "start": 436.04,
+   "end": 438.26,
+   "line": "exactly how much each of them costs.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s157",
+   "start": 438.26,
+   "end": 442.04,
+   "line": "The dogs are cheap. The toad is cheap.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s158",
+   "start": 442.04,
+   "end": 445.18,
+   "line": "The elephant leaves you in bed for a day.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s159",
+   "start": 445.18,
+   "end": 447.44,
+   "line": "You're treating your own shadow like a bank account,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s160",
+   "start": 447.44,
+   "end": 450.82,
+   "line": "and you're afraid to check the balance.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s161",
+   "start": 450.82,
+   "end": 452.02,
+   "line": "Lesson twelve:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s162",
+   "start": 452.02,
+   "end": 454.14,
+   "line": "you're never out of shadows.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s163",
+   "start": 454.14,
+   "end": 457.02,
+   "line": "You're only ever out of you.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s164",
+   "start": 457.02,
+   "end": 458.76,
+   "line": "On day forty, at night,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s165",
+   "start": 458.76,
+   "end": 461.3,
+   "line": "a floor of the car park near your flat",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s166",
+   "start": 461.3,
+   "end": 465.96,
+   "line": "collapses with eleven people underneath it. You run.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "impact",
+     "gain": -4,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s167",
+   "start": 465.96,
+   "end": 468.1,
+   "line": "You're the only one who can do anything.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s168",
+   "start": 468.1,
+   "end": 470.08,
+   "line": "There's one thing in your shadow that",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s169",
+   "start": 470.08,
+   "end": 472.8,
+   "line": "could lift the slab with one hand.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "blip",
+     "gain": -14,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s170",
+   "start": 472.8,
+   "end": 474.74,
+   "line": "You can feel it turning.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s171",
+   "start": 474.74,
+   "end": 477.86,
+   "line": "You stand at the edge of the rubble with your hand over your shadow,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s172",
+   "start": 477.86,
+   "end": 480.58,
+   "line": "and you take it away.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "shimmer",
+     "gain": -8,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s173",
+   "start": 480.58,
+   "end": 482.86,
+   "line": "So you do the other thing.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s174",
+   "start": 482.86,
+   "end": 485.16,
+   "line": "You spread your shadow across the floor,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s175",
+   "start": 485.16,
+   "end": 488.36,
+   "line": "the way you practised on the pitch, over whatever's already there.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s176",
+   "start": 488.36,
+   "end": 490.64,
+   "line": "It doesn't need to be perfect.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s177",
+   "start": 490.64,
+   "end": 492.82,
+   "line": "It only needs to be big enough.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s178",
+   "start": 492.82,
+   "end": 495.98,
+   "line": "The dogs find them by smell, under the concrete.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "swish",
+     "gain": -10,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s179",
+   "start": 495.98,
+   "end": 499.88,
+   "line": "The toad pulls them out, one by one, with its tongue.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "swish",
+     "gain": -10,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s180",
+   "start": 499.88,
+   "end": 502.3,
+   "line": "The serpent slides under the beams.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "swish",
+     "gain": -10,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s181",
+   "start": 502.3,
+   "end": 504.22,
+   "line": "The elephant stands up under the slab",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "impact",
+     "gain": -5,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s182",
+   "start": 504.22,
+   "end": 508.0,
+   "line": "and holds it, and your legs shake the whole time.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s183",
+   "start": 508.0,
+   "end": 509.82,
+   "line": "Eleven people come out.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "ding",
+     "gain": -10,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s184",
+   "start": 509.82,
+   "end": 512.14,
+   "line": "Nobody asks what you are.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s185",
+   "start": 512.14,
+   "end": 515.1,
+   "line": "The next morning you can't get out of bed.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s186",
+   "start": 515.1,
+   "end": 517.72,
+   "line": "Now you know what it really is. Not a gift.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s187",
+   "start": 517.72,
+   "end": 520.3,
+   "line": "A door in the floor,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s188",
+   "start": 520.3,
+   "end": 523.96,
+   "line": "and you're the only one who decides what comes through.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s189",
+   "start": 523.96,
+   "end": 525.52,
+   "line": "Lesson thirteen:",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s190",
+   "start": 525.52,
+   "end": 530.16,
+   "line": "the strongest thing in your shadow is the one you didn't open.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s191",
+   "start": 530.16,
+   "end": 532.4,
+   "line": "The next night at three fifteen,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8,
+     "dur": 0.8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s192",
+   "start": 532.4,
+   "end": 537.32,
+   "line": "you lift your arm, and your shadow doesn't move. You wait.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "blip",
+     "gain": -14,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s193",
+   "start": 537.32,
+   "end": 541.96,
+   "line": "Something stirs under it, and it sits. It's the white dog.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "shimmer",
+     "gain": -8,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s194",
+   "start": 541.96,
+   "end": 545.74,
+   "line": "So if you woke up tomorrow with Megumi's Ten Shadows,",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "shimmer",
+     "gain": -8,
+     "dur": 0.6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s195",
+   "start": 545.74,
+   "end": 547.94,
+   "line": "which one would you call first?",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s196",
+   "start": 547.94,
+   "end": 549.86,
+   "line": "And would you ever open the one that",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s197",
+   "start": 549.86,
+   "end": 554.58,
+   "line": "can only be stopped by killing you? Tell me in the comments.",
+   "set": null,
+   "scene": "TODO",
+   "footnote": "",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  }
+ ],
+ "music": []
+}
