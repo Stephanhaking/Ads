@@ -19,3 +19,26 @@ Regra: guardar impressões, CTR, duração média, curva (10/30/60 s), origem do
   - Antes do teste (linha de base): ~15 000 impressões, CTR ≲1,5 %, thumbnail antiga roxa com bonecos assustados, texto "What If You Had Killua's Powers in Real Life?".
 - Star Platinum, A/B "TIME IS MINE" vs "TOO FAST TO STOP": amostra ainda insuficiente.
 - Megumi: em produção (início com nome aos 0 s); vigiar curva aos 10/30/60 s e a cena do pequeno-almoço (~1:40).
+
+<!-- REGISTO:AUTO:INICIO -->
+
+## Leitura automática da API (`python3 tools/registo.py`; só leitura)
+Atualizado em 20/11/2026. Views, gostos e comentários: Data API. Duração média e origem: Analytics (dados com 2 a 3 dias de atraso). As últimas 6 colunas preenchem-se à mão com o Studio e são preservadas nas atualizações (por ID).
+
+| ID | Vídeo | Estado | Publicado | Views | Gostos | Comentários | Duração média (Analytics) | Origem do tráfego (Analytics) | Lido em | Impressões (Studio) | CTR (Studio) | Retenção 10 s | Retenção 30 s | Retenção 60 s | Notas |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Sykp2hdo9RA | What If You Had Luffy's Powers in Real Life? | public | 09/11/2026 | 20 | 0 | 0 | 4:00 (48.1 %) | pesquisa 72 %, sugeridos 22 %, página do canal 6 %, direta/outro 0 % | 20/11/2026 |  |  |  |  |  |  |
+| g_oIOiF7afg | What If You Had Saitama's Powers in Real Life? | public | 10/11/2026 | 26 | 0 | 0 | 5:40 (56.9 %) | pesquisa 88 %, página do canal 6 %, sugeridos 6 % | 20/11/2026 |  |  |  |  |  |  |
+| -2uvm2e3kFQ | What If You Had The World in Real Life? (JoJo — stopping time) | public | 16/11/2026 | 112 | 3 | 0 | 1:40 (22.8 %) | sugeridos 72 %, subscritores 18 %, direta/outro 4 %, pesquisa 4 % | 20/11/2026 |  |  |  |  |  |  |
+| MPi074l6G6c | What If You Had the Death Note in Real Life? | public | 17/11/2026 | 2 | 1 | 0 | 0:00 (0.0 %) | n/d | 20/11/2026 |  |  |  |  |  |  |
+| 4_JX_NBn_v0 | Your phone stops in mid-air (JoJo's The World) #shorts | private | 18/11/2026 | 0 | 0 | 0 | pendente (< 3 dias) | pendente (< 3 dias) | 20/11/2026 |  |  |  |  |  |  |
+| lRQVErvcQW4 | Luffy's arm stretches 4 meters. Nobody saw. #shorts | private | 18/11/2026 | 0 | 0 | 0 | pendente (< 3 dias) | pendente (< 3 dias) | 20/11/2026 |  |  |  |  |  |  |
+| YUGQPsI8-g4 | Luffy's slingshot punch hits you back #shorts | private | 18/11/2026 | 0 | 0 | 0 | pendente (< 3 dias) | pendente (< 3 dias) | 20/11/2026 |  |  |  |  |  |  |
+| OTM7VFLsJ0k | You are not Usain Bolt: 5 seconds of stopped time #shorts | private | 18/11/2026 | 0 | 0 | 0 | pendente (< 3 dias) | pendente (< 3 dias) | 20/11/2026 |  |  |  |  |  |  |
+| _MXs7H7nLwE | Luffy vs 300 million volts of lightning #shorts | private | 18/11/2026 | 0 | 0 | 0 | pendente (< 3 dias) | pendente (< 3 dias) | 20/11/2026 |  |  |  |  |  |  |
+| 6r-1IAnVOf4 | Stopping time to fight a fire, 9 seconds at a time #shorts | private | 18/11/2026 | 0 | 0 | 0 | pendente (< 3 dias) | pendente (< 3 dias) | 20/11/2026 |  |  |  |  |  |  |
+| QiI7Xj5vblw | What If You Had Killua's Powers in Real Life? (Hunter x Hunter — elect | public | 18/11/2026 | 237 | 3 | 0 | pendente (< 3 dias) | pendente (< 3 dias) | 20/11/2026 |  |  |  |  |  |  |
+| ZxE9AQn7Jck | What If You Had Star Platinum in Real Life? (Jotaro, JoJo's Bizarre Ad | public | 19/11/2026 | 7 | 0 | 0 | pendente (< 3 dias) | pendente (< 3 dias) | 20/11/2026 |  |  |  |  |  |  |
+| Ix_RHMm2f-0 | What If You Had Megumi's Ten Shadows in Real Life? | private | 20/11/2026 | 0 | 0 | 0 | pendente (< 3 dias) | pendente (< 3 dias) | 20/11/2026 |  |  |  |  |  |  |
+
+<!-- REGISTO:AUTO:FIM -->
