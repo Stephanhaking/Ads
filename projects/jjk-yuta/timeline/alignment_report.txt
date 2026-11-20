@@ -1,0 +1,49 @@
+00:01.64  replace  script: Okkotsu's  |  heard: Okotsu's
+00:12.86  replace  script: forty  |  heard: 40
+00:15.96  replace  script: fourteen  |  heard: 14
+00:20.02  replace  script: eleven forty-seven  |  heard: 1147
+00:31.74  replace  script: Orimoto  |  heard: Oramoto
+00:45.34  replace  script: special-grade  |  heard: special -grade
+00:55.68  replace  script: mum  |  heard: mom
+01:10.32  replace  script: Yuta  |  heard: you to
+01:19.58  replace  script: omelette.  |  heard: omelet.
+01:23.22  replace  script: do  |  heard: to
+01:36.62  replace  script: two:  |  heard: 2.
+01:44.06  insert   script: —  |  heard: guitar.
+02:10.96  replace  script: three:  |  heard: 3.
+02:22.40  replace  script: realise  |  heard: realize
+02:30.54  replace  script: mid-air,  |  heard: mid -air
+02:39.80  delete   script: pleased. You never find out if that was a rescue  |  heard: —
+02:55.58  replace  script: Inumaki's  |  heard: Inomaki's
+03:09.78  delete   script: made a whole classroom go quiet. You open your mouth, and the room stops. It's  |  heard: —
+03:15.68  replace  script: five:  |  heard: 5.
+03:21.58  replace  script: six,  |  heard: 6,
+03:32.72  replace  script: nineteen sixty-one,  |  heard: 1961,
+03:49.00  replace  script: twenty.  |  heard: 20.
+03:50.30  replace  script: six:  |  heard: 6.
+04:19.26  replace  script: twelve  |  heard: 12
+04:23.58  replace  script: twenty  |  heard: 20
+04:29.86  replace  script: practised  |  heard: practiced
+04:51.08  replace  script: eight:  |  heard: 8.
+04:57.22  replace  script: fifteen,  |  heard: 15,
+05:10.34  replace  script: eleven  |  heard: 11
+05:17.96  replace  script: nine:  |  heard: 9.
+05:23.76  replace  script: seventeen  |  heard: 17,
+05:44.38  replace  script: mum  |  heard: mom
+05:53.20  replace  script: ten:  |  heard: 10.
+05:59.06  replace  script: twenty  |  heard: 20,
+06:29.36  replace  script: eleven:  |  heard: 11.
+06:37.96  replace  script: twenty-five,  |  heard: 25,
+07:10.58  replace  script: twelve:  |  heard: 12,
+07:17.46  replace  script: thirty  |  heard: 30,
+07:32.80  replace  script: any more.  |  heard: anymore.
+07:34.42  replace  script: busker's  |  heard: Buskers
+07:36.16  replace  script: thirteen:  |  heard: 13.
+07:42.46  replace  script: forty,  |  heard: 40,
+07:48.12  replace  script: fourteen  |  heard: 14
+08:10.22  replace  script: swimmer's stroke, to get across. The climber's grip, to reach the roof. The driver's  |  heard: drivers
+08:15.96  replace  script: strongman's  |  heard: strong man's
+08:35.32  replace  script: Fourteen  |  heard: 14
+09:04.70  replace  script: fourteen:  |  heard: 14
+09:13.58  replace  script: eleven forty-seven,  |  heard: 1147
+09:19.36  replace  script: Yuta's  |  heard: you to
