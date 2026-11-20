@@ -1,7 +1,7 @@
 # Verificação de factos: candidato "What if you had Megumi's powers (Jujutsu Kaisen)" (19/11/2026)
 
 Regra: nada entra no guião sem fonte. Fontes secundárias (Wikipedia, imprensa, wikis de fãs); o mangá não foi lido. ⚠ = fraco, conflituoso ou por confirmar.
-Gap (19/11): oferta de longos 14 d com "Megumi" no título = 1 (a maior com 2 502 views); procura 30 d ~2,2 M (todos os formatos). Concorrência no formato: o Curious Dude fez Sukuna (266 mil) e Gojo (230 mil), mesma franquia; o Toji dele ~10 mil. Não há vídeo dele de Megumi (visto no print de 19/11; reconfirmar no dia de publicar com tools/gap_scan.py).
+Gap (19/11): oferta de longos 14 d com "Megumi" no título = 1 (a maior com 2 502 views); procura 30 d ~2,2 M (todos os formatos). Concorrência no formato: o Curious Dude fez Sukuna (266 mil) e Gojo (230 mil), mesma franquia; o Toji dele ~10 mil. CORREÇÃO (20/11): o Curious Dude JÁ fez 'What If You Had Megumi's Ten Shadows Technique?' a 04/11 (50 mil views, 8:14). O print de 19/11 só mostrava os vídeos mais recentes. Ver docs/CURIOUS_DUDE_CANAL_20NOV.md.
 
 ## A. Lore (secundário)
 | Facto | Estado | Fonte |

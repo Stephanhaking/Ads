@@ -45,3 +45,7 @@ Leitura honesta: NÃO validado.
 | Yuta | 953 | 0 | 0 | 0/2 | 1,86 |
 | Itachi, Hisoka, Maki | 0 | 0 | 0 | 0/0 | 0 (sem prova de formato) |
 Uso recomendado: filtro auxiliar, junto com o gap_scan e o julgamento; não como regra.
+
+
+### Correção (20/11)
+A 'prova de formato' do Megumi (1 vídeo >= 10 000 views de um canal pequeno) era o vídeo do Curious Dude de 04/11 (50 mil views). Antes de escolher um tema, listar TODOS os vídeos do canal de referência pela API (docs/CURIOUS_DUDE_CANAL_20NOV.md), nunca por print.
