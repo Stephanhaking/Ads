@@ -9,6 +9,7 @@ Regra: guardar impressões, CTR, duração média, curva (10/30/60 s), origem do
 | Death Note | 18/11 | 6 | n/a | 1 | n/a | n/a | formato saturado, 3 clones |
 | Killua | 18/11 23:09 | 16 100 (20/11 13:31) | 0,7 % (114 cliques) | 271 (Studio) | 1:16 desde impressões; 1:20 (18,7 %) no total | sugeridos 81,4 %, navegação 9,8 %, pesquisa 5,9 %, direta 1,3 %, outro 1,7 % | corrigido: o CTR real é 0,7 %, não ≲1,5 %; curva: 100/65/51/45/37/31/20/12/8 % aos 0/10/25/45/55/65/150/240/430 s; nome do poder aos 7 s, 1.ª eletricidade aos ~23 s; A/B de thumbnail começou depois das ~15 000 impressões |
 | Star Platinum | 19/11 19:53 | 40 (13 h) | 2,5 % (1 clique) | 4 | n/a (0:21, n=4) | pesquisa 75 %, navegação 25 % | início novo (nome aos 0 s); A/B de thumbnail em curso |
+| Megumi | 20/11 (carregado privado; publicação pelo utilizador) | por obter | por obter | por obter | por obter | por obter | ID Ix_RHMm2f-0; início com nome aos 0 s; 10 PASS; vigiar curva aos 10/30/60 s e a cena do pequeno-almoço (~1:50) |
 
 ## Experiências em curso
 - Killua, A/B de thumbnail (iniciado 20/11 pelo utilizador, hora por registar): 3 variantes, todas com o mesmo texto "TOO FAST TO SEE", fundo azul-noite com relâmpagos; não mudar o título durante o teste.
