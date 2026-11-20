@@ -59,7 +59,7 @@ const kin = (U, t, line, sec) => { const [bg, ac] = KCOL[sec] || ['#15181e', '#f
 // "IN THE STORY" lore card: a title and up to three short lines; art = optional svg drawn on the right
 const lore = (U, t, title, lines, art = '', col = BLUE) => { const k = clamp(t / 0.4);
   full(U, `<rect width="1920" height="1080" fill="#0b0d1c"/><rect x="0" y="0" width="1920" height="1080" fill="url(#none)"/>${art}`);
-  big(U, `<div style="opacity:${f(k)}"><div style="font:800 34px 'IBM Plex Mono';color:${col};letter-spacing:.08em">IN THE STORY · JUJUTSU KAISEN</div><div style="${TXT(104)};margin:18px 0 26px">${title}</div>${lines.map((l, i) => `<div style="font:700 42px Inter;color:#dfe6f2;margin:10px 0;opacity:${f(clamp((t - 0.4 - i * 0.5) / 0.3))}">· ${l}</div>`).join('')}</div>`, 160, 250); };
+  big(U, `<div style="opacity:${f(k)};max-width:1080px"><div style="font:800 34px 'IBM Plex Mono';color:${col};letter-spacing:.08em">IN THE STORY · JUJUTSU KAISEN</div><div style="${TXT(104)};margin:18px 0 26px">${title}</div>${lines.map((l, i) => `<div style="font:700 42px Inter;color:#dfe6f2;margin:10px 0;opacity:${f(clamp((t - 0.4 - i * 0.5) / 0.3))}">· ${l}</div>`).join('')}</div>`, 160, 250); };
 // stat card: horizontal bars [{v, t, lab, c}] with a title
 const bars = (title, rows, k = 1, max) => { const mx = max || Math.max(...rows.map((r) => r.v)), W = 1100;
   return `<rect width="1920" height="1080" fill="#0e1424"/><text x="960" y="290" text-anchor="middle" font-family="Inter" font-weight="900" font-size="46" fill="#fff">${title}</text>` + rows.map((r, i) => { const y = 400 + i * 150, w = Math.max(8, W * r.v / mx * k);
@@ -75,7 +75,7 @@ const S = {};
 S.open = (U, t, info, tt, k, n, line) => {
   if (has(line, 'hungry') && t > info.dur * 0.45) { const B = M.hallway(tt); frame(U, B, { z: 1.05, cx: 960, cy: 560 }, [P(380, B.FLOOR, P_STAND, 'worried', { look: 0.9 })], M.serpent([[2200, 800], [1800, 760], [1500, 820], [1200, 740], [900, 800], [700, 720]], 90, tt, { tongue: true }), { fxIn: true }); L1(U, t, 'LATER · DAY 3', 0.2, COL.yellow); chrome(U, t, info, D(3, '9:00 PM', ST())); return; }
   if (has(line, 'car park')) { const B = M.collapse(tt, { lift: 0.6 }); frame(U, B, { z: 1.0, cx: 1200, cy: 560 }, [P(700, B.FLOOR, HAND_DOWN, 'worried', { look: 0.9 })], M.elephant(1720, B.FLOOR, 0.62, tt, 1) + dogs(1100, B.FLOOR, 0.6, tt, 'sniff'), { fxIn: true }); L1(U, t, 'LATER · DAY 40', 0.2, COL.yellow); chrome(U, t, info, D(40, '11:40 PM', ST())); return; }
-  if (has(line, 'Sukuna', 'tamed', 'tempted')) { const B = M.nightBalcony(tt); frame(U, B, { z: 1.25, cx: 960, cy: 600 }, [P(640, B.FLOOR, P_STAND, 'worried', { look: 0.9 })], M.pool(1000, B.FLOOR + 6, 640, tt) + M.wheel(1000, B.FLOOR - 140, 170, tt * 14, 0.9), { fxIn: true }); L1(U, t, 'IN THE STORY · ONLY SUKUNA EVER TAMED IT', 0.2, GOLD); chrome(U, t, info, D(20, '2:00 AM', ST(true, 'SHADOW · STIRRING'))); return; }
+  if (has(line, 'Sukuna', 'tamed', 'tempted')) { const B = M.nightBalcony(tt); frame(U, B, { z: 1.25, cx: 960, cy: 600 }, [P(560, B.FLOOR, P_STAND, 'worried', { look: 0.9 })], M.pool(1200, B.FLOOR + 6, 600, tt) + M.wheel(1200, B.FLOOR - 140, 160, tt * 14, 0.9), { fxIn: true }); L1(U, t, 'IN THE STORY · ONLY SUKUNA EVER TAMED IT', 0.2, GOLD); chrome(U, t, info, D(20, '2:00 AM', ST(true, 'SHADOW · STIRRING'))); return; }
   if (has(line, 'three fifteen') && t < 1.8) { clock315(U, t, info); return; }
   const B = SET.bedroom(tt, { time: 'night' }); const FL = 820; B.back += M.moon(1560, 250, 46);
   const intro = has(line, 'Megumi', 'real life', 'alive');
@@ -224,15 +224,15 @@ S.suit = (U, t, info, tt, k, n, line) => { const B = J.cafe(tt); const FL = B.FL
   frame(U, B, cam, ppl, fx, { fxIn: true }); chrome(U, t, info, D(15, '11:00 AM', ST())); };
 // day 20: the wheel stirs in the shadow (the strongest one is never shown)
 S.wheel = (U, t, info, tt, k, n, line) => {
-  const wheelArt = M.wheel(1450, 600, 230, tt * 18, 0.95);
+  const wheelArt = M.wheel(1600, 640, 190, tt * 18, 0.95);
   if (has(line, 'Mahoraga', 'adapts', 'strongest shikigami', 'wheel on its back')) { lore(U, t, 'THE STRONGEST ONE', ['MAHORAGA: THE STRONGEST SHIKIGAMI OF THE TECHNIQUE', 'IT ADAPTS TO WHATEVER HITS IT', 'THE WHEEL ON ITS BACK TURNS AS IT LEARNS'], wheelArt, GOLD); chrome(U, t, info, D(20, '2:00 AM', ST(true, 'SHADOW · STIRRING'))); return; }
   if (has(line, 'ritual', 'dead', 'tamed it', 'the only one')) { lore(U, t, 'THE RITUAL', ['IT ENDS ONLY WHEN THE TARGET IS DEAD', 'OR WHEN IT IS TAMED', 'THE ONLY ONE WHO EVER TAMED IT: SUKUNA'], wheelArt, GOLD); chrome(U, t, info, D(20, '2:00 AM', ST(true, 'SHADOW · STIRRING'))); return; }
   const B = M.nightBalcony(tt); const FL = B.FLOOR; let cam = { z: 1.2, cx: 960, cy: 600 };
   const stop = has(line, 'close your eyes', 'stops turning', "don't tell", 'Lesson');
-  const hero = P(620, FL, stop ? P_STAND : HAND_DOWN, stop ? 'neutral' : 'worried', { look: 0.9 });
+  const hero = P(520, FL, stop ? P_STAND : HAND_DOWN, stop ? 'neutral' : 'worried', { look: 0.9 });
   const rot = stop ? 40 + 30 * (1 - clamp(t / info.dur)) : tt * 18;
-  let fx = M.pool(980, FL + 6, 640, tt) + M.wheel(980, FL - 120, 160, rot, stop ? 0.5 * (1 - clamp(t / info.dur)) + 0.2 : 0.85);
-  if (has(line, 'something stirs')) { cam = { z: 1.6, cx: 980, cy: 700 }; L1(U, t, 'NOT A DOG · NOT A TOAD', 0.3, GOLD); }
+  let fx = M.pool(1200, FL + 6, 600, tt) + M.wheel(1200, FL - 130, 150, rot, stop ? 0.5 * (1 - clamp(t / info.dur)) + 0.2 : 0.85);
+  if (has(line, 'something stirs')) { cam = { z: 1.6, cx: 1200, cy: 700 }; L1(U, t, 'NOT A DOG · NOT A TOAD', 0.3, GOLD); }
   if (has(line, 'stops turning', 'close your eyes')) L1(U, t, 'THE WHEEL · STOPS', 0.3, GOLD);
   if (has(line, 'Lesson', 'one door')) lesson(U, t, 10, 'ONE DOOR YOU CAN\'T WALK BACK THROUGH');
   frame(U, B, cam, [hero], fx, { fxIn: true }); chrome(U, t, info, D(20, '2:00 AM', ST(true, 'SHADOW · STIRRING'))); };
@@ -272,14 +272,14 @@ S.d40 = (U, t, info, tt, k, n, line) => {
   const hero = P(hx, FL, k === RUNK ? run(tt) : k >= SPREAD ? HAND_DOWN : k >= TURN && k < SPREAD ? HAND_DOWN : P_STAND, k >= OUTK ? 'neutral' : 'worried', { look: 0.9 });
   const ppl = [hero];
   let fx = M.pool(hx + 40, FL + 4, k >= SPREAD ? 900 + (k === SPREAD ? clamp(t / info.dur) * 700 : 700) : 320, tt);
-  if (k >= TURN && k < SPREAD) fx += M.wheel(hx + 40, FL - 110, 120, k >= TAKE ? 30 : tt * 22, k >= TAKE ? 0.6 * (1 - clamp(t / info.dur)) : 0.8);
+  if (k >= TURN && k < SPREAD) fx += M.pool(hx + 300, FL + 4, 300, tt) + M.wheel(hx + 300, FL - 110, 110, k >= TAKE ? 30 : tt * 22, k >= TAKE ? 0.6 * (1 - clamp(t / info.dur)) : 0.8);
   if (k >= DOGS && k < OUTK) fx += dogs(1250, FL, 0.6, tt, 'sniff');
   if (k >= TOAD && k < OUTK) fx += M.toad(1050, FL, 0.75, tt, { tongue: k === TOAD ? clamp(t / 0.8) * 0.9 : 0.5 });
   if (k >= SERP && k < OUTK) fx += M.serpent([[900, FL - 10], [1150, FL - 60], [1400, FL - 20], [1650, FL - 70]], 60, tt);
   if (k >= ELE) fx += M.elephant(1750, FL, 0.6, tt, 1);
   if (k >= OUTK) for (let i = 0; i < 11; i++) ppl.push(Q(900 + i * 95, FL, i % 3 ? P_STAND : P_TIRED, SEARCH[i % 3], i % 2 ? 'smile' : 'neutral', { h: 260 + (i % 3) * 20, flip: true }));
   if (has(line, 'collapses', 'eleven people underneath')) { L1(U, t, '11 PEOPLE · UNDER THE SLAB', 0.3, COL.red); cam = { z: 1.15, cx: 1300, cy: 600 }; }
-  if (has(line, 'feel it turning', 'lift the slab')) { cam = { z: 1.6, cx: hx + 40, cy: FL - 200 }; L1(U, t, 'IT COULD LIFT IT · ONE HAND', 0.3, GOLD); }
+  if (has(line, 'feel it turning', 'lift the slab')) { cam = { z: 1.5, cx: hx + 160, cy: FL - 200 }; L1(U, t, 'IT COULD LIFT IT · ONE HAND', 0.3, GOLD); }
   if (has(line, 'take it away')) L1(U, t, 'NOT · THIS · ONE', 0.3, GOLD);
   if (has(line, 'spread your shadow', 'big enough')) L1(U, t, 'THE GARDEN · OVER THE RUBBLE', 0.3, BLUE);
   if (has(line, 'dogs find')) L1(U, t, 'DOGS · BY SMELL', 0.3, '#fff');
