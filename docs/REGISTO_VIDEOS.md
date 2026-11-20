@@ -11,6 +11,10 @@ Regra: guardar impressões, CTR, duração média, curva (10/30/60 s), origem do
 | Star Platinum | 19/11 19:53 | 40 (13 h) | 2,5 % (1 clique) | 4 | n/a (0:21, n=4) | pesquisa 75 %, navegação 25 % | início novo (nome aos 0 s); A/B de thumbnail em curso |
 
 ## Experiências em curso
-- Killua, A/B de thumbnail (iniciado 20/11 pelo utilizador): variantes por registar; ver CTR e quota de tempo de visualização de cada uma; não mudar o título durante o teste.
+- Killua, A/B de thumbnail (iniciado 20/11 pelo utilizador, hora por registar): 3 variantes, todas com o mesmo texto "TOO FAST TO SEE", fundo azul-noite com relâmpagos; não mudar o título durante o teste.
+  - V1 "corrida": boneco de perfil a correr para a direita, cabelo branco, rasto de imagens fantasma, relâmpago horizontal; cara pequena; texto no canto superior esquerdo.
+  - V2 "agachado + aura": boneco de frente, agachado, punhos com relâmpagos, olhos brancos grandes, silhueta gigante de relâmpagos atrás, pedras a saltar; o mais carregado de detalhe.
+  - V3 "voo": boneco em diagonal com a cabeça grande e cabelo branco enorme, olhos brancos, braço esticado, clone-fantasma ao fundo; o texto maior e mais legível.
+  - Antes do teste (linha de base): ~15 000 impressões, CTR ≲1,5 %, thumbnail antiga roxa com bonecos assustados, texto "What If You Had Killua's Powers in Real Life?".
 - Star Platinum, A/B "TIME IS MINE" vs "TOO FAST TO STOP": amostra ainda insuficiente.
 - Megumi: em produção (início com nome aos 0 s); vigiar curva aos 10/30/60 s e a cena do pequeno-almoço (~1:40).
