@@ -19,3 +19,10 @@ Regra: guardar impressões, CTR, duração média, curva (10/30/60 s), origem do
   - Antes do teste (linha de base): ~15 000 impressões, CTR ≲1,5 %, thumbnail antiga roxa com bonecos assustados, texto "What If You Had Killua's Powers in Real Life?".
 - Star Platinum, A/B "TIME IS MINE" vs "TOO FAST TO STOP": amostra ainda insuficiente.
 - Megumi: em produção (início com nome aos 0 s); vigiar curva aos 10/30/60 s e a cena do pequeno-almoço (~1:40).
+
+## Hora de publicação (20/11/2026)
+- Público (Analytics, desde 1/10, dados parciais): EUA 29 views (~71 %), Reino Unido 12 (~29 %).
+- Hora local do utilizador = UTC+2. Hora em Nova Iorque = UTC-5 (inverno): local 23:00 = 16:00 em Nova Iorque = 13:00 na Califórnia.
+- Nossos: JoJo 19:47 local (12:47 NY), Star Platinum 19:53 local (12:53 NY): horas de meio-dia nos EUA, ritmo fraco; Killua 23:09 local (16:09 NY): 11 mil impressões no 1.º dia. n=4, não é prova.
+- Curious Dude (UTC → NY): 14:37, 21:21, 15:26, 16:38, 16:03, 12:56, 19:42, 21:16, 15:04, 00:03; a maioria entre as 15:00 e as 21:00 em Nova Iorque (22:00 a 04:00 local do utilizador).
+- Regra para testar: publicar entre as 22:00 e as 00:00 locais (15:00 a 17:00 em Nova Iorque) e anotar a hora exata.
