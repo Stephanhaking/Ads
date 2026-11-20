@@ -25,3 +25,23 @@ Curious Dude (4 870 inscritos): Sukuna 266 mil, Sharingan 232 mil, Gojo 230 mil,
 5. Oferta qualificada: concorrentes recentes fortes (>10 000 views) pesam muito; concorrentes fracos pesam pouco; zero concorrentes só é bom se o critério 1 for positivo.
 6. Penalizar temas "da mesma família" de um tema que já falhou no nosso canal.
 7. Backtest: aplicar a nota nova aos 6 vídeos acima e aos do Curious Dude; só usar se ordenar Killua > JoJo > Star Platinum > Death Note e colocar Sukuna/Gojo/Sharingan no topo.
+
+## Resultado da construção (20/11/2026): tools/topic_score.py + backtest (docs/backtest_topics_20NOV.json)
+Ferramenta pronta (2 pesquisas por tema, ~210 unidades). Colunas: procura 90 d de vídeos médios (4 a 20 min) com a palavra-chave no título (excluindo o canal do próprio vídeo); n; vídeos com >= 10 000 views; destes, de canais com < 20 000 inscritos; canais outlier (vídeo >= 3x a mediana do canal); oferta fresca forte (>= 2 000 views, 14 d) e fraca.
+### Backtest (12 vídeos, datas de referência = dia da publicação)
+Spearman nota vs log(views): todos 0,63 (n=12); só nossos -0,43 (n=6); só Curious Dude 0,83 (n=6).
+Leitura honesta: NÃO validado.
+- Antes de novembro quase não havia vídeos do formato; para Killua, Death Note e Deku a ferramenta não encontrou nenhum (nota 0). O Killua foi o nosso melhor em impressões: a falta de concorrência previu impressões, a falta de "prova de formato" não previu nada.
+- O resultado dos nossos vídeos depende mais do canal (6 inscritos, CTR e retenção fracos) do que do tema; por isso o backtest dos nossos 6 não mede a qualidade do tema.
+- Dos 6 do Curious Dude, a nota acertou Gojo e Sukuna no topo, mas deu só 2,56 ao Sharingan (232 mil views) e 0 ao Deku. n=6 não tem significância.
+- As views dos concorrentes são as de hoje (inflam o passado).
+### Notas de hoje (data de referência 20/11, sem validar)
+| Tema | Procura 90 d | >=10k | Outliers | Oferta fresca forte/fraca | Nota |
+|---|---|---|---|---|---|
+| Mahito | 215 244 | 2 | 2 | 1/0 | 6,4 |
+| Megumi | 49 808 | 1 | 0 | 0/0 | 4,7 |
+| Gojo | 342 590 | 4 | 4 | 2/18 | 2,94 (saturado) |
+| Sukuna | 287 514 | 1 | 1 | 2/5 | 1,98 |
+| Yuta | 953 | 0 | 0 | 0/2 | 1,86 |
+| Itachi, Hisoka, Maki | 0 | 0 | 0 | 0/0 | 0 (sem prova de formato) |
+Uso recomendado: filtro auxiliar, junto com o gap_scan e o julgamento; não como regra.
