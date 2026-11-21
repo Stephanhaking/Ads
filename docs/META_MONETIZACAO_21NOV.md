@@ -32,3 +32,12 @@ Contas: 4 000 h com duração média de ~2,3 min equivalem a ~105 mil views.
 ## Riscos a verificar antes de pedir a monetização
 - Política de conteúdo repetitivo/não autêntico com voz de IA e formato em série: ler a página oficial do YouTube.
 - Direitos de autor: uso de personagens de anime (fan-made); o aviso está na descrição, mas não garante monetização.
+
+## Critério de "promissor" na revisão de 21/12 (combinado com o utilizador; fixado de antemão)
+O formato conta como promissor se, nos vídeos publicados entre 21/11 e 21/12, pelo menos DOIS destes se cumprirem:
+1. Pelo menos 2 vídeos com mais de 5 000 impressões nas primeiras 48 h.
+2. CTR médio >= 2,5 % em vídeos com mais de 1 000 impressões.
+3. Retenção aos 30 s >= 60 % (hoje ~45 % no Killua) e duração média >= 30 % do vídeo.
+4. Pelo menos 1 vídeo com mais de 10 000 views.
+Se não, mudar. O que se muda, por ordem: (a) embalagem (thumbnail/título) se o problema for CTR; (b) início e ritmo se for retenção; (c) franquia/tema se faltarem impressões; (d) só no fim, o formato ou o nicho.
+Regra: nenhuma mudança de formato antes de 21/12, exceto a porta dos 7 dias (que só mexe na embalagem). Julgar por CTR, retenção e impressões, não só pelas views (amostras pequenas).
