@@ -1,0 +1,4 @@
+# 2. Evolução das views (24 h, 48 h, 7 d, 14 d)
+Não se pode reconstruir o passado: a API dá só o total atual. Criei **tools/ref_velocity.py**: `snap` guarda uma foto de todos os vídeos do Curious Dude, ZodaVerse, IFANIME e nossos em docs/data/ref_velocity.csv (~8 unidades por corrida); `report` mostra, por vídeo, as views à idade mais próxima de 24 h, 48 h, 7 d, 14 d (com tolerância ±6/12/24/24 h; senão "-"). Primeira foto feita a 21/11 10:04 UTC (58 linhas). Para vídeos novos correr `snap` a cada 6 a 12 h nos primeiros 2 dias e depois 1×/dia. Vídeos que podemos medir bem: Doflamingo (20/11 17:41), Mahito do ZodaVerse (20/11), os nossos novos (Megumi, Yuta). O Yuta do ZodaVerse (18/11 00:50) só terá 7 d (25/11) e 14 d (02/12). Falta quem corra isto: **posso agendar** (precisa da tua autorização); sem isso só há fotos quando eu correr.
+
+Legenda: FACTO / HIPÓTESE / ⚠ não confirmado. Documento completo: docs/SEGUIMENTO_ZODA_CURIOUS_21NOV.md

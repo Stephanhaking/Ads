@@ -1,0 +1,10 @@
+# 6. Miniaturas em tamanho real (guardadas)
+- **Guardadas localmente em refs_local/thumbs/** (1280×720, 25 ficheiros: CD 11, Zoda 7, nossas 6) com 3 folhas de comparação (sheet_A_cd_vs_nos, sheet_B_zoda, sheet_C_feed_size) **e ignoradas pelo git** (.gitignore). Razão: o repositório é **público** e as imagens são de terceiros (direitos de autor); só ficam no contentor desta sessão e **perdem-se quando ele for reclamado**. Se quiseres mantê-las, diz-me onde (por exemplo, uma pasta privada do Drive); não as publico sem o teu OK.
+- **Observações (HIPÓTESE, lado a lado):**
+  1. As nossas atuais (JoJo, Star Platinum, Saitama, Killua) **já são visualmente muito próximas das do CD** (boneco preto, arte anime, cores saturadas, texto grosso). O que o relatório anterior dizia ("roxo/azul monocromáticas") **está desatualizado**: o estilo já não explica a diferença de CTR, mas ⚠ o CTR do JoJo/Killua foi medido com a miniatura antiga.
+  2. **Texto:** CD usa 1 a 4 palavras bem grandes com o poder a cor (SUKUNA POWERS, WHAT IF YOU HAD THE RINNEGAN?). Em tamanho de feed (200 px) o do ZodaVerse Yuta é fino e cinzento, ilegível; o "TIME IS MINE" nosso não diz "what if" nem mostra o boneco/ícone claramente.
+  3. **Zoda Mahoraga (148 mil):** o mais simples do conjunto: 2 cores (laranja/preto), 1 linha de texto no topo, 1 silhueta monstruosa e 1 boneco no centro. "ADAPT LIKE MAHORAGA" é promessa/benefício, sem "what if". HIPÓTESE: simplicidade e promessa podem pesar mais que o estilo; outras miniaturas dele com o mesmo estilo (Sukuna 6 mil, Naruto 2,8 mil) não repetiram, por isso **não é lei**.
+  4. **Boneco:** nos hits do CD o boneco está em primeiro plano, grande, com olhos/olhar visíveis; no nosso Killua o rosto é pequeno e no Star Platinum o protagonista é a arte da personagem, não o boneco.
+- Conclusões fortes ainda não: sem CTR por miniatura (só o A/B do Studio nosso) não podemos medir qual traço funciona.
+
+Legenda: FACTO / HIPÓTESE / ⚠ não confirmado. Documento completo: docs/SEGUIMENTO_ZODA_CURIOUS_21NOV.md
