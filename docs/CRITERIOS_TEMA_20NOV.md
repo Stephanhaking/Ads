@@ -20,7 +20,7 @@ Curious Dude (4 870 inscritos): Sukuna 266 mil, Sharingan 232 mil, Gojo 230 mil,
 ## Critérios propostos (a validar por backtest antes de confiar)
 1. Prova de formato: nos últimos 90 dias, existem vídeos longos "what if you had X's powers" (de qualquer canal) com mais de 10 000 views? Contar quantos e de canais com menos de 10 000 inscritos.
 2. Outliers: pelo menos 2 canais com um vídeo do tema acima de 3 vezes a mediana do seu canal.
-3. Momento da franquia: há temporada ou capítulos novos agora? (Jujutsu Kaisen está na temporada 3 segundo notícias de 11/2026, ⚠ confirmar.)
+3. Momento da franquia: há temporada ou capítulos novos agora? (CORREÇÃO 21/11: a temporada 3 de JJK estreou em 8/1/2026 e a parte 1 acabou em março; em novembro não há episódios novos.)
 4. Procura do personagem em vídeos LONGOS (filtrar duração), não só total.
 5. Oferta qualificada: concorrentes recentes fortes (>10 000 views) pesam muito; concorrentes fracos pesam pouco; zero concorrentes só é bom se o critério 1 for positivo.
 6. Penalizar temas "da mesma família" de um tema que já falhou no nosso canal.

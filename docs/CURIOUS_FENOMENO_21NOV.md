@@ -25,3 +25,26 @@ Velocidade desde a publicação (views nas primeiras 24/48/72 h). Para isso: pyt
 ## Consequências para os nossos temas (⚠ hipóteses)
 - Preferir poderes de topo no cluster JJK/Naruto (Yuta é de grau especial e rival de Gojo; Mahoraga é pedido nos comentários).
 - O nosso Megumi (reserva) pode ter outro ângulo: Mahoraga.
+
+## Contexto na altura de cada publicação (21/11/2026; ~2 400 unidades de quota)
+Procura = soma das views/dia (views atuais ÷ dias desde a publicação) dos 25 vídeos mais vistos de "<nome> powers" nos 30 dias ANTES da publicação, sem os do Curious Dude (todos os formatos, inclui Shorts). Oferta = vídeos médios (>= 4 min) "what if you had <nome>" nos 14 dias antes, e maior views entre eles.
+| Tema | Resultado (views/dia) | Procura/dia | Concorrentes 14 d (maior) |
+|---|---|---|---|
+| Gojo | 11 673 | 764 785 | 0 |
+| Sukuna | 14 365 | 701 846 | 1 (3 103) |
+| Sharingan | 14 186 | 223 056 | 0 |
+| Megumi | 3 109 | 171 747 | 0 |
+| Toji | 3 127 | 498 904 | 0 |
+| Goku | 6 924 | 2 632 531 | 4 (3 670) |
+| Luffy | 2 553 | 2 032 892 | 8 (4 261) |
+| Deku | 1 672 | 783 681 | 0 |
+| Attack on Titan | 2 092 | 978 057 | 4 (4 289) |
+| Rinnegan | 13 757 | 406 985 | 4 (245) |
+Leitura:
+- A procura (todos os formatos) NÃO separa os hits dos fracos: os dois temas com mais procura (Goku e Luffy) ficaram atrás de Gojo, Sukuna, Sharingan e Rinnegan, que tinham procura média ou baixa.
+- A oferta também não: Megumi, Toji e Deku tinham 0 concorrentes e foram fracos; Rinnegan tinha 4 (fracos) e foi hit.
+- Nenhum dos 10 temas tinha concorrente forte (>= 5 000 views) nos 14 dias anteriores.
+- Isto confirma o backtest do topic_score: as nossas métricas de procura e oferta não explicam o que ele consegue.
+- CORREÇÃO: dissemos que Jujutsu Kaisen estava em temporada nova. A temporada 3 (Culling Game, parte 1) estreou a 8/1/2026 e a parte 1 acabou a ~26/3/2026 (fontes divergem na data do ep. 11; https://www.animenewsnetwork.com/news/2025-11-07/jujutsu-kaisen-season-3-the-culling-game-part-1-anime-debuts-on-january-8/.230741 ; https://www.gamesradar.com/entertainment/anime-shows/jujutsu-kaisen-season-3-release-date-time-schedule-crunchyroll/). Em outubro e novembro de 2026 NÃO havia episódios novos; o "momento da franquia" não explica os hits de JJK. Data da próxima parte: não confirmada.
+- Títulos: os dois dele com parêntesis (Goku, Toji) ficaram abaixo dos hits; os nossos Killua, JoJo e Star Platinum também tinham parêntesis. n pequeno ⚠.
+- O que provavelmente falta (não observável por API): embalagem (thumbnail), empurrão do algoritmo e a "aura" do poder. Próximo passo: comparar as 11 thumbnails dele (o utilizador envia as dos 3 primeiros vídeos e do Sukuna).
