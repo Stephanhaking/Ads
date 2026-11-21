@@ -48,3 +48,25 @@ Leitura:
 - CORREÇÃO: dissemos que Jujutsu Kaisen estava em temporada nova. A temporada 3 (Culling Game, parte 1) estreou a 8/1/2026 e a parte 1 acabou a ~26/3/2026 (fontes divergem na data do ep. 11; https://www.animenewsnetwork.com/news/2025-11-07/jujutsu-kaisen-season-3-the-culling-game-part-1-anime-debuts-on-january-8/.230741 ; https://www.gamesradar.com/entertainment/anime-shows/jujutsu-kaisen-season-3-release-date-time-schedule-crunchyroll/). Em outubro e novembro de 2026 NÃO havia episódios novos; o "momento da franquia" não explica os hits de JJK. Data da próxima parte: não confirmada.
 - Títulos: os dois dele com parêntesis (Goku, Toji) ficaram abaixo dos hits; os nossos Killua, JoJo e Star Platinum também tinham parêntesis. n pequeno ⚠.
 - O que provavelmente falta (não observável por API): embalagem (thumbnail), empurrão do algoritmo e a "aura" do poder. Próximo passo: comparar as 11 thumbnails dele (o utilizador envia as dos 3 primeiros vídeos e do Sukuna).
+
+## As thumbnails dele lado a lado (prints de 21/11; leitura minha, ⚠ hipóteses)
+| Vídeo | Resultado | Cores dominantes | Foco principal | Notas |
+|---|---|---|---|---|
+| Gojo | hit (240 mil) | roxo/rosa + ciano | rosto de Gojo (arte) + boneco de capuz ciano a esticar a mão; símbolo do infinito | contraste quente/frio |
+| Sukuna | hit (277 mil) | vermelho/rosa + ciano | rosto de Sukuna (arte) + boneco de capuz ciano; "SUKUNA POWERS" enorme | contraste quente/frio |
+| Sharingan | hit (249 mil) | vermelho + roxo + ciano | olho Sharingan gigante + boneco de capuz ciano | contraste quente/frio |
+| Rinnegan | hit (57 mil em 4 d) | roxo monocromático | olhos Rinnegan no boneco, mão esticada | sem ciano, mas o foco são os olhos |
+| Megumi | fraco (51 mil) | roxo monocromático | criatura pálida enorme, boneco com mãos juntas, lobos, muita coisa | ocupado, sem contraste |
+| Toji | fraco (45 mil) | cinza/preto + vermelho | boneco com espada ensanguentada, ícones de armas | sangue, escuro |
+| Attack on Titan | fraco (14 mil) | castanho/laranja | Titã colossal, boneco com espada ensanguentada | sangue, tom sujo |
+| Goku | médio (87 mil) | amarelo/preto | Goku super saiyajin | monocromático quente |
+| Luffy | fraco (26 mil) | vermelho/amarelo | colagem de painéis | vários painéis |
+| Deku | fraco (14 mil) | verde/preto | Deku | verde dominante |
+| Doflamingo | novo | rosa/magenta | Doflamingo, dinheiro, ONU | |
+Observações possíveis (n pequeno):
+1. Os 3 hits clássicos têm o MESMO boneco (capuz ciano) contra uma cor quente (vermelho/rosa) = contraste complementar. Os fracos são mais monocromáticos (Megumi, Deku, Goku) ou escuros (Toji, AoT).
+2. Os hits têm UM foco canónico que os fãs reconhecem de relance (rosto de Gojo, rosto de Sukuna, olho Sharingan). Nos fracos o foco é difuso (colagem, armas, lobos, vários elementos).
+3. Os dois fracos com sangue e armas (Toji, AoT) ficam nos mais baixos; os hits são limpos. ⚠ pode ser coincidência.
+4. O Rinnegan (hit) é monocromático roxo, por isso a regra do contraste não é absoluta.
+5. O comprimento do texto não separa: "SUKUNA POWERS" e "WHAT IF YOU HAD THE SHARINGAN?" são ambos hits.
+Aplicação ao Yuta: a "C" (STEAL THEIR POWERS) tem a Rika como foco canónico, cartões de várias cores sobre fundo roxo; vale testar uma versão com contraste quente/frio (por exemplo, um cartão ou luz laranja/vermelha contra o fundo azul-roxo) e menos elementos.
