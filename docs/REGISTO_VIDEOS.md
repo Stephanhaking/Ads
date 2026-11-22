@@ -3,14 +3,14 @@ Regra: guardar impressões, CTR, duração média, curva (10/30/60 s), origem do
 
 | Vídeo | Publicado | Impressões | CTR | Views | Duração média | Origem (API) | Nota |
 |---|---|---|---|---|---|---|---|
-| Luffy | 09/11 | 84 | 6,0 % | 19 | 4:11 (50 %) | pesquisa | amostra mínima |
-| Saitama | 10/11 | 59 | 10,2 % | 17 | 5:03 (50 %) | pesquisa | amostra mínima |
+| Luffy | 09/11 | 312 (22/11) | 9,0 % | 52 | 3:03 (36 %) | sugeridos 32, pesquisa 19 | CTR alto com poucas impressões e muita pesquisa |
+| Saitama | 10/11 | 466 (22/11) | 10,7 % | 97 | 3:11 (31 %) | sugeridos 48, pesquisa 40 | CTR alto com poucas impressões e muita pesquisa |
 | JoJo The World | 16/11 19:47 | 6 100 | 0,8 % (mesmo padrão do Killua: thumbnail antiga roxa) | 110 (API: 96 a 20/11) | 1:40 (22,8 %) | sugeridos 72 % (20,8 %), subscritores 18 % (36,9 %), pesquisa 4 % (2,2 %) | promessa aos 37,7 s; queda ~55 % aos 30 s (via Ifsuperhero) |
 | Death Note | 18/11 | 6 | n/a | 1 | n/a | n/a | formato saturado, 3 clones |
-| Killua | 18/11 23:09 | 16 100 (20/11 13:31) | 0,7 % (114 cliques) | 271 (Studio) | 1:16 desde impressões; 1:20 (18,7 %) no total | sugeridos 81,4 %, navegação 9,8 %, pesquisa 5,9 %, direta 1,3 %, outro 1,7 % | corrigido: o CTR real é 0,7 %, não ≲1,5 %; curva: 100/65/51/45/37/31/20/12/8 % aos 0/10/25/45/55/65/150/240/430 s; nome do poder aos 7 s, 1.ª eletricidade aos ~23 s; A/B de thumbnail começou depois das ~15 000 impressões |
+| Killua | 18/11 23:09 | 16 800 (22/11 09:02; eram 16 100 a 20/11 13:31) | 0,8 % | ~300 (194 sugeridos, 83 navegação, 25 outro) | 1:16 (17 %) | sugeridos 65 %, navegação 28 %; 100 % visitantes novos; EUA 22 %, Filipinas 8 % | distribuição quase parada (+700 impressões em ~20 h); A/B de 3 thumbnails 'TOO FAST TO SEE' desde 20/11: CTR marginal estimado ~2 a 4 % ⚠ (conta crua), falta o painel do A/B |
 | Star Platinum | 19/11 19:53 | 81 (20/11 16:52; eram 40 às 09:11) | 1,2 % (1 clique) | 12 (Studio) | n/a | por obter; 11 de 12 views NÃO vêm de impressões | ~5 impressões/hora; início novo (nome aos 0 s); A/B de thumbnail em curso |
 | Megumi | 20/11 (carregado privado; publicação pelo utilizador) | por obter | por obter | por obter | por obter | por obter | ID Ix_RHMm2f-0; início com nome aos 0 s; 10 PASS; vigiar curva aos 10/30/60 s e a cena do pequeno-almoço (~1:50) |
-| Yuta | por publicar (planeado 21/11 ~23:00 hora do utilizador) | por obter | por obter | por obter | por obter | por obter | ID PTIxekLYfNU (privado); nome do poder aos 0 s; 10 PASS; 3 thumbnails (A vermelha, B roxa, C STEAL THEIR POWERS); anotar hora exata e medir às 24 h |
+| Yuta | 21/11 23:00 (hora do utilizador; 21:00 UTC) | 37 (22/11 09:01, ~10 h) | 5,4 % (2 cliques) | 6 | n/a | navegação 33 %, sugeridos 33 %, páginas do canal 17 % | A/B em curso: STEAL THEIR POWERS vs vermelha; amostra insuficiente |
 
 ## Experiências em curso
 - Killua, A/B de thumbnail (iniciado 20/11 pelo utilizador, hora por registar): 3 variantes, todas com o mesmo texto "TOO FAST TO SEE", fundo azul-noite com relâmpagos; não mudar o título durante o teste.
@@ -27,3 +27,6 @@ Regra: guardar impressões, CTR, duração média, curva (10/30/60 s), origem do
 - Nossos: JoJo 19:47 local (12:47 NY), Star Platinum 19:53 local (12:53 NY): horas de meio-dia nos EUA, ritmo fraco; Killua 23:09 local (16:09 NY): 11 mil impressões no 1.º dia. n=4, não é prova.
 - Curious Dude (UTC → NY): 14:37, 21:21, 15:26, 16:38, 16:03, 12:56, 19:42, 21:16, 15:04, 00:03; a maioria entre as 15:00 e as 21:00 em Nova Iorque (22:00 a 04:00 local do utilizador).
 - Regra para testar: publicar entre as 22:00 e as 00:00 locais (15:00 a 17:00 em Nova Iorque) e anotar a hora exata.
+
+## Correção do público (22/11/2026)
+Os ~70 % de EUA vinham de dados parciais da Analytics (29 de 41 views). Studio, desde a publicação: Killua EUA 22 % e Filipinas 8 %; JoJo EUA 23 % e Reino Unido 10 %. O público é bem mais internacional do que se pensava; a lista completa de países está em Público > Ver tudo. Efeitos: a teoria da hora de publicação 'tarde nos EUA' e a estimativa de RPM (que assumia público maioritariamente dos EUA) são mais fracas (⚠).
