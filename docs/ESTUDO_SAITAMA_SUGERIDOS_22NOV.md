@@ -20,3 +20,13 @@ H4. Ruído: o Killua também subiu +46 sem par dele; a cauda e as flutuações e
 Não temos o grafo de sugestões (a API relatedToVideoId foi retirada). O Studio mostra, por vídeo, os principais vídeos de origem do tráfego sugerido: é a prova que falta.
 ## Implicação estratégica (⚠)
 Se H1 for verdadeira, "sentar ao lado" dos vídeos dele (mesmo personagem, mesmo formato de título) traz sugestões, em contradição com a regra "não bater de frente". Decisão a tomar com mais dados.
+
+## Atualização (22/11 09:28 a 09:38): painel "Conteúdo que sugere este vídeo" (prints do utilizador)
+- Saitama (nosso): 49,5 % do tráfego é de sugeridos; fontes listadas: "What If You Had Gojo's Power…" 80 % (miniatura do Gojo do Curious Dude) e "What If You Had Luffy's Power…" 20 % (o NOSSO Luffy). Os 41,2 % de pesquisa incluem "real life saitama" (6,7 %).
+- Luffy (nosso): 62,3 % do tráfego é de sugeridos (33 views, 78,8 % do tempo de visualização, ~1,85 h); fontes: 40 % um vídeo "What If You Had…" (miniatura vermelha/branca, ⚠ não identificado), 20 % o nosso JoJo (The World), 20 % um de miniatura laranja/amarela (⚠ não identificado), 20 % o nosso Saitama. Pesquisa 35,9 % (termo "rubber gloves" 6,2 %).
+- Os percentagens são múltiplos de 20 %: o painel só lista ~5 views atribuíveis por vídeo (o resto não aparece por limiar de privacidade), por isso são amostras minúsculas (⚠).
+## Leitura
+- O vídeo dele que mais aparece a sugerir o nosso Saitama é o GOJO (240 mil views, ainda ~5 mil/dia), não o Saitama novo dele (não aparece na lista). A coincidência com a publicação do Saitama dele pode não ser a causa.
+- Os nossos vídeos sugerem-se entre si (Luffy ← JoJo, Saitama; Saitama ← Luffy): há uma cadeia interna.
+- Hipótese mais compatível (⚠): o Saitama e o Luffy têm CTR alto (10,7 % e 9 %) e retenção boa (31 % e 36 %) quando aparecem; o título "What If You Had X's Powers in Real Life?" é igual ao dos hits dele, o que os torna candidatos a aparecer ao lado deles; o Killua (CTR 0,8 %, retenção 17 %) não consegue manter essa posição.
+- A pedir: o mesmo painel do Killua, do Yuta e do Star Platinum.
