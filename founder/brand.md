@@ -97,6 +97,62 @@ Nada fica registado até tu o registares.
 
 ---
 
+## 2b. Segunda ronda: nomes mais fortes (estilo Alphabet, Meta, Anthropic)
+
+Pediste nomes com peso de marca-mãe: uma palavra só, uma ideia grande, que aguente vários produtos
+por baixo sem os descrever. *Oathwork* é descritivo, não é isso. Critérios desta ronda: uma palavra,
+2 a 3 sílabas, significado que carrega a ideia "o trabalho que se cumpre", fácil de dizer em
+português e em inglês.
+
+| Nome | Ideia | Porque é forte | Problema |
+|---|---|---|---|
+| **Garra** | Português: garra, raça, vontade que não larga | Curto, cultural, ótimo para PT/BR, soa a marca | Em inglês perde-se o significado |
+| **Praxis** | Grego: a teoria posta em prática | O melhor significado para "fazer o trabalho" | **Saturado** (ver abaixo) |
+| **Rubicon** | Atravessar o ponto sem retorno | Metáfora perfeita para "algo em jogo" | **Saturado** (ver abaixo) |
+| Arete | Grego: excelência | Elevado | Palavra obscura |
+| Stoa | O pórtico dos estoicos | Distinto, ligado a disciplina | Evoca filosofia, não ação |
+| Troth | Antigo: promessa de fidelidade | Muito raro e ligado a compromisso | Impronunciável para muitos |
+| Prumo | Fio de prumo, alinhamento ("perder o prumo") | Bonito em português | Pouco internacional |
+| Tenaz | Persistente | Forte em PT/ES | Adjetivo, soa pouco a marca |
+
+### O que encontrei na web (pesquisa pública, a 22 nov 2026)
+
+- **Praxis:** já existe como nome de **várias apps de software**, incluindo uma de
+  autodesenvolvimento para iPhone chamada *PRAXIS - The System*, e ferramentas de produtividade e de
+  gestão de trabalho. Concorrência direta em app store: **evitar** como marca principal.
+  [App Store](https://apps.apple.com/us/app/id6758901302), [Capterra](https://www.capterra.ca/software/1241808/Praxis)
+- **Rubicon:** muitos registos de marca em **software, publicidade digital e até software educativo**
+  (por exemplo, marcas da Rubicon Project e da Rubicon West). Risco jurídico alto nas classes 9, 41 e 42.
+  [Justia: marcas Rubicon](https://trademarks.justia.com/owners/the-rubicon-project-inc-1683665)
+- **Garra:** a pesquisa só encontrou uma app brasileira de compras chamada *Garra App*. Sem uma
+  empresa de software conhecida com este nome. **O menos disputado dos três**, mas isto é uma
+  pesquisa web, não uma pesquisa de marcas.
+  [App Store](https://apps.apple.com/lb/app/garra-app/id1592887500)
+
+### Domínios (RDAP, mesma metodologia da secção 2)
+
+Todos registados em `.com`, `.app` e `.ai`: Garra, Praxis, Rubicon, Arete, Stoa, Troth, Prumo, Tenaz.
+Palavras reais fortes e boas inventadas já foram apanhadas (testei ainda mais de 60 candidatos; só
+sobraram combinações pouco boas, como `oathra.ai`, que também me parece fraca).
+
+**Isto é normal para marcas fortes.** Alphabet ficou com `abc.xyz`, e outras compraram o domínio. Há
+três caminhos:
+1. **Comprar o domínio** da palavra que escolheres (via corretor, ou contactando o dono). Custa desde
+   algumas centenas até dezenas de milhares de euros, e dá a melhor marca.
+2. **Aceitar outro domínio principal** (`.app`, `.so`, `.co`) mais um `.com` de proteção quando der.
+3. **Inventar uma palavra** com menos concorrência, mas que exige explicar o significado.
+
+### Recomendação desta ronda
+- **Mercado inicial PT/BR:** **Garra.** Forte, curta, ownable, e a pesquisa web não mostra conflito
+  óbvio. Fica a ressalva de pesquisa de marca (classes 9, 41, 42, 45, 36) e do domínio.
+- **Mercado global em inglês:** **Oathwork** continua a ser a melhor aposta de significado claro sem
+  conflito aparente, ou uma palavra inventada. Praxis e Rubicon ficam fora por saturação.
+
+Combinação possível: **Garra** como marca-mãe e *Garra Circle*, *Garra Focus* e *Garra Study* como
+produtos (secção 4).
+
+---
+
 ## 3. Promessa, tagline e voz
 
 ### Promessa (o que o cliente pode contar que acontece sempre)
