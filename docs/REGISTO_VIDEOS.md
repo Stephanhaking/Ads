@@ -11,6 +11,7 @@ Regra: guardar impressões, CTR, duração média, curva (10/30/60 s), origem do
 | Star Platinum | 19/11 19:53 | 81 (20/11 16:52; eram 40 às 09:11) | 1,2 % (1 clique) | 12 (Studio) | n/a | por obter; 11 de 12 views NÃO vêm de impressões | ~5 impressões/hora; início novo (nome aos 0 s); A/B de thumbnail em curso |
 | Megumi | 20/11 (carregado privado; publicação pelo utilizador) | por obter | por obter | por obter | por obter | por obter | ID Ix_RHMm2f-0; início com nome aos 0 s; 10 PASS; vigiar curva aos 10/30/60 s e a cena do pequeno-almoço (~1:50) |
 | Yuta | 21/11 23:00 (hora do utilizador; 21:00 UTC) | 37 (22/11 09:01, ~10 h) | 5,4 % (2 cliques) | 6 | n/a | navegação 33 %, sugeridos 33 %, páginas do canal 17 % | A/B em curso: STEAL THEIR POWERS vs vermelha; amostra insuficiente |
+| Domain Expansion | por publicar (planeado 22/11, 22:00 a 00:00 hora do utilizador) | por obter | por obter | por obter | por obter | por obter | ID fCPyyTDsoJg (privado); nome do poder aos 0 s; 1.ª imagem do poder aos ~8 s; etiquetas CANON/OUR RULE/OUR GUESS; thumbnails NO ESCAPE e MY WORLD NOW; anotar hora exata e medir às 24 h |
 
 ## Experiências em curso
 - Killua, A/B de thumbnail (iniciado 20/11 pelo utilizador, hora por registar): 3 variantes, todas com o mesmo texto "TOO FAST TO SEE", fundo azul-noite com relâmpagos; não mudar o título durante o teste.
