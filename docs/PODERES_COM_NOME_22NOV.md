@@ -31,7 +31,7 @@ Método: para cada poder, pesquisa 'what if you had <poder>' (vídeos de 4 a 20 
 | Zanpakuto / Hollow | Bleach | 0 | 0 | 0 | 0 |  |
 | Devil Hunter | Chainsaw Man | 0 | 0 | 0 | 0 |  |
 
-Leitura (⚠): quase todos os poderes com nome estão VAZIOS no formato 'you in real life'; zero concorrentes pode querer dizer zero procura (lição do Death Note). Prova de formato: só 'Domain Expansion' (DOOMPERK, 25,7 mil). Sage Mode, Susanoo, Edo Tensei e Haki têm resultados altos mas são histórias alternativas.
+Leitura (⚠): quase todos os poderes com nome estão VAZIOS no formato 'you in real life'; zero concorrentes pode querer dizer zero procura neste formato (lição do Star Platinum: 0 concorrentes, 81 impressões; o Death Note foi o contrário, tema saturado: 21 vídeos longos em 14 dias e 3 clones do formato). Prova de formato: só 'Domain Expansion' (DOOMPERK, 25,7 mil). Sage Mode, Susanoo, Edo Tensei e Haki têm resultados altos mas são histórias alternativas.
 ## Lista priorizada (opinião minha, NÃO validada)
 | # | Poder | Franquia | Porquê | Cuidado |
 |---|---|---|---|---|
