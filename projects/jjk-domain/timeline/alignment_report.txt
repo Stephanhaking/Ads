@@ -1,0 +1,53 @@
+00:25.58  replace  script: forty,  |  heard: 40,
+00:29.00  replace  script: two hundred  |  heard: 200
+00:33.26  replace  script: eleven twenty  |  heard: 1120
+00:52.56  replace  script: threads.  |  heard: threats.
+00:54.52  delete   script: dome  |  heard: —
+00:56.30  replace  script: neighbour's  |  heard: neighbor's
+01:10.34  replace  script: one:  |  heard: 1.
+01:27.70  replace  script: guess:  |  heard: guests,
+02:02.04  replace  script: neutralise  |  heard: neutralize
+02:10.50  replace  script: boss's.  |  heard: bosses,
+02:11.34  replace  script: intern's.  |  heard: interns,
+02:17.18  replace  script: intern's  |  heard: interns
+02:18.02  insert   script: —  |  heard: like
+02:26.96  replace  script: defence  |  heard: defense
+02:37.60  replace  script: practise  |  heard: practice
+02:56.08  replace  script: four:  |  heard: 4,
+03:01.38  replace  script: six,  |  heard: 6,
+03:07.42  replace  script: forty  |  heard: 40
+03:21.44  replace  script: five:  |  heard: 5.
+03:32.16  replace  script: nine  |  heard: 9
+03:55.14  replace  script: twelve  |  heard: 12
+04:00.78  replace  script: cross-legged  |  heard: cross -legged
+04:06.46  replace  script: Eleven  |  heard: 11
+04:08.46  replace  script: twelfth,  |  heard: 12th,
+04:10.10  replace  script: slides  |  heard: slags
+04:13.50  replace  script: story,  |  heard: stories,
+04:31.82  replace  script: defence  |  heard: defense
+04:36.58  replace  script: fifteen,  |  heard: 15,
+04:43.02  replace  script: two hundred.  |  heard: 200.
+04:52.94  replace  script: nineteen fifty-six,  |  heard: 1956,
+05:00.52  replace  script: two hundred.  |  heard: 200.
+05:05.70  replace  script: twenty  |  heard: 20
+05:07.80  replace  script: eight: sure-hit  |  heard: 8. Short hit
+05:26.86  replace  script: twenty,  |  heard: 20,
+05:49.08  replace  script: barking.  |  heard: arcing.
+05:57.36  replace  script: nine:  |  heard: 9.
+06:02.76  replace  script: twenty-five,  |  heard: 25,
+06:36.14  replace  script: ten:  |  heard: 10,
+06:44.36  replace  script: thirty,  |  heard: 30
+07:02.88  replace  script: metre  |  heard: meter
+07:06.52  replace  script: realise  |  heard: realize
+07:22.36  replace  script: kerb,  |  heard: curb,
+07:26.64  replace  script: colour.  |  heard: color.
+07:28.08  replace  script: eleven:  |  heard: 11.
+07:34.04  replace  script: thirty-five,  |  heard: 35,
+07:59.48  replace  script: thirty-five  |  heard: 35
+08:02.24  replace  script: Lesson twelve:  |  heard: less than 12.
+08:08.70  replace  script: forty,  |  heard: 40,
+08:52.28  replace  script: grey  |  heard: gray
+09:00.78  delete   script: The next morning you can't lift your arms.  |  heard: —
+09:01.34  delete   script: one red thread still tied to your finger. It's the cat's. It hasn't  |  heard: —
+09:10.68  replace  script: thirteen:  |  heard: 13.
+09:19.94  replace  script: eleven twenty,  |  heard: 1120,

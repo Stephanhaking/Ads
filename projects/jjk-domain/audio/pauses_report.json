@@ -1,0 +1,146 @@
+{
+ "profile": "documentary",
+ "max": 0.8,
+ "to": 0.55,
+ "duration_before": 564.269,
+ "duration_after": 553.59,
+ "removed_s": 10.68,
+ "cuts": [
+  {
+   "at": 79.195,
+   "was": 0.88,
+   "kind": "pause"
+  },
+  {
+   "at": 87.285,
+   "was": 0.97,
+   "kind": "pause"
+  },
+  {
+   "at": 93.535,
+   "was": 0.83,
+   "kind": "pause"
+  },
+  {
+   "at": 100.755,
+   "was": 0.97,
+   "kind": "pause"
+  },
+  {
+   "at": 220.355,
+   "was": 0.86,
+   "kind": "pause"
+  },
+  {
+   "at": 244.755,
+   "was": 0.99,
+   "kind": "pause"
+  },
+  {
+   "at": 254.755,
+   "was": 0.81,
+   "kind": "pause"
+  },
+  {
+   "at": 292.375,
+   "was": 0.81,
+   "kind": "pause"
+  },
+  {
+   "at": 316.055,
+   "was": 0.86,
+   "kind": "pause"
+  },
+  {
+   "at": 345.645,
+   "was": 1.48,
+   "kind": "pause"
+  },
+  {
+   "at": 360.825,
+   "was": 0.82,
+   "kind": "pause"
+  },
+  {
+   "at": 366.335,
+   "was": 0.88,
+   "kind": "pause"
+  },
+  {
+   "at": 371.525,
+   "was": 1.01,
+   "kind": "pause"
+  },
+  {
+   "at": 381.935,
+   "was": 0.85,
+   "kind": "pause"
+  },
+  {
+   "at": 385.225,
+   "was": 1.18,
+   "kind": "pause"
+  },
+  {
+   "at": 404.395,
+   "was": 0.92,
+   "kind": "pause"
+  },
+  {
+   "at": 407.985,
+   "was": 0.84,
+   "kind": "pause"
+  },
+  {
+   "at": 436.335,
+   "was": 0.88,
+   "kind": "pause"
+  },
+  {
+   "at": 466.235,
+   "was": 0.92,
+   "kind": "pause"
+  },
+  {
+   "at": 470.295,
+   "was": 0.89,
+   "kind": "pause"
+  },
+  {
+   "at": 506.805,
+   "was": 0.84,
+   "kind": "pause"
+  },
+  {
+   "at": 513.025,
+   "was": 0.92,
+   "kind": "pause"
+  },
+  {
+   "at": 529.495,
+   "was": 0.84,
+   "kind": "pause"
+  },
+  {
+   "at": 534.515,
+   "was": 1.23,
+   "kind": "pause"
+  },
+  {
+   "at": 540.785,
+   "was": 1.29,
+   "kind": "pause"
+  },
+  {
+   "at": 547.705,
+   "was": 0.87,
+   "kind": "pause"
+  },
+  {
+   "at": 561.965,
+   "was": 0.89,
+   "kind": "pause"
+  }
+ ],
+ "applied": true
+}
