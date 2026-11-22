@@ -14,6 +14,7 @@ npm install
 npm run dev        # http://localhost:3000
 npm run typecheck
 npm run lint
+npm run preview:build   # one self-contained HTML file in preview-dist/
 npm run build && npm start
 ```
 
