@@ -1,5 +1,21 @@
 # Roadmap (parked until there are resources to start)
 
+## Rollout order (decided)
+1. **Social network first**, on PC (web) and mobile, from one codebase: a responsive web app that
+   installs as a PWA. Native store apps only if the PWA proves too limiting.
+2. **Desktop Focus Layer later**, once the network has traction, offered to existing members.
+   Until then, verification comes from proofs and peer review, not from tracked activity.
+
+Proposed gates before starting the Focus Layer (to be confirmed with real numbers):
+- A few hundred weekly active members, with healthy 4-week retention.
+- Members asking for blocking and tracking, not just us wanting to build it.
+- Proof and review flow working with real people (reviews completed within a day or two).
+
+Design rule for now: keep the ledger's `verified` source open (`self`, `proof`, `measured`), so the
+Focus Layer can later add `measured` entries without changing the data model.
+
+Next UI step: a real desktop layout (sidebar + feed). Today the app is a single mobile column.
+
 Decided and approved, not started. Everything below is design only; no backend code
 exists yet. The prototype keeps all state in the browser.
 
