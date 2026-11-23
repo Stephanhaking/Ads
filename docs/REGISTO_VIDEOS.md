@@ -42,3 +42,9 @@ Posts: Domain Expansion publicado a 22/11 23:02 UTC (01:02 hora do utilizador, ~
 
 ## Sukuna (23/11/2026)
 - What If You Became Sukuna? Nobody Survives 7 Days. ID cXAUxRpzGns, carregado PRIVADO a 23/11 (sem data, sem thumbnail). mp4 9:45, -14,2 LUFS. Thumbnails: 'THE KING IS HERE' (principal) e '7 DAYS LEFT'. Publicação: por definir (utilizador dá a hora).
+
+## Luffy, 23/11 22:15 (Studio, desde a publicação)
+- 615 impressões, CTR 13,0%, duração média 2:39 (31,8%), 134 views: 100 sugeridos, 21 pesquisa ("rubber gloves" 4,8% do tráfego), 13 outros.
+- Curva (a olho ⚠): ~58% aos ~35 s, ~40% aos ~1:20, planalto 33–38% até ao fim, ~15% no último minuto.
+- "Conteúdo que sugere este vídeo" (74,6% do tráfego): 42,9% "What If YOU Had Luffy's Powe…" (miniatura Gear 5; provavelmente outro canal ⚠), 29,9% "What If YOU Became the…" (miniatura "THIS IS YOU"), 11,7% "What If YOU Had the System…", 7,8% nosso Saitama, 2,6% "What If You Had Luffy's Powers…".
+- Hipótese do utilizador: o YouTube agora distribui em lotes sucessivos (pequeno grupo, depois outro), em vez de uma amostra grande definida à partida como no Killua; neste modo o desempenho de cada lote decide o seguinte. ⚠ Não verificável; compatível com lotes de 11–16,8 mil (Killua) vs. pequenos (Yuta, Domain Expansion, Luffy).
