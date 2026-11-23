@@ -16,3 +16,6 @@ Fonte: wiki JJK (fandom, editada por fãs), Sportskeeda, Mary Sue. NÃO é fonte
 - Os poderes Dismantle/Cleave/Domain/Divine Flame já estão no vídeo dele: o nosso tem de ser outro eixo (consequência humana e regras de 'tu' no corpo, não lista de técnicas).
 ## Títulos (rank_titles, filtro fraco ⚠)
 81 What If You Became Sukuna for 7 Days? · 80 What if you became Ryomen Sukuna? Malevolent Shrine in real life · 78 What if you became Ryomen Sukuna in real life? · 73 What If You Became Sukuna, the King of Curses? · 73 What if you woke up as Ryomen Sukuna?
+
+## Título escolhido (23/11)
+What If You Became Sukuna? Nobody Survives 7 Days (nota 96; teto do ranker). À espera da thumbnail. Script tem de cumprir "Nobody Survives" sem copiar o YuVsReality.
