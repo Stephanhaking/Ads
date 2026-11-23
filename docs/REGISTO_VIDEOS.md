@@ -39,3 +39,6 @@ Analytics API (primeiras ~20/11) vs Studio (22/11): o público inicial (sobretud
 - Killua (100 % novo/sugeridos): 17,6 %.
 Leitura: para público frio de sugeridos a retenção realista hoje é ~17 a 27 %; os 44 a 49 % eram público de pesquisa. Ser "outlier" de retenção exige muito mais do que isto.
 Posts: Domain Expansion publicado a 22/11 23:02 UTC (01:02 hora do utilizador, ~1 h depois da janela); 5 views às 9,5 h. Yuta: 34 views às 35,5 h. Analytics de ambos ainda a zeros (atraso de 2 a 3 dias).
+
+## Sukuna (23/11/2026)
+- What If You Became Sukuna? Nobody Survives 7 Days. ID cXAUxRpzGns, carregado PRIVADO a 23/11 (sem data, sem thumbnail). mp4 9:45, -14,2 LUFS. Thumbnails: 'THE KING IS HERE' (principal) e '7 DAYS LEFT'. Publicação: por definir (utilizador dá a hora).
