@@ -20,3 +20,9 @@ Se o Yuta e o Domain Expansion têm bom CTR e retenção aceitável no lote pequ
 O que controlamos: CTR do 1.º lote (embalagem) e retenção do 1.º lote (primeiros 30 s e ritmo). A retenção com público frio (17 a 27 %) é o risco quando o lote alarga.
 ## Alternativas não excluídas
 Tema (Killua/JoJo tinham mais procura), novidade do canal, tráfego sugerido junto de vídeos do Curious Dude, ruído (n=8).
+
+## Correção (23/11, 10:56): gráfico de CTR horário do Killua (primeiras 24 h)
+Print do Studio: Killua, 18/11 a 19/11: 11 402 impressões, CTR 0,8 %, 173 views, 142 espectadores únicos, 2,7 h de visualização. CTR na 1.ª hora 1,2 %; depois quase sempre entre 0 e ~1 %; picos de 25 % (hora ~17) e ~14 % (hora ~23) são horas com muito poucas impressões (ruído).
+Conclusão: o Killua NÃO teve um CTR alto no início que depois descesse; o lote grande (11,4 mil em 24 h) veio apesar de um CTR baixo desde a 1.ª hora. A explicação "o lote alarga porque o CTR inicial é bom" fica enfraquecida para o Killua e o JoJo.
+Hipóteses que sobram (⚠, n=8): (a) sinal do histórico do canal (Luffy/Saitama com CTR e retenção altos em lotes mínimos); (b) procura/relevância do tema (Hunter x Hunter, JoJo são fandoms enormes); (c) título com o nome da franquia + o efeito do poder (JoJo e Killua tinham; o Star Platinum tinha a franquia mas não o efeito e teve lote mínimo); (d) exploração de canal novo ou coincidência.
+Teste barato: registar impressões por dia do Yuta e do Domain Expansion (títulos sem franquia explícita) e do próximo vídeo com o nome da franquia e o efeito no título.
