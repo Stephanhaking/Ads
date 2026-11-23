@@ -26,15 +26,33 @@ const L1 = (U, t, txt, t0 = 0.3, c) => label(U, 'L1', txt, t0, t, LX(txt), 260, 
 const has = (line, ...w) => w.some((x) => line.toLowerCase().includes(x.toLowerCase()));
 const since = (sec, ...w) => { let best = 1e9; for (const p of Object.values(PLAN)) if (p.sec === sec && has(p.line, ...w)) best = Math.min(best, p.k); return best; };
 const TXT = (px, col = '#fff') => `font:900 ${px}px Inter;letter-spacing:-.01em;line-height:1.04;color:${col}`;
-const walk = (tt, sp = 5) => { const s = Math.sin(tt * sp); return { ...P_STAND, lean: 3, aL: [12 - s * 24, 12], aR: [12 + s * 24, 12], lL: [4 + s * 24, 8], lR: [4 - s * 24, 8] }; };
-const run = (tt) => { const s = Math.sin(tt * 9); return { ...P_RUN, aL: [50 + s * 40, 80], aR: [40 - s * 40, 110], lL: [30 + s * 30, 40], lR: [-10 - s * 30, 10] }; };
+// limbs: angles are [upper, lower] from straight down. Walk / run cycles: the leg that swings through lifts (knee bend),
+// arms swing against the legs with a bent elbow, the body bobs twice per cycle. cyc = already moving (no blend-in).
+const walk = (tt, sp = 5) => { const s = Math.sin(tt * sp), c = Math.cos(tt * sp), a = (v) => 16 + v;
+  return { ...P_STAND, cyc: true, bob: Math.abs(c) * 7, lean: 4 + Math.abs(s) * 2, head: 2 + Math.sin(tt * sp * 2) * 2,
+    aL: [a(-s * 26), a(-s * 26) + 16 + 12 * Math.max(0, -s)], aR: [a(s * 26), a(s * 26) + 16 + 12 * Math.max(0, s)],
+    lL: [6 + s * 26, 10 + 55 * Math.max(0, c)], lR: [6 - s * 26, 10 + 55 * Math.max(0, -c)] }; };
+const run = (tt) => { const s = Math.sin(tt * 10), c = Math.cos(tt * 10);
+  return { ...P_RUN, cyc: true, bob: Math.abs(c) * 12, lean: 10 + Math.abs(s) * 3, head: 4,
+    aL: [36 - s * 32, 96 - s * 24], aR: [36 + s * 32, 96 + s * 24], lL: [8 + s * 32, 20 + 70 * Math.max(0, c)], lR: [8 - s * 32, 20 + 70 * Math.max(0, -c)] }; };
+// every person is alive: a new pose eases in from a relaxed stance over the first ~0.45 s of the shot (arms rise, legs
+// settle), then breathes — small arm sway, elbow drift, a slow weight shift between the feet and a light head nod.
+const lerp = (a, b, k) => a + (b - a) * k;
+const RELAX = { lean: 0, aL: [10, 8], aR: [10, 8], lL: [4, 0], lR: [4, 0], head: 0 };
+const mixPose = (A, B, k) => { const o = { ...B }; for (const key of ['aL', 'aR', 'lL', 'lR']) o[key] = [lerp(A[key][0], B[key][0], k), lerp(A[key][1], B[key][1], k)]; o.lean = lerp(A.lean || 0, B.lean || 0, k); o.head = lerp(A.head || 0, B.head || 0, k); return o; };
+const live = (pose, seed) => { if (!pose || pose.sit) return pose; const w = LT * 1.7 + seed;
+  let p = pose; if (!pose.cyc) { const k = 0.3 + 0.7 * ease.out(clamp(LT / 0.45)); p = mixPose(RELAX, pose, k); }
+  const a = 4 * Math.sin(w), b = 5 * Math.sin(w * 1.3 + 1), sh = Math.sin(w * 0.45);
+  return { ...p, aL: [p.aL[0] + a, p.aL[1] + b], aR: [p.aR[0] - a * 0.8, p.aR[1] - b * 0.9],
+    lL: pose.cyc ? p.lL : [p.lL[0] + 2.5 * sh, p.lL[1] + 4 * Math.max(0, -sh)], lR: pose.cyc ? p.lR : [p.lR[0] - 2.5 * sh, p.lR[1] + 4 * Math.max(0, sh)],
+    lean: (p.lean || 0) + (pose.cyc ? 0 : 1.2 * sh), head: (p.head || 0) + 2.5 * Math.sin(w * 0.7) }; };
 const ARMS = { ...P_STAND, aL: [100, 10], aR: [100, 10] };
 const TWO = { ...P_POINT, aR: [86, 92] };
 const CUP = { ...P_STAND, aR: [40, 140] };
 const GRAB = { ...P_STAND, lean: 8, aR: [70, 70] };
 const PULL = { ...P_STAND, lean: -10, aR: [20, 60], aL: [30, 20] };
-const P = (x, y, pose, face = 'neutral', o = {}) => ({ x, y, h: o.h || 360, pose, outfit: { ...HERO, ...(o.outfit || {}) }, face, flip: o.flip ?? false, look: o.look ?? 0.5 });
-const Q = (x, y, pose, outfit, face = 'neutral', o = {}) => ({ x, y, h: o.h || 340, pose, outfit, face, flip: o.flip ?? false, look: o.look ?? 0.5 });
+const P = (x, y, pose, face = 'neutral', o = {}) => ({ x, y: y - (pose && pose.bob || 0), h: o.h || 360, pose: live(pose, 0.3), outfit: { ...HERO, ...(o.outfit || {}) }, face, flip: o.flip ?? false, look: o.look ?? 0.5 });
+const Q = (x, y, pose, outfit, face = 'neutral', o = {}) => ({ x, y: y - (pose && pose.bob || 0), h: o.h || 340, pose: live(pose, 2.1 + outfit.top.charCodeAt(2) * 0.05), outfit, face, flip: o.flip ?? false, look: o.look ?? 0.5 });
 const big = (U, html, x = 160, y = 360) => U.html('big', html, { left: x + 'px', top: y + 'px' }, { z: 50 });
 let FULLED = false;
 const full = (U, svg) => { FULLED = true; return U.svg('card', svg, {}, { z: 3 }); };
