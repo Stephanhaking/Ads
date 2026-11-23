@@ -1,0 +1,27 @@
+00:01.38  replace  script: Ryomen  |  heard: Lyomen
+00:18.62  replace  script: eat  |  heard: need
+00:50.82  replace  script: Eleven  |  heard: 11
+00:53.20  replace  script: as  |  heard: is
+01:13.66  replace  script: Then you  |  heard: The knees
+01:29.08  replace  script: neighbour's  |  heard: neighbor's
+02:06.42  replace  script: ninety-dollar  |  heard: $90
+02:36.28  replace  script: two:  |  heard: 2.
+02:51.00  replace  script: Cursed  |  heard: curse
+02:58.64  replace  script: anymore."  |  heard: me more.
+03:09.50  delete   script: aren't  |  heard: —
+03:27.80  replace  script: neighbour's  |  heard: neighbor's
+03:32.40  replace  script: three a.m.,  |  heard: 3 a .m.,
+04:29.62  replace  script: You  |  heard: We
+06:19.34  replace  script: two hundred  |  heard: 200
+06:21.70  delete   script: Vow.  |  heard: —
+06:30.54  replace  script: three hundred  |  heard: 300
+06:45.14  insert   script: —  |  heard: Then
+07:12.62  insert   script: —  |  heard: work.
+07:33.04  replace  script: Eleven forty  |  heard: 1140
+07:44.32  replace  script: "Loss  |  heard: Lost
+07:58.32  replace  script: one  |  heard: a
+08:07.70  insert   script: —  |  heard: power.
+08:32.20  replace  script: then  |  heard: than
+08:33.94  replace  script: Hundred and forty  |  heard: 140
+08:35.92  replace  script: a hundred and fifty.  |  heard: 150.
+08:37.78  replace  script: ten  |  heard: 10
