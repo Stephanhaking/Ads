@@ -31,3 +31,11 @@ Regra: guardar impressões, CTR, duração média, curva (10/30/60 s), origem do
 
 ## Correção do público (22/11/2026)
 Os ~70 % de EUA vinham de dados parciais da Analytics (29 de 41 views). Studio, desde a publicação: Killua EUA 22 % e Filipinas 8 %; JoJo EUA 23 % e Reino Unido 10 %. O público é bem mais internacional do que se pensava; a lista completa de países está em Público > Ver tudo. Efeitos: a teoria da hora de publicação 'tarde nos EUA' e a estimativa de RPM (que assumia público maioritariamente dos EUA) são mais fracas (⚠).
+
+## Retenção por tipo de público (23/11/2026; ⚠ conta aproximada)
+Analytics API (primeiras ~20/11) vs Studio (22/11): o público inicial (sobretudo pesquisa) reteve muito mais do que o que chegou depois por sugeridos.
+- Saitama: API 36 views, média 4:20 (43,6 %); Studio 97 views, média 3:11 (31 %). Os ~61 views seguintes, de sugeridos, terão ~2:29 (~25 %).
+- Luffy: API 22 views, média 4:06 (49,4 %); Studio 52 views, média 3:03 (36 %). Os ~30 seguintes terão ~2:17 (~27 %).
+- Killua (100 % novo/sugeridos): 17,6 %.
+Leitura: para público frio de sugeridos a retenção realista hoje é ~17 a 27 %; os 44 a 49 % eram público de pesquisa. Ser "outlier" de retenção exige muito mais do que isto.
+Posts: Domain Expansion publicado a 22/11 23:02 UTC (01:02 hora do utilizador, ~1 h depois da janela); 5 views às 9,5 h. Yuta: 34 views às 35,5 h. Analytics de ambos ainda a zeros (atraso de 2 a 3 dias).
