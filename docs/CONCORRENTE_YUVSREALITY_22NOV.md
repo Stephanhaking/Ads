@@ -24,3 +24,9 @@ Dados do separador "Sobre" fornecidos pelo utilizador e confirmados pela API pú
 - Mesmo tema que o Curious Dude em Gojo, Luffy, Titã, Solo Leveling; Mahito foi o seu hit.
 - Os Shorts acompanham os longos: hipótese de que ajudam inscritos e descoberta (1,4 mil inscritos em 4 semanas). Não está provado; os Shorts deles têm 0,9 mil a 5 mil views.
 - Para nós: os nossos 6 Shorts privados (docs/shorts_uploads_2026-11-18.json) estão parados; os dados deste canal são um argumento a favor de testar Shorts junto de um vídeo longo, não uma prova.
+
+## Atualização 23/11 11:02 (print do utilizador, vidIQ)
+- "What if you became Satoru Gojo?": 65 mil views a 1 dia, 442 VPH, ">100x" (vidIQ). "What if you Became MAHITO?": 92 mil a 6 dias, 600 VPH, 5x. Solo Leveling: 7,9 mil a 8 dias. Há também "DAY 1 vs GEAR 5" (8:19) e "THIS IS YOU" (9:38, Founding Titan, ~3,9 mil).
+- Miniaturas (observação): texto de gancho em 2.ª pessoa ("IT SMILED AT YOU", "THIS IS YOU", "DAY 1 VS GEAR 5"), grande plano da ameaça ou do personagem, cores fortes (azul elétrico, roxo, laranja); sem repetir o título.
+- Pesquisa "what if you became [personagem]" (60 dias, 23/11): o formato "YOU became X" praticamente só existe neste canal; os outros resultados são histórias alternativas. Sem concorrentes no formato para Geto, Nanami, Todo e Hisoka.
+- Os dois "became" fortes são JJK de topo (Gojo, Mahito); o "became" de AoT ficou em 3,9 mil. n=2 (⚠): não distingue a palavra "became" da força do personagem/franquia.
