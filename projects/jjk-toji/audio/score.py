@@ -1,0 +1,47 @@
+# audio/score.py — original score for "What If You Became Toji?" (~9:20). E minor, one night: a low pad and soft ticks
+# for 3:07 a.m. and the senses; a warm piano for Dani's kitchen; a sneaking pizzicato + marimba pulse on the street of tiny
+# curses; low strings for the case of tools; near-silence and a heartbeat pulse climbing the shrine stairs; a driving
+# pulse with drums for the hunt; a fragile celesta in the dark; sunrise resolves to G major.
+S.set_key("E minor")
+run = Motif("1 . 1 5 . 1 8 .", ".25 .25 .25 .25 .25 .25 .25 .25")
+hook = Motif("1 3 5 3 2 1 . .", ".5 .5 .5 .5 .5 1 .5 .5")
+W = lambda p, a=0: S.word(p, after=a)
+cuts = [W("Toji was born with a Heavenly"), W("You take the stairs"), W("Dani opens"), W("In the story, Toji was called"),
+        W("You walk Dani home"), W("Dani's mother left"), W("The curse is in the old shrine"), W("You walk up the stairs in silence"),
+        W("It has a technique"), W("You fall at the foot"), W("She starts listening"), W("You wake up on the stairs")]
+t = [0] + cuts + [S.duration]
+A = S.section("open", t[0], t[1], bpm=74, chords="i:2 bVI:2 iv:2 V:2")
+A.pad("pad_space", 3, 24, "open"); A.strings("tremolo", 3, 20, swell=0.5); A.ticks("stick", step=0.5, vel=10)
+S.hit(W("You've woken up as"), "boom", vel=82); S.hit(W("You have zero cursed energy"), "impact", vel=66); S.hit(W("Nothing in this world"), "impact", vel=56)
+B = S.section("senses", t[1], t[2], bpm=70, chords="i:2 iv:2 bVI:2 V:2")
+B.pad("pad_glass", 3, 18, "open"); B.arp("celesta", "1 5 8 5", step=0.5, octave=4, vel=12)
+S.hit(W("the bed frame cracks"), "impact", vel=58); S.hit(W("the plate comes off"), "impact", vel=50)
+C = S.section("stairs", t[2], t[3], bpm=104, chords="i:1 bVI:1 bIII:1 bVII:1")
+C.ostinato(run, "marimba", octave=4, vel=18); C.pad("pad_space", 3, 16, "open")
+D_ = S.section("kitchen", t[3], t[4], bpm=78, key="G major", chords="I:2 vi:2 IV:2 V:2")
+D_.motif(hook, "piano", every=4, octave=4, vel=18); D_.pad("pad_warm", 3, 16, "open")
+S.hit(W("zero point zero zero percent"), "impact", vel=60)
+E_ = S.section("invisible", t[4], t[5], bpm=72, chords="i:2 bVI:2 iv:2 V:2")
+E_.pad("pad_space", 3, 20, "open"); E_.strings("tremolo", 3, 18, swell=0.5)
+F = S.section("street", t[5], t[6], bpm=92, chords="i:2 bVI:2 bIII:2 bVII:2")
+F.arp("pizz", "1 3 5 8", step=0.5, octave=4, vel=14); F.ticks("stick", step=0.5, vel=10); F.pad("pad_glass", 3, 16, "open")
+S.hit(W("One brushes your shoulder"), "impact", vel=50); S.hit(W("It eats the loudest"), "boom", vel=66)
+G = S.section("case", t[6], t[7], bpm=84, chords="i:2 iv:2 bVI:2 V:2")
+G.strings("tremolo", 3, 22, swell=0.6); G.pad("pad_space", 3, 18, "open"); G.motif(hook, "celesta", every=4, octave=5, vel=12)
+S.hit(W("The Inverted Spear of Heaven"), "impact", vel=60); S.hit(W("It takes the ceiling light"), "impact", vel=56); S.hit(W("Playful Cloud"), "impact", vel=56)
+H = S.section("shrine", t[7], t[8], bpm=66, chords="i:4 bII:4")
+H.pad("pad_space", 3, 22, "open"); H.pulse("synth_bass", octave=2, vel=20, step=1)
+I = S.section("climb", t[8], t[9], bpm=70, chords="i:2 bVI:2 iv:2 V:2")
+I.pad("pad_space", 3, 20, "open"); I.strings("tremolo", 3, 22, swell=0.7); I.ticks("stick", step=1, vel=8)
+S.hit(W("You step into its blind spot"), "boom", vel=70)
+J = S.section("hunt", t[9], t[10], bpm=124, chords="i:1 bVI:1 bIII:1 bVII:1")
+J.strings("tremolo", 3, 32, swell=0.6); J.pulse("synth_bass", octave=2, vel=34, step=0.5); J.drums({"kick": "x...x...", "snare": "....x...", "hat": "x.x.x.x."}, "kit", step=0.25, vel=24)
+S.hit(W("You swing the chain"), "impact", vel=66); S.hit(W("the ward goes out"), "boom", vel=74); S.hit(W("It hits you"), "boom", vel=84); S.hit(W("Twice"), "impact", vel=70); S.hit(W("The curse falls apart"), "boom", vel=72)
+K_ = S.section("dark", t[10], t[11], bpm=60, chords="i:4 iv:4")
+K_.pad("pad_space", 3, 18, "open"); K_.arp("celesta", "1 5 8 5", step=1, octave=4, vel=10)
+L = S.section("listen", t[11], t[12], bpm=72, chords="i:2 bVI:2 bIII:2 V:2")
+L.pad("pad_warm", 3, 20, "open"); L.strings("strings", 3, 20, swell=0.6); L.motif(hook, "piano", every=4, octave=4, vel=16)
+S.hit(W("Her hand finds your jacket"), "impact", vel=56)
+Z = S.section("morning", t[12], t[13], bpm=76, key="G major", chords="I:2 vi:2 IV:2 V:2")
+Z.pad("pad_warm", 3, 22, "open", swell=0.3); Z.strings("strings", 3, 20, swell=0.4); Z.motif(hook, "piano", every=4, octave=4, vel=20)
+S.hit(W("Born to hunt"), "impact", vel=60)

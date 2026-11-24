@@ -1,0 +1,181 @@
+{
+ "profile": "documentary",
+ "max": 0.8,
+ "to": 0.55,
+ "duration_before": 552.525,
+ "duration_after": 537.166,
+ "removed_s": 15.36,
+ "cuts": [
+  {
+   "at": 41.675,
+   "was": 0.93,
+   "kind": "pause"
+  },
+  {
+   "at": 102.475,
+   "was": 0.83,
+   "kind": "pause"
+  },
+  {
+   "at": 106.945,
+   "was": 0.86,
+   "kind": "pause"
+  },
+  {
+   "at": 128.125,
+   "was": 0.86,
+   "kind": "pause"
+  },
+  {
+   "at": 134.985,
+   "was": 1.23,
+   "kind": "pause"
+  },
+  {
+   "at": 146.925,
+   "was": 0.86,
+   "kind": "pause"
+  },
+  {
+   "at": 154.655,
+   "was": 1.17,
+   "kind": "pause"
+  },
+  {
+   "at": 167.965,
+   "was": 1.16,
+   "kind": "pause"
+  },
+  {
+   "at": 171.025,
+   "was": 0.82,
+   "kind": "pause"
+  },
+  {
+   "at": 175.495,
+   "was": 1.1,
+   "kind": "pause"
+  },
+  {
+   "at": 178.025,
+   "was": 0.89,
+   "kind": "pause"
+  },
+  {
+   "at": 179.595,
+   "was": 1.02,
+   "kind": "pause"
+  },
+  {
+   "at": 195.365,
+   "was": 1.16,
+   "kind": "pause"
+  },
+  {
+   "at": 208.645,
+   "was": 0.97,
+   "kind": "pause"
+  },
+  {
+   "at": 210.785,
+   "was": 0.87,
+   "kind": "pause"
+  },
+  {
+   "at": 217.455,
+   "was": 1.29,
+   "kind": "pause"
+  },
+  {
+   "at": 224.515,
+   "was": 1.5,
+   "kind": "pause"
+  },
+  {
+   "at": 230.535,
+   "was": 1.39,
+   "kind": "pause"
+  },
+  {
+   "at": 237.545,
+   "was": 1.23,
+   "kind": "pause"
+  },
+  {
+   "at": 243.545,
+   "was": 1.26,
+   "kind": "pause"
+  },
+  {
+   "at": 249.315,
+   "was": 0.91,
+   "kind": "pause"
+  },
+  {
+   "at": 250.665,
+   "was": 1.11,
+   "kind": "pause"
+  },
+  {
+   "at": 289.045,
+   "was": 0.93,
+   "kind": "pause"
+  },
+  {
+   "at": 302.925,
+   "was": 0.97,
+   "kind": "pause"
+  },
+  {
+   "at": 311.195,
+   "was": 0.94,
+   "kind": "pause"
+  },
+  {
+   "at": 313.085,
+   "was": 0.92,
+   "kind": "pause"
+  },
+  {
+   "at": 318.665,
+   "was": 0.84,
+   "kind": "pause"
+  },
+  {
+   "at": 329.835,
+   "was": 0.99,
+   "kind": "pause"
+  },
+  {
+   "at": 331.845,
+   "was": 0.85,
+   "kind": "pause"
+  },
+  {
+   "at": 389.105,
+   "was": 0.82,
+   "kind": "pause"
+  },
+  {
+   "at": 411.205,
+   "was": 0.81,
+   "kind": "pause"
+  },
+  {
+   "at": 419.395,
+   "was": 0.83,
+   "kind": "pause"
+  },
+  {
+   "at": 432.485,
+   "was": 0.82,
+   "kind": "pause"
+  },
+  {
+   "at": 467.235,
+   "was": 0.92,
+   "kind": "pause"
+  }
+ ],
+ "applied": true
+}
