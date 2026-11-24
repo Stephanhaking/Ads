@@ -26,3 +26,9 @@ Regra: guardar impressões, CTR, duração média, curva (10/30/60 s), origem do
 - Nossos: JoJo 19:47 local (12:47 NY), Star Platinum 19:53 local (12:53 NY): horas de meio-dia nos EUA, ritmo fraco; Killua 23:09 local (16:09 NY): 11 mil impressões no 1.º dia. n=4, não é prova.
 - Curious Dude (UTC → NY): 14:37, 21:21, 15:26, 16:38, 16:03, 12:56, 19:42, 21:16, 15:04, 00:03; a maioria entre as 15:00 e as 21:00 em Nova Iorque (22:00 a 04:00 local do utilizador).
 - Regra para testar: publicar entre as 22:00 e as 00:00 locais (15:00 a 17:00 em Nova Iorque) e anotar a hora exata.
+
+## Leitura de 24/11/2026 (print do Studio, Luffy; API 19:14 UTC)
+- **Luffy (publicado 09/11):** Studio 21:11 hora local: 2,0 mil impressões, **CTR 12,6 %**, 410 views, 194 visitantes únicos; as curvas "desde a publicação" mostram impressões e views quase planas até ~22/11 e uma subida abrupta nos últimos ~2 dias. API: 22 views a 21/11 10:04 UTC, 317 a 24/11 19:14 UTC (+295 em 3,4 dias).
+- **Saitama (10/11):** 36 → 170 views no mesmo intervalo (+134). JoJo 112 → 156; Killua 242 → 316; Star Platinum 4 → 39; Yuta 43 (70 h).
+- A miniatura do Luffy é a mesma de 21/11 (hash igual); título sem alterações. Luffy e Saitama são os dois únicos nossos com título limpo ("What If You Had X's Powers in Real Life?") e miniatura saturada ao estilo do formato. ⚠ n=2, e a subida só começou ao fim de ~2 semanas: não é prova do título nem da miniatura.
+- Por ver: origem do tráfego (cartão cortado no print), retenção aos 10/30/60 s, se houve algum A/B ou alteração.
