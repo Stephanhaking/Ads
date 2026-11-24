@@ -48,3 +48,8 @@ Posts: Domain Expansion publicado a 22/11 23:02 UTC (01:02 hora do utilizador, ~
 - Curva (a olho ⚠): ~58% aos ~35 s, ~40% aos ~1:20, planalto 33–38% até ao fim, ~15% no último minuto.
 - "Conteúdo que sugere este vídeo" (74,6% do tráfego): 42,9% "What If YOU Had Luffy's Powe…" (miniatura Gear 5; provavelmente outro canal ⚠), 29,9% "What If YOU Became the…" (miniatura "THIS IS YOU"), 11,7% "What If YOU Had the System…", 7,8% nosso Saitama, 2,6% "What If You Had Luffy's Powers…".
 - Hipótese do utilizador: o YouTube agora distribui em lotes sucessivos (pequeno grupo, depois outro), em vez de uma amostra grande definida à partida como no Killua; neste modo o desempenho de cada lote decide o seguinte. ⚠ Não verificável; compatível com lotes de 11–16,8 mil (Killua) vs. pequenos (Yuta, Domain Expansion, Luffy).
+
+## Sukuna: publicação e primeiras horas (24/11, Studio)
+- Publicado ~22:38 (hora do utilizador, ≈20:38 UTC) de 23/11 (início do gráfico; confirmar hora exata). Thumbnail ativa: "THE KING IS HERE". Título: What If You Became Sukuna? Nobody Survives 7 Days. Sem teste A/B.
+- 24/11 10:14: 12 views (Studio), 0 nos últimos 60 min. 10:32: 25 impressões, CTR 24,0% (≈6 cliques), duração média 1:43 (17%), retenção sem dados suficientes. Origem: navegação 4, páginas do canal 3, outro 7 (sem sugeridos nem pesquisa).
+- Catálogo (API, 24/11 ~08:30 UTC vs 23/11 ~14h UTC): Luffy 119→233, Saitama 124→151, JoJo 132→141, Killua 307→312, Star Platinum 30→38, Yuta 36→43, Domain 12→12, Death Note 6→8. Canal: 1 114 views totais, 9 inscritos (API).
