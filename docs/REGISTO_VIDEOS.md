@@ -53,3 +53,9 @@ Posts: Domain Expansion publicado a 22/11 23:02 UTC (01:02 hora do utilizador, ~
 - Publicado ~22:38 (hora do utilizador, ≈20:38 UTC) de 23/11 (início do gráfico; confirmar hora exata). Thumbnail ativa: "THE KING IS HERE". Título: What If You Became Sukuna? Nobody Survives 7 Days. Sem teste A/B.
 - 24/11 10:14: 12 views (Studio), 0 nos últimos 60 min. 10:32: 25 impressões, CTR 24,0% (≈6 cliques), duração média 1:43 (17%), retenção sem dados suficientes. Origem: navegação 4, páginas do canal 3, outro 7 (sem sugeridos nem pesquisa).
 - Catálogo (API, 24/11 ~08:30 UTC vs 23/11 ~14h UTC): Luffy 119→233, Saitama 124→151, JoJo 132→141, Killua 307→312, Star Platinum 30→38, Yuta 36→43, Domain 12→12, Death Note 6→8. Canal: 1 114 views totais, 9 inscritos (API).
+
+## Toji e Nanami (25/11/2026)
+- Autorização permanente do utilizador (25/11): depois do render, carregar PRIVADO automaticamente (sem data, sem thumbnail), sem pedir permissão, para os dois. Só privado: publicar e pôr thumbnail continua a ser do utilizador.
+- Toji: What If You Became Toji? ID OWfAtrbiQGU, carregado privado a 25/11. Thumbnail escolhida: "NO CURSED ENERGY" (stickman). mp4 9:19, -13,6 LUFS.
+- Nanami: What If You Became Nanami? Clock Out at 5 or Die. Script aprovado a 25/11; em produção na Ifsuperhero.
+- Teste lado a lado (docs/TESTE_TOJI_NANAMI_24NOV.md): Toji 20:00 UTC, Nanami ~21:30 UTC, sem A/B.
