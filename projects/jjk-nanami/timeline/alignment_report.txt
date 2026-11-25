@@ -1,0 +1,38 @@
+00:01.06  replace  script: Kento Nanami,  |  heard: Kentonanami
+00:14.04  replace  script: seven-to-three  |  heard: seven to three
+00:20.12  replace  script: five p.m.,  |  heard: 5 p .m.,
+00:25.72  replace  script: eight fifty-two  |  heard: 852
+00:28.34  insert   script: —  |  heard: one.
+00:37.12  replace  script: seven-three  |  heard: seven -three
+01:44.64  replace  script: eight fifty-nine,  |  heard: 859,
+02:02.02  replace  script: five p.m.,  |  heard: 5 p .m.,
+02:03.98  replace  script: working-hours  |  heard: working hours
+03:09.16  insert   script: —  |  heard: more.
+04:21.58  replace  script: seven-three  |  heard: seven three
+04:45.68  replace  script: And  |  heard: Then
+04:51.02  replace  script: one:  |  heard: 1.
+04:57.60  replace  script: seven-three,  |  heard: 7 -3,
+05:00.48  replace  script: three forty-one.  |  heard: 3 -41. one.
+05:05.18  replace  script: four forty,  |  heard: 440,
+05:09.12  replace  script: cursed-energy  |  heard: cursed energy
+05:14.66  replace  script: Thirty-eight  |  heard: 38
+05:38.02  replace  script: four fifty-eight, you're  |  heard: 4 .58, you are
+05:44.20  replace  script: four fifty-eight  |  heard: 4 .58
+05:48.86  replace  script: Priya's  |  heard: Priya is
+06:01.54  replace  script: going to  |  heard: gonna
+06:09.82  replace  script: anyone's  |  heard: anyone
+06:12.16  replace  script: four fifty-nine  |  heard: 4 .59
+06:13.58  replace  script: fifty  |  heard: 50
+06:16.48  replace  script: a  |  heard: the
+06:29.70  replace  script: a loan.  |  heard: alone.
+06:35.12  replace  script: Eleven  |  heard: 11
+06:52.44  replace  script: o'clock.  |  heard: o 'clock.
+06:57.62  replace  script: Priya says  |  heard: Prius has
+07:13.22  insert   script: —  |  heard: or
+07:17.96  replace  script: lines  |  heard: line
+08:25.78  delete   script: a  |  heard: —
+08:30.72  replace  script: Priya's  |  heard: Pre is
+08:32.34  replace  script: tie  |  heard: High
+08:35.64  replace  script: Five eleven p.m.  |  heard: 5 .11 p .m.,
+09:12.96  replace  script: five oh one.  |  heard: 501,
+09:25.90  insert   script: —  |  heard: you

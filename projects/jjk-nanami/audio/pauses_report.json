@@ -1,0 +1,101 @@
+{
+ "profile": "documentary",
+ "max": 0.8,
+ "to": 0.55,
+ "duration_before": 551.235,
+ "duration_after": 544.286,
+ "removed_s": 6.95,
+ "cuts": [
+  {
+   "at": 24.215,
+   "was": 0.97,
+   "kind": "pause"
+  },
+  {
+   "at": 100.455,
+   "was": 0.85,
+   "kind": "pause"
+  },
+  {
+   "at": 226.095,
+   "was": 0.95,
+   "kind": "pause"
+  },
+  {
+   "at": 263.375,
+   "was": 0.96,
+   "kind": "pause"
+  },
+  {
+   "at": 284.875,
+   "was": 0.99,
+   "kind": "pause"
+  },
+  {
+   "at": 290.085,
+   "was": 0.83,
+   "kind": "pause"
+  },
+  {
+   "at": 326.055,
+   "was": 0.85,
+   "kind": "pause"
+  },
+  {
+   "at": 335.845,
+   "was": 1.04,
+   "kind": "pause"
+  },
+  {
+   "at": 349.495,
+   "was": 0.95,
+   "kind": "pause"
+  },
+  {
+   "at": 356.255,
+   "was": 0.87,
+   "kind": "pause"
+  },
+  {
+   "at": 387.615,
+   "was": 0.85,
+   "kind": "pause"
+  },
+  {
+   "at": 415.275,
+   "was": 0.84,
+   "kind": "pause"
+  },
+  {
+   "at": 448.185,
+   "was": 0.9,
+   "kind": "pause"
+  },
+  {
+   "at": 465.175,
+   "was": 0.91,
+   "kind": "pause"
+  },
+  {
+   "at": 490.415,
+   "was": 1.15,
+   "kind": "pause"
+  },
+  {
+   "at": 500.645,
+   "was": 0.9,
+   "kind": "pause"
+  },
+  {
+   "at": 522.655,
+   "was": 1.13,
+   "kind": "pause"
+  },
+  {
+   "at": 535.515,
+   "was": 0.91,
+   "kind": "pause"
+  }
+ ],
+ "applied": true
+}
