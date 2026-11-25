@@ -5,3 +5,6 @@
 - Diferenças que confundem o teste: personagem, comprimento do título, hora (1h30), thumbnails diferentes. n = 1 por lado: só indicativo.
 - Medir às 1 h, 3-4 h, 24 h: impressões, CTR, views, origem, curva dos primeiros 60 s, comparar com Sukuna (22:38 de 23/11: 25 impressões, 12 views em 12 h).
 - Risco assumido: dois vídeos no mesmo dia podem dividir o primeiro lote (hipótese; sem dados nossos).
+
+## Atualização 25/11
+Publicação dupla abortada pelo utilizador (consultou o assistente do YouTube). Passam a ser dois vídeos em dias diferentes (cadência ~48 h). Comparar às mesmas idades (1 h, 3-4 h, 24 h) depois de cada publicação.
