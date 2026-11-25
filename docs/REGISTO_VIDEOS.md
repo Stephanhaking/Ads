@@ -57,5 +57,5 @@ Posts: Domain Expansion publicado a 22/11 23:02 UTC (01:02 hora do utilizador, ~
 ## Toji e Nanami (25/11/2026)
 - Autorização permanente do utilizador (25/11): depois do render, carregar PRIVADO automaticamente (sem data, sem thumbnail), sem pedir permissão, para os dois. Só privado: publicar e pôr thumbnail continua a ser do utilizador.
 - Toji: What If You Became Toji? ID OWfAtrbiQGU, carregado privado a 25/11. Thumbnail escolhida: "NO CURSED ENERGY" (stickman). mp4 9:19, -13,6 LUFS.
-- Nanami: What If You Became Nanami? Clock Out at 5 or Die. Script aprovado a 25/11; em produção na Ifsuperhero.
+- Nanami: What If You Became Nanami? Clock Out at 5 or Die. ID 013PzW-ta3Q, carregado privado a 25/11 (mp4 9:26, -14,1 LUFS, pre_publish_check 9 PASS, FAIL do título é falso alarme). Thumbnail: '5:00 PM / CLOCK OUT AT 5 OR DIE'.
 - Teste lado a lado (docs/TESTE_TOJI_NANAMI_24NOV.md): Toji 20:00 UTC, Nanami ~21:30 UTC, sem A/B.
