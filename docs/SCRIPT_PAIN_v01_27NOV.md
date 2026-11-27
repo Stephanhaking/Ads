@@ -1,6 +1,6 @@
-# What If You Became Pain? Never Let One Body Fall: v01 (título proposto; confirmar)
+# What If You Became Pain in Real Life? 6 Bodies: v01 (título escolhido pelo utilizador a 27/11; repete "6 BODIES" da thumbnail, assumido)
 # Para aprovação antes de voz e visuais. Thumbnail recebida: sete figuras stickman de cabeça redonda preta, cabelo laranja, bandas na testa, olhos roxos do Rinnegan, capas Akatsuki, o do centro com piercings (receptores), círculos roxos do Rinnegan no céu, lua vermelha, ruínas; texto "6 BODIES. ONE MIND." e "PAIN". O script cumpre: seis corpos + o do centro (o utilizador), Rinnegan, receptores, lua vermelha, ruínas, "6 bodies / one mind".
-# Título proposto "Never Let One Body Fall" porque a thumbnail já diz "6 BODIES" (não repetir). Alternativas na verificação.
+# Título escolhido pelo utilizador (nota 96): "What If You Became Pain in Real Life? 6 Bodies". A thumbnail repete "6 BODIES" (redundância assumida).
 # Etiquetas [CANON] / [OUR RULE] / [OUR GUESS]. Narração: "In the story" / "In your version" / "Our guess".
 # Factos só de docs/VERIFICACAO_PAIN_27NOV.md (Narutopedia, secundária): seis corpos com Paths (Deva, Animal, Preta, Asura, Naraka, Humana), controlados por receptores negros; visão partilhada; Shinra Tensei com recarga mínima de 5 s; Banshō Ten'in; sensores seguem o chakra; interrupção para todos os corpos; Nagato incapacitado e magro.
 # Fora: Rinne Rebirth (custo discutido), nomes dos corpos, morte do Yahiko/Nagato em detalhe, extração de almas (Human Path só mencionado), números de alcance.
