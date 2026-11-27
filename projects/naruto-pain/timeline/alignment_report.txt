@@ -1,0 +1,37 @@
+00:07.70  replace  script: three thousand  |  heard: 3 ,000
+00:26.64  replace  script: six fifty-eight  |  heard: 6 .58
+00:35.18  replace  script: Rinnegan  |  heard: renegan
+00:36.26  replace  script: every body  |  heard: everybody
+00:41.42  replace  script: dam  |  heard: damn
+01:29.18  replace  script: Deva Path  |  heard: devapath
+01:31.30  replace  script: Shinra  |  heard: Shinrai
+01:34.32  replace  script: Bansho Ten-in  |  heard: Bancho Tenen
+01:41.28  replace  script: leave.  |  heard: leaf,
+01:48.62  replace  script: Shinra Tensei,  |  heard: Shinrai 10 say
+01:53.66  replace  script: Deva Path  |  heard: devapath
+02:01.26  replace  script: A  |  heard: The
+02:36.54  delete   script: own  |  heard: —
+03:03.60  delete   script: know  |  heard: —
+03:32.82  replace  script: thirty  |  heard: 30
+03:49.56  replace  script: thirty  |  heard: 30
+04:12.24  replace  script: The  |  heard: to
+04:25.78  replace  script: Preta  |  heard: Preda
+04:30.32  replace  script: current's  |  heard: currents
+04:32.76  replace  script: Preta  |  heard: Preda
+04:51.06  replace  script: one,  |  heard: wire
+04:54.38  delete   script: the  |  heard: —
+05:22.82  replace  script: three  |  heard: 3
+05:23.30  insert   script: —  |  heard: them,
+05:48.10  insert   script: —  |  heard: 4.
+05:51.16  replace  script: Asura's  |  heard: Asara's
+05:56.56  replace  script: Five.  |  heard: 5.
+05:57.92  replace  script: Deva  |  heard: D .Va
+06:11.24  replace  script: five,  |  heard: 5.
+06:13.24  replace  script: five.  |  heard: 5.
+06:59.68  replace  script: mid-step.  |  heard: mid -step.
+07:02.20  replace  script: Preta.  |  heard: prata.
+07:06.14  replace  script: Deva  |  heard: devo
+07:21.30  replace  script: Preta  |  heard: Prita
+07:21.96  replace  script: knee-deep  |  heard: knee -deep
+08:31.12  insert   script: —  |  heard: Ruth,
+08:51.78  replace  script: Three thousand  |  heard: 3 ,000

@@ -1,0 +1,50 @@
+# audio/score.py — original score for "What If You Became Pain in Real Life? 6 Bodies" (~9:22). One day and one night.
+# A low pad and slow bell-like celesta for the cold open under the violet rings; a glassy six-note arpeggio for the shared
+# sight; a dry marimba groove with ticks for the push and its five-second count; light pizzicato in F major for the town;
+# tense tremolo for the dam; a driving ostinato for the split; drums for the first break; a hush with piano for the visitor;
+# the fastest pulse for "pick one"; F major warmth for the morning.
+S.set_key("D minor")
+six = Motif("1 3 5 8 5 3", ".5 .5 .5 .5 .5 .5")
+run = Motif("1 . 1 5 . 1 8 .", ".25 .25 .25 .25 .25 .25 .25 .25")
+hook = Motif("5 4 3 1 . . 3 2", ".5 .5 .5 1 .5 .5 .5 .5")
+W = lambda p, a=0: S.word(p, after=a)
+cuts = [W("Each body carries one Path"), W("You start with the loudest one"), W("You walk down into the valley"), W("is the dam's hydrologist"),
+        W("The work splits"), W("the crack widens by a finger"), W("Ruth follows the cables"), W("Everything stops"),
+        W("You come back in the dark"), W("You let the Naraka body go"), W("By dawn")]
+t = [0] + cuts + [S.duration]
+A = S.section("open", t[0], t[1], bpm=76, chords="i:2 bVI:2 iv:2 V:2")
+A.pad("pad_space", 3, 22, "open"); A.strings("tremolo", 3, 16, swell=0.5); A.arp("celesta", "1 5 8 5", step=1, octave=5, vel=10)
+S.hit(W("You've woken up as Pain"), "boom", vel=80); S.hit(W("Six bodies. One mind"), "impact", vel=70); S.hit(W("all of them stop"), "impact", vel=60)
+B = S.section("eyes", t[1], t[2], bpm=84, chords="i:2 bVI:2 bIII:2 bVII:2")
+B.ostinato(six, "celesta", octave=5, vel=12); B.pad("pad_glass", 3, 16, "open"); B.strings("strings", 3, 12, swell=0.3)
+S.hit(W("Nobody's lost"), "impact", vel=46)
+C = S.section("push", t[2], t[3], bpm=100, chords="i:1 bVI:1 bIII:1 bVII:1")
+C.ostinato(run, "marimba", octave=4, vel=14); C.ticks("stick", step=0.5, vel=10); C.pad("pad_space", 3, 14, "open")
+S.hit(W("The crates leave"), "boom", vel=82); S.hit(W("there's a cooldown"), "impact", vel=56); S.hit(W("Gaps are"), "impact", vel=64)
+D_ = S.section("town", t[3], t[4], bpm=96, key="F major", chords="I:1 vi:1 IV:1 V:1")
+D_.arp("pizz", "1 3 5 8", step=0.5, octave=4, vel=13); D_.motif(hook, "piano", every=4, octave=4, vel=12); D_.pad("pad_warm", 3, 14, "open")
+S.hit(W("creepiest thing"), "impact", vel=48)
+E_ = S.section("dam", t[4], t[5], bpm=80, chords="i:2 iv:2 bVI:2 V:2")
+E_.strings("tremolo", 3, 22, swell=0.6); E_.pad("pad_space", 3, 18, "open"); E_.pulse("synth_bass", octave=2, vel=18, step=1)
+S.hit(W("A deadline"), "impact", vel=62); S.hit(W("her hat flies"), "impact", vel=58); S.hit(W("an enormous bird"), "boom", vel=66)
+F = S.section("split", t[5], t[6], bpm=108, chords="i:1 bVI:1 bIII:1 bVII:1")
+F.ostinato(run, "marimba", octave=4, vel=16); F.pulse("synth_bass", octave=2, vel=20, step=0.5); F.pad("pad_glass", 3, 14, "open")
+S.hit(W("Not today. Not ever"), "impact", vel=56)
+G = S.section("brk", t[6], t[7], bpm=120, chords="i:1 bVI:1 bIII:1 bVII:1")
+G.strings("tremolo", 3, 28, swell=0.6); G.pulse("synth_bass", octave=2, vel=26, step=0.5); G.drums({"kick": "x...x...", "snare": "....x...", "hat": "x.x.x.x."}, "kit", step=0.25, vel=18)
+S.hit(W("You throw a Shinra Tensei"), "boom", vel=80); S.hit(W("twice as angry"), "impact", vel=66); S.hit(W("fires again"), "boom", vel=72)
+H = S.section("visit", t[7], t[8], bpm=66, chords="i:2 bVI:2 iv:2 V:2")
+H.pad("pad_warm", 3, 16, "open"); H.motif(hook, "piano", every=4, octave=4, vel=13)
+S.hit(W("That's you"), "impact", vel=48); S.hit(W("One touch"), "impact", vel=58)
+I = S.section("stop", W("Everything stops"), t[9], bpm=60, chords="i:4 iv:4")
+I.pad("pad_space", 3, 20, "open"); I.pulse("synth_bass", octave=2, vel=20, step=1)
+S.hit(W("Everything stops"), "boom", vel=86); S.hit(W("the first piece of the wall"), "boom", vel=84)
+J = S.section("pick", t[9], t[10], bpm=132, chords="i:1 bVI:1 bIII:1 bVII:1")
+J.strings("tremolo", 3, 32, swell=0.6); J.pulse("synth_bass", octave=2, vel=32, step=0.5); J.drums({"kick": "x..x..x.", "snare": "....x...", "hat": "xxxxxxxx"}, "kit", step=0.25, vel=24)
+S.hit(W("You've got eight seconds"), "impact", vel=70); S.hit(W("Seven seconds"), "impact", vel=62); S.hit(W("Six seconds"), "impact", vel=64)
+K_ = S.section("hold", t[10], t[11], bpm=100, chords="i:2 bVI:2 bIII:2 V:2")
+K_.strings("strings", 3, 24, swell=0.5); K_.pulse("synth_bass", octave=2, vel=22, step=1); K_.pad("pad_warm", 3, 18, "open")
+S.hit(W("It holds", 495), "boom", vel=80); S.hit(W("The town doesn't flood"), "impact", vel=72)
+Z = S.section("morning", t[11], t[12], bpm=84, key="F major", chords="I:2 vi:2 IV:2 V:2")
+Z.pad("pad_warm", 3, 22, "open", swell=0.3); Z.strings("strings", 3, 18, swell=0.4); Z.motif(hook, "piano", every=4, octave=4, vel=18)
+S.hit(W("was the seventh"), "impact", vel=60)
