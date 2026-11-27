@@ -8,6 +8,7 @@ Fonte: Narutopedia (naruto.fandom.com, wiki de fãs; secundária). Confirmar ⚠
 - Fraquezas: sensores podem seguir o chakra enviado aos corpos; se o utilizador é interrompido a transmitir, todos os corpos param e ficam muito vulneráveis.
 - Nagato: pais mortos na guerra, Rinnegan despertou; órfão em Amegakure com Yahiko e Konan; Jiraiya; Yahiko morreu a saltar sobre o kunai; Nagato ficou incapacitado e magro, usou o cadáver do Yahiko como Deva Path.
 - Rinne Rebirth: ressuscitou os mortos de Konoha; as fontes discordam sobre o custo exato (⚠ não afirmar que "mata sempre o utilizador"). Nagato morreu depois de confiar a vontade ao Naruto.
+- Naraka Path (adicionado a 27/11, depois de a Ifsuperhero assinalar): a wiki trata-o como o corpo mais valioso porque restaura os outros (o Rei do Inferno repara os corpos danificados); a página do Nagato diz que ele sacrificaria outras Paths para proteger as mais acima na hierarquia. ⚠ É comentário da wiki de fãs, não uma declaração dita na história: a etiqueta [CANON] do script é uma ligeira sobre-afirmação; o ideal é "[CANON · fan wiki]".
 ## Fora / não confirmado
 - ⚠ Quem é "Pain" a cada momento (nome dos corpos) e a ordem das Paths: não usar nomes próprios dos corpos; só as Paths.
 - ⚠ Alcance da transmissão de chakra, números de distância: se usados, OUR RULE.
