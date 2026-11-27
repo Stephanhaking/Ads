@@ -63,3 +63,4 @@ Posts: Domain Expansion publicado a 22/11 23:02 UTC (01:02 hora do utilizador, ~
 ## Pain (27/11/2026)
 - What If You Became Pain in Real Life? 6 Bodies. Script aprovado a 27/11 (docs/SCRIPT_PAIN_v01_27NOV.md); em produção na Ifsuperhero. Autorização do utilizador a 27/11: upload PRIVADO automático depois do pre_publish_check (só privado; publicar, thumbnail e IA são do utilizador).
 - Toji agendado pelo utilizador para 27/11 20:00 UTC (confirmado na API: privado com publishAt). Nanami: privado, sem data.
+- Pain carregado PRIVADO a 27/11: ID Q93zT34eegs (mp4 9:22, -13,7 LUFS, pre_publish_check 9 PASS, FAIL do título é falso alarme). Corrigi a 1.ª linha da descrição antes do upload: dizia 'if a single body falls, all of them stop' (erro meu no pedido; na obra é a interrupção de quem controla que pára todos; no script é OUR RULE 'perdes o que esse corpo vê'); agora 'don't let a single body fall'. A linha do Naraka (wiki, comentário) ainda por decidir A/B/C.
