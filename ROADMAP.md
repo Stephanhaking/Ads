@@ -22,6 +22,9 @@ Focus Layer can later add `measured` entries without changing the data model.
 - Redesign ("the record") with a desktop layout.
 
 ## Next
+- **Pending conversation:** the founder will explain the plan for their own foundation, to receive
+  money from failed commitments. Ask: country, foundation or association, board, causes, and how to
+  keep "100% to the cause" free of conflicts of interest.
 - Password reset and email verification (needs an email provider).
 - Account deletion and data export (GDPR / LGPD).
 - Move from SQLite to Postgres before running on serverless hosting or more than one server.
