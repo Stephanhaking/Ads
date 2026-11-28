@@ -1,5 +1,11 @@
 # Marca do ecossistema
 
+> **Decisão (28 nov 2026):** a app chama-se **The 1%**. Os nomes abaixo (Garra, Stephanus, Oathwork…)
+> ficam como opções para uma eventual empresa-mãe, que por agora não aparece. Para o nome da app:
+> registar também a versão por extenso ("The One Percent") para pesquisa e contas, desenhar um
+> logótipo distintivo (um número sozinho é difícil de proteger) e pesquisar "1%" / "One Percent"
+> nas classes 9, 42 e 45.
+
 Uma única marca-mãe para três produtos: a rede social de compromisso e prova, a camada de foco
 no desktop e a app de self-study.
 

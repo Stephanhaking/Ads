@@ -10,7 +10,7 @@ npm run render:en     # out/ad-en.mp4
 npm run render:pt     # out/ad-pt.mp4
 ```
 
-Compositions: `Ad-EN`, `Ad-PT` (Garra) and `Ad-EN-Stephanus`, `Ad-PT-Stephanus`.
+Compositions: `Ad-EN` and `Ad-PT` (The 1%), plus `Ad-EN-Garra` and `Ad-EN-Stephanus` from the naming exploration.
 Copy lives in `src/copy.ts`, timings in `src/Ad.tsx`, the app screens in `src/ui.tsx`.
 
 If Remotion cannot download its own browser, point it at a local Chrome Headless Shell:

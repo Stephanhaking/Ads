@@ -72,13 +72,51 @@ const StephanusMark: React.FC<{ size: number; progress: number; color: string }>
   </svg>
 )
 
+// The 1%: a gold app icon carrying "1%".
+const OnePercentMark: React.FC<{ size: number; progress: number }> = ({ size, progress }) => {
+  const p = clamp(progress / 0.7)
+  const t = clamp((progress - 0.45) / 0.55)
+  return (
+    <div
+      style={{
+        width: size,
+        height: size,
+        borderRadius: size * 0.24,
+        background: C.gold,
+        transform: `scale(${0.6 + 0.4 * p})`,
+        opacity: p,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        boxShadow: `0 ${size * 0.08}px ${size * 0.3}px rgba(251,191,36,${0.25 * p})`,
+      }}
+    >
+      <span
+        style={{
+          fontFamily: geist,
+          fontWeight: 700,
+          fontSize: size * 0.42,
+          letterSpacing: '-0.04em',
+          color: C.ink,
+          opacity: t,
+          transform: `translateY(${(1 - t) * size * 0.08}px)`,
+        }}
+      >
+        1%
+      </span>
+    </div>
+  )
+}
+
 export const BrandMark: React.FC<{ brand: Brand; size: number; progress?: number; color?: string }> = ({
   brand,
   size,
   progress = 1,
   color = C.gold,
 }) =>
-  brand === 'garra' ? (
+  brand === 'onepercent' ? (
+    <OnePercentMark size={size} progress={progress} />
+  ) : brand === 'garra' ? (
     <GarraMark size={size} progress={progress} color={color} />
   ) : (
     <StephanusMark size={size} progress={progress} color={color} />
@@ -90,7 +128,11 @@ export const BrandName: React.FC<{ brand: Brand; size: number; tracking?: number
   tracking,
   style,
 }) =>
-  brand === 'garra' ? (
+  brand === 'onepercent' ? (
+    <div style={{ fontFamily: geist, fontWeight: 700, fontSize: size, letterSpacing: `${tracking ?? -0.02}em`, lineHeight: 1, ...style }}>
+      The <span style={{ color: C.gold }}>1%</span>
+    </div>
+  ) : brand === 'garra' ? (
     <div style={{ fontFamily: geist, fontWeight: 700, fontSize: size, letterSpacing: `${tracking ?? 0.08}em`, lineHeight: 1, ...style }}>
       GARRA
     </div>

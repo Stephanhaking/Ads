@@ -4,10 +4,11 @@ import { Ad, type AdProps } from './Ad'
 import { DURATION, FPS, H, W } from './theme'
 
 const variants: { id: string; props: AdProps }[] = [
-  { id: 'Ad-EN', props: { lang: 'en', brand: 'garra' } },
-  { id: 'Ad-PT', props: { lang: 'pt', brand: 'garra' } },
+  { id: 'Ad-EN', props: { lang: 'en', brand: 'onepercent' } },
+  { id: 'Ad-PT', props: { lang: 'pt', brand: 'onepercent' } },
+  // Earlier umbrella-brand explorations, kept for comparison.
+  { id: 'Ad-EN-Garra', props: { lang: 'en', brand: 'garra' } },
   { id: 'Ad-EN-Stephanus', props: { lang: 'en', brand: 'stephanus' } },
-  { id: 'Ad-PT-Stephanus', props: { lang: 'pt', brand: 'stephanus' } },
 ]
 
 export const Root: React.FC = () => (

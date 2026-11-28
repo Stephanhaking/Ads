@@ -1,5 +1,5 @@
 export type Lang = 'en' | 'pt'
-export type Brand = 'garra' | 'stephanus'
+export type Brand = 'onepercent' | 'garra' | 'stephanus'
 
 // Every claim here is true of the product design: no invented users, numbers or reviews.
 export const COPY = {

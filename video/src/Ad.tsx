@@ -158,7 +158,7 @@ const Reveal: React.FC<{ lang: Lang; brand: Brand }> = ({ lang, brand }) => {
         }}
       />
       <div style={{ position: 'absolute', top: 560 }}>
-        <BrandMark brand={brand} size={400} progress={draw} />
+        <BrandMark brand={brand} size={brand === 'onepercent' ? 300 : 400} progress={draw} />
       </div>
       <div style={{ position: 'absolute', top: 1030, opacity: nameIn, color: C.paper }}>
         <BrandName brand={brand} size={150} tracking={brand === 'garra' ? 0.08 + (1 - nameIn) * 0.25 : undefined} />
