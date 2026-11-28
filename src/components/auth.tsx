@@ -41,27 +41,17 @@ export function AuthScreen() {
   }
 
   return (
-    <main className="mx-auto grid min-h-[100dvh] max-w-[1080px] gap-12 px-5 py-10 sm:px-8 lg:grid-cols-[1.1fr_1fr] lg:items-center lg:gap-16">
-      <section>
-        <Wordmark className="text-[30px]" />
-        <h1 className="mt-10 max-w-[14ch] text-[44px] font-bold leading-[1.02] tracking-[-0.035em] sm:text-[58px]">
+    <main className="mx-auto grid min-h-[100dvh] max-w-[1080px] gap-x-16 gap-y-8 px-5 py-8 sm:px-8 sm:py-10 lg:grid-cols-[1.1fr_1fr] lg:items-center">
+      <section className="lg:row-span-2">
+        <Wordmark className="text-[26px] sm:text-[30px]" />
+        <h1 className="mt-8 max-w-[14ch] text-[38px] font-bold leading-[1.02] tracking-[-0.035em] sm:mt-10 sm:text-[58px]">
           Most people stop. Keep a record of not stopping.
         </h1>
-        <Curve tier={6} className="mt-8 max-w-[520px]" />
-        <ol className="mt-8 space-y-4">
-          {STEPS.map(([t, d], i) => (
-            <li key={t} className="grid grid-cols-[28px_1fr] gap-3">
-              <span className="num pt-0.5 text-[13px] text-primary">{String(i + 1).padStart(2, '0')}</span>
-              <div>
-                <div className="text-[16px] font-semibold">{t}</div>
-                <div className="text-[14px] leading-relaxed text-muted-foreground">{d}</div>
-              </div>
-            </li>
-          ))}
-        </ol>
+        <div className="hidden lg:block">
+          <Steps />
+        </div>
       </section>
-
-      <section className="rounded-xl border border-border bg-card p-6 sm:p-8">
+      <section className="rounded-xl border border-border bg-card p-5 sm:p-8">
         <div className="flex gap-1 rounded-md bg-muted p-1" role="tablist">
           {(['signup', 'login'] as const).map((m) => (
             <button
@@ -135,6 +125,29 @@ export function AuthScreen() {
           </p>
         </form>
       </section>
+
+      <section className="lg:hidden">
+        <Steps />
+      </section>
     </main>
+  )
+}
+
+function Steps() {
+  return (
+    <>
+      <Curve tier={6} className="mt-8 max-w-[520px]" />
+      <ol className="mt-8 space-y-4">
+        {STEPS.map(([t, d], i) => (
+          <li key={t} className="grid grid-cols-[28px_1fr] gap-3">
+            <span className="num pt-0.5 text-[13px] text-primary">{String(i + 1).padStart(2, '0')}</span>
+            <div>
+              <div className="text-[16px] font-semibold">{t}</div>
+              <div className="text-[14px] leading-relaxed text-muted-foreground">{d}</div>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </>
   )
 }

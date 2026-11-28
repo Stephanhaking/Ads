@@ -48,8 +48,8 @@ export function Section({
   className?: string
 }) {
   return (
-    <section className={cn('mt-10', className)}>
-      <div className="mb-3 flex items-baseline justify-between gap-3 border-b border-foreground/80 pb-2">
+    <section className={cn('mt-12', className)}>
+      <div className="mb-3 flex items-baseline justify-between gap-3 border-b border-foreground/20 pb-2">
         <h2 className="text-[17px] font-semibold">{title}</h2>
         {aside && <div className="text-[13px] text-muted-foreground">{aside}</div>}
       </div>
@@ -130,29 +130,6 @@ export function RecordRow({ when, children, value, tone }: { when: string; child
       <span className="min-w-0 text-[14px] leading-snug">{children}</span>
       {value && <span className={cn('num text-[12.5px]', tone === 'stake' && 'text-stake', tone === 'verified' && 'text-verified')}>{value}</span>}
     </li>
-  )
-}
-
-export function Check({ checked, onChange, label, disabled }: { checked: boolean; onChange: () => void; label: string; disabled?: boolean }) {
-  return (
-    <button
-      type="button"
-      role="checkbox"
-      aria-checked={checked}
-      aria-label={label}
-      disabled={disabled}
-      onClick={onChange}
-      className={cn(
-        'flex h-[22px] w-[22px] shrink-0 items-center justify-center rounded-[4px] border-[1.5px] transition-colors',
-        checked ? 'border-primary bg-primary text-primary-foreground' : 'border-foreground/60 bg-card hover:border-primary'
-      )}
-    >
-      {checked && (
-        <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth={3.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-          <path d="M20 6 9 17l-5-5" />
-        </svg>
-      )}
-    </button>
   )
 }
 

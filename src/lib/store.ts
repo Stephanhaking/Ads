@@ -18,8 +18,11 @@ type State = {
   signup: (input: { email: string; password: string; name: string; focus: FocusArea }) => Promise<string | null>
   login: (input: { email: string; password: string }) => Promise<string | null>
   logout: () => Promise<void>
-  /** Runs an API write. Returns false and shows the error if it failed. */
-  act: (method: 'POST' | 'PATCH' | 'DELETE', path: string, body?: unknown) => Promise<boolean>
+  /**
+   * Runs an API write. Returns false and shows the error if it failed.
+   * `optimistic` updates the screen immediately; the server's answer replaces it either way.
+   */
+  act: (method: 'POST' | 'PATCH' | 'DELETE', path: string, body?: unknown, optimistic?: (s: Snapshot) => Snapshot) => Promise<boolean>
   dismiss: () => void
 }
 
@@ -74,13 +77,16 @@ export const useStore = create<State>()((set, get) => {
       set({ status: 'anon', snapshot: null, notice: null })
     },
 
-    act: async (method, path, body) => {
+    act: async (method, path, body, optimistic) => {
+      const before = get().snapshot
+      if (optimistic && before) set({ snapshot: optimistic(before) })
       set({ busy: true })
       try {
         const r = await api(method, path, body)
         accept(r.snapshot, r.notice)
         return true
       } catch (err) {
+        if (optimistic && before) set({ snapshot: before })
         if (err instanceof ApiError && err.status === 401) set({ status: 'anon', snapshot: null })
         set({ notice: { text: (err as Error).message, tone: 'error' } })
         return false

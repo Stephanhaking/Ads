@@ -27,10 +27,18 @@ export function TodayScreen({ go }: { go: (tab: Tab) => void }) {
     <div>
       <PageTitle eyebrow={date} title={doneToday ? `Checked in, ${s.user.name}.` : `Today, ${s.user.name}.`} />
 
-      <dl className="mt-6 grid grid-cols-3 border-y border-border">
-        <Stat label="Streak" value={`${s.streak}`} unit={s.streak === 1 ? 'day' : 'days'} />
-        <Stat label="Rank" value={rank.rank.name} unit={`tier ${rank.index + 1}/7`} border />
-        <Stat label="Self points today" value={`${s.selfToday}`} unit={`of ${s.selfDailyCap}`} border />
+      <dl className="mt-6 grid grid-cols-3 border-y border-foreground/20">
+        <Stat label="Streak">
+          <span className="num text-[24px]">{s.streak}</span>
+          <span className="text-[13px] text-muted-foreground">{s.streak === 1 ? 'day' : 'days'}</span>
+        </Stat>
+        <Stat label="Rank" border>
+          <span className="truncate text-[19px] font-semibold tracking-[-0.01em]">{rank.rank.name}</span>
+        </Stat>
+        <Stat label="Today" border>
+          <span className="num text-[24px]">{s.selfToday}</span>
+          <span className="num text-[12px] text-muted-foreground">/{s.selfDailyCap}</span>
+        </Stat>
       </dl>
 
       <Section title={`Check in · ${challenge.title}`} aside={<button className="underline-offset-4 hover:underline" onClick={() => go('challenges')}>Change</button>}>
@@ -96,14 +104,11 @@ export function TodayScreen({ go }: { go: (tab: Tab) => void }) {
   )
 }
 
-function Stat({ label, value, unit, border }: { label: string; value: string; unit: string; border?: boolean }) {
+function Stat({ label, border, children }: { label: string; border?: boolean; children: React.ReactNode }) {
   return (
-    <div className={border ? 'border-l border-border pl-4 py-3' : 'py-3 pr-4'}>
+    <div className={border ? 'min-w-0 border-l border-border py-3 pl-4' : 'min-w-0 py-3 pr-4'}>
       <dt className="label">{label}</dt>
-      <dd className="mt-1 flex flex-wrap items-baseline gap-x-1.5">
-        <span className="num truncate text-[22px] leading-tight">{value}</span>
-        <span className="num text-[11px] text-muted-foreground">{unit}</span>
-      </dd>
+      <dd className="mt-1 flex min-h-[32px] items-baseline gap-1">{children}</dd>
     </div>
   )
 }

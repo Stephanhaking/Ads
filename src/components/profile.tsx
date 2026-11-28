@@ -50,7 +50,7 @@ export function ProfileScreen() {
       </Section>
 
       <Section title="Track record">
-        <dl className="grid grid-cols-2 border-t border-border sm:grid-cols-3">
+        <dl className="grid grid-cols-2 gap-px overflow-hidden rounded-md border border-border bg-border sm:grid-cols-3">
           <Fact label="Days checked in" value={s.checkInDays} />
           <Fact label="Current streak" value={s.streak} />
           <Fact label="Proofs validated" value={s.validatedProofs} />
@@ -128,9 +128,9 @@ function sameDay(a: number, b: number) {
 
 function Fact({ label, value }: { label: string; value: number }) {
   return (
-    <div className="border-b border-r border-border py-3 pr-3 [&:nth-child(2n)]:border-r-0 sm:[&:nth-child(2n)]:border-r sm:[&:nth-child(3n)]:border-r-0">
+    <div className="bg-card px-3.5 py-3">
       <dt className="text-[12px] text-muted-foreground">{label}</dt>
-      <dd className="num mt-1 text-[24px] leading-none">{value}</dd>
+      <dd className="num mt-1.5 text-[24px] leading-none">{value}</dd>
     </div>
   )
 }

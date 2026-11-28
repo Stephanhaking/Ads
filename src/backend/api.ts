@@ -44,6 +44,8 @@ export type Snapshot = {
   selfDailyCap: number
   streak: number
   checkInDays: number
+  /** Days with a check-in in the last two weeks, for the week view. */
+  checkInDayList: string[]
   checksToday: { challengeId: string; taskId: string }[]
   challengeDays: Record<string, number>
   proofs: {
@@ -437,6 +439,7 @@ function snapshot(ctx: Ctx, u: UserRow): Snapshot {
     selfDailyCap: R.SELF_DAILY_CAP,
     streak: R.streak(days, t),
     checkInDays: days.length,
+    checkInDayList: days.filter((d) => d >= R.addDays(t, -13)).sort(),
     checksToday: db
       .all<{ challenge_id: string; task_id: string }>('SELECT challenge_id, task_id FROM task_checks WHERE user_id = ? AND day = ?', u.id, t)
       .map((r) => ({ challengeId: r.challenge_id, taskId: r.task_id })),

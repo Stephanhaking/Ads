@@ -19,29 +19,32 @@ export function CommitmentRow({ c }: { c: Snapshot['commitments'][number] }) {
   const act = useStore((s) => s.act)
   const demo = useStore((s) => s.snapshot?.demoTools)
   const trigger = COMMITMENT_TRIGGERS.find((t) => t.id === c.triggerId)
+  const toggle = (v: boolean) =>
+    act('PATCH', `commitments/${c.id}`, { active: v }, (snap) => ({
+      ...snap,
+      commitments: snap.commitments.map((x) => (x.id === c.id ? { ...x, active: v, pausedReason: v ? null : x.pausedReason } : x)),
+    }))
   return (
-    <li className="border-b border-border py-3.5 last:border-0">
-      <div className="flex items-start gap-3">
-        <div className="min-w-0 flex-1">
-          <div className="text-[15px] font-medium">If I {trigger?.label.replace(/^./, (m) => m.toLowerCase())}</div>
-          <div className="num mt-0.5 text-[12.5px] text-stake">{stakeText(c)}</div>
-          <div className="mt-1 text-[12px] text-muted-foreground">
+    <li className="grid grid-cols-[1fr_auto] gap-x-4 border-b border-border py-3.5 last:border-0">
+      <div className="min-w-0">
+        <div className={cn('text-[15px] font-medium', !c.active && 'text-muted-foreground')}>If I {trigger?.label.replace(/^./, (m) => m.toLowerCase())}</div>
+        <div className={cn('num mt-0.5 text-[12.5px]', c.active ? 'text-stake' : 'text-muted-foreground')}>{stakeText(c)}</div>
+        <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-[12px] text-muted-foreground">
+          <span>
             {c.pausedReason ?? (c.active ? 'Active' : 'Off')}
             {c.failures > 0 && ` · failed ${c.failures}×`}
-          </div>
+          </span>
+          {demo && (
+            <button className="underline-offset-4 hover:text-foreground hover:underline" onClick={() => act('POST', `commitments/${c.id}/simulate-failure`)}>
+              Simulate a failure (demo)
+            </button>
+          )}
+          <button className="underline-offset-4 hover:text-stake hover:underline" onClick={() => act('DELETE', `commitments/${c.id}`)}>
+            Remove
+          </button>
         </div>
-        <Switch checked={c.active} onCheckedChange={(v) => act('PATCH', `commitments/${c.id}`, { active: v })} aria-label="Active" />
       </div>
-      <div className="mt-2 flex gap-2">
-        {demo && (
-          <Button size="sm" variant="ghost" onClick={() => act('POST', `commitments/${c.id}/simulate-failure`)}>
-            Simulate a failure (demo)
-          </Button>
-        )}
-        <Button size="sm" variant="ghost" className="ml-auto" onClick={() => act('DELETE', `commitments/${c.id}`)}>
-          Remove
-        </Button>
-      </div>
+      <Switch checked={c.active} onCheckedChange={toggle} aria-label="Active" className="mt-0.5" />
     </li>
   )
 }

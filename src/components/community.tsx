@@ -80,13 +80,25 @@ function Feed() {
             maxLength={280}
             placeholder="Finished, not planned. What did you ship today?"
           />
-          <div className="mt-2 flex flex-wrap items-center gap-2">
-            <select aria-label="Category" className={cn(inputClass, 'h-9 w-auto text-[13px]')} value={category} onChange={(e) => setCategory(e.target.value as FocusArea)}>
-              {FOCUS_AREAS.map((f) => (
-                <option key={f}>{f}</option>
-              ))}
-            </select>
-            <span className="num ml-auto text-[11.5px] text-muted-foreground">{280 - text.length}</span>
+          <div className="mt-2.5 flex flex-wrap items-center gap-1.5" role="radiogroup" aria-label="Category">
+            {FOCUS_AREAS.map((f) => (
+              <button
+                key={f}
+                type="button"
+                role="radio"
+                aria-checked={category === f}
+                onClick={() => setCategory(f)}
+                className={cn(
+                  'rounded-[4px] border px-2 py-1 text-[12px]',
+                  category === f ? 'border-primary text-primary' : 'border-border text-muted-foreground hover:text-foreground'
+                )}
+              >
+                {f}
+              </button>
+            ))}
+          </div>
+          <div className="mt-3 flex items-center justify-end gap-3">
+            <span className="num text-[11.5px] text-muted-foreground">{280 - text.length}</span>
             <Button type="submit" size="sm" disabled={busy || !text.trim()}>
               Post
             </Button>
@@ -107,7 +119,7 @@ function Feed() {
         ))}
       </div>
 
-      <div className="mt-3 border-t border-foreground/80">
+      <div className="mt-3 border-t border-foreground/20">
         {posts.length === 0 ? (
           <Empty>Nothing here yet. Be the first to post something finished.</Empty>
         ) : (
@@ -121,10 +133,15 @@ function Feed() {
                 </div>
                 <p className="mt-1.5 whitespace-pre-wrap break-words text-[15px] leading-relaxed">{p.text}</p>
                 <button
-                  onClick={() => act('POST', `posts/${p.id}/like`)}
+                  onClick={() =>
+                    act('POST', `posts/${p.id}/like`, undefined, (snap) => ({
+                      ...snap,
+                      feed: snap.feed.map((x) => (x.id === p.id ? { ...x, likedByMe: !x.likedByMe, likes: x.likes + (x.likedByMe ? -1 : 1) } : x)),
+                    }))
+                  }
                   aria-pressed={p.likedByMe}
                   aria-label="Respect"
-                  className={cn('mt-2 inline-flex items-center gap-1.5 text-[12.5px]', p.likedByMe ? 'text-stake' : 'text-muted-foreground hover:text-foreground')}
+                  className={cn('mt-2 inline-flex items-center gap-1.5 text-[12.5px]', p.likedByMe ? 'text-primary' : 'text-muted-foreground hover:text-foreground')}
                 >
                   <Heart className={cn('h-3.5 w-3.5', p.likedByMe && 'fill-current')} />
                   <span className="num">{p.likes}</span>
@@ -144,7 +161,7 @@ function Groups() {
   const act = useStore((st) => st.act)
   const joined = new Set(s.communities.joined)
   return (
-    <ul className="mt-8 border-t border-foreground/80">
+    <ul className="mt-8 border-t border-foreground/20">
       {COMMUNITIES.map((c) => {
         const n = s.communities.members[c.id] ?? 0
         const isIn = joined.has(c.id)

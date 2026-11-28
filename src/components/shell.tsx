@@ -8,6 +8,8 @@ import { DAILY_LIMIT_MIN, localDay, useLocal } from '@/lib/local'
 import { cn } from '@/lib/utils'
 import { Wordmark } from './brand'
 import { Meter } from './kit'
+import { Curve } from './curve'
+import { rankOf } from '@/lib/derive'
 import { FocusLockScreen } from './focus-lock'
 import { TodayScreen } from './today'
 import { ChallengesScreen } from './challenges'
@@ -27,7 +29,11 @@ const TABS: { id: Tab; label: string; icon: typeof CalendarCheck }[] = [
 
 export function AppShell() {
   const snapshot = useSnapshot()
-  const [tab, setTab] = useState<Tab>('today')
+  const [tab, setTabState] = useState<Tab>('today')
+  const setTab = (t: Tab) => {
+    setTabState(t)
+    window.scrollTo({ top: 0 })
+  }
   useTimeInApp()
 
   if (snapshot.focusLock) return <FocusLockScreen />
@@ -35,7 +41,7 @@ export function AppShell() {
   const pendingReviews = snapshot.reviewQueue.length
 
   return (
-    <div className="min-h-[100dvh] lg:grid lg:grid-cols-[240px_1fr]">
+    <div className="min-h-[100dvh] lg:grid lg:grid-cols-[240px_1fr] xl:grid-cols-[240px_1fr_300px]">
       {/* Desktop sidebar */}
       <aside className="sticky top-0 hidden h-[100dvh] flex-col border-r border-border bg-background/85 px-5 py-7 backdrop-blur lg:flex">
         <Wordmark className="text-[24px]" />
@@ -57,7 +63,16 @@ export function AppShell() {
             </button>
           ))}
         </nav>
-        <div className="mt-auto">
+        <div className="mt-auto space-y-6">
+          <button onClick={() => setTab('profile')} className="flex w-full items-center gap-3 rounded-md p-2 text-left hover:bg-card">
+            <span className="flex h-9 w-9 items-center justify-center rounded-full border border-foreground/70 text-[14px] font-semibold">
+              {snapshot.user.name.trim().charAt(0).toUpperCase()}
+            </span>
+            <span className="min-w-0">
+              <span className="block truncate text-[14px] font-semibold">{snapshot.user.name}</span>
+              <span className="num block text-[11px] text-muted-foreground">{rankOf(snapshot).rank.name}</span>
+            </span>
+          </button>
           <TimeMeter />
         </div>
       </aside>
@@ -79,6 +94,8 @@ export function AppShell() {
           </motion.div>
         </AnimatePresence>
       </main>
+
+      <RightRail go={setTab} />
 
       {/* Mobile bottom bar */}
       <nav className="fixed inset-x-0 bottom-0 z-30 grid grid-cols-5 border-t border-border bg-background/95 pb-[env(safe-area-inset-bottom)] backdrop-blur lg:hidden" aria-label="Main">
@@ -143,30 +160,104 @@ function Notice() {
   const dismiss = useStore((s) => s.dismiss)
   useEffect(() => {
     if (!notice) return
-    const id = setTimeout(dismiss, notice.tone === 'error' ? 7000 : 4500)
+    const id = setTimeout(dismiss, notice.tone === 'error' ? 6000 : 3200)
     return () => clearTimeout(id)
   }, [notice, dismiss])
   return (
-    <AnimatePresence>
-      {notice && (
-        <motion.div
-          role={notice.tone === 'error' ? 'alert' : 'status'}
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 12 }}
-          className="fixed inset-x-4 bottom-24 z-40 mx-auto max-w-[480px] lg:bottom-8"
-        >
-          <button
+    <div className="pointer-events-none fixed inset-x-0 bottom-[84px] z-40 flex justify-center px-4 lg:bottom-6">
+      <AnimatePresence>
+        {notice && (
+          <motion.button
+            key={notice.text}
+            role={notice.tone === 'error' ? 'alert' : 'status'}
             onClick={dismiss}
+            initial={{ opacity: 0, y: 8, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 6 }}
+            transition={{ duration: 0.18 }}
             className={cn(
-              'w-full rounded-md border bg-card px-4 py-3 text-left text-[14px] leading-snug',
-              notice.tone === 'error' ? 'border-stake/50 text-stake' : 'border-foreground/70 text-foreground'
+              'pointer-events-auto flex max-w-[440px] items-start gap-2.5 rounded-md px-3.5 py-2.5 text-left text-[13.5px] leading-snug shadow-[0_6px_24px_-8px_rgba(0,0,0,0.35)]',
+              notice.tone === 'error' ? 'bg-stake text-white' : 'bg-foreground text-background'
             )}
           >
+            <span className={cn('mt-[5px] h-1.5 w-1.5 shrink-0 rounded-full', notice.tone === 'error' ? 'bg-white' : 'bg-primary')} />
             {notice.text}
-          </button>
-        </motion.div>
-      )}
-    </AnimatePresence>
+          </motion.button>
+        )}
+      </AnimatePresence>
+    </div>
   )
+}
+
+/** Desktop-only summary column: the week, what is waiting, where you stand. */
+function RightRail({ go }: { go: (t: Tab) => void }) {
+  const s = useSnapshot()
+  const rank = rankOf(s)
+  const days = weekDays(s.today)
+  const checked = new Set(s.checkInDayList)
+  return (
+    <aside className="sticky top-0 hidden h-[100dvh] flex-col gap-8 overflow-y-auto border-l border-border px-6 py-12 xl:flex">
+      <div>
+        <div className="label">This week</div>
+        <div className="mt-3 grid grid-cols-7 gap-1.5">
+          {days.map((d) => (
+            <div key={d.key} className="flex flex-col items-center gap-1.5">
+              <span className="num text-[10px] text-muted-foreground">{d.letter}</span>
+              <span
+                className={cn(
+                  'h-7 w-full rounded-[3px] border',
+                  checked.has(d.key) ? 'border-primary bg-primary' : d.key === s.today ? 'border-foreground/70 border-dashed' : d.key > s.today ? 'border-border border-dashed' : 'border-border bg-muted'
+                )}
+                title={d.key}
+              />
+            </div>
+          ))}
+        </div>
+        <p className="num mt-2 text-[11.5px] text-muted-foreground">{s.streak} day streak</p>
+      </div>
+
+      <div>
+        <div className="label">Waiting on you</div>
+        <ul className="mt-2 text-[14px]">
+          <li className="flex items-baseline justify-between border-b border-border py-2">
+            <button className="hover:underline" onClick={() => go('proof')}>Proofs to review</button>
+            <span className="num">{s.reviewQueue.length}</span>
+          </li>
+          <li className="flex items-baseline justify-between border-b border-border py-2">
+            <button className="hover:underline" onClick={() => go('proof')}>Your proofs pending</button>
+            <span className="num">{s.proofs.filter((p) => p.status === 'pending').length}</span>
+          </li>
+          <li className="flex items-baseline justify-between py-2">
+            <button className="hover:underline" onClick={() => go('today')}>Active commitments</button>
+            <span className="num">{s.commitments.filter((c) => c.active).length}</span>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <div className="label">Standing</div>
+        <Curve tier={rank.index} compact className="mt-3" />
+        <div className="mt-1 flex items-baseline justify-between">
+          <span className="text-[15px] font-semibold">{rank.rank.name}</span>
+          <span className="num text-[11.5px] text-muted-foreground">{s.points.rank} pts</span>
+        </div>
+        {rank.next && (
+          <p className="mt-1 text-[12.5px] text-muted-foreground">
+            {rank.pointsToNext > 0 ? `${rank.pointsToNext} to ${rank.next.name}` : `${rank.next.name} needs ${rank.proofsForNext} more ${rank.proofsForNext === 1 ? 'proof' : 'proofs'}`}
+          </p>
+        )}
+      </div>
+    </aside>
+  )
+}
+
+function weekDays(today: string) {
+  const t = new Date(`${today}T12:00:00Z`)
+  const monday = new Date(t)
+  monday.setUTCDate(t.getUTCDate() - ((t.getUTCDay() + 6) % 7))
+  return Array.from({ length: 7 }, (_, i) => {
+    const d = new Date(monday)
+    d.setUTCDate(monday.getUTCDate() + i)
+    return { key: d.toISOString().slice(0, 10), letter: 'MTWTFSS'[i] }
+  })
 }
