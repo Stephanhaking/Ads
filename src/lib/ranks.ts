@@ -7,9 +7,6 @@ export type RankTier = {
   subtitle: string
   minPoints: number
   percentile: string // tier label; a real percentile needs real member data
-  color: string // tailwind text color hex
-  glow: string // box-shadow color (rgba)
-  icon: string // emoji or glyph used in UI
 }
 
 // Ordered from lowest to highest. The Outlier is the final tier.
@@ -20,9 +17,6 @@ export const RANK_TIERS: RankTier[] = [
     subtitle: 'The journey begins',
     minPoints: 0,
     percentile: 'Tier 1',
-    color: '#9ca3af',
-    glow: 'rgba(156, 163, 175, 0.35)',
-    icon: '◇',
   },
   {
     id: 'striver',
@@ -30,9 +24,6 @@ export const RANK_TIERS: RankTier[] = [
     subtitle: 'Finding momentum',
     minPoints: 100,
     percentile: 'Tier 2',
-    color: '#a3e635',
-    glow: 'rgba(163, 230, 53, 0.4)',
-    icon: '◆',
   },
   {
     id: 'achiever',
@@ -40,9 +31,6 @@ export const RANK_TIERS: RankTier[] = [
     subtitle: 'Quiet consistency',
     minPoints: 300,
     percentile: 'Tier 3',
-    color: '#22d3ee',
-    glow: 'rgba(34, 211, 238, 0.4)',
-    icon: '◈',
   },
   {
     id: 'performer',
@@ -50,9 +38,6 @@ export const RANK_TIERS: RankTier[] = [
     subtitle: 'Rare air',
     minPoints: 600,
     percentile: 'Tier 4',
-    color: '#fb923c',
-    glow: 'rgba(251, 146, 60, 0.4)',
-    icon: '✦',
   },
   {
     id: 'elite',
@@ -60,9 +45,6 @@ export const RANK_TIERS: RankTier[] = [
     subtitle: 'Edge of the curve',
     minPoints: 1000,
     percentile: 'Tier 5',
-    color: '#f472b6',
-    glow: 'rgba(244, 114, 182, 0.45)',
-    icon: '★',
   },
   {
     id: 'master',
@@ -70,9 +52,6 @@ export const RANK_TIERS: RankTier[] = [
     subtitle: 'Rare territory',
     minPoints: 2000,
     percentile: 'Tier 6',
-    color: '#c084fc',
-    glow: 'rgba(192, 132, 252, 0.5)',
-    icon: '✷',
   },
   {
     id: 'outlier',
@@ -80,9 +59,6 @@ export const RANK_TIERS: RankTier[] = [
     subtitle: 'The 1% club. Beyond the curve.',
     minPoints: 5000,
     percentile: 'Tier 7',
-    color: '#fbbf24',
-    glow: 'rgba(251, 191, 36, 0.6)',
-    icon: '◎',
   },
 ]
 

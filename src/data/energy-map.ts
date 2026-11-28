@@ -117,23 +117,3 @@ export function analyzeEnergy(ratings: TaskRating[]): EnergyInsight | null {
 
   return { peakHours, dipHours, recommendation, workoutWindow }
 }
-
-// Color for a heatmap cell based on energy level (1-10).
-export function energyColor(energy: number | null): string {
-  if (energy === null) return 'rgba(255,255,255,0.03)'
-  // Low energy → cool blue, high energy → warm amber/gold
-  const t = (energy - 1) / 9 // 0..1
-  if (t < 0.33) {
-    // blue to teal
-    const alpha = 0.15 + t * 1.5
-    return `rgba(34, 211, 238, ${alpha})`
-  } else if (t < 0.66) {
-    // teal to orange
-    const alpha = 0.2 + t * 0.8
-    return `rgba(251, 146, 60, ${alpha})`
-  } else {
-    // orange to gold
-    const alpha = 0.3 + t * 0.7
-    return `rgba(251, 191, 36, ${Math.min(0.9, alpha)})`
-  }
-}

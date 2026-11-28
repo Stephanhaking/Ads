@@ -1,43 +1,39 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Schibsted_Grotesk, Martian_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const grotesk = Schibsted_Grotesk({
+  variable: "--font-grotesk",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const martian = Martian_Mono({
+  variable: "--font-martian",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "The 1%: focus, challenges and proof of work",
+  title: "The 1%",
   description:
-    "A focused performance app. Weekly challenges, real-world proof, commitments with something at stake, and a community that ships.",
+    "Commit to something real, do the work, and prove it to people who check. Weekly challenges, commitments with something at stake, peer-reviewed proof.",
   keywords: ["the 1%", "focus", "productivity", "challenges", "commitment", "accountability"],
-  authors: [{ name: "The 1%" }],
   icons: {
     icon: "/logo.svg",
   },
   openGraph: {
     title: "The 1%",
-    description: "Weekly challenges. Real proof. Something at stake.",
+    description: "Say it. Do it. Prove it.",
     type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "The 1%",
-    description: "Weekly challenges. Real proof. Something at stake.",
   },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
-  themeColor: "#0a0a0b",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f3f3ef" },
+    { media: "(prefers-color-scheme: dark)", color: "#0e1014" },
+  ],
 };
 
 export default function RootLayout({
@@ -46,12 +42,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
-      >
-        {children}
-      </body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${grotesk.variable} ${martian.variable} antialiased`}>{children}</body>
     </html>
   );
 }

@@ -61,18 +61,3 @@ export const COMMITMENT_TRIGGERS: CommitmentTrigger[] = [
     available: false,
   },
 ]
-
-export type Commitment = {
-  id: string
-  triggerId: string
-  stake: StakeKind
-  amountEur: number // only for 'donation'
-  causeId: string // only for 'donation'
-  active: boolean
-  createdAt: number
-  failedCount: number
-  lastFailedAt: number | null
-}
-
-/** Points lost per failed commitment when the stake is points. */
-export const POINTS_PENALTY = 50

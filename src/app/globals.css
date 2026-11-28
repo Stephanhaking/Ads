@@ -3,161 +3,159 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/*
+ * The 1% — "the record".
+ * A percentile is a measurement, so the app looks like a well-kept record:
+ * graph paper, ink-blue pen for actions, red for what is at stake, green for
+ * what other people verified. Grotesque for words, monospace for numbers.
+ */
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --color-sidebar-ring: var(--sidebar-ring);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar: var(--sidebar);
-  --color-chart-5: var(--chart-5);
-  --color-chart-4: var(--chart-4);
-  --color-chart-3: var(--chart-3);
-  --color-chart-2: var(--chart-2);
-  --color-chart-1: var(--chart-1);
-  --color-ring: var(--ring);
-  --color-input: var(--input);
-  --color-border: var(--border);
-  --color-destructive: var(--destructive);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-accent: var(--accent);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-muted: var(--muted);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-secondary: var(--secondary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-primary: var(--primary);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-popover: var(--popover);
-  --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
+  --color-card-foreground: var(--foreground);
+  --color-popover: var(--card);
+  --color-popover-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--muted);
+  --color-secondary-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--muted);
+  --color-accent-foreground: var(--foreground);
+  --color-destructive: var(--stake);
+  --color-border: var(--border);
+  --color-input: var(--border);
+  --color-ring: var(--primary);
+  --color-faint: var(--faint);
+  --color-stake: var(--stake);
+  --color-verified: var(--verified);
+  --color-pending: var(--pending);
+
+  --font-sans: var(--font-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-martian), ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 10px;
+  --radius-2xl: 12px;
 }
 
-/*
- * The 1% — dark premium theme.
- * Default look is dark: near-black canvas, amber/gold accent, off-white text.
- */
 :root {
-  --radius: 0.875rem;
-
-  /* Surfaces */
-  --background: oklch(0.085 0.005 285);
-  --foreground: oklch(0.965 0.005 80);
-  --card: oklch(0.135 0.008 285);
-  --card-foreground: oklch(0.965 0.005 80);
-  --popover: oklch(0.135 0.008 285);
-  --popover-foreground: oklch(0.965 0.005 80);
-
-  /* Primary — gold/amber (the "1%" accent) */
-  --primary: oklch(0.82 0.16 80);
-  --primary-foreground: oklch(0.18 0.02 80);
-
-  /* Secondary surfaces */
-  --secondary: oklch(0.19 0.01 285);
-  --secondary-foreground: oklch(0.93 0.005 80);
-  --muted: oklch(0.16 0.008 285);
-  --muted-foreground: oklch(0.66 0.012 285);
-  --accent: oklch(0.22 0.014 285);
-  --accent-foreground: oklch(0.93 0.005 80);
-
-  /* Destructive + ring */
-  --destructive: oklch(0.62 0.22 22);
-  --border: oklch(0.24 0.012 285);
-  --input: oklch(0.22 0.012 285);
-  --ring: oklch(0.72 0.13 80);
-
-  /* Chart colors (used in small UI touches) */
-  --chart-1: oklch(0.82 0.16 80);
-  --chart-2: oklch(0.74 0.18 160);
-  --chart-3: oklch(0.7 0.18 220);
-  --chart-4: oklch(0.75 0.18 30);
-  --chart-5: oklch(0.7 0.2 310);
-
-  /* Sidebar */
-  --sidebar: oklch(0.11 0.006 285);
-  --sidebar-foreground: oklch(0.93 0.005 80);
-  --sidebar-primary: oklch(0.82 0.16 80);
-  --sidebar-primary-foreground: oklch(0.18 0.02 80);
-  --sidebar-accent: oklch(0.19 0.01 285);
-  --sidebar-accent-foreground: oklch(0.93 0.005 80);
-  --sidebar-border: oklch(0.24 0.012 285);
-  --sidebar-ring: oklch(0.72 0.13 80);
+  --background: #f3f3ef; /* paper */
+  --card: #fbfbf9; /* sheet */
+  --foreground: #14161c; /* ink */
+  --muted-foreground: #565c6b;
+  --faint: #7c8190; /* decorative text only */
+  --muted: #e9e9e3;
+  --border: #dcddd6;
+  --grid: rgba(20, 22, 28, 0.045);
+  --primary: #2343db; /* pen ink */
+  --primary-foreground: #ffffff;
+  --stake: #c7381f;
+  --verified: #16703f;
+  --pending: #8f5a0c;
+  color-scheme: light;
 }
 
-.dark {
-  /* Same as :root — app is dark by default */
-  --background: oklch(0.085 0.005 285);
-  --foreground: oklch(0.965 0.005 80);
-  --card: oklch(0.135 0.008 285);
-  --card-foreground: oklch(0.965 0.005 80);
-  --popover: oklch(0.135 0.008 285);
-  --popover-foreground: oklch(0.965 0.005 80);
-  --primary: oklch(0.82 0.16 80);
-  --primary-foreground: oklch(0.18 0.02 80);
-  --secondary: oklch(0.19 0.01 285);
-  --secondary-foreground: oklch(0.93 0.005 80);
-  --muted: oklch(0.16 0.008 285);
-  --muted-foreground: oklch(0.66 0.012 285);
-  --accent: oklch(0.22 0.014 285);
-  --accent-foreground: oklch(0.93 0.005 80);
-  --destructive: oklch(0.62 0.22 22);
-  --border: oklch(0.24 0.012 285);
-  --input: oklch(0.22 0.012 285);
-  --ring: oklch(0.72 0.13 80);
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --background: #0e1014;
+    --card: #16191f;
+    --foreground: #ecedef;
+    --muted-foreground: #a3a8b4;
+    --faint: #80869a;
+    --muted: #1d2129;
+    --border: #262a33;
+    --grid: rgba(236, 237, 239, 0.035);
+    --primary: #8696ff;
+    --primary-foreground: #0e1014;
+    --stake: #ff7d66;
+    --verified: #55c892;
+    --pending: #e5b04a;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --background: #0e1014;
+  --card: #16191f;
+  --foreground: #ecedef;
+  --muted-foreground: #a3a8b4;
+  --faint: #80869a;
+  --muted: #1d2129;
+  --border: #262a33;
+  --grid: rgba(236, 237, 239, 0.035);
+  --primary: #8696ff;
+  --primary-foreground: #0e1014;
+  --stake: #ff7d66;
+  --verified: #55c892;
+  --pending: #e5b04a;
+  color-scheme: dark;
 }
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring/60;
   }
-  html, body {
-    @apply bg-background text-foreground;
+  html,
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
     -webkit-tap-highlight-color: transparent;
   }
   body {
-    font-feature-settings: "ss01", "cv11";
+    font-family: var(--font-sans);
+    /* graph paper */
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 24px 24px;
+    background-attachment: fixed;
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+    letter-spacing: -0.015em;
+  }
+  :focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
   }
 }
 
-/* Subtle utility classes used across the app */
-.gold-text {
-  background: linear-gradient(135deg, oklch(0.92 0.14 85), oklch(0.74 0.18 70));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+/* Numbers, timestamps and labels are set in the monospace, like a record. */
+.num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
 }
 
-.gold-border {
-  border: 1px solid oklch(0.62 0.14 75 / 0.45);
+.label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
 }
 
-.glass-card {
-  background: linear-gradient(
-    180deg,
-    oklch(0.16 0.01 285 / 0.85),
-    oklch(0.11 0.006 285 / 0.85)
-  );
-  border: 1px solid oklch(0.28 0.012 285 / 0.7);
-  backdrop-filter: blur(8px);
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.no-scrollbar::-webkit-scrollbar { display: none; }
-.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-
-/* Mobile-first phone frame on desktop */
-.phone-frame {
-  max-width: 460px;
-  margin: 0 auto;
-  min-height: 100dvh;
-  position: relative;
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
