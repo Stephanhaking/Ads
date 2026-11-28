@@ -1,5 +1,12 @@
 # Roadmap
 
+## Go-to-market (decided 28 Nov 2026)
+1. The founder masters YouTube first: long-form now, possibly Shorts later.
+2. Heavy investment in the app (ads, team) once the channel earns about 100k USD a month.
+3. Launch with organic audience from the channel plus paid ads.
+Cheap things worth doing before launch: a waitlist page linked from every video, and direct links
+to weekly challenges, so the audience is captured early.
+
 ## Rollout order (decided)
 1. **Social network first**, on PC (web) and mobile, from one codebase: a responsive web app that
    installs as a PWA. Native store apps only if the PWA proves too limiting.
