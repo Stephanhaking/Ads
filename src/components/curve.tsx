@@ -39,7 +39,7 @@ export function Curve({ tier, compact, className }: { tier: number; compact?: bo
       <path d={`${CURVE} L${W} ${BASE} L0 ${BASE} Z`} fill="var(--primary)" opacity={0.14} clipPath={`url(#${clip})`} />
       <line x1={top1} x2={top1} y1={40} y2={BASE} stroke="var(--primary)" strokeWidth={1} strokeDasharray="3 4" />
       {!compact && (
-        <text x={top1 + 6} y={50} fontSize={12} fill="var(--primary)" style={{ fontFamily: 'var(--font-mono)' }}>
+        <text x={top1 + 6} y={50} fontSize={12} fill="var(--primary)" style={{ fontFamily: 'var(--font-martian), monospace' }}>
           top 1%
         </text>
       )}
@@ -51,7 +51,7 @@ export function Curve({ tier, compact, className }: { tier: number; compact?: bo
         <g key={i}>
           <line x1={x(tz)} x2={x(tz)} y1={BASE} y2={BASE + 6} stroke="var(--foreground)" strokeWidth={1} />
           {!compact && (
-            <text x={x(tz)} y={BASE + 22} fontSize={11} textAnchor="middle" fill={i === tier ? 'var(--foreground)' : 'var(--faint)'} style={{ fontFamily: 'var(--font-mono)' }}>
+            <text x={x(tz)} y={BASE + 22} fontSize={11} textAnchor="middle" fill={i === tier ? 'var(--foreground)' : 'var(--faint)'} style={{ fontFamily: 'var(--font-martian), monospace' }}>
               {i + 1}
             </text>
           )}

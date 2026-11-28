@@ -1,55 +1,72 @@
 # The 1%
 
-A focused performance app: weekly challenges, real-world proof, commitments with
-something at stake, and a community that shows what it shipped. No ads, no
-infinite feed.
-
-This is a **prototype**. State lives in the browser (`localStorage`); there is no
-backend, no accounts and no payments.
+Commit to something real, do the work, and prove it to people who check.
+Weekly challenges, commitments with something at stake, peer-reviewed proof.
+No ads, no infinite feed.
 
 ## Run it
 
+Needs Node.js 22.13 or newer (uses the built-in `node:sqlite`).
+
 ```bash
 npm install
-npm run dev        # http://localhost:3000
+npm run dev              # http://localhost:3000, database in data/app.db
+npm test                 # backend rules and API tests
 npm run typecheck
 npm run lint
-npm run preview:build   # one self-contained HTML file in preview-dist/
 npm run build && npm start
+npm run preview:build    # one self-contained HTML file (API runs in the browser)
 ```
 
-Set `NEXT_PUBLIC_DEMO_MODE=off` to hide the demo-only controls ("Simulate
-failure", "Approve your own proof") and the "payments are not live" notices.
+Environment variables:
 
-## What is in it
+| Variable | Default | What it does |
+|---|---|---|
+| `DATABASE_PATH` | `data/app.db` | SQLite file. Needs a persistent disk (not a serverless function). |
+| `DEMO_TOOLS` | off | `1` shows "Simulate a failure" on commitments. Keep off in production. |
 
-- **Today** (home): the current challenge, Focus Lock, and the tools below.
-- **Challenges**: weekly tasks that earn points and a daily streak.
-- **Proofs**: submit evidence of real work. Other members review it; reviewing earns
-  focus credits. From Elite upwards, rank needs validated proofs, not just points.
-- **Commitments**: choose what you lose if you slip. Money goes 100% to a cause you
-  pick (max €50 each); the platform never keeps money from failures. Triggers that
-  need the desktop Focus Layer are listed but disabled.
-- **Focus Lock**: 1, 3 or 7 days where the app shows only a countdown and your task.
-  It can always be ended early (no seal, and it triggers any attached commitment).
-- **Energy Map**: rate tasks by mastery and energy; after 5 ratings it shows your peak
-  and dip windows. Uses only your own ratings.
-- **Mentors**: spend focus credits on sessions. Profiles are fictional placeholders.
-- **Communities** and a **feed** of what members finished.
+## How it works
 
-## Design decisions
+- **Accounts:** email and password (scrypt), session token stored hashed, httpOnly cookie,
+  login rate limit, same-origin check on every write.
+- **Points ledger:** every point is a ledger row with a source: `self` (check-ins),
+  `proof` (peer-validated), `measured` (server-timed Focus Lock) or `penalty`.
+  Totals are always derived, never stored.
+- **Fair play:**
+  - self-reported points are capped at 150 a day and count half toward rank;
+  - a check-in can only be undone on the same day;
+  - a proof needs 2 approvals from other members, and nobody reviews their own;
+  - reviewers are credited only when they match the final decision;
+  - Focus Lock time comes from the server clock.
+- **Commitments:** settled on the server. One failure per day, missed days looked back at most 7
+  days, auto-pause after 3 failures in a row. Money at stake goes 100% to the chosen cause.
+  **Payments are not live**; failures are recorded only.
+- **Standing:** real percentiles appear only once there are 20 members.
 
-- Reacting to a post never gives points or streaks; only finished work does.
-- The streak uses the member's local calendar day, not UTC.
-- Rank tiers are labelled Tier 1 to 7, not "Top x%", until there is real member data.
-- Every author and mentor in the sample data is fictional.
+The whole API is one function (`src/backend/api.ts`) that takes a database. Next.js route
+handlers run it on `node:sqlite`; the static preview runs the same code on sql.js in the browser
+(`src/preview/local-backend.ts`).
 
-## Stack
+## Design
 
-Next.js 16 (App Router), TypeScript, Tailwind CSS 4, shadcn/ui (the components in
-use), Zustand with `persist`, Framer Motion, Lucide.
+"The record": graph paper, ink-blue pen for actions, red for stakes, green for verified work.
+Schibsted Grotesk for words, Martian Mono for numbers. Light and dark themes. Tokens live in
+`src/app/globals.css`; components in `src/components/kit.tsx`. The logo is provisional
+(`src/components/brand.tsx`); prompts for the final one are in `founder/logo-prompts.md`.
+
+## Layout
+
+```
+src/backend/     db schema, rules, API, Node adapters, tests
+src/app/         Next.js page, layout, /api route
+src/components/  screens and UI kit
+src/lib/         client store, API client, derived values
+src/preview/     in-browser backend for the static preview
+video/           30-second Remotion ad
+founder/         brand, logo prompts, plans
+```
 
 ## Not built yet
 
-Accounts and backend, real payments and charity partner, the desktop Focus Layer
-(activity tracking and app blocking), peer-review matching, the self-study app.
+Password reset and email verification, account deletion and data export, real payments and a
+charity partner, the desktop Focus Layer, translations. See `ROADMAP.md`.

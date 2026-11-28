@@ -1,4 +1,4 @@
-# Roadmap (parked until there are resources to start)
+# Roadmap
 
 ## Rollout order (decided)
 1. **Social network first**, on PC (web) and mobile, from one codebase: a responsive web app that
@@ -14,10 +14,21 @@ Proposed gates before starting the Focus Layer (to be confirmed with real number
 Design rule for now: keep the ledger's `verified` source open (`self`, `proof`, `measured`), so the
 Focus Layer can later add `measured` entries without changing the data model.
 
-Next UI step: a real desktop layout (sidebar + feed). Today the app is a single mobile column.
 
-Decided and approved, not started. Everything below is design only; no backend code
-exists yet. The prototype keeps all state in the browser.
+## Done (Nov 2026)
+- Backend with accounts, points ledger, fair-play rules, peer-reviewed proofs, server-side
+  commitments and server-timed Focus Lock (items 1, 2, 3 and 6 below).
+- Sample content removed: no fictional posts, mentors or member counts.
+- Redesign ("the record") with a desktop layout.
+
+## Next
+- Password reset and email verification (needs an email provider).
+- Account deletion and data export (GDPR / LGPD).
+- Move from SQLite to Postgres before running on serverless hosting or more than one server.
+- Rotate weekly challenges from a schedule instead of a fixed list.
+- Final logo (prompts in founder/logo-prompts.md), then update the ad.
+
+## Original plan (kept for reference)
 
 ## 1. Verified tasks (so check-ins are not just a checkbox)
 Each challenge task gets a verification level:

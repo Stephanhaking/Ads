@@ -108,7 +108,8 @@
     -webkit-tap-highlight-color: transparent;
   }
   body {
-    font-family: var(--font-sans);
+    /* var(--font-sans) is inlined by @theme, so refer to the font variables directly. */
+    font-family: var(--font-grotesk), ui-sans-serif, system-ui, sans-serif;
     /* graph paper */
     background-image:
       linear-gradient(var(--grid) 1px, transparent 1px),
@@ -130,13 +131,13 @@
 
 /* Numbers, timestamps and labels are set in the monospace, like a record. */
 .num {
-  font-family: var(--font-mono);
+  font-family: var(--font-martian), ui-monospace, monospace;
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.02em;
 }
 
 .label {
-  font-family: var(--font-mono);
+  font-family: var(--font-martian), ui-monospace, monospace;
   font-size: 11px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
