@@ -10,7 +10,7 @@ import { timeAgo } from '@/lib/derive'
 import { cn } from '@/lib/utils'
 import { Button, Empty, PageTitle, Section, Tag, inputClass } from './kit'
 import { VerifiedMark } from './brand'
-import { SeasonBoard } from './season'
+import { FollowButton, SeasonBoard } from './season'
 
 const VIEWS = { shipped: 'Feed', season: 'Season', groups: 'Communities' } as const
 const INTRO = {
@@ -139,6 +139,11 @@ function Feed() {
                   {p.kind === 'journal' && <span className="num text-[11.5px] text-primary">Journal · Day {p.dayNumber}</span>}
                   <Tag>{p.category}</Tag>
                   <span className="num ml-auto text-[11.5px] text-muted-foreground">{timeAgo(p.createdAt, s.serverNow)}</span>
+                  {p.authorId !== s.user.id && (
+                    <span className="self-center">
+                      <FollowButton userId={p.authorId} name={p.author} following={s.social.following.some((f) => f.userId === p.authorId)} />
+                    </span>
+                  )}
                 </div>
                 <p className="mt-1.5 whitespace-pre-wrap break-words text-[15px] leading-relaxed">{p.text}</p>
                 <button

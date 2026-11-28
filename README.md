@@ -55,6 +55,10 @@ Environment variables:
   rank (proven work in full, self-reported at half). Ties go to more verified points. Members
   can hide from the leaderboard. A season closes 8 days after it ends (once no late penalty can
   land in it) and its final standings are written to `season_results`.
+- **World and friends:** the season has two boards. World ranks everyone shown on it. Friends
+  ranks the member and the people they follow (follow from the feed or the world board, or by an
+  8-character friend code), with each friend's world position alongside. Someone hidden from
+  the world still appears to friends they follow back.
 - **Season marks (no money):** Season winner, Podium and Top 10, given only in seasons with at
   least 5 ranked members. **Verified 1%**: top 1% of a closed season with at least 100 ranked
   members and at least half the score from verified work (peer-reviewed proofs, Focus Locks).

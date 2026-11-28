@@ -132,3 +132,5 @@ export function nextSeason(season: string): string {
 export function seasonClosesOn(season: string): string {
   return addDays(`${nextSeason(season)}-01`, MAX_BACKFILL_DAYS + 1)
 }
+
+export const MAX_FOLLOWING = 200

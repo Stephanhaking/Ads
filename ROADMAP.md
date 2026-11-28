@@ -28,7 +28,7 @@ Focus Layer can later add `measured` entries without changing the data model.
 - Sample content removed: no fictional posts, mentors or member counts.
 - Redesign ("the record") with a desktop layout.
 - Personal plans from free text (goals, obstacles, habits, screen time).
-- Journey journal, monthly seasons, season marks and the "Verified 1%" mark.
+- Journey journal, monthly seasons (world and friends boards), season marks and the "Verified 1%" mark.
 
 ## Next
 - **Foundation plan (explained 28 Nov 2026):** a long-term hub in Chicualacuala, Mozambique:

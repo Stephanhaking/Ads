@@ -107,11 +107,14 @@ export type Snapshot = {
     leaders: { position: number; name: string; userId: string; score: number; onePercent: boolean }[]
     /** Null when the member has no points this season or hides from rankings. */
     me: { position: number; score: number; verified: number } | null
+    /** The member and everyone they follow. position is within this group; worldPosition is on the world board. */
+    friends: { userId: string; name: string; position: number | null; score: number; worldPosition: number | null; onePercent: boolean }[]
     myScore: number
     showInRankings: boolean
   }
   /** Finished seasons the member placed in, newest first. */
   seasonHistory: { id: string; position: number; rankedMembers: number; score: number; award: R.SeasonAward | null; onePercent: boolean }[]
+  social: { friendCode: string; following: { userId: string; name: string }[]; followers: number }
   /** Closed seasons where the member earned "Verified 1%" (top 1%, mostly verified work). */
   onePercentSeasons: string[]
   activity: { id: string; ts: number; kind: 'checkin' | 'proof' | 'lock' | 'commitment' | 'review'; text: string; points?: number }[]
@@ -201,6 +204,7 @@ type UserRow = {
   tz_offset: number
   created_at: number
   show_in_rankings: number
+  friend_code: string | null
 }
 
 async function startSession(ctx: Ctx, userId: string): Promise<string> {
@@ -221,7 +225,7 @@ async function currentUser(ctx: Ctx, req: ApiRequest): Promise<UserRow | null> {
   if (!token) return null
   return (
     ctx.db.get<UserRow>(
-      `SELECT u.id, u.email, u.name, u.focus, u.tz_offset, u.created_at, u.show_in_rankings
+      `SELECT u.id, u.email, u.name, u.focus, u.tz_offset, u.created_at, u.show_in_rankings, u.friend_code
        FROM sessions s JOIN users u ON u.id = s.user_id
        WHERE s.token_hash = ? AND s.expires_at > ?`,
       await sha256(token),
@@ -389,26 +393,64 @@ function dayNumber(day: string, createdAt: number, tzOffset: number): number {
 }
 
 /** Every member with points in a season, ranked. Members who opted out are left out. */
-function seasonTable(ctx: Ctx, season: string) {
-  const rows = ctx.db.all<{ user_id: string; name: string; self: number; verified: number; penalties: number }>(
-    `SELECT l.user_id, u.name,
-       COALESCE(SUM(CASE WHEN l.source = 'self' THEN l.points END), 0) AS self,
-       COALESCE(SUM(CASE WHEN l.source IN ('proof', 'measured') THEN l.points END), 0) AS verified,
-       COALESCE(SUM(CASE WHEN l.source = 'penalty' THEN l.points END), 0) AS penalties
-     FROM ledger l JOIN users u ON u.id = l.user_id
-     WHERE l.day >= ? AND l.day < ? AND u.show_in_rankings = 1
-     GROUP BY l.user_id ORDER BY MIN(l.created_at)`,
-    `${season}-01`,
-    `${season}-32`
-  )
-  return R.rankSeason(
-    rows.map((r) => ({
+function seasonScores(ctx: Ctx, season: string, where: string, ...params: unknown[]) {
+  return ctx.db
+    .all<{ user_id: string; name: string; self: number; verified: number; penalties: number }>(
+      `SELECT l.user_id, u.name,
+         COALESCE(SUM(CASE WHEN l.source = 'self' THEN l.points END), 0) AS self,
+         COALESCE(SUM(CASE WHEN l.source IN ('proof', 'measured') THEN l.points END), 0) AS verified,
+         COALESCE(SUM(CASE WHEN l.source = 'penalty' THEN l.points END), 0) AS penalties
+       FROM ledger l JOIN users u ON u.id = l.user_id
+       WHERE l.day >= ? AND l.day < ? AND ${where}
+       GROUP BY l.user_id ORDER BY MIN(l.created_at), MIN(l.id)`,
+      `${season}-01`,
+      `${season}-32`,
+      ...params
+    )
+    .map((r) => ({
       userId: r.user_id,
       name: r.name,
       verified: Number(r.verified),
       score: R.rankPoints({ self: Number(r.self), verified: Number(r.verified), penalties: Number(r.penalties) }),
     }))
+}
+
+/** Every member with points in a season, ranked. Members who opted out are left out. */
+function seasonTable(ctx: Ctx, season: string) {
+  return R.rankSeason(seasonScores(ctx, season, 'u.show_in_rankings = 1'))
+}
+
+/**
+ * The member and the people they follow. Someone hidden from the world still shows here
+ * when the follow is mutual; the member always sees their own row.
+ */
+function friendsTable(ctx: Ctx, u: UserRow, season: string, world: Map<string, number>) {
+  const friends = ctx.db.all<{ id: string; name: string }>(
+    `SELECT x.id, x.name FROM follows f JOIN users x ON x.id = f.followee_id
+     WHERE f.follower_id = ?
+       AND (x.show_in_rankings = 1 OR EXISTS (SELECT 1 FROM follows b WHERE b.follower_id = x.id AND b.followee_id = ?))`,
+    u.id,
+    u.id
   )
+  const ids = [u.id, ...friends.map((f) => f.id)]
+  const scored = seasonScores(ctx, season, `l.user_id IN (${ids.map(() => '?').join(', ')})`, ...ids)
+  const ranked = R.rankSeason(scored)
+  const byId = new Map(ranked.map((e) => [e.userId, e]))
+  const names = new Map([[u.id, u.name], ...friends.map((f) => [f.id, f.name] as const)])
+  const marked = onePercentMembers(ctx, ids)
+  const rows = ids.map((id) => {
+    const e = byId.get(id)
+    return {
+      userId: id,
+      name: names.get(id)!,
+      position: e?.position ?? null,
+      score: e?.score ?? 0,
+      worldPosition: world.get(id) ?? null,
+      onePercent: marked.has(id),
+    }
+  })
+  // Ranked first, then friends with no points yet, by name.
+  return rows.sort((a, b) => (a.position ?? Infinity) - (b.position ?? Infinity) || a.name.localeCompare(b.name))
 }
 
 function myScore(ctx: Ctx, u: UserRow, season: string): number {
@@ -473,6 +515,7 @@ function season(ctx: Ctx, u: UserRow, t: string): Pick<Snapshot, 'season' | 'sea
   const table = seasonTable(ctx, id)
   const mine = table.find((e) => e.userId === u.id)
   const leaders = table.slice(0, R.SEASON_LEADERBOARD_SIZE)
+  const friends = friendsTable(ctx, u, id, new Map(table.map((e) => [e.userId, e.position])))
   const marked = onePercentMembers(ctx, leaders.map((e) => e.userId))
   const history = ctx.db
     .all<{ season: string; position: number; ranked: number; score: number; award: R.SeasonAward | null; one_percent: number }>(
@@ -489,6 +532,7 @@ function season(ctx: Ctx, u: UserRow, t: string): Pick<Snapshot, 'season' | 'sea
       onePercentCutoff: table.length >= R.ONE_PERCENT_MIN_MEMBERS ? Math.floor(table.length / 100) : null,
       leaders: leaders.map((e) => ({ position: e.position, name: e.name, userId: e.userId, score: e.score, onePercent: marked.has(e.userId) })),
       me: mine ? { position: mine.position, score: mine.score, verified: mine.verified } : null,
+      friends,
       myScore: myScore(ctx, u, id),
       showInRankings: Boolean(u.show_in_rankings),
     },
@@ -680,6 +724,16 @@ function snapshot(ctx: Ctx, u: UserRow): Snapshot {
     feed,
     journey,
     ...season(ctx, u, t),
+    social: {
+      friendCode: u.friend_code ?? '',
+      following: db
+        .all<{ id: string; name: string }>(
+          'SELECT x.id, x.name FROM follows f JOIN users x ON x.id = f.followee_id WHERE f.follower_id = ? ORDER BY x.name',
+          u.id
+        )
+        .map((r) => ({ userId: r.id, name: r.name })),
+      followers: Number(db.get<{ n: number }>('SELECT COUNT(*) AS n FROM follows WHERE followee_id = ?', u.id)?.n ?? 0),
+    },
     activity: activity(ctx, u),
     standing: {
       members: scores.length,
@@ -763,7 +817,7 @@ async function signup(ctx: Ctx, req: ApiRequest): Promise<ApiResponse> {
   const id = randomId()
   const tz = Math.max(-840, Math.min(840, Math.round(req.tzOffset || 0)))
   ctx.db.run(
-    'INSERT INTO users (id, email, name, focus, password_hash, tz_offset, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)',
+    'INSERT INTO users (id, email, name, focus, password_hash, tz_offset, created_at, friend_code) VALUES (?, ?, ?, ?, ?, ?, ?, upper(hex(randomblob(4))))',
     id,
     email,
     name,
@@ -773,7 +827,7 @@ async function signup(ctx: Ctx, req: ApiRequest): Promise<ApiResponse> {
     ctx.now()
   )
   const cookie = await startSession(ctx, id)
-  const u = ctx.db.get<UserRow>('SELECT id, email, name, focus, tz_offset, created_at, show_in_rankings FROM users WHERE id = ?', id)!
+  const u = ctx.db.get<UserRow>('SELECT id, email, name, focus, tz_offset, created_at, show_in_rankings, friend_code FROM users WHERE id = ?', id)!
   return { status: 201, body: { snapshot: snapshot(ctx, u) } satisfies ApiOk, setCookie: cookie }
 }
 
@@ -1034,6 +1088,27 @@ const setPostVisibility: Authed = (ctx, u, body, [id]) => {
   ctx.db.run('UPDATE posts SET visibility = ? WHERE id = ?', visibility, id)
 }
 
+const follow: Authed = (ctx, u, body) => {
+  const code = field(body, 'code')
+  const userId = field(body, 'userId')
+  const target =
+    typeof code === 'string'
+      ? ctx.db.get<{ id: string; name: string }>('SELECT id, name FROM users WHERE friend_code = ?', code.trim().toUpperCase())
+      : typeof userId === 'string'
+        ? ctx.db.get<{ id: string; name: string }>('SELECT id, name FROM users WHERE id = ?', userId)
+        : undefined
+  if (!target) throw new HttpError(404, typeof code === 'string' ? 'No member has that friend code.' : 'Member not found.')
+  if (target.id === u.id) throw new HttpError(400, 'That is your own code.')
+  const n = ctx.db.get<{ n: number }>('SELECT COUNT(*) AS n FROM follows WHERE follower_id = ?', u.id)
+  if (Number(n?.n) >= R.MAX_FOLLOWING) throw new HttpError(429, `You can follow up to ${R.MAX_FOLLOWING} members.`)
+  ctx.db.run('INSERT OR IGNORE INTO follows (follower_id, followee_id, created_at) VALUES (?, ?, ?)', u.id, target.id, ctx.now())
+  return `${target.name} added to your friends.`
+}
+
+const unfollow: Authed = (ctx, u, _body, [id]) => {
+  ctx.db.run('DELETE FROM follows WHERE follower_id = ? AND followee_id = ?', u.id, id)
+}
+
 const updateSettings: Authed = (ctx, u, body) => {
   const v = field(body, 'showInRankings')
   if (typeof v !== 'boolean') throw new HttpError(400, 'showInRankings must be true or false.')
@@ -1152,6 +1227,8 @@ const ROUTES: { method: string; pattern: RegExp; handler: Authed }[] = [
   { method: 'DELETE', pattern: /^posts\/([\w-]+)$/, handler: deletePost },
   { method: 'PATCH', pattern: /^posts\/([\w-]+)$/, handler: setPostVisibility },
   { method: 'PATCH', pattern: /^settings$/, handler: updateSettings },
+  { method: 'POST', pattern: /^follows$/, handler: follow },
+  { method: 'DELETE', pattern: /^follows\/([\w-]+)$/, handler: unfollow },
   { method: 'POST', pattern: /^posts\/([\w-]+)\/like$/, handler: likePost },
   { method: 'POST', pattern: /^ratings$/, handler: addRating },
   { method: 'POST', pattern: /^communities\/([\w-]+)\/toggle$/, handler: toggleCommunity },

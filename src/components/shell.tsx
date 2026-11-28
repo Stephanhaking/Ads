@@ -245,8 +245,17 @@ function RightRail({ go }: { go: (t: Tab) => void }) {
           <span className="num text-[11.5px] text-muted-foreground">{s.season.myScore} pts · {s.season.daysLeft}d left</span>
         </div>
         <p className="mt-1 text-[12.5px] text-muted-foreground">
-          {s.season.me ? `of ${s.season.rankedMembers} ranked this month` : s.season.showInRankings ? 'Check in to place this month.' : 'Hidden from the leaderboard.'}
+          {s.season.me ? `of ${s.season.rankedMembers} in the world this month` : s.season.showInRankings ? 'Check in to place this month.' : 'Hidden from the world board.'}
         </p>
+        {s.season.friends.length > 1 && (
+          <p className="mt-0.5 text-[12.5px] text-muted-foreground">
+            {(() => {
+              const me = s.season.friends.find((f) => f.userId === s.user.id)
+              const ranked = s.season.friends.filter((f) => f.position).length
+              return me?.position ? `#${me.position} of ${ranked} among friends` : `${s.season.friends.length - 1} friends`
+            })()}
+          </p>
+        )}
       </div>
 
       <div>

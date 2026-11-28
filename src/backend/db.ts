@@ -224,6 +224,21 @@ const MIGRATIONS = [
   CREATE INDEX idx_season_results_user ON season_results(user_id, one_percent);
   CREATE TABLE seasons_closed (season TEXT PRIMARY KEY, closed_at INTEGER NOT NULL);
   `,
+  `
+  -- Friends: one-way follows. Mutual follows can see each other even when hidden from the world.
+  CREATE TABLE follows (
+    follower_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    followee_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    created_at INTEGER NOT NULL,
+    PRIMARY KEY (follower_id, followee_id),
+    CHECK (follower_id != followee_id)
+  );
+  CREATE INDEX idx_follows_followee ON follows(followee_id);
+  -- A short code to share so friends can add you without a search.
+  ALTER TABLE users ADD COLUMN friend_code TEXT;
+  UPDATE users SET friend_code = upper(hex(randomblob(4)));
+  CREATE UNIQUE INDEX idx_users_friend_code ON users(friend_code);
+  `,
 ]
 
 export function migrate(db: Db) {

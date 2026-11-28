@@ -411,3 +411,47 @@ test('rules: seasons', () => {
   assert.equal(R.isVerifiedOnePercent(3, 250, 100, 60), false)
   assert.equal(R.seasonClosesOn('2026-12'), '2027-01-09')
 })
+
+test('friends: follow by code, friends board, world vs friends positions, hidden mutuals', async () => {
+  const s = setup()
+  for (const n of ['ana', 'ben', 'cy', 'dee']) await s.signup(n)
+  // World: cy 3 tasks, ben 2, dee 1, ana 1.
+  for (let i = 0; i < 3; i++) await s.ok('cy', 'POST', 'tasks/toggle', task(i))
+  for (let i = 0; i < 2; i++) await s.ok('ben', 'POST', 'tasks/toggle', task(i))
+  await s.ok('dee', 'POST', 'tasks/toggle', task(0))
+  await s.ok('ana', 'POST', 'tasks/toggle', task(0))
+
+  const ben = await s.state('ben')
+  assert.match(ben.social.friendCode, /^[0-9A-F]{8}$/)
+  assert.equal((await s.call('ana', 'POST', 'follows', { code: 'NOPE0000' })).status, 404)
+  assert.equal((await s.call('ana', 'POST', 'follows', { code: (await s.state('ana')).social.friendCode })).status, 400)
+  const res = await s.ok('ana', 'POST', 'follows', { code: ben.social.friendCode.toLowerCase() })
+  assert.equal(res.notice, 'ben added to your friends.')
+  await s.ok('ana', 'POST', 'follows', { userId: ben.user.id }) // idempotent
+
+  let ana = await s.state('ana')
+  assert.deepEqual(ana.social.following.map((f) => f.name), ['ben'])
+  assert.equal((await s.state('ben')).social.followers, 1)
+  // Friends board: ana and ben only; position within friends, world position alongside.
+  assert.deepEqual(ana.season.friends.map((f) => [f.name, f.position, f.worldPosition]), [['ben', 1, 2], ['ana', 2, 4]])
+
+  // dee hides from the world: ana (following dee one-way) does not see her; mutual follow does.
+  const deeId = (await s.state('dee')).user.id
+  await s.ok('dee', 'PATCH', 'settings', { showInRankings: false })
+  await s.ok('ana', 'POST', 'follows', { userId: deeId })
+  ana = await s.state('ana')
+  assert.equal(ana.season.friends.some((f) => f.name === 'dee'), false)
+  await s.ok('dee', 'POST', 'follows', { userId: ana.user.id })
+  ana = await s.state('ana')
+  assert.deepEqual(ana.season.friends.find((f) => f.name === 'dee')?.worldPosition, null)
+  assert.equal(ana.season.friends.length, 3)
+
+  // A friend with no points this season is listed last, unranked.
+  await s.signup('eve')
+  await s.ok('ana', 'POST', 'follows', { userId: (await s.state('eve')).user.id })
+  ana = await s.state('ana')
+  assert.deepEqual(ana.season.friends.at(-1), { userId: ana.season.friends.at(-1)!.userId, name: 'eve', position: null, score: 0, worldPosition: null, onePercent: false })
+
+  await s.ok('ana', 'DELETE', `follows/${ben.user.id}`)
+  assert.equal((await s.state('ana')).season.friends.some((f) => f.name === 'ben'), false)
+})
