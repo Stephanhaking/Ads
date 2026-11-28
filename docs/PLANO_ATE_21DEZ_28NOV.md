@@ -27,3 +27,16 @@ Ferramentas: tools/radar.py e tools/radar_saude.py (outliers de canais pequenos)
 | 23/11 | 42 / 160 / 0 | 10 / 448 / 0 |
 Leitura: nos what-if gerais a mediana e a taxa de hits são maiores em todas as semanas; no anime há muitos vídeos de micro-canais (cópias), o que baixa a mediana (saturação). Maiores sinais fora do anime estrito, em canais pequenos: IfDatTrue (plantas num apocalipse zombie, 377 mil com 7,4 mil inscritos), Powers Unleashed (Pokémon, 140 mil com 1,15 mil), Sir Ifalot ("1% as strong as Saitama", 117 mil com 528), Stick Knows (superpoderes infinitos, 192 mil com 4,2 mil), Reality Glitch (deus deste mundo, 175 mil com 3,8 mil).
 Proposta: não esperar até 21/12 para testar; alternar anime com 1 a 2 vídeos "what if" geral (mesmo pipeline) antes do ponto de decisão.
+
+## Candidatos "what if" geral (pesquisa 28/11; vídeos 4-20 min dos últimos 28 dias; ⚠ viés de sobrevivência)
+| Arquétipo | Vídeos | Mediana | >= 20 mil | Melhores (views / inscritos do canal) |
+|---|---|---|---|---|
+| Sobrevivência (apocalipse zombie + regra) | 50 | 16 157 | 24 | IfDatTrue plantas 383 mil / 7,5 mil; The What If Files "infinite IQ" 226 mil / 379; Stupid Dupid "crush" 384 mil / 34 mil; Puck Pukish "crush zombie" 304 mil / 4,4 mil |
+| Pokémon na vida real | 15 | 8 027 | 5 | LegendBro 181 mil e 143 mil / 3,45 mil; Powers Unleashed 147 mil / 1,19 mil |
+| Poder genérico (ler mentes, superpoderes) | 45 | 282 | 14 | The If Lab "read minds" 814 mil / 1,65 mil; Stupid Dupid 285 mil / 34 mil; Stick Knows 194 mil / 4,2 mil |
+| Multiplicador x100 | 15 | 362 | 3 | Slot Studio "punch twice as strong" 564 mil / 4,6 mil; If Then Tales 280 mil / 6 mil |
+| Fração "1% as strong as X" | 7 | 38 | 2 | Sir Ifalot 124 mil / 557 (n=1) |
+Padrão a testar: vários dos maiores têm "crush" no título (Stupid Dupid, Puck Pukish, Jeremy Bearimy 2 M).
+## Plano de teste (sem A/B de thumbnail), intercalado com o anime para controlar o efeito do tempo
+Nanami 29/11, geral 1 1/12, Pain 3/12, geral 2 5/12, geral 3 7/12, leitura aos 7 dias até 14/12; decisão em 21/12.
+Métricas por vídeo: impressões e CTR às 1 h/3-4 h/24 h, views aos 7 dias, retenção aos 60 s, inscritos. Regra: comparar com os limiares da secção "bom resultado".
