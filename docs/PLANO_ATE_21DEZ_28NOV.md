@@ -57,3 +57,11 @@ C6 Encaixe de produção (stickman + regra + escalada).
 | Fração "1 % as strong" | 7 | 38 | 28 % | 1 / 1 | 1 | 0 | 1 | 0 | 1 | 2 | 5 (n pequeno) |
 Escolha dentro do arquétipo: regra concreta no título (ex.: "only had X"), escalada de risco, molde do título igual aos vizinhos que renderam, thumbnail com um elemento de perigo legível.
 Ordem proposta dos 3 testes: 1) sobrevivência, 2) poder genérico, 3) Pokémon (reserva: x100).
+
+## Descoberta 28/11 (capturas do utilizador + API): "stat infinito + situação" em estilo stickman
+- IFNation (26,5 mil inscritos, 45 vídeos, 12,8 M views; publica ~2 por dia): Infinite Aura 1,17 M (5 d), Infinite IQ in a Doomsday Bunker 938 mil (1 d), Card Never Declined 859 mil, Reborn as Your Ex's Baby 651 mil, 500 Charisma in Prison 270 mil, Infinite IQ After a Plane Crash 461 mil. 8 dos últimos 14 vídeos >= 100 mil.
+- DOOMPERK (26,3 mil inscritos, canal criado a 19/10/2026, 43 vídeos, 9,47 M views em ~40 dias): Infinite IQ in PRISON 1,63 M, on a Deserted ISLAND 1,76 M, in the Army 722 mil, rates 1 to 10 649 mil, ADMIN COMMANDS 466 mil; os de anime rendem menos (Saitama trained you 488 mil, Domain Expansion 28 mil, Gojo trained me 4,5 mil).
+- Outros: ConChaser "See Everyone's IQ" 3,3 M, Ifinite "How Long Everyone Has Left" 1,9 M, IFopposite "Infinite IQ at School" 567 mil e "Kindergarten" 452 mil, The What If Files "Infinite IQ During a Zombie Outbreak" 226 mil com 379 inscritos.
+- Padrão: [stat infinito ou poder simples] + [situação social/limite] (prisão, escola, ilha, exército, bunker, crush, chefe, mãe); 10-20 min; protagonista de casaco colorido e cabeça redonda preta (estilo próximo do nosso); miniaturas com citação entre aspas ("you're fired.", "you made WIFI?!") e linha de luz entre as personagens.
+- Saturação: IQ já feito em prisão, ilha, exército, escola, jardim de infância, bunker, acidente de avião, Idade da Pedra, assalto a banco, FBI, apocalipse zombie. Escolher situações ainda não feitas e verificar duplicados antes de produzir.
+- Pontuação pelos critérios gerais: C1 2, C2 2, C3 2 (8/14 do IFNation >= 100 mil), C4 2, C5 2 (sem IP), C6 2 = 12/12, igual à sobrevivência. Ordem proposta dos testes gerais: 1) stat infinito + situação nova, 2) sobrevivência, 3) poder genérico (Pokémon e x100 de reserva).
