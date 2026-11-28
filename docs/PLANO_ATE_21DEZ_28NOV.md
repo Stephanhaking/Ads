@@ -40,3 +40,20 @@ Padrão a testar: vários dos maiores têm "crush" no título (Stupid Dupid, Puc
 ## Plano de teste (sem A/B de thumbnail), intercalado com o anime para controlar o efeito do tempo
 Nanami 29/11, geral 1 1/12, Pain 3/12, geral 2 5/12, geral 3 7/12, leitura aos 7 dias até 14/12; decisão em 21/12.
 Métricas por vídeo: impressões e CTR às 1 h/3-4 h/24 h, views aos 7 dias, retenção aos 60 s, inscritos. Regra: comparar com os limiares da secção "bom resultado".
+
+## Critérios de escolha dos "what if" gerais (28/11; pontuação 0-2 por critério, máx. 12; ⚠ limiares meus, não validados)
+C1 Prova em canais pequenos: vídeos >= 100 mil de canais <= 10 mil inscritos (>= 3 = 2; 1-2 = 1; 0 = 0).
+C2 Dispersão: canais distintos com esses hits (>= 3 = 2; 2 = 1; 1 = 0).
+C3 Taxa de hits: % de vídeos >= 20 mil (>= 40 % = 2; 25-40 % = 1; < 25 % = 0).
+C4 Saturação por micro-cópias: mediana de views (>= 5 mil = 2; 1-5 mil = 1; < 1 mil = 0).
+C5 Risco de IP (sem IP = 2; IP de anime/jogo = 1).
+C6 Encaixe de produção (stickman + regra + escalada).
+| Arquétipo | n | Mediana | >= 20 mil | Hits >= 100 mil, canais <= 10 mil (vídeos / canais) | C1 | C2 | C3 | C4 | C5 | C6 | Total |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Sobrevivência (zombie + regra) | 50 | 16 160 | 48 % | 7 / 5 | 2 | 2 | 2 | 2 | 2 | 2 | 12 |
+| Poder genérico | 95 | 955 | 30 % | 9 / 7 | 2 | 2 | 1 | 0 | 2 | 2 | 9 |
+| Pokémon na vida real | 15 | 8 207 | 33 % | 3 / 2 | 2 | 1 | 1 | 2 | 1 | 1 | 8 |
+| Multiplicador x100 | 15 | 362 | 20 % | 3 / 3 | 2 | 2 | 0 | 0 | 2 | 1 | 7 |
+| Fração "1 % as strong" | 7 | 38 | 28 % | 1 / 1 | 1 | 0 | 1 | 0 | 1 | 2 | 5 (n pequeno) |
+Escolha dentro do arquétipo: regra concreta no título (ex.: "only had X"), escalada de risco, molde do título igual aos vizinhos que renderam, thumbnail com um elemento de perigo legível.
+Ordem proposta dos 3 testes: 1) sobrevivência, 2) poder genérico, 3) Pokémon (reserva: x100).
