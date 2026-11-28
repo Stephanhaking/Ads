@@ -22,9 +22,13 @@ Focus Layer can later add `measured` entries without changing the data model.
 - Redesign ("the record") with a desktop layout.
 
 ## Next
-- **Pending conversation:** the founder will explain the plan for their own foundation, to receive
-  money from failed commitments. Ask: country, foundation or association, board, causes, and how to
-  keep "100% to the cause" free of conflicts of interest.
+- **Foundation plan (explained 28 Nov 2026):** a long-term hub in Chicualacuala, Mozambique:
+  water and solar first, then farming, agro-processing, community services, a free technical
+  school for 16 to 22 year-olds and later a business university with scholarships. The app would
+  channel money from failed commitments to it. Open points: separate the for-profit farm from the
+  nonprofit that runs education, independent board, Mozambican legal forms (association or
+  foundation, land use rights, water licences), accreditation, and how app track records could
+  support scholarship decisions.
 - Password reset and email verification (needs an email provider).
 - Account deletion and data export (GDPR / LGPD).
 - Move from SQLite to Postgres before running on serverless hosting or more than one server.
