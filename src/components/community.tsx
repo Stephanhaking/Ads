@@ -9,18 +9,25 @@ import { useLocal } from '@/lib/local'
 import { timeAgo } from '@/lib/derive'
 import { cn } from '@/lib/utils'
 import { Button, Empty, PageTitle, Section, Tag, inputClass } from './kit'
+import { VerifiedMark } from './brand'
+import { SeasonBoard } from './season'
+
+const VIEWS = { shipped: 'Feed', season: 'Season', groups: 'Communities' } as const
+const INTRO = {
+  shipped: 'What members finished and wrote about their journey, newest first. It ends. There is nothing to scroll forever.',
+  season: 'A new leaderboard every month. Everyone starts at zero, so anyone can win it.',
+  groups: 'Groups around one focus. Member counts are real.',
+} as const
 
 export function CommunityScreen() {
-  const [view, setView] = useState<'shipped' | 'groups'>('shipped')
+  const [view, setView] = useState<keyof typeof VIEWS>('shipped')
   return (
     <div>
-      <PageTitle eyebrow="Community" title={view === 'shipped' ? 'Shipped' : 'Communities'}>
-        {view === 'shipped'
-          ? 'What members finished, newest first. It ends. There is nothing to scroll forever.'
-          : 'Groups around one focus. Member counts are real.'}
+      <PageTitle eyebrow="Community" title={VIEWS[view]}>
+        {INTRO[view]}
       </PageTitle>
       <div className="mt-6 inline-flex rounded-md bg-muted p-1" role="tablist">
-        {(['shipped', 'groups'] as const).map((v) => (
+        {(Object.keys(VIEWS) as (keyof typeof VIEWS)[]).map((v) => (
           <button
             key={v}
             role="tab"
@@ -28,11 +35,11 @@ export function CommunityScreen() {
             onClick={() => setView(v)}
             className={cn('rounded-[5px] px-4 py-1.5 text-[14px] font-semibold', view === v ? 'bg-card' : 'text-muted-foreground hover:text-foreground')}
           >
-            {v === 'shipped' ? 'Shipped' : 'Communities'}
+            {VIEWS[v]}
           </button>
         ))}
       </div>
-      {view === 'shipped' ? <Feed /> : <Groups />}
+      {view === 'shipped' ? <Feed /> : view === 'season' ? <SeasonBoard /> : <Groups />}
     </div>
   )
 }
@@ -128,6 +135,8 @@ function Feed() {
               <li key={p.id} className="border-b border-border py-4">
                 <div className="flex items-baseline gap-2 text-[13px]">
                   <span className="font-semibold">{p.author}</span>
+                  {p.authorOnePercent && <VerifiedMark className="self-center" />}
+                  {p.kind === 'journal' && <span className="num text-[11.5px] text-primary">Journal · Day {p.dayNumber}</span>}
                   <Tag>{p.category}</Tag>
                   <span className="num ml-auto text-[11.5px] text-muted-foreground">{timeAgo(p.createdAt, s.serverNow)}</span>
                 </div>
@@ -149,6 +158,9 @@ function Feed() {
               </li>
             ))}
           </ul>
+        )}
+        {posts.length > 0 && s.journey.length === 0 && (
+          <p className="pt-6 text-center text-[13px] text-muted-foreground">Keeping a journal? Write it under You. Share the entries you want here.</p>
         )}
         {posts.length > 0 && <p className="py-8 text-center text-[13px] text-muted-foreground">That&rsquo;s everything. Go make the next one.</p>}
       </div>

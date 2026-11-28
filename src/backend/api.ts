@@ -85,12 +85,35 @@ export type Snapshot = {
     id: string
     author: string
     authorId: string
+    kind: 'shipped' | 'journal'
+    /** For journal entries: the author's day on the app, starting at 1. */
+    dayNumber: number | null
     text: string
     category: FocusArea
     createdAt: number
     likes: number
     likedByMe: boolean
+    /** The author holds "Verified 1%". */
+    authorOnePercent: boolean
   }[]
+  /** The member's own journal, newest first. */
+  journey: { id: string; text: string; category: FocusArea; visibility: 'public' | 'private'; dayNumber: number; createdAt: number; likes: number }[]
+  season: {
+    id: string
+    daysLeft: number
+    rankedMembers: number
+    /** Positions up to this one are in the top 1%. Null until the season has enough members. */
+    onePercentCutoff: number | null
+    leaders: { position: number; name: string; userId: string; score: number; onePercent: boolean }[]
+    /** Null when the member has no points this season or hides from rankings. */
+    me: { position: number; score: number; verified: number } | null
+    myScore: number
+    showInRankings: boolean
+  }
+  /** Finished seasons the member placed in, newest first. */
+  seasonHistory: { id: string; position: number; rankedMembers: number; score: number; award: R.SeasonAward | null; onePercent: boolean }[]
+  /** Closed seasons where the member earned "Verified 1%" (top 1%, mostly verified work). */
+  onePercentSeasons: string[]
   activity: { id: string; ts: number; kind: 'checkin' | 'proof' | 'lock' | 'commitment' | 'review'; text: string; points?: number }[]
   standing: { members: number; topPercent: number | null }
   demoTools: boolean
@@ -177,6 +200,7 @@ type UserRow = {
   focus: FocusArea
   tz_offset: number
   created_at: number
+  show_in_rankings: number
 }
 
 async function startSession(ctx: Ctx, userId: string): Promise<string> {
@@ -197,7 +221,7 @@ async function currentUser(ctx: Ctx, req: ApiRequest): Promise<UserRow | null> {
   if (!token) return null
   return (
     ctx.db.get<UserRow>(
-      `SELECT u.id, u.email, u.name, u.focus, u.tz_offset, u.created_at
+      `SELECT u.id, u.email, u.name, u.focus, u.tz_offset, u.created_at, u.show_in_rankings
        FROM sessions s JOIN users u ON u.id = s.user_id
        WHERE s.token_hash = ? AND s.expires_at > ?`,
       await sha256(token),
@@ -358,7 +382,125 @@ function challengeTitle(ctx: Ctx, id: string): string {
   )
 }
 
+/** Author's day on the app (1 = the day they joined) for a post written on `day`. */
+function dayNumber(day: string, createdAt: number, tzOffset: number): number {
+  const start = R.dayKey(createdAt, tzOffset)
+  return Math.max(1, Math.round((Date.parse(`${day}T00:00:00Z`) - Date.parse(`${start}T00:00:00Z`)) / 86_400_000) + 1)
+}
+
+/** Every member with points in a season, ranked. Members who opted out are left out. */
+function seasonTable(ctx: Ctx, season: string) {
+  const rows = ctx.db.all<{ user_id: string; name: string; self: number; verified: number; penalties: number }>(
+    `SELECT l.user_id, u.name,
+       COALESCE(SUM(CASE WHEN l.source = 'self' THEN l.points END), 0) AS self,
+       COALESCE(SUM(CASE WHEN l.source IN ('proof', 'measured') THEN l.points END), 0) AS verified,
+       COALESCE(SUM(CASE WHEN l.source = 'penalty' THEN l.points END), 0) AS penalties
+     FROM ledger l JOIN users u ON u.id = l.user_id
+     WHERE l.day >= ? AND l.day < ? AND u.show_in_rankings = 1
+     GROUP BY l.user_id ORDER BY MIN(l.created_at)`,
+    `${season}-01`,
+    `${season}-32`
+  )
+  return R.rankSeason(
+    rows.map((r) => ({
+      userId: r.user_id,
+      name: r.name,
+      verified: Number(r.verified),
+      score: R.rankPoints({ self: Number(r.self), verified: Number(r.verified), penalties: Number(r.penalties) }),
+    }))
+  )
+}
+
+function myScore(ctx: Ctx, u: UserRow, season: string): number {
+  const r = ctx.db.get<{ self: number; verified: number; penalties: number }>(
+    `SELECT COALESCE(SUM(CASE WHEN source = 'self' THEN points END), 0) AS self,
+       COALESCE(SUM(CASE WHEN source IN ('proof', 'measured') THEN points END), 0) AS verified,
+       COALESCE(SUM(CASE WHEN source = 'penalty' THEN points END), 0) AS penalties
+     FROM ledger WHERE user_id = ? AND day >= ? AND day < ?`,
+    u.id,
+    `${season}-01`,
+    `${season}-32`
+  )
+  return R.rankPoints({ self: Number(r?.self ?? 0), verified: Number(r?.verified ?? 0), penalties: Number(r?.penalties ?? 0) })
+}
+
+/** Writes final standings for every season that can no longer change. Idempotent. */
+function closeSeasons(ctx: Ctx) {
+  const utcToday = R.dayKey(ctx.now(), 0)
+  const last = ctx.db.get<{ s: string | null }>('SELECT MAX(season) AS s FROM seasons_closed')?.s
+  const first = ctx.db.get<{ d: string | null }>('SELECT MIN(day) AS d FROM ledger')?.d
+  if (!first) return
+  let season = last ? R.nextSeason(last) : R.seasonOf(first)
+  while (R.seasonClosesOn(season) <= utcToday) {
+    const closing = season
+    const table = seasonTable(ctx, closing)
+    transaction(ctx.db, () => {
+      for (const e of table) {
+        ctx.db.run(
+          'INSERT INTO season_results (season, user_id, position, ranked, score, verified, award, one_percent) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
+          closing,
+          e.userId,
+          e.position,
+          table.length,
+          e.score,
+          e.verified,
+          R.seasonAward(e.position, table.length),
+          R.isVerifiedOnePercent(e.position, table.length, e.score, e.verified) ? 1 : 0
+        )
+      }
+      ctx.db.run('INSERT INTO seasons_closed (season, closed_at) VALUES (?, ?)', closing, ctx.now())
+    })
+    season = R.nextSeason(season)
+  }
+}
+
+/** Members who have earned "Verified 1%" in any closed season. */
+function onePercentMembers(ctx: Ctx, ids: string[]): Set<string> {
+  if (ids.length === 0) return new Set()
+  const unique = [...new Set(ids)]
+  return new Set(
+    ctx.db
+      .all<{ user_id: string }>(
+        `SELECT DISTINCT user_id FROM season_results WHERE one_percent = 1 AND user_id IN (${unique.map(() => '?').join(', ')})`,
+        ...unique
+      )
+      .map((r) => r.user_id)
+  )
+}
+
+function season(ctx: Ctx, u: UserRow, t: string): Pick<Snapshot, 'season' | 'seasonHistory' | 'onePercentSeasons'> {
+  const id = R.seasonOf(t)
+  const table = seasonTable(ctx, id)
+  const mine = table.find((e) => e.userId === u.id)
+  const leaders = table.slice(0, R.SEASON_LEADERBOARD_SIZE)
+  const marked = onePercentMembers(ctx, leaders.map((e) => e.userId))
+  const history = ctx.db
+    .all<{ season: string; position: number; ranked: number; score: number; award: R.SeasonAward | null; one_percent: number }>(
+      'SELECT season, position, ranked, score, award, one_percent FROM season_results WHERE user_id = ? ORDER BY season DESC LIMIT ?',
+      u.id,
+      R.SEASON_HISTORY
+    )
+    .map((r) => ({ id: r.season, position: Number(r.position), rankedMembers: Number(r.ranked), score: Number(r.score), award: r.award, onePercent: Boolean(r.one_percent) }))
+  return {
+    season: {
+      id,
+      daysLeft: R.seasonDaysLeft(t),
+      rankedMembers: table.length,
+      onePercentCutoff: table.length >= R.ONE_PERCENT_MIN_MEMBERS ? Math.floor(table.length / 100) : null,
+      leaders: leaders.map((e) => ({ position: e.position, name: e.name, userId: e.userId, score: e.score, onePercent: marked.has(e.userId) })),
+      me: mine ? { position: mine.position, score: mine.score, verified: mine.verified } : null,
+      myScore: myScore(ctx, u, id),
+      showInRankings: Boolean(u.show_in_rankings),
+    },
+    seasonHistory: history,
+    onePercentSeasons: ctx.db
+      .all<{ season: string }>('SELECT season FROM season_results WHERE user_id = ? AND one_percent = 1 ORDER BY season DESC', u.id)
+      .map((r) => r.season),
+  }
+}
+
 function snapshot(ctx: Ctx, u: UserRow): Snapshot {
+  closeSeasons(ctx)
   const db = ctx.db
   const now = ctx.now()
   const t = today(ctx, u)
@@ -444,22 +586,44 @@ function snapshot(ctx: Ctx, u: UserRow): Snapshot {
     members[r.community_id] = Number(r.n)
 
   const feed = db
-    .all<{ id: string; user_id: string; name: string; text: string; category: FocusArea; created_at: number; likes: number; mine: number }>(
-      `SELECT p.id, p.user_id, u.name, p.text, p.category, p.created_at,
+    .all<{ id: string; user_id: string; name: string; kind: 'shipped' | 'journal'; day: string; text: string; category: FocusArea; created_at: number; joined: number; tz: number; likes: number; mine: number }>(
+      `SELECT p.id, p.user_id, u.name, p.kind, p.day, p.text, p.category, p.created_at, u.created_at AS joined, u.tz_offset AS tz,
          (SELECT COUNT(*) FROM post_likes l WHERE l.post_id = p.id) AS likes,
          EXISTS (SELECT 1 FROM post_likes l WHERE l.post_id = p.id AND l.user_id = ?) AS mine
-       FROM posts p JOIN users u ON u.id = p.user_id ORDER BY p.created_at DESC LIMIT 50`,
+       FROM posts p JOIN users u ON u.id = p.user_id WHERE p.visibility = 'public' ORDER BY p.created_at DESC LIMIT 50`,
       u.id
     )
     .map((p) => ({
       id: p.id,
       author: p.name,
       authorId: p.user_id,
+      kind: p.kind,
+      dayNumber: p.kind === 'journal' ? dayNumber(p.day, Number(p.joined), Number(p.tz)) : null,
       text: p.text,
       category: p.category,
       createdAt: Number(p.created_at),
       likes: Number(p.likes),
       likedByMe: Boolean(p.mine),
+      authorOnePercent: false,
+    }))
+  const feedMarked = onePercentMembers(ctx, feed.map((p) => p.authorId))
+  for (const p of feed) p.authorOnePercent = feedMarked.has(p.authorId)
+
+  const journey = db
+    .all<{ id: string; day: string; text: string; category: FocusArea; visibility: 'public' | 'private'; created_at: number; likes: number }>(
+      `SELECT p.id, p.day, p.text, p.category, p.visibility, p.created_at,
+         (SELECT COUNT(*) FROM post_likes l WHERE l.post_id = p.id) AS likes
+       FROM posts p WHERE p.user_id = ? AND p.kind = 'journal' ORDER BY p.created_at DESC LIMIT 100`,
+      u.id
+    )
+    .map((p) => ({
+      id: p.id,
+      text: p.text,
+      category: p.category,
+      visibility: p.visibility,
+      dayNumber: dayNumber(p.day, Number(u.created_at), Number(u.tz_offset)),
+      createdAt: Number(p.created_at),
+      likes: Number(p.likes),
     }))
 
   // Standing among real members, only once there are enough of them.
@@ -514,6 +678,8 @@ function snapshot(ctx: Ctx, u: UserRow): Snapshot {
       members,
     },
     feed,
+    journey,
+    ...season(ctx, u, t),
     activity: activity(ctx, u),
     standing: {
       members: scores.length,
@@ -607,7 +773,7 @@ async function signup(ctx: Ctx, req: ApiRequest): Promise<ApiResponse> {
     ctx.now()
   )
   const cookie = await startSession(ctx, id)
-  const u = ctx.db.get<UserRow>('SELECT id, email, name, focus, tz_offset, created_at FROM users WHERE id = ?', id)!
+  const u = ctx.db.get<UserRow>('SELECT id, email, name, focus, tz_offset, created_at, show_in_rankings FROM users WHERE id = ?', id)!
   return { status: 201, body: { snapshot: snapshot(ctx, u) } satisfies ApiOk, setCookie: cookie }
 }
 
@@ -830,16 +996,52 @@ const endLock: Authed = (ctx, u) => {
 }
 
 const createPost: Authed = (ctx, u, body) => {
-  const text = str(body, 'text', 1, 280, 'Post')
+  const kind = field(body, 'kind') === undefined ? 'shipped' : oneOf(body, 'kind', ['shipped', 'journal'] as const)
+  const text = str(body, 'text', 1, kind === 'journal' ? R.JOURNAL_MAX_CHARS : 280, kind === 'journal' ? 'Entry' : 'Post')
   const category = oneOf(body, 'category', FOCUS_AREAS)
+  // Shipped posts are always public; journal entries can stay private.
+  const visibility = kind === 'journal' ? oneOf(body, 'visibility', ['public', 'private'] as const) : 'public'
   const t = today(ctx, u)
   const n = ctx.db.get<{ n: number }>('SELECT COUNT(*) AS n FROM posts WHERE user_id = ? AND day = ?', u.id, t)
   if (Number(n?.n) >= R.POSTS_PER_DAY) throw new HttpError(429, `You can post up to ${R.POSTS_PER_DAY} times a day.`)
-  ctx.db.run('INSERT INTO posts (id, user_id, text, category, day, created_at) VALUES (?, ?, ?, ?, ?, ?)', randomId(), u.id, text, category, t, ctx.now())
+  ctx.db.run(
+    'INSERT INTO posts (id, user_id, text, category, day, created_at, kind, visibility) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
+    randomId(),
+    u.id,
+    text,
+    category,
+    t,
+    ctx.now(),
+    kind,
+    visibility
+  )
+}
+
+function ownPost(ctx: Ctx, u: UserRow, id: string, kind?: 'journal') {
+  const p = ctx.db.get<{ kind: string }>('SELECT kind FROM posts WHERE id = ? AND user_id = ?', id, u.id)
+  if (!p || (kind && p.kind !== kind)) throw new HttpError(404, kind ? 'Entry not found.' : 'Post not found.')
+}
+
+const deletePost: Authed = (ctx, u, _body, [id]) => {
+  ownPost(ctx, u, id)
+  ctx.db.run('DELETE FROM post_likes WHERE post_id = ?', id)
+  ctx.db.run('DELETE FROM posts WHERE id = ?', id)
+}
+
+const setPostVisibility: Authed = (ctx, u, body, [id]) => {
+  const visibility = oneOf(body, 'visibility', ['public', 'private'] as const)
+  ownPost(ctx, u, id, 'journal')
+  ctx.db.run('UPDATE posts SET visibility = ? WHERE id = ?', visibility, id)
+}
+
+const updateSettings: Authed = (ctx, u, body) => {
+  const v = field(body, 'showInRankings')
+  if (typeof v !== 'boolean') throw new HttpError(400, 'showInRankings must be true or false.')
+  ctx.db.run('UPDATE users SET show_in_rankings = ? WHERE id = ?', v ? 1 : 0, u.id)
 }
 
 const likePost: Authed = (ctx, u, _body, [postId]) => {
-  if (!ctx.db.get('SELECT 1 AS x FROM posts WHERE id = ?', postId)) throw new HttpError(404, 'That post does not exist.')
+  if (!ctx.db.get("SELECT 1 AS x FROM posts WHERE id = ? AND visibility = 'public'", postId)) throw new HttpError(404, 'That post does not exist.')
   if (ctx.db.get('SELECT 1 AS x FROM post_likes WHERE post_id = ? AND user_id = ?', postId, u.id)) {
     ctx.db.run('DELETE FROM post_likes WHERE post_id = ? AND user_id = ?', postId, u.id)
   } else {
@@ -947,6 +1149,9 @@ const ROUTES: { method: string; pattern: RegExp; handler: Authed }[] = [
   { method: 'POST', pattern: /^locks$/, handler: startLock },
   { method: 'POST', pattern: /^locks\/end$/, handler: endLock },
   { method: 'POST', pattern: /^posts$/, handler: createPost },
+  { method: 'DELETE', pattern: /^posts\/([\w-]+)$/, handler: deletePost },
+  { method: 'PATCH', pattern: /^posts\/([\w-]+)$/, handler: setPostVisibility },
+  { method: 'PATCH', pattern: /^settings$/, handler: updateSettings },
   { method: 'POST', pattern: /^posts\/([\w-]+)\/like$/, handler: likePost },
   { method: 'POST', pattern: /^ratings$/, handler: addRating },
   { method: 'POST', pattern: /^communities\/([\w-]+)\/toggle$/, handler: toggleCommunity },

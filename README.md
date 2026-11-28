@@ -48,6 +48,17 @@ Environment variables:
   With an API key, Claude writes it (structured output, low effort, 25 s timeout, server-side
   fallback on refusals); on any failure or without a key, deterministic rules
   (`src/backend/planner.ts`) write it instead.
+- **Journey journal:** dated entries numbered by the member's day on the app (Day 1, Day 2...),
+  up to 1,000 characters, private by default. Public entries appear in the feed as
+  "Journal · Day N". Members can switch an entry between private and public or delete it.
+- **Seasons:** one leaderboard per calendar month of the member's local days, same scoring as
+  rank (proven work in full, self-reported at half). Ties go to more verified points. Members
+  can hide from the leaderboard. A season closes 8 days after it ends (once no late penalty can
+  land in it) and its final standings are written to `season_results`.
+- **Season marks (no money):** Season winner, Podium and Top 10, given only in seasons with at
+  least 5 ranked members. **Verified 1%**: top 1% of a closed season with at least 100 ranked
+  members and at least half the score from verified work (peer-reviewed proofs, Focus Locks).
+  It is permanent and shows next to the member's name in the feed and leaderboard.
 
 The whole API is one function (`src/backend/api.ts`) that takes a database. Next.js route
 handlers run it on `node:sqlite`; the static preview runs the same code on sql.js in the browser

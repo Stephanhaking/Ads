@@ -8,8 +8,11 @@ import { useStore, useSnapshot } from '@/lib/store'
 import { clockTime, earnedAchievements, rankOf } from '@/lib/derive'
 import { cn } from '@/lib/utils'
 import { Curve } from './curve'
-import { Button, Empty, PageTitle, RecordRow, Section } from './kit'
+import { Button, Empty, PageTitle, RecordRow, Section, Tag } from './kit'
 import { EnergyMapSheet } from './energy-map'
+import { JourneySection } from './journey'
+import { VerifiedMark } from './brand'
+import { AWARD_LABEL, seasonName } from './season'
 
 export function ProfileScreen() {
   const s = useSnapshot()
@@ -22,7 +25,15 @@ export function ProfileScreen() {
 
   return (
     <div>
-      <PageTitle eyebrow={`${s.user.focus} · member since ${since}`} title={s.user.name} />
+      <PageTitle
+        eyebrow={`${s.user.focus} · member since ${since}`}
+        title={
+          <span className="inline-flex items-center gap-2">
+            {s.user.name}
+            {s.onePercentSeasons.length > 0 && <VerifiedMark className="text-[0.6em]" />}
+          </span>
+        }
+      />
 
       <Section title="Where you are" aside={`tier ${rank.index + 1} of ${RANK_TIERS.length}`}>
         <Curve tier={rank.index} />
@@ -67,6 +78,29 @@ export function ProfileScreen() {
           )}
           .
         </p>
+      </Section>
+
+      <JourneySection />
+
+      <Section title="Seasons" aside={<span className="num">{seasonName(s.season.id)}: {s.season.me ? `#${s.season.me.position}` : 'not placed'}</span>}>
+        {s.seasonHistory.length === 0 ? (
+          <Empty>Your finished seasons and the marks you earn in them appear here.</Empty>
+        ) : (
+          <ul>
+            {s.seasonHistory.map((h) => (
+              <li key={h.id} className="flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-border py-3 last:border-0">
+                <span className="text-[15px] font-semibold">{seasonName(h.id)}</span>
+                <span className="num text-[13px] text-muted-foreground">
+                  #{h.position} of {h.rankedMembers} · {h.score} pts
+                </span>
+                <span className="ml-auto flex items-center gap-2">
+                  {h.onePercent && <VerifiedMark withLabel />}
+                  {h.award && <Tag tone={h.award === 'champion' ? 'primary' : 'neutral'}>{AWARD_LABEL[h.award]}</Tag>}
+                </span>
+              </li>
+            ))}
+          </ul>
+        )}
       </Section>
 
       <Section title="Milestones" aside={`${earned.size}/${ACHIEVEMENTS.length}`}>

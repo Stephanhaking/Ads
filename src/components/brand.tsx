@@ -22,3 +22,25 @@ export function Wordmark({ className }: { className?: string }) {
     </span>
   )
 }
+
+/**
+ * "Verified 1%": finished a season in the top 1%, mostly with verified work.
+ * A filled seal carrying the mark's own percent sign; it reads as the dot of the logo, earned.
+ */
+export function VerifiedMark({ className, withLabel = false }: { className?: string; withLabel?: boolean }) {
+  const title = 'Verified 1%: finished a season in the top 1%, mostly with proven work'
+  return (
+    <span className={cn('inline-flex shrink-0 items-center gap-1 text-primary', className)} title={title}>
+      <svg viewBox="0 0 20 20" className="h-[1.05em] w-[1.05em]" role="img" aria-label={withLabel ? undefined : 'Verified 1%'} aria-hidden={withLabel || undefined}>
+        <path
+          d="M10 1.2l2.2 1.6 2.7-.1.8 2.6 2.2 1.6-.9 2.6.9 2.6-2.2 1.6-.8 2.6-2.7-.1L10 18.8l-2.2-1.6-2.7.1-.8-2.6-2.2-1.6.9-2.6-.9-2.6 2.2-1.6.8-2.6 2.7.1z"
+          fill="currentColor"
+        />
+        <circle cx="7.4" cy="7.4" r="1.9" fill="none" stroke="var(--background)" strokeWidth="1.3" />
+        <path d="M6.3 13.8l7.4-7.6" stroke="var(--background)" strokeWidth="1.3" strokeLinecap="round" />
+        <circle cx="12.8" cy="12.8" r="1.5" fill="var(--background)" />
+      </svg>
+      {withLabel && <span className="num text-[10.5px] font-semibold uppercase leading-none">Verified 1%</span>}
+    </span>
+  )
+}

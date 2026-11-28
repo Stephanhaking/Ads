@@ -61,3 +61,74 @@ export function topPercent(mine: number, all: number[]): number {
   const below = all.filter((v) => v < mine).length
   return Math.max(1, Math.ceil(100 - (below / all.length) * 100))
 }
+
+// ── Seasons ──────────────────────────────────────────────────────────
+// A season is one calendar month of the member's local days. Everyone starts it at zero.
+
+export const JOURNAL_MAX_CHARS = 1000
+/** Season marks are given only when a season had at least this many ranked members. */
+export const SEASON_AWARD_MIN_MEMBERS = 5
+export const SEASON_LEADERBOARD_SIZE = 50
+export const SEASON_HISTORY = 6
+
+/** "2026-11" for "2026-11-28". */
+export function seasonOf(day: string): string {
+  return day.slice(0, 7)
+}
+
+export function previousSeason(season: string): string {
+  const [y, m] = season.split('-').map(Number)
+  return m === 1 ? `${y - 1}-12` : `${y}-${String(m - 1).padStart(2, '0')}`
+}
+
+/** Days left in the season, counting today. */
+export function seasonDaysLeft(day: string): number {
+  const [y, m, d] = day.split('-').map(Number)
+  const last = new Date(Date.UTC(y, m, 0)).getUTCDate()
+  return last - d + 1
+}
+
+export type SeasonEntry = { userId: string; score: number; verified: number }
+
+/** Higher score first; ties go to more verified points, then to input order (callers pass earliest-to-start first). */
+export function rankSeason<T extends SeasonEntry>(entries: T[]): (T & { position: number })[] {
+  return entries
+    .filter((e) => e.score > 0)
+    .map((e, i) => ({ e, i }))
+    .sort((a, b) => b.e.score - a.e.score || b.e.verified - a.e.verified || a.i - b.i)
+    .map(({ e }, i) => ({ ...e, position: i + 1 }))
+}
+
+export type SeasonAward = 'champion' | 'podium' | 'top10'
+
+export function seasonAward(position: number, ranked: number): SeasonAward | null {
+  if (ranked < SEASON_AWARD_MIN_MEMBERS) return null
+  if (position === 1) return 'champion'
+  if (position <= 3) return 'podium'
+  if (position <= 10) return 'top10'
+  return null
+}
+
+/** "Verified 1%" is only given in seasons with at least this many ranked members. */
+export const ONE_PERCENT_MIN_MEMBERS = 100
+/** Share of the season score that must come from verified work (proofs, focus locks). */
+export const ONE_PERCENT_MIN_VERIFIED_SHARE = 0.5
+
+/** Top 1% of a season, earned mostly with verified work. */
+export function isVerifiedOnePercent(position: number, ranked: number, score: number, verified: number): boolean {
+  if (ranked < ONE_PERCENT_MIN_MEMBERS || score <= 0) return false
+  return position <= Math.floor(ranked / 100) && verified >= score * ONE_PERCENT_MIN_VERIFIED_SHARE
+}
+
+export function nextSeason(season: string): string {
+  const [y, m] = season.split('-').map(Number)
+  return m === 12 ? `${y + 1}-01` : `${y}-${String(m + 1).padStart(2, '0')}`
+}
+
+/**
+ * A season closes once no member anywhere can still change it: every time zone has left it,
+ * and missed-day penalties (looked back up to MAX_BACKFILL_DAYS) have been written.
+ */
+export function seasonClosesOn(season: string): string {
+  return addDays(`${nextSeason(season)}-01`, MAX_BACKFILL_DAYS + 1)
+}

@@ -58,7 +58,7 @@ export function Section({
   )
 }
 
-export function PageTitle({ eyebrow, title, children }: { eyebrow?: string; title: string; children?: React.ReactNode }) {
+export function PageTitle({ eyebrow, title, children }: { eyebrow?: string; title: React.ReactNode; children?: React.ReactNode }) {
   return (
     <header className="pt-2">
       {eyebrow && <div className="label">{eyebrow}</div>}

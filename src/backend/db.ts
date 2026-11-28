@@ -200,6 +200,30 @@ const MIGRATIONS = [
   );
   CREATE INDEX idx_personal_user ON personal_challenges(user_id, active);
   `,
+  `
+  -- Journal entries share the posts table. Only journal entries can be private.
+  ALTER TABLE posts ADD COLUMN kind TEXT NOT NULL DEFAULT 'shipped' CHECK (kind IN ('shipped', 'journal'));
+  ALTER TABLE posts ADD COLUMN visibility TEXT NOT NULL DEFAULT 'public' CHECK (visibility IN ('public', 'private'));
+  CREATE INDEX idx_posts_user ON posts(user_id, created_at);
+  -- Members can keep their name off the season leaderboard.
+  ALTER TABLE users ADD COLUMN show_in_rankings INTEGER NOT NULL DEFAULT 1;
+  CREATE INDEX idx_ledger_day ON ledger(day);
+
+  -- Final standings, written once when a season closes. Marks are read from here.
+  CREATE TABLE season_results (
+    season TEXT NOT NULL,
+    user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    position INTEGER NOT NULL,
+    ranked INTEGER NOT NULL,
+    score INTEGER NOT NULL,
+    verified INTEGER NOT NULL,
+    award TEXT CHECK (award IN ('champion', 'podium', 'top10')),
+    one_percent INTEGER NOT NULL,
+    PRIMARY KEY (season, user_id)
+  );
+  CREATE INDEX idx_season_results_user ON season_results(user_id, one_percent);
+  CREATE TABLE seasons_closed (season TEXT PRIMARY KEY, closed_at INTEGER NOT NULL);
+  `,
 ]
 
 export function migrate(db: Db) {

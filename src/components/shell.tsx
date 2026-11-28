@@ -239,6 +239,17 @@ function RightRail({ go }: { go: (t: Tab) => void }) {
       </div>
 
       <div>
+        <div className="label">Season</div>
+        <div className="mt-2 flex items-baseline justify-between">
+          <span className="num text-[20px] font-semibold">{s.season.me ? `#${s.season.me.position}` : '—'}</span>
+          <span className="num text-[11.5px] text-muted-foreground">{s.season.myScore} pts · {s.season.daysLeft}d left</span>
+        </div>
+        <p className="mt-1 text-[12.5px] text-muted-foreground">
+          {s.season.me ? `of ${s.season.rankedMembers} ranked this month` : s.season.showInRankings ? 'Check in to place this month.' : 'Hidden from the leaderboard.'}
+        </p>
+      </div>
+
+      <div>
         <div className="label">Standing</div>
         <Curve tier={rank.index} compact className="mt-3" />
         <div className="mt-1 flex items-baseline justify-between">

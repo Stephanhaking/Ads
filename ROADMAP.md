@@ -27,6 +27,8 @@ Focus Layer can later add `measured` entries without changing the data model.
   commitments and server-timed Focus Lock (items 1, 2, 3 and 6 below).
 - Sample content removed: no fictional posts, mentors or member counts.
 - Redesign ("the record") with a desktop layout.
+- Personal plans from free text (goals, obstacles, habits, screen time).
+- Journey journal, monthly seasons, season marks and the "Verified 1%" mark.
 
 ## Next
 - **Foundation plan (explained 28 Nov 2026):** a long-term hub in Chicualacuala, Mozambique:
@@ -36,6 +38,11 @@ Focus Layer can later add `measured` entries without changing the data model.
   nonprofit that runs education, independent board, Mozambican legal forms (association or
   foundation, land use rights, water licences), accreditation, and how app track records could
   support scholarship decisions.
+- **Prizes with real value (not built):** cash or gift prizes for season winners need legal
+  review per country first (skill contest vs sweepstakes, tax reporting, terms, age limits).
+  They must be funded by sponsors or the company, never by forfeited stakes, which go 100% to
+  charity. Safer first steps: sponsor-funded non-cash rewards (books, courses, gear), a free
+  Pro month, a public "Hall of the 1%", or a scholarship from the foundation.
 - Password reset and email verification (needs an email provider).
 - Account deletion and data export (GDPR / LGPD).
 - Move from SQLite to Postgres before running on serverless hosting or more than one server.
