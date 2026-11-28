@@ -35,6 +35,10 @@ export function AppShell() {
     window.scrollTo({ top: 0 })
   }
   useTimeInApp()
+  // Start at the top after signing in (the sign-up form leaves the page scrolled).
+  useEffect(() => {
+    window.scrollTo({ top: 0 })
+  }, [])
 
   if (snapshot.focusLock) return <FocusLockScreen />
 

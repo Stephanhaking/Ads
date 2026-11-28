@@ -24,6 +24,7 @@ Environment variables:
 |---|---|---|
 | `DATABASE_PATH` | `data/app.db` | SQLite file. Needs a persistent disk (not a serverless function). |
 | `DEMO_TOOLS` | off | `1` shows "Simulate a failure" on commitments. Keep off in production. |
+| `ANTHROPIC_API_KEY` | unset | When set, Claude (`claude-opus-5-5`) writes personal plans; otherwise built-in rules do. Answers are sent to Anthropic only when this is set. |
 
 ## How it works
 
@@ -42,6 +43,11 @@ Environment variables:
   days, auto-pause after 3 failures in a row. Money at stake goes 100% to the chosen cause.
   **Payments are not live**; failures are recorded only.
 - **Standing:** real percentiles appear only once there are 20 members.
+- **Personal plans:** members describe goals, obstacles, habits to build and break, screen time,
+  minutes per day and best time; the app writes a one-week challenge with 4 to 6 daily tasks.
+  With an API key, Claude writes it (structured output, low effort, 25 s timeout, server-side
+  fallback on refusals); on any failure or without a key, deterministic rules
+  (`src/backend/planner.ts`) write it instead.
 
 The whole API is one function (`src/backend/api.ts`) that takes a database. Next.js route
 handlers run it on `node:sqlite`; the static preview runs the same code on sql.js in the browser

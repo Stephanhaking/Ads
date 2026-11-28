@@ -1,21 +1,23 @@
 'use client'
 
 import { useState } from 'react'
-import { WEEKLY_CHALLENGES } from '@/data/catalog'
 import { SELF_RANK_WEIGHT } from '@/backend/rules'
 import { useSnapshot } from '@/lib/store'
 import { useLocal } from '@/lib/local'
-import { rankOf } from '@/lib/derive'
+import { currentChallenge, rankOf } from '@/lib/derive'
 import { Button, Empty, Meter, PageTitle, Section } from './kit'
 import { TaskList } from './challenges'
 import { AddCommitmentSheet, CommitmentRow } from './commitments'
 import { StartLockSheet } from './focus-lock'
+import { PlanSheet } from './plan'
 import type { Tab } from './shell'
 
 export function TodayScreen({ go }: { go: (tab: Tab) => void }) {
   const s = useSnapshot()
   const activeId = useLocal((st) => st.activeChallenge)
-  const challenge = WEEKLY_CHALLENGES.find((c) => c.id === activeId) ?? WEEKLY_CHALLENGES[0]
+  const challenge = currentChallenge(s, activeId)
+  const isOwn = s.personalChallenge?.id === challenge.id
+  const [plan, setPlan] = useState(false)
   const rank = rankOf(s)
   const [addCommit, setAddCommit] = useState(false)
   const [lock, setLock] = useState(false)
@@ -41,8 +43,29 @@ export function TodayScreen({ go }: { go: (tab: Tab) => void }) {
         </Stat>
       </dl>
 
+      {!s.personalChallenge && (
+        <section className="mt-8 rounded-lg border border-primary/40 bg-card p-5">
+          <div className="label text-primary">Make it yours</div>
+          <h2 className="mt-1.5 text-[20px] font-semibold leading-tight">Get a challenge written for you</h2>
+          <p className="mt-1.5 max-w-[56ch] text-[14px] leading-relaxed text-muted-foreground">
+            Tell us what you want, what gets in your way, your habits and your screen time. We turn it into daily tasks that fit your day.
+          </p>
+          <Button className="mt-4" onClick={() => setPlan(true)}>
+            Write my plan
+          </Button>
+        </section>
+      )}
+
       <Section title={`Check in · ${challenge.title}`} aside={<button className="underline-offset-4 hover:underline" onClick={() => go('challenges')}>Change</button>}>
         <TaskList challenge={challenge} />
+        {isOwn && (
+          <p className="mt-3 text-[12.5px] leading-relaxed text-muted-foreground">
+            {challenge.description}{' '}
+            <button className="text-foreground underline-offset-4 hover:underline" onClick={() => setPlan(true)}>
+              Update plan
+            </button>
+          </p>
+        )}
         <div className="mt-4">
           <Meter value={s.selfToday} max={s.selfDailyCap} />
           <p className="mt-2 text-[12.5px] leading-relaxed text-muted-foreground">
@@ -100,6 +123,7 @@ export function TodayScreen({ go }: { go: (tab: Tab) => void }) {
 
       <AddCommitmentSheet open={addCommit} onClose={() => setAddCommit(false)} />
       <StartLockSheet open={lock} onClose={() => setLock(false)} />
+      <PlanSheet open={plan} onClose={() => setPlan(false)} />
     </div>
   )
 }

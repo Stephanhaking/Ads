@@ -2,10 +2,9 @@
 
 import { useState } from 'react'
 import { ExternalLink } from 'lucide-react'
-import { WEEKLY_CHALLENGES } from '@/data/catalog'
 import { PROOF_POINTS, REVIEWS_TO_DECIDE } from '@/backend/rules'
 import { useStore, useSnapshot } from '@/lib/store'
-import { rankOf, timeAgo } from '@/lib/derive'
+import { allChallenges, rankOf, timeAgo } from '@/lib/derive'
 import { cn } from '@/lib/utils'
 import { Button, Empty, Field, PageTitle, Section, Tag, inputClass } from './kit'
 
@@ -14,7 +13,8 @@ export function ProofScreen() {
   const act = useStore((st) => st.act)
   const busy = useStore((st) => st.busy)
   const rank = rankOf(s)
-  const [challengeId, setChallengeId] = useState(WEEKLY_CHALLENGES[0].id)
+  const challenges = allChallenges(s)
+  const [challengeId, setChallengeId] = useState(challenges[0].id)
   const [text, setText] = useState('')
   const [url, setUrl] = useState('')
 
@@ -51,7 +51,7 @@ export function ProofScreen() {
           <fieldset>
             <legend className="text-[13px] font-medium">Challenge</legend>
             <div className="no-scrollbar -mx-5 mt-1.5 flex gap-2 overflow-x-auto px-5 sm:mx-0 sm:flex-wrap sm:px-0">
-              {WEEKLY_CHALLENGES.map((c) => (
+              {challenges.map((c) => (
                 <button
                   type="button"
                   key={c.id}

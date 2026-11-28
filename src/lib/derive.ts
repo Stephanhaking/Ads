@@ -2,6 +2,7 @@
 import type { Snapshot } from '@/backend/api'
 import { CHALLENGE_DAYS_TO_COMPLETE } from '@/backend/rules'
 import { getEffectiveRank, getNextRank, RANK_TIERS, PROOF_REQUIREMENTS } from './ranks'
+import { WEEKLY_CHALLENGES, type Challenge } from '@/data/catalog'
 
 export function rankOf(s: Snapshot) {
   const eff = getEffectiveRank(s.points.rank, s.validatedProofs)
@@ -44,4 +45,15 @@ export function timeAgo(ts: number, now = Date.now()): string {
 export function clockTime(ts: number): string {
   const d = new Date(ts)
   return `${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`
+}
+
+/** The member's own challenge first, then the shared ones. */
+export function allChallenges(s: Snapshot): Challenge[] {
+  return s.personalChallenge ? [s.personalChallenge, ...WEEKLY_CHALLENGES] : WEEKLY_CHALLENGES
+}
+
+/** What Today shows: the chosen challenge, defaulting to the member's own. */
+export function currentChallenge(s: Snapshot, activeId: string): Challenge {
+  if (activeId === 'personal' && s.personalChallenge) return s.personalChallenge
+  return WEEKLY_CHALLENGES.find((c) => c.id === activeId) ?? s.personalChallenge ?? WEEKLY_CHALLENGES[0]
 }

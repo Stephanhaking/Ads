@@ -5,7 +5,8 @@
 import { transaction, type Db } from './db'
 import { randomId, sha256, type Hasher } from './crypto'
 import * as R from './rules'
-import { WEEKLY_CHALLENGES, COMMUNITIES } from '@/data/catalog'
+import { WEEKLY_CHALLENGES, COMMUNITIES, type Challenge } from '@/data/catalog'
+import { BEST_TIMES, MINUTES_OPTIONS, rulesPlan, type Intake, type Planner } from './planner'
 import { CAUSES, COMMITMENT_TRIGGERS, STAKE_AMOUNTS } from '@/data/commitments'
 
 export const FOCUS_AREAS = ['Mind', 'Body', 'Craft', 'Wealth', 'Network'] as const
@@ -14,6 +15,8 @@ export type FocusArea = (typeof FOCUS_AREAS)[number]
 export type Ctx = {
   db: Db
   hasher: Hasher
+  /** Writes personal plans from free text. Without one, built-in rules do it. */
+  planner?: Planner
   now: () => number
   /** Allows "simulate failure" on commitments. Off in production. */
   demoTools: boolean
@@ -91,6 +94,10 @@ export type Snapshot = {
   activity: { id: string; ts: number; kind: 'checkin' | 'proof' | 'lock' | 'commitment' | 'review'; text: string; points?: number }[]
   standing: { members: number; topPercent: number | null }
   demoTools: boolean
+  intake: Omit<Intake, 'focus'> | null
+  /** The member's own challenge, written from their intake. */
+  personalChallenge: (Challenge & { source: 'rules' | 'ai' }) | null
+  plannerMode: 'ai' | 'rules'
 }
 
 export type ApiOk = { snapshot: Snapshot; notice?: string }
@@ -313,6 +320,44 @@ function settle(ctx: Ctx, u: UserRow) {
   }
 }
 
+type PersonalRow = { id: string; user_id: string; title: string; prompt: string; why: string; tasks: string; source: 'rules' | 'ai' }
+
+const PERSONAL_POINTS = 250
+
+function toChallenge(r: PersonalRow, focus: FocusArea): Challenge & { source: 'rules' | 'ai' } {
+  const tasks = JSON.parse(r.tasks) as { label: string; hint: string }[]
+  return {
+    id: r.id,
+    weekLabel: 'Yours',
+    title: r.title,
+    prompt: r.prompt,
+    description: r.why,
+    category: focus,
+    difficulty: 'Growth',
+    pointsReward: PERSONAL_POINTS,
+    durationDays: 7,
+    microTasks: tasks.map((t, i) => ({ id: `t${i + 1}`, label: t.label, hint: t.hint })),
+    source: r.source,
+  }
+}
+
+/** A challenge the member can check in to: the shared catalog, or one of their own. */
+function findChallenge(ctx: Ctx, u: UserRow, id: string): Challenge | undefined {
+  const shared = WEEKLY_CHALLENGES.find((c) => c.id === id)
+  if (shared) return shared
+  const own = ctx.db.get<PersonalRow>('SELECT * FROM personal_challenges WHERE id = ? AND user_id = ?', id, u.id)
+  return own ? toChallenge(own, u.focus) : undefined
+}
+
+/** Title for any challenge id, including other members' personal ones (for proofs in review). */
+function challengeTitle(ctx: Ctx, id: string): string {
+  return (
+    WEEKLY_CHALLENGES.find((c) => c.id === id)?.title ??
+    ctx.db.get<{ title: string }>('SELECT title FROM personal_challenges WHERE id = ?', id)?.title ??
+    'Challenge'
+  )
+}
+
 function snapshot(ctx: Ctx, u: UserRow): Snapshot {
   const db = ctx.db
   const now = ctx.now()
@@ -327,7 +372,6 @@ function snapshot(ctx: Ctx, u: UserRow): Snapshot {
   ))
     challengeDays[r.challenge_id] = Number(r.n)
 
-  const challengeTitle = (id: string) => WEEKLY_CHALLENGES.find((c) => c.id === id)?.title ?? 'Challenge'
 
   const proofs = db
     .all<{ id: string; challenge_id: string; text: string; url: string | null; status: Snapshot['proofs'][number]['status']; created_at: number; approvals: number; rejections: number }>(
@@ -340,7 +384,7 @@ function snapshot(ctx: Ctx, u: UserRow): Snapshot {
     .map((p) => ({
       id: p.id,
       challengeId: p.challenge_id,
-      challengeTitle: challengeTitle(p.challenge_id),
+      challengeTitle: challengeTitle(ctx, p.challenge_id),
       text: p.text,
       url: p.url,
       status: p.status,
@@ -358,7 +402,7 @@ function snapshot(ctx: Ctx, u: UserRow): Snapshot {
       u.id,
       u.id
     )
-    .map((p) => ({ id: p.id, author: p.name, challengeTitle: challengeTitle(p.challenge_id), text: p.text, url: p.url, createdAt: Number(p.created_at) }))
+    .map((p) => ({ id: p.id, author: p.name, challengeTitle: challengeTitle(ctx, p.challenge_id), text: p.text, url: p.url, createdAt: Number(p.created_at) }))
 
   const rev = db.get<{ reviews: number; decided: number; agreed: number }>(
     `SELECT COUNT(*) AS reviews, COUNT(agreed) AS decided, COALESCE(SUM(agreed), 0) AS agreed FROM reviews WHERE reviewer_id = ?`,
@@ -476,13 +520,35 @@ function snapshot(ctx: Ctx, u: UserRow): Snapshot {
       topPercent: scores.length >= R.PERCENTILE_MIN_MEMBERS ? R.topPercent(points.rank, scores) : null,
     },
     demoTools: ctx.demoTools,
+    intake: (() => {
+      const r = db.get<{ goals: string; obstacles: string; build_habits: string; break_habits: string; screen_hours: number; minutes_per_day: number; best_time: Intake['bestTime'] }>(
+        'SELECT * FROM intakes WHERE user_id = ?',
+        u.id
+      )
+      return r
+        ? {
+            goals: r.goals,
+            obstacles: r.obstacles,
+            buildHabits: r.build_habits,
+            breakHabits: r.break_habits,
+            screenHours: Number(r.screen_hours),
+            minutesPerDay: Number(r.minutes_per_day),
+            bestTime: r.best_time,
+          }
+        : null
+    })(),
+    personalChallenge: (() => {
+      const r = db.get<PersonalRow>('SELECT * FROM personal_challenges WHERE user_id = ? AND active = 1 ORDER BY created_at DESC LIMIT 1', u.id)
+      return r ? toChallenge(r, u.focus) : null
+    })(),
+    plannerMode: ctx.planner ? 'ai' : 'rules',
   }
 }
 
 function activity(ctx: Ctx, u: UserRow): Snapshot['activity'] {
   const taskLabel = (ref: string) => {
     const [cid, tid] = ref.split(':')
-    return WEEKLY_CHALLENGES.find((c) => c.id === cid)?.microTasks.find((m) => m.id === tid)?.label ?? 'Task'
+    return findChallenge(ctx, u, cid)?.microTasks.find((m) => m.id === tid)?.label ?? 'Task'
   }
   const items: Snapshot['activity'] = []
   for (const l of ctx.db.all<{ id: number; kind: string; ref: string; points: number; created_at: number }>(
@@ -577,7 +643,7 @@ async function logout(ctx: Ctx, req: ApiRequest): Promise<ApiResponse> {
 const toggleTask: Authed = (ctx, u, body) => {
   const challengeId = str(body, 'challengeId', 1, 60)
   const taskId = str(body, 'taskId', 1, 60)
-  const ch = WEEKLY_CHALLENGES.find((c) => c.id === challengeId)
+  const ch = findChallenge(ctx, u, challengeId)
   const task = ch?.microTasks.find((m) => m.id === taskId)
   if (!ch || !task) throw new HttpError(404, 'That task does not exist.')
   const t = today(ctx, u)
@@ -609,7 +675,7 @@ const toggleTask: Authed = (ctx, u, body) => {
 
 const submitProof: Authed = (ctx, u, body) => {
   const challengeId = str(body, 'challengeId', 1, 60)
-  if (!WEEKLY_CHALLENGES.some((c) => c.id === challengeId)) throw new HttpError(404, 'That challenge does not exist.')
+  if (!findChallenge(ctx, u, challengeId)) throw new HttpError(404, 'That challenge does not exist.')
   const text = str(body, 'text', 10, 500, 'Description')
   const url = optionalUrl(body, 'url')
   const t = today(ctx, u)
@@ -808,6 +874,68 @@ const toggleCommunity: Authed = (ctx, u, _body, [id]) => {
   }
 }
 
+/** Saves the intake and writes a new personal challenge. Async: the AI planner may take seconds. */
+async function createPlan(ctx: Ctx, u: UserRow, body: unknown): Promise<ApiResponse> {
+  const intake: Intake = {
+    goals: str(body, 'goals', 5, 1000, 'Goals'),
+    obstacles: typeof field(body, 'obstacles') === 'string' ? str(body, 'obstacles', 0, 1000, 'Obstacles') : '',
+    buildHabits: typeof field(body, 'buildHabits') === 'string' ? str(body, 'buildHabits', 0, 500, 'Habits to build') : '',
+    breakHabits: typeof field(body, 'breakHabits') === 'string' ? str(body, 'breakHabits', 0, 500, 'Habits to break') : '',
+    screenHours: (() => {
+      const v = field(body, 'screenHours')
+      if (typeof v !== 'number' || !(v >= 0 && v <= 18)) throw new HttpError(400, 'Screen time must be between 0 and 18 hours.')
+      return Math.round(v * 2) / 2
+    })(),
+    minutesPerDay: (() => {
+      const v = field(body, 'minutesPerDay')
+      if (!(MINUTES_OPTIONS as readonly unknown[]).includes(v)) throw new HttpError(400, `Choose ${MINUTES_OPTIONS.join(', ')} minutes.`)
+      return v as number
+    })(),
+    bestTime: oneOf(body, 'bestTime', BEST_TIMES),
+    focus: u.focus,
+  }
+
+  let draft = ctx.planner ? await ctx.planner(intake).catch(() => null) : null
+  const source: 'ai' | 'rules' = draft ? 'ai' : 'rules'
+  draft ??= rulesPlan(intake)
+
+  const now = ctx.now()
+  transaction(ctx.db, () => {
+    ctx.db.run(
+      `INSERT INTO intakes (user_id, goals, obstacles, build_habits, break_habits, screen_hours, minutes_per_day, best_time, updated_at)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+       ON CONFLICT(user_id) DO UPDATE SET goals = excluded.goals, obstacles = excluded.obstacles, build_habits = excluded.build_habits,
+         break_habits = excluded.break_habits, screen_hours = excluded.screen_hours, minutes_per_day = excluded.minutes_per_day,
+         best_time = excluded.best_time, updated_at = excluded.updated_at`,
+      u.id,
+      intake.goals,
+      intake.obstacles,
+      intake.buildHabits,
+      intake.breakHabits,
+      intake.screenHours,
+      intake.minutesPerDay,
+      intake.bestTime,
+      now
+    )
+    ctx.db.run('UPDATE personal_challenges SET active = 0 WHERE user_id = ?', u.id)
+    ctx.db.run(
+      'INSERT INTO personal_challenges (id, user_id, title, prompt, why, tasks, source, active, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, 1, ?)',
+      randomId(),
+      u.id,
+      draft.title,
+      draft.prompt,
+      draft.why,
+      JSON.stringify(draft.tasks),
+      source,
+      now
+    )
+    settle(ctx, u)
+  })
+  const notice =
+    source === 'ai' || !ctx.planner ? 'Your plan is ready. It is on Today.' : 'Your plan is ready (built-in rules; the AI planner was unavailable).'
+  return { status: 200, body: { snapshot: snapshot(ctx, u), notice } satisfies ApiOk }
+}
+
 const ROUTES: { method: string; pattern: RegExp; handler: Authed }[] = [
   { method: 'POST', pattern: /^tasks\/toggle$/, handler: toggleTask },
   { method: 'POST', pattern: /^proofs$/, handler: submitProof },
@@ -844,6 +972,8 @@ export async function handle(ctx: Ctx, req: ApiRequest): Promise<ApiResponse> {
 
     const user = await currentUser(ctx, req)
     if (!user) throw new HttpError(401, 'Log in to continue.')
+
+    if (req.method === 'POST' && path === 'plan') return await createPlan(ctx, user, req.body)
 
     if (req.method === 'GET' && path === 'state') {
       transaction(ctx.db, () => settle(ctx, user))

@@ -4,7 +4,6 @@
 // they are about this screen, not about the member's record.
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import { WEEKLY_CHALLENGES } from '@/data/catalog'
 
 /** Default daily limit for time spent in the app itself. */
 export const DAILY_LIMIT_MIN = 30
@@ -16,6 +15,7 @@ export function localDay() {
 }
 
 type Local = {
+  /** 'personal' for the member's own challenge, or a catalog challenge id. */
   activeChallenge: string
   minutesToday: number
   minutesDay: string
@@ -30,7 +30,7 @@ type Local = {
 export const useLocal = create<Local>()(
   persist(
     (set, get) => ({
-      activeChallenge: WEEKLY_CHALLENGES[0].id,
+      activeChallenge: 'personal',
       minutesToday: 0,
       minutesDay: localDay(),
       feedLockedUntil: null,

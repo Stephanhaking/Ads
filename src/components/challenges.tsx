@@ -2,12 +2,14 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { WEEKLY_CHALLENGES, type Challenge } from '@/data/catalog'
+import type { Challenge } from '@/data/catalog'
 import { CHALLENGE_DAYS_TO_COMPLETE, pointsPerTask } from '@/backend/rules'
 import { useStore, useSnapshot } from '@/lib/store'
 import { useLocal } from '@/lib/local'
+import { allChallenges, currentChallenge } from '@/lib/derive'
 import { cn } from '@/lib/utils'
 import { Button, PageTitle, Tag } from './kit'
+import { PlanSheet } from './plan'
 
 /** Today's checklist for one challenge. Each task can be checked once a day; the whole row is the target. */
 export function TaskList({ challenge }: { challenge: Challenge }) {
@@ -89,7 +91,9 @@ export function ChallengesScreen() {
   const s = useSnapshot()
   const active = useLocal((st) => st.activeChallenge)
   const setActive = useLocal((st) => st.setActiveChallenge)
-  const [open, setOpen] = useState<string | null>(active)
+  const current = currentChallenge(s, active)
+  const [open, setOpen] = useState<string | null>(current.id)
+  const [plan, setPlan] = useState(false)
 
   return (
     <div>
@@ -97,18 +101,38 @@ export function ChallengesScreen() {
         Pick one and check in every day. Five days with check-ins completes a challenge. Your check-ins are self-reported, so they count half toward rank until you prove the result.
       </PageTitle>
 
+      {!s.personalChallenge && (
+        <button
+          onClick={() => setPlan(true)}
+          className="mt-8 flex w-full items-center justify-between gap-4 rounded-lg border border-dashed border-primary/60 bg-card p-5 text-left hover:border-primary"
+        >
+          <span>
+            <span className="block text-[16px] font-semibold">Write a challenge for me</span>
+            <span className="block text-[13.5px] text-muted-foreground">From your goals, obstacles, habits and screen time.</span>
+          </span>
+          <span className="num text-[13px] text-primary">Start →</span>
+        </button>
+      )}
+
       <ul className="mt-8 space-y-3">
-        {WEEKLY_CHALLENGES.map((c) => {
+        {allChallenges(s).map((c) => {
           const days = s.challengeDays[c.id] ?? 0
-          const isActive = c.id === active
+          const isActive = c.id === current.id
+          const isOwn = c.id === s.personalChallenge?.id
           const expanded = open === c.id
           return (
             <li key={c.id} className={cn('rounded-lg border bg-card', isActive ? 'border-foreground/70' : 'border-border')}>
               <button className="w-full p-5 text-left" onClick={() => setOpen(expanded ? null : c.id)} aria-expanded={expanded}>
                 <div className="flex flex-wrap items-center gap-2">
-                  <span className="label">{c.weekLabel}</span>
-                  <Tag tone={c.difficulty === 'Outlier' ? 'primary' : 'neutral'}>{c.difficulty}</Tag>
-                  <Tag>{c.category}</Tag>
+                  {isOwn ? (
+                    <Tag tone="primary">Written for you</Tag>
+                  ) : (
+                    <>
+                      <span className="label">{c.weekLabel}</span>
+                      <Tag tone={c.difficulty === 'Outlier' ? 'primary' : 'neutral'}>{c.difficulty}</Tag>
+                      <Tag>{c.category}</Tag>
+                    </>
+                  )}
                   {isActive && <Tag tone="primary">On Today</Tag>}
                 </div>
                 <div className="mt-3 flex items-baseline justify-between gap-3">
@@ -128,17 +152,25 @@ export function ChallengesScreen() {
                   <p className="mb-4 max-w-[60ch] text-[14px] leading-relaxed text-muted-foreground">{c.description}</p>
                   <div className="label mb-1">Today</div>
                   <TaskList challenge={c} />
-                  {!isActive && (
-                    <Button variant="secondary" size="sm" className="mt-4" onClick={() => setActive(c.id)}>
-                      Show this on Today
-                    </Button>
-                  )}
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {!isActive && (
+                      <Button variant="secondary" size="sm" onClick={() => setActive(isOwn ? 'personal' : c.id)}>
+                        Show this on Today
+                      </Button>
+                    )}
+                    {isOwn && (
+                      <Button variant="ghost" size="sm" onClick={() => setPlan(true)}>
+                        Update my plan
+                      </Button>
+                    )}
+                  </div>
                 </div>
               )}
             </li>
           )
         })}
       </ul>
+      <PlanSheet open={plan} onClose={() => setPlan(false)} />
     </div>
   )
 }

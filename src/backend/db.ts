@@ -172,6 +172,34 @@ const MIGRATIONS = [
   CREATE INDEX idx_proofs_status ON proofs(status, created_at);
   CREATE INDEX idx_posts_created ON posts(created_at);
   `,
+  `
+  -- What a member wrote about themselves; the input for their personal plan.
+  CREATE TABLE intakes (
+    user_id TEXT PRIMARY KEY REFERENCES users(id) ON DELETE CASCADE,
+    goals TEXT NOT NULL,
+    obstacles TEXT NOT NULL,
+    build_habits TEXT NOT NULL,
+    break_habits TEXT NOT NULL,
+    screen_hours REAL NOT NULL,
+    minutes_per_day INTEGER NOT NULL,
+    best_time TEXT NOT NULL,
+    updated_at INTEGER NOT NULL
+  );
+
+  -- Challenges written for one member. Only one is active at a time.
+  CREATE TABLE personal_challenges (
+    id TEXT PRIMARY KEY,
+    user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    title TEXT NOT NULL,
+    prompt TEXT NOT NULL,
+    why TEXT NOT NULL,
+    tasks TEXT NOT NULL,
+    source TEXT NOT NULL CHECK (source IN ('rules', 'ai')),
+    active INTEGER NOT NULL,
+    created_at INTEGER NOT NULL
+  );
+  CREATE INDEX idx_personal_user ON personal_challenges(user_id, active);
+  `,
 ]
 
 export function migrate(db: Db) {

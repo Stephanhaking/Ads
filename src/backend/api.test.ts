@@ -217,3 +217,79 @@ test('rules: streak and day helpers', () => {
   assert.equal(R.dayKey(Date.parse('2026-11-02T23:30:00Z'), 60), '2026-11-03')
   assert.equal(R.topPercent(10, [1, 2, 3, 10]), 25)
 })
+
+// ── Personal plans ───────────────────────────────────────────────────
+import { rulesPlan, validatePlan, PLAN_LIMITS } from './planner'
+
+const INTAKE = {
+  goals: 'Launch my YouTube channel. Read more.',
+  obstacles: 'I procrastinate and scroll TikTok at night',
+  buildHabits: 'Write a script every day',
+  breakHabits: 'Phone in bed',
+  screenHours: 6,
+  minutesPerDay: 60,
+  bestTime: 'morning',
+}
+
+test('rules planner: concrete daily tasks from the intake', () => {
+  const plan = rulesPlan({ ...INTAKE, bestTime: 'morning', focus: 'Craft' })
+  assert.ok(plan.tasks.length >= PLAN_LIMITS.minTasks && plan.tasks.length <= PLAN_LIMITS.maxTasks)
+  const labels = plan.tasks.map((t) => t.label)
+  assert.ok(labels.includes('60 min on: Launch my YouTube channel'))
+  assert.ok(labels.some((l) => l.startsWith('Phone under 4h')))
+  assert.ok(labels.includes('Skip: Phone in bed'))
+  assert.ok(labels.includes('Do: Write a script every day'))
+  assert.ok(labels.includes('Start within 2 minutes of sitting down'))
+  // Portuguese input works too, and a sparse intake still yields enough tasks.
+  const pt = rulesPlan({ ...INTAKE, goals: 'Passar no exame', obstacles: 'Fico cansado', buildHabits: '', breakHabits: '', screenHours: 2, bestTime: 'evening', focus: 'Mind' })
+  assert.ok(pt.tasks.length >= PLAN_LIMITS.minTasks)
+  assert.ok(pt.tasks.some((t) => t.label === 'In bed by 23:00'))
+  assert.equal(validatePlan({ title: 'x', prompt: 'y', tasks: [{ label: 'only one' }] }), null)
+})
+
+test('plan endpoint: AI draft used, rules when the AI fails, own challenge only', async () => {
+  const s = setup()
+  await s.signup('ana')
+  await s.signup('bo')
+
+  // No planner configured: rules.
+  let r = await s.ok('ana', 'POST', 'plan', INTAKE)
+  let pc = r.snapshot.personalChallenge!
+  assert.equal(pc.source, 'rules')
+  assert.equal(r.snapshot.intake?.screenHours, 6)
+
+  // Check in to a personal task; points come from the personal challenge.
+  r = await s.ok('ana', 'POST', 'tasks/toggle', { challengeId: pc.id, taskId: 't1' })
+  assert.equal(r.snapshot.points.self, Math.round(250 / pc.microTasks.length))
+  assert.match(r.snapshot.activity[0].text, /60 min on/)
+  // Another member cannot use it.
+  assert.equal((await s.call('bo', 'POST', 'tasks/toggle', { challengeId: pc.id, taskId: 't1' })).status, 404)
+  // Proofs can point at it, and reviewers see its title.
+  await s.ok('ana', 'POST', 'proofs', { challengeId: pc.id, text: 'Published the first video and the script for the second.' })
+  assert.equal((await s.state('bo')).reviewQueue[0].challengeTitle, pc.title)
+
+  // An AI planner that answers is used; a new plan replaces the old one.
+  s.ctx.planner = async () => ({
+    title: 'Ship the channel',
+    prompt: 'One video a week.',
+    why: 'Because you said so.',
+    tasks: [1, 2, 3, 4].map((n) => ({ label: `Task number ${n}`, hint: 'hint' })),
+  })
+  r = await s.ok('ana', 'POST', 'plan', INTAKE)
+  pc = r.snapshot.personalChallenge!
+  assert.equal(pc.source, 'ai')
+  assert.equal(pc.title, 'Ship the channel')
+  assert.equal(pc.microTasks.length, 4)
+
+  // An AI planner that fails or returns junk falls back to the rules.
+  s.ctx.planner = async () => {
+    throw new Error('timeout')
+  }
+  r = await s.ok('ana', 'POST', 'plan', INTAKE)
+  assert.equal(r.snapshot.personalChallenge!.source, 'rules')
+  assert.match(r.notice ?? '', /built-in rules/)
+
+  // Bad input is refused.
+  assert.equal((await s.call('ana', 'POST', 'plan', { ...INTAKE, minutesPerDay: 45 })).status, 400)
+  assert.equal((await s.call('ana', 'POST', 'plan', { ...INTAKE, goals: '' })).status, 400)
+})
