@@ -16,7 +16,7 @@ import {
 } from 'lucide-react'
 import { useAppStore, type Proof } from '@/lib/store'
 import { DEMO_MODE } from '@/lib/demo'
-import { WEEKLY_CHALLENGES } from '@/data/mock-data'
+import { WEEKLY_CHALLENGES } from '@/data/catalog'
 import { PEER_PROOFS, REVIEW_CREDIT_REWARD } from '@/data/commitments'
 import { getEffectiveRank, PROOF_REQUIREMENTS, RANK_TIERS } from '@/lib/ranks'
 import { cn } from '@/lib/utils'

@@ -51,4 +51,8 @@ prompt
 
 server.log
 # Skills directory
-/skills/preview-dist/
+/skills
+preview-dist/
+
+# local database
+/data/

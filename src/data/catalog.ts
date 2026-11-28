@@ -1,4 +1,5 @@
-// Static mock data for communities and weekly challenges in The 1% app.
+// Product catalog: communities, weekly challenges and achievements. This is
+// content the product ships with, not user data. Member counts come from the database.
 
 export type Community = {
   id: string
@@ -6,9 +7,6 @@ export type Community = {
   tagline: string
   description: string
   category: 'Mind' | 'Body' | 'Craft' | 'Wealth' | 'Network'
-  members: number
-  online: number
-  trend: 'up' | 'steady' | 'new'
   color: string // accent hex
   weeklyTopic: string
 }
@@ -42,9 +40,6 @@ export const COMMUNITIES: Community[] = [
     description:
       'A community for people serious about reclaiming their mornings. Cold exposure, early light, no phone before sunrise. We trade proof, not talk.',
     category: 'Body',
-    members: 8421,
-    online: 312,
-    trend: 'up',
     color: '#22d3ee',
     weeklyTopic: '30 days of 5AM with no snooze',
   },
@@ -55,9 +50,6 @@ export const COMMUNITIES: Community[] = [
     description:
       'For builders, writers, and engineers who treat focus like a currency. We log deep-work hours weekly and ship one project per cycle.',
     category: 'Craft',
-    members: 12903,
-    online: 488,
-    trend: 'up',
     color: '#a3e635',
     weeklyTopic: 'Ship a public artifact by Sunday',
   },
@@ -68,9 +60,6 @@ export const COMMUNITIES: Community[] = [
     description:
       'Strength training, Zone 2 cardio, sauna, and breathwork. We treat the body as the substrate of every other performance.',
     category: 'Body',
-    members: 6720,
-    online: 201,
-    trend: 'steady',
     color: '#fb923c',
     weeklyTopic: '3 strength + 2 Zone 2 sessions',
   },
@@ -81,9 +70,6 @@ export const COMMUNITIES: Community[] = [
     description:
       'Investors who think in decades. We discuss index strategy, ownership, and the boring math that makes millionaires out of ordinary income.',
     category: 'Wealth',
-    members: 9874,
-    online: 277,
-    trend: 'up',
     color: '#fbbf24',
     weeklyTopic: 'Audit one expense that compounds against you',
   },
@@ -94,9 +80,6 @@ export const COMMUNITIES: Community[] = [
     description:
       'A small-group community for people rebuilding intentional friendships. Weekly calls, monthly letters, no group chats allowed.',
     category: 'Network',
-    members: 3120,
-    online: 96,
-    trend: 'new',
     color: '#f472b6',
     weeklyTopic: 'Call one person you have not spoken to in 6 months',
   },
@@ -107,9 +90,6 @@ export const COMMUNITIES: Community[] = [
     description:
       'Strict inputs only. No news, no social feed, no podcasts that do not move a current project forward. We meet on Sundays to share what shipped.',
     category: 'Mind',
-    members: 5611,
-    online: 188,
-    trend: 'up',
     color: '#c084fc',
     weeklyTopic: '7 days of zero news consumption',
   },
@@ -120,9 +100,6 @@ export const COMMUNITIES: Community[] = [
     description:
       'Builders shipping a public artifact every 24 hours. Code, writing, design, music — anything countable. The streak is the metric.',
     category: 'Craft',
-    members: 11230,
-    online: 521,
-    trend: 'up',
     color: '#a3e635',
     weeklyTopic: '7 public posts in 7 days',
   },
@@ -133,9 +110,6 @@ export const COMMUNITIES: Community[] = [
     description:
       'A meditation community for non-meditators. We start at 5 minutes a day and add one minute every week. No apps. No gurus.',
     category: 'Mind',
-    members: 7490,
-    online: 240,
-    trend: 'steady',
     color: '#c084fc',
     weeklyTopic: '10 minutes of unguided sit, daily',
   },

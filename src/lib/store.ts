@@ -6,7 +6,7 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { RANK_TIERS, getRankByPoints, getNextRank, getEffectiveRank, PROOF_REQUIREMENTS } from './ranks'
-import { ACHIEVEMENTS, WEEKLY_CHALLENGES } from '@/data/mock-data'
+import { ACHIEVEMENTS, WEEKLY_CHALLENGES } from '@/data/catalog'
 import type { TaskRating } from '@/data/energy-map'
 import {
   MAX_STAKE_EUR,

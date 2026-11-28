@@ -6,7 +6,7 @@ import { Flame, Zap, Lock, ShieldCheck, Anchor, Coins, ArrowRight } from 'lucide
 import { useAppStore, type FocusArea } from '@/lib/store'
 import { getNextRank, getProgressToNextRank, getEffectiveRank } from '@/lib/ranks'
 import { POSTS, type Post } from '@/data/posts'
-import { WEEKLY_CHALLENGES } from '@/data/mock-data'
+import { WEEKLY_CHALLENGES } from '@/data/catalog'
 import type { TabId } from '@/components/app/app-shell'
 import { cn } from '@/lib/utils'
 import { Composer } from '@/components/app/composer'
